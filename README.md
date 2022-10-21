@@ -1,4 +1,4 @@
-# Feature Model Benchmark
+# Feature-Model Benchmark
 
 Our feature model benchmark provides large, real-world feature models for empirical evaluations.
 
