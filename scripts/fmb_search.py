@@ -25,51 +25,63 @@ with open(path_to_csv, newline='') as csv_file:
         feature_models.append(row)
 
 list_domain_input = ['domain', 'dom']
-list_format_input = ['format', 'formats']
-list_features_input = ['features', 'feature', '#features', '#feature', 'number of features']
+list_format_input = ['format', 'formats', 'form', 'for']
+list_features_input = ['features', 'feature', '#features', '#feature', 'number of features', 'feat']
 list_ctc_input = ['ctc', 'ctcs', 'cross-tree constraints', 'cross tree constraints']
 allowed_input = list_domain_input + list_format_input + list_features_input + list_ctc_input
 
 print("You can search for the categories domain, format, features, or CTC")
-print("First enter the category, press enter, then the search term")
+print("First enter one or more categories, press enter, then the search term")
+print("If you search for multiple categories, separate them by a comma")
 search_term = input("Enter category: ").lower()
+search_list = search_term.split(",")
 
-if (search_term not in allowed_input):
-  print("Please enter an allowed category. Possible categories are domain, format, features, and ctc")
-  search_term = input("Enter category: ").lower()
+for term in search_list:
+    if (term not in allowed_input):
+        print("Please enter at least one allowed category. Possible categories are domain, format, features, and ctc")
+        search_term = input("Enter category: ").lower()
+        search_list = search_term.split(",")
 
-if (search_term in list_domain_input):
-    # To get a list of domains currently present in the feature model benchmark
-    list_of_domains = []
-    for fm in feature_models:
-        for key, value in fm.items():
-            if (key == "Domain"):
-                list_of_domains.append(value)
-    list_of_domains = list(dict.fromkeys(list_of_domains))
-    print(list_of_domains)
+for term in search_list:
+    if (term in list_domain_input):
+        # To get a list of domains currently present in the feature model benchmark
+        list_of_domains = []
+        for fm in feature_models:
+            for key, value in fm.items():
+                if (key == "Domain"):
+                    list_of_domains.append(value)
+        list_of_domains = list(dict.fromkeys(list_of_domains))
+        print(list_of_domains)
+    elif(term in list_format_input):
+        # To get a list of formats currently present in the feature model benchmark
+        list_of_formats = []
+        for fm in feature_models:
+            for key, value in fm.items():
+                if (key == "Format"):
+                    list_of_formats.append(value)
+        list_of_formats = list(dict.fromkeys(list_of_formats))
+        print(list_of_formats)
 
-if (search_term in list_format_input):
-    # To get a list of formats currently present in the feature model benchmark
-    list_of_formats = []
-    for fm in feature_models:
-        for key, value in fm.items():
-            if (key == "Format"):
-                list_of_formats.append(value)
-    list_of_formats = list(dict.fromkeys(list_of_formats))
-    print(list_of_formats)
-
+print("If you search for multiple categories, separate the values by a comma")
 value_term = input("Enter value: ")
+value_list = value_term.split(",")
 
-fmb_key = ""
-if (search_term in list_domain_input):
-  fmb_key = "Domain"
-if (search_term in list_format_input):
-  fmb_key = "Format"
-if (search_term in list_features_input):
-  fmb_key = "#Features"
-if (search_term in list_ctc_input):
-  fmb_key = "#CTC"
+# search terms become keys from feature model CSV-file
+fmb_keys = []
+for term in search_list:
+  if (term in list_domain_input):
+    fmb_keys.append("Domain")
+  elif (term in list_format_input):
+    fmb_keys.append("Format")
+  elif (term in list_features_input):
+    fmb_keys.append("#Features")
+  elif (term in list_ctc_input):
+    fmb_keys.append("#CTC")
 
+# make dictionary of categories and values user searches for
+search_key_values = dict(zip(fmb_keys, value_list))
+
+# checks if search keys are subset of an FM in our list of FMs
 for fm in feature_models:
-  if (fm[fmb_key] == value_term):
+  if search_key_values.items() <= fm.items():
     print(fm)
