@@ -105,19 +105,39 @@ else:
     for key,value in search_key_values.items():
       if(((key == "Domain") or (key == "Format")) and (fm[key] == value)):
         list_of_pre_fms.append(fm)
-  for pre_fm in list_of_pre_fms:
-    for key,value in search_key_values.items():
-      if((key == "#Features") or (key == "#CTC")):
-        if (">" in value):
-          act_value = value.replace(">", "")
-          if (act_value < pre_fm[key]):
-            list_of_post_fms.append(pre_fm)
-        elif ("<" in value):
-          act_value = value.replace("<", "")
-          if (act_value > pre_fm[key]):
-            list_of_post_fms.append(pre_fm)
-        else:
-          if (value == pre_fm[key]):
-            list_of_post_fms.append(pre_fm)
+  if (list_of_pre_fms):
+    for pre_fm in list_of_pre_fms:
+      for key,value in search_key_values.items():
+        if((key == "#Features") or (key == "#CTC")):
+          if (">" in value):
+            act_value = value.replace(">", "")
+            if (act_value < pre_fm[key]):
+              list_of_post_fms.append(pre_fm)
+          elif ("<" in value):
+            act_value = value.replace("<", "")
+            if (act_value > pre_fm[key]):
+              list_of_post_fms.append(pre_fm)
+          else:
+            if (value == pre_fm[key]):
+              list_of_post_fms.append(pre_fm)
+  else:
+    for fm in feature_models:
+      for key,value in search_key_values.items():
+        if((key == "#Features") or (key == "#CTC")):
+          if (">" in value):
+            act_value = value.replace(">", "")
+            act_value = int(act_value)
+            fm_value = int(fm[key])
+            if (act_value < fm_value):
+              list_of_post_fms.append(fm)
+          elif ("<" in value):
+            act_value = value.replace("<", "")
+            act_value = int(act_value)
+            fm_value = int(fm[key])
+            if (act_value > fm_value):
+              list_of_post_fms.append(fm)
+          else:
+            if (value == fm[key]):
+              list_of_post_fms.append(fm) 
   for post_fm in list_of_post_fms:
     print(post_fm)
