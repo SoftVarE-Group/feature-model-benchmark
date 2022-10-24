@@ -86,7 +86,38 @@ for term in search_list:
 # make dictionary of categories and values user searches for
 search_key_values = dict(zip(fmb_keys, value_list))
 
+# user is looking for FMs with number of features or CTCs higher or lower than given value
+looking_for_higher_lower = False
+for key,value in search_key_values.items():
+  if (((key == "#Features") or (key == "#CTC")) and (">" in value) or ("<" in value)):
+    looking_for_higher_lower = True
+
+list_of_pre_fms = []
+list_of_post_fms = []
+
 # checks if search keys are subset of an FM in our list of FMs
-for fm in feature_models:
-  if search_key_values.items() <= fm.items():
-    print(fm)
+if (not looking_for_higher_lower):
+  for fm in feature_models:
+      if search_key_values.items() <= fm.items():
+        print(fm)
+else:
+  for fm in feature_models:
+    for key,value in search_key_values.items():
+      if(((key == "Domain") or (key == "Format")) and (fm[key] == value)):
+        list_of_pre_fms.append(fm)
+  for pre_fm in list_of_pre_fms:
+    for key,value in search_key_values.items():
+      if((key == "#Features") or (key == "#CTC")):
+        if (">" in value):
+          act_value = value.replace(">", "")
+          if (act_value < pre_fm[key]):
+            list_of_post_fms.append(pre_fm)
+        elif ("<" in value):
+          act_value = value.replace("<", "")
+          if (act_value > pre_fm[key]):
+            list_of_post_fms.append(pre_fm)
+        else:
+          if (value == pre_fm[key]):
+            list_of_post_fms.append(pre_fm)
+  for post_fm in list_of_post_fms:
+    print(post_fm)
