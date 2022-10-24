@@ -24,10 +24,15 @@ with open(path_to_csv, newline='') as csv_file:
     for row in csv_reader:
         feature_models.append(row)
 
-list_domain_input = ['domain', 'dom']
-list_format_input = ['format', 'formats', 'form', 'for']
-list_features_input = ['features', 'feature', '#features', '#feature', 'number of features', 'feat']
-list_ctc_input = ['ctc', 'ctcs', 'cross-tree constraints', 'cross tree constraints']
+list_domain_input = ['domain', 'dom', 'dmoain', 'dmo', ' domain', ' dom', ' dmoain', ' dmo']
+list_format_input = ['format', 'formats', 'form', 'for', 'fromat', 'fromats', 'from', 'fro', 
+                     ' format', ' formats', ' form', ' for', ' fromat', ' fromats', ' from', ' fro',]
+list_features_input = ['features', 'feature', '#features', '#feature', 'number of features', 'feat',
+                       'faetures', 'faeture', '#faetures', '#faeture', 'number of faetures', 'faet',
+                       ' features', ' ature', ' #features', ' #feature', ' number of features', ' feat',
+                       ' faetures', ' faeture', ' #faetures', ' #faeture', ' number of faetures', ' faet',]
+list_ctc_input = ['ctc', 'ctcs', 'cross-tree constraints', 'cross tree constraints', 'cct', 'ccts'
+                  ' ctc', ' ctcs', ' cross-tree constraints', ' cross tree constraints', ' cct', ' ccts']
 allowed_input = list_domain_input + list_format_input + list_features_input + list_ctc_input
 
 print("You can search for the categories domain, format, features, or CTC")
