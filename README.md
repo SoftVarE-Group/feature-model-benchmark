@@ -39,12 +39,12 @@ The procedure is very convenient:
 | FinancialServices01_2018-03-26 | finance | FeatureIDE | 771 | 1080 | Pett et al. 2019 https://doi.org/10.1145/3336294.3336322 |
 | FinancialServices01_2018-04-23 | finance | FeatureIDE | 774 | 1079 | Pett et al. 2019 https://doi.org/10.1145/3336294.3336322 |
 | FinancialServices01_2018-05-09 | finance | FeatureIDE | 771 | 1080 | Pett et al. 2019 https://doi.org/10.1145/3336294.3336322 |
-| Linux-2013-12-11T15_52_34+01_00 | systems software | DIMACS | 49785 | 477274 | Pett et al. 2019 https://doi.org/10.1145/3336294.3336322 |
-| Linux-2014-12-19T14_02_02-08_00 | systems software | DIMACS | 57443 | 560133 | Pett et al. 2019 https://doi.org/10.1145/3336294.3336322 |
-| Linux-2015-11-03T18_59_10-08_00 | systems software | DIMACS | 62645 | 618224 | Pett et al. 2019 https://doi.org/10.1145/3336294.3336322 |
-| Linux-2016-12-22T09_25_45-08_00 | systems software | DIMACS | 71561 | 715356 | Pett et al. 2019 https://doi.org/10.1145/3336294.3336322 |
-| Linux-2017-12-23T11_53_04-08_00 | systems software | DIMACS | 76820 | 773125 | Pett et al. 2019 https://doi.org/10.1145/3336294.3336322 |
-| Linux-2018-01-14T09_51_25-08_00 | systems software | DIMACS | 76815 | 774148 | Pett et al. 2019 https://doi.org/10.1145/3336294.3336322 |
+| Linux-2013-12-11T15_52_34+01_00[^1] | systems software | DIMACS | 49785 | 477274 | Pett et al. 2019 https://doi.org/10.1145/3336294.3336322 |
+| Linux-2014-12-19T14_02_02-08_00[^1] | systems software | DIMACS | 57443 | 560133 | Pett et al. 2019 https://doi.org/10.1145/3336294.3336322 |
+| Linux-2015-11-03T18_59_10-08_00[^1] | systems software | DIMACS | 62645 | 618224 | Pett et al. 2019 https://doi.org/10.1145/3336294.3336322 |
+| Linux-2016-12-22T09_25_45-08_00[^1] | systems software | DIMACS | 71561 | 715356 | Pett et al. 2019 https://doi.org/10.1145/3336294.3336322 |
+| Linux-2017-12-23T11_53_04-08_00[^1] | systems software | DIMACS | 76820 | 773125 | Pett et al. 2019 https://doi.org/10.1145/3336294.3336322 |
+| Linux-2018-01-14T09_51_25-08_00[^1] | systems software | DIMACS | 76815 | 774148 | Pett et al. 2019 https://doi.org/10.1145/3336294.3336322 |
 | ERP-System     | business   | SXFM | 1653 || Pereira et al. 2016 https://doi.org/10.1145/2993236.2993249 |
 | E-Agribusiness | e-Commerce | SXFM | 2008 || Pereira et al. 2016 https://doi.org/10.1145/2993236.2993249 |
 | eCos-benchmark-clafer (116 feature models) | systems software | Clafer | 1159 - 1312 || Passos et al. 2011 https://doi.org/10.1145/2019136.2019139 |
@@ -79,3 +79,5 @@ The procedure is very convenient:
 | uClibc-ng_1_0_29 | systems software | DIMACS | 269   | 1403   | Oh et al. 2020 Scalable Uniform Sampling for Real-World Software Product Lines (TR https://apps.cs.utexas.edu/apps/tech-reports/192690) https://github.com/jeho-oh/Smarch |
 | fiasco_17_10     | systems software | DIMACS | 234   | 1178   | Oh et al. 2020 Scalable Uniform Sampling for Real-World Software Product Lines (TR https://apps.cs.utexas.edu/apps/tech-reports/192690) https://github.com/jeho-oh/Smarch |
 |||||||
+
+[^1]: Information about number of features and cross-tree cornstraints from DIMACs file (p cnf)
