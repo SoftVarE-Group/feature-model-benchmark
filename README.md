@@ -46,12 +46,12 @@ The search procedure is very convenient:
 | Linux-2016-12-22T09_25_45-08_00[^1] | systems software | DIMACS | 71561 | 715356 | Pett et al. 2019 https://doi.org/10.1145/3336294.3336322 |
 | Linux-2017-12-23T11_53_04-08_00[^1] | systems software | DIMACS | 76820 | 773125 | Pett et al. 2019 https://doi.org/10.1145/3336294.3336322 |
 | Linux-2018-01-14T09_51_25-08_00[^1] | systems software | DIMACS | 76815 | 774148 | Pett et al. 2019 https://doi.org/10.1145/3336294.3336322 |
-| ERP-System     | business   | SXFM[^2] | 1653 | 59044 | Pereira et al. 2016 https://doi.org/10.1145/2993236.2993249 |
-| E-Agribusiness | e-Commerce | SXFM[^2] | 2008 | 0 | Pereira et al. 2016 https://doi.org/10.1145/2993236.2993249 |
+| ERP-System[^2]     | business   | SXFM | 1653 | 59044 | Pereira et al. 2016 https://doi.org/10.1145/2993236.2993249 |
+| E-Agribusiness[^2] | e-Commerce | SXFM | 2008 | 0 | Pereira et al. 2016 https://doi.org/10.1145/2993236.2993249 |
 | eCos-benchmark-clafer (116 feature models)[^3] | systems software | Clafer | 1230 || Passos et al. 2011 https://doi.org/10.1145/2019136.2019139 |
 | 2.6.28.6 | systems software | DIMACS | 11400 | 229794 | Saber et al. 2018 https://doi.org/10.1016/j.infsof.2017.08.010 |
-| main_full  | deep learning | SXFM[^2] | 6867 | 9 | Ghamizi et al. 2019 https://doi.org/10.1145/3336294.3336306 |
-| main_light | deep learning | SXFM[^2] | 3296 | 76 | Ghamizi et al. 2019 https://doi.org/10.1145/3336294.3336306 |
+| main_full[^2]  | deep learning | SXFM | 6867 | 9 | Ghamizi et al. 2019 https://doi.org/10.1145/3336294.3336306 |
+| main_light[^2] | deep learning | SXFM | 3296 | 76 | Ghamizi et al. 2019 https://doi.org/10.1145/3336294.3336306 |
 | 2.6.33.3-2var    | systems software | DIMACS | 62482 | 273799 | Oh et al. 2020 Scalable Uniform Sampling for Real-World Software Product Lines (TR https://apps.cs.utexas.edu/apps/tech-reports/192690) https://github.com/jeho-oh/Smarch |
 | 2.6.32-2var      | systems software | DIMACS | 60072 | 268223 | Oh et al. 2020 Scalable Uniform Sampling for Real-World Software Product Lines (TR https://apps.cs.utexas.edu/apps/tech-reports/192690) https://github.com/jeho-oh/Smarch |
 | freetz           | systems software | DIMACS | 31012 | 102705 | Oh et al. 2020 Scalable Uniform Sampling for Real-World Software Product Lines (TR https://apps.cs.utexas.edu/apps/tech-reports/192690) https://github.com/jeho-oh/Smarch |
