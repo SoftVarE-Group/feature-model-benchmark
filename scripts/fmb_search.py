@@ -111,11 +111,15 @@ else:
         if((key == "#Features") or (key == "#CTC")):
           if (">" in value):
             act_value = value.replace(">", "")
-            if (act_value < pre_fm[key]):
+            act_value = int(act_value)
+            fm_value = int(pre_fm[key])
+            if (act_value < fm_value):
               list_of_post_fms.append(pre_fm)
           elif ("<" in value):
             act_value = value.replace("<", "")
-            if (act_value > pre_fm[key]):
+            act_value = int(act_value)
+            fm_value = int(pre_fm[key])
+            if (act_value > fm_value):
               list_of_post_fms.append(pre_fm)
           else:
             if (value == pre_fm[key]):
