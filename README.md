@@ -17,6 +17,11 @@ The search procedure is very convenient:
  5. Press Enter
  6. Resulting feature models shown (if you searched for more than one category, only feature models fulfilling all criteria are displayed)
 
+Examples:
+ 1. Find all feature models of domain automotive: *Enter* domain *and then* automotive
+ 2. Find feature models with domain systems software and format FeatureIDE: *Enter* domain,format *and then* systems software,FeatureIDE
+ 3. Find all feature models of domain finance with more than 700 features: *Enter* domain,features *and then* finance,>700
+
 | Name | Domain | Format | #Features | #CTC | Source |
 | --- | --- | --- | --- | --- | --- |
 | automotive2_4 | automotive | FeatureIDE | 18616 | 1369 | Knüppel et al. 2017 https://doi.org/10.1145/3106237.3106252 |
