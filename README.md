@@ -9,7 +9,7 @@ With scripts/fmb_search.py you can search for feature models with specific chara
  - Features
  - CTC
  
-The search procedure is very convenient:
+The search procedure is convenient:
  1. Enter at least one category (separate two or more categories by comma)
  2. Press Enter
  3. If you search for domain or format, the available domains or formats will be shown to you
