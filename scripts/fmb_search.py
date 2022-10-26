@@ -42,18 +42,18 @@ search_term = input("Enter category: ").lower()
 search_list = search_term.split(",")
 
 for term in search_list:
-    if (term not in allowed_input):
+    if(term not in allowed_input):
         print("Please enter at least one allowed category. Possible categories are domain, format, features, and ctc")
         search_term = input("Enter category: ").lower()
         search_list = search_term.split(",")
 
 for term in search_list:
-    if (term in list_domain_input):
+    if(term in list_domain_input):
         # To get a list of domains currently present in the feature model benchmark
         list_of_domains = []
         for fm in feature_models:
             for key, value in fm.items():
-                if (key == "Domain"):
+                if(key == "Domain"):
                     list_of_domains.append(value)
         list_of_domains = list(dict.fromkeys(list_of_domains))
         print(list_of_domains)
@@ -62,7 +62,7 @@ for term in search_list:
         list_of_formats = []
         for fm in feature_models:
             for key, value in fm.items():
-                if (key == "Format"):
+                if(key == "Format"):
                     list_of_formats.append(value)
         list_of_formats = list(dict.fromkeys(list_of_formats))
         print(list_of_formats)
@@ -74,74 +74,102 @@ value_list = value_term.split(",")
 # search terms become keys from feature model CSV-file
 fmb_keys = []
 for term in search_list:
-  if (term in list_domain_input):
+  if(term in list_domain_input):
     fmb_keys.append("Domain")
-  elif (term in list_format_input):
+  elif(term in list_format_input):
     fmb_keys.append("Format")
-  elif (term in list_features_input):
+  elif(term in list_features_input):
     fmb_keys.append("#Features")
-  elif (term in list_ctc_input):
+  elif(term in list_ctc_input):
     fmb_keys.append("#CTC")
 
 # make dictionary of categories and values user searches for
 search_key_values = dict(zip(fmb_keys, value_list))
 
-# user is looking for FMs with number of features or CTCs higher or lower than given value
-looking_for_higher_lower = False
-for key,value in search_key_values.items():
-  if (((key == "#Features") or (key == "#CTC")) and (">" in value) or ("<" in value)):
-    looking_for_higher_lower = True
+def add_fm_to_list(fm_list, cat, val):
+  temp_fm_list = []
+  for fm in fm_list:
+    if(fm[cat] == val):
+      temp_fm_list.append(fm)
+  return temp_fm_list
 
-list_of_pre_fms = []
-list_of_post_fms = []
+def find_higher(fm_list, cat, val):
+  temp_fm_list = []
+  act_val = val.replace(">", "")
+  act_val = int(act_val)
+  for fm in fm_list:
+    if(fm[cat]):
+      fm_value = int(fm[cat])
+      if(act_val < fm_value):
+        temp_fm_list.append(fm)
+  return temp_fm_list
+
+def find_lower(fm_list, cat, val):
+  temp_fm_list = []
+  act_val = val.replace("<", "")
+  act_val = int(act_val)
+  for fm in fm_list:
+    if(fm[cat]):
+      fm_value = int(fm[cat])
+      if(act_val > fm_value):
+        temp_fm_list.append(fm)
+  return temp_fm_list
+
+def find_range(fm_list, cat, val):
+  temp_fm_list = []
+  values = val.replace("to", " ").replace("t", " ").replace("-", " ").split()
+  values = [int(val) for val in values]
+  lower_bound = min(values)
+  upper_bound = max(values)
+  for fm in fm_list:
+    if(fm[cat]):
+      fm_value = int(fm[cat])
+      if(lower_bound <= fm_value <= upper_bound):
+        temp_fm_list.append(fm)
+  return temp_fm_list
 
 # checks if search keys are subset of an FM in our list of FMs
-if (not looking_for_higher_lower):
-  for fm in feature_models:
-      if search_key_values.items() <= fm.items():
-        print(fm)
-else:
-  for fm in feature_models:
-    for key,value in search_key_values.items():
-      if(((key == "Domain") or (key == "Format")) and (fm[key] == value)):
-        list_of_pre_fms.append(fm)
-  if (list_of_pre_fms):
-    for pre_fm in list_of_pre_fms:
-      for key,value in search_key_values.items():
-        if((key == "#Features") or (key == "#CTC")):
-          if (">" in value):
-            act_value = value.replace(">", "")
-            act_value = int(act_value)
-            fm_value = int(pre_fm[key])
-            if (act_value < fm_value):
-              list_of_post_fms.append(pre_fm)
-          elif ("<" in value):
-            act_value = value.replace("<", "")
-            act_value = int(act_value)
-            fm_value = int(pre_fm[key])
-            if (act_value > fm_value):
-              list_of_post_fms.append(pre_fm)
-          else:
-            if (value == pre_fm[key]):
-              list_of_post_fms.append(pre_fm)
-  else:
-    for fm in feature_models:
-      for key,value in search_key_values.items():
-        if((key == "#Features") or (key == "#CTC")):
-          if (">" in value):
-            act_value = value.replace(">", "")
-            act_value = int(act_value)
-            fm_value = int(fm[key])
-            if (act_value < fm_value):
-              list_of_post_fms.append(fm)
-          elif ("<" in value):
-            act_value = value.replace("<", "")
-            act_value = int(act_value)
-            fm_value = int(fm[key])
-            if (act_value > fm_value):
-              list_of_post_fms.append(fm)
-          else:
-            if (value == fm[key]):
-              list_of_post_fms.append(fm) 
-  for post_fm in list_of_post_fms:
-    print(post_fm)
+fm_selection = []
+for cat,val in search_key_values.items():
+  temp_selection = []
+  if(cat == "Domain"):
+    temp_selection = add_fm_to_list(feature_models, cat, val)
+    if(fm_selection):
+      fm_selection = [fm for fm in fm_selection if fm in temp_selection]
+    else: 
+      fm_selection = temp_selection
+  elif (cat == "Format"):
+    temp_selection = add_fm_to_list(feature_models, cat, val)
+    if(fm_selection):
+      fm_selection = [fm for fm in fm_selection if fm in temp_selection]
+    else:
+      fm_selection = temp_selection
+  elif(cat == "#Features"):
+    if(">" in val):
+      temp_selection = find_higher(feature_models, cat, val)
+    elif("<" in val):
+      temp_selection = find_lower(feature_models, cat, val)
+    elif(("to" in val) or ("t" in val) or ("-" in val)):
+      temp_selection = find_range(feature_models, cat, val)
+    else:
+      temp_selection = add_fm_to_list(feature_models, cat, val)
+    if(fm_selection):
+      fm_selection = [fm for fm in fm_selection if fm in temp_selection]
+    else:
+      fm_selection = temp_selection
+  elif(cat == "#CTC"):
+    if(">" in val):
+      temp_selection = find_higher(feature_models, cat, val)
+    elif("<" in val):
+      temp_selection = find_lower(feature_models, cat, val)
+    elif(("to" in val) or ("t" in val) or ("-" in val)):
+      temp_selection = find_range(feature_models, cat, val)
+    else:
+      temp_selection = add_fm_to_list(feature_models, cat, val)
+    if(fm_selection):
+      fm_selection = [fm for fm in fm_selection if fm in temp_selection]
+    else:
+      fm_selection = temp_selection
+
+for fm in fm_selection:
+  print(fm)

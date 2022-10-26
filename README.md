@@ -17,6 +17,11 @@ The search procedure is convenient:
  5. Press Enter
  6. Resulting feature models shown (if you searched for more than one category, only feature models fulfilling all criteria are displayed)
 
+Special search operations:
+ 1. Greater than: >"Number" (e.g., more than 500: >500)
+ 2. Less than:    <"Number" (e.g., less than 500: <500)
+ 3. Range:        "Number"to"Number" (e.g., between 500 and 800: 500to800 or 500-800)
+
 Examples:
  1. Find all feature models of domain automotive: *Enter* domain *and then* automotive
  2. Find feature models with domain systems software and format FeatureIDE: *Enter* domain,format *and then* systems software,FeatureIDE
