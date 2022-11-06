@@ -9,13 +9,28 @@ With scripts/fmb_search.py you can search for feature models with specific chara
  - Features
  - CTC
  
-The search procedure is convenient:
- 1. Enter at least one category (separate two or more categories by comma)
- 2. Press Enter
- 3. If you search for domain or format, the available domains or formats will be shown to you
- 4. Enter the search value (for two or more categories, separate the search values by comma)
- 5. Press Enter
- 6. Resulting feature models shown (if you searched for more than one category, only feature models fulfilling all criteria are displayed)
+The search procedure is convenient and offers three choices:
+ 1. Search for a single category
+ 	1. Enter one category
+	2. Press Enter
+	3. If you search for domain or format, the available domains or formats will be shown to you
+	4. Enter the search value
+	5. Press Enter
+	6. Resulting feature models are shown
+ 2. Search for multiple categories looking for an intersection of sets of feature models (comma as logical AND)
+	1. Enter at least two categories and separate them by comma
+	2. Press Enter
+	3. If you search for domain or format, the available domains or formats will be shown to you
+	4. Enter the search value, separating the search values by comma
+	5. Press Enter
+	6. Resulting feature models fulfilling all criteria are shown
+ 3. Search for multiple categories looking for a union of sets of feature models (semicolon as logical OR)
+ 	1. Enter at least two categories and separate them by semicolon
+	2. Press Enter
+	3. If you search for domain or format, the available domains or formats will be shown to you
+	4. Enter the search value, separating the search values by semicolon
+	5. Press Enter
+	6. Resulting feature models fulfilling at least one of the criteria are shown
 
 Special search operations:
  1. Greater than: >"Number" (e.g., more than 500: >500)
@@ -26,6 +41,7 @@ Examples:
  1. Find all feature models of domain automotive: *Enter* domain *and then* automotive
  2. Find feature models with domain systems software and format FeatureIDE: *Enter* domain,format *and then* systems software,FeatureIDE
  3. Find all feature models of domain finance with more than 700 features: *Enter* domain,features *and then* finance,>700
+ 4. Find feature models of domain business or with more than 70,000 features: *Enter* domain;features *and then* business;>70000
 
 | Name | Domain | Format | #Features | #CTC | Source |
 | --- | --- | --- | --- | --- | --- |
