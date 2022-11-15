@@ -8,34 +8,37 @@ With scripts/fmb_search.py you can search for feature models with specific chara
  - Format
  - Features
  - CTC
- 
+
 The search procedure is convenient and offers three choices:
  1. Search for a single category
  	1. Enter one category
 	2. Press Enter
-	3. If you search for domain or format, the available domains or formats will be shown to you
-	4. Enter the search value
-	5. Press Enter
-	6. Resulting feature models are shown
+	3. Enter the search value
+	4. Press Enter
+	5. Resulting feature models are shown
  2. Search for multiple categories looking for an intersection of sets of feature models (comma as logical AND)
 	1. Enter at least two categories and separate them by comma
 	2. Press Enter
-	3. If you search for domain or format, the available domains or formats will be shown to you
-	4. Enter the search value, separating the search values by comma
-	5. Press Enter
-	6. Resulting feature models fulfilling all criteria are shown
+	3. Enter the search value, separating the search values by comma
+	4. Press Enter
+	5. Resulting feature models fulfilling all criteria are shown
  3. Search for multiple categories looking for a union of sets of feature models (semicolon as logical OR)
  	1. Enter at least two categories and separate them by semicolon
 	2. Press Enter
-	3. If you search for domain or format, the available domains or formats will be shown to you
-	4. Enter the search value, separating the search values by semicolon
-	5. Press Enter
-	6. Resulting feature models fulfilling at least one of the criteria are shown
+	3. Enter the search value, separating the search values by semicolon
+	4. Press Enter
+	5. Resulting feature models fulfilling at least one of the criteria are shown
 
 Special search operations:
  1. Greater than: >"Number" (e.g., more than 500: >500)
  2. Less than:    <"Number" (e.g., less than 500: <500)
  3. Range:        "Number"to"Number" (e.g., between 500 and 800: 500to800 or 500-800)
+
+Additional commands:
+ - help
+ - exit
+ - show domains
+ - show formats
 
 Examples:
  1. Find all feature models of domain automotive: *Enter* domain *and then* automotive
