@@ -34,6 +34,12 @@ Special search operations:
  2. Less than:    <"Number" (e.g., less than 500: <500)
  3. Range:        "Number"to"Number" (e.g., between 500 and 800: 500to800 or 500-800)
 
+Saving found feature models in an extra directory:
+ - commands: fmb, create benchmark
+ - if it doesn't exist, a new directory "benchmarks" is created next to "scripts" etc.
+ - Feature model-files of feture models found during search are copied in there
+ - directory "benchmarks" has to be cleared manually
+
 Additional commands:
  - help
  - exit

@@ -1,5 +1,6 @@
 import csv
 import os
+import shutil
 
 '''
 Always same directory structure and file names:
@@ -28,8 +29,9 @@ with open(path_to_csv, newline='') as csv_file:
 list_help_input = ['show help', 'show h', 'help']
 list_domains_info_input = ['show domains', 'show domain', 'show dom']
 list_formats_info_input = ['show formats', 'show format', 'show form', 'show for']
-list_exit_input = ['exit', 'quit']
-list_meta_input = list_help_input + list_domains_info_input + list_formats_info_input + list_exit_input
+list_exit_input = ['exit', 'quit', 'q']
+list_get_fms_input = ['create benchmark', 'create bench', 'create b', 'benchmark', 'bench', 'fmb']
+list_meta_input = list_help_input + list_domains_info_input + list_formats_info_input + list_exit_input + list_get_fms_input
 # Category searcg input
 list_domain_input = ['domain', 'dom', 'dmoain', 'dmo', ' domain', ' dom', ' dmoain', ' dmo']
 list_format_input = ['format', 'formats', 'form', 'for', 'fromat', 'fromats', 'from', 'fro', 
@@ -45,6 +47,7 @@ allowed_input = list_meta_input + list_category_input
 
 help_text = '''
 Searchable categories: domain, format, features, CTC
+Save found feature models in folder "benchmarks": fmb
 Search procedure:
   1) Enter one or more categories
   2) Press Enter
@@ -78,6 +81,33 @@ Examples:
      500to800
 '''
 
+def create_benchmark(fm_list):
+  """Create FM benchmark from FMs found through search.
+
+  Creates new benchmark directory if none exists.
+  Then goes through list of found FMs and looks for the respective FMs in feature_models directory,
+  copying them to the benchmark directory.
+
+  Keyword argument:
+  fm_list -- List of FMs (dictionaries) found by user
+  """
+  fmb_directory = os.path.join(os.path.dirname(__file__), '..', 'benchmarks')
+  fm_directory = os.path.join(os.path.dirname(__file__), '..', 'feature_models')
+  # feature-model benchmark-directory may not yet exist
+  if (not os.path.isdir(fmb_directory)):
+    os.makedirs(fmb_directory)
+
+  # go through list of dictionaries (i.e. FMs found by user)
+  for fm in fm_list:
+    fm_name = fm['Name']
+    for root, dirs, files in os.walk(fm_directory):
+      # FM file names need to be unique
+      for fm_file in files:
+        # filename is "name.extension" and we want to get the "name" only
+        if(fm_name == fm_file.split('.')[0]):
+          fm_file_path = os.path.join(root, fm_file)
+          shutil.copy2(fm_file_path, fmb_directory)
+
 def give_meta_info(user_input):
   """Provide meta information to user.
 
@@ -107,6 +137,10 @@ def give_meta_info(user_input):
           list_of_formats.append(value)
     list_of_formats = list(dict.fromkeys(list_of_formats))
     print(list_of_formats)
+  elif(user_input in list_get_fms_input):
+    global isBenchmarkWanted
+    isBenchmarkWanted = True
+    print('FM Benchmark will be created in directory "benchmarks"')
   elif(user_input in list_exit_input):
     print("Goodbye!")
 
@@ -198,9 +232,10 @@ def find_range(fm_list, cat, val):
   return temp_fm_list
 
 print('For help, enter "help", to quit enter "quit" or "exit"')
-isSearchRunning = True  # user has not received feature models yet
-isCategoryGiven = False # user has to give category before value
-isValueGiven = False    # user has to give category and value to complete search
+isSearchRunning = True    # user has not received feature models yet
+isCategoryGiven = False   # user has to give category before value
+isValueGiven = False      # user has to give category and value to complete search
+isBenchmarkWanted = False # user wants the FMs from the found FM benchmark
 category_list = []
 value_list = []
 while(isSearchRunning):
@@ -330,5 +365,8 @@ while(isSearchRunning):
 
     for fm in fm_selection:
       print(fm)
+
+    if(isBenchmarkWanted):
+      create_benchmark(fm_selection)
 
     isSearchRunning = False
