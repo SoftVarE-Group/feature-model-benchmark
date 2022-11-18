@@ -48,11 +48,15 @@ Additional commands:
 
 Examples:
  1. Find all feature models of domain automotive: *Enter* domain *and then* automotive
- 2. Find feature models with domain systems software and format FeatureIDE: *Enter* domain,format *and then* systems software,FeatureIDE
- 3. Find all feature models of domain finance with more than 700 features: *Enter* domain,features *and then* finance,>700
-																		   *Enter* domain&features *and then* finance&>700
- 4. Find feature models of domain business or with more than 70,000 features: *Enter* domain;features *and then* business;>70000
-																			  *Enter* domain|features *and then* business|>70000
+ 2. Find feature models with domain systems software and format FeatureIDE: 
+	- *Enter* domain,format *and then* systems software,FeatureIDE
+	- *Enter* domain&format *and then* systems software&FeatureIDE
+ 3. Find all feature models of domain finance with more than 700 features: 
+	- *Enter* domain,features *and then* finance,>700
+	- *Enter* domain&features *and then* finance&>700
+ 4. Find feature models of domain business or with more than 70,000 features: 
+	- *Enter* domain;features *and then* business;>70000
+	- *Enter* domain|features *and then* business|>70000
 
 | Name | Domain | Format | #Features | #CTC | Source |
 | --- | --- | --- | --- | --- | --- |
