@@ -28,6 +28,7 @@ The search procedure is convenient and offers three choices:
 	3. Enter the search value, separating the search values by semicolon or pipe
 	4. Press Enter
 	5. Resulting feature models fulfilling at least one of the criteria are shown
+
 (When entering categories domain or format, the available items are printed to the console)
 
 Special search operations:
