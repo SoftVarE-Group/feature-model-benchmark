@@ -124,21 +124,11 @@ def give_meta_info(user_input):
     print(help_text)
   elif(user_input in list_domains_info_input):
     # To get a list of domains currently present in the feature model benchmark
-    list_of_domains = []
-    for fm in feature_models:
-      for key, value in fm.items():
-        if(key == "Domain"):
-          list_of_domains.append(value)
-    list_of_domains = list(dict.fromkeys(list_of_domains))
+    list_of_domains = get_category_sublist("Domain")
     print(list_of_domains)
   elif(user_input in list_formats_info_input):
     # To get a list of formats currently present in the feature model benchmark
-    list_of_formats = []
-    for fm in feature_models:
-      for key, value in fm.items():
-        if(key == "Format"):
-          list_of_formats.append(value)
-    list_of_formats = list(dict.fromkeys(list_of_formats))
+    list_of_formats = get_category_sublist("Format")
     print(list_of_formats)
   elif(user_input in list_get_fms_input):
     global isBenchmarkWanted
@@ -146,6 +136,20 @@ def give_meta_info(user_input):
     print('FM Benchmark will be created in directory "benchmarks"')
   elif(user_input in list_exit_input):
     print("Goodbye!")
+
+def get_category_sublist(cat):
+    """Creates a list of values for the given category (currently for categories domain, format)
+
+    Keyword argument:
+    cat -- String (category name, currently either "Domain" or "Format) 
+    """
+    category_sublist = []
+    for fm in feature_models:
+      for key, value in fm.items():
+        if(key == cat):
+          category_sublist.append(value)
+    category_sublist = list(dict.fromkeys(category_sublist))
+    return category_sublist
 
 def add_fm_to_list(fm_list, cat, val):
   """Add feature model to list and return list.
@@ -223,16 +227,19 @@ def find_range(fm_list, cat, val):
   val     -- value to key, in String format 
   """
   temp_fm_list = []
+  # turns numbers separated by "to", "t" or "-" into list of numbers
   values = val.replace("to", " ").replace("t", " ").replace("-", " ").split()
-  values = [int(val) for val in values]
-  lower_bound = min(values)
-  upper_bound = max(values)
-  for fm in fm_list:
-    if(fm[cat]):
-      fm_value = int(fm[cat])
-      if(lower_bound <= fm_value <= upper_bound):
-        temp_fm_list.append(fm)
-  return temp_fm_list
+  # cover cases with invalid input as range, i.e. not two numbers separated by "to", "t" or "-""
+  if(all(val.isnumeric() for val in values)):
+    values = [int(val) for val in values]
+    lower_bound = min(values)
+    upper_bound = max(values)
+    for fm in fm_list:
+      if(fm[cat]):
+        fm_value = int(fm[cat])
+        if(lower_bound <= fm_value <= upper_bound):
+          temp_fm_list.append(fm)
+    return temp_fm_list
 
 def split_with_separators(str_to_split, list_of_separators):
   """List as input for str.split()
@@ -284,6 +291,13 @@ while(isSearchRunning):
     if(isNotCategories):
       isValueGiven = True
       value_list = search_list
+    else:
+      if(any(x in list_domain_input for x in category_list)):
+        list_of_domains = get_category_sublist("Domain")
+        print(list_of_domains)
+      if(any(x in list_format_input for x in category_list)):
+        list_of_formats = get_category_sublist("Format")
+        print(list_of_formats)
 
   if(isCategoryGiven and isValueGiven):
     # search terms become keys from feature model CSV-file
@@ -379,8 +393,9 @@ while(isSearchRunning):
         if(fm not in fm_selection):
           fm_selection.append(fm)
 
-    for fm in fm_selection:
-      print(fm)
+    if(fm_selection):
+      for fm in fm_selection:
+        print(fm)
 
     if(isBenchmarkWanted):
       create_benchmark(fm_selection)
