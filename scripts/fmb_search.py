@@ -45,6 +45,9 @@ list_ctc_input = ['ctc', 'ctcs', 'cross-tree constraints', 'cross tree constrain
 list_category_input = list_domain_input + list_format_input + list_features_input + list_ctc_input
 allowed_input = list_meta_input + list_category_input
 
+list_separators_AND = [',', '&']
+list_separators_OR = [';', '|']
+
 help_text = '''
 Searchable categories: domain, format, features, CTC
 Save found feature models in folder "benchmarks": fmb
@@ -54,8 +57,8 @@ Search procedure:
   3) Enter one search term per category
   4) Press Enter
 Multiple categories:
-  1) Intersection: Separate categories and search terms by comma
-  2) Union: Separate categories and search terms by semicolon
+  1) Intersection: Separate categories and search terms either by comma or ampersand
+  2) Union: Separate categories and search terms either by semicolon or pipe
 Search commands:
   1) Greater than: >
   2) Less than:    <
@@ -231,6 +234,19 @@ def find_range(fm_list, cat, val):
         temp_fm_list.append(fm)
   return temp_fm_list
 
+def split_with_separators(str_to_split, list_of_separators):
+  """List as input for str.split()
+
+  Keyword argument:
+  str_to_split        -- String (user input specifying what FM search)
+  list_of_separators  -- list of separators 
+  """
+  str_to_list = []
+  for sep in list_of_separators:
+    if(sep in str_to_split):
+      str_to_list = str_to_split.split(sep)
+  return str_to_list
+
 print('For help, enter "help", to quit enter "quit" or "exit"')
 isSearchRunning = True    # user has not received feature models yet
 isCategoryGiven = False   # user has to give category before value
@@ -248,12 +264,12 @@ while(isSearchRunning):
   elif(search_term in list_meta_input):
     give_meta_info(search_term)
   else:
-    if("," in search_term):
+    if(any(x in list_separators_AND for x in search_term)):
       isIntersection = True
-      search_list = search_term.split(",")
-    elif(";" in search_term):
+      search_list = split_with_separators(search_term, list_separators_AND)
+    elif(any(x in list_separators_OR for x in search_term)):
       isUnion = True
-      search_list = search_term.split(";")
+      search_list = split_with_separators(search_term, list_separators_OR)
     else:
       isUnion = True
       search_list = search_term.split(",")
