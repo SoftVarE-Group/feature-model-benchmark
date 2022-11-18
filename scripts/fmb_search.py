@@ -1,6 +1,7 @@
 import csv
 import os
 import shutil
+import time
 
 '''
 Always same directory structure and file names:
@@ -50,7 +51,7 @@ list_separators_OR = [';', '|']
 
 help_text = '''
 Searchable categories: domain, format, features, CTC
-Save found feature models in folder "benchmarks": fmb
+Save found feature models in subdirectory of "benchmarks": fmb
 Search procedure:
   1) Enter one or more categories
   2) Press Enter
@@ -100,6 +101,11 @@ def create_benchmark(fm_list):
   if (not os.path.isdir(fmb_directory)):
     os.makedirs(fmb_directory)
 
+  # create a new subdirectory in benchmarks for every benchmark
+  fmb_sub_name = "fmb" + str(time.time())
+  fmb_sub_directory = os.path.join(fmb_directory, fmb_sub_name)
+  os.makedirs(fmb_sub_directory)
+
   # go through list of dictionaries (i.e. FMs found by user)
   for fm in fm_list:
     fm_name = fm['Name']
@@ -109,7 +115,7 @@ def create_benchmark(fm_list):
         # filename is "name.extension" and we want to get the "name" only
         if(fm_name == fm_file.split('.')[0]):
           fm_file_path = os.path.join(root, fm_file)
-          shutil.copy2(fm_file_path, fmb_directory)
+          shutil.copy2(fm_file_path, fmb_sub_directory)
       # in cases like eCos-benchmark-clafer, the FM name is the name of the directory, not of single FMs
       for fm_dir in dirs:
         # in case of eCos-benchmark-clafer, the FM name is eCos-benchmark-clafer (116 feature models)
@@ -120,7 +126,7 @@ def create_benchmark(fm_list):
           # copy all files in directory to feature-model benchmark
           for fm_file in fm_files:
             fm_file_path = os.path.join(fm_files_path, fm_file)
-            shutil.copy2(fm_file_path, fmb_directory)
+            shutil.copy2(fm_file_path, fmb_sub_directory)
 
 def give_meta_info(user_input):
   """Provide meta information to user.
@@ -144,7 +150,7 @@ def give_meta_info(user_input):
   elif(user_input in list_get_fms_input):
     global isBenchmarkWanted
     isBenchmarkWanted = True
-    print('FM Benchmark will be created in directory "benchmarks"')
+    print('FM Benchmark will be created in a subdirectory of "benchmarks"')
   elif(user_input in list_exit_input):
     print("Goodbye!")
 

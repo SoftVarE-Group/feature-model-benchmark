@@ -39,8 +39,7 @@ Special search operations:
 Saving found feature models in an extra directory:
  - commands: fmb, create benchmark
  - if it doesn't exist, a new directory "benchmarks" is created next to "scripts" etc.
- - Feature model-files of feture models found during search are copied in there
- - directory "benchmarks" has to be cleared manually
+ - Feature-model files of feature models found during search are copied in a subdirectory of benchmarks
 
 Additional commands:
  - help
