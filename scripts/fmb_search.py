@@ -110,6 +110,17 @@ def create_benchmark(fm_list):
         if(fm_name == fm_file.split('.')[0]):
           fm_file_path = os.path.join(root, fm_file)
           shutil.copy2(fm_file_path, fmb_directory)
+      # in cases like eCos-benchmark-clafer, the FM name is the name of the directory, not of single FMs
+      for fm_dir in dirs:
+        # in case of eCos-benchmark-clafer, the FM name is eCos-benchmark-clafer (116 feature models)
+        fm_part_name = fm_name.split(" ")[0]
+        if(fm_part_name == fm_dir):
+          fm_files_path = os.path.join(root, fm_dir)
+          fm_files = os.listdir(fm_files_path)
+          # copy all files in directory to feature-model benchmark
+          for fm_file in fm_files:
+            fm_file_path = os.path.join(fm_files_path, fm_file)
+            shutil.copy2(fm_file_path, fmb_directory)
 
 def give_meta_info(user_input):
   """Provide meta information to user.
