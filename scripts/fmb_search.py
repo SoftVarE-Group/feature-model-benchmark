@@ -34,15 +34,11 @@ list_exit_input = ['exit', 'quit', 'q']
 list_get_fms_input = ['create benchmark', 'create bench', 'create b', 'benchmark', 'bench', 'fmb']
 list_meta_input = list_help_input + list_domains_info_input + list_formats_info_input + list_exit_input + list_get_fms_input
 # Category searcg input
-list_domain_input = ['domain', 'dom', 'dmoain', 'dmo', ' domain', ' dom', ' dmoain', ' dmo']
-list_format_input = ['format', 'formats', 'form', 'for', 'fromat', 'fromats', 'from', 'fro', 
-                     ' format', ' formats', ' form', ' for', ' fromat', ' fromats', ' from', ' fro',]
+list_domain_input = ['domain', 'dom', 'dmoain', 'dmo']
+list_format_input = ['format', 'formats', 'form', 'for', 'fromat', 'fromats', 'from', 'fro']
 list_features_input = ['features', 'feature', '#features', '#feature', 'number of features', 'feat',
-                       'faetures', 'faeture', '#faetures', '#faeture', 'number of faetures', 'faet',
-                       ' features', ' ature', ' #features', ' #feature', ' number of features', ' feat',
-                       ' faetures', ' faeture', ' #faetures', ' #faeture', ' number of faetures', ' faet',]
-list_ctc_input = ['ctc', 'ctcs', 'cross-tree constraints', 'cross tree constraints', 'cct', 'ccts'
-                  ' ctc', ' ctcs', ' cross-tree constraints', ' cross tree constraints', ' cct', ' ccts']
+                       'faetures', 'faeture', '#faetures', '#faeture', 'number of faetures', 'faet']
+list_ctc_input = ['ctc', 'ctcs', 'cross-tree constraints', 'cross tree constraints', 'cct', 'ccts']
 list_category_input = list_domain_input + list_format_input + list_features_input + list_ctc_input
 allowed_input = list_meta_input + list_category_input
 
@@ -305,6 +301,12 @@ while(isSearchRunning):
     else:
       isUnion = True
       search_list = search_term.split(",")
+
+  # remove leading and trailing whitespaces of categories or values
+  if(search_list):
+    for index, item in enumerate(search_list):
+      item = item.strip()
+      search_list[index] = item
 
   if(search_list):
     isNotCategories = True # current user input provides values, not categories
