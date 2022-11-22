@@ -58,8 +58,8 @@ Search procedure:
   3) Enter one search term per category
   4) Press Enter
 Multiple categories:
-  1) Intersection: Separate categories and search terms either by comma or ampersand
-  2) Union: Separate categories and search terms either by semicolon or pipe
+  1) Intersection: Separate categories and search terms either by comma "," or ampersand "&"
+  2) Union: Separate categories and search terms either by semicolon ";" or pipe "|"
 Search commands:
   1) Greater than: >
   2) Less than:    <
@@ -69,11 +69,19 @@ Feature Model information:
   2) Give available formats: show formats
 Examples:
   1) FMs of domain systems software AND format DIMACS
-     domain,format
-     systems software,DIMACS
+     Solution 1.1:
+      domain,format
+      systems software,DIMACS
+     Solution 1.2:
+      domain&format
+      systems software&DIMACS
   2) FMs of domain systems software OR format DIMACS
-     domain;format
-     systems software;DIMACS
+     Solution 2.1:
+      domain;format
+      systems software;DIMACS
+     Solution 2.2:
+      domain|format
+      systems software|DIMACS
   3) FMs with more than 500 features
      features
      >500
@@ -311,10 +319,10 @@ while(isSearchRunning):
     else:
       if(any(x in list_domain_input for x in category_list)):
         list_of_domains = get_category_sublist("Domain")
-        print(list_of_domains)
+        print("List of domains: ", list_of_domains)
       if(any(x in list_format_input for x in category_list)):
         list_of_formats = get_category_sublist("Format")
-        print(list_of_formats)
+        print("List of formats: ", list_of_formats)
 
   if(isCategoryGiven and isValueGiven):
     # search terms become keys from feature model CSV-file
