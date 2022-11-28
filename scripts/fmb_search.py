@@ -33,14 +33,16 @@ list_formats_info_input = ['show formats', 'show format', 'show form', 'show for
 list_exit_input = ['exit', 'quit', 'q']
 list_get_fms_input = ['create benchmark', 'create bench', 'create b', 'benchmark', 'bench', 'fmb']
 list_meta_input = list_help_input + list_domains_info_input + list_formats_info_input + list_exit_input + list_get_fms_input
-# Category searcg input
+# Category search input
 list_domain_input = ['domain', 'dom', 'dmoain', 'dmo']
 list_format_input = ['format', 'formats', 'form', 'for', 'fromat', 'fromats', 'from', 'fro']
 list_features_input = ['features', 'feature', '#features', '#feature', 'number of features', 'feat',
                        'faetures', 'faeture', '#faetures', '#faeture', 'number of faetures', 'faet']
 list_ctc_input = ['ctc', 'ctcs', 'cross-tree constraints', 'cross tree constraints', 'cct', 'ccts']
 list_category_input = list_domain_input + list_format_input + list_features_input + list_ctc_input
-allowed_input = list_meta_input + list_category_input
+# User wants all available FMs input
+list_give_all_input = ['', 'all']
+allowed_input = list_meta_input + list_category_input + list_give_all_input
 
 list_separators_AND = [',', '&']
 list_separators_OR = [';', '|']
@@ -48,6 +50,8 @@ list_separators_OR = [';', '|']
 help_text = '''
 Searchable categories: domain, format, features, CTC
 Save found feature models in subdirectory of "benchmarks": fmb
+Get all available feature models: Nothing (just press "Enter"), all
+  (to save them in a new subdirectory of "benchmarks", enter "fmb" first, then press Enter in the next dialogue)
 Search procedure:
   1) Enter one or more categories
   2) Press Enter
@@ -299,6 +303,12 @@ while(isSearchRunning):
     break
   elif(search_term in list_meta_input):
     give_meta_info(search_term)
+  elif(search_term in list_give_all_input):
+    for fm in feature_models:
+      print(fm)
+    if(isBenchmarkWanted):
+      create_benchmark(feature_models)
+    break
   else:
     if(any(x in list_separators_AND for x in search_term)):
       isIntersection = True

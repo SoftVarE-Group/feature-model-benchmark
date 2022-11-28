@@ -31,7 +31,7 @@ The search procedure is convenient and offers three choices:
 
 (When entering categories domain or format, the available items are printed to the console)
 
-Special search operations:
+Special search operations (only for use in search values, not categories):
  1. Greater than: >"Number" (e.g., more than 500: >500)
  2. Less than:    <"Number" (e.g., less than 500: <500)
  3. Range:        "Number"to"Number" (e.g., between 500 and 800: 500to800 or 500-800)
@@ -41,6 +41,12 @@ Saving found feature models in an extra directory:
  - commands: fmb, create benchmark
  - if it doesn't exist, a new directory "benchmarks" is created next to "scripts" etc.
  - Feature-model files of feature models found during search are copied in a subdirectory of benchmarks
+
+Get all available feature models:
+ - commands: Nothing (i.e., just press "Enter"), all
+ - To save all available feature models in a new subdirectory of benchmarks:
+   1. fmb
+   2. "Enter"
 
 Additional commands:
  - help
