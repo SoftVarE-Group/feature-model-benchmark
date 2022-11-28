@@ -60,6 +60,7 @@ Search commands:
   1) Greater than: >
   2) Less than:    <
   3) Range:        -, to
+  4) NOT:          - (first char of value in contrast to "Range")
 Feature Model information:
   1) Give available domains: show domains
   2) Give available formats: show formats
@@ -87,6 +88,12 @@ Examples:
   5) FMs with 500 to 800 cross-tree constraints
      CTC
      500to800
+  6) FMs of domain automotive but not in format XML
+     domain,format
+     automotive,-XML
+  7) FMs of domain business or not with less than 70000 features
+     domain;features
+     business;-<70000
 '''
 
 def create_benchmark(fm_list):
@@ -282,6 +289,7 @@ isValueGiven = False      # user has to give category and value to complete sear
 isBenchmarkWanted = False # user wants the FMs from the found FM benchmark
 category_list = []
 value_list = []
+excluded_search_key_values = []
 while(isSearchRunning):
   isIntersection = False  # comma-separated values
   isUnion = False         # semicolon-separated values
@@ -342,6 +350,18 @@ while(isSearchRunning):
     # make list of tuples of categories and values user searches for
     search_key_values = list(zip(fmb_keys, value_list))
 
+    '''
+    NOT operator: preparatory step
+    values to be excluded are moved to new list of category-values tuples
+    not yet optimized: Search still also finds FMs to be excluded
+                       FMs to be excluded will be removed from final result
+    '''
+    for i in search_key_values:
+      # i is tuple like ('Format', '-XML') so we want to check first char of second tuple item ('-XML')
+      if(i[1][0] == "-"):
+        excluded_search_key_values.append(i)
+    search_key_values = [search_item for search_item in search_key_values if search_item not in excluded_search_key_values]
+
     # checks if search keys are subset of an FM in our list of FMs
     fm_selection = []
     if(isIntersection):
@@ -385,36 +405,76 @@ while(isSearchRunning):
             fm_selection = [fm for fm in fm_selection if fm in temp_selection]
           else:
             fm_selection = temp_selection
+      if(excluded_search_key_values):
+        remove_fm_selection = []
+        for cat,val in excluded_search_key_values:
+          # remove "-" from value
+          not_val = val[1:]
+          if((cat == "Domain") or (cat == "Format")):
+            for fm in fm_selection:
+              remove_fm_selection = add_fm_to_list(fm_selection, cat, not_val)
+          elif((cat == "#Features") or (cat == "#CTC")):
+            if(">" in val):
+              remove_fm_selection = find_higher(fm_selection, cat, not_val)
+            elif("<" in val):
+              remove_fm_selection = find_lower(fm_selection, cat, not_val)
+            elif(("to" in not_val) or ("t" in not_val) or ("-" in not_val)):
+              remove_fm_selection = find_range(fm_selection, cat, not_val)
+            else:
+              remove_fm_selection = add_fm_to_list(fm_selection, cat, not_val)
+        fm_selection = [fm for fm in fm_selection if fm not in remove_fm_selection]
     elif(isUnion):
       pre_fm_selection = []
-      for cat,val in search_key_values:
-        temp_selection = []
-        if(cat == "Domain"):
-          temp_selection = add_fm_to_list(feature_models, cat, val)
-          pre_fm_selection = pre_fm_selection + temp_selection
-        elif (cat == "Format"):
-          temp_selection = add_fm_to_list(feature_models, cat, val)
-          pre_fm_selection = pre_fm_selection + temp_selection
-        elif(cat == "#Features"):
-          if(">" in val):
-            temp_selection = find_higher(feature_models, cat, val)
-          elif("<" in val):
-            temp_selection = find_lower(feature_models, cat, val)
-          elif(("to" in val) or ("t" in val) or ("-" in val)):
-            temp_selection = find_range(feature_models, cat, val)
-          else:
+      if(search_key_values):
+        for cat,val in search_key_values:
+          temp_selection = []
+          if(cat == "Domain"):
             temp_selection = add_fm_to_list(feature_models, cat, val)
-          pre_fm_selection = pre_fm_selection + temp_selection
-        elif(cat == "#CTC"):
-          if(">" in val):
-            temp_selection = find_higher(feature_models, cat, val)
-          elif("<" in val):
-            temp_selection = find_lower(feature_models, cat, val)
-          elif(("to" in val) or ("t" in val) or ("-" in val)):
-            temp_selection = find_range(feature_models, cat, val)
-          else:
+            pre_fm_selection = pre_fm_selection + temp_selection
+          elif (cat == "Format"):
             temp_selection = add_fm_to_list(feature_models, cat, val)
-          pre_fm_selection = pre_fm_selection + temp_selection
+            pre_fm_selection = pre_fm_selection + temp_selection
+          elif(cat == "#Features"):
+            if(">" in val):
+              temp_selection = find_higher(feature_models, cat, val)
+            elif("<" in val):
+              temp_selection = find_lower(feature_models, cat, val)
+            elif(("to" in val) or ("t" in val) or ("-" in val)):
+              temp_selection = find_range(feature_models, cat, val)
+            else:
+              temp_selection = add_fm_to_list(feature_models, cat, val)
+            pre_fm_selection = pre_fm_selection + temp_selection
+          elif(cat == "#CTC"):
+            if(">" in val):
+              temp_selection = find_higher(feature_models, cat, val)
+            elif("<" in val):
+              temp_selection = find_lower(feature_models, cat, val)
+            elif(("to" in val) or ("t" in val) or ("-" in val)):
+              temp_selection = find_range(feature_models, cat, val)
+            else:
+              temp_selection = add_fm_to_list(feature_models, cat, val)
+            pre_fm_selection = pre_fm_selection + temp_selection
+      if(excluded_search_key_values):
+        for cat,val in excluded_search_key_values:
+          # remove "-" from value
+          not_val = val[1:]
+          remove_fm_selection = []
+          fm_selection_without_excluded = []
+          if((cat == "Domain") or (cat == "Format")):
+            remove_fm_selection = add_fm_to_list(feature_models, cat, not_val)
+          elif((cat == "#Features") or (cat == "#CTC")):
+            if(">" in val):
+              remove_fm_selection = find_higher(feature_models, cat, not_val)
+            elif("<" in val):
+              remove_fm_selection = find_lower(feature_models, cat, not_val)
+            elif(("to" in not_val) or ("t" in not_val) or ("-" in not_val)):
+              remove_fm_selection = find_range(feature_models, cat, not_val)
+            else:
+              remove_fm_selection = add_fm_to_list(feature_models, cat, not_val)
+          # all FMs without those to be excluded
+          fm_selection_without_excluded = [fm for fm in feature_models if fm not in remove_fm_selection]
+          # unify the sets of FMs without those to be excluded
+          pre_fm_selection = pre_fm_selection + fm_selection_without_excluded
       # remove duplicates
       for fm in pre_fm_selection:
         if(fm not in fm_selection):
