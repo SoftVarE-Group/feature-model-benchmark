@@ -34,7 +34,7 @@ The search procedure is convenient and offers three choices:
 Special search operations (only for use in search values, not categories):
  1. Greater than: >"Number" (e.g., more than 500: >500)
  2. Less than:    <"Number" (e.g., less than 500: <500)
- 3. Range:        "Number"to"Number" (e.g., between 500 and 800: 500to800 or 500-800)
+ 3. Range:        "Number"to"Number" (e.g., between 500 and 800: 500to800 or 500-800 or 500..800)
  4. NOT:          -"Value" (e.g., not of domain systems software: -systems software)
 
 Saving found feature models in an extra directory:

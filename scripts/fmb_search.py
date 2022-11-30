@@ -47,6 +47,8 @@ allowed_input = list_meta_input + list_category_input + list_give_all_input
 list_separators_AND = [',', '&']
 list_separators_OR = [';', '|']
 
+list_range_operators = ['to', 't', '-', '..']
+
 help_text = '''
 Searchable categories: domain, format, features, CTC
 Save found feature models in subdirectory of "benchmarks": fmb
@@ -260,7 +262,7 @@ def find_range(fm_list, cat, val):
   """
   temp_fm_list = []
   # turns numbers separated by "to", "t" or "-" into list of numbers
-  values = val.replace("to", " ").replace("t", " ").replace("-", " ").split()
+  values = val.replace("to", " ").replace("t", " ").replace("-", " ").replace("..", " ").split()
   # cover cases with invalid input as range, i.e. not two numbers separated by "to", "t" or "-""
   if(all(val.isnumeric() for val in values)):
     values = [int(val) for val in values]
@@ -394,7 +396,7 @@ while(isSearchRunning):
             temp_selection = find_higher(feature_models, cat, val)
           elif("<" in val):
             temp_selection = find_lower(feature_models, cat, val)
-          elif(("to" in val) or ("t" in val) or ("-" in val)):
+          elif(any(range_op in val for range_op in list_range_operators)):
             temp_selection = find_range(feature_models, cat, val)
           else:
             temp_selection = add_fm_to_list(feature_models, cat, val)
@@ -407,7 +409,7 @@ while(isSearchRunning):
             temp_selection = find_higher(feature_models, cat, val)
           elif("<" in val):
             temp_selection = find_lower(feature_models, cat, val)
-          elif(("to" in val) or ("t" in val) or ("-" in val)):
+          elif(any(range_op in val for range_op in list_range_operators)):
             temp_selection = find_range(feature_models, cat, val)
           else:
             temp_selection = add_fm_to_list(feature_models, cat, val)
@@ -428,7 +430,7 @@ while(isSearchRunning):
               remove_fm_selection = find_higher(fm_selection, cat, not_val)
             elif("<" in val):
               remove_fm_selection = find_lower(fm_selection, cat, not_val)
-            elif(("to" in not_val) or ("t" in not_val) or ("-" in not_val)):
+            elif(any(range_op in val for range_op in list_range_operators)):
               remove_fm_selection = find_range(fm_selection, cat, not_val)
             else:
               remove_fm_selection = add_fm_to_list(fm_selection, cat, not_val)
@@ -449,7 +451,7 @@ while(isSearchRunning):
               temp_selection = find_higher(feature_models, cat, val)
             elif("<" in val):
               temp_selection = find_lower(feature_models, cat, val)
-            elif(("to" in val) or ("t" in val) or ("-" in val)):
+            elif(any(range_op in val for range_op in list_range_operators)):
               temp_selection = find_range(feature_models, cat, val)
             else:
               temp_selection = add_fm_to_list(feature_models, cat, val)
@@ -459,7 +461,7 @@ while(isSearchRunning):
               temp_selection = find_higher(feature_models, cat, val)
             elif("<" in val):
               temp_selection = find_lower(feature_models, cat, val)
-            elif(("to" in val) or ("t" in val) or ("-" in val)):
+            elif(any(range_op in val for range_op in list_range_operators)):
               temp_selection = find_range(feature_models, cat, val)
             else:
               temp_selection = add_fm_to_list(feature_models, cat, val)
@@ -477,7 +479,7 @@ while(isSearchRunning):
               remove_fm_selection = find_higher(feature_models, cat, not_val)
             elif("<" in val):
               remove_fm_selection = find_lower(feature_models, cat, not_val)
-            elif(("to" in not_val) or ("t" in not_val) or ("-" in not_val)):
+            elif(any(range_op in val for range_op in list_range_operators)):
               remove_fm_selection = find_range(feature_models, cat, not_val)
             else:
               remove_fm_selection = add_fm_to_list(feature_models, cat, not_val)
