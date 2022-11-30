@@ -65,7 +65,7 @@ Multiple categories:
 Search commands:
   1) Greater than: >
   2) Less than:    <
-  3) Range:        -, to
+  3) Range:        -, to, ..
   4) NOT:          - (first char of value in contrast to "Range")
 Feature Model information:
   1) Give available domains: show domains
