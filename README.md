@@ -48,6 +48,15 @@ Get all available feature models:
    1. fmb
    2. "Enter"
 
+Create a txt-file in configs-directory with FMs for experiments and additional info:
+ - without additional information: log, conf
+ - with additional information:    log(name;analysis;ARE;publication)
+   - you can add additional information to every configs-command
+   - always open and close parentheses
+   - separator inside is semicolon
+   - not all 4 categories have to be provided, but always 3 semicolons
+   - if a category contains more than 1 value, separate these values by comma
+
 Additional commands:
  - help
  - exit

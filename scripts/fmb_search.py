@@ -26,13 +26,16 @@ with open(path_to_csv, newline='') as csv_file:
     for row in csv_reader:
         feature_models.append(row)
 
-# Requesting meta information
+# Requesting meta information or data
 list_help_input = ['show help', 'show h', 'help']
 list_domains_info_input = ['show domains', 'show domain', 'show dom']
 list_formats_info_input = ['show formats', 'show format', 'show form', 'show for']
-list_exit_input = ['exit', 'quit', 'q']
+list_meta_info_input = list_help_input + list_domains_info_input + list_formats_info_input
 list_get_fms_input = ['create benchmark', 'create bench', 'create b', 'benchmark', 'bench', 'fmb']
-list_meta_input = list_help_input + list_domains_info_input + list_formats_info_input + list_exit_input + list_get_fms_input
+list_get_log_input = ['log', 'config', 'conf', 'create log', 'create config', 'create conf', 'create c']
+list_get_data_input = list_get_fms_input + list_get_log_input
+list_exit_input = ['exit', 'quit', 'q']
+list_meta_input = list_meta_info_input + list_get_data_input + list_exit_input
 # Category search input
 list_domain_input = ['domain', 'dom', 'dmoain', 'dmo']
 list_format_input = ['format', 'formats', 'form', 'for', 'fromat', 'fromats', 'from', 'fro']
@@ -70,6 +73,9 @@ Search commands:
 Feature Model information:
   1) Give available domains: show domains
   2) Give available formats: show formats
+Create config txt-file of FMs used for experiments in directory "configs":
+  - without additional information: log
+  - with additional information:    log(name;analysis;ARE;publication)
 Examples:
   1) FMs of domain systems software AND format DIMACS
      Solution 1.1:
@@ -145,6 +151,73 @@ def create_benchmark(fm_list):
             fm_file_path = os.path.join(fm_files_path, fm_file)
             shutil.copy2(fm_file_path, fmb_sub_directory)
 
+def create_config(search_term, fm_list):
+  """Create FM config from FMs found through search and experiment parameters if provided.
+
+  Creates new configs directory if none exists.
+  Additional information user wants to store in the config-file is 
+    - provided in parentheses right after the command (e.g., "log(...)")
+    - in the following 4 categories: 
+      - name of benchmark
+      - type of analysis
+      - automated reasoning engine used
+      - accompanying publication
+    - categories are separated by semicolon (e.g., "log(...;...;...;...)")
+      - no or partial information can be provided, in the latter case add nothing between respective semicolons
+      - if a category has multiple values, separate them by comma (e.g., 2 solvers: "log(...;...;Sat4j,Choco;...)")
+    - example with no type of analysis or publication but 2 solvers: log(first solver test;;sharpSAT,Z3;)
+  For each config, a new txt-file is created and stored in configs with
+    - additional information by user if provided
+    - all FMs used in benchmarks (info from fmb.csv-file)
+
+  Keyword argument:
+  search_term -- user input (String) with possibly additional experimental parameters in parentheses
+  fm_list     -- List of FMs (dictionaries) found by user
+  """
+  config_directory = os.path.join(os.path.dirname(__file__), '..', 'configs')
+  # configs-directory may not yet exist
+  if (not os.path.isdir(config_directory)):
+    os.makedirs(config_directory)
+
+  '''
+  # create a new subdirectory in configss for every config
+  config_sub_name = "config" + str(time.time())
+  config_sub_directory = os.path.join(config_directory, config_sub_name)
+  os.makedirs(config_sub_directory)
+  '''
+
+  print(search_term)
+
+  config_filename = "config_" + str(time.time()) + ".txt"
+  conf_filepath = os.path.join(config_directory, config_filename)
+
+  # recovering the user's additional info about their experiment
+  add_info = ""
+  if(("(" in search_term) and (")" in search_term)):
+    # 1. partition: part after "(", 2. partition: part bevore ")"
+    add_info = search_term.partition("(")[2].partition(")")[0]
+  
+  add_info_list = []
+  printable_info = []
+  if(add_info):
+    if(";" in add_info):
+      add_info_list = add_info.split(";")
+      # so user info will show up in file as something like "ARE Sat4J"
+      conf_keys = ["Name", "Analysis", "ARE", "Publication"]
+      printable_info = list(zip(conf_keys, add_info_list))
+
+  # first writing experiment info into file, then feature models
+  with open(conf_filepath, "a") as conf_file:
+    if(add_info_list):
+      for added_info in printable_info:
+        user_info = str(added_info) + "\n"
+        conf_file.write(user_info)
+    if(fm_list):
+      for fm in fm_list:
+        fm_entry = str(fm) + "\n"
+        conf_file.write(fm_entry)
+  conf_file.close()
+
 def give_meta_info(user_input):
   """Provide meta information to user.
 
@@ -168,6 +241,12 @@ def give_meta_info(user_input):
     global isBenchmarkWanted
     isBenchmarkWanted = True
     print('FM Benchmark will be created in a subdirectory of "benchmarks"')
+  elif(user_input in list_get_log_input):
+    global original_input
+    original_input = search_term
+    global isConfigWanted
+    isConfigWanted = True
+    print('FM Config will be created in a configs directory')
   elif(user_input in list_exit_input):
     print("Goodbye!")
 
@@ -261,9 +340,9 @@ def find_range(fm_list, cat, val):
   val     -- value to key, in String format 
   """
   temp_fm_list = []
-  # turns numbers separated by "to", "t" or "-" into list of numbers
+  # turns numbers separated by "to", "t", "-" or ".." into list of numbers
   values = val.replace("to", " ").replace("t", " ").replace("-", " ").replace("..", " ").split()
-  # cover cases with invalid input as range, i.e. not two numbers separated by "to", "t" or "-""
+  # cover cases with invalid input as range, i.e. not two numbers separated by "to", "t", "-" or ".."
   if(all(val.isnumeric() for val in values)):
     values = [int(val) for val in values]
     lower_bound = min(values)
@@ -293,6 +372,8 @@ isSearchRunning = True    # user has not received feature models yet
 isCategoryGiven = False   # user has to give category before value
 isValueGiven = False      # user has to give category and value to complete search
 isBenchmarkWanted = False # user wants the FMs from the found FM benchmark
+isConfigWanted = False    # user wants to save config about used FMs and experiment parameters
+original_input = ""
 category_list = []
 value_list = []
 excluded_search_key_values = []
@@ -305,9 +386,15 @@ while(isSearchRunning):
     break
   elif(search_term in list_meta_input):
     give_meta_info(search_term)
+  elif(any(search_term.startswith(pref) for pref in list_get_log_input)):
+    # case when user provides info about experiment, else it's in "list_meta_input"-elif above
+    original_input = search_term
+    isConfigWanted = True
   elif(search_term in list_give_all_input):
     for fm in feature_models:
       print(fm)
+    if(isConfigWanted):
+      create_config(original_input, feature_models)
     if(isBenchmarkWanted):
       create_benchmark(feature_models)
     break
@@ -496,6 +583,8 @@ while(isSearchRunning):
       for fm in fm_selection:
         print(fm)
 
+    if(isConfigWanted):
+      create_config(original_input, fm_selection)
     if(isBenchmarkWanted):
       create_benchmark(fm_selection)
 
