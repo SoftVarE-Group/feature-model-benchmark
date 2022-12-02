@@ -76,6 +76,15 @@ Feature Model information:
 Create config txt-file of FMs used for experiments in directory "configs":
   - without additional information: log
   - with additional information:    log(name;analysis;ARE;publication)
+  - not all information has to be provided but 3 semicolons are necessary
+Create FMB and config txt-file:
+  - Creates new subdirectory in configs with
+    - config txt-file
+    - subdirectory: FMB with FM files
+  - Command: fmb+log
+  - Command has to start with "fmb" followed by "+" and then a command to create configs
+    Possible are config-commands with and without additional information
+    e.g.; both "fmb+log" or "fmb+log(name;analysis;ARE;publication)
 Examples:
   1) FMs of domain systems software AND format DIMACS
      Solution 1.1:
@@ -108,7 +117,7 @@ Examples:
      business;-<70000
 '''
 
-def create_benchmark(fm_list):
+def create_benchmark(fm_list, fmb_dir_path = ""):
   """Create FM benchmark from FMs found through search.
 
   Creates new benchmark directory if none exists.
@@ -116,9 +125,14 @@ def create_benchmark(fm_list):
   copying them to the benchmark directory.
 
   Keyword argument:
-  fm_list -- List of FMs (dictionaries) found by user
+  fm_list      -- List of FMs (dictionaries) found by user
+  fmb_dir_path -- optional os.path in case directory is to be created somewhere else than "benchmarks"
   """
-  fmb_directory = os.path.join(os.path.dirname(__file__), '..', 'benchmarks')
+  fmb_directory = ""
+  if(not fmb_dir_path):
+    fmb_directory = os.path.join(os.path.dirname(__file__), '..', 'benchmarks')
+  else:
+    fmb_directory = fmb_dir_path
   fm_directory = os.path.join(os.path.dirname(__file__), '..', 'feature_models')
   # feature-model benchmark-directory may not yet exist
   if (not os.path.isdir(fmb_directory)):
@@ -179,17 +193,27 @@ def create_config(search_term, fm_list):
   if (not os.path.isdir(config_directory)):
     os.makedirs(config_directory)
 
-  '''
-  # create a new subdirectory in configss for every config
-  config_sub_name = "config" + str(time.time())
-  config_sub_directory = os.path.join(config_directory, config_sub_name)
-  os.makedirs(config_sub_directory)
-  '''
+  config_time = time.gmtime()
+  time_for_names = time.strftime("%Y%m%d_%H%M%S", config_time)
 
-  print(search_term)
+  isFmbWanted = False
+  if((search_term.startswith("fmb")) and ("+" in search_term)):
+    isFmbWanted = True
+    search_term = search_term.partition("+")[2]
 
-  config_filename = "config_" + str(time.time()) + ".txt"
+  if(isFmbWanted):
+    # create a new subdirectory in configs for every config
+    config_sub_name = "config" + time_for_names
+    config_sub_directory = os.path.join(config_directory, config_sub_name)
+    os.makedirs(config_sub_directory)
+    if(fm_list):
+      create_benchmark(fm_list, config_sub_directory)
+
+  # normally, config txt-file is created in configs-directory, but with FMB it's created in sub-directory of configs
+  config_filename = "config_" + time_for_names + ".txt"
   conf_filepath = os.path.join(config_directory, config_filename)
+  if(isFmbWanted):
+    conf_filepath = os.path.join(config_sub_directory, config_filename)
 
   # recovering the user's additional info about their experiment
   add_info = ""
@@ -210,8 +234,9 @@ def create_config(search_term, fm_list):
   with open(conf_filepath, "a") as conf_file:
     if(add_info_list):
       for added_info in printable_info:
-        user_info = str(added_info) + "\n"
+        user_info = str(added_info[0]) + ": " + str(added_info[1]) + "\n"
         conf_file.write(user_info)
+    conf_file.write("Time: " + time.strftime("%a, %d %b %Y %H:%M:%S +0000", config_time) + "\n")
     if(fm_list):
       for fm in fm_list:
         fm_entry = str(fm) + "\n"
@@ -382,11 +407,13 @@ while(isSearchRunning):
   isUnion = False         # semicolon-separated values
   search_list = []
   search_term = input("Enter: ")
+  isLogWithAddedInfoWanted = any(search_term.startswith(pref) for pref in list_get_log_input)
+  isFmbAndLogWanted = (search_term.startswith("fmb")) and ("+" in search_term)
   if(search_term in list_exit_input):
     break
   elif(search_term in list_meta_input):
     give_meta_info(search_term)
-  elif(any(search_term.startswith(pref) for pref in list_get_log_input)):
+  elif(isLogWithAddedInfoWanted or isFmbAndLogWanted):
     # case when user provides info about experiment, else it's in "list_meta_input"-elif above
     original_input = search_term
     isConfigWanted = True

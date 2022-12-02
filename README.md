@@ -57,6 +57,14 @@ Create a txt-file in configs-directory with FMs for experiments and additional i
    - not all 4 categories have to be provided, but always 3 semicolons
    - if a category contains more than 1 value, separate these values by comma
 
+Create Config and FMB:
+ - new subdirectory in configs-directory containing
+   - config txt-File
+   - subdirectory: FMB with files of found FMs
+ - commands:
+   - without additional information: fmb+log
+   - with additional information:    fmb+log(name;analysis;ARE;publication)
+
 Additional commands:
  - help
  - exit
