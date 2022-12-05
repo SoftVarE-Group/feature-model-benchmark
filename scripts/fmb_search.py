@@ -2,6 +2,7 @@ import csv
 import os
 import shutil
 import time
+import ast
 
 '''
 Always same directory structure and file names:
@@ -34,7 +35,7 @@ list_meta_info_input = list_help_input + list_domains_info_input + list_formats_
 list_get_fms_input = ['create benchmark', 'create bench', 'create b', 'benchmark', 'bench', 'fmb']
 list_get_log_input = ['log', 'config', 'conf', 'create log', 'create config', 'create conf', 'create c']
 list_get_data_input = list_get_fms_input + list_get_log_input
-list_exit_input = ['exit', 'quit', 'q']
+list_exit_input = ['exit', 'quit', 'x', 'q']
 list_meta_input = list_meta_info_input + list_get_data_input + list_exit_input
 # Category search input
 list_domain_input = ['domain', 'dom', 'dmoain', 'dmo']
@@ -45,7 +46,9 @@ list_ctc_input = ['ctc', 'ctcs', 'cross-tree constraints', 'cross tree constrain
 list_category_input = list_domain_input + list_format_input + list_features_input + list_ctc_input
 # User wants all available FMs input
 list_give_all_input = ['', 'all']
-allowed_input = list_meta_input + list_category_input + list_give_all_input
+# User wants to create benchmark from existing config-file (name to be entered after command)
+list_read_conf_input = ['read config', 'read conf', 'r config', 'r conf', 'rc']
+allowed_input = list_meta_input + list_category_input + list_give_all_input + list_read_conf_input
 
 list_separators_AND = [',', '&']
 list_separators_OR = [';', '|']
@@ -85,6 +88,12 @@ Create FMB and config txt-file:
   - Command has to start with "fmb" followed by "+" and then a command to create configs
     Possible are config-commands with and without additional information
     e.g.; both "fmb+log" or "fmb+log(name;analysis;ARE;publication)
+Create FMB from config txt-file:
+  - Command: rc config.txt (extension is optional, filename is enough)
+  - Config-file needs to be txt-file in configs-directory
+  - FMs have to be String-representations of dictionaries, starting with "{'"
+    no other entry than FMs should start with "{'" (open curly brace followed by single quotation mark)
+  - Benchmark is created in benchmarks-directory
 Examples:
   1) FMs of domain systems software AND format DIMACS
      Solution 1.1:
@@ -242,6 +251,53 @@ def create_config(search_term, fm_list):
         fm_entry = str(fm) + "\n"
         conf_file.write(fm_entry)
   conf_file.close()
+
+def create_benchmark_from_config(search_term):
+  """Create FM benchmark from FMs in a given config-file.
+
+  User input is "read config"-command and name of file ("txt"-file extension optional) in one line.
+  Config-filename is extracted and configs-directory is searched for config file.
+  Config-files contain FMs as String-representations of dictionaries,
+  all lines starting with "{'" (open curly brace followed by single quotation mark) are converted to dicts,
+  FM dictionaries are saved in FM-list and benchmark created in benchmarks-directory.
+
+  Keyword argument:
+  search_term -- String (complete search term)
+  """
+  conf_filename = ""
+  read_config_file_path = ""
+  fm_list = []
+
+  # first step: retrieve config-filename from user input
+  for pref in list_read_conf_input:
+    if(search_term.startswith(pref)):
+      conf_filename = search_term.removeprefix(pref).strip()
+  
+  # config-file has to be in configs-directory
+  config_directory = os.path.join(os.path.dirname(__file__), '..', 'configs')
+
+  # find config-file matching user input
+  if(conf_filename):
+    for root, dirs, files in os.walk(config_directory):
+      for conf_file in files:
+        # find filename with or without extenstion "txt"
+        if((conf_filename == conf_file) or (conf_filename + ".txt" == conf_file)):
+          read_config_file_path = os.path.join(root, conf_file)
+  else:
+    print("Config-file not found")
+
+  # find strings representing FMs in file (strings with "{'" as first characters)
+  if(read_config_file_path):
+    with open(read_config_file_path, "r") as read_conf:
+      for line in read_conf:
+        if(line.startswith("{'")):
+          fm = ast.literal_eval(line)
+          fm_list.append(fm)
+    read_conf.close()
+
+  # create benchmark in benchmarks-directory with feature models
+  if(fm_list):
+    create_benchmark(fm_list)
 
 def give_meta_info(user_input):
   """Provide meta information to user.
@@ -424,6 +480,9 @@ while(isSearchRunning):
       create_config(original_input, feature_models)
     if(isBenchmarkWanted):
       create_benchmark(feature_models)
+    break
+  elif(any(search_term.startswith(pref) for pref in list_read_conf_input)):
+    create_benchmark_from_config(search_term)
     break
   else:
     if(any(x in list_separators_AND for x in search_term)):

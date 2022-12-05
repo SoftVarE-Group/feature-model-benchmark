@@ -64,6 +64,16 @@ Create Config and FMB:
  - commands:
    - without additional information: fmb+log
    - with additional information:    fmb+log(name;analysis;ARE;publication)
+   
+Create FMB from existing Config:
+ - Write command + whitespace + filename (adding txt-file extension optional)
+ - Commands: read config, rc
+ - Example: rc testconfig.txt
+ - Config-file has to 
+   - be txt-file in configs-directory
+   - contain at least 1 FM as String representation of dict
+   - Only FMs should start with "{'" (open curly brace followed by single quotation mark)
+ - FMB is created in benchmarks-directory
 
 Additional commands:
  - help
