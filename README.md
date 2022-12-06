@@ -80,6 +80,8 @@ Additional commands:
  - exit
  - show domains
  - show formats
+ - show features
+ - show ctc
 
 Examples:
  1. Find all feature models of domain automotive: 

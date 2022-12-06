@@ -3,6 +3,7 @@ import os
 import shutil
 import time
 import ast
+import statistics
 
 '''
 Always same directory structure and file names:
@@ -31,7 +32,10 @@ with open(path_to_csv, newline='') as csv_file:
 list_help_input = ['show help', 'show h', 'help']
 list_domains_info_input = ['show domains', 'show domain', 'show dom']
 list_formats_info_input = ['show formats', 'show format', 'show form', 'show for']
-list_meta_info_input = list_help_input + list_domains_info_input + list_formats_info_input
+list_features_info_input = ['show features', 'show feat', 'show faetures', 'show faet']
+list_ctc_info_input = ['show ctc', 'show ctcs', 'show cct', 'show ccts']
+list_numbers_stats = list_features_info_input + list_ctc_info_input
+list_meta_info_input = list_help_input + list_domains_info_input + list_formats_info_input + list_numbers_stats 
 list_get_fms_input = ['create benchmark', 'create bench', 'create b', 'benchmark', 'bench', 'fmb']
 list_get_log_input = ['log', 'config', 'conf', 'create log', 'create config', 'create conf', 'create c']
 list_get_data_input = list_get_fms_input + list_get_log_input
@@ -72,10 +76,12 @@ Search commands:
   1) Greater than: >
   2) Less than:    <
   3) Range:        -, to, ..
-  4) NOT:          - (first char of value in contrast to "Range")
+  4) NOT:          - (first char of value, in contrast to "Range")
 Feature Model information:
-  1) Give available domains: show domains
-  2) Give available formats: show formats
+  1) Give available domains:    show domains
+  2) Give available formats:    show formats
+  3) Statistics about features: show features
+  4) Statistics about CTCs:     show ctc
 Create config txt-file of FMs used for experiments in directory "configs":
   - without additional information: log
   - with additional information:    log(name;analysis;ARE;publication)
@@ -284,7 +290,7 @@ def create_benchmark_from_config(search_term):
         if((conf_filename == conf_file) or (conf_filename + ".txt" == conf_file)):
           read_config_file_path = os.path.join(root, conf_file)
   else:
-    print("Config-file not found")
+    print("No config-filename given")
 
   # find strings representing FMs in file (strings with "{'" as first characters)
   if(read_config_file_path):
@@ -294,6 +300,8 @@ def create_benchmark_from_config(search_term):
           fm = ast.literal_eval(line)
           fm_list.append(fm)
     read_conf.close()
+  else:
+    print("No config-file found")
 
   # create benchmark in benchmarks-directory with feature models
   if(fm_list):
@@ -313,11 +321,17 @@ def give_meta_info(user_input):
   elif(user_input in list_domains_info_input):
     # To get a list of domains currently present in the feature model benchmark
     list_of_domains = get_category_sublist("Domain")
-    print(list_of_domains)
+    string_of_domains = ', '.join(list_of_domains)
+    print(string_of_domains)
   elif(user_input in list_formats_info_input):
     # To get a list of formats currently present in the feature model benchmark
     list_of_formats = get_category_sublist("Format")
-    print(list_of_formats)
+    string_of_formats = ', '.join(list_of_formats)
+    print(string_of_formats)
+  elif(user_input in list_features_info_input):
+    create_numbers_info(feature_models, "#Features")
+  elif(user_input in list_ctc_info_input):
+    create_numbers_info(feature_models, "#CTC")
   elif(user_input in list_get_fms_input):
     global isBenchmarkWanted
     isBenchmarkWanted = True
@@ -448,6 +462,85 @@ def split_with_separators(str_to_split, list_of_separators):
       str_to_list = str_to_split.split(sep)
   return str_to_list
 
+def create_numbers_info(fm_list, num_cat):
+  """Prints statistics for features or cross-tree constraints
+
+  Keyword argument:
+  fm_list -- list of FMs (dicts)
+  num_cat -- String (search category, either "#Features" or "#CTC") 
+  """
+  num_list = []
+
+  if(num_cat == "#Features"):
+    num_list = calc_stat(fm_list, num_cat)
+
+  if(num_cat == "#CTC"):
+    num_list = calc_stat(fm_list, num_cat)
+
+  num_string = beautify_list_of_tuples(num_list)
+  print(num_string)
+
+def calc_stat(fm_list, category):
+  """Calculate statistics for a list of FMs
+
+  Goes through list of FMs and calculates statistics for categories represented as numbers:
+    - lowest number
+    - highest number
+    - arithmetic mean
+    - median
+  (note that geometric mean is not easily possible as FMs can have 0 CTCs)
+  Returns list of tuples (name, number)
+
+  Keyword argument:
+  fm_list  -- list of FMs (dicts)
+  category -- String (search category, either "#Features" or "#CTC") 
+  """
+  lowest_num = 0
+  highest_num = 0
+  arith_mean = 0
+  median = 0
+
+  num_list = []
+
+  for fm in fm_list:
+    for key, value in fm.items():
+      if(key == category):
+        if(value.isnumeric()):
+          num_list.append(int(value))
+  if(num_list):
+    num_list.sort()
+    lowest_num = num_list[0]
+    highest_num = num_list[-1]
+    arith_mean = statistics.fmean(num_list)
+    median = statistics.median(num_list)
+
+  num_values = [lowest_num, highest_num, arith_mean, median]
+  num_names = ["Lowest", "Highest", "Arith. Mean", "Median"]
+
+  name_values = list(zip(num_names, num_values))
+
+  return name_values
+
+def beautify_list_of_tuples(tup_list):
+  """Turns list of 2-tuples into printable string
+
+  List of tuples like "[('test', 123)]" is turned into string "test: 123" and returned
+
+  Keyword argument:
+  tup_list -- list of 2-tuples
+  """
+  beautiful_list = []
+
+  for tup in tup_list:
+    name = tup[0]
+    val = tup[1]
+    entry = name + ": " + str(val)
+    beautiful_list.append(entry)
+
+  beautiful_string = ', '.join(beautiful_list)
+
+  return beautiful_string
+
 print('For help, enter "help", to quit enter "quit" or "exit"')
 isSearchRunning = True    # user has not received feature models yet
 isCategoryGiven = False   # user has to give category before value
@@ -514,10 +607,12 @@ while(isSearchRunning):
     else:
       if(any(x in list_domain_input for x in category_list)):
         list_of_domains = get_category_sublist("Domain")
-        print("List of domains: ", list_of_domains)
+        string_of_domains = ', '.join(list_of_domains)
+        print("List of domains:", string_of_domains)
       if(any(x in list_format_input for x in category_list)):
         list_of_formats = get_category_sublist("Format")
-        print("List of formats: ", list_of_formats)
+        string_of_formats = ', '.join(list_of_formats)
+        print("List of formats:", string_of_formats)
 
   if(isCategoryGiven and isValueGiven):
     # search terms become keys from feature model CSV-file
