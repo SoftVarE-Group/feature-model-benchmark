@@ -647,32 +647,13 @@ while(isSearchRunning):
     if(isIntersection):
       for cat,val in search_key_values:
         temp_selection = []
-        if(cat == "Domain"):
+        if((cat == "Domain") or (cat == "Format")):
           temp_selection = add_fm_to_list(feature_models, cat, val)
           if(fm_selection):
             fm_selection = [fm for fm in fm_selection if fm in temp_selection]
           else: 
             fm_selection = temp_selection
-        elif (cat == "Format"):
-          temp_selection = add_fm_to_list(feature_models, cat, val)
-          if(fm_selection):
-            fm_selection = [fm for fm in fm_selection if fm in temp_selection]
-          else:
-            fm_selection = temp_selection
-        elif(cat == "#Features"):
-          if(">" in val):
-            temp_selection = find_higher(feature_models, cat, val)
-          elif("<" in val):
-            temp_selection = find_lower(feature_models, cat, val)
-          elif(any(range_op in val for range_op in list_range_operators)):
-            temp_selection = find_range(feature_models, cat, val)
-          else:
-            temp_selection = add_fm_to_list(feature_models, cat, val)
-          if(fm_selection):
-            fm_selection = [fm for fm in fm_selection if fm in temp_selection]
-          else:
-            fm_selection = temp_selection
-        elif(cat == "#CTC"):
+        elif((cat == "#Features") or (cat == "#CTC")):
           if(">" in val):
             temp_selection = find_higher(feature_models, cat, val)
           elif("<" in val):
@@ -708,23 +689,10 @@ while(isSearchRunning):
       if(search_key_values):
         for cat,val in search_key_values:
           temp_selection = []
-          if(cat == "Domain"):
+          if((cat == "Domain") or (cat == "Format")):
             temp_selection = add_fm_to_list(feature_models, cat, val)
             pre_fm_selection = pre_fm_selection + temp_selection
-          elif (cat == "Format"):
-            temp_selection = add_fm_to_list(feature_models, cat, val)
-            pre_fm_selection = pre_fm_selection + temp_selection
-          elif(cat == "#Features"):
-            if(">" in val):
-              temp_selection = find_higher(feature_models, cat, val)
-            elif("<" in val):
-              temp_selection = find_lower(feature_models, cat, val)
-            elif(any(range_op in val for range_op in list_range_operators)):
-              temp_selection = find_range(feature_models, cat, val)
-            else:
-              temp_selection = add_fm_to_list(feature_models, cat, val)
-            pre_fm_selection = pre_fm_selection + temp_selection
-          elif(cat == "#CTC"):
+          elif((cat == "#Features") or (cat == "#CTC")):
             if(">" in val):
               temp_selection = find_higher(feature_models, cat, val)
             elif("<" in val):
