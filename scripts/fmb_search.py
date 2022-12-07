@@ -592,15 +592,15 @@ while(isSearchRunning):
   search_term = input("Enter: ")
   isLogWithAddedInfoWanted = any(search_term.startswith(pref) for pref in list_get_log_input)
   isFmbAndLogWanted = (search_term.startswith("fmb")) and ("+" in search_term)
-  if(search_term in list_exit_input):
+  if(search_term.lower() in list_exit_input):
     break
-  elif(search_term in list_meta_input):
-    give_meta_info(search_term)
+  elif(search_term.lower() in list_meta_input):
+    give_meta_info(search_term.lower())
   elif(isLogWithAddedInfoWanted or isFmbAndLogWanted):
     # case when user provides info about experiment, else it's in "list_meta_input"-elif above
     original_input = search_term
     isConfigWanted = True
-  elif(search_term in list_give_all_input):
+  elif(search_term.lower() in list_give_all_input):
     for fm in feature_models:
       print(fm)
     if(isConfigWanted):
