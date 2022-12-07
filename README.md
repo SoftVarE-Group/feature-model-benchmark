@@ -36,6 +36,9 @@ Special search operations (only for use in search values, not categories):
  2. Less than:    <"Number" (e.g., less than 500: <500)
  3. Range:        "Number"to"Number" (e.g., between 500 and 800: 500to800 or 500-800 or 500..800)
  4. NOT:          -"Value" (e.g., not of domain systems software: -systems software)
+ 
+ (large numbers can be more shortly written by substituting "000" or "000000" with "k" or "m",
+ for example, "50k" instead of "50000")
 
 Saving found feature models in an extra directory:
  - commands: fmb, create benchmark
@@ -95,6 +98,7 @@ Examples:
  4. Find feature models of domain business or with more than 70,000 features: 
 	- *Enter* domain;features *and then* business;>70000
 	- *Enter* domain|features *and then* business|>70000
+	- *Enter* domain|features *and then* business|>70k
  5. Find feature models of domain systems software but not format DIMACS
 	- *Enter* domain,features *and then* systems software,-DIMACS
  6. Find feature models of domain business or not format DIMACS

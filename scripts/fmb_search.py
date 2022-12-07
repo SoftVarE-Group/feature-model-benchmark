@@ -77,6 +77,7 @@ Search commands:
   2) Less than:    <
   3) Range:        -, to, ..
   4) NOT:          - (first char of value, in contrast to "Range")
+  (for numerical values, "k" and "m" can substitute "000" and "000000", e.g. "50k" instead of "50000")
 Feature Model information:
   1) Give available domains:    show domains
   2) Give available formats:    show formats
@@ -128,8 +129,12 @@ Examples:
      domain,format
      automotive,-XML
   7) FMs of domain business or not with less than 70000 features
-     domain;features
-     business;-<70000
+     Solution 7.1:
+      domain;features
+      business;-<70000
+    Solution 7.2:
+      domain;features
+      business;-<70k
 '''
 
 def create_benchmark(fm_list, fmb_dir_path = ""):
@@ -391,6 +396,7 @@ def find_higher(fm_list, cat, val):
   """
   temp_fm_list = []
   act_val = val.replace(">", "")
+  act_val = kilo_mil_to_zeroes(act_val)
   act_val = int(act_val)
   for fm in fm_list:
     if(fm[cat]):
@@ -413,6 +419,7 @@ def find_lower(fm_list, cat, val):
   """
   temp_fm_list = []
   act_val = val.replace("<", "")
+  act_val = kilo_mil_to_zeroes(act_val)
   act_val = int(act_val)
   for fm in fm_list:
     if(fm[cat]):
@@ -437,6 +444,8 @@ def find_range(fm_list, cat, val):
   temp_fm_list = []
   # turns numbers separated by "to", "t", "-" or ".." into list of numbers
   values = val.replace("to", " ").replace("t", " ").replace("-", " ").replace("..", " ").split()
+  # user can now add "k" in number to represent "000"
+  values = kilo_mil_to_zeroes(values)
   # cover cases with invalid input as range, i.e. not two numbers separated by "to", "t", "-" or ".."
   if(all(val.isnumeric() for val in values)):
     values = [int(val) for val in values]
@@ -448,6 +457,31 @@ def find_range(fm_list, cat, val):
         if(lower_bound <= fm_value <= upper_bound):
           temp_fm_list.append(fm)
     return temp_fm_list
+
+def kilo_mil_to_zeroes(numeric_string):
+  """Replaces "k" and "m" in strings with "000" and "000000" respectively
+
+  For the find_range, find_lower and find_higher functions.
+  Allows user to input, for example, 50k instead of all the zeroes.
+
+  Keyword argument:
+  numeric_string -- String or list of strings
+  """
+  # the case for the range function
+  if isinstance(numeric_string, list):
+    for index,val in enumerate(numeric_string):
+      if("k" in val):
+        numeric_string[index] = val.replace("k", "000")
+      if("m" in val):
+        numeric_string[index] = val.replace("m", "000000")
+    return numeric_string
+  # in case of find_lower or find_higher functions
+  else:
+    if("k" in numeric_string):
+      numeric_string = numeric_string.replace("k", "000")
+    if("m" in numeric_string):
+      numeric_string = numeric_string.replace("m", "000000")
+    return numeric_string
 
 def split_with_separators(str_to_split, list_of_separators):
   """List as input for str.split()
