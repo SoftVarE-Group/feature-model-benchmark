@@ -122,7 +122,8 @@ Usage with command-line arguments:
  - Example:
    1. python fmb_search.py --cat dom --val finance --cf log+fmb
    2. python fmb_search.py --cat dom,feat --val "finance,>700" --cf log+fmb
-   (note the quotation marks around "finance,>700" because of "<" to avoid errors)
+   
+   (note the quotation marks around "finance,>700" because of ">" to avoid errors)
 
 | Name | Domain | Format | #Features | #CTC | Source |
 | --- | --- | --- | --- | --- | --- |
