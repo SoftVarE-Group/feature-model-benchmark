@@ -59,6 +59,8 @@ list_separators_OR = [';', '|']
 
 list_range_operators = ['to', 't', '-', '..']
 
+list_stats_request = ['statistics', 'stats', 'stat', 's']
+
 help_text = '''
 Searchable categories: domain, format, features, CTC
 Save found feature models in subdirectory of "benchmarks": fmb
@@ -92,9 +94,11 @@ Create FMB and config txt-file:
     - config txt-file
     - subdirectory: FMB with FM files
   - Command: fmb+log
-  - Command has to start with "fmb" followed by "+" and then a command to create configs
-    Possible are config-commands with and without additional information
-    e.g.; both "fmb+log" or "fmb+log(name;analysis;ARE;publication)
+  - Possible are config-commands with and without additional information,
+    e.g., both "log+fmb" or "fmb+log(name;analysis;ARE;publication)
+Get statistics about features and CTCs of found FMs only:
+  - Add "+s" or "+stats" to category
+  - Example: dom+s
 Create FMB from config txt-file:
   - Command: rc config.txt (extension is optional, filename is enough)
   - Config-file needs to be txt-file in configs-directory
@@ -185,7 +189,7 @@ def create_benchmark(fm_list, fmb_dir_path = ""):
             fm_file_path = os.path.join(fm_files_path, fm_file)
             shutil.copy2(fm_file_path, fmb_sub_directory)
 
-def create_config(search_term, fm_list):
+def create_config(search_term, fm_list, isFmbWanted = False):
   """Create FM config from FMs found through search and experiment parameters if provided.
 
   Creates new configs directory if none exists.
@@ -207,6 +211,7 @@ def create_config(search_term, fm_list):
   Keyword argument:
   search_term -- user input (String) with possibly additional experimental parameters in parentheses
   fm_list     -- List of FMs (dictionaries) found by user
+  isFmbWanted -- Boolean to indicate whether FMB should be created or not
   """
   config_directory = os.path.join(os.path.dirname(__file__), '..', 'configs')
   # configs-directory may not yet exist
@@ -215,11 +220,6 @@ def create_config(search_term, fm_list):
 
   config_time = time.gmtime()
   time_for_names = time.strftime("%Y%m%d_%H%M%S", config_time)
-
-  isFmbWanted = False
-  if((search_term.startswith("fmb")) and ("+" in search_term)):
-    isFmbWanted = True
-    search_term = search_term.partition("+")[2]
 
   if(isFmbWanted):
     # create a new subdirectory in configs for every config
@@ -340,13 +340,13 @@ def give_meta_info(user_input):
   elif(user_input in list_get_fms_input):
     global isBenchmarkWanted
     isBenchmarkWanted = True
-    print('FM Benchmark will be created in a subdirectory of "benchmarks"')
+    print('FM benchmark will be created in a subdirectory of "benchmarks"')
   elif(user_input in list_get_log_input):
     global original_input
     original_input = search_term
     global isConfigWanted
     isConfigWanted = True
-    print('FM Config will be created in a configs directory')
+    print('FM config will be created in directory configs')
   elif(user_input in list_exit_input):
     print("Goodbye!")
 
@@ -512,7 +512,7 @@ def create_numbers_info(fm_list, num_cat):
     num_list = calc_stat(fm_list, num_cat)
 
   num_string = beautify_list_of_tuples(num_list)
-  print(num_string)
+  print(num_cat + ": " + num_string)
 
 def calc_stat(fm_list, category):
   """Calculate statistics for a list of FMs
@@ -576,11 +576,13 @@ def beautify_list_of_tuples(tup_list):
   return beautiful_string
 
 print('For help, enter "help", to quit enter "quit" or "exit"')
-isSearchRunning = True    # user has not received feature models yet
-isCategoryGiven = False   # user has to give category before value
-isValueGiven = False      # user has to give category and value to complete search
-isBenchmarkWanted = False # user wants the FMs from the found FM benchmark
-isConfigWanted = False    # user wants to save config about used FMs and experiment parameters
+isSearchRunning = True     # user has not received feature models yet
+isCategoryGiven = False    # user has to give category before value
+isValueGiven = False       # user has to give category and value to complete search
+isBenchmarkWanted = False  # user wants the FMs from the found FM benchmark
+isConfigWanted = False     # user wants to save config about used FMs and experiment parameters
+isConfAndFmbWanted = False # user wants config and benchmark
+isAddStatsWanted = False   # user wants statistics about FMs found through search 
 original_input = ""
 category_list = []
 value_list = []
@@ -590,16 +592,37 @@ while(isSearchRunning):
   isUnion = False         # semicolon-separated values
   search_list = []
   search_term = input("Enter: ")
-  isLogWithAddedInfoWanted = any(search_term.startswith(pref) for pref in list_get_log_input)
-  isFmbAndLogWanted = (search_term.startswith("fmb")) and ("+" in search_term)
+  # user wants to exit the program
   if(search_term.lower() in list_exit_input):
     break
+  # user wants log and FMB, or category and statistics: seearch term concatenated with "+"
+  elif("+" in search_term):
+    plus_split = search_term.split("+")
+    if(len(plus_split) == 2):
+      isFmbRequest = any(st in plus_split for st in list_get_fms_input)
+      isLogRequest = any(any(st.startswith(pref) for pref in list_get_log_input) for st in plus_split)
+      isStatsRequest = any(st in plus_split for st in list_stats_request)
+      if(isFmbRequest and isLogRequest):
+        original_input = search_term
+        isConfigWanted = True
+        isConfAndFmbWanted = True
+        print("FM config and benchmark will be created in subdirectory of configs")
+      if(isStatsRequest):
+        isAddStatsWanted = True
+        for st in plus_split:
+          if(st not in list_stats_request):
+            search_term = st
+    else:
+      print('Use the "+"-operator only with two operands')
+  # user wants information or creation of simple FMB or log
   elif(search_term.lower() in list_meta_input):
     give_meta_info(search_term.lower())
-  elif(isLogWithAddedInfoWanted or isFmbAndLogWanted):
-    # case when user provides info about experiment, else it's in "list_meta_input"-elif above
+  # user wants log and provides additional information ("log(...)")
+  elif(any(search_term.startswith(pref) for pref in list_get_log_input)):
     original_input = search_term
     isConfigWanted = True
+    print('FM config with additional info will be created in directory configs')
+  # user wants all available feature models
   elif(search_term.lower() in list_give_all_input):
     for fm in feature_models:
       print(fm)
@@ -608,10 +631,12 @@ while(isSearchRunning):
     if(isBenchmarkWanted):
       create_benchmark(feature_models)
     break
+  # user gives name of config-file and wants benchmark from it
   elif(any(search_term.startswith(pref) for pref in list_read_conf_input)):
     create_benchmark_from_config(search_term)
     break
-  else:
+
+  if(search_term):
     if(any(x in list_separators_AND for x in search_term)):
       isIntersection = True
       search_list = split_with_separators(search_term, list_separators_AND)
@@ -635,7 +660,7 @@ while(isSearchRunning):
             isCategoryGiven = True
             isNotCategories = False
             category_list = search_list
-    if(isNotCategories):
+    if(isNotCategories and isCategoryGiven): # value has to be provided by user after category
       isValueGiven = True
       value_list = search_list
     else:
@@ -766,8 +791,11 @@ while(isSearchRunning):
       for fm in fm_selection:
         print(fm)
 
+    if(isAddStatsWanted):
+      create_numbers_info(fm_selection, "#Features")
+      create_numbers_info(fm_selection, "#CTC")
     if(isConfigWanted):
-      create_config(original_input, fm_selection)
+      create_config(original_input, fm_selection, isConfAndFmbWanted)
     if(isBenchmarkWanted):
       create_benchmark(fm_selection)
 

@@ -85,6 +85,10 @@ Additional commands:
  - show formats
  - show features
  - show ctc
+ 
+Get statistics (show features, show ctc) for current FM search:
+ - Add "+s" to category
+ - Example: features+s
 
 Examples:
  1. Find all feature models of domain automotive: 
