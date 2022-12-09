@@ -107,6 +107,22 @@ Examples:
 	- *Enter* domain,features *and then* systems software,-DIMACS
  6. Find feature models of domain business or not format DIMACS
 	- *Enter* domain;format *and then* business;-DIMACS
+	
+Usage with command-line arguments:
+ - 3 types of arguments are optional (in the following order):
+   1. Categories:              --cat
+   2. Values: 				   --val
+   3. Config- and FMB options: --cf
+      - allows 3 different values:
+	    - log
+		- fmb
+		- fmb+log
+ - Categories only work with values
+ - Closes after execution
+ - Example:
+   1. python fmb_search.py --cat dom --val finance --cf log+fmb
+   2. python fmb_search.py --cat dom,feat --val "finance,>700" --cf log+fmb
+   (note the quotation marks around "finance,>700" because of "<" to avoid errors)
 
 | Name | Domain | Format | #Features | #CTC | Source |
 | --- | --- | --- | --- | --- | --- |

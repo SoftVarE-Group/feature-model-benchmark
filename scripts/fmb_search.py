@@ -4,6 +4,8 @@ import shutil
 import time
 import ast
 import statistics
+import argparse
+import sys
 
 '''
 Always same directory structure and file names:
@@ -60,6 +62,13 @@ list_separators_OR = [';', '|']
 list_range_operators = ['to', 't', '-', '..']
 
 list_stats_request = ['statistics', 'stats', 'stat', 's']
+
+# for command line arguments
+parser = argparse.ArgumentParser(description="Processes categories and values")
+parser.add_argument("--cat", help="Provide categories to search for.")
+parser.add_argument("--val", help="Provide the values for the respective categories.")
+parser.add_argument("--cf", help="Allowed input: log, fmb, fmb+log")
+args = parser.parse_args()
 
 help_text = '''
 Searchable categories: domain, format, features, CTC
@@ -575,6 +584,174 @@ def beautify_list_of_tuples(tup_list):
 
   return beautiful_string
 
+def create_fmb_keys(category_list):
+  """Maps category input to category name used in the program
+
+  Keyword argument:
+  category_list -- list of strings (user category input)
+  """
+  fmb_keys = []
+  for term in category_list:
+    if(term.lower() in list_domain_input):
+      fmb_keys.append("Domain")
+    elif(term.lower() in list_format_input):
+      fmb_keys.append("Format")
+    elif(term.lower() in list_features_input):
+      fmb_keys.append("#Features")
+    elif(term.lower() in list_ctc_input):
+      fmb_keys.append("#CTC")
+  return fmb_keys
+
+def create_intersection_fm_selection(fm_selection, search_key_values, excluded_search_key_values):
+  """Creates list of FMs when user asks for intersection (comma, ampersand)
+
+  Keyword argument:
+  fm_selection               -- empty list
+  search_key_values          -- list of domain-value-tuples
+  excluded_search_key_values -- list of "NOT"-values
+  """
+  for cat,val in search_key_values:
+    temp_selection = []
+    if((cat == "Domain") or (cat == "Format")):
+      temp_selection = add_fm_to_list(feature_models, cat, val)
+      if(fm_selection):
+        fm_selection = [fm for fm in fm_selection if fm in temp_selection]
+      else: 
+        fm_selection = temp_selection
+    elif((cat == "#Features") or (cat == "#CTC")):
+      if(">" in val):
+        temp_selection = find_higher(feature_models, cat, val)
+      elif("<" in val):
+        temp_selection = find_lower(feature_models, cat, val)
+      elif(any(range_op in val for range_op in list_range_operators)):
+        temp_selection = find_range(feature_models, cat, val)
+      else:
+        temp_selection = add_fm_to_list(feature_models, cat, val)
+      if(fm_selection):
+        fm_selection = [fm for fm in fm_selection if fm in temp_selection]
+      else:
+          fm_selection = temp_selection
+  if(excluded_search_key_values):
+    remove_fm_selection = []
+    for cat,val in excluded_search_key_values:
+      # remove "-" from value
+      not_val = val[1:]
+      if((cat == "Domain") or (cat == "Format")):
+        remove_fm_selection = add_fm_to_list(fm_selection, cat, not_val)
+      elif((cat == "#Features") or (cat == "#CTC")):
+        if(">" in val):
+          remove_fm_selection = find_higher(fm_selection, cat, not_val)
+        elif("<" in val):
+          remove_fm_selection = find_lower(fm_selection, cat, not_val)
+        elif(any(range_op in val for range_op in list_range_operators)):
+          remove_fm_selection = find_range(fm_selection, cat, not_val)
+        else:
+          remove_fm_selection = add_fm_to_list(fm_selection, cat, not_val)
+    fm_selection = [fm for fm in fm_selection if fm not in remove_fm_selection]
+  return fm_selection
+
+def create_union_fm_selection(fm_selection, search_key_values, excluded_search_key_values):
+  """Creates list of FMs when user asks for union (semicolon, pipe)
+
+  Keyword argument:
+  fm_selection               -- empty list
+  search_key_values          -- list of domain-value-tuples
+  excluded_search_key_values -- list of "NOT"-values
+  """
+  pre_fm_selection = []
+  if(search_key_values):
+    for cat,val in search_key_values:
+      temp_selection = []
+      if((cat == "Domain") or (cat == "Format")):
+        temp_selection = add_fm_to_list(feature_models, cat, val)
+        pre_fm_selection = pre_fm_selection + temp_selection
+      elif((cat == "#Features") or (cat == "#CTC")):
+        if(">" in val):
+          temp_selection = find_higher(feature_models, cat, val)
+        elif("<" in val):
+          temp_selection = find_lower(feature_models, cat, val)
+        elif(any(range_op in val for range_op in list_range_operators)):
+          temp_selection = find_range(feature_models, cat, val)
+        else:
+          temp_selection = add_fm_to_list(feature_models, cat, val)
+        pre_fm_selection = pre_fm_selection + temp_selection
+  if(excluded_search_key_values):
+    for cat,val in excluded_search_key_values:
+      # remove "-" from value
+      not_val = val[1:]
+      remove_fm_selection = []
+      fm_selection_without_excluded = []
+      if((cat == "Domain") or (cat == "Format")):
+        remove_fm_selection = add_fm_to_list(feature_models, cat, not_val)
+      elif((cat == "#Features") or (cat == "#CTC")):
+        if(">" in val):
+          remove_fm_selection = find_higher(feature_models, cat, not_val)
+        elif("<" in val):
+          remove_fm_selection = find_lower(feature_models, cat, not_val)
+        elif(any(range_op in val for range_op in list_range_operators)):
+          remove_fm_selection = find_range(feature_models, cat, not_val)
+        else:
+          remove_fm_selection = add_fm_to_list(feature_models, cat, not_val)
+      # all FMs without those to be excluded
+      fm_selection_without_excluded = [fm for fm in feature_models if fm not in remove_fm_selection]
+      # unify the sets of FMs without those to be excluded
+      pre_fm_selection = pre_fm_selection + fm_selection_without_excluded
+  # remove duplicates
+  for fm in pre_fm_selection:
+    if(fm not in fm_selection):
+      fm_selection.append(fm)
+  return fm_selection
+
+if(args.cat and args.val):
+  isIntersection = False
+  isUnion = False
+  category_list = []
+  value_list = []
+  excluded_search_key_values = []
+  isAndInCat = any(x in list_separators_AND for x in args.cat)
+  isAndInVal = any(x in list_separators_AND for x in args.val)
+  isOrInCat = any(x in list_separators_OR for x in args.cat)
+  isOrInVal = any(x in list_separators_OR for x in args.val)
+  if(isAndInCat and isAndInVal):
+    isIntersection = True
+    category_list = split_with_separators(args.cat, list_separators_AND)
+    value_list = split_with_separators(args.val, list_separators_AND)
+  elif(isOrInCat and isOrInVal):
+    isUnion = True
+    category_list = split_with_separators(args.cat, list_separators_OR)
+    value_list = split_with_separators(args.val, list_separators_OR)
+  else:
+    isUnion = True
+    category_list.append(args.cat)
+    value_list.append(args.val)
+
+  fmb_keys = create_fmb_keys(category_list)
+  search_key_values = list(zip(fmb_keys, value_list))
+
+  for i in search_key_values:
+    if(i[1][0] == "-"):
+      excluded_search_key_values.append(i)
+  search_key_values = [search_item for search_item in search_key_values if search_item not in excluded_search_key_values]
+
+  fm_selection = []
+  if(isIntersection):
+    fm_selection = create_intersection_fm_selection(fm_selection, search_key_values, excluded_search_key_values)
+  elif(isUnion):
+    fm_selection = create_union_fm_selection(fm_selection, search_key_values, excluded_search_key_values)
+
+  if(fm_selection):
+    for fm in fm_selection:
+      print(fm)
+
+  if(args.cf):
+    if(args.cf == "log"):
+      create_config(args.cf, fm_selection)
+    if(args.cf == "fmb"):
+      create_benchmark(fm_selection)
+    if((args.cf == "fmb+log" or args.cf == "log+fmb")):
+      create_config(args.cf, fm_selection, True)
+  sys.exit()
+
 print('For help, enter "help", to quit enter "quit" or "exit"')
 isSearchRunning = True     # user has not received feature models yet
 isCategoryGiven = False    # user has to give category before value
@@ -675,16 +852,7 @@ while(isSearchRunning):
 
   if(isCategoryGiven and isValueGiven):
     # search terms become keys from feature model CSV-file
-    fmb_keys = []
-    for term in category_list:
-      if(term.lower() in list_domain_input):
-        fmb_keys.append("Domain")
-      elif(term.lower() in list_format_input):
-        fmb_keys.append("Format")
-      elif(term.lower() in list_features_input):
-        fmb_keys.append("#Features")
-      elif(term.lower() in list_ctc_input):
-        fmb_keys.append("#CTC")
+    fmb_keys = create_fmb_keys(category_list)
 
     # make list of tuples of categories and values user searches for
     search_key_values = list(zip(fmb_keys, value_list))
@@ -704,88 +872,9 @@ while(isSearchRunning):
     # checks if search keys are subset of an FM in our list of FMs
     fm_selection = []
     if(isIntersection):
-      for cat,val in search_key_values:
-        temp_selection = []
-        if((cat == "Domain") or (cat == "Format")):
-          temp_selection = add_fm_to_list(feature_models, cat, val)
-          if(fm_selection):
-            fm_selection = [fm for fm in fm_selection if fm in temp_selection]
-          else: 
-            fm_selection = temp_selection
-        elif((cat == "#Features") or (cat == "#CTC")):
-          if(">" in val):
-            temp_selection = find_higher(feature_models, cat, val)
-          elif("<" in val):
-            temp_selection = find_lower(feature_models, cat, val)
-          elif(any(range_op in val for range_op in list_range_operators)):
-            temp_selection = find_range(feature_models, cat, val)
-          else:
-            temp_selection = add_fm_to_list(feature_models, cat, val)
-          if(fm_selection):
-            fm_selection = [fm for fm in fm_selection if fm in temp_selection]
-          else:
-            fm_selection = temp_selection
-      if(excluded_search_key_values):
-        remove_fm_selection = []
-        for cat,val in excluded_search_key_values:
-          # remove "-" from value
-          not_val = val[1:]
-          if((cat == "Domain") or (cat == "Format")):
-            for fm in fm_selection:
-              remove_fm_selection = add_fm_to_list(fm_selection, cat, not_val)
-          elif((cat == "#Features") or (cat == "#CTC")):
-            if(">" in val):
-              remove_fm_selection = find_higher(fm_selection, cat, not_val)
-            elif("<" in val):
-              remove_fm_selection = find_lower(fm_selection, cat, not_val)
-            elif(any(range_op in val for range_op in list_range_operators)):
-              remove_fm_selection = find_range(fm_selection, cat, not_val)
-            else:
-              remove_fm_selection = add_fm_to_list(fm_selection, cat, not_val)
-        fm_selection = [fm for fm in fm_selection if fm not in remove_fm_selection]
+      fm_selection = create_intersection_fm_selection(fm_selection, search_key_values, excluded_search_key_values)
     elif(isUnion):
-      pre_fm_selection = []
-      if(search_key_values):
-        for cat,val in search_key_values:
-          temp_selection = []
-          if((cat == "Domain") or (cat == "Format")):
-            temp_selection = add_fm_to_list(feature_models, cat, val)
-            pre_fm_selection = pre_fm_selection + temp_selection
-          elif((cat == "#Features") or (cat == "#CTC")):
-            if(">" in val):
-              temp_selection = find_higher(feature_models, cat, val)
-            elif("<" in val):
-              temp_selection = find_lower(feature_models, cat, val)
-            elif(any(range_op in val for range_op in list_range_operators)):
-              temp_selection = find_range(feature_models, cat, val)
-            else:
-              temp_selection = add_fm_to_list(feature_models, cat, val)
-            pre_fm_selection = pre_fm_selection + temp_selection
-      if(excluded_search_key_values):
-        for cat,val in excluded_search_key_values:
-          # remove "-" from value
-          not_val = val[1:]
-          remove_fm_selection = []
-          fm_selection_without_excluded = []
-          if((cat == "Domain") or (cat == "Format")):
-            remove_fm_selection = add_fm_to_list(feature_models, cat, not_val)
-          elif((cat == "#Features") or (cat == "#CTC")):
-            if(">" in val):
-              remove_fm_selection = find_higher(feature_models, cat, not_val)
-            elif("<" in val):
-              remove_fm_selection = find_lower(feature_models, cat, not_val)
-            elif(any(range_op in val for range_op in list_range_operators)):
-              remove_fm_selection = find_range(feature_models, cat, not_val)
-            else:
-              remove_fm_selection = add_fm_to_list(feature_models, cat, not_val)
-          # all FMs without those to be excluded
-          fm_selection_without_excluded = [fm for fm in feature_models if fm not in remove_fm_selection]
-          # unify the sets of FMs without those to be excluded
-          pre_fm_selection = pre_fm_selection + fm_selection_without_excluded
-      # remove duplicates
-      for fm in pre_fm_selection:
-        if(fm not in fm_selection):
-          fm_selection.append(fm)
+      fm_selection = create_union_fm_selection(fm_selection, search_key_values, excluded_search_key_values)
 
     if(fm_selection):
       for fm in fm_selection:
