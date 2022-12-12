@@ -89,6 +89,13 @@ Additional commands:
 Get statistics (show features, show ctc) for current FM search:
  - Add "+s" to category
  - Example: features+s
+ 
+Change output format:
+ - Write commad + whitespace + format
+ - Commads: translate, trans, t
+ - Currently supported formats: JSON, CSV
+ - Example: trans json
+ - Console output of FM data will be in new format instead of the default dictionary
 
 Examples:
  1. Find all feature models of domain automotive: 

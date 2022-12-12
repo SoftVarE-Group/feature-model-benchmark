@@ -6,6 +6,7 @@ import ast
 import statistics
 import argparse
 import sys
+import json
 
 '''
 Always same directory structure and file names:
@@ -54,7 +55,9 @@ list_category_input = list_domain_input + list_format_input + list_features_inpu
 list_give_all_input = ['', 'all']
 # User wants to create benchmark from existing config-file (name to be entered after command)
 list_read_conf_input = ['read config', 'read conf', 'r config', 'r conf', 'rc']
-allowed_input = list_meta_input + list_category_input + list_give_all_input + list_read_conf_input
+# to change how FM data output (default: dictionary), give format after command
+list_translation_input = ['translate', 'trans', 'tra', 't']
+allowed_input = list_meta_input + list_category_input + list_give_all_input + list_read_conf_input + list_translation_input
 
 list_separators_AND = [',', '&']
 list_separators_OR = [';', '|']
@@ -62,6 +65,8 @@ list_separators_OR = [';', '|']
 list_range_operators = ['to', 't', '-', '..']
 
 list_stats_request = ['statistics', 'stats', 'stat', 's']
+
+list_data_formats = ['yaml', 'json', 'csv', 'xml']
 
 # for command line arguments
 parser = argparse.ArgumentParser(description="Processes categories and values")
@@ -114,6 +119,11 @@ Create FMB from config txt-file:
   - FMs have to be String-representations of dictionaries, starting with "{'"
     no other entry than FMs should start with "{'" (open curly brace followed by single quotation mark)
   - Benchmark is created in benchmarks-directory
+Change output format:
+  - Currently available formats: JSON, CSV
+  - Command: trans format
+  - Example: trans json
+  - Changes console output from dictionary to the respective format
 Examples:
   1) FMs of domain systems software AND format DIMACS
      Solution 1.1:
@@ -149,6 +159,24 @@ Examples:
       domain;features
       business;-<70k
 '''
+
+def translate_fms(fm_list, format):
+  translated_fms = []
+  if(format == "yaml"):
+    pass
+  elif(format == "xml"):
+    pass
+  elif(format == "json"):
+    for fm in fm_list:
+      fm_json = json.dumps(fm)
+      translated_fms.append(fm_json)
+  elif(format == "csv"):
+    first_line = "Name,Domain,Format,#Features,#CTC,Source"
+    translated_fms.append(first_line)
+    for fm in fm_list:
+      fm_csv = ",".join(fm.values())
+      translated_fms.append(fm_csv)
+  return translated_fms
 
 def create_benchmark(fm_list, fmb_dir_path = ""):
   """Create FM benchmark from FMs found through search.
@@ -753,17 +781,20 @@ if(args.cat and args.val):
   sys.exit()
 
 print('For help, enter "help", to quit enter "quit" or "exit"')
-isSearchRunning = True     # user has not received feature models yet
-isCategoryGiven = False    # user has to give category before value
-isValueGiven = False       # user has to give category and value to complete search
-isBenchmarkWanted = False  # user wants the FMs from the found FM benchmark
-isConfigWanted = False     # user wants to save config about used FMs and experiment parameters
-isConfAndFmbWanted = False # user wants config and benchmark
-isAddStatsWanted = False   # user wants statistics about FMs found through search 
+isSearchRunning = True      # user has not received feature models yet
+isCategoryGiven = False     # user has to give category before value
+isValueGiven = False        # user has to give category and value to complete search
+isBenchmarkWanted = False   # user wants the FMs from the found FM benchmark
+isConfigWanted = False      # user wants to save config about used FMs and experiment parameters
+isConfAndFmbWanted = False  # user wants config and benchmark
+isAddStatsWanted = False    # user wants statistics about FMs found through search
+isTranslationWanted = False # user wants output in different format than dictionary
+translation_format = ""
 original_input = ""
 category_list = []
 value_list = []
 excluded_search_key_values = []
+translated_fm_selection = []
 while(isSearchRunning):
   isIntersection = False  # comma-separated values
   isUnion = False         # semicolon-separated values
@@ -812,6 +843,12 @@ while(isSearchRunning):
   elif(any(search_term.startswith(pref) for pref in list_read_conf_input)):
     create_benchmark_from_config(search_term)
     break
+  # user wants FM dictionaries translated into other output format like JSON, YAML or CSV
+  elif(any(search_term.lower().startswith(p) for p in list_translation_input) and any(search_term.lower().endswith(s) for s in list_data_formats)):
+    isTranslationWanted = True
+    # command is something like "trans yaml" so we want just "yaml" from "('trans', ' ', 'yaml')"
+    translation_format = search_term.partition(" ")[2].lower()
+    print("Output format will be", translation_format)
 
   if(search_term):
     if(any(x in list_separators_AND for x in search_term)):
@@ -877,8 +914,13 @@ while(isSearchRunning):
       fm_selection = create_union_fm_selection(fm_selection, search_key_values, excluded_search_key_values)
 
     if(fm_selection):
-      for fm in fm_selection:
-        print(fm)
+      if(isTranslationWanted):
+        translated_fm_selection = translate_fms(fm_selection, translation_format)
+        for fm in translated_fm_selection:
+          print(fm)
+      else:
+        for fm in fm_selection:
+          print(fm)
 
     if(isAddStatsWanted):
       create_numbers_info(fm_selection, "#Features")
