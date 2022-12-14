@@ -94,7 +94,7 @@ Translate FMs to different format:
  - FMs from 2 possible sources: Search, file in configs-directory
  - Write command + whitespace + (filename +) whitespace + format
  - Commands: translate, trans, t
- - Currently supported formats: CSV, JSON
+ - Currently supported formats: CSV, JSON, XML, YAML
  - Examples:
    1. trans json
    2. trans config_filename csv
@@ -102,6 +102,13 @@ Translate FMs to different format:
  - If a filename is given, the FMs are extracted from it and the program exits
  - Translated FMs are stored in a file of the specified format stored in configs-directory
  - Filename of file with translated FMs begins with "tlconfig" ("tl" for "translate")
+ - Note that both, XML and YAML, need extra libraries to work
+   - XML
+     - Library: dicttoxml
+	 - Install: pip install dicttoxml
+   - YAML
+     - Library: PyYAML
+	 - Install: pip install pyyaml
 
 Examples:
  1. Find all feature models of domain automotive: 

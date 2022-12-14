@@ -120,7 +120,14 @@ Create FMB from config txt-file:
     no other entry than FMs should start with "{'" (open curly brace followed by single quotation mark)
   - Benchmark is created in benchmarks-directory
 Translate FMs to different format:
-  - Currently available formats: CSV, JSON
+  - Currently available formats: CSV, JSON, XML, YAML
+  - XML and YAML need extra libraries to work:
+    - XML 
+      - Library: dicttoxml
+      - Install: pip install dicttoxml
+    - YAML
+      - Library: PyYAML
+      - Install: pip install pyyaml
   - FMs can be either from the current search or from a file with FM-dictionaries
   - A file as source of FMs must be stored in configs-directory
   - Command: trans (filename) format
@@ -199,9 +206,17 @@ def translate_fms(fm_source, fm_format):
   
   # 2. Translating the FMs
   if(fm_format.lower() == "yaml"):
+    import yaml
     extension = ".yaml"
+    for fm in fm_list:
+      fm_yaml = yaml.dump(fm)
+      translated_fms.append(fm_yaml)
   elif(fm_format.lower() == "xml"):
+    import dicttoxml
     extension = ".xml"
+    for fm in fm_list:
+      fm_xml = dicttoxml.dicttoxml(fm)
+      translated_fms.append(fm_xml)
   elif(fm_format.lower() == "json"):
     extension = ".json"
     for fm in fm_list:
