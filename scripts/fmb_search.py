@@ -119,11 +119,17 @@ Create FMB from config txt-file:
   - FMs have to be String-representations of dictionaries, starting with "{'"
     no other entry than FMs should start with "{'" (open curly brace followed by single quotation mark)
   - Benchmark is created in benchmarks-directory
-Change output format:
-  - Currently available formats: JSON, CSV
-  - Command: trans format
-  - Example: trans json
-  - Changes console output from dictionary to the respective format
+Translate FMs to different format:
+  - Currently available formats: CSV, JSON
+  - FMs can be either from the current search or from a file with FM-dictionaries
+  - A file as source of FMs must be stored in configs-directory
+  - Command: trans (filename) format
+    - Second parameter "filename" is optional
+    - Command "trans format" uses FMs from the current search
+    - Command "trans filename format" retrieves FMs from the file and exits the program
+  - Example 1: trans json
+  - Example 2: trans config_20221214_081414 csv
+  - Creates a file in configs-directory, name beginning with "tlconfig" ("tl" for "translated")
 Examples:
   1) FMs of domain systems software AND format DIMACS
      Solution 1.1:
@@ -160,23 +166,67 @@ Examples:
       business;-<70k
 '''
 
-def translate_fms(fm_list, format):
+def translate_fms(fm_source, fm_format):
+  """Translate FM-dicts into format specified in a new file
+
+  User wants to translate FM-dicts into a different format of which the following are
+  currently supported: CSV, JSON, YAML, XML
+  Source of FMs is either 
+   - List of FMs from regular FM search
+   - Config-file with FM-dicts
+  In case of the latter, the FMs are extracted from the file (must be in configs-directory)
+  FMs are then translated but note that YAML and XML need extra libraries
+   - YAML: PyYaml
+   - XML: dict2xml
+  The translated FMs are written to a new file, filename beginning with "tlconfig", in configs-directory
+
+  Keyword argument:
+  fm_source -- Either config-filename or list of FM-dicts
+  fm_format -- String (format to translate FMs into) 
+  """
+  fm_indicator = "{'"
+  extension = ""
+  fm_list = []
   translated_fms = []
-  if(format == "yaml"):
-    pass
-  elif(format == "xml"):
-    pass
-  elif(format == "json"):
+
+  # 1. Retrieving the FMs
+  # either list of FM-dictionaries is given
+  if(isinstance(fm_source, list)):
+    fm_list = fm_source
+  # or the name of a config-file to get FMs from
+  elif(isinstance(fm_source, str)):
+    fm_list = get_fms_from_config(fm_source, fm_indicator)
+  
+  # 2. Translating the FMs
+  if(fm_format.lower() == "yaml"):
+    extension = ".yaml"
+  elif(fm_format.lower() == "xml"):
+    extension = ".xml"
+  elif(fm_format.lower() == "json"):
+    extension = ".json"
     for fm in fm_list:
       fm_json = json.dumps(fm)
       translated_fms.append(fm_json)
-  elif(format == "csv"):
+  elif(fm_format.lower() == "csv"):
+    extension = ".csv"
     first_line = "Name,Domain,Format,#Features,#CTC,Source"
     translated_fms.append(first_line)
     for fm in fm_list:
       fm_csv = ",".join(fm.values())
       translated_fms.append(fm_csv)
-  return translated_fms
+
+  # 3. Creating the file with translated FMs
+  config_directory = os.path.join(os.path.dirname(__file__), '..', 'configs')
+  config_time = time.gmtime()
+  time_for_names = time.strftime("%Y%m%d_%H%M%S", config_time)
+  tlconfig_filename = "tlconfig_" + time_for_names + extension
+  tlconf_filepath = os.path.join(config_directory, tlconfig_filename)
+  with open(tlconf_filepath, "a") as conf_file:
+    if(translated_fms):
+      for fm in translated_fms:
+        tlfm_entry = str(fm) + "\n"
+        conf_file.write(tlfm_entry)
+  conf_file.close()
 
 def create_benchmark(fm_list, fmb_dir_path = ""):
   """Create FM benchmark from FMs found through search.
@@ -313,41 +363,59 @@ def create_benchmark_from_config(search_term):
   search_term -- String (complete search term)
   """
   conf_filename = ""
-  read_config_file_path = ""
   fm_list = []
 
   # first step: retrieve config-filename from user input
   for pref in list_read_conf_input:
     if(search_term.startswith(pref)):
       conf_filename = search_term.removeprefix(pref).strip()
-  
+
+  fm_list = get_fms_from_config(conf_filename, "{'")
+
+  # create benchmark in benchmarks-directory with feature models
+  if(fm_list):
+    create_benchmark(fm_list)
+
+def get_fms_from_config(conf_filename, fm_indicator):
+  """Retrieves FMs from a config file and returns them in a list
+
+  Searches the configs-directory for a file with the given conf_filename.
+  If it finds the file, it opens the file and 
+  searches for lines beginning with the fm_indicator-String,
+  retrieves the FMs, saves them in a list and returns the list of FMs.
+
+  Keyword argument:
+  conf_filename -- Name of the FM-containing config-file to search and read
+  fm_indicator  -- String indicating the start of a FM in the config-file to know what to read
+  """
+  # will be list of dicts (representing FMs)
+  fm_list = []
+  read_config_file_path = ""
   # config-file has to be in configs-directory
   config_directory = os.path.join(os.path.dirname(__file__), '..', 'configs')
 
   # find config-file matching user input
   if(conf_filename):
-    for root, dirs, files in os.walk(config_directory):
-      for conf_file in files:
-        # find filename with or without extenstion "txt"
-        if((conf_filename == conf_file) or (conf_filename + ".txt" == conf_file)):
-          read_config_file_path = os.path.join(root, conf_file)
+      for root, dirs, files in os.walk(config_directory):
+          for conf_file in files:
+              # find filename with or without extenstion "txt"
+              if((conf_filename == conf_file) or (conf_filename + ".txt" == conf_file)):
+                  read_config_file_path = os.path.join(root, conf_file)
   else:
-    print("No config-filename given")
+      print("No config-filename given")
 
   # find strings representing FMs in file (strings with "{'" as first characters)
   if(read_config_file_path):
-    with open(read_config_file_path, "r") as read_conf:
-      for line in read_conf:
-        if(line.startswith("{'")):
-          fm = ast.literal_eval(line)
-          fm_list.append(fm)
-    read_conf.close()
+      with open(read_config_file_path, "r") as read_conf:
+          for line in read_conf:
+              if(line.startswith(fm_indicator)):
+                  fm = ast.literal_eval(line)
+                  fm_list.append(fm)
+          read_conf.close()
   else:
-    print("No config-file found")
-
-  # create benchmark in benchmarks-directory with feature models
-  if(fm_list):
-    create_benchmark(fm_list)
+      print("No config-file found")
+  
+  return fm_list
 
 def give_meta_info(user_input):
   """Provide meta information to user.
@@ -790,6 +858,7 @@ isConfAndFmbWanted = False  # user wants config and benchmark
 isAddStatsWanted = False    # user wants statistics about FMs found through search
 isTranslationWanted = False # user wants output in different format than dictionary
 translation_format = ""
+translation_filename = ""
 original_input = ""
 category_list = []
 value_list = []
@@ -846,8 +915,14 @@ while(isSearchRunning):
   # user wants FM dictionaries translated into other output format like JSON, YAML or CSV
   elif(any(search_term.lower().startswith(p) for p in list_translation_input) and any(search_term.lower().endswith(s) for s in list_data_formats)):
     isTranslationWanted = True
-    # command is something like "trans yaml" so we want just "yaml" from "('trans', ' ', 'yaml')"
-    translation_format = search_term.partition(" ")[2].lower()
+    # command is something like "trans (filename) format" with filename being optional
+    # split into list, either ["trans", "format"] or ["trans", "filename", "format"]
+    com_list = search_term.split()
+    translation_format = com_list[-1]
+    if(len(com_list) == 3):
+      translation_filename = com_list[1]
+      translate_fms(translation_filename, translation_format)
+      break
     print("Output format will be", translation_format)
 
   if(search_term):
@@ -914,11 +989,6 @@ while(isSearchRunning):
       fm_selection = create_union_fm_selection(fm_selection, search_key_values, excluded_search_key_values)
 
     if(fm_selection):
-      if(isTranslationWanted):
-        translated_fm_selection = translate_fms(fm_selection, translation_format)
-        for fm in translated_fm_selection:
-          print(fm)
-      else:
         for fm in fm_selection:
           print(fm)
 
@@ -929,5 +999,7 @@ while(isSearchRunning):
       create_config(original_input, fm_selection, isConfAndFmbWanted)
     if(isBenchmarkWanted):
       create_benchmark(fm_selection)
+    if(isTranslationWanted):
+      translate_fms(fm_selection, translation_format)
 
     isSearchRunning = False

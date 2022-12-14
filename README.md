@@ -90,12 +90,18 @@ Get statistics (show features, show ctc) for current FM search:
  - Add "+s" to category
  - Example: features+s
  
-Change output format:
- - Write commad + whitespace + format
- - Commads: translate, trans, t
- - Currently supported formats: JSON, CSV
- - Example: trans json
- - Console output of FM data will be in new format instead of the default dictionary
+Translate FMs to different format:
+ - FMs from 2 possible sources: Search, file in configs-directory
+ - Write command + whitespace + (filename +) whitespace + format
+ - Commands: translate, trans, t
+ - Currently supported formats: CSV, JSON
+ - Examples:
+   1. trans json
+   2. trans config_filename csv
+ - If no filename is given, the FMs found during the current search are used
+ - If a filename is given, the FMs are extracted from it and the program exits
+ - Translated FMs are stored in a file of the specified format stored in configs-directory
+ - Filename of file with translated FMs begins with "tlconfig" ("tl" for "translate")
 
 Examples:
  1. Find all feature models of domain automotive: 
