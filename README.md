@@ -130,18 +130,20 @@ Examples:
 	
 Usage with command-line arguments:
  - 3 types of arguments are optional (in the following order):
-   1. Categories:              --cat
-   2. Values: 				   --val
-   3. Config- and FMB options: --cf
-      - allows 3 different values:
+   1. Categories:               --cat
+   2. Values: 				    --val
+   3. Config, FMB, translation: --cft
+      - allows 4 different values:
 	    - log
 		- fmb
 		- fmb+log
+		- format (from list of formats to translate into)
  - Categories only work with values
  - Closes after execution
  - Example:
-   1. python fmb_search.py --cat dom --val finance --cf log+fmb
-   2. python fmb_search.py --cat dom,feat --val "finance,>700" --cf log+fmb
+   1. python fmb_search.py --cat dom --val finance --cft log+fmb
+   2. python fmb_search.py --cat dom,feat --val "finance,>700" --cft log+fmb
+   3. python fmb_search.py --cat dom,feat --val "finance,>700" --cft json
    
    (note the quotation marks around "finance,>700" because of ">" to avoid errors)
 

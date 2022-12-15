@@ -72,7 +72,7 @@ list_data_formats = ['yaml', 'json', 'csv', 'xml']
 parser = argparse.ArgumentParser(description="Processes categories and values")
 parser.add_argument("--cat", help="Provide categories to search for.")
 parser.add_argument("--val", help="Provide the values for the respective categories.")
-parser.add_argument("--cf", help="Allowed input: log, fmb, fmb+log")
+parser.add_argument("--cft", help="Allowed input: log, fmb, fmb+log, one of the formats to translate into")
 args = parser.parse_args()
 
 help_text = '''
@@ -854,13 +854,15 @@ if(args.cat and args.val):
     for fm in fm_selection:
       print(fm)
 
-  if(args.cf):
-    if(args.cf == "log"):
-      create_config(args.cf, fm_selection)
-    if(args.cf == "fmb"):
+  if(args.cft):
+    if(args.cft == "log"):
+      create_config(args.cft, fm_selection)
+    if(args.cft == "fmb"):
       create_benchmark(fm_selection)
-    if((args.cf == "fmb+log" or args.cf == "log+fmb")):
-      create_config(args.cf, fm_selection, True)
+    if((args.cft == "fmb+log" or args.cft == "log+fmb")):
+      create_config(args.cft, fm_selection, True)
+    if(args.cft in list_data_formats):
+      translate_fms(fm_selection, args.cft)
   sys.exit()
 
 print('For help, enter "help", to quit enter "quit" or "exit"')
