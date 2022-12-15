@@ -1,82 +1,101 @@
 # Feature-Model Benchmark
 
-Our feature model benchmark provides large, real-world feature models for empirical evaluations.
+## Introduction
 
-Below you will find a table with all the currently available feature models and their sources of origin.
-With scripts/fmb_search.py you can search for feature models with specific characteristics in the categories
+Our feature-model benchmark (FMB) provides large, real-world feature models for empirical evaluations.
+All currently available feature models, including characteristis and their sources, are shown in a table at the bottom.
+We offer additional functionality to make use of the FMB more convenient. 
+Users can search for FMs, log their search results, create their own FMBs from search results or config-files, and translate their results into different formats.
+
+## Search Procedure
+
+Search is provided by a Python-script written in Python version 10.8. 
+The script relies almost exclusively on Python core-functionality. 
+The few cases it doesn't are specifically indicated and users only need to install the libraries if they want to use the advanced functionality.
+
+### Preliminary Steps
+
+The following functionality is provided by the `scripts/fmb_search.py` file, which can be started by
+ 1. Cloning the repository
+ 2. Navigating to the `scripts`-directory
+ 3. `python fmb_search.py`
+
+You can search for feature models with specific characteristics in the categories
  - Domain
  - Format
  - Features
  - CTC
 
-The search procedure is convenient and offers three choices:
+### Basic Search
+
+The basic principle behind search is that the user enters the search categories before entering the search values
+(e.g., first that they are searching for "domain", then they want domain "finance").
+
+The search procedure offers three choices:
  1. Search for a single category
  	1. Enter one category
 	2. Press Enter
 	3. Enter the search value
 	4. Press Enter
-	5. Resulting feature models are shown
- 2. Search for multiple categories looking for an intersection of sets of feature models (comma as logical AND)
+	5. Resulting FMs are shown
+ 2. Search for multiple categories looking for an intersection of sets of FMs (logical AND)
 	1. Enter at least two categories and separate them by comma or ampersand
 	2. Press Enter
 	3. Enter the search value, separating the search values by comma or ampersand
 	4. Press Enter
-	5. Resulting feature models fulfilling all criteria are shown
- 3. Search for multiple categories looking for a union of sets of feature models (semicolon as logical OR)
+	5. Resulting FMs fulfilling all criteria are shown
+ 3. Search for multiple categories looking for a union of sets of FMs (logical OR)
  	1. Enter at least two categories and separate them by semicolon or pipe
 	2. Press Enter
 	3. Enter the search value, separating the search values by semicolon or pipe
 	4. Press Enter
-	5. Resulting feature models fulfilling at least one of the criteria are shown
+	5. Resulting FMs fulfilling at least one of the criteria are shown
 
 (When entering categories domain or format, the available items are printed to the console)
 
-Special search operations (only for use in search values, not categories):
- 1. Greater than: >"Number" (e.g., more than 500: >500)
- 2. Less than:    <"Number" (e.g., less than 500: <500)
- 3. Range:        "Number"to"Number" (e.g., between 500 and 800: 500to800 or 500-800 or 500..800)
- 4. NOT:          -"Value" (e.g., not of domain systems software: -systems software)
+Basic-Search Examples:
+ 1. Find all FMs of domain automotive: 
+	- *Enter* domain *and then* automotive
+ 2. Find FMs with domain systems software and format FeatureIDE: 
+	- *Enter* domain,format *and then* systems software,FeatureIDE
+	- *Enter* domain&format *and then* systems software&FeatureIDE
+ 3. Find all FMs with either domain systems software or format FeatureIDE: 
+	- *Enter* domain;format *and then* systems software;FeatureIDE
+	- *Enter* domain|format *and then* systems software|FeatureIDE
+
+#### Special Search Operations
+
+The special search operators are only to be used in search values, not categories.
+The first 3 improve search for categories with numerical values (features, CTCs)
+ 1. Greater than: >"Number"
+ 2. Less than:    <"Number"
+ 3. Range:        "Number"to"Number", "Number"-"Number", "Number".."Number"
+ 4. NOT:          -"Value"
  
  (large numbers can be more shortly written by substituting "000" or "000000" with "k" or "m",
  for example, "50k" instead of "50000")
+ 
+Examples:
+ 1. Find all FMs of domain finance with more than 700 features: 
+	- *Enter* domain,features *and then* finance,>700
+ 2. Find all FMs of domain finance with fewer than 700 features: 
+	- *Enter* domain,features *and then* finance,<700
+ 3. Find FMs of domain business or with more than 70,000 features: 
+	- *Enter* domain;features *and then* business;>70000
+	- *Enter* domain|features *and then* business|>70k
+ 4. Find FMs of domain systems software or with 1000 to 2000 features: 
+	- *Enter* domain,features *and then* systems software,1000..2000	
+ 5. Find FMs of domain systems software but not in format DIMACS
+	- *Enter* domain,features *and then* systems software,-DIMACS
+ 6. Find FMs of domain business or not in format DIMACS
+	- *Enter* domain;format *and then* business;-DIMACS
 
-Saving found feature models in an extra directory:
- - commands: fmb, create benchmark
- - if it doesn't exist, a new directory "benchmarks" is created next to "scripts" etc.
- - Feature-model files of feature models found during search are copied in a subdirectory of benchmarks
-
-Get all available feature models:
- - commands: Nothing (i.e., just press "Enter"), all
- - To save all available feature models in a new subdirectory of benchmarks:
+Get all available FMs:
+ - Commands: Nothing (i.e., just press "Enter"), all
+ - To save all available FMs in a new subdirectory of benchmarks:
    1. fmb
    2. "Enter"
-
-Create a txt-file in configs-directory with FMs for experiments and additional info:
- - without additional information: log, conf
- - with additional information:    log(name;analysis;ARE;publication)
-   - you can add additional information to every configs-command
-   - always open and close parentheses
-   - separator inside is semicolon
-   - not all 4 categories have to be provided, but always 3 semicolons
-   - if a category contains more than 1 value, separate these values by comma
-
-Create Config and FMB:
- - new subdirectory in configs-directory containing
-   - config txt-File
-   - subdirectory: FMB with files of found FMs
- - commands:
-   - without additional information: fmb+log
-   - with additional information:    fmb+log(name;analysis;ARE;publication)
-   
-Create FMB from existing Config:
- - Write command + whitespace + filename (adding txt-file extension optional)
- - Commands: read config, rc
- - Example: rc testconfig.txt
- - Config-file has to 
-   - be txt-file in configs-directory
-   - contain at least 1 FM as String representation of dict
-   - Only FMs should start with "{'" (open curly brace followed by single quotation mark)
- - FMB is created in benchmarks-directory
+   3. "Enter"
 
 Additional commands:
  - help
@@ -90,16 +109,100 @@ Get statistics (show features, show ctc) for current FM search:
  - Add "+s" to category
  - Example: features+s
  
+#### Modification and Reading of Files and Directories
+
+Users can create their own FM-benchmarks, store information about FMBs and read config-files to reproduce the FMB decribed therein. 
+In addition, information about FMs can be translated into different formats.
+
+##### Create Own Feature-Model Benchmark
+
+You can create your own FMB from FMs found during search by storing the FM-files in a new directory.
+If the "benchmarks"-directory not yet exists, it's automatically created next to "scripts" etc.,
+and the FMs are stored in a subdirectory of it.
+
+Create your own FMB:
+ - Commands: fmb, create benchmark
+ - Example:
+   1. fmb
+   2. dom
+   3. finance
+
+##### Config-File to Log Info about FMB
+
+You can create a config-file to store information about experiments and the used FMBs.
+The config-file is stored in the "configs"-directory and offers 2 possibilities:
+ - Config with FMs only
+ - Config with additional information
+The FMs are stored as Strings of dictionaries in a txt-file.
+
+Create configs-file with information about experiments:
+ - Commands:
+   - Without additional information: log, conf
+   - With additional information:    log(name;analysis;ARE;publication)
+	 - You can add additional information to every configs-command
+	 - Always open and close parentheses
+	 - Separator inside is semicolon
+	 - Not all 4 categories have to be provided, but always 3 semicolons
+	 - If a category contains more than 1 value, separate these values by comma
+ - Examples:
+   - Without additional information:
+     1. log
+	 2. dom
+	 3. finance
+   - With additional information (providing no publication):
+     1. log(Test;Validation;Sat4J,Choco;)
+	 2. dom
+	 3. finance
+
+##### Config-File and FMB Together
+
+A config-file can be created together with a FMB by concatenatinfg the commands with "+".
+In this special case, a new subdirectory is created in "configs"-directory,
+storing the config-file and a subdirectory with the FMs.
+
+Create Config and FMB:
+ - New subdirectory in "configs"-directory containing
+   - Config txt-file
+   - Subdirectory: 
+     - FMB with files of found FMs
+ - Commands:
+   - Without additional information: fmb+log
+   - With additional information:    fmb+log(name;analysis;ARE;publication)
+   
+##### FMB from Config-File
+
+Users can create a FMB from a config-file under the following conditions:
+ - Config-file is in "configs"-directory
+ - FMs are stored as Strings of dictionaries (one per line)
+ - Only FMs are allowed to start with "{'" (open curly brace followed by single quotation mark)
+ 
+Create FMB from existing Config:
+ - Write: command + whitespace + filename (adding txt-file extension optional)
+ - Commands: read config, rc
+ - Example: rc testconfig.txt
+ - FMB is created in "benchmarks"-directory
+
+##### Translation of Feature-Model Information
+
+Information about FMs is provided as strings of dictionaries,
+but they can be translated to other formats.
+Note that for 2 formats, extra libraries are necessary.
+
 Translate FMs to different format:
- - FMs from 2 possible sources: Search, file in configs-directory
- - Write command + whitespace + (filename +) whitespace + format
+ - Write: command + whitespace + (filename +) whitespace + format
  - Commands: translate, trans, t
  - Currently supported formats: CSV, JSON, XML, YAML
- - Examples:
-   1. trans json
-   2. trans config_filename csv
- - If no filename is given, the FMs found during the current search are used
- - If a filename is given, the FMs are extracted from it and the program exits
+ - 2 FM sources:
+   1. FM search
+      - If no filename is given, the FMs found during the current search are used
+	  - Example:
+	    1. trans json
+		2. dom
+		3. finance
+   2. File in "configs"-directory
+      - If a filename is given, the FMs are extracted from it and the program exits
+	  - Example:
+	    1. trans config_filename csv
  - Translated FMs are stored in a file of the specified format stored in configs-directory
  - Filename of file with translated FMs begins with "tlconfig" ("tl" for "translate")
  - Note that both, XML and YAML, need extra libraries to work
@@ -110,23 +213,10 @@ Translate FMs to different format:
      - Library: PyYAML
 	 - Install: pip install pyyaml
 
-Examples:
- 1. Find all feature models of domain automotive: 
-	- *Enter* domain *and then* automotive
- 2. Find feature models with domain systems software and format FeatureIDE: 
-	- *Enter* domain,format *and then* systems software,FeatureIDE
-	- *Enter* domain&format *and then* systems software&FeatureIDE
- 3. Find all feature models of domain finance with more than 700 features: 
-	- *Enter* domain,features *and then* finance,>700
-	- *Enter* domain&features *and then* finance&>700
- 4. Find feature models of domain business or with more than 70,000 features: 
-	- *Enter* domain;features *and then* business;>70000
-	- *Enter* domain|features *and then* business|>70000
-	- *Enter* domain|features *and then* business|>70k
- 5. Find feature models of domain systems software but not format DIMACS
-	- *Enter* domain,features *and then* systems software,-DIMACS
- 6. Find feature models of domain business or not format DIMACS
-	- *Enter* domain;format *and then* business;-DIMACS
+## Command-Line Arguments
+
+The search can be executed via command-line arguments and supports a lot of the functionality of the full script.
+Users can search for FMs, create config-files, FMBs, config-files and FMBs, and translate FMs.
 	
 Usage with command-line arguments:
  - 3 types of arguments are optional (in the following order):
@@ -146,6 +236,8 @@ Usage with command-line arguments:
    3. python fmb_search.py --cat dom,feat --val "finance,>700" --cft json
    
    (note the quotation marks around "finance,>700" because of ">" to avoid errors)
+
+## Table of Feature Models
 
 | Name | Domain | Format | #Features | #CTC | Source |
 | --- | --- | --- | --- | --- | --- |
