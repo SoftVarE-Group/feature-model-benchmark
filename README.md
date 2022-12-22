@@ -290,6 +290,7 @@ Usage with command-line arguments:
 | ERP-System[^2]     | business   | SXFM | 1653 | 59044 | Pereira et al. 2016 https://doi.org/10.1145/2993236.2993249 |
 | E-Agribusiness[^2] | e-Commerce | SXFM | 2008 | 0 | Pereira et al. 2016 https://doi.org/10.1145/2993236.2993249 |
 | eCos-benchmark-clafer (116 feature models)[^3] | systems software | Clafer | 1230 || Passos et al. 2011 https://doi.org/10.1145/2019136.2019139 |
+| BusyBox-2007-2010 (3714 feature models)[^4] | systems software | DIMACS | 600 | 800 | Pett et al. 2021 https://doi.org/10.1145/3442391.3442410 |
 | 2.6.28.6 | systems software | DIMACS | 11400 | 229794 | Saber et al. 2018 https://doi.org/10.1016/j.infsof.2017.08.010 |
 | main_full[^2]  | deep learning | SXFM | 6867 | 9 | Ghamizi et al. 2019 https://doi.org/10.1145/3336294.3336306 |
 | main_light[^2] | deep learning | SXFM | 3296 | 76 | Ghamizi et al. 2019 https://doi.org/10.1145/3336294.3336306 |
@@ -325,3 +326,4 @@ Usage with command-line arguments:
 [^1]: Information about numbers of features and cross-tree cornstraints gathered from DIMACs file (p cnf).
 [^2]: Information about numbers of cross-tree constraints gathered from the SXFM files.
 [^3]: Features range from 1159 to 1312, number of features here is the median given in the paper. No information about the number of cross-tree constraints is provided.
+[^4]: Number of features taken from the paper, number of cross-tree constraints estimated based on samples from the feature models.
