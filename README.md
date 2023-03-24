@@ -252,7 +252,7 @@ Usage with command-line arguments:
 | busybox-1.18.0       | systems software | FeatureIDE | 854  | 123  | Knüppel et al. 2017 https://doi.org/10.1145/3106237.3106252 |
 | uClinux-base         | systems software | FeatureIDE | 380  | 3455 | Knüppel et al. 2017 https://doi.org/10.1145/3106237.3106252 |
 | uClibc               | systems software | FeatureIDE | 313  | 56   | Knüppel et al. 2017 https://doi.org/10.1145/3106237.3106252 |
-| Automotive1 | automotive | XML | 2513  | 2833 | Al-Hajjaji et al. 2019 https://doi.org/10.1007/s10270-016-0569-2 |
+| Automotive1 | automotive | XML | 2513  | 2833 | Kowal et al. https://doi.org/10.1145/3093335.2993248 |
 | FinancialServices01_2017-05-22 | finance | FeatureIDE | 557 | 1001 | Pett et al. 2019 https://doi.org/10.1145/3336294.3336322 |
 | FinancialServices01_2017-09-28 | finance | FeatureIDE | 704 | 1136 | Pett et al. 2019 https://doi.org/10.1145/3336294.3336322 |
 | FinancialServices01_2017-10-20 | finance | FeatureIDE | 712 | 1142 | Pett et al. 2019 https://doi.org/10.1145/3336294.3336322 |
@@ -263,6 +263,9 @@ Usage with command-line arguments:
 | FinancialServices01_2018-03-26 | finance | FeatureIDE | 771 | 1080 | Pett et al. 2019 https://doi.org/10.1145/3336294.3336322 |
 | FinancialServices01_2018-04-23 | finance | FeatureIDE | 774 | 1079 | Pett et al. 2019 https://doi.org/10.1145/3336294.3336322 |
 | FinancialServices01_2018-05-09 | finance | FeatureIDE | 771 | 1080 | Pett et al. 2019 https://doi.org/10.1145/3336294.3336322 |
+| Bank | finance | FeatureIDE | ??? | ??? | Al-Hajjaji et al. 2019 |
+| DecisionMaking | finance | FeatureIDE | ??? | ??? | Al-Hajjaji et al. 2019 |
+| Multicloud | cloud | SXFM | ??? | ??? | González-Rojas and Tafurth 2019 |
 | Linux-2013-11-06T06_39_45+01_00[^1] | systems software | DIMACS | 49247 | 477705 | Pett et al. 2019 https://doi.org/10.1145/3336294.3336322 |
 | Linux-2013-11-06T08_16_28+01_00[^1] | systems software | DIMACS | 49246 | 478610 | Pett et al. 2019 https://doi.org/10.1145/3336294.3336322 |
 | Linux-2013-11-17T11_31_48+01_00[^1] | systems software | DIMACS | 49255 | 478340 | Pett et al. 2019 https://doi.org/10.1145/3336294.3336322 |
@@ -287,11 +290,18 @@ Usage with command-line arguments:
 | Linux-2018-01-08T20_05_04+01_00[^1] | systems software | DIMACS | 77003 | 773998 | Pett et al. 2019 https://doi.org/10.1145/3336294.3336322 |
 | Linux-2018-01-12T00_14_28+01_00[^1] | systems software | DIMACS | 76453 | 766133 | Pett et al. 2019 https://doi.org/10.1145/3336294.3336322 |
 | Linux-2018-01-14T09_51_25-08_00[^1] | systems software | DIMACS | 76815 | 774148 | Pett et al. 2019 https://doi.org/10.1145/3336294.3336322 |
+| Linux-3.4.extract | systems software | DIMACS | 80258 | 388816 | Berger et al. 2019 https://doi.org/10.1145/3307630.3342403 |
+| uClibc-09.33.2 | systems software | DIMACS | 5474 | 20361 | Berger et al. 2019 https://doi.org/10.1145/3307630.3342403 |
 | ERP-System[^2]     | business   | SXFM | 1653 | 59044 | Pereira et al. 2016 https://doi.org/10.1145/2993236.2993249 |
 | E-Agribusiness[^2] | e-Commerce | SXFM | 2008 | 0 | Pereira et al. 2016 https://doi.org/10.1145/2993236.2993249 |
+| E-Shop | e-Commerce | SXFM | ? | ? | ? | Lau 2006 https://bac-lac.on.worldcat.org/oclc/263468168 |
+| E-Shopping | e-Commerce | FeatureIDE | 2019 | ? | ? | Al-Hajjaji et al. 2019 |
+| PC | hardware | FeatureIDE | ? | ? | ? | Sprey et al. 2020 |
+| Computer | hardware | FM? | ? | ? | ? | Karatas 2019 |
 | eCos-benchmark-clafer (116 feature models)[^3] | systems software | Clafer | 1230 || Passos et al. 2011 https://doi.org/10.1145/2019136.2019139 |
 | BusyBox-2007-2010 (3714 feature models)[^4] | systems software | DIMACS | 600 | 800 | Pett et al. 2021 https://doi.org/10.1145/3442391.3442410 |
 | 2.6.28.6 | systems software | DIMACS | 11400 | 229794 | Saber et al. 2018 https://doi.org/10.1016/j.infsof.2017.08.010 |
+| Coreboot | systems software | DIMACS | 12268 | 47091 | She et al. https://doi.org/10.1145/1985793.1985856 |
 | main_full[^2]  | deep learning | SXFM | 6867 | 9 | Ghamizi et al. 2019 https://doi.org/10.1145/3336294.3336306 |
 | main_light[^2] | deep learning | SXFM | 3296 | 76 | Ghamizi et al. 2019 https://doi.org/10.1145/3336294.3336306 |
 | 2.6.33.3-2var    | systems software | DIMACS | 62482 | 273799 | Oh et al. 2020 Scalable Uniform Sampling for Real-World Software Product Lines (TR https://apps.cs.utexas.edu/apps/tech-reports/192690) https://github.com/jeho-oh/Smarch |
