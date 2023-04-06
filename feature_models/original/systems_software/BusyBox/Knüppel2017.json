@@ -1,0 +1,14 @@
+{
+    "Name" : "BusyBox 1.18.0",
+    "Year" : 2017,
+    "OriginalFormat" : "FeatureIDE",
+    "Hierarchy" : true,
+    "History":  [],
+    "Publication" : "https://doi.org/10.1145/3106237.3106252",
+    "Source" : "https://github.com/AlexanderKnueppel/is-there-a-mismatch",
+    "Keywords" : [
+        "Automatic",
+        "KConfig"
+    ],
+    "ConversionTool" : ""
+}

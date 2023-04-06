@@ -1,0 +1,19 @@
+{
+    "Name" : "Linux",
+    "Year" : 2022,
+    "OriginalFormat" : "DIMACS",
+    "Hierarchy" : true,
+    "History":  [
+        "2_1",
+        "2_2",
+        "2_3",
+        "2_4"
+    ],
+    "Publication" : "https://doi.org/10.1007/s10270-021-00906-w",
+    "Source" : "https://gitlab.com/mnieke/guided-config-evo-eval-data",
+    "Keywords" : [
+        "KConfig",
+        "Automatic"
+    ],
+    "ConversionTool" : ""
+}

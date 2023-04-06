@@ -1,0 +1,14 @@
+{
+    "Name" : "Fiasco 17_10",
+    "Year" : 2020,
+    "OriginalFormat" : "DIMACS",
+    "Hierarchy" : false,
+    "History":  [],
+    "Publication" : "https://apps.cs.utexas.edu/apps/tech-reports/192690",
+    "Source" : "https://github.com/jeho-oh/Smarch",
+    "Keywords" : [
+        "Automatic",
+        "KConfig"
+    ],
+    "ConversionTool" : ""
+}

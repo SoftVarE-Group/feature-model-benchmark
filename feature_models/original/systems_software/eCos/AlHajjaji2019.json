@@ -1,0 +1,14 @@
+{
+    "Name" : "eCos 3.0 i386pc",
+    "Year" : 2019,
+    "OriginalFormat" : "FeatureIDE",
+    "Hierarchy" : true,
+    "History":  [],
+    "Publication" : "https://doi.org/10.1007/978-3-030-32047-8_26",
+    "Source" : "https://github.com/zahrakhoshmanesh/FIDUS",
+    "Keywords" : [
+        "eCos",
+        "CDL"
+    ],
+    "ConversionTool" : ""
+}

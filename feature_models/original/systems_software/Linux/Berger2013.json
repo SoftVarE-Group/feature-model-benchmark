@@ -1,0 +1,20 @@
+{
+    "Name" : "2.6.28.6-icse11",
+    "Year" : 2013,
+    "OriginalFormat" : "DIMACS",
+    "Hierarchy" : false,
+    "History":  [],
+    "Variants": [
+        "2.6.28.6-icse11",
+        "2.6.32-2var",
+        "2.6.33.3-2var"
+    ],
+    "Publication" : "https://doi.org/10.1109/TSE.2013.34",
+    "Source" : "https://gsd.uwaterloo.ca/industrial-variability-modeling",
+    "Keywords" : [
+        "Automatic",
+        "KConfig",
+        "LVAT"
+    ],
+    "ConversionTool" : ""
+}

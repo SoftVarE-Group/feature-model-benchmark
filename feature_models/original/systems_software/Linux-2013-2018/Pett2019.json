@@ -1,0 +1,14 @@
+{
+    "Name": "Linux",
+    "Year": 2019,
+    "OriginalFormat": "DIMACS",
+    "Hierarchy": true,
+    "History": [],
+    "Publication": "https://doi.org/10.1145/3336294.3336322",
+    "Source": "https://github.com/TUBS-ISF/SamplingStabiltyVaMoS21_data",
+    "Keywords": [
+        "KConfig",
+        "Automatic"
+    ],
+    "ConversionTool": ""
+}
