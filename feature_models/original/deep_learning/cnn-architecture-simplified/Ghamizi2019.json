@@ -1,0 +1,13 @@
+{
+    "Name" : "CNN-Architecture Simplified",
+    "Year" : 2019,
+    "OriginalFormat" : "FeatureIDE",
+    "Hierarchy" : true,
+    "History":  [],
+    "Publication" : "https://doi.org/10.1145/3336294.3336306",
+    "Source" : "https://github.com/yamizi/FeatureNet/",
+    "Keywords" : [
+        "Manual"
+    ],
+    "ConversionTool" : ""
+}

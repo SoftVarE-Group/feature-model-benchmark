@@ -1,0 +1,11 @@
+{
+    "Name" : "CVE",
+    "Year" : 2020,
+    "OriginalFormat" : "SXFM",
+    "Hierarchy" : true,
+    "History":  [],
+    "Publication" : "https://doi.org/10.1145/3382025.3414952",
+    "Source" : "https://github.com/IDEA-Research-Group/AMADEUS",
+    "Keywords" : [],
+    "ConversionTool" : ""
+}
