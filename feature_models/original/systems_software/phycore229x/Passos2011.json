@@ -1,0 +1,15 @@
+{
+    "Name": "phycore229x",
+    "Year": 2011,
+    "Hierarchy": true,
+    "OriginalFormat": "Clafer",
+    "Versions": [],
+    "Publication": "https://doi.org/10.1145/2019136.2019139",
+    "Source": "https://gsd.uwaterloo.ca/FOSD11",
+    "Variants": [],
+    "Keywords": [
+        "CDL",
+        "Automatic"
+    ],
+    "ConversionTool": ""
+}
