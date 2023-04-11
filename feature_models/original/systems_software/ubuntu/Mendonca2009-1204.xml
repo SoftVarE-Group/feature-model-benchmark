@@ -1,0 +1,404 @@
+<!-- This model was created online using SPLOT's Feature Model Editor (http://www.splot-research.org) on Sun, Apr 2, 2017 - 7:28 PM  -->
+<feature_model name="Ubuntu12_04">
+<meta>
+<data name="description">Accessibility options provided by Ubuntu1204 operating systems</data>
+<data name="creator">Austin Waffo</data>
+<data name="address"/>
+<data name="email">wkaustin1@gmail.com</data>
+<data name="phone"/>
+<data name="website"/>
+<data name="organization">ENSP of Yaounde I</data>
+<data name="department"/>
+<data name="date"/>
+<data name="reference"/>
+</meta>
+<feature_tree>
+:r Accessibility(_r0)
+	:o Appearance(_r1)
+		:m Look(_r2)
+			:m Background(_r3)
+				:g (_id_0) [1,1] 
+					: DelicatePetals1920x1280(_r4)
+					: MorningDew1920x1280(_r5)
+					: Ubuntu1920x1280(_r6)
+					: PrecisePagolin1920x1280(_r7)
+					: TwillightFrost1920x1280(_r8)
+					: EarlyBlossom1920x1280(_r9)
+			:m Theme(_r10)
+				:g (_id_1) [1,1] 
+					: HighContrastInverse(_r11)
+					: AmbianceDefault(_r12)
+					: Radiance(_r13)
+					: HighContrast(_r14)
+			:m LauncherIconSize(_r15)
+				:g (_id_2) [1,1] 
+					: _48(_r16)
+					: _64(_r17)
+					: _32(_r18)
+		:m Behavoir(_r19)
+			:o AutoHideTheLauncher(_r20)
+			:m RevealLocation(_r21)
+				:g (_id_3) [1,1] 
+					: Left(_r22)
+					: TopLeftCorner(_r23)
+			:m RevealSensitivity(_r24)
+				:g (_id_4) [1,1] 
+					: Low1(_r25)
+					: High1(_r26)
+	:o BrightnessAndLock(_r27)
+		:m Brightness(_r28)
+			:o DimSceenToSavePower(_r29)
+			:m TurnScreenOffWhenInactiveFor(_r30)
+				:g (_id_5) [1,1] 
+					: _1Hour(_r31)
+					: _10Minutes(_r32)
+					: _1Minute(_r33)
+					: _3Minutes(_r34)
+					: _2Minutes(_r35)
+					: Never(_r36)
+					: _30Minutes(_r37)
+		:o Lock(_r38)
+			:m LockScreenAfter(_r39)
+				:g (_id_6) [1,1] 
+					: _1Minute_(_r40)
+					: _5Minutes_(_r41)
+					: _2Minutes_(_r42)
+					: _30Minutes_(_r43)
+					: ScreenTurnsOff(_r44)
+					: _30Seconds(_r45)
+					: _10Minutes_(_r46)
+					: _1Hour_(_r47)
+		:o RequireMyPasswordWhenWakingFromSuspend(_r48)
+	:o Displays1(_r49)
+		:m Resolution(_r50)
+			:g (_id_7) [1,1] 
+				: Counterclockwise(_r51)
+				: _180Degres(_r52)
+				: Clockwise(_r53)
+				: Normal1(_r54)
+		:m Rotation(_r55)
+		:m LauncherPlacement(_r56)
+			:g (_id_8) [1,1] 
+				: AllDisplays(_r57)
+				: Laptop(_r58)
+		:o StickyEdges(_r59)
+	:o UniversalAccess1(_r60)
+		:o Seeing(_r61)
+			:m Displays2(_r62)
+				:m Contrast(_r63)
+					:g (_id_9) [1,1] 
+						: Low2(_r64)
+						: High2(_r65)
+						: HighInverse(_r66)
+						: Normal2(_r67)
+				:m TextSize(_r68)
+			:o ScreenReader(_r69)
+			:o BeepWhenCapsAndNumLockAreUsed(_r70)
+		:o Hearing(_r71)
+			:o VisualAlerts(_r72)
+			:m UseAVisualIndicationWhenAnAlertSoundOccurs(_r73)
+				:g (_id_10) [1,1] 
+					: FlashTheWindowTitle(_r74)
+					: FlashTheEntireScreen(_r75)
+		:o Typing1(_r76)
+			:o TypingAssistant(_r77)
+			:o TurnOnAccessibilityFeaturesFromTheKeyboard(_r78)
+			:o StickyKeys(_r79)
+			:o SlowKeys(_r80)
+				:m AcceptanceDelay1(_r81)
+					:g (_id_11) [1,1] 
+						: Short1(_r82)
+						: Long1(_r83)
+				:o BeepWhenAKeysIs(_r84)
+					:g (_id_12) [1,*] 
+						: Accepted(_r85)
+						: Pressed(_r86)
+						: Rejected(_r87)
+			:o BounceKeys(_r88)
+				:m AcceptanceDelay2(_r89)
+					:g (_id_13) [1,1] 
+						: Long2(_r90)
+						: Short2(_r91)
+				:o BeepWhenAKeyIsRejected(_r92)
+			:o KeyboardSetting(_r93)
+				:m Typing2(_r94)
+					:g (_id_14) [1,1] 
+						: CursorBlinking(_r95)
+							:o CursorBlinksInTextFields(_r96)
+							:o Speed2(_r97)
+								:g (_id_15) [1,1] 
+									: Fast2(_r98)
+									: Slow2(_r99)
+						: RepeatKeys(_r100)
+							:o KeyPressesRepeatWhenKeyIsHeldDown(_r101)
+							:m Delay1(_r102)
+								:g (_id_16) [1,1] 
+									: Short3(_r103)
+									: Long3(_r104)
+							:m Speed1(_r105)
+								:g (_id_17) [1,1] 
+									: Fast1(_r106)
+									: Slow1(_r107)
+					:o LayoutSettings(_r108)
+						:g (_id_18) [1,1] 
+							: AllowDifferentLayoutsForIndividualWindows(_r109)
+								:g (_id_19) [1,1] 
+									: NewWindowsUseTheDefaultLayout(_r110)
+									: NewWindowsUseThePreviousWindowsLayout(_r111)
+							: UseTheSameLayoutForAllWindows(_r112)
+				:o Shortcuts(_r113)
+					:o Launchers(_r114)
+						:g (_id_20) [1,1] 
+							: KeyToShowTheHUD(_r115)
+								:m Alt_T(_r116)
+							: LauncherTerminal(_r117)
+								:m Ctrl_Alt_T(_r118)
+					:o Navigation(_r119)
+						:m MoveWindowToWorkspace(_r120)
+							:m Disabled2(_r121)
+					:o Screenshots(_r122)
+						:g (_id_21) [1,1] 
+							: TakeAScreenshotOfAWindow(_r123)
+								:m Alt_Print(_r124)
+							: CopyAScreenshotToClipboard(_r125)
+								:m Ctrl_Print(_r126)
+							: TakeAScreenshot(_r127)
+								:m Print(_r128)
+							: TakeAScreenshotOfAnArea(_r129)
+								:m Shift_Print(_r130)
+							: CopyAScreenhotOfAnAreaToClipboard(_r131)
+								:m Shift_Ctrl_Print(_r132)
+							: CopyAScreenshotOfAwindowToClipboard(_r133)
+								:m Ctrl_Alt_Print(_r134)
+					:o SoundAndMedia(_r135)
+					:o System(_r136)
+						:g (_id_22) [1,1] 
+							: LogOut(_r137)
+								:m Ctr_Alt_Delete(_r138)
+							: LockScreen(_r139)
+								:m Ctrl_Alt_L(_r140)
+					:o Typing3(_r141)
+						:g (_id_23) [1,1] 
+							: AlternativeCharactersKey(_r142)
+								:m Disabled4(_r143)
+							: ComposeKey(_r144)
+								:m Disabled3(_r145)
+							: SwitchToPreviousSource(_r146)
+								:m Shift_Super_Space(_r147)
+							: SwitchToNextSource(_r148)
+								:m Super_Space(_r149)
+					:o UniversalAccess2(_r150)
+						:g (_id_24) [1,1] 
+							: DecreaseTextSize(_r151)
+								:m Disabled7(_r152)
+							: HighContrastOnOrOff(_r153)
+								:m Disabled8(_r154)
+							: IncreaseTextSize(_r155)
+								:m Disabled6(_r156)
+							: ZoomIn(_r157)
+								:m Alt_Super_plusEqual(_r158)
+							: ZoomOut(_r159)
+								:m Alt_Super_plusMinus(_r160)
+							: TurnOnScreenKeyboardOnOrOff(_r161)
+								:m Disabled5(_r162)
+							: TurnZoomOnOrOff(_r163)
+								:m Alt_Super_plus8(_r164)
+							: TurnScreenReaderOnOrOff(_r165)
+								:m Alt_Super_plusS(_r166)
+					:o Windows(_r167)
+						:g (_id_25) [1,1] 
+							: MoveWindow(_r168)
+								:m Alt_F7(_r169)
+							: ActivateTheWindowMenu(_r170)
+								:m Alt_Space(_r171)
+							: CloseWindow(_r172)
+								:m Alt_F4(_r173)
+							: MaximiseWindow(_r174)
+								:m Ctrl_Super_Up(_r175)
+							: ToggleFullscreenMode(_r176)
+								:m Disabled9(_r177)
+							: ResizeWindow(_r178)
+								:m Alt_F8(_r179)
+							: RaiseWindowAboveOtherWindows(_r180)
+								:m Disabled10(_r181)
+							: ToggleShadedState(_r182)
+								:m Ctrl_Alt_S(_r183)
+							: ToggleMaximisationState(_r184)
+								:m Ctrl_Alt_5(_r185)
+							: LowerWindowBelowOtherWindows(_r186)
+								:m Disabled11(_r187)
+							: MinimizeWindow(_r188)
+								:m Ctrl_Alt_0(_r189)
+							: RestoreWindow(_r190)
+								:m Ctrl_Super_Down(_r191)
+					:o CustomShortcuts(_r192)
+		:o PointingAndClicking(_r193)
+			:o MouseKeys(_r194)
+			:o SimulatedSecondaryCLick(_r195)
+				:o AcceptanceDelay3(_r196)
+					:g (_id_26) [1,1] 
+						: Short4(_r197)
+						: Long4(_r198)
+			:o HoverClick(_r199)
+				:o Delay2(_r200)
+					:g (_id_27) [1,1] 
+						: Long5(_r201)
+						: Short5(_r202)
+				:o MotionThreshold(_r203)
+					:g (_id_28) [1,1] 
+						: Large1(_r204)
+						: Small1(_r205)
+			:o MouseSettings(_r206)
+				:m Mouse(_r207)
+					:o General1(_r208)
+						:g (_id_29) [1,1] 
+							: RightHanded(_r209)
+							: LeftHanded(_r210)
+						:o ShowPositionOfPointerWhenTheControlKeyIsPressed(_r211)
+					:g (_id_30) [1,1] 
+						: PointerSpeed1(_r212)
+							:m Acceleration1(_r213)
+								:g (_id_31) [1,1] 
+									: Slow3(_r214)
+									: Fast3(_r215)
+							:m Sensitivity1(_r216)
+								:g (_id_32) [1,1] 
+									: Low3(_r217)
+									: High3(_r218)
+						: DragAndDrop(_r219)
+							:m Tbreshold(_r220)
+								:g (_id_33) [1,1] 
+									: Small2(_r221)
+									: Large2(_r222)
+						: DoubleClickTimeOut(_r223)
+							:m TimeOut(_r224)
+								:g (_id_34) [1,1] 
+									: Long6(_r225)
+									: Short6(_r226)
+				:m Touchpad(_r227)
+					:o General2(_r228)
+						:o DisableTouchpadWhileTyping(_r229)
+						:o EnableMouseClicksWithTouchpad(_r230)
+					:m Scrolling(_r231)
+						:g (_id_35) [1,1] 
+							: Disabled1(_r232)
+							: TwoFingerScrolling(_r233)
+							: AdgeScrolling(_r234)
+						:o EnableHorizontalScrolling(_r235)
+					:o PointerSpeed2(_r236)
+						:m Acceleration2(_r237)
+							:g (_id_36) [1,1] 
+								: Slow4(_r238)
+								: Fast4(_r239)
+						:m Sensitivity2(_r240)
+							:g (_id_37) [1,1] 
+								: High4(_r241)
+								: Low4(_r242)
+	:o Displays(_r243)
+	:o Low(_r244)
+	:o Normal(_r245)
+	:o High(_r246)
+	:o AcceptanceDelay(_r247)
+	:o Short(_r248)
+	:o Long(_r249)
+	:o Typing(_r250)
+	:o Speed(_r251)
+	:o Slow(_r252)
+	:o Fast(_r253)
+	:o UniversalAccess(_r254)
+	:o Disabled(_r255)
+	:o Delay(_r256)
+	:o Small(_r257)
+	:o Large(_r258)
+	:o General(_r259)
+	:o PointerSpeed(_r260)
+	:o Acceleration(_r261)
+	:o Sensitivity(_r262)
+</feature_tree>
+<constraints>
+C61:~_r238 or _r252
+C62:~_r26 or _r246
+C60:~_r259 or _r208 or _r228
+C59:~_r143 or _r255
+C58:~_r54 or _r245
+C57:~_r213 or _r261
+C56:~_r225 or _r249
+C55:~_r218 or _r246
+C54:~_r152 or _r255
+C53:~_r197 or _r248
+C52:~_r258 or _r204 or _r222
+C16:~_r244 or _r25 or _r64 or _r217 or _r242
+C17:~_r181 or _r255
+C18:~_r221 or _r257
+C19:~_r83 or _r249
+C50:~_r76 or _r250
+C10:~_r205 or _r257
+C51:~_r228 or _r259
+C11:~_r104 or _r249
+C12:~_r240 or _r262
+C13:~_r202 or _r248
+C14:~_r214 or _r252
+C15:~_r256 or _r102 or _r200
+C46:~_r82 or _r248
+C45:~_r60 or _r254
+C48:~_r121 or _r255
+C47:~_r91 or _r248
+C42:~_r64 or _r244
+C41:~_r241 or _r246
+C44:~_r217 or _r244
+C43:~_r261 or _r213 or _r237
+C49:~_r204 or _r258
+C8:~_r198 or _r249
+C7:~_r25 or _r244
+C9:~_r62 or _r243
+C4:~_r243 or _r49 or _r62
+C29:~_r105 or _r251
+C3:~_r99 or _r252
+C6:~_r141 or _r250
+C27:~_r102 or _r256
+C5:~_r249 or _r83 or _r90 or _r104 or _r198 or _r201 or _r225
+C28:~_r232 or _r255
+C25:~_r200 or _r256
+C80:~_r239 or _r253
+C26:~_r81 or _r247
+C23:~_r208 or _r259
+C24:~_r255 or _r232 or _r121 or _r145 or _r143 or _r162 or _r156 or _r152 or _r154 or _r177 or _r181 or _r187
+C83:~_r222 or _r258
+C21:~_r187 or _r255
+C22:~_r107 or _r252
+C81:~_r67 or _r245
+C82:~_r156 or _r255
+C20:~_r89 or _r247
+C77:~_r196 or _r247
+C76:~_r49 or _r243
+C75:~_r97 or _r251
+C74:~_r262 or _r216 or _r240
+C79:~_r252 or _r107 or _r99 or _r214 or _r238
+C78:~_r162 or _r255
+C0:~_r226 or _r248
+C1:~_r150 or _r254
+C2:~_r65 or _r246
+C38:~_r237 or _r261
+C39:~_r246 or _r26 or _r65 or _r218 or _r241
+C34:~_r94 or _r250
+C35:~_r177 or _r255
+C36:~_r251 or _r105 or _r97
+C37:~_r257 or _r205 or _r221
+C70:~_r103 or _r248
+C30:~_r247 or _r81 or _r89 or _r196
+C71:~_r245 or _r54 or _r67
+C31:~_r242 or _r244
+C72:~_r145 or _r255
+C32:~_r154 or _r255
+C73:~_r98 or _r253
+C33:~_r201 or _r249
+C64:~_r250 or _r76 or _r94 or _r141
+C63:~_r254 or _r60 or _r150
+C66:~_r216 or _r262
+C40:~_r106 or _r253
+C65:~_r248 or _r82 or _r91 or _r103 or _r197 or _r202 or _r226
+C68:~_r90 or _r249
+C67:~_r215 or _r253
+C69:~_r253 or _r106 or _r98 or _r215 or _r239
+</constraints>
+</feature_model>

@@ -1,0 +1,291 @@
+<!-- This model was created online using SPLOT's Feature Model Editor (http://www.splot-research.org) on Tue, Feb 21, 2017 - 7:36 PM  -->
+<feature_model name="android510">
+<meta>
+<data name="description">Feature model of Android5.1 operating system</data>
+<data name="creator">Austin Waffo</data>
+<data name="address">National School Advanced Engineering of Yaoundé</data>
+<data name="email">wkaustin1gmail.com</data>
+<data name="phone"/>
+<data name="website"/>
+<data name="organization">National School Of Advanced Engineering of Yaoundé</data>
+<data name="department"/>
+<data name="date"/>
+<data name="reference"/>
+</meta>
+<feature_tree>
+:r RootFeatures(_r0)
+	:m Accessibility(_r1)
+		:o Services(_r2)
+		:m System(_r3)
+			:o Captions(_r4)
+				:m StandardOptions(_r5)
+					:m Language1(_r6)
+						:g (_id_0) [1,1] 
+							: BahasaIndonesie(_r7)
+							: Hrvatski(_r8)
+							: Deutsch(_r9)
+							: Francais(_r10)
+							: Magyar(_r11)
+							: Nederlands(_r12)
+							: BahasaMelayu(_r13)
+							: EnglishUnitedKingdom1(_r14)
+							: Svenska(_r15)
+							: UnitedUnitedStates(_r16)
+							: Suomi(_r17)
+							: Italiano(_r18)
+							: Dansk(_r19)
+							: Filipino(_r20)
+					:m TextSize(_r21)
+						:g (_id_1) [1,1] 
+							: Small2(_r22)
+							: VeryLarge(_r23)
+							: Large2(_r24)
+							: VerySmall(_r25)
+							: Normal3(_r26)
+					:m CaptionStyle(_r27)
+						:g (_id_2) [1,1] 
+							: YellowOnBlue(_r28)
+							: BlackOnWhite(_r29)
+							: Custom(_r30)
+							: UseAppDefault(_r31)
+							: WhiteOnBlack(_r32)
+							: YellowOnBlack(_r33)
+			:o MagnificationGestures(_r34)
+			:o LargeText(_r35)
+			:o HighContrastText(_r36)
+			:o PowerBuutonEndsCall(_r37)
+			:o AutoRotateScreen(_r38)
+			:o AccessibilityShortcut(_r39)
+			:o TextToSpeechOutPut2(_r40)
+				:o PreferredEngine(_r41)
+					:m GoogleTextToSpeech(_r42)
+					:o Settings(_r43)
+						:m Language2(_r44)
+							:g (_id_3) [1,1] 
+								: FrenchFrance(_r45)
+								: EnglishUnitedStates(_r46)
+								: GermanGermany(_r47)
+								: EnglishUnitedKingdom2(_r48)
+								: ItalianItaly(_r49)
+								: SpanishSpain(_r50)
+						:m SettingForGoogleTextToSpeechEngine(_r51)
+							:o AutoUpdateVoice(_r52)
+							:o UseWiFiOnly(_r53)
+							:o AnonymousUsageReports(_r54)
+							:o Feedback(_r55)
+						:m InstallVoiceData(_r56)
+				:o General(_r57)
+					:m SpeechRate(_r58)
+						:g (_id_4) [1,1] 
+							: VeryFast(_r59)
+							: Slow(_r60)
+							: VeryRapid(_r61)
+							: Fastest(_r62)
+							: Fast1(_r63)
+							: Normal2(_r64)
+							: Rapid(_r65)
+							: Faster(_r66)
+					:m ListenToAnExample(_r67)
+					:m DefaultLanguageStatus(_r68)
+			:m TouchAndHoldDelay(_r69)
+				:g (_id_5) [1,1] 
+					: Long(_r70)
+					: Medium(_r71)
+					: Short(_r72)
+		:m Display1(_r73)
+			:o ColorInversion(_r74)
+				:m CorrectionMode(_r75)
+			:m ColorCorrection(_r76)
+				:g (_id_6) [1,1] 
+					: Tritanomaly_BlueYellow(_r77)
+					: Deuteronomaly_RedGreen(_r78)
+					: Protanomaly_RedGreen(_r79)
+	:m LanguageAndInput(_r80)
+		:m Language4(_r81)
+		:o SpeelChecker(_r82)
+			:m AndroidSpeelChecker_AOSP(_r83)
+		:m PersonalDictionary1(_r84)
+		:m KeyboardAndInputMethods(_r85)
+			:o BlockOffensiveWords(_r86)
+			:m CurrentKeyboard(_r87)
+			:m AndroidKeyboard_AOSP(_r88)
+				:m Language3(_r89)
+					:g (_id_7) [1,1] 
+						: Basque_Spain(_r90)
+						: UseSystemLanguage(_r91)
+						: EnglishUnitedKingdom3(_r92)
+						: Armenian_Armenia(_r93)
+						: Alphabet_QWERTY(_r94)
+				:m Preferences(_r95)
+					:o AutoCapitalization(_r96)
+					:o DoubleSpacePeriod(_r97)
+					:o VibrateOnKeypress(_r98)
+					:o SoundOnKeypress(_r99)
+					:o PopupOnKeypress(_r100)
+					:o VoiceInputKey(_r101)
+				:m AppearanceAndLayouts(_r102)
+					:m Theme(_r103)
+						:g (_id_8) [1,1] 
+							: MaterialLight(_r104)
+							: MaterialDark(_r105)
+							: HoloWhited(_r106)
+							: HoloBlue(_r107)
+					:m CustomInputStyles(_r108)
+						:g (_id_9) [1,1] 
+							: German_QWERTY(_r109)
+							: French_QWERTY(_r110)
+				:m TextCorrection(_r111)
+					:m PersonalDictionary2(_r112)
+					:m AddOnDictionaries(_r113)
+					:o BlockOffensiveWords2(_r114)
+					:m AutoCorrection(_r115)
+					:o ShowCorrectionSuggestions(_r116)
+					:o PersonalizedSuggestions(_r117)
+					:o SuggestContactNames(_r118)
+					:o NextWordSuggestions(_r119)
+				:m Advanced(_r120)
+					:m KeyPopupDismissDelay(_r121)
+						:g (_id_10) [1,1] 
+							: NoDelay(_r122)
+							: Default2(_r123)
+					:m KeypressVibrationDuration(_r124)
+						:g (_id_11) [1,1] 
+							: _0ms(_r125)
+							: _50ms(_r126)
+							: _100ms(_r127)
+					:m KeypressSoundVolume(_r128)
+			:m GoocgleVoiceTyping(_r129)
+				:m Language5(_r130)
+				:m OKGoogleDetection(_r131)
+				:m HandsFree(_r132)
+					:g (_id_12) [1,1] 
+						: ForBluetoothDevices(_r133)
+						: ForWiredHeadsets(_r134)
+				:m SpeechOutput(_r135)
+					:g (_id_13) [1,1] 
+						: On(_r136)
+						: HandsFreeOnly(_r137)
+				:o BlockOffensiveWords1(_r138)
+				:o BluetoothHeadset(_r139)
+		:m Speech(_r140)
+			:m VoiceInput(_r141)
+				:o EnchanceGoogleService(_r142)
+				:o BasicGooglrRecohnition(_r143)
+			:m TextToSpeechOutPut1(_r144)
+		:m MouseOrTouchpad(_r145)
+			:m PointerSpeed(_r146)
+				:g (_id_14) [1,1] 
+					: __0(_r147)
+					: __100(_r148)
+					: __50(_r149)
+	:o Language(_r150)
+	:o Display(_r151)
+	:o Display2(_r152)
+		:o Photos(_r153)
+		:m BrightnessLevel(_r154)
+			:g (_id_15) [1,1] 
+				: _0_(_r155)
+				: _50_(_r156)
+				: _100_(_r157)
+		:m Wallpaper(_r158)
+			:g (_id_16) [1,1] 
+				: Wallpapers(_r159)
+				: Photos2(_r160)
+				: FileExplorer(_r161)
+				: LiveWallpapers(_r162)
+					:g (_id_17) [1,1] 
+						: HoloSpiral(_r163)
+						: PhaseBean(_r164)
+						: Spectrum(_r165)
+						: Bubbles(_r166)
+						: BlackHole(_r167)
+						: MarbleLegend(_r168)
+				: Gallery(_r169)
+		:m Sleep(_r170)
+			:g (_id_18) [1,1] 
+				: _10Minutes(_r171)
+				: _30Seconds(_r172)
+				: _1Minute(_r173)
+				: _2Minutes(_r174)
+				: _30Minutes(_r175)
+				: _15Seconds(_r176)
+		:o Daydream(_r177)
+			:g (_id_19) [1,1] 
+				: Colors(_r178)
+				: PhotoTable(_r179)
+				: Photos1(_r180)
+				: Clock(_r181)
+				: PhotoFrame(_r182)
+		:m FontSize(_r183)
+			:g (_id_20) [1,1] 
+				: Huge(_r184)
+				: Large1(_r185)
+				: Small1(_r186)
+				: Normal1(_r187)
+		:m Font(_r188)
+			:g (_id_21) [1,1] 
+				: Online(_r189)
+					:g (_id_22) [1,1] 
+						: Redflow(_r190)
+						: Handwind(_r191)
+						: Xiaoming(_r192)
+						: Glamp(_r193)
+						: Glint(_r194)
+						: GioFont(_r195)
+						: Gardenia(_r196)
+						: Silicone(_r197)
+						: Monkey(_r198)
+				: Local(_r199)
+					:g (_id_23) [1,1] 
+						: Olive(_r200)
+						: Appaly(_r201)
+						: Default1(_r202)
+	:o PersonalDictionary(_r203)
+	:o TextToSpeechOutPut(_r204)
+	:o Large(_r205)
+	:o Normal(_r206)
+	:o Default(_r207)
+	:o Small(_r208)
+	:o EnglishUnitedKingdom(_r209)
+</feature_tree>
+<constraints>
+C8:~_r203 or _r84 or _r112
+C7:~_r153 or _r180 or _r160
+C9:~_r24 or _r205
+C4:~_r206 or _r187 or _r64 or _r26
+C29:~_r89 or _r150
+C3:~_r186 or _r208
+C6:~_r205 or _r185 or _r24
+C27:~_r151 or _r73 or _r152
+C5:~_r81 or _r150
+C28:~_r204 or _r144 or _r40
+C25:~_r92 or _r209
+C26:~_r185 or _r205
+C23:~_r14 or _r209
+C24:~_r40 or _r204
+C21:~_r112 or _r203
+C22:~_r86 or _r138 or _r114
+C20:~_r114 or _r86
+C0:~_r207 or _r202 or _r123
+C1:~_r130 or _r150
+C2:~_r138 or _r86
+C16:~_r48 or _r209
+C17:~_r208 or _r186 or _r22
+C18:~_r209 or _r14 or _r48 or _r92
+C19:~_r144 or _r204
+C34:~_r150 or _r6 or _r44 or _r89 or _r81 or _r130
+C35:~_r123 or _r207
+C10:~_r44 or _r150
+C36:~_r187 or _r206
+C11:~_r22 or _r208
+C37:~_r26 or _r206
+C12:~_r202 or _r207
+C30:~_r160 or _r153
+C13:~_r152 or _r151
+C31:~_r84 or _r203
+C14:~_r6 or _r150
+C32:~_r180 or _r153
+C15:~_r73 or _r151
+C33:~_r64 or _r206
+</constraints>
+</feature_model>

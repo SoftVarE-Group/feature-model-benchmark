@@ -1,0 +1,263 @@
+<!-- This model was created online using SPLOT's Feature Model Editor (http://www.splot-research.org) on Wed, Apr 5, 2017 - 3:25 PM  -->
+<feature_model name="DecISIonAL">
+<meta>
+<data name="description">EIS investment decisions</data>
+<data name="creator">Oscar Gonzalez-Rojas</data>
+<data name="address"/>
+<data name="email">o-gonza1@uniandes.edu.co </data>
+<data name="phone"/>
+<data name="website"/>
+<data name="organization">Universidad de los Andes</data>
+<data name="department"/>
+<data name="date"/>
+<data name="reference"/>
+</meta>
+<feature_tree>
+:r DecISIonAL(_r)
+	:m BusinessDrivers(_r_1)
+		:g (_r_1_13) [1,*] 
+			: Customerssegmentationanddebugging(_r_1_13_14)
+			: Planningandbudgetingformarketing(_r_1_13_15)
+			: Managedataandlists(_r_1_13_16)
+			: Marketinganalysis(_r_1_13_17)
+			: Campaignmanagement(_r_1_13_18)
+			: Easemarketingandadvertisingtasks(_r_1_13_19)
+			: Managepotentialcustomersandresponses(_r_1_13_20)
+			: Reducesalescycles(_r_1_13_21)
+			: Increasesalesclosurerates(_r_1_13_22)
+			: Improvecustomersretention(_r_1_13_23)
+			: Implementanewsalesprocess(_r_1_13_24)
+			: Managecustomerinformation(_r_1_13_25)
+			: Managecustomercases(_r_1_13_26)
+			: Recordcustomerserviceshistory(_r_1_13_27)
+			: Increasecustomersbase(_r_1_13_28)
+			: Implementacustomerserviceprocess(_r_1_13_29)
+			: Improveclientsknowledge(_r_1_13_30)
+			: Measurecustomerssatisfaction(_r_1_13_31)
+			: Humanresourcescontrol(_r_1_13_32)
+			: Newprocessesofhumanresources(_r_1_13_33)
+			: Recruitment(_r_1_13_34)
+			: Biodata-cv(_r_1_13_35)
+			: Positionsanalysis-organizationalstructure(_r_1_13_36)
+			: Payrollandsalariesmanagement(_r_1_13_37)
+			: Performanceevaluation(_r_1_13_38)
+			: Educationandtraning(_r_1_13_39)
+			: Personalwellness-Benefits(_r_1_13_40)
+			: Workplacehealth(_r_1_13_41)
+			: Processesandorganizationchartmodeling(_r_1_13_42)
+			: Newfinancialprocesses(_r_1_13_43)
+			: Implementcontrolsoverfinancialprocesses(_r_1_13_44)
+			: Accountmanagement(_r_1_13_45)
+			: Accountspayablemanagement-Providers(_r_1_13_46)
+			: Costingsystems(_r_1_13_47)
+			: Fixedassetsfinancialmanagement(_r_1_13_48)
+			: Bankreconciliationmanagement(_r_1_13_49)
+			: Investmentcontrol(_r_1_13_50)
+			: Financialobligationmanagement(_r_1_13_51)
+			: Treasury(_r_1_13_52)
+			: Analyticalaccounting(_r_1_13_53)
+			: Budgetcontrolandmanagement(_r_1_13_54)
+			: Capitalassetsmanagement(_r_1_13_55)
+			: Stockmanagement(_r_1_13_56)
+			: Storagemanagement(_r_1_13_57)
+			: Purchasemanagement(_r_1_13_58)
+			: Fixedassetsmanagement(_r_1_13_59)
+			: Foreigntrade(_r_1_13_60)
+			: Insurance(_r_1_13_61)
+			: Productionordersmanagement(_r_1_13_62)
+			: Purchaseordersmanagement(_r_1_13_63)
+			: Capacityneedsplanning(_r_1_13_64)
+			: Supplyplanning(_r_1_13_65)
+			: Decreasedeliverytime(_r_1_13_66)
+			: Integrationwithproviders(_r_1_13_67)
+			: Providersmanagement(_r_1_13_68)
+			: Rawmaterialsmanagement(_r_1_13_69)
+			: Winerymanagement(_r_1_13_70)
+			: Performcostscontrol(_r_1_13_71)
+			: Orderanddeliverymanagement(_r_1_13_72)
+			: Contactsmanagement(_r_1_13_73)
+			: Modifyworkflowprocesses(_r_1_13_74)
+			: Improveresponsiveness(_r_1_13_75)
+			: Budgetmanagement(_r_1_13_76)
+			: Createandconsolidatereports(_r_1_13_77)
+			: Searchtrendsandrelations(_r_1_13_78)
+			: Shareknowledge(_r_1_13_79)
+			: Organizeserviceresources(_r_1_13_80)
+			: Billingandreturn(_r_1_13_81)
+			: Portfolio(_r_1_13_82)
+			: Pricesanddiscountsmanagement(_r_1_13_83)
+			: Promotionsmanagement(_r_1_13_84)
+			: Feesandincentivesmanagement(_r_1_13_85)
+			: Commercialvisitmanagement(_r_1_13_86)
+			: Importsandexports(_r_1_13_87)
+			: Servicecontractmanagement(_r_1_13_88)
+			: Budgetcostsandtime(_r_1_13_89)
+			: Automatebilling(_r_1_13_90)
+			: Predictavailabilities(_r_1_13_91)
+			: Costsandconsumptionstracking(_r_1_13_92)
+			: Plancapacities(_r_1_13_93)
+			: Planandmanagewineryandstoragecapacity(_r_1_13_94)
+			: Merchandisetransportmanagement(_r_1_13_95)
+			: Internationaltransportlogistics(_r_1_13_96)
+			: Providerrelationsmanagement(_r_1_13_97)
+			: Demandmanagement(_r_1_13_98)
+	:m EnterpiseInformationSystemandCapabilities(_r_2)
+		:g (_r_2_99) [1,*] 
+			: CustomerRelationshipManagement-CRM(_r_2_99_100)
+				:g (_r_2_99_100_103) [1,*] 
+					: CRM-Marketingmodule(_r_2_99_100_103_104)
+					: CRM-Salesmodule(_r_2_99_100_103_105)
+					: CRM-Customersmodule(_r_2_99_100_103_106)
+			: EnterpriseResourcePlanning-ERP(_r_2_99_101)
+				:g (_r_2_99_101_108) [1,*] 
+					: ERP-Humanresourcesmodule(_r_2_99_101_108_109)
+					: ERP-Financialmodule(_r_2_99_101_108_110)
+					: ERP-Administrativemodule(_r_2_99_101_108_111)
+					: ERP-Productionmodule(_r_2_99_101_108_112)
+					: ERP-Clientsmodule(_r_2_99_101_108_113)
+					: ERP-Supplymanagementmodule(_r_2_99_101_108_114)
+					: ERP-BusinessIntelligencemodule(_r_2_99_101_108_115)
+					: ERP-Marketingandsalesmodule(_r_2_99_101_108_116)
+					: ERP-Providersmanagementmodule(_r_2_99_101_108_117)
+			: SupplyChainManagement-SCM(_r_2_99_102)
+	:m ImplementationType(_r_3)
+		:g (_r_3_118) [1,1] 
+			: Adquireanewsystem(_r_3_118_119)
+			: Adaptanexistingsystem(_r_3_118_120)
+	:m Outsourcing(_r_4)
+		:g (_r_4_121) [1,1] 
+			: Outsourcecustomization(_r_4_121_122)
+			: Outsourcemostofthedevelopmentandintegration(_r_4_121_123)
+			: Outsourcethemanagementofacompletebusinessprocess(_r_4_121_124)
+			: Outsourcetheimplementationprojectmanagement(_r_4_121_125)
+	:m SolutionType(_r_5)
+		:g (_r_5_126) [1,1] 
+			: Commercial(_r_5_126_127)
+			: OpenSource(_r_5_126_128)
+	:m DeploymentModel(_r_6)
+		:g (_r_6_129) [1,1] 
+			: Onpremise(_r_6_129_130)
+			: SofwareasaService-SaaS(_r_6_129_131)
+			: InfrastructureasaService-IaaS(_r_6_129_132)
+	:m ImplementationModel(_r_7)
+		:g (_r_7_133) [1,1] 
+			: BigBang(_r_7_133_134)
+			: Implementationbyphases(_r_7_133_135)
+			: Implementationbyprocesses(_r_7_133_136)
+	:m MaintenanceModel(_r_8)
+		:g (_r_8_137) [1,1] 
+			: Providercontract(_r_8_137_138)
+			: Specializedprovidercontract(_r_8_137_139)
+			: Internalmaintenance(_r_8_137_140)
+			: Nomaintenance(_r_8_137_141)
+	:m EvaluationApproach(_r_9)
+		:g (_r_9_142) [1,1] 
+			: RFP-Requestforproposal(_r_9_142_143)
+			: Externalconsultancy(_r_9_142_144)
+			: Internalevaluation(_r_9_142_145)
+	:m TargetPlatform(_r_10)
+		:g (_r_10_146) [1,1] 
+			: Systemsupportedonanexistingplatform(_r_10_146_147)
+			: Systemsupportedonanewplatform(_r_10_146_148)
+	:m IntegrationApproach(_r_11)
+		:g (_r_11_149) [1,1] 
+			: Middleware(_r_11_149_150)
+			: Owndevelopment(_r_11_149_151)
+			: Byprovider(_r_11_149_152)
+	:m FinancingModel(_r_12)
+		:g (_r_12_153) [1,1] 
+			: Ownresources(_r_12_153_154)
+			: Credit(_r_12_153_155)
+			: Leasing(_r_12_153_156)
+</feature_tree>
+<constraints>
+constraint_86:~_r_1_13_86 or _r_2_99_101_108_116
+constraint_87:~_r_1_13_87 or _r_2_99_101_108_116
+constraint_88:~_r_1_13_88 or _r_2_99_101_108_116
+constraint_89:~_r_1_13_89 or _r_2_99_101_108_117
+constraint_43:~_r_1_13_48 or _r_2_99_101_108_110
+constraint_45:~_r_1_13_50 or _r_2_99_101_108_110
+constraint_44:~_r_1_13_49 or _r_2_99_101_108_110
+constraint_47:~_r_1_13_52 or _r_2_99_101_108_110
+constraint_46:~_r_1_13_51 or _r_2_99_101_108_110
+constraint_49:~_r_1_13_54 or _r_2_99_101_108_110
+constraint_48:~_r_1_13_53 or _r_2_99_101_108_110
+constraint_17:~_r_1_13_23 or _r_2_99_100_103_105
+constraint_18:~_r_1_13_24 or _r_2_99_100_103_105
+constraint_19:~_r_1_13_25 or _r_2_99_100_103_106
+constraint_50:~_r_1_13_55 or _r_2_99_101_108_110
+constraint_51:~_r_1_13_56 or _r_2_99_101_108_111
+constraint_52:~_r_1_13_57 or _r_2_99_101_108_111
+constraint_90:~_r_1_13_90 or _r_2_99_101_108_117
+constraint_10:~_r_1_13_16 or _r_2_99_100_103_104
+constraint_92:~_r_1_13_92 or _r_2_99_101_108_117
+constraint_11:~_r_1_13_17 or _r_2_99_100_103_104
+constraint_91:~_r_1_13_91 or _r_2_99_101_108_117
+constraint_12:~_r_1_13_18 or _r_2_99_100_103_104
+constraint_13:~_r_1_13_19 or _r_2_99_100_103_104
+constraint_93:~_r_1_13_93 or _r_2_99_101_108_117
+constraint_14:~_r_1_13_20 or _r_2_99_100_103_104
+constraint_15:~_r_1_13_21 or _r_2_99_100_103_105
+constraint_16:~_r_1_13_22 or _r_2_99_100_103_105
+constraint_77:~_r_1_13_25 or _r_2_99_101_108_116
+constraint_78:~_r_1_13_27 or _r_2_99_101_108_116
+constraint_75:~_r_1_13_98 or _r_2_99_102
+constraint_76:~_r_1_13_18 or _r_2_99_101_108_116
+constraint_39:~_r_1_13_45 or _r_2_99_101_108_110
+constraint_30:~_r_1_13_34 or _r_2_99_101_108_109
+constraint_79:~_r_1_13_80 or _r_2_99_101_108_116
+constraint_34:~_r_1_13_39 or _r_2_99_101_108_109
+constraint_33:~_r_1_13_37 or _r_2_99_101_108_109
+constraint_32:~_r_1_13_36 or _r_2_99_101_108_109
+constraint_31:~_r_1_13_35 or _r_2_99_101_108_109
+constraint_38:~_r_1_13_44 or _r_2_99_101_108_110
+constraint_37:~_r_1_13_43 or _r_2_99_101_108_110
+constraint_36:~_r_1_13_42 or _r_2_99_101_108_109
+constraint_35:~_r_1_13_41 or _r_2_99_101_108_109
+constraint_28:~_r_1_13_33 or _r_2_99_101_108_109
+constraint_40:~_r_1_13_46 or _r_2_99_101_108_110
+constraint_41:~_r_1_13_47 or _r_2_99_101_108_110
+constraint_81:~_r_1_13_82 or _r_2_99_101_108_116
+constraint_22:~_r_1_13_28 or _r_2_99_100_103_106
+constraint_80:~_r_1_13_81 or _r_2_99_101_108_116
+constraint_20:~_r_1_13_26 or _r_2_99_100_103_106
+constraint_21:~_r_1_13_27 or _r_2_99_100_103_106
+constraint_26:~_r_1_13_31 or _r_2_99_100_103_106
+constraint_84:~_r_1_13_85 or _r_2_99_101_108_116
+constraint_27:~_r_1_13_32 or _r_2_99_101_108_109
+constraint_83:~_r_1_13_84 or _r_2_99_101_108_116
+constraint_24:~_r_1_13_29 or _r_2_99_100_103_106
+constraint_82:~_r_1_13_83 or _r_2_99_101_108_116
+constraint_25:~_r_1_13_30 or _r_2_99_100_103_106
+constraint_1:~_r_1_13_73 or _r_2_99_101_108_113
+constraint_69:~_r_1_13_74 or _r_2_99_102
+constraint_68:~_r_1_13_72 or _r_2_99_101_108_112
+constraint_65:~_r_1_13_69 or _r_2_99_101_108_112
+constraint_64:~_r_1_13_68 or _r_2_99_101_108_112
+constraint_67:~_r_1_13_71 or _r_2_99_101_108_112
+constraint_66:~_r_1_13_70 or _r_2_99_101_108_112
+constraint_71:~_r_1_13_94 or _r_2_99_102
+constraint_72:~_r_1_13_95 or _r_2_99_102
+constraint_73:~_r_1_13_96 or _r_2_99_102
+constraint_74:~_r_1_13_97 or _r_2_99_102
+constraint_70:~_r_1_13_75 or _r_2_99_102
+constraint_8:~_r_1_13_14 or _r_2_99_100_103_104
+constraint_9:~_r_1_13_15 or _r_2_99_100_103_104
+constraint_6:~_r_1_13_78 or _r_2_99_101_108_115
+constraint_7:~_r_1_13_79 or _r_2_99_101_108_115
+constraint_4:~_r_1_13_76 or _r_2_99_101_108_115
+constraint_5:~_r_1_13_77 or _r_2_99_101_108_115
+constraint_2:~_r_1_13_74 or _r_2_99_101_108_114
+constraint_3:~_r_1_13_75 or _r_2_99_101_108_114
+constraint_59:~_r_1_13_64 or _r_2_99_101_108_112
+constraint_58:~_r_1_13_63 or _r_2_99_101_108_112
+constraint_57:~_r_1_13_62 or _r_2_99_101_108_112
+constraint_56:~_r_1_13_61 or _r_2_99_101_108_111
+constraint_55:~_r_1_13_60 or _r_2_99_101_108_111
+constraint_54:~_r_1_13_59 or _r_2_99_101_108_111
+constraint_53:~_r_1_13_58 or _r_2_99_101_108_111
+constraint_62:~_r_1_13_66 or _r_2_99_101_108_112
+constraint_63:~_r_1_13_67 or _r_2_99_101_108_112
+constraint_60:~_r_1_13_65 or _r_2_99_101_108_112
+</constraints>
+</feature_model>

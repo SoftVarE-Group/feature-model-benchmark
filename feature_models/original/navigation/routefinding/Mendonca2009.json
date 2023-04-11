@@ -1,0 +1,14 @@
+{
+    "Name" : "RouteFinding",
+    "Year" : 2009,
+    "OriginalFormat" : "SXFM",
+    "Hierarchy" : true,
+    "History":  [],
+    "Publication" : "https://doi.org/10.1145/1639950.1640002",
+    "Source" : "http://www.splot-research.org/",
+    "Variants": [],
+    "Keywords" : [
+        "Manual"
+    ],
+    "ConversionTool" : ""
+}

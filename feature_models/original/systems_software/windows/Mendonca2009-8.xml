@@ -1,0 +1,655 @@
+<!-- This model was created online using SPLOT's Feature Model Editor (http://www.splot-research.org) on Tue, Mar 28, 2017 - 1:46 PM  -->
+<feature_model name="windows80">
+<meta>
+<data name="description">Accessibility options provided by windows8 operating systems</data>
+<data name="creator">Austin Waffo</data>
+<data name="address"/>
+<data name="email">wkaustin1@gmail.com</data>
+<data name="phone"/>
+<data name="website"/>
+<data name="organization">ENSP </data>
+<data name="department"/>
+<data name="date"/>
+<data name="reference"/>
+</meta>
+<feature_tree>
+:r Accessibility(_r0)
+	:o UseTheComputerWithoutADisplay(_r1)
+		:m HearTextReadAloud(_r2)
+			:g (_id_0) [1,*] 
+				: TuenOnAudioDescription(_r3)
+				: TurnOnNarrator1(_r4)
+			:o SetupTextToSpeech(_r5)
+				:g (_id_1) [1,*] 
+					: TextToSpeech(_r6)
+						:o Control_TheVoiceProperties_Speed_OtherOption(_r7)
+						:m VoiceSelection(_r8)
+							:g (_id_2) [1,1] 
+								: MicrosoftDavidDesktopEnglishUS(_r9)
+								: MicrosoftZiraDesktopEnglishGB(_r10)
+								: MicrosoftDavidDesktopEnglishGB(_r11)
+								: MicrosoftZiraDesktopEnglishUS(_r12)
+						:m VoiceSpeed(_r13)
+							:g (_id_3) [1,1] 
+								: Normal(_r14)
+								: Fast1(_r15)
+								: Slow1(_r16)
+						:o AudioOutput(_r17)
+						:o Advanced2(_r18)
+					: SpeechRecognition(_r19)
+						:m Language(_r20)
+							:g (_id_4) [1,1] 
+								: MicrosoftSpeechRecognizer8_0ForWindowsEnglishUS(_r21)
+								: MicrosoftSpeechRecognizer8_0ForWindowsEnglishUK(_r22)
+						:o RecognitionProfiles(_r23)
+							:o DefaultSpeechProfile(_r24)
+							:o New(_r25)
+							:o TrainProfile(_r26)
+						:o UserSettings(_r27)
+							:o RunSpeechRecognitionAtStartup(_r28)
+							:o ReviewDocumentsAndMailToImproveAccuracy(_r29)
+							:o EnableVoiceActivation(_r30)
+							:m NumberOfSpaceToInsertAfterPonctuation(_r31)
+								:g (_id_5) [1,1] 
+									: _1(_r32)
+									: _2(_r33)
+						:m Microphone1(_r34)
+							:m Level(_r35)
+							:o AudioInput(_r36)
+							:o Advanced1(_r37)
+							:o ConfigureMicrophone(_r38)
+		:m AdjustTimeLimitsAndFlashingVisuals1(_r39)
+			:o TurnOffAllUnnecessaryAnimation(_r40)
+			:m HowLongShouldWindowsNotificationDialogBoxesStayOpen1(_r41)
+				:g (_id_6) [1,1] 
+					: _5Minutes(_r42)
+					: _15Seconds(_r43)
+					: _5Seconds(_r44)
+					: _7Seconds(_r45)
+					: _1Minute(_r46)
+					: _30Seconds(_r47)
+		:o SeeAlso1(_r48)
+			:g (_id_7) [1,*] 
+				: LearnAboutAdditionalAssistiveTechnologiesOnline1(_r49)
+				: AudioDevicesAndSoundThemes(_r50)
+					:m Playback(_r51)
+						:m Speakers(_r52)
+					:m Recording(_r53)
+						:m Microphone2(_r54)
+					:m Sounds(_r55)
+						:m SoundScheme(_r56)
+							:g (_id_8) [1,1] 
+								: WindowsDefault(_r57)
+								: NoSounds(_r58)
+						:o PlayWindowsStartupSound(_r59)
+					:m Communications(_r60)
+						:g (_id_9) [1,1] 
+							: ReduceTheVolumeOfOtherSoundsBy50(_r61)
+							: ReduceTheVolumeOfOtherSoundsBy80(_r62)
+							: MuteAllOtherSounds(_r63)
+							: DoNothing(_r64)
+	:o MakeTheComputerEasierToSee(_r65)
+		:g (_id_10) [1,*] 
+			: HearTextAndDescriptionReadAloud(_r66)
+				:g (_id_11) [1,*] 
+					: TurnOnAudioDescription(_r67)
+					: TurnOnNarrator2(_r68)
+			: MakeThingsOnTheScreenEasierToSee(_r69)
+				:m AdjustTheColorAndTransparencyOfTheWindowsBorders(_r70)
+				:m FineTuneDisplayEffects(_r71)
+				:o MakeTheFOcusRectangleThicker(_r72)
+				:m SetTheTchicknessOfTheBlinkingCursor(_r73)
+					:g (_id_12) [1,1] 
+						: S_2(_r74)
+						: S_4(_r75)
+						: S_14(_r76)
+						: S_15(_r77)
+						: S_13(_r78)
+						: S_21(_r79)
+						: S_22(_r80)
+						: S_12(_r81)
+						: S_6(_r82)
+						: S_23(_r83)
+						: S_11(_r84)
+						: S_10(_r85)
+						: S_8(_r86)
+						: S_9(_r87)
+						: S_5(_r88)
+						: S_19(_r89)
+						: S_20(_r90)
+						: S_24(_r91)
+						: S_7(_r92)
+						: S_1(_r93)
+						: S_18(_r94)
+						: S_16(_r95)
+						: S_3(_r96)
+						: S_17(_r97)
+				:o TurnOffAllUnnecessaryAnimationWhenPossible(_r98)
+				:o RemoveBackgroundImageWhenAvailable1(_r99)
+			: HighContrast(_r100)
+				:o ChooseAHighContrastTheme(_r101)
+					:g (_id_13) [1,1] 
+						: HighContrastBlack(_r102)
+						: HighContrast_1(_r103)
+						: HighContrastWhite(_r104)
+						: HighContrast_2(_r105)
+				:o TurnOnOrOffHighContrastWhenLeftPlusALTPlusLeftSCHIFTplusPRINT_SCREENisPressed(_r106)
+					:o DisplayAWarningMessageWhenTurningASettingOn1(_r107)
+					:o MakeASoundWhenTurningASettingOnOrOff1(_r108)
+			: MakeThingsOnTheScreenLarger(_r109)
+				:m ChangeTheSizeOfTextAndIcons(_r110)
+					:g (_id_14) [1,*] 
+						: ChangeOnlyTheTextSize(_r111)
+							:g (_id_15) [1,*] 
+								: Menus(_r112)
+									:g (_id_16) [1,1] 
+										: M_7(_r113)
+										: M_10(_r114)
+										: M_16(_r115)
+										: M_18(_r116)
+										: M_22(_r117)
+										: M_21(_r118)
+										: M_23(_r119)
+										: M_13(_r120)
+										: M_24(_r121)
+										: M_6(_r122)
+										: M_12(_r123)
+										: M_14(_r124)
+										: M_17(_r125)
+										: M_15(_r126)
+										: M_8(_r127)
+										: M_19(_r128)
+										: M_11(_r129)
+										: M_9(_r130)
+										: M_20(_r131)
+									:o Bold2(_r132)
+								: TitleBars(_r133)
+									:g (_id_17) [1,1] 
+										: TB_19(_r134)
+										: TB_9(_r135)
+										: TB_21(_r136)
+										: TB_11(_r137)
+										: TB_6(_r138)
+										: TB_7(_r139)
+										: TB_23(_r140)
+										: TB_16(_r141)
+										: TB_12(_r142)
+										: TB_17(_r143)
+										: TB_8(_r144)
+										: TB_15(_r145)
+										: TB_18(_r146)
+										: TB_20(_r147)
+										: TB_10(_r148)
+										: TB_22(_r149)
+										: TB_24(_r150)
+										: TB_13(_r151)
+										: TB_14(_r152)
+									:o Bold1(_r153)
+								: PaletteTitles(_r154)
+								: Icons(_r155)
+								: Tooltips(_r156)
+								: MessageBoxes(_r157)
+									:g (_id_18) [1,1] 
+										: ME_17(_r158)
+										: ME_10(_r159)
+										: ME_18(_r160)
+										: ME_21(_r161)
+										: ME_6(_r162)
+										: ME_20(_r163)
+										: ME_7(_r164)
+										: ME_16(_r165)
+										: ME_11(_r166)
+										: ME_23(_r167)
+										: ME_19(_r168)
+										: ME_13(_r169)
+										: ME_22(_r170)
+										: ME_15(_r171)
+										: ME_8(_r172)
+										: ME_12(_r173)
+										: ME_24(_r174)
+										: ME_9(_r175)
+										: ME_14(_r176)
+									:o Bold3(_r177)
+						: ChangeTheSizeOfAllItems(_r178)
+							:g (_id_19) [1,1] 
+								: Medium125(_r179)
+								: Smaller100(_r180)
+							:o Magnifier1(_r181)
+								:g (_id_20) [1,*] 
+									: ZoomIn(_r182)
+									: ZoomOut(_r183)
+								:o Views(_r184)
+									:g (_id_21) [1,1] 
+										: FullScreen(_r185)
+										: Lens(_r186)
+										: Docked(_r187)
+								:o Option1(_r188)
+									:m SetHowMuchTheViewChangesWhenZoomingInOrOut(_r189)
+										:g (_id_22) [1,1] 
+											: _150(_r190)
+											: _100(_r191)
+											: _400(_r192)
+											: _50(_r193)
+											: _200(_r194)
+											: _25(_r195)
+									:o TurnOnColorInversion(_r196)
+									:o Tracking(_r197)
+										:o FollowTheMousePointer(_r198)
+										:o FollowTheKeyboardFocus(_r199)
+										:o HaveMagnifierFollowTheTextInsertionPoint(_r200)
+								:o Help(_r201)
+							:o CustomSizingOption(_r202)
+								:m ScaleToThisPercentageOfNormalSize(_r203)
+									:g (_id_23) [1,1] 
+										: __100(_r204)
+										: __200(_r205)
+										: __150(_r206)
+										: __125(_r207)
+								:o Use(_r208)
+								:o WindowsXpStyleScaling(_r209)
+				:o TurnOnMagnifier(_r210)
+		:o SeeAlso2(_r211)
+			:o PersonalizeAppearanceAndSoundEffect(_r212)
+			:o LearnAboutAdditionalAssistiveTechnologiesOnline2(_r213)
+	:o UseTheComputerWithoutAMouseOrKeyboard(_r214)
+		:g (_id_24) [1,*] 
+			: TypeUsingAPointingDevice(_r215)
+				:o UseOnScreenKeyboard(_r216)
+			: AvoidUsingTheMouseAndKeyboard(_r217)
+				:m UseSpeechRecognition1(_r218)
+					:g (_id_25) [1,*] 
+						: OpenTheSpeechReferenceCard(_r219)
+						: TrainYourComputerToBetterUnderstandYou(_r220)
+						: SetUpMicrophone(_r221)
+						: StartSpeechRecognition(_r222)
+						: TakeSpeechTutorial(_r223)
+		:o SeeAlso3(_r224)
+			:m LearnAboutAdditionalAssistiveTechnologiesOnline3(_r225)
+	:o MakeTheMouseEasierToUse(_r226)
+		:o MousePointers(_r227)
+			:g (_id_26) [1,1] 
+				: ExtraLargeWhite(_r228)
+				: LargeInverting(_r229)
+				: ExtraLargeBlack(_r230)
+				: RegularInverting(_r231)
+				: RegularWhite(_r232)
+				: ExtraLargeIverting(_r233)
+				: LargeWhite(_r234)
+				: RegularBlack(_r235)
+				: LargeBlack(_r236)
+		:o ControlTheMouseWithTheKeyboard1(_r237)
+			:o TurnOnMouseKeys1(_r238)
+			:m SetupMouseKeys1(_r239)
+				:g (_id_27) [1,*] 
+					: KeyboardShortcut1(_r240)
+						:o TurnOnMouseKeysWithLeft_ALT_plus_SHIFT_plus_NUMLOCK1(_r241)
+							:o DisplayAWarningMessageWhenTurningASettingOn2(_r242)
+							:o MakeASoundWhenTurningASettingOnOrOff2(_r243)
+					: PointerSpeed1(_r244)
+						:m TopSpeed1(_r245)
+							:g (_id_28) [1,1] 
+								: High1(_r246)
+								: Low1(_r247)
+						:m Acceleration1(_r248)
+							:g (_id_29) [1,1] 
+								: Fast2(_r249)
+								: Slow2(_r250)
+						:o HoldDownCTRLToSpeedUpAndSHIFTToSlowDown1(_r251)
+					: OtherSettings1(_r252)
+						:o UseMouseKeysWhenNUMLOCKis1(_r253)
+							:g (_id_30) [1,1] 
+								: Off1(_r254)
+								: On1(_r255)
+						:o DisplayTheMouseKeysIconOnTheTaskbar1(_r256)
+		:o MakeItEasierToManageWindows1(_r257)
+			:o ActivateAWindowByHoveringOverItWithTheMouse(_r258)
+			:o PreventWindowsFromBeingAutomaticallyArrangedWhenMovedToTheEdgeOfTheScreen1(_r259)
+		:o SeeAlso4(_r260)
+			:o MouseSettings(_r261)
+				:m Buttons(_r262)
+				:m Pointer(_r263)
+				:m PointerOption(_r264)
+				:m Hardware1(_r265)
+			:o LearnAboutAdditionalAssistiveTechnologiesOnline4(_r266)
+	:o MakeTheKeyboardEasierToUse(_r267)
+		:m ControlTheMouseWithTheKeyboard2(_r268)
+			:o TurnOnMouseKeys2(_r269)
+			:m SetupMouseKeys2(_r270)
+				:g (_id_31) [1,*] 
+					: PointerSpeed2(_r271)
+						:m TopSpeed2(_r272)
+							:g (_id_32) [1,1] 
+								: Low2(_r273)
+								: High2(_r274)
+						:m Acceleration2(_r275)
+							:g (_id_33) [1,1] 
+								: Slow3(_r276)
+								: Fast3(_r277)
+						:o HoldDownCTRLToSpeedUpAndSHIFTToSlowDown2(_r278)
+					: OtherSettings2(_r279)
+						:o UseMouseKeysWhenNUMLOCKis2(_r280)
+							:g (_id_34) [1,1] 
+								: On2(_r281)
+								: Off2(_r282)
+						:o DisplayTheMouseKeysIconOnTheTaskbar2(_r283)
+					: KeyboardShortcut2(_r284)
+						:o TurnOnMouseKeysWithLeft_ALT_plus_SHIFT_plus_NUMLOCK2(_r285)
+							:o DisplayAWarningMessageWhenTurningASettingOn3(_r286)
+							:o MakeASoundWhenTurningASettingOnOrOff3(_r287)
+		:m MakeItEasierToType1(_r288)
+			:o TurnOnStickyKeys(_r289)
+			:m SetupStickyKeys(_r290)
+			:o TurnOnToggleKeys(_r291)
+			:o TurnOnFilterKeys1(_r292)
+			:o SetupFilterKeys2(_r293)
+				:o KeyboardShortcut3(_r294)
+					:o TurnOnStickyKeyWhenSHIFTisPressedFiveTimes(_r295)
+					:o DisplayAWarningMessageWhenTurningASettingOn4(_r296)
+					:o MakeASoundWhenTurningASettingOnOrOff4(_r297)
+					:o SetupFilterKeys1(_r298)
+						:o TurnOnFilterKeys2(_r299)
+						:o KeyboardShortcut4(_r300)
+							:o TurnOnFilterKeyWhenRightSHIFTisPressedForEigthSeconds(_r301)
+							:o DisplayAWarningMessageWhenTurningASettingOn5(_r302)
+							:o MakeASoundWhenTurningASettingOnOrOff5(_r303)
+						:m FilterOption(_r304)
+							:g (_id_35) [1,1] 
+								: TurnOnBounceKeys(_r305)
+								: TurnOnRepeatKeysAndSlowKeys(_r306)
+							:m HowLongShouldTheComputerWaitBeforeAcceptingKeystrokes(_r307)
+								:g (_id_36) [1,1] 
+									: _2_0Seconds_(_r308)
+									: _1_0Seconds_(_r309)
+									: _1_5Seconds_(_r310)
+									: _0_5Seconds_(_r311)
+									: _0_7Seconds_(_r312)
+							:m SetupRepeatKeysAndSlowKeys(_r313)
+								:o AvoidAccidentalKeytrockes(_r314)
+									:m HowLongDoYouWantToHoldDownAKeyBeforeYourComputerAcceptsTheAcceptsTheKeystroke(_r315)
+										:g (_id_37) [1,1] 
+											: _0_3Seconds(_r316)
+											: _0_0Seconds(_r317)
+											: _1_0Seconds(_r318)
+											: _0_7Seconds(_r319)
+											: _2_0Seconds(_r320)
+											: _0_5Seconds(_r321)
+											: _5_0Seconds(_r322)
+											: _20_0Seconds(_r323)
+											: _10_0Seconds(_r324)
+											: _1_4Seconds(_r325)
+								:o AvoidRepeatedKeystrokesWhenYouHoldDownAKey(_r326)
+									:g (_id_38) [1,1] 
+										: IgnoreAllRepeatedKeystrokes(_r327)
+										: SlowDownKeyboardRepeateRates(_r328)
+									:m HowLongShouldTheComputerWaitBeforeAcceptingTheFirstrepeatedKeystroke(_r329)
+										:g (_id_39) [1,1] 
+											: _1_7Seconds__(_r330)
+											: _0_3Seconds__(_r331)
+											: _2_0Seconds__(_r332)
+											: _0_0Seconds__(_r333)
+											: _0_7Seconds__(_r334)
+											: _1_1Seconds__(_r335)
+									:m HowLongShouldTheComputerWaitBeforeAcceptingSubsequentRepeatedKeystrokes(_r336)
+										:g (_id_40) [1,1] 
+											: _1_7Seconds___(_r337)
+											: _0_0Seconds___(_r338)
+											: _0_3Seconds___(_r339)
+											: _0_7Seconds___(_r340)
+											: _1_1Seconds___(_r341)
+											: _2_0Seconds___(_r342)
+						:o OtherSettings3(_r343)
+							:o BeepWhenKeyArePressedOrAccepted(_r344)
+							:o DisplayTheFilterKeysIconOnTheTaskbar(_r345)
+				:o Option2(_r346)
+					:o LockModifierKeysWhenPressedTwiceInARow(_r347)
+					:o TurnOffStickeysWhenTwoKeysArePressedAtOnce(_r348)
+				:o Feedback(_r349)
+					:o PlayASoundWhenModifierKeysArePressed(_r350)
+					:o DisplayTheStickyKeyIconOnTheTaskBar(_r351)
+		:o MakeItEasierToUseKeyboardShortcuts(_r352)
+			:o UnderlineKeyboardShortcutsAndAccesskeys(_r353)
+		:o MakeItEasierToManageWindows2(_r354)
+			:o PreventWindowsFromBeingAutomaticallyArrangedWhenMovedToTheEdgeOfTheScreen2(_r355)
+		:o SeeAlso5(_r356)
+			:o AddADvorakKeyboardAndChangeOtherKeyboardInputSetting(_r357)
+			:o KeyboardSettings(_r358)
+				:m Speed(_r359)
+					:m CharacterRepeat(_r360)
+						:m RepeatDelay(_r361)
+							:g (_id_41) [1,1] 
+								: Short(_r362)
+								: Long(_r363)
+						:m RepeatRate(_r364)
+							:g (_id_42) [1,1] 
+								: Slow4(_r365)
+								: Fast4(_r366)
+					:m CursorBlinkRate(_r367)
+						:g (_id_43) [1,1] 
+							: None1(_r368)
+							: Fast5(_r369)
+				:m Hardware2(_r370)
+			:o LearnAboutAdditionalAssistiveTechnologiesOnline5(_r371)
+	:o UseTextOrVisualAlternativesForSounds(_r372)
+		:m UseVisualCuesInteadOfSounds(_r373)
+			:o TurnOnVisualNotificationForSounds(_r374)
+			:m ChooseVisualWarning(_r375)
+				:g (_id_44) [1,1] 
+					: FlashActiveCaptionBar(_r376)
+					: Note(_r377)
+					: FlashActiveWindow(_r378)
+					: FlashDesktop(_r379)
+			:o TurnOnTextCaptionsForSpokenDialog(_r380)
+		:o SeeAlso6(_r381)
+			:o AudioAndSoundThemes(_r382)
+			:o LearnAboutAdditionalAssistiveTechnologiesOnline6(_r383)
+	:o MakeItEasierToFocusOnTasks(_r384)
+		:o Reading(_r385)
+			:m TurnOnNarrator3(_r386)
+			:o RemoveBackgroundImageWhenAvailable2(_r387)
+		:m MakeItEasierToType2(_r388)
+		:m AdjustTimeLimitsAndFlashingVisuals2(_r389)
+			:o TurnOffAllUnnecessaryAnimationsWhenPossible(_r390)
+			:m HowLongShouldWindowsNotificationDialogBoxesStayOpen2(_r391)
+				:g (_id_45) [1,1] 
+					: _30_Seconds(_r392)
+					: _1_Minute(_r393)
+					: _7_Seconds(_r394)
+					: _15_Seconds(_r395)
+					: _5_Secons(_r396)
+					: _5_Minutes(_r397)
+		:o MakeItEasierToManageWindows3(_r398)
+			:o PreventWindowsFromBeingAutomaticallyArrangedWhenMovedToTheEdgeOfTheScreen3(_r399)
+		:o SeeAlso7(_r400)
+			:o UseSpeechRecognition2(_r401)
+			:o LearnAboutAdditionalAssistiveTechnologiesOnline7(_r402)
+	:o MakeTouchAndTabletsEasierToUse(_r403)
+		:m LaunchingCommonTools(_r404)
+			:g (_id_46) [1,1] 
+				: OnScreenKeyboard(_r405)
+				: Narrator(_r406)
+				: Magnifier2(_r407)
+				: None2(_r408)
+		:o SeeAlso8(_r409)
+			:o MakeTouchEasierToUse(_r410)
+			:o LearnAboutAdditionalAssistiveTechnologiesOnline8(_r411)
+	:o SeeAlso(_r412)
+	:o Microphone(_r413)
+	:o Advanced(_r414)
+	:o TurnOnNarrator(_r415)
+	:o Option(_r416)
+	:o Bold(_r417)
+	:o LearnAboutAdditionalAssistiveTechnologiesOnline(_r418)
+	:o DisplayAWarningMessageWhenTurningASettingOn(_r419)
+	:o Magnifier(_r420)
+	:o MakeASoundWhenTurningASettingOnOrOff(_r421)
+	:o Low(_r422)
+	:o High(_r423)
+	:o Slow(_r424)
+	:o Fast(_r425)
+	:o ControlTheMouseWithTheKeyboard(_r426)
+	:o MakeItEasierToManageWindows(_r427)
+	:o TurnOnMouseKeys(_r428)
+	:o SetupMouseKeys(_r429)
+	:o KeyboardShortcut(_r430)
+	:o PointerSpeed(_r431)
+	:o OtherSettings(_r432)
+	:o TurnOnMouseKeysWithLeft_ALT_plus_SHIFT_plus_NUMLOCK(_r433)
+	:o TopSpeed(_r434)
+	:o Acceleration(_r435)
+	:o HoldDownCTRLToSpeedUpAndSHIFTToSlowDown(_r436)
+	:o UseMouseKeysWhenNUMLOCKis(_r437)
+	:o DisplayTheMouseKeysIconOnTheTaskbar(_r438)
+	:o On(_r439)
+	:o Off(_r440)
+	:o SetupFilterKeys(_r441)
+	:o TurnOnFilterKeys(_r442)
+	:o PreventWindowsFromBeingAutomaticallyArrangedWhenMovedToTheEdgeOfTheScreen(_r443)
+	:o Hardware(_r444)
+	:o MakeItEasierToType(_r445)
+	:o AdjustTimeLimitsAndFlashingVisuals(_r446)
+	:o RemoveBackgroundImageWhenAvailable(_r447)
+	:o HowLongShouldWindowsNotificationDialogBoxesStayOpen(_r448)
+	:o UseSpeechRecognition(_r449)
+	:o None(_r450)
+</feature_tree>
+<constraints>
+C61:~_r389 or _r446
+C62:~_r249 or _r425
+C60:~_r277 or _r425
+C59:~_r386 or _r415
+C58:~_r237 or _r426
+C57:~_r268 or _r426
+C56:~_r434 or _r245 or _r272
+C55:~_r253 or _r437
+C54:~_r285 or _r433
+C53:~_r300 or _r430
+C52:~_r354 or _r427
+C50:~_r181 or _r420
+C51:~_r369 or _r425
+C46:~_r409 or _r412
+C45:~_r421 or _r108 or _r243 or _r287 or _r297 or _r303
+C48:~_r296 or _r419
+C47:~_r370 or _r444
+C42:~_r441 or _r298 or _r293
+C41:~_r407 or _r420
+C44:~_r417 or _r153 or _r132 or _r177
+C43:~_r153 or _r417
+C49:~_r225 or _r418
+C110:~_r287 or _r421
+C80:~_r37 or _r414
+C112:~_r271 or _r431
+C111:~_r422 or _r247 or _r273
+C83:~_r408 or _r450
+C84:~_r286 or _r419
+C81:~_r34 or _r413
+C82:~_r416 or _r188 or _r346
+C117:~_r437 or _r253 or _r280
+C77:~_r365 or _r424
+C118:~_r188 or _r416
+C76:~_r292 or _r442
+C119:~_r242 or _r419
+C75:~_r265 or _r444
+C74:~_r418 or _r49 or _r213 or _r225 or _r266 or _r371 or _r383 or _r402 or _r411
+C113:~_r48 or _r412
+C114:~_r247 or _r422
+C115:_r429 or _r239 or _r270
+C79:~_r366 or _r425
+C116:~_r415 or _r4 or _r68 or _r386
+C78:~_r297 or _r421
+C101:~_r432 or _r252 or _r279 or _r343
+C100:~_r419 or _r107 or _r242 or _r286 or _r296 or _r302
+C70:~_r49 or _r418
+C71:~_r270 or _r429
+C72:~_r293 or _r441
+C73:~_r99 or _r447
+C108:~_r402 or _r418
+C64:~_r273 or _r422
+C109:~_r68 or _r415
+C63:~_r250 or _r424
+C106:~_r279 or _r432
+C66:~_r368 or _r450
+C107:~_r243 or _r421
+C65:~_r284 or _r430
+C104:~_r4 or _r415
+C68:~_r438 or _r256 or _r283
+C105:~_r391 or _r448
+C67:~_r411 or _r418
+C102:~_r107 or _r419
+C103:~_r275 or _r435
+C69:~_r412 or _r48 or _r211 or _r224 or _r260 or _r356 or _r381 or _r400 or _r409
+C137:~_r245 or _r434
+C136:~_r218 or _r449
+C135:~_r381 or _r412
+C130:~_r302 or _r419
+C133:~_r272 or _r434
+C134:~_r108 or _r421
+C131:~_r240 or _r430
+C132:~_r278 or _r436
+C98:~_r442 or _r292 or _r299
+C99:~_r435 or _r248 or _r275
+C96:~_r299 or _r442
+C97:~_r294 or _r430
+C16:~_r425 or _r15 or _r249 or _r277 or _r366 or _r369
+C93:~_r41 or _r448
+C17:~_r269 or _r428
+C92:~_r257 or _r427
+C18:~_r426 or _r237 or _r268
+C95:~_r444 or _r265 or _r370
+C19:~_r450 or _r368 or _r408
+C94:~_r428 or _r238 or _r269
+C91:~_r252 or _r432
+C90:~_r446 or _r39 or _r389
+C125:~_r260 or _r412
+C124:~_r443 or _r259 or _r355 or _r399
+C127:~_r356 or _r412
+C10:~_r211 or _r412
+C126:~_r383 or _r418
+C11:~_r132 or _r417
+C129:~_r355 or _r443
+C12:~_r424 or _r16 or _r250 or _r276 or _r365
+C128:~_r423 or _r246 or _r274
+C13:~_r298 or _r441
+C14:~_r213 or _r418
+C15:~_r274 or _r423
+C120:~_r248 or _r435
+C121:~_r18 or _r414
+C122:~_r303 or _r421
+C123:~_r266 or _r418
+C89:~_r244 or _r431
+C85:~_r371 or _r418
+C86:~_r259 or _r443
+C87:~_r401 or _r449
+C88:~_r436 or _r251 or _r278
+C8:~_r238 or _r428
+C7:~_r54 or _r413
+C9:~_r447 or _r99 or _r387
+C29:~_r241 or _r433
+C4:~_r39 or _r446
+C3:~_r283 or _r438
+C27:~_r399 or _r443
+C6:~_r398 or _r427
+C28:~_r413 or _r34 or _r54
+C5:~_r256 or _r438
+C25:~_r387 or _r447
+C26:~_r15 or _r425
+C23:~_r251 or _r436
+C24:~_r420 or _r181 or _r407
+C21:~_r433 or _r241 or _r285
+C22:~_r449 or _r218 or _r401
+C20:~_r16 or _r424
+C0:~_r177 or _r417
+C1:~_r246 or _r423
+C2:~_r224 or _r412
+C38:~_r239 or _r429
+C39:~_r431 or _r244 or _r271
+C34:~_r414 or _r37 or _r18
+C35:~_r276 or _r424
+C36:~_r346 or _r416
+C37:~_r343 or _r432
+C30:~_r427 or _r257 or _r354 or _r398
+C31:~_r280 or _r437
+C32:~_r448 or _r41 or _r391
+C33:~_r400 or _r412
+C40:~_r430 or _r240 or _r284 or _r294 or _r300
+</constraints>
+</feature_model>

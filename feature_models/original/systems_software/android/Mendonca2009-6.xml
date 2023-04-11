@@ -1,0 +1,242 @@
+<!-- This model was created online using SPLOT's Feature Model Editor (http://www.splot-research.org) on Tue, Mar 21, 2017 - 10:10 PM  -->
+<feature_model name="android60">
+<meta>
+<data name="description">Feature Model for Android6 Operating System</data>
+<data name="creator">Austin Waffo</data>
+<data name="address">IMSI</data>
+<data name="email">wkaustin1@gmail.com</data>
+<data name="phone"/>
+<data name="website"/>
+<data name="organization">IMSI Of University Of Yaounde I</data>
+<data name="department"/>
+<data name="date"/>
+<data name="reference"/>
+</meta>
+<feature_tree>
+:r RootFeatures(_r0)
+	:m Accessibility(_r1)
+		:o Services(_r2)
+		:m System(_r3)
+			:o Caption(_r4)
+			:o MagnificationGestures(_r5)
+			:m GestureRecognition(_r6)
+				:o WholeSetting(_r7)
+				:o DoubleClickTheScreenToWakeup(_r8)
+				:m LetterGestureSettings(_r9)
+					:g (_id_0) [1,*] 
+						: oPhone(_r10)
+						: SlidesRightContacts(_r11)
+						: mGallery(_r12)
+						: vFileManager(_r13)
+						: SlidesUpSettings(_r14)
+						: cCamera(_r15)
+						: wMusic(_r16)
+						: zMessaging(_r17)
+						: SlidesLeftEmail(_r18)
+						: SlidesDownSoundRecorder(_r19)
+						: eBrowser(_r20)
+						: sCalendar(_r21)
+			:o LargeText(_r22)
+			:o HighContrastTest(_r23)
+			:o PowerButtonEndsCall(_r24)
+			:o AutoRotateScreen(_r25)
+			:o SpeakPasswords(_r26)
+			:o AccessibilityShortcut(_r27)
+			:m TextToSpeechOutput2(_r28)
+				:o PreferredEngine(_r29)
+					:m GoogleTextToSpeech(_r30)
+					:o Settings(_r31)
+						:m Language1(_r32)
+							:g (_id_1) [1,1] 
+								: FrenchFrance(_r33)
+								: EnglishUnitedStates(_r34)
+								: GermanGermany(_r35)
+								: ItalianItaly(_r36)
+								: UseSystemLanguage1(_r37)
+								: EnglishUnitedKingdom1(_r38)
+								: SpanishSpain(_r39)
+						:m SettingForGoogleTextToSpeechEngine(_r40)
+							:o AutoUpdateVoice(_r41)
+							:o UseWiFiOnly(_r42)
+							:o AnonymousUsageReports(_r43)
+							:o Feedback(_r44)
+						:m InstallVoiceData(_r45)
+				:o General(_r46)
+					:m SpeechRate(_r47)
+						:g (_id_2) [1,1] 
+							: VeryFast(_r48)
+							: Slow(_r49)
+							: VeryRapid(_r50)
+							: Fastest(_r51)
+							: Fast(_r52)
+							: Normal1(_r53)
+							: Rapid(_r54)
+							: Faster(_r55)
+					:m ListenToAnExample(_r56)
+					:m DefaultLanguageStatus(_r57)
+			:m TouchAndHoldDelay(_r58)
+				:g (_id_3) [1,1] 
+					: Long(_r59)
+					: Medium(_r60)
+					: Short(_r61)
+			:o QuickBout(_r62)
+		:m Display2(_r63)
+			:o ColorInversion(_r64)
+				:m CorrectionMode(_r65)
+			:m ColorCorrection(_r66)
+				:g (_id_4) [1,1] 
+					: Tritanomaly_BlueYellow(_r67)
+					: Deuteronomaly_RedGreen(_r68)
+					: Protanomaly_RedGreen(_r69)
+	:m LanguageAndInput(_r70)
+		:m Language2(_r71)
+		:o SpeelChecker(_r72)
+			:m AndroidSpeelChecker_AOSP(_r73)
+		:m PersonalDictionary2(_r74)
+		:m KeyboardAndInputMethods(_r75)
+			:m CurrentKeyboard(_r76)
+			:m AndroidKeyboard_AOSP(_r77)
+				:m Language3(_r78)
+					:g (_id_5) [1,1] 
+						: Basque_Spain(_r79)
+						: EnglishUnitedKingdom2(_r80)
+						: Armenian_Armenia(_r81)
+						: Alphabet_QWERTY(_r82)
+						: UseSystemLanguage2(_r83)
+				:m Preferences(_r84)
+					:o AutoCapitalization(_r85)
+					:o DoubleSpacePeriod(_r86)
+					:o VibrateOnKeypress(_r87)
+					:o SoundOnKeypress(_r88)
+					:o PopupOnKeypress(_r89)
+					:o VoiceInputKey(_r90)
+				:m AppearanceAndLayouts(_r91)
+					:m Theme(_r92)
+						:g (_id_6) [1,1] 
+							: MaterialLight(_r93)
+							: MaterialDark(_r94)
+							: HoloWhited(_r95)
+							: HoloBlue(_r96)
+					:m CustomInputStyles(_r97)
+						:g (_id_7) [1,1] 
+							: German_QWERTY(_r98)
+							: French_QWERTY(_r99)
+				:m TextCorrection(_r100)
+					:m PersonalDictionary1(_r101)
+					:m AddOnDictionaries(_r102)
+					:o BlockOffensiveWords1(_r103)
+					:o Advanced2(_r104)
+						:m KeyPopupDismissDelay(_r105)
+							:g (_id_8) [1,1] 
+								: NoDelay(_r106)
+								: Default(_r107)
+						:m KeypressVibrationDuration(_r108)
+							:g (_id_9) [1,1] 
+								: _0ms(_r109)
+								: _50ms(_r110)
+								: _100ms(_r111)
+						:m KeypressSoundVolume(_r112)
+					:m AutoCorrection(_r113)
+					:o ShowCorrectionSuggestions(_r114)
+					:o PersonalizedSuggestions(_r115)
+					:o SuggestContactNames(_r116)
+					:o NextWordSuggestions(_r117)
+				:m Advanced1(_r118)
+			:m GoocgleVoiceTyping(_r119)
+				:m Language4(_r120)
+				:m OKGoogleDetection(_r121)
+				:m HandsFree(_r122)
+					:g (_id_10) [1,1] 
+						: ForBluetoothDevices(_r123)
+						: ForWiredHeadsets(_r124)
+				:m SpeechOutput(_r125)
+					:g (_id_11) [1,1] 
+						: On(_r126)
+						: HandsFreeOnly(_r127)
+				:o BlockOffensiveWords2(_r128)
+				:o BluetoothHeadset(_r129)
+		:m Speech(_r130)
+			:m VoiceInput(_r131)
+				:o EnchanceGoogleService(_r132)
+				:o BasicGooglrRecohnition(_r133)
+			:m TextToSpeechOutput1(_r134)
+		:m MouseOrTrackpad(_r135)
+			:m PointerSpeed(_r136)
+				:g (_id_12) [1,1] 
+					: __0(_r137)
+					: __100(_r138)
+					: __50(_r139)
+	:m Display1(_r140)
+		:o MiraVision(_r141)
+		:m Brightness(_r142)
+			:g (_id_13) [1,1] 
+				: _0_(_r143)
+				: _50_(_r144)
+				: _100_(_r145)
+		:m Wallpaper(_r146)
+			:g (_id_14) [1,1] 
+				: Wallpapers(_r147)
+				: Photos(_r148)
+				: LiveWallpapers(_r149)
+					:g (_id_15) [1,1] 
+						: HoloSpiral(_r150)
+						: PhaseBean(_r151)
+						: Spectrum(_r152)
+						: Bubbles(_r153)
+						: BlackHole(_r154)
+						: MarbleLegend(_r155)
+				: Gallery(_r156)
+		:m Sleep(_r157)
+			:g (_id_16) [1,1] 
+				: _10Minutes(_r158)
+				: _30Seconds(_r159)
+				: _1Minute(_r160)
+				: _2Minutes(_r161)
+				: _30Minutes(_r162)
+				: _15Seconds(_r163)
+		:m FontSize(_r164)
+			:g (_id_17) [1,1] 
+				: Small(_r165)
+				: Large(_r166)
+				: Huge(_r167)
+				: Normal2(_r168)
+		:o WhenDeviceIsRotated(_r169)
+	:o Language(_r170)
+	:o Display(_r171)
+	:o PersonalDictionary(_r172)
+	:o TextToSpeechOutput(_r173)
+	:o Normal(_r174)
+	:o EnglishUnitedKingdom(_r175)
+	:o UseSystemLanguage(_r176)
+	:o BlockOffensiveWords(_r177)
+	:o Advanced(_r178)
+</feature_tree>
+<constraints>
+C8:~_r178 or _r118 or _r104
+C7:~_r78 or _r170
+C9:~_r177 or _r103 or _r128
+C4:~_r38 or _r175
+C3:~_r32 or _r170
+C6:~_r101 or _r172
+C5:~_r104 or _r178
+C25:~_r74 or _r172
+C23:~_r71 or _r170
+C24:~_r83 or _r176
+C21:~_r171 or _r140 or _r63
+C22:~_r103 or _r177
+C20:~_r173 or _r134 or _r28
+C0:~_r172 or _r101 or _r74
+C1:~_r176 or _r37 or _r83
+C2:~_r118 or _r178
+C16:~_r28 or _r173
+C17:~_r80 or _r175
+C18:~_r63 or _r171
+C19:~_r120 or _r170
+C10:~_r37 or _r176
+C11:~_r170 or _r32 or _r71 or _r78 or _r120
+C12:~_r128 or _r177
+C13:~_r134 or _r173
+C14:~_r140 or _r171
+C15:~_r175 or _r38 or _r80
+</constraints>
+</feature_model>
