@@ -1,19 +1,34 @@
 {
-    "Name" : "Linux",
-    "Year" : 2022,
-    "OriginalFormat" : "DIMACS",
-    "Hierarchy" : true,
-    "History":  [
-        "2_1",
-        "2_2",
-        "2_3",
-        "2_4"
+    "Name": "Linux",
+    "Year": 2022,
+    "OriginalFormat": "DIMACS",
+    "Hierarchy": true,
+    "History": [],
+    "Variants": [
+        "00d8521dcd",
+        "02729c3d08",
+        "347ec4e47d",
+        "396590b3bc",
+        "5ee2b87779",
+        "7c08c9ae0c",
+        "7da62cb185",
+        "8254baccdd",
+        "8da4d6b2f7",
+        "995187bed3",
+        "9c2b85f4f9",
+        "b633648c5a",
+        "bc866fc7a8",
+        "defd9da51d",
+        "e2ca307439",
+        "eeb00c604a",
+        "f1d7dbbe",
+        "fb5a515704"
     ],
-    "Publication" : "https://doi.org/10.1007/s10270-021-00906-w",
-    "Source" : "https://gitlab.com/mnieke/guided-config-evo-eval-data",
-    "Keywords" : [
+    "Publication": "https://doi.org/10.1007/s10270-021-00906-w",
+    "Source": "https://gitlab.com/mnieke/guided-config-evo-eval-data",
+    "Keywords": [
         "KConfig",
         "Automatic"
     ],
-    "ConversionTool" : ""
+    "ConversionTool": ""
 }

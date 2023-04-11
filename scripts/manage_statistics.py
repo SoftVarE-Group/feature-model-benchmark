@@ -3,6 +3,7 @@ import pandas as pd
 import os
 from pathlib import Path
 import json
+import shutil
 
 USER_COLUMNS = ["Publication", "Keywords",
                 "Source", "ConvertedFrom", "Conversion_Tool"]
@@ -12,9 +13,7 @@ SUPPORTED_SUFFIXES = ["uvl", "xml", "dimacs", "afm", "zip", "cfr", "fm"]
 # -------------------------- File Management --------------------------
 
 def get_files_from_directory(directory_path, supported_suffixes):
-    suffices_regex = '(*.' + '|*.'.join(supported_suffixes) + ')'
-    print(suffices_regex)
-    return [os.path.join(path, file) for path, directory, files in os.walk(directory_path) for file in files]
+    return [os.path.join(path, file) for path, directory, files in os.walk(directory_path) for file in files if file.endswith(tuple(supported_suffixes))]
 
 
 def read_csv_to_dataframe(path):
@@ -99,6 +98,81 @@ def get_data_frame_subset(data_frame, filter_column=None, row_values_to_keep=[],
         
 
 
+# -------------------------- JSON Generation --------------------------
+def get_evolution_steps(dir_path):
+    files = get_files_from_directory(dir_path, SUPPORTED_SUFFIXES)
+    versions = [get_file_name(file).split('-', 1)[1] for file in files]
+    versions.sort()
+    print(json.dumps(versions))
+
+
+# -------------------------- CDL structure --------------------------
+
+def create_cdl_dir(new_path="cdl"):
+    cfr_files = get_files_from_directory("feature_models/original/systems_software/eCos-benchmark-clafer", [".cfr"])
+    for file_path in cfr_files:
+        dir = os.path.join(new_path,get_file_name(file_path))
+        os.makedirs(dir)
+        shutil.copyfile(file_path, os.path.join(dir,"Passos2011.cfr"))
+        value_dict = {
+            "Name" : get_file_name(file_path),
+            "Year" : 2011,
+            "Hierarchy" : True,
+            "OriginalFormat" : "Clafer",
+            "Versions" : [],
+            "Publication" : "https://doi.org/10.1145/2019136.2019139",
+            "Source" : "https://gsd.uwaterloo.ca/FOSD11",
+            "Variants": [],
+            "Keywords" : [
+                "CDL",
+                "Automatic"
+            ],
+            "ConversionTool" : ""
+        }
+        with open(os.path.join(dir,"Passos2011.json"), "w") as outfile:
+            json.dump(value_dict, outfile)
+    
+    dimacs_files = get_files_from_directory("feature_models/original/systems_software/eCos-benchmark-clafer", [".dimacs"])
+    for file_path in dimacs_files:
+        dir = os.path.join(new_path,get_file_name(file_path))
+        shutil.copyfile(file_path, os.path.join(dir, "Berger2013.dimacs"))
+        value_dict = {
+            "Name" : get_file_name(file_path),
+            "Year" : 2013,
+            "Hierarchy" : False,
+            "OriginalFormat" : "DIMACS",
+            "Versions" : [],
+            "Publication" : "https://doi.org/10.1109/TSE.2013.34",
+            "Source" : "https://gsd.uwaterloo.ca/industrial-variability-modeling",
+            "Keywords" : [
+                "CDL",
+                "Automatic"
+            ],
+            "ConversionTool" : ""
+        }
+        with open(os.path.join(dir,"Berger2013.json"), "w") as outfile:
+            json.dump(value_dict, outfile)
+
+    xml_files = get_files_from_directory("/home/chico/git/data/is-there-a-mismatch/Data/LargeFeatureModels/CDL", [".xml"])
+    for file_path in xml_files:
+        dir = os.path.join(new_path,get_file_name(file_path))
+        shutil.copyfile(file_path, os.path.join(dir, "Knüppel2017.xml"))
+        value_dict = {
+            "Name" : get_file_name(file_path),
+            "Year" : 2017,
+            "Hierarchy" : True,
+            "OriginalFormat" : "FeatureIDE",
+            "Versions" : [],
+            "Publication" : "https://doi.org/10.1145/3106237.3106252",
+            "Source" : "https://github.com/AlexanderKnueppel/is-there-a-mismatch",
+            "Keywords" : [
+                "CDL",
+                "Automatic"
+            ],
+            "ConversionTool" : ""
+        }
+        with open(os.path.join(dir,"Knüppel2017.json"), "w") as outfile:
+            json.dump(value_dict, outfile)
 
 
 
@@ -108,4 +182,7 @@ def get_data_frame_subset(data_frame, filter_column=None, row_values_to_keep=[],
 
 # create_benchmark_json({'Publication Title' : 'Fun Fun', 'Filter' : [ {'Domain': 'Automotive'}, {'#Features' : '100-1000'} ], 'DOI' : 'doi.org/hehe'}, read_csv_to_dataframe("statistics/complete.csv"))
 
-append_analysis_results(read_csv_to_dataframe("statistics/models.csv"), read_csv_to_dataframe("/home/chico/git/software/Feature-Model-Structure-Analysis/result.csv"))
+# append_analysis_results(read_csv_to_dataframe("statistics/models.csv"), read_csv_to_dataframe("/home/chico/git/software/Feature-Model-Structure-Analysis/result.csv"))
+
+get_evolution_steps("feature_models/original/systems_software/Linux-Commits-Nieke")
+# create_cdl_dir()

@@ -162,9 +162,6 @@ def create_benchmark_json(data_frame, json_path='benchmark.json'):
         json.dump(value_dict, outfile, indent=4)
 
 
-
-
-
 args = init_args()
 print(args.load_config)
 if args.load_config is not None:
