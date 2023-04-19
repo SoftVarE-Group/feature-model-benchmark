@@ -1,0 +1,35 @@
+{
+    "Title": "SAT-based Analysis of Large Real-world Feature Models is Easy",
+    "Analyses": [
+        "SAT",
+        "Counting"
+    ],
+    "Reasoning Engines": [
+        "sharpSAT",
+        "Sat4J"
+    ],
+    "Date": "2023-01-13",
+    "Filter": [],
+    "Publication": "https://doi.org/10.1007/s10664-022-10265-9",
+    "ReplicationPackage": "https://github.com/SoftVarE-Group/emse-evaluation-sharpsat",
+    "Keywords": [
+        "Complete"
+    ],
+    "Feature Models": [
+        "feature_models/original/systems_software/axTLS/Berger2013.dimacs",
+        "feature_models/original/systems_software/Buildroot/Berger2013.dimacs",
+        "feature_models/original/systems_software/BusyBox/Berger2013-1.18.0.dimacs",
+        "feature_models/original/systems_software/Coreboot/Berger2013.dimacs",
+        "feature_models/original/systems_software/eCos/Berger2013-icse11.dimacs",
+        "feature_models/original/systems_software/Embtoolkit/Berger2013.dimacs",
+        "feature_models/original/systems_software/Fiasco/Berger2013.dimacs",
+        "feature_models/original/systems_software/FreeBSD/Berger2013-icse11.dimacs",
+        "feature_models/original/systems_software/Freetz/Berger2013.dimacs",
+        "feature_models/original/systems_software/Linux/Berger2013-2.6.28.6-icse11.dimacs",
+        "feature_models/original/systems_software/Linux/Berger2013-2.6.32-2var.dimacs",
+        "feature_models/original/systems_software/Linux/Berger2013-2.6.33.3-2var.dimacs",
+        "feature_models/original/systems_software/ToyBox/Berger2013.dimacs",
+        "feature_models/original/systems_software/uCLinux_Config/Berger2013.dimacs",
+        "feature_models/original/systems_software/uCLinux/Berger2013.dimacs"
+    ]
+}

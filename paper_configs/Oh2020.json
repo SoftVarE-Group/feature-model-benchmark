@@ -1,0 +1,15 @@
+{
+    "Title": "Scalable Uniform Sampling for Real-World Software Product Lines",
+    "Analyses" : [
+        "Uniform Random Sampling"
+    ],
+    "Reasoning Engines" : [
+        "Smarch"
+    ],
+    "Date" : "2020-06-13",
+    "Filter": [],
+    "Publication": "https://apps.cs.utexas.edu/apps/tech-reports/192690",
+    "Feature Models": [
+       
+    ]
+}
