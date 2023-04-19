@@ -1,0 +1,12 @@
+{
+    "Name" : "TankWar",
+    "Year" : 2012,
+    "OriginalFormat" : "FeatureIDE",
+    "Hierarchy" : true,
+    "History":  [],
+    "Publication" : "https://doi.org/10.1145/.-2110147.2110156",
+    "Source" : "https://github.com/FeatureIDE/FeatureIDE",
+    "Keywords" : [
+    ],
+    "ConversionTool" : ""
+}
