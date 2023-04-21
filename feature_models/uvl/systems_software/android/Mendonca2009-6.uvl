@@ -1,0 +1,262 @@
+namespace RootFeatures
+
+features
+	RootFeatures
+		mandatory
+			Accessibility
+				mandatory
+					System
+						mandatory
+							GestureRecognition
+								mandatory
+									LetterGestureSettings
+										or
+											oPhone
+											SlidesRightContacts
+											mGallery
+											vFileManager
+											SlidesUpSettings
+											cCamera
+											wMusic
+											zMessaging
+											SlidesLeftEmail
+											SlidesDownSoundRecorder
+											eBrowser
+											sCalendar
+								optional
+									WholeSetting
+									DoubleClickTheScreenToWakeup
+							TextToSpeechOutput2
+								optional
+									PreferredEngine
+										mandatory
+											GoogleTextToSpeech
+										optional
+											Settings
+												mandatory
+													Language1
+														alternative
+															FrenchFrance
+															EnglishUnitedStates
+															GermanGermany
+															ItalianItaly
+															UseSystemLanguage1
+															EnglishUnitedKingdom1
+															SpanishSpain
+													SettingForGoogleTextToSpeechEngine
+														optional
+															AutoUpdateVoice
+															UseWiFiOnly
+															AnonymousUsageReports
+															Feedback
+													InstallVoiceData
+									General
+										mandatory
+											SpeechRate
+												alternative
+													VeryFast
+													Slow
+													VeryRapid
+													Fastest
+													Fast
+													Normal1
+													Rapid
+													Faster
+											ListenToAnExample
+											DefaultLanguageStatus
+							TouchAndHoldDelay
+								alternative
+									Long
+									Medium
+									Short
+						optional
+							Caption
+							MagnificationGestures
+							LargeText
+							HighContrastTest
+							PowerButtonEndsCall
+							AutoRotateScreen
+							SpeakPasswords
+							AccessibilityShortcut
+							QuickBout
+					Display2
+						mandatory
+							ColorCorrection
+								alternative
+									Tritanomaly_BlueYellow
+									Deuteronomaly_RedGreen
+									Protanomaly_RedGreen
+						optional
+							ColorInversion
+								mandatory
+									CorrectionMode
+				optional
+					Services
+			LanguageAndInput
+				mandatory
+					Language2
+					PersonalDictionary2
+					KeyboardAndInputMethods
+						mandatory
+							CurrentKeyboard
+							AndroidKeyboard_AOSP
+								mandatory
+									Language3
+										alternative
+											Basque_Spain
+											EnglishUnitedKingdom2
+											Armenian_Armenia
+											Alphabet_QWERTY
+											UseSystemLanguage2
+									Preferences
+										optional
+											AutoCapitalization
+											DoubleSpacePeriod
+											VibrateOnKeypress
+											SoundOnKeypress
+											PopupOnKeypress
+											VoiceInputKey
+									AppearanceAndLayouts
+										mandatory
+											Theme
+												alternative
+													MaterialLight
+													MaterialDark
+													HoloWhited
+													HoloBlue
+											CustomInputStyles
+												alternative
+													German_QWERTY
+													French_QWERTY
+									TextCorrection
+										mandatory
+											PersonalDictionary1
+											AddOnDictionaries
+											AutoCorrection
+										optional
+											BlockOffensiveWords1
+											Advanced2
+												mandatory
+													KeyPopupDismissDelay
+														alternative
+															NoDelay
+															Default
+													KeypressVibrationDuration
+														alternative
+															"_0ms"
+															"_50ms"
+															"_100ms"
+													KeypressSoundVolume
+											ShowCorrectionSuggestions
+											PersonalizedSuggestions
+											SuggestContactNames
+											NextWordSuggestions
+									Advanced1
+							GoocgleVoiceTyping
+								mandatory
+									Language4
+									OKGoogleDetection
+									HandsFree
+										alternative
+											ForBluetoothDevices
+											ForWiredHeadsets
+									SpeechOutput
+										alternative
+											On
+											HandsFreeOnly
+								optional
+									BlockOffensiveWords2
+									BluetoothHeadset
+					Speech
+						mandatory
+							VoiceInput
+								optional
+									EnchanceGoogleService
+									BasicGooglrRecohnition
+							TextToSpeechOutput1
+					MouseOrTrackpad
+						mandatory
+							PointerSpeed
+								alternative
+									"__0"
+									"__100"
+									"__50"
+				optional
+					SpeelChecker
+						mandatory
+							AndroidSpeelChecker_AOSP
+			Display1
+				mandatory
+					Brightness
+						alternative
+							"_0_"
+							"_50_"
+							"_100_"
+					Wallpaper
+						alternative
+							Wallpapers
+							Photos
+							LiveWallpapers
+								alternative
+									HoloSpiral
+									PhaseBean
+									Spectrum
+									Bubbles
+									BlackHole
+									MarbleLegend
+							Gallery
+					Sleep
+						alternative
+							"_10Minutes"
+							"_30Seconds"
+							"_1Minute"
+							"_2Minutes"
+							"_30Minutes"
+							"_15Seconds"
+					FontSize
+						alternative
+							Small
+							Large
+							Huge
+							Normal2
+				optional
+					MiraVision
+					WhenDeviceIsRotated
+		optional
+			Language
+			Display
+			PersonalDictionary
+			TextToSpeechOutput
+			Normal
+			EnglishUnitedKingdom
+			UseSystemLanguage
+			BlockOffensiveWords
+			Advanced
+
+constraints
+	!Advanced | Advanced1 | Advanced2
+	!Language3 | Language
+	!BlockOffensiveWords | BlockOffensiveWords1 | BlockOffensiveWords2
+	!EnglishUnitedKingdom1 | EnglishUnitedKingdom
+	!Language1 | Language
+	!PersonalDictionary1 | PersonalDictionary
+	!Advanced2 | Advanced
+	!PersonalDictionary2 | PersonalDictionary
+	!Language2 | Language
+	!UseSystemLanguage2 | UseSystemLanguage
+	!Display | Display1 | Display2
+	!BlockOffensiveWords1 | BlockOffensiveWords
+	!TextToSpeechOutput | TextToSpeechOutput1 | TextToSpeechOutput2
+	!PersonalDictionary | PersonalDictionary1 | PersonalDictionary2
+	!UseSystemLanguage | UseSystemLanguage1 | UseSystemLanguage2
+	!Advanced1 | Advanced
+	!TextToSpeechOutput2 | TextToSpeechOutput
+	!EnglishUnitedKingdom2 | EnglishUnitedKingdom
+	!Display2 | Display
+	!Language4 | Language
+	!UseSystemLanguage1 | UseSystemLanguage
+	!Language | Language1 | Language2 | Language3 | Language4
+	!BlockOffensiveWords2 | BlockOffensiveWords
+	!TextToSpeechOutput1 | TextToSpeechOutput
+	!Display1 | Display
+	!EnglishUnitedKingdom | EnglishUnitedKingdom1 | EnglishUnitedKingdom2

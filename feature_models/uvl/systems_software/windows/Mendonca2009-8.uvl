@@ -1,0 +1,757 @@
+namespace Accessibility
+
+features
+	Accessibility
+		optional
+			UseTheComputerWithoutADisplay
+				mandatory
+					HearTextReadAloud
+						mandatory
+							HearTextReadAloud_1 {abstract true}
+								or
+									TuenOnAudioDescription
+									TurnOnNarrator1
+						optional
+							SetupTextToSpeech
+								or
+									TextToSpeech
+										mandatory
+											VoiceSelection
+												alternative
+													MicrosoftDavidDesktopEnglishUS
+													MicrosoftZiraDesktopEnglishGB
+													MicrosoftDavidDesktopEnglishGB
+													MicrosoftZiraDesktopEnglishUS
+											VoiceSpeed
+												alternative
+													Normal
+													Fast1
+													Slow1
+										optional
+											Control_TheVoiceProperties_Speed_OtherOption
+											AudioOutput
+											Advanced2
+									SpeechRecognition
+										mandatory
+											Language
+												alternative
+													MicrosoftSpeechRecognizer8_0ForWindowsEnglishUS
+													MicrosoftSpeechRecognizer8_0ForWindowsEnglishUK
+											Microphone1
+												mandatory
+													Level
+												optional
+													AudioInput
+													Advanced1
+													ConfigureMicrophone
+										optional
+											RecognitionProfiles
+												optional
+													DefaultSpeechProfile
+													New
+													TrainProfile
+											UserSettings
+												mandatory
+													NumberOfSpaceToInsertAfterPonctuation
+														alternative
+															"_1"
+															"_2"
+												optional
+													RunSpeechRecognitionAtStartup
+													ReviewDocumentsAndMailToImproveAccuracy
+													EnableVoiceActivation
+					AdjustTimeLimitsAndFlashingVisuals1
+						mandatory
+							HowLongShouldWindowsNotificationDialogBoxesStayOpen1
+								alternative
+									"_5Minutes"
+									"_15Seconds"
+									"_5Seconds"
+									"_7Seconds"
+									"_1Minute"
+									"_30Seconds"
+						optional
+							TurnOffAllUnnecessaryAnimation
+				optional
+					SeeAlso1
+						or
+							LearnAboutAdditionalAssistiveTechnologiesOnline1
+							AudioDevicesAndSoundThemes
+								mandatory
+									Playback
+										mandatory
+											Speakers
+									Recording
+										mandatory
+											Microphone2
+									Sounds
+										mandatory
+											SoundScheme
+												alternative
+													WindowsDefault
+													NoSounds
+										optional
+											PlayWindowsStartupSound
+									Communications
+										alternative
+											ReduceTheVolumeOfOtherSoundsBy50
+											ReduceTheVolumeOfOtherSoundsBy80
+											MuteAllOtherSounds
+											DoNothing
+			MakeTheComputerEasierToSee
+				mandatory
+					MakeTheComputerEasierToSee_1 {abstract true}
+						or
+							HearTextAndDescriptionReadAloud
+								or
+									TurnOnAudioDescription
+									TurnOnNarrator2
+							MakeThingsOnTheScreenEasierToSee
+								mandatory
+									AdjustTheColorAndTransparencyOfTheWindowsBorders
+									FineTuneDisplayEffects
+									SetTheTchicknessOfTheBlinkingCursor
+										alternative
+											S_2
+											S_4
+											S_14
+											S_15
+											S_13
+											S_21
+											S_22
+											S_12
+											S_6
+											S_23
+											S_11
+											S_10
+											S_8
+											S_9
+											S_5
+											S_19
+											S_20
+											S_24
+											S_7
+											S_1
+											S_18
+											S_16
+											S_3
+											S_17
+								optional
+									MakeTheFOcusRectangleThicker
+									TurnOffAllUnnecessaryAnimationWhenPossible
+									RemoveBackgroundImageWhenAvailable1
+							HighContrast
+								optional
+									ChooseAHighContrastTheme
+										alternative
+											HighContrastBlack
+											HighContrast_1
+											HighContrastWhite
+											HighContrast_2
+									TurnOnOrOffHighContrastWhenLeftPlusALTPlusLeftSCHIFTplusPRINT_SCREENisPressed
+										optional
+											DisplayAWarningMessageWhenTurningASettingOn1
+											MakeASoundWhenTurningASettingOnOrOff1
+							MakeThingsOnTheScreenLarger
+								mandatory
+									ChangeTheSizeOfTextAndIcons
+										or
+											ChangeOnlyTheTextSize
+												or
+													Menus
+														mandatory
+															Menus_1 {abstract true}
+																alternative
+																	M_7
+																	M_10
+																	M_16
+																	M_18
+																	M_22
+																	M_21
+																	M_23
+																	M_13
+																	M_24
+																	M_6
+																	M_12
+																	M_14
+																	M_17
+																	M_15
+																	M_8
+																	M_19
+																	M_11
+																	M_9
+																	M_20
+														optional
+															Bold2
+													TitleBars
+														mandatory
+															TitleBars_1 {abstract true}
+																alternative
+																	TB_19
+																	TB_9
+																	TB_21
+																	TB_11
+																	TB_6
+																	TB_7
+																	TB_23
+																	TB_16
+																	TB_12
+																	TB_17
+																	TB_8
+																	TB_15
+																	TB_18
+																	TB_20
+																	TB_10
+																	TB_22
+																	TB_24
+																	TB_13
+																	TB_14
+														optional
+															Bold1
+													PaletteTitles
+													Icons
+													Tooltips
+													MessageBoxes
+														mandatory
+															MessageBoxes_1 {abstract true}
+																alternative
+																	ME_17
+																	ME_10
+																	ME_18
+																	ME_21
+																	ME_6
+																	ME_20
+																	ME_7
+																	ME_16
+																	ME_11
+																	ME_23
+																	ME_19
+																	ME_13
+																	ME_22
+																	ME_15
+																	ME_8
+																	ME_12
+																	ME_24
+																	ME_9
+																	ME_14
+														optional
+															Bold3
+											ChangeTheSizeOfAllItems
+												mandatory
+													ChangeTheSizeOfAllItems_1 {abstract true}
+														alternative
+															Medium125
+															Smaller100
+												optional
+													Magnifier1
+														mandatory
+															Magnifier1_1 {abstract true}
+																or
+																	ZoomIn
+																	ZoomOut
+														optional
+															Views
+																alternative
+																	FullScreen
+																	Lens
+																	Docked
+															Option1
+																mandatory
+																	SetHowMuchTheViewChangesWhenZoomingInOrOut
+																		alternative
+																			"_150"
+																			"_100"
+																			"_400"
+																			"_50"
+																			"_200"
+																			"_25"
+																optional
+																	TurnOnColorInversion
+																	Tracking
+																		optional
+																			FollowTheMousePointer
+																			FollowTheKeyboardFocus
+																			HaveMagnifierFollowTheTextInsertionPoint
+															Help
+													CustomSizingOption
+														mandatory
+															ScaleToThisPercentageOfNormalSize
+																alternative
+																	"__100"
+																	"__200"
+																	"__150"
+																	"__125"
+														optional
+															Use
+															WindowsXpStyleScaling
+								optional
+									TurnOnMagnifier
+				optional
+					SeeAlso2
+						optional
+							PersonalizeAppearanceAndSoundEffect
+							LearnAboutAdditionalAssistiveTechnologiesOnline2
+			UseTheComputerWithoutAMouseOrKeyboard
+				mandatory
+					UseTheComputerWithoutAMouseOrKeyboard_1 {abstract true}
+						or
+							TypeUsingAPointingDevice
+								optional
+									UseOnScreenKeyboard
+							AvoidUsingTheMouseAndKeyboard
+								mandatory
+									UseSpeechRecognition1
+										or
+											OpenTheSpeechReferenceCard
+											TrainYourComputerToBetterUnderstandYou
+											SetUpMicrophone
+											StartSpeechRecognition
+											TakeSpeechTutorial
+				optional
+					SeeAlso3
+						mandatory
+							LearnAboutAdditionalAssistiveTechnologiesOnline3
+			MakeTheMouseEasierToUse
+				optional
+					MousePointers
+						alternative
+							ExtraLargeWhite
+							LargeInverting
+							ExtraLargeBlack
+							RegularInverting
+							RegularWhite
+							ExtraLargeIverting
+							LargeWhite
+							RegularBlack
+							LargeBlack
+					ControlTheMouseWithTheKeyboard1
+						mandatory
+							SetupMouseKeys1
+								or
+									KeyboardShortcut1
+										optional
+											TurnOnMouseKeysWithLeft_ALT_plus_SHIFT_plus_NUMLOCK1
+												optional
+													DisplayAWarningMessageWhenTurningASettingOn2
+													MakeASoundWhenTurningASettingOnOrOff2
+									PointerSpeed1
+										mandatory
+											TopSpeed1
+												alternative
+													High1
+													Low1
+											Acceleration1
+												alternative
+													Fast2
+													Slow2
+										optional
+											HoldDownCTRLToSpeedUpAndSHIFTToSlowDown1
+									OtherSettings1
+										optional
+											UseMouseKeysWhenNUMLOCKis1
+												alternative
+													Off1
+													On1
+											DisplayTheMouseKeysIconOnTheTaskbar1
+						optional
+							TurnOnMouseKeys1
+					MakeItEasierToManageWindows1
+						optional
+							ActivateAWindowByHoveringOverItWithTheMouse
+							PreventWindowsFromBeingAutomaticallyArrangedWhenMovedToTheEdgeOfTheScreen1
+					SeeAlso4
+						optional
+							MouseSettings
+								mandatory
+									Buttons
+									Pointer
+									PointerOption
+									Hardware1
+							LearnAboutAdditionalAssistiveTechnologiesOnline4
+			MakeTheKeyboardEasierToUse
+				mandatory
+					ControlTheMouseWithTheKeyboard2
+						mandatory
+							SetupMouseKeys2
+								or
+									PointerSpeed2
+										mandatory
+											TopSpeed2
+												alternative
+													Low2
+													High2
+											Acceleration2
+												alternative
+													Slow3
+													Fast3
+										optional
+											HoldDownCTRLToSpeedUpAndSHIFTToSlowDown2
+									OtherSettings2
+										optional
+											UseMouseKeysWhenNUMLOCKis2
+												alternative
+													On2
+													Off2
+											DisplayTheMouseKeysIconOnTheTaskbar2
+									KeyboardShortcut2
+										optional
+											TurnOnMouseKeysWithLeft_ALT_plus_SHIFT_plus_NUMLOCK2
+												optional
+													DisplayAWarningMessageWhenTurningASettingOn3
+													MakeASoundWhenTurningASettingOnOrOff3
+						optional
+							TurnOnMouseKeys2
+					MakeItEasierToType1
+						mandatory
+							SetupStickyKeys
+						optional
+							TurnOnStickyKeys
+							TurnOnToggleKeys
+							TurnOnFilterKeys1
+							SetupFilterKeys2
+								optional
+									KeyboardShortcut3
+										optional
+											TurnOnStickyKeyWhenSHIFTisPressedFiveTimes
+											DisplayAWarningMessageWhenTurningASettingOn4
+											MakeASoundWhenTurningASettingOnOrOff4
+											SetupFilterKeys1
+												mandatory
+													FilterOption
+														mandatory
+															FilterOption_1 {abstract true}
+																alternative
+																	TurnOnBounceKeys
+																	TurnOnRepeatKeysAndSlowKeys
+															HowLongShouldTheComputerWaitBeforeAcceptingKeystrokes
+																alternative
+																	"_2_0Seconds_"
+																	"_1_0Seconds_"
+																	"_1_5Seconds_"
+																	"_0_5Seconds_"
+																	"_0_7Seconds_"
+															SetupRepeatKeysAndSlowKeys
+																optional
+																	AvoidAccidentalKeytrockes
+																		mandatory
+																			HowLongDoYouWantToHoldDownAKeyBeforeYourComputerAcceptsTheAcceptsTheKeystroke
+																				alternative
+																					"_0_3Seconds"
+																					"_0_0Seconds"
+																					"_1_0Seconds"
+																					"_0_7Seconds"
+																					"_2_0Seconds"
+																					"_0_5Seconds"
+																					"_5_0Seconds"
+																					"_20_0Seconds"
+																					"_10_0Seconds"
+																					"_1_4Seconds"
+																	AvoidRepeatedKeystrokesWhenYouHoldDownAKey
+																		mandatory
+																			AvoidRepeatedKeystrokesWhenYouHoldDownAKey_1 {abstract true}
+																				alternative
+																					IgnoreAllRepeatedKeystrokes
+																					SlowDownKeyboardRepeateRates
+																			HowLongShouldTheComputerWaitBeforeAcceptingTheFirstrepeatedKeystroke
+																				alternative
+																					"_1_7Seconds__"
+																					"_0_3Seconds__"
+																					"_2_0Seconds__"
+																					"_0_0Seconds__"
+																					"_0_7Seconds__"
+																					"_1_1Seconds__"
+																			HowLongShouldTheComputerWaitBeforeAcceptingSubsequentRepeatedKeystrokes
+																				alternative
+																					"_1_7Seconds___"
+																					"_0_0Seconds___"
+																					"_0_3Seconds___"
+																					"_0_7Seconds___"
+																					"_1_1Seconds___"
+																					"_2_0Seconds___"
+												optional
+													TurnOnFilterKeys2
+													KeyboardShortcut4
+														optional
+															TurnOnFilterKeyWhenRightSHIFTisPressedForEigthSeconds
+															DisplayAWarningMessageWhenTurningASettingOn5
+															MakeASoundWhenTurningASettingOnOrOff5
+													OtherSettings3
+														optional
+															BeepWhenKeyArePressedOrAccepted
+															DisplayTheFilterKeysIconOnTheTaskbar
+									Option2
+										optional
+											LockModifierKeysWhenPressedTwiceInARow
+											TurnOffStickeysWhenTwoKeysArePressedAtOnce
+									Feedback
+										optional
+											PlayASoundWhenModifierKeysArePressed
+											DisplayTheStickyKeyIconOnTheTaskBar
+				optional
+					MakeItEasierToUseKeyboardShortcuts
+						optional
+							UnderlineKeyboardShortcutsAndAccesskeys
+					MakeItEasierToManageWindows2
+						optional
+							PreventWindowsFromBeingAutomaticallyArrangedWhenMovedToTheEdgeOfTheScreen2
+					SeeAlso5
+						optional
+							AddADvorakKeyboardAndChangeOtherKeyboardInputSetting
+							KeyboardSettings
+								mandatory
+									Speed
+										mandatory
+											CharacterRepeat
+												mandatory
+													RepeatDelay
+														alternative
+															Short
+															Long
+													RepeatRate
+														alternative
+															Slow4
+															Fast4
+											CursorBlinkRate
+												alternative
+													None1
+													Fast5
+									Hardware2
+							LearnAboutAdditionalAssistiveTechnologiesOnline5
+			UseTextOrVisualAlternativesForSounds
+				mandatory
+					UseVisualCuesInteadOfSounds
+						mandatory
+							ChooseVisualWarning
+								alternative
+									FlashActiveCaptionBar
+									Note
+									FlashActiveWindow
+									FlashDesktop
+						optional
+							TurnOnVisualNotificationForSounds
+							TurnOnTextCaptionsForSpokenDialog
+				optional
+					SeeAlso6
+						optional
+							AudioAndSoundThemes
+							LearnAboutAdditionalAssistiveTechnologiesOnline6
+			MakeItEasierToFocusOnTasks
+				mandatory
+					MakeItEasierToType2
+					AdjustTimeLimitsAndFlashingVisuals2
+						mandatory
+							HowLongShouldWindowsNotificationDialogBoxesStayOpen2
+								alternative
+									"_30_Seconds"
+									"_1_Minute"
+									"_7_Seconds"
+									"_15_Seconds"
+									"_5_Secons"
+									"_5_Minutes"
+						optional
+							TurnOffAllUnnecessaryAnimationsWhenPossible
+				optional
+					Reading
+						mandatory
+							TurnOnNarrator3
+						optional
+							RemoveBackgroundImageWhenAvailable2
+					MakeItEasierToManageWindows3
+						optional
+							PreventWindowsFromBeingAutomaticallyArrangedWhenMovedToTheEdgeOfTheScreen3
+					SeeAlso7
+						optional
+							UseSpeechRecognition2
+							LearnAboutAdditionalAssistiveTechnologiesOnline7
+			MakeTouchAndTabletsEasierToUse
+				mandatory
+					LaunchingCommonTools
+						alternative
+							OnScreenKeyboard
+							Narrator
+							Magnifier2
+							None2
+				optional
+					SeeAlso8
+						optional
+							MakeTouchEasierToUse
+							LearnAboutAdditionalAssistiveTechnologiesOnline8
+			SeeAlso
+			Microphone
+			Advanced
+			TurnOnNarrator
+			Option
+			Bold
+			LearnAboutAdditionalAssistiveTechnologiesOnline
+			DisplayAWarningMessageWhenTurningASettingOn
+			Magnifier
+			MakeASoundWhenTurningASettingOnOrOff
+			Low
+			High
+			Slow
+			Fast
+			ControlTheMouseWithTheKeyboard
+			MakeItEasierToManageWindows
+			TurnOnMouseKeys
+			SetupMouseKeys
+			KeyboardShortcut
+			PointerSpeed
+			OtherSettings
+			TurnOnMouseKeysWithLeft_ALT_plus_SHIFT_plus_NUMLOCK
+			TopSpeed
+			Acceleration
+			HoldDownCTRLToSpeedUpAndSHIFTToSlowDown
+			UseMouseKeysWhenNUMLOCKis
+			DisplayTheMouseKeysIconOnTheTaskbar
+			On
+			Off
+			SetupFilterKeys
+			TurnOnFilterKeys
+			PreventWindowsFromBeingAutomaticallyArrangedWhenMovedToTheEdgeOfTheScreen
+			Hardware
+			MakeItEasierToType
+			AdjustTimeLimitsAndFlashingVisuals
+			RemoveBackgroundImageWhenAvailable
+			HowLongShouldWindowsNotificationDialogBoxesStayOpen
+			UseSpeechRecognition
+			None
+
+constraints
+	!AdjustTimeLimitsAndFlashingVisuals2 | AdjustTimeLimitsAndFlashingVisuals
+	!Fast2 | Fast
+	!Fast3 | Fast
+	!TurnOnNarrator3 | TurnOnNarrator
+	!ControlTheMouseWithTheKeyboard1 | ControlTheMouseWithTheKeyboard
+	!ControlTheMouseWithTheKeyboard2 | ControlTheMouseWithTheKeyboard
+	!TopSpeed | TopSpeed1 | TopSpeed2
+	!UseMouseKeysWhenNUMLOCKis1 | UseMouseKeysWhenNUMLOCKis
+	!TurnOnMouseKeysWithLeft_ALT_plus_SHIFT_plus_NUMLOCK2 | TurnOnMouseKeysWithLeft_ALT_plus_SHIFT_plus_NUMLOCK
+	!KeyboardShortcut4 | KeyboardShortcut
+	!MakeItEasierToManageWindows2 | MakeItEasierToManageWindows
+	!Magnifier1 | Magnifier
+	!Fast5 | Fast
+	!SeeAlso8 | SeeAlso
+	!MakeASoundWhenTurningASettingOnOrOff | MakeASoundWhenTurningASettingOnOrOff1 | MakeASoundWhenTurningASettingOnOrOff2 | MakeASoundWhenTurningASettingOnOrOff3 | MakeASoundWhenTurningASettingOnOrOff4 | MakeASoundWhenTurningASettingOnOrOff5
+	!DisplayAWarningMessageWhenTurningASettingOn4 | DisplayAWarningMessageWhenTurningASettingOn
+	!Hardware2 | Hardware
+	!SetupFilterKeys | SetupFilterKeys1 | SetupFilterKeys2
+	!Magnifier2 | Magnifier
+	!Bold | Bold1 | Bold2 | Bold3
+	!Bold1 | Bold
+	!LearnAboutAdditionalAssistiveTechnologiesOnline3 | LearnAboutAdditionalAssistiveTechnologiesOnline
+	!MakeASoundWhenTurningASettingOnOrOff3 | MakeASoundWhenTurningASettingOnOrOff
+	!Advanced1 | Advanced
+	!PointerSpeed2 | PointerSpeed
+	!Low | Low1 | Low2
+	!None2 | None
+	!DisplayAWarningMessageWhenTurningASettingOn3 | DisplayAWarningMessageWhenTurningASettingOn
+	!Microphone1 | Microphone
+	!Option | Option1 | Option2
+	!UseMouseKeysWhenNUMLOCKis | UseMouseKeysWhenNUMLOCKis1 | UseMouseKeysWhenNUMLOCKis2
+	!Slow4 | Slow
+	!Option1 | Option
+	!TurnOnFilterKeys1 | TurnOnFilterKeys
+	!DisplayAWarningMessageWhenTurningASettingOn2 | DisplayAWarningMessageWhenTurningASettingOn
+	!Hardware1 | Hardware
+	!LearnAboutAdditionalAssistiveTechnologiesOnline | LearnAboutAdditionalAssistiveTechnologiesOnline1 | LearnAboutAdditionalAssistiveTechnologiesOnline2 | LearnAboutAdditionalAssistiveTechnologiesOnline3 | LearnAboutAdditionalAssistiveTechnologiesOnline4 | LearnAboutAdditionalAssistiveTechnologiesOnline5 | LearnAboutAdditionalAssistiveTechnologiesOnline6 | LearnAboutAdditionalAssistiveTechnologiesOnline7 | LearnAboutAdditionalAssistiveTechnologiesOnline8
+	!SeeAlso1 | SeeAlso
+	!Low1 | Low
+	SetupMouseKeys | SetupMouseKeys1 | SetupMouseKeys2
+	!Fast4 | Fast
+	!TurnOnNarrator | TurnOnNarrator1 | TurnOnNarrator2 | TurnOnNarrator3
+	!MakeASoundWhenTurningASettingOnOrOff4 | MakeASoundWhenTurningASettingOnOrOff
+	!OtherSettings | OtherSettings1 | OtherSettings2 | OtherSettings3
+	!DisplayAWarningMessageWhenTurningASettingOn | DisplayAWarningMessageWhenTurningASettingOn1 | DisplayAWarningMessageWhenTurningASettingOn2 | DisplayAWarningMessageWhenTurningASettingOn3 | DisplayAWarningMessageWhenTurningASettingOn4 | DisplayAWarningMessageWhenTurningASettingOn5
+	!LearnAboutAdditionalAssistiveTechnologiesOnline1 | LearnAboutAdditionalAssistiveTechnologiesOnline
+	!SetupMouseKeys2 | SetupMouseKeys
+	!SetupFilterKeys2 | SetupFilterKeys
+	!RemoveBackgroundImageWhenAvailable1 | RemoveBackgroundImageWhenAvailable
+	!LearnAboutAdditionalAssistiveTechnologiesOnline7 | LearnAboutAdditionalAssistiveTechnologiesOnline
+	!Low2 | Low
+	!TurnOnNarrator2 | TurnOnNarrator
+	!Slow2 | Slow
+	!OtherSettings2 | OtherSettings
+	!None1 | None
+	!MakeASoundWhenTurningASettingOnOrOff2 | MakeASoundWhenTurningASettingOnOrOff
+	!KeyboardShortcut2 | KeyboardShortcut
+	!TurnOnNarrator1 | TurnOnNarrator
+	!DisplayTheMouseKeysIconOnTheTaskbar | DisplayTheMouseKeysIconOnTheTaskbar1 | DisplayTheMouseKeysIconOnTheTaskbar2
+	!HowLongShouldWindowsNotificationDialogBoxesStayOpen2 | HowLongShouldWindowsNotificationDialogBoxesStayOpen
+	!LearnAboutAdditionalAssistiveTechnologiesOnline8 | LearnAboutAdditionalAssistiveTechnologiesOnline
+	!DisplayAWarningMessageWhenTurningASettingOn1 | DisplayAWarningMessageWhenTurningASettingOn
+	!Acceleration2 | Acceleration
+	!SeeAlso | SeeAlso1 | SeeAlso2 | SeeAlso3 | SeeAlso4 | SeeAlso5 | SeeAlso6 | SeeAlso7 | SeeAlso8
+	!TopSpeed1 | TopSpeed
+	!UseSpeechRecognition1 | UseSpeechRecognition
+	!SeeAlso6 | SeeAlso
+	!DisplayAWarningMessageWhenTurningASettingOn5 | DisplayAWarningMessageWhenTurningASettingOn
+	!TopSpeed2 | TopSpeed
+	!MakeASoundWhenTurningASettingOnOrOff1 | MakeASoundWhenTurningASettingOnOrOff
+	!KeyboardShortcut1 | KeyboardShortcut
+	!HoldDownCTRLToSpeedUpAndSHIFTToSlowDown2 | HoldDownCTRLToSpeedUpAndSHIFTToSlowDown
+	!TurnOnFilterKeys | TurnOnFilterKeys1 | TurnOnFilterKeys2
+	!Acceleration | Acceleration1 | Acceleration2
+	!TurnOnFilterKeys2 | TurnOnFilterKeys
+	!KeyboardShortcut3 | KeyboardShortcut
+	!Fast | Fast1 | Fast2 | Fast3 | Fast4 | Fast5
+	!HowLongShouldWindowsNotificationDialogBoxesStayOpen1 | HowLongShouldWindowsNotificationDialogBoxesStayOpen
+	!TurnOnMouseKeys2 | TurnOnMouseKeys
+	!MakeItEasierToManageWindows1 | MakeItEasierToManageWindows
+	!ControlTheMouseWithTheKeyboard | ControlTheMouseWithTheKeyboard1 | ControlTheMouseWithTheKeyboard2
+	!Hardware | Hardware1 | Hardware2
+	!None | None1 | None2
+	!TurnOnMouseKeys | TurnOnMouseKeys1 | TurnOnMouseKeys2
+	!OtherSettings1 | OtherSettings
+	!AdjustTimeLimitsAndFlashingVisuals | AdjustTimeLimitsAndFlashingVisuals1 | AdjustTimeLimitsAndFlashingVisuals2
+	!SeeAlso4 | SeeAlso
+	!PreventWindowsFromBeingAutomaticallyArrangedWhenMovedToTheEdgeOfTheScreen | PreventWindowsFromBeingAutomaticallyArrangedWhenMovedToTheEdgeOfTheScreen1 | PreventWindowsFromBeingAutomaticallyArrangedWhenMovedToTheEdgeOfTheScreen2 | PreventWindowsFromBeingAutomaticallyArrangedWhenMovedToTheEdgeOfTheScreen3
+	!SeeAlso5 | SeeAlso
+	!SeeAlso2 | SeeAlso
+	!LearnAboutAdditionalAssistiveTechnologiesOnline6 | LearnAboutAdditionalAssistiveTechnologiesOnline
+	!Bold2 | Bold
+	!PreventWindowsFromBeingAutomaticallyArrangedWhenMovedToTheEdgeOfTheScreen2 | PreventWindowsFromBeingAutomaticallyArrangedWhenMovedToTheEdgeOfTheScreen
+	!Slow | Slow1 | Slow2 | Slow3 | Slow4
+	!High | High1 | High2
+	!SetupFilterKeys1 | SetupFilterKeys
+	!LearnAboutAdditionalAssistiveTechnologiesOnline2 | LearnAboutAdditionalAssistiveTechnologiesOnline
+	!High2 | High
+	!Acceleration1 | Acceleration
+	!Advanced2 | Advanced
+	!MakeASoundWhenTurningASettingOnOrOff5 | MakeASoundWhenTurningASettingOnOrOff
+	!LearnAboutAdditionalAssistiveTechnologiesOnline4 | LearnAboutAdditionalAssistiveTechnologiesOnline
+	!PointerSpeed1 | PointerSpeed
+	!LearnAboutAdditionalAssistiveTechnologiesOnline5 | LearnAboutAdditionalAssistiveTechnologiesOnline
+	!PreventWindowsFromBeingAutomaticallyArrangedWhenMovedToTheEdgeOfTheScreen1 | PreventWindowsFromBeingAutomaticallyArrangedWhenMovedToTheEdgeOfTheScreen
+	!UseSpeechRecognition2 | UseSpeechRecognition
+	!HoldDownCTRLToSpeedUpAndSHIFTToSlowDown | HoldDownCTRLToSpeedUpAndSHIFTToSlowDown1 | HoldDownCTRLToSpeedUpAndSHIFTToSlowDown2
+	!TurnOnMouseKeys1 | TurnOnMouseKeys
+	!Microphone2 | Microphone
+	!RemoveBackgroundImageWhenAvailable | RemoveBackgroundImageWhenAvailable1 | RemoveBackgroundImageWhenAvailable2
+	!TurnOnMouseKeysWithLeft_ALT_plus_SHIFT_plus_NUMLOCK1 | TurnOnMouseKeysWithLeft_ALT_plus_SHIFT_plus_NUMLOCK
+	!AdjustTimeLimitsAndFlashingVisuals1 | AdjustTimeLimitsAndFlashingVisuals
+	!DisplayTheMouseKeysIconOnTheTaskbar2 | DisplayTheMouseKeysIconOnTheTaskbar
+	!PreventWindowsFromBeingAutomaticallyArrangedWhenMovedToTheEdgeOfTheScreen3 | PreventWindowsFromBeingAutomaticallyArrangedWhenMovedToTheEdgeOfTheScreen
+	!MakeItEasierToManageWindows3 | MakeItEasierToManageWindows
+	!Microphone | Microphone1 | Microphone2
+	!DisplayTheMouseKeysIconOnTheTaskbar1 | DisplayTheMouseKeysIconOnTheTaskbar
+	!RemoveBackgroundImageWhenAvailable2 | RemoveBackgroundImageWhenAvailable
+	!Fast1 | Fast
+	!HoldDownCTRLToSpeedUpAndSHIFTToSlowDown1 | HoldDownCTRLToSpeedUpAndSHIFTToSlowDown
+	!Magnifier | Magnifier1 | Magnifier2
+	!TurnOnMouseKeysWithLeft_ALT_plus_SHIFT_plus_NUMLOCK | TurnOnMouseKeysWithLeft_ALT_plus_SHIFT_plus_NUMLOCK1 | TurnOnMouseKeysWithLeft_ALT_plus_SHIFT_plus_NUMLOCK2
+	!UseSpeechRecognition | UseSpeechRecognition1 | UseSpeechRecognition2
+	!Slow1 | Slow
+	!Bold3 | Bold
+	!High1 | High
+	!SeeAlso3 | SeeAlso
+	!SetupMouseKeys1 | SetupMouseKeys
+	!PointerSpeed | PointerSpeed1 | PointerSpeed2
+	!Advanced | Advanced1 | Advanced2
+	!Slow3 | Slow
+	!Option2 | Option
+	!OtherSettings3 | OtherSettings
+	!MakeItEasierToManageWindows | MakeItEasierToManageWindows1 | MakeItEasierToManageWindows2 | MakeItEasierToManageWindows3
+	!UseMouseKeysWhenNUMLOCKis2 | UseMouseKeysWhenNUMLOCKis
+	!HowLongShouldWindowsNotificationDialogBoxesStayOpen | HowLongShouldWindowsNotificationDialogBoxesStayOpen1 | HowLongShouldWindowsNotificationDialogBoxesStayOpen2
+	!SeeAlso7 | SeeAlso
+	!KeyboardShortcut | KeyboardShortcut1 | KeyboardShortcut2 | KeyboardShortcut3 | KeyboardShortcut4

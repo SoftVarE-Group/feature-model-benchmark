@@ -1,0 +1,452 @@
+namespace Accessibility
+
+features
+	Accessibility
+		optional
+			Appearance
+				mandatory
+					Look
+						mandatory
+							Background
+								alternative
+									TwillightFrost2560x1600
+									EarlyBlossom2560x1600
+									Ubuntu2560x1600
+									MorningDew2560x1600
+									PrecisePagolin2560x1600
+									DelicatePetals2560x1600
+							Theme
+								alternative
+									Adwaita
+									AmbianceDefault
+									Radiance
+									HighContrast1
+							LauncherIconSize
+								alternative
+									"_48"
+									"_32"
+									"_64"
+					Behaviour
+						mandatory
+							RevealLocation
+								alternative
+									Left1
+									TopLeftCorner
+							RevealSensitivity
+								alternative
+									Low
+									High
+							ShowTheMenusForAWindow
+								alternative
+									InTheMenuBar
+									InTheWindowsTitleBar
+						optional
+							AutoHideTheLauncher
+							EnableWorkspaces
+							AddShowDesktopIconToTheLauncher
+			BrightnessAndLock
+				mandatory
+					Brightness
+						mandatory
+							TurnScreenOffWhenInactiveFor
+								alternative
+									"_2Minutes"
+									"_1Hour"
+									"_10Minutes"
+									"_30Minutes"
+									"_1Minute"
+									Never
+									"_3Minutes"
+						optional
+							DimSceenToSaveLeft
+				optional
+					Lock1
+						mandatory
+							LockScreenAfter
+								alternative
+									"_30Minutes_"
+									"_2Minutes_"
+									"_1Hour_"
+									"_10Minutes_"
+									ScreenTurnsOff
+									"_1Minute_"
+									"_30Seconds"
+									"_5Minutes_"
+					RequireMyPasswordWhenWakingFromSuspend
+			Displays
+				mandatory
+					Resolution
+						alternative
+							Normal
+							Clockwise
+							Counterclockwise
+							"_180Degres"
+					Rotation
+					LauncherPlacement
+						alternative
+							AllDisplays
+							BuiltInDisplay1
+					ScaleForMenuAndTitleBars
+					ScaleAllWindowContentToMatch
+						alternative
+							DisplayWithSmallestControls
+							DisplayWithLargestControls
+							BuiltInDisplay2
+				optional
+					StickyEdges
+			TextEntry
+				mandatory
+					SwitchToNextSourceUsing
+						alternative
+							Super_Space1
+							New_Accelerator2
+					SwitchToPreviousSourceUsing
+						alternative
+							New_Accelerator1
+							Shift_Super_Space1
+					TextEntry_4 {abstract true}
+						alternative
+							AllowDifferentSourcesForEachWindow
+							UseTheSameSourceForAllWindows
+					ShowInputCandidates
+						alternative
+							Vertically
+							Horizontally
+				optional
+					AllowDifferentLayoutsForIndividualWindows1
+						alternative
+							NewWindowsUseTheCurrentSource
+							NewWindowsUseTheDefaultSource
+					UsingCustomFont
+					KeyboardSetting
+						mandatory
+							Typing1
+								mandatory
+									Typing1_1 {abstract true}
+										alternative
+											CursorBlinking
+												optional
+													CursorBlinksInTextFields
+													Speed2
+														alternative
+															Fast2
+															Slow2
+											RepeatKeys
+												mandatory
+													Delay2
+														alternative
+															Short4
+															Long1
+													Speed1
+														alternative
+															Fast1
+															Slow1
+												optional
+													KeyPressesRepeatWhenKeyIsHeldDown
+								optional
+									LayoutSettings
+										alternative
+											AllowDifferentLayoutsForIndividualWindows2
+												alternative
+													NewWindowsUseTheDefaultLayout
+													NewWindowsUseThePreviousWindowsLayout
+											UseTheSameLayoutForAllWindows
+						optional
+							Shortcuts
+								optional
+									Launchers
+										alternative
+											KeyToShowTheHUD
+												mandatory
+													Alt_T
+											LauncherTerminal
+												mandatory
+													Ctrl_Alt_T
+									Navigation
+										mandatory
+											MoveWindowToWorkspace
+												mandatory
+													Disabled1
+									Screenshots
+										alternative
+											CopyAScreenhotOfAnAreaToClipboard
+												mandatory
+													Shift_Ctrl_Print
+											TakeAScreenshotOfAWindow
+												mandatory
+													Alt_Print
+											CopyAScreenshotOfAwindowToClipboard
+												mandatory
+													Ctrl_Alt_Print
+											TakeAScreenshot
+												mandatory
+													Print
+											CopyAScreenshotToClipboard
+												mandatory
+													Ctrl_Print
+											TakeAScreenshotOfAnArea
+												mandatory
+													Shift_Print
+									SoundAndMedia
+									System
+										alternative
+											LockScreen
+												mandatory
+													Ctrl_Alt_L
+											LogOut
+												mandatory
+													Ctr_Alt_Delete
+									Typing2
+										alternative
+											SwitchToNextSource
+												mandatory
+													Super_Space2
+											ComposeKey
+												mandatory
+													Disabled2
+											AlternativeCharactersKey
+												mandatory
+													Disabled3
+											SwitchToPreviousSource
+												mandatory
+													Shift_Super_Space2
+									UniversalAccess2
+										alternative
+											TurnOnScreenKeyboardOnOrOff
+												mandatory
+													Disabled4
+											DecreaseTextSize
+												mandatory
+													Disabled6
+											IncreaseTextSize
+												mandatory
+													Disabled5
+											ZoomIn
+												mandatory
+													Alt_Super_plusEqual
+											TurnZoomOnOrOff
+												mandatory
+													Alt_Super_plus1
+											TurnScreenReaderOnOrOff
+												mandatory
+													Alt_Super_plus2
+											ZoomOut
+												mandatory
+													Alt_Super_plusMinus
+											HighContrastOnOrOff
+												mandatory
+													Disabled7
+									Windows
+										alternative
+											ToggleMaximisationState
+												mandatory
+													Ctrl_Alt_S1
+											ToggleShadedState
+												mandatory
+													Ctrl_Alt_S2
+											MaximiseWindow
+												mandatory
+													Ctrl_Super_Up
+											MoveWindow
+												mandatory
+													Alt_F7
+											MinimizeWindow
+												mandatory
+													Ctrl_Alt_0
+											ActivateTheWindowMenu
+												mandatory
+													Alt_Space
+											ResizeWindow
+												mandatory
+													Alt_F8
+											RaiseWindowAboveOtherWindows
+												mandatory
+													Disabled9
+											ToggleFullscreenMode
+												mandatory
+													Disabled8
+											RestoreWindow
+												mandatory
+													Ctrl_Super_Down
+											CloseWindow
+												mandatory
+													Alt_F4
+											LowerWindowBelowOtherWindows
+												mandatory
+													Disabled10
+									CustomShortcuts
+			UniversalAccess1
+				optional
+					Seeing
+						optional
+							HighContrast2
+							LargeText
+							ScreenReader
+							BeepOnCapsAndNumLock
+					Hearing
+						optional
+							VisualAlerts
+								alternative
+									FlashTheWindowTitle
+									FlashTheEntireScreen
+					Typing3
+						optional
+							OnScreenKeyboard
+							StickyKeys
+								optional
+									DisableIfTwoKeysArePressedTogether
+									BeepWhenAModifierKeysIsPressed
+							SlowKeys
+								mandatory
+									AcceptanceDelay3
+										alternative
+											Long2
+											Short5
+								optional
+									BeepWhenAKeysIs
+										or
+											Accepted
+											Rejected
+											Pressed
+							BounceKeys
+								mandatory
+									AcceptanceDelay1
+										alternative
+											Long3
+											Short1
+								optional
+									BeepWhenAKeyIsRejected
+							EnableByKeyboard
+					PointingAndClicking
+						optional
+							MouseKeys
+							SimulatedSecondaryCLick
+								optional
+									AcceptanceDelay2
+										alternative
+											Long4
+											Short2
+							HoverClick
+								optional
+									Delay1
+										alternative
+											Long5
+											Short3
+									MotionThreshold
+										alternative
+											Large
+											Small
+							MouseSettings
+								mandatory
+									General
+										mandatory
+											PrimaryButton
+												alternative
+													Right
+													Left2
+											DoubleClick
+												alternative
+													Slow3
+													Fast3
+								optional
+									Touchpad
+										mandatory
+											PointerSpeed
+										optional
+											DisableWhileTyping
+											TapTopClick
+											TwoFingerScroll
+											NaturalScrolling
+			BuiltInDisplay
+			Super_Space
+			Shift_Super_Space
+			New_Accelerator
+			AllowDifferentLayoutsForIndividualWindows
+			Typing
+			Short
+			Long
+			Speed
+			Slow
+			Fast
+			UniversalAccess
+			Disabled
+			Alt_Super_plus
+			Ctrl_Alt_S
+			HighContrast
+			AcceptanceDelay
+			Delay
+			Left
+
+constraints
+	!Disabled6 | Disabled
+	!Short2 | Short
+	!Short4 | Short
+	!Fast | Fast1 | Fast2 | Fast3
+	!Ctrl_Alt_S2 | Ctrl_Alt_S
+	!Shift_Super_Space | Shift_Super_Space1 | Shift_Super_Space2
+	!Slow | Slow1 | Slow2 | Slow3
+	!Super_Space2 | Super_Space
+	!Delay | Delay1 | Delay2
+	!Left1 | Left
+	!Disabled10 | Disabled
+	!BuiltInDisplay1 | BuiltInDisplay
+	!AcceptanceDelay2 | AcceptanceDelay
+	!Long5 | Long
+	!Ctrl_Alt_S1 | Ctrl_Alt_S
+	!UniversalAccess2 | UniversalAccess
+	!Disabled2 | Disabled
+	!Speed1 | Speed
+	!Disabled1 | Disabled
+	!AllowDifferentLayoutsForIndividualWindows1 | AllowDifferentLayoutsForIndividualWindows
+	!Disabled4 | Disabled
+	!Super_Space1 | Super_Space
+	!Delay1 | Delay
+	!Slow2 | Slow
+	!Left2 | Left
+	!Speed2 | Speed
+	!Short1 | Short
+	!Alt_Super_plus1 | Alt_Super_plus
+	!Shift_Super_Space1 | Shift_Super_Space
+	!New_Accelerator | New_Accelerator1 | New_Accelerator2
+	!BuiltInDisplay2 | BuiltInDisplay
+	!Short | Short1 | Short2 | Short3 | Short4 | Short5
+	!Long2 | Long
+	!Fast2 | Fast
+	!Disabled8 | Disabled
+	!Typing1 | Typing
+	!AcceptanceDelay3 | AcceptanceDelay
+	!Short3 | Short
+	!Fast3 | Fast
+	!Alt_Super_plus | Alt_Super_plus1 | Alt_Super_plus2
+	!AllowDifferentLayoutsForIndividualWindows2 | AllowDifferentLayoutsForIndividualWindows
+	!Super_Space | Super_Space1 | Super_Space2
+	!BuiltInDisplay | BuiltInDisplay1 | BuiltInDisplay2
+	!Alt_Super_plus2 | Alt_Super_plus
+	!Long | Long1 | Long2 | Long3 | Long4 | Long5
+	!Typing3 | Typing
+	!Long1 | Long
+	!Slow3 | Slow
+	!UniversalAccess1 | UniversalAccess
+	!AcceptanceDelay1 | AcceptanceDelay
+	!Short5 | Short
+	!Disabled3 | Disabled
+	!UniversalAccess | UniversalAccess1 | UniversalAccess2
+	!AllowDifferentLayoutsForIndividualWindows | AllowDifferentLayoutsForIndividualWindows1 | AllowDifferentLayoutsForIndividualWindows2
+	!Disabled | Disabled1 | Disabled2 | Disabled3 | Disabled4 | Disabled5 | Disabled6 | Disabled7 | Disabled8 | Disabled9 | Disabled10
+	!Disabled9 | Disabled
+	!Left | Left1 | Left2
+	!Slow1 | Slow
+	!New_Accelerator1 | New_Accelerator
+	!New_Accelerator2 | New_Accelerator
+	!Typing2 | Typing
+	!Delay2 | Delay
+	!Speed | Speed1 | Speed2
+	!Fast1 | Fast
+	!Typing | Typing1 | Typing2 | Typing3
+	!Shift_Super_Space2 | Shift_Super_Space
+	!Ctrl_Alt_S | Ctrl_Alt_S1 | Ctrl_Alt_S2
+	!Long4 | Long
+	!Disabled5 | Disabled
+	!Long3 | Long
+	!Disabled7 | Disabled
+	!AcceptanceDelay | AcceptanceDelay1 | AcceptanceDelay2 | AcceptanceDelay3

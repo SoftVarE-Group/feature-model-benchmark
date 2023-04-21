@@ -1,0 +1,312 @@
+namespace RootFeatures
+
+features
+	RootFeatures
+		mandatory
+			Accessibility
+				mandatory
+					System
+						mandatory
+							TouchAndHoldDelay
+								alternative
+									Long
+									Medium
+									Short
+						optional
+							Captions
+								mandatory
+									StandardOptions
+										mandatory
+											Language1
+												alternative
+													BahasaIndonesie
+													Hrvatski
+													Deutsch
+													Francais
+													Magyar
+													Nederlands
+													BahasaMelayu
+													EnglishUnitedKingdom1
+													Svenska
+													UnitedUnitedStates
+													Suomi
+													Italiano
+													Dansk
+													Filipino
+											TextSize
+												alternative
+													Small2
+													VeryLarge
+													Large2
+													VerySmall
+													Normal3
+											CaptionStyle
+												alternative
+													YellowOnBlue
+													BlackOnWhite
+													Custom
+													UseAppDefault
+													WhiteOnBlack
+													YellowOnBlack
+							MagnificationGestures
+							LargeText
+							HighContrastText
+							PowerBuutonEndsCall
+							AutoRotateScreen
+							AccessibilityShortcut
+							TextToSpeechOutPut2
+								optional
+									PreferredEngine
+										mandatory
+											GoogleTextToSpeech
+										optional
+											Settings
+												mandatory
+													Language2
+														alternative
+															FrenchFrance
+															EnglishUnitedStates
+															GermanGermany
+															EnglishUnitedKingdom2
+															ItalianItaly
+															SpanishSpain
+													SettingForGoogleTextToSpeechEngine
+														optional
+															AutoUpdateVoice
+															UseWiFiOnly
+															AnonymousUsageReports
+															Feedback
+													InstallVoiceData
+									General
+										mandatory
+											SpeechRate
+												alternative
+													VeryFast
+													Slow
+													VeryRapid
+													Fastest
+													Fast1
+													Normal2
+													Rapid
+													Faster
+											ListenToAnExample
+											DefaultLanguageStatus
+					Display1
+						mandatory
+							ColorCorrection
+								alternative
+									Tritanomaly_BlueYellow
+									Deuteronomaly_RedGreen
+									Protanomaly_RedGreen
+						optional
+							ColorInversion
+								mandatory
+									CorrectionMode
+				optional
+					Services
+			LanguageAndInput
+				mandatory
+					Language4
+					PersonalDictionary1
+					KeyboardAndInputMethods
+						mandatory
+							CurrentKeyboard
+							AndroidKeyboard_AOSP
+								mandatory
+									Language3
+										alternative
+											Basque_Spain
+											UseSystemLanguage
+											EnglishUnitedKingdom3
+											Armenian_Armenia
+											Alphabet_QWERTY
+									Preferences
+										optional
+											AutoCapitalization
+											DoubleSpacePeriod
+											VibrateOnKeypress
+											SoundOnKeypress
+											PopupOnKeypress
+											VoiceInputKey
+									AppearanceAndLayouts
+										mandatory
+											Theme
+												alternative
+													MaterialLight
+													MaterialDark
+													HoloWhited
+													HoloBlue
+											CustomInputStyles
+												alternative
+													German_QWERTY
+													French_QWERTY
+									TextCorrection
+										mandatory
+											PersonalDictionary2
+											AddOnDictionaries
+											AutoCorrection
+										optional
+											BlockOffensiveWords2
+											ShowCorrectionSuggestions
+											PersonalizedSuggestions
+											SuggestContactNames
+											NextWordSuggestions
+									Advanced
+										mandatory
+											KeyPopupDismissDelay
+												alternative
+													NoDelay
+													Default2
+											KeypressVibrationDuration
+												alternative
+													"_0ms"
+													"_50ms"
+													"_100ms"
+											KeypressSoundVolume
+							GoocgleVoiceTyping
+								mandatory
+									Language5
+									OKGoogleDetection
+									HandsFree
+										alternative
+											ForBluetoothDevices
+											ForWiredHeadsets
+									SpeechOutput
+										alternative
+											On
+											HandsFreeOnly
+								optional
+									BlockOffensiveWords1
+									BluetoothHeadset
+						optional
+							BlockOffensiveWords
+					Speech
+						mandatory
+							VoiceInput
+								optional
+									EnchanceGoogleService
+									BasicGooglrRecohnition
+							TextToSpeechOutPut1
+					MouseOrTouchpad
+						mandatory
+							PointerSpeed
+								alternative
+									"__0"
+									"__100"
+									"__50"
+				optional
+					SpeelChecker
+						mandatory
+							AndroidSpeelChecker_AOSP
+		optional
+			Language
+			Display
+			Display2
+				mandatory
+					BrightnessLevel
+						alternative
+							"_0_"
+							"_50_"
+							"_100_"
+					Wallpaper
+						alternative
+							Wallpapers
+							Photos2
+							FileExplorer
+							LiveWallpapers
+								alternative
+									HoloSpiral
+									PhaseBean
+									Spectrum
+									Bubbles
+									BlackHole
+									MarbleLegend
+							Gallery
+					Sleep
+						alternative
+							"_10Minutes"
+							"_30Seconds"
+							"_1Minute"
+							"_2Minutes"
+							"_30Minutes"
+							"_15Seconds"
+					FontSize
+						alternative
+							Huge
+							Large1
+							Small1
+							Normal1
+					Font
+						alternative
+							Online
+								alternative
+									Redflow
+									Handwind
+									Xiaoming
+									Glamp
+									Glint
+									GioFont
+									Gardenia
+									Silicone
+									Monkey
+							Local
+								alternative
+									Olive
+									Appaly
+									Default1
+				optional
+					Photos
+					Daydream
+						alternative
+							Colors
+							PhotoTable
+							Photos1
+							Clock
+							PhotoFrame
+			PersonalDictionary
+			TextToSpeechOutPut
+			Large
+			Normal
+			Default
+			Small
+			EnglishUnitedKingdom
+
+constraints
+	!PersonalDictionary | PersonalDictionary1 | PersonalDictionary2
+	!Photos | Photos1 | Photos2
+	!Large2 | Large
+	!Normal | Normal1 | Normal2 | Normal3
+	!Language3 | Language
+	!Small1 | Small
+	!Large | Large1 | Large2
+	!Display | Display1 | Display2
+	!Language4 | Language
+	!TextToSpeechOutPut | TextToSpeechOutPut1 | TextToSpeechOutPut2
+	!EnglishUnitedKingdom3 | EnglishUnitedKingdom
+	!Large1 | Large
+	!EnglishUnitedKingdom1 | EnglishUnitedKingdom
+	!TextToSpeechOutPut2 | TextToSpeechOutPut
+	!PersonalDictionary2 | PersonalDictionary
+	!BlockOffensiveWords | BlockOffensiveWords1 | BlockOffensiveWords2
+	!BlockOffensiveWords2 | BlockOffensiveWords
+	!Default | Default1 | Default2
+	!Language5 | Language
+	!BlockOffensiveWords1 | BlockOffensiveWords
+	!EnglishUnitedKingdom2 | EnglishUnitedKingdom
+	!Small | Small1 | Small2
+	!EnglishUnitedKingdom | EnglishUnitedKingdom1 | EnglishUnitedKingdom2 | EnglishUnitedKingdom3
+	!TextToSpeechOutPut1 | TextToSpeechOutPut
+	!Language | Language1 | Language2 | Language3 | Language4 | Language5
+	!Default2 | Default
+	!Language2 | Language
+	!Normal1 | Normal
+	!Small2 | Small
+	!Normal3 | Normal
+	!Default1 | Default
+	!Photos2 | Photos
+	!Display2 | Display
+	!PersonalDictionary1 | PersonalDictionary
+	!Language1 | Language
+	!Photos1 | Photos
+	!Display1 | Display
+	!Normal2 | Normal

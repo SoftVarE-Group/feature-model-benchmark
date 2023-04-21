@@ -1,0 +1,1571 @@
+namespace "__Root__"
+
+features
+	"__Root__" {abstract true}
+		optional
+			DMESG
+			DMESG_m
+			SED
+			SED_m
+			PATCH
+			PATCH_m
+			BASENAME
+			BASENAME_m
+			CATV
+			CATV_m
+			TOYSH_ENVVARS
+			TOYSH_ENVVARS_m
+			TOYSH
+			TOYSH_m
+			MKE2FS_LABEL
+			MKE2FS_LABEL_m
+			SORT
+			SORT_m
+			TRUE
+			TRUE_m
+			TOYSH_PROCARGS
+			TOYSH_PROCARGS_m
+			MDEV
+			MDEV_m
+			DF
+			DF_m
+			READLINK
+			READLINK_m
+			TOYBOX_DEBUG
+			TOYBOX_DEBUG_m
+			TOYSH_TTY
+			TOYSH_TTY_m
+			EXIT
+			EXIT_m
+			BZCAT
+			BZCAT_m
+			ONEIT
+			ONEIT_m
+			TOYSH_JOBCTL
+			TOYSH_JOBCTL_m
+			DIRNAME
+			DIRNAME_m
+			MKE2FS_EXTENDED
+			MKE2FS_EXTENDED_m
+			TOYBOX_FREE
+			TOYBOX_FREE_m
+			CP
+			CP_m
+			TOYBOX
+			TOYBOX_m
+			NETCAT_LISTEN
+			NETCAT_LISTEN_m
+			UNAME
+			UNAME_m
+			MDEV_CONF
+			MDEV_CONF_m
+			MKE2FS
+			MKE2FS_m
+			FALSE
+			FALSE_m
+			TOYSH_PROFILE
+			TOYSH_PROFILE_m
+			TOYSH_ARRAYS
+			TOYSH_ARRAYS_m
+			MKE2FS_JOURNAL
+			MKE2FS_JOURNAL_m
+			COUNT
+			COUNT_m
+			DF_PEDANTIC
+			DF_PEDANTIC_m
+			SEQ
+			SEQ_m
+			MKSWAP
+			MKSWAP_m
+			TOYSH_PIPES
+			TOYSH_PIPES_m
+			TOYSH_BUILTINS
+			TOYSH_BUILTINS_m
+			HELP
+			HELP_m
+			TOYSH_LOCALS
+			TOYSH_LOCALS_m
+			TEE
+			TEE_m
+			MKE2FS_GEN
+			MKE2FS_GEN_m
+			SLEEP
+			SLEEP_m
+			PWD
+			PWD_m
+			WHICH
+			WHICH_m
+			SHA1SUM
+			SHA1SUM_m
+			CD
+			CD_m
+			CD_P
+			CD_P_m
+			NETCAT
+			NETCAT_m
+			TOYSH_FLOWCTL
+			TOYSH_FLOWCTL_m
+			CAT
+			CAT_m
+			ECHO
+			ECHO_m
+			TOYSH_WILDCARDS
+			TOYSH_WILDCARDS_m
+			SYNC
+			SYNC_m
+			READLINK_F
+			READLINK_F_m
+			YES
+			YES_m
+			CHROOT
+			CHROOT_m
+			CHVT
+			CHVT_m
+			TOYSH_QUOTES
+			TOYSH_QUOTES_m
+			RMDIR
+			RMDIR_m
+			HELLO
+			HELLO_m
+			CKSUM
+			CKSUM_m
+			SORT_BIG
+			SORT_BIG_m
+			MKFIFO
+			MKFIFO_m
+			HELP_LONG
+			HELP_LONG_m
+			TTY
+			TTY_m
+			TOUCH
+			TOUCH_m
+			"_X1"
+			"_X2"
+			"_X3"
+			"_X4"
+			"_X5"
+			"_X6"
+			"_X7"
+			"_X8"
+			"_X9"
+			"_X10"
+			"_X11"
+			"_X12"
+			"_X13"
+			"_X14"
+			"_X15"
+			"_X16"
+			"_X17"
+			"_X18"
+			"_X19"
+			"_X20"
+			"_X21"
+			"_X22"
+			"_X23"
+			"_X24"
+			"_X25"
+			"_X26"
+			"_X27"
+			"_X28"
+			"_X29"
+			"_X30"
+			"_X31"
+			"_X32"
+			"_X33"
+			"_X34"
+			"_X35"
+			"_X36"
+			"_X37"
+			"_X38"
+			"_X39"
+			"_X40"
+			"_X41"
+			"_X42"
+			"_X43"
+			"_X44"
+			"_X45"
+			"_X46"
+			"_X47"
+			"_X48"
+			"_X49"
+			"_X50"
+			"_X51"
+			"_X52"
+			"_X53"
+			"_X54"
+			"_X55"
+			"_X56"
+			"_X57"
+			"_X58"
+			"_X59"
+			"_X60"
+			"_X61"
+			"_X62"
+			"_X63"
+			"_X64"
+			"_X65"
+			"_X66"
+			"_X67"
+			"_X68"
+			"_X69"
+			"_X70"
+			"_X71"
+			"_X72"
+			"_X73"
+			"_X74"
+			"_X75"
+			"_X76"
+			"_X77"
+			"_X78"
+			"_X79"
+			"_X80"
+			"_X81"
+			"_X82"
+			"_X83"
+			"_X84"
+			"_X85"
+			"_X86"
+			"_X87"
+			"_X88"
+			"_X89"
+			"_X90"
+			"_X91"
+			"_X92"
+			"_X93"
+			"_X94"
+			"_X95"
+			"_X96"
+			"_X97"
+			"_X98"
+			"_X99"
+			"_X100"
+			"_X101"
+			"_X102"
+			"_X103"
+			"_X104"
+			"_X105"
+			"_X106"
+			"_X107"
+			"_X108"
+			"_X109"
+			"_X110"
+			"_X111"
+			"_X112"
+			"_X113"
+			"_X114"
+			"_X115"
+			"_X116"
+			"_X117"
+			"_X118"
+			"_X119"
+			"_X120"
+			"_X121"
+			"_X122"
+			"_X123"
+			"_X124"
+			"_X125"
+			"_X126"
+			"_X127"
+			"_X128"
+			"_X129"
+			"_X130"
+			"_X131"
+			"_X132"
+			"_X133"
+			"_X134"
+			"_X135"
+			"_X136"
+			"_X137"
+			"_X138"
+			"_X139"
+			"_X140"
+			"_X141"
+			"_X142"
+			"_X143"
+			"_X144"
+			"_X145"
+			"_X146"
+			"_X147"
+			"_X148"
+			"_X149"
+			"_X150"
+			"_X151"
+			"_X152"
+			"_X153"
+			"_X154"
+			"_X155"
+			"_X156"
+			"_X157"
+			"_X158"
+			"_X159"
+			"_X160"
+			"_X161"
+			"_X162"
+			"_X163"
+			"_X164"
+			"_X165"
+			"_X166"
+			"_X167"
+			"_X168"
+			"_X169"
+			"_X170"
+			"_X171"
+			"_X172"
+			"_X173"
+			"_X174"
+			"_X175"
+			"_X176"
+			"_X177"
+			"_X178"
+			"_X179"
+			"_X180"
+			"_X181"
+			"_X182"
+			"_X183"
+			"_X184"
+			"_X185"
+			"_X186"
+			"_X187"
+			"_X188"
+			"_X189"
+			"_X190"
+			"_X191"
+			"_X192"
+			"_X193"
+			"_X194"
+			"_X195"
+			"_X196"
+			"_X197"
+			"_X198"
+			"_X199"
+			"_X200"
+			"_X201"
+			"_X202"
+			"_X203"
+			"_X204"
+			"_X1_m"
+			"_X2_m"
+			"_X3_m"
+			"_X4_m"
+			"_X5_m"
+			"_X6_m"
+			"_X7_m"
+			"_X8_m"
+			"_X9_m"
+			"_X10_m"
+			"_X11_m"
+			"_X12_m"
+			"_X13_m"
+			"_X14_m"
+			"_X15_m"
+			"_X16_m"
+			"_X17_m"
+			"_X18_m"
+			"_X19_m"
+			"_X20_m"
+			"_X21_m"
+			"_X22_m"
+			"_X23_m"
+			"_X24_m"
+			"_X25_m"
+			"_X26_m"
+			"_X27_m"
+			"_X28_m"
+			"_X29_m"
+			"_X30_m"
+			"_X31_m"
+			"_X32_m"
+			"_X33_m"
+			"_X34_m"
+			"_X35_m"
+			"_X36_m"
+			"_X37_m"
+			"_X38_m"
+			"_X39_m"
+			"_X40_m"
+			"_X41_m"
+			"_X42_m"
+			"_X43_m"
+			"_X44_m"
+			"_X45_m"
+			"_X46_m"
+			"_X47_m"
+			"_X48_m"
+			"_X49_m"
+			"_X50_m"
+			"_X51_m"
+			"_X52_m"
+			"_X53_m"
+			"_X54_m"
+			"_X55_m"
+			"_X56_m"
+			"_X57_m"
+			"_X58_m"
+			"_X59_m"
+			"_X60_m"
+			"_X61_m"
+			"_X62_m"
+			"_X63_m"
+			"_X64_m"
+			"_X65_m"
+			"_X66_m"
+			"_X67_m"
+			"_X68_m"
+			"_X69_m"
+			"_X70_m"
+			"_X71_m"
+			"_X72_m"
+			"_X73_m"
+			"_X74_m"
+			"_X75_m"
+			"_X76_m"
+			"_X77_m"
+			"_X78_m"
+			"_X79_m"
+			"_X80_m"
+			"_X81_m"
+			"_X82_m"
+			"_X83_m"
+			"_X84_m"
+			"_X85_m"
+			"_X86_m"
+			"_X87_m"
+			"_X88_m"
+			"_X89_m"
+			"_X90_m"
+			"_X91_m"
+			"_X92_m"
+			"_X93_m"
+			"_X94_m"
+			"_X95_m"
+			"_X96_m"
+			"_X97_m"
+			"_X98_m"
+			"_X99_m"
+			"_X100_m"
+			"_X101_m"
+			"_X102_m"
+			"_X103_m"
+			"_X104_m"
+			"_X105_m"
+			"_X106_m"
+			"_X107_m"
+			"_X108_m"
+			"_X109_m"
+			"_X110_m"
+			"_X111_m"
+			"_X112_m"
+			"_X113_m"
+			"_X114_m"
+			"_X115_m"
+			"_X116_m"
+			"_X117_m"
+			"_X118_m"
+			"_X119_m"
+			"_X120_m"
+			"_X121_m"
+			"_X122_m"
+			"_X123_m"
+			"_X124_m"
+			"_X125_m"
+			"_X126_m"
+			"_X127_m"
+			"_X128_m"
+			"_X129_m"
+			"_X130_m"
+			"_X131_m"
+			"_X132_m"
+			"_X133_m"
+			"_X134_m"
+			"_X135_m"
+			"_X136_m"
+			"_X137_m"
+			"_X138_m"
+			"_X139_m"
+			"_X140_m"
+			"_X141_m"
+			"_X142_m"
+			"_X143_m"
+			"_X144_m"
+			"_X145_m"
+			"_X146_m"
+			"_X147_m"
+			"_X148_m"
+			"_X149_m"
+			"_X150_m"
+			"_X151_m"
+			"_X152_m"
+			"_X153_m"
+			"_X154_m"
+			"_X155_m"
+			"_X156_m"
+			"_X157_m"
+			"_X158_m"
+			"_X159_m"
+			"_X160_m"
+			"_X161_m"
+			"_X162_m"
+			"_X163_m"
+			"_X164_m"
+			"_X165_m"
+			"_X166_m"
+			"_X167_m"
+			"_X168_m"
+			"_X169_m"
+			"_X170_m"
+			"_X171_m"
+			"_X172_m"
+			"_X173_m"
+			"_X174_m"
+			"_X175_m"
+			"_X176_m"
+			"_X177_m"
+			"_X178_m"
+			"_X179_m"
+			"_X180_m"
+			"_X181_m"
+			"_X182_m"
+			"_X183_m"
+			"_X184_m"
+			"_X185_m"
+			"_X186_m"
+			"_X187_m"
+			"_X188_m"
+			"_X189_m"
+			"_X190_m"
+			"_X191_m"
+			"_X192_m"
+			"_X193_m"
+			"_X194_m"
+			"_X195_m"
+			"_X196_m"
+			"_X197_m"
+			"_X198_m"
+			"_X199_m"
+			"_X200_m"
+			"_X201_m"
+			"_X202_m"
+			"_X203_m"
+			"_X204_m"
+
+constraints
+	"_X1"
+	"_X1_m"
+	"_X1" | TOYBOX
+	"_X1" | TOYBOX_m
+	"_X2"
+	"_X2_m"
+	"_X2" | TOYBOX
+	"_X2" | TOYBOX_m
+	"_X3"
+	"_X3_m"
+	"_X4"
+	"_X4_m"
+	"_X4" | TOYBOX_FREE
+	"_X4" | TOYBOX_FREE_m
+	"_X5"
+	"_X5_m"
+	"_X5" | TOYBOX_FREE
+	"_X5" | TOYBOX_FREE_m
+	"_X6"
+	"_X6_m"
+	"_X7"
+	"_X7_m"
+	"_X7" | TOYBOX_DEBUG
+	"_X7" | TOYBOX_DEBUG_m
+	"_X8"
+	"_X8_m"
+	"_X8" | TOYBOX_DEBUG
+	"_X8" | TOYBOX_DEBUG_m
+	"_X9"
+	"_X9_m"
+	"_X10"
+	"_X10_m"
+	"_X10" | BASENAME
+	"_X10" | BASENAME_m
+	"_X11"
+	"_X11_m"
+	"_X11" | BASENAME
+	"_X11" | BASENAME_m
+	"_X12"
+	"_X12_m"
+	"_X13"
+	"_X13_m"
+	"_X13" | BZCAT
+	"_X13" | BZCAT_m
+	"_X14"
+	"_X14_m"
+	"_X14" | BZCAT
+	"_X14" | BZCAT_m
+	"_X15"
+	"_X15_m"
+	"_X16"
+	"_X16_m"
+	"_X16" | CAT
+	"_X16" | CAT_m
+	"_X17"
+	"_X17_m"
+	"_X17" | CAT
+	"_X17" | CAT_m
+	"_X18"
+	"_X18_m"
+	"_X19"
+	"_X19_m"
+	"_X19" | CATV
+	"_X19" | CATV_m
+	"_X20"
+	"_X20_m"
+	"_X20" | CATV
+	"_X20" | CATV_m
+	"_X21"
+	"_X21_m"
+	"_X22"
+	"_X22_m"
+	"_X22" | CHROOT
+	"_X22" | CHROOT_m
+	"_X23"
+	"_X23_m"
+	"_X23" | CHROOT
+	"_X23" | CHROOT_m
+	"_X24"
+	"_X24_m"
+	"_X25"
+	"_X25_m"
+	"_X25" | CHVT
+	"_X25" | CHVT_m
+	"_X26"
+	"_X26_m"
+	"_X26" | CHVT
+	"_X26" | CHVT_m
+	"_X27"
+	"_X27_m"
+	"_X28"
+	"_X28_m"
+	"_X28" | CKSUM
+	"_X28" | CKSUM_m
+	"_X29"
+	"_X29_m"
+	"_X29" | CKSUM
+	"_X29" | CKSUM_m
+	"_X30"
+	"_X30_m"
+	"_X31"
+	"_X31_m"
+	"_X31" | COUNT
+	"_X31" | COUNT_m
+	"_X32"
+	"_X32_m"
+	"_X32" | COUNT
+	"_X32" | COUNT_m
+	"_X33"
+	"_X33_m"
+	"_X34"
+	"_X34_m"
+	"_X34" | CP
+	"_X34" | CP_m
+	"_X35"
+	"_X35_m"
+	"_X35" | CP
+	"_X35" | CP_m
+	"_X36"
+	"_X36_m"
+	"_X37"
+	"_X37_m"
+	"_X37" | DF
+	"_X37" | DF_m
+	"_X38"
+	"_X38_m"
+	"_X38" | DF
+	"_X38" | DF_m
+	"_X39"
+	"_X39_m"
+	DF_PEDANTIC | DF | DF_m
+	DF_PEDANTIC_m | DF | DF_m
+	DF_PEDANTIC | DF_PEDANTIC_m | DF | DF_m
+	"_X40" | DF
+	"_X40" | DF_m
+	DF | DF_m | "_X40"
+	"_X40_m"
+	"_X40" | DF | DF_PEDANTIC | DF
+	"_X40" | DF | DF | DF_PEDANTIC
+	"_X40" | DF | DF_PEDANTIC_m | DF_m
+	"_X40" | DF | DF_m | DF_PEDANTIC_m
+	"_X41" | "_X40"
+	"_X41" | DF
+	"_X41" | DF_m
+	"_X40" | DF | DF_m | "_X41"
+	"_X41_m"
+	"_X41" | DF_PEDANTIC
+	"_X41" | DF_PEDANTIC_m
+	"_X42"
+	"_X42_m"
+	"_X43"
+	"_X43_m"
+	"_X43" | DIRNAME
+	"_X43" | DIRNAME_m
+	"_X44"
+	"_X44_m"
+	"_X44" | DIRNAME
+	"_X44" | DIRNAME_m
+	"_X45"
+	"_X45_m"
+	"_X46"
+	"_X46_m"
+	"_X46" | DMESG
+	"_X46" | DMESG_m
+	"_X47"
+	"_X47_m"
+	"_X47" | DMESG
+	"_X47" | DMESG_m
+	"_X48"
+	"_X48_m"
+	"_X49"
+	"_X49_m"
+	"_X49" | ECHO
+	"_X49" | ECHO_m
+	"_X50"
+	"_X50_m"
+	"_X50" | ECHO
+	"_X50" | ECHO_m
+	"_X51"
+	"_X51_m"
+	"_X52"
+	"_X52_m"
+	"_X52" | FALSE
+	"_X52" | FALSE_m
+	"_X53"
+	"_X53_m"
+	"_X53" | FALSE
+	"_X53" | FALSE_m
+	"_X54"
+	"_X54_m"
+	"_X55"
+	"_X55_m"
+	"_X55" | HELLO
+	"_X55" | HELLO_m
+	"_X56"
+	"_X56_m"
+	"_X56" | HELLO
+	"_X56" | HELLO_m
+	"_X57"
+	"_X57_m"
+	"_X58"
+	"_X58_m"
+	"_X58" | HELP
+	"_X58" | HELP_m
+	"_X59"
+	"_X59_m"
+	"_X59" | HELP
+	"_X59" | HELP_m
+	"_X60"
+	"_X60_m"
+	HELP_LONG | HELP | HELP_m
+	HELP_LONG_m | HELP | HELP_m
+	HELP_LONG | HELP_LONG_m | HELP | HELP_m
+	"_X61" | HELP
+	"_X61" | HELP_m
+	HELP | HELP_m | "_X61"
+	"_X61_m"
+	"_X61" | HELP | HELP_LONG | HELP
+	"_X61" | HELP | HELP | HELP_LONG
+	"_X61" | HELP | HELP_LONG_m | HELP_m
+	"_X61" | HELP | HELP_m | HELP_LONG_m
+	"_X62" | "_X61"
+	"_X62" | HELP
+	"_X62" | HELP_m
+	"_X61" | HELP | HELP_m | "_X62"
+	"_X62_m"
+	"_X62" | HELP_LONG
+	"_X62" | HELP_LONG_m
+	"_X63"
+	"_X63_m"
+	"_X64"
+	"_X64_m"
+	"_X64" | MDEV
+	"_X64" | MDEV_m
+	"_X65"
+	"_X65_m"
+	"_X65" | MDEV
+	"_X65" | MDEV_m
+	"_X66"
+	"_X66_m"
+	MDEV_CONF | MDEV | MDEV_m
+	MDEV_CONF_m | MDEV | MDEV_m
+	MDEV_CONF | MDEV_CONF_m | MDEV | MDEV_m
+	"_X67" | MDEV
+	"_X67" | MDEV_m
+	MDEV | MDEV_m | "_X67"
+	"_X67_m"
+	"_X67" | MDEV | MDEV_CONF | MDEV
+	"_X67" | MDEV | MDEV | MDEV_CONF
+	"_X67" | MDEV | MDEV_CONF_m | MDEV_m
+	"_X67" | MDEV | MDEV_m | MDEV_CONF_m
+	"_X68" | "_X67"
+	"_X68" | MDEV
+	"_X68" | MDEV_m
+	"_X67" | MDEV | MDEV_m | "_X68"
+	"_X68_m"
+	"_X68" | MDEV_CONF
+	"_X68" | MDEV_CONF_m
+	"_X69"
+	"_X69_m"
+	"_X70"
+	"_X70_m"
+	"_X70" | MKE2FS
+	"_X70" | MKE2FS_m
+	"_X71"
+	"_X71_m"
+	"_X71" | MKE2FS
+	"_X71" | MKE2FS_m
+	"_X72"
+	"_X72_m"
+	MKE2FS_JOURNAL | MKE2FS | MKE2FS_m
+	MKE2FS_JOURNAL_m | MKE2FS | MKE2FS_m
+	MKE2FS_JOURNAL | MKE2FS_JOURNAL_m | MKE2FS | MKE2FS_m
+	"_X73" | MKE2FS
+	"_X73" | MKE2FS_m
+	MKE2FS | MKE2FS_m | "_X73"
+	"_X73_m"
+	"_X73" | MKE2FS | MKE2FS_JOURNAL
+	"_X73" | MKE2FS | MKE2FS_JOURNAL_m
+	"_X74" | "_X73"
+	"_X74" | MKE2FS
+	"_X74" | MKE2FS_m
+	"_X73" | MKE2FS | MKE2FS_m | "_X74"
+	"_X74_m"
+	"_X74" | MKE2FS_JOURNAL
+	"_X74" | MKE2FS_JOURNAL_m
+	"_X75"
+	"_X75_m"
+	MKE2FS_GEN | MKE2FS | MKE2FS_m
+	MKE2FS_GEN_m | MKE2FS | MKE2FS_m
+	MKE2FS_GEN | MKE2FS_GEN_m | MKE2FS | MKE2FS_m
+	"_X76" | MKE2FS
+	"_X76" | MKE2FS_m
+	MKE2FS | MKE2FS_m | "_X76"
+	"_X76_m"
+	"_X76" | MKE2FS | MKE2FS_GEN
+	"_X76" | MKE2FS | MKE2FS_GEN_m
+	"_X77" | "_X76"
+	"_X77" | MKE2FS
+	"_X77" | MKE2FS_m
+	"_X76" | MKE2FS | MKE2FS_m | "_X77"
+	"_X77_m"
+	"_X77" | MKE2FS_GEN
+	"_X77" | MKE2FS_GEN_m
+	"_X78"
+	"_X78_m"
+	MKE2FS_LABEL | MKE2FS | MKE2FS_m
+	MKE2FS_LABEL_m | MKE2FS | MKE2FS_m
+	MKE2FS_LABEL | MKE2FS_LABEL_m | MKE2FS | MKE2FS_m
+	"_X79" | MKE2FS
+	"_X79" | MKE2FS_m
+	MKE2FS | MKE2FS_m | "_X79"
+	"_X79_m"
+	"_X79" | MKE2FS | MKE2FS_LABEL
+	"_X79" | MKE2FS | MKE2FS_LABEL_m
+	"_X80" | "_X79"
+	"_X80" | MKE2FS
+	"_X80" | MKE2FS_m
+	"_X79" | MKE2FS | MKE2FS_m | "_X80"
+	"_X80_m"
+	"_X80" | MKE2FS_LABEL
+	"_X80" | MKE2FS_LABEL_m
+	"_X81"
+	"_X81_m"
+	MKE2FS_EXTENDED | MKE2FS | MKE2FS_m
+	MKE2FS_EXTENDED_m | MKE2FS | MKE2FS_m
+	MKE2FS_EXTENDED | MKE2FS_EXTENDED_m | MKE2FS | MKE2FS_m
+	"_X82" | MKE2FS
+	"_X82" | MKE2FS_m
+	MKE2FS | MKE2FS_m | "_X82"
+	"_X82_m"
+	"_X82" | MKE2FS | MKE2FS_EXTENDED
+	"_X82" | MKE2FS | MKE2FS_EXTENDED_m
+	"_X83" | "_X82"
+	"_X83" | MKE2FS
+	"_X83" | MKE2FS_m
+	"_X82" | MKE2FS | MKE2FS_m | "_X83"
+	"_X83_m"
+	"_X83" | MKE2FS_EXTENDED
+	"_X83" | MKE2FS_EXTENDED_m
+	"_X84"
+	"_X84_m"
+	"_X85"
+	"_X85_m"
+	"_X85" | MKFIFO
+	"_X85" | MKFIFO_m
+	"_X86"
+	"_X86_m"
+	"_X86" | MKFIFO
+	"_X86" | MKFIFO_m
+	"_X87"
+	"_X87_m"
+	"_X88"
+	"_X88_m"
+	"_X88" | MKSWAP
+	"_X88" | MKSWAP_m
+	"_X89"
+	"_X89_m"
+	"_X89" | MKSWAP
+	"_X89" | MKSWAP_m
+	"_X90"
+	"_X90_m"
+	"_X91"
+	"_X91_m"
+	"_X91" | NETCAT
+	"_X91" | NETCAT_m
+	"_X92"
+	"_X92_m"
+	"_X92" | NETCAT
+	"_X92" | NETCAT_m
+	"_X93"
+	"_X93_m"
+	NETCAT_LISTEN | NETCAT | NETCAT_m
+	NETCAT_LISTEN_m | NETCAT | NETCAT_m
+	NETCAT_LISTEN | NETCAT_LISTEN_m | NETCAT | NETCAT_m
+	"_X94" | NETCAT
+	"_X94" | NETCAT_m
+	NETCAT | NETCAT_m | "_X94"
+	"_X94_m"
+	"_X94" | NETCAT | NETCAT_LISTEN | NETCAT
+	"_X94" | NETCAT | NETCAT | NETCAT_LISTEN
+	"_X94" | NETCAT | NETCAT_LISTEN_m | NETCAT_m
+	"_X94" | NETCAT | NETCAT_m | NETCAT_LISTEN_m
+	"_X95" | "_X94"
+	"_X95" | NETCAT
+	"_X95" | NETCAT_m
+	"_X94" | NETCAT | NETCAT_m | "_X95"
+	"_X95_m"
+	"_X95" | NETCAT_LISTEN
+	"_X95" | NETCAT_LISTEN_m
+	"_X96"
+	"_X96_m"
+	"_X97"
+	"_X97_m"
+	"_X97" | ONEIT
+	"_X97" | ONEIT_m
+	"_X98"
+	"_X98_m"
+	"_X98" | ONEIT
+	"_X98" | ONEIT_m
+	"_X99"
+	"_X99_m"
+	"_X100"
+	"_X100_m"
+	"_X100" | PATCH
+	"_X100" | PATCH_m
+	"_X101"
+	"_X101_m"
+	"_X101" | PATCH
+	"_X101" | PATCH_m
+	"_X102"
+	"_X102_m"
+	"_X103"
+	"_X103_m"
+	"_X103" | PWD
+	"_X103" | PWD_m
+	"_X104"
+	"_X104_m"
+	"_X104" | PWD
+	"_X104" | PWD_m
+	"_X105"
+	"_X105_m"
+	"_X106"
+	"_X106_m"
+	"_X106" | READLINK
+	"_X106" | READLINK_m
+	"_X107"
+	"_X107_m"
+	"_X107" | READLINK
+	"_X107" | READLINK_m
+	"_X108"
+	"_X108_m"
+	READLINK_F | READLINK | READLINK_m
+	READLINK_F_m | READLINK | READLINK_m
+	READLINK_F | READLINK_F_m | READLINK | READLINK_m
+	"_X109" | READLINK
+	"_X109" | READLINK_m
+	READLINK | READLINK_m | "_X109"
+	"_X109_m"
+	"_X109" | READLINK | READLINK_F
+	"_X109" | READLINK | READLINK_F_m
+	"_X110" | "_X109"
+	"_X110" | READLINK
+	"_X110" | READLINK_m
+	"_X109" | READLINK | READLINK_m | "_X110"
+	"_X110_m"
+	"_X110" | READLINK_F
+	"_X110" | READLINK_F_m
+	"_X111"
+	"_X111_m"
+	"_X112"
+	"_X112_m"
+	"_X112" | RMDIR
+	"_X112" | RMDIR_m
+	"_X113"
+	"_X113_m"
+	"_X113" | RMDIR
+	"_X113" | RMDIR_m
+	"_X114"
+	"_X114_m"
+	"_X115"
+	"_X115_m"
+	"_X115" | SED
+	"_X115" | SED_m
+	"_X116"
+	"_X116_m"
+	"_X116" | SED
+	"_X116" | SED_m
+	"_X117"
+	"_X117_m"
+	"_X118"
+	"_X118_m"
+	"_X118" | SEQ
+	"_X118" | SEQ_m
+	"_X119"
+	"_X119_m"
+	"_X119" | SEQ
+	"_X119" | SEQ_m
+	"_X120"
+	"_X120_m"
+	"_X121"
+	"_X121_m"
+	"_X121" | SHA1SUM
+	"_X121" | SHA1SUM_m
+	"_X122"
+	"_X122_m"
+	"_X122" | SHA1SUM
+	"_X122" | SHA1SUM_m
+	"_X123"
+	"_X123_m"
+	"_X124"
+	"_X124_m"
+	"_X124" | SLEEP
+	"_X124" | SLEEP_m
+	"_X125"
+	"_X125_m"
+	"_X125" | SLEEP
+	"_X125" | SLEEP_m
+	"_X126"
+	"_X126_m"
+	"_X127"
+	"_X127_m"
+	"_X127" | SORT
+	"_X127" | SORT_m
+	"_X128"
+	"_X128_m"
+	"_X128" | SORT
+	"_X128" | SORT_m
+	"_X129"
+	"_X129_m"
+	SORT_BIG | SORT | SORT_m
+	SORT_BIG_m | SORT | SORT_m
+	SORT_BIG | SORT_BIG_m | SORT | SORT_m
+	"_X130" | SORT
+	"_X130" | SORT_m
+	SORT | SORT_m | "_X130"
+	"_X130_m"
+	"_X130" | SORT | SORT_BIG | SORT
+	"_X130" | SORT | SORT | SORT_BIG
+	"_X130" | SORT | SORT_BIG_m | SORT_m
+	"_X130" | SORT | SORT_m | SORT_BIG_m
+	"_X131" | "_X130"
+	"_X131" | SORT
+	"_X131" | SORT_m
+	"_X130" | SORT | SORT_m | "_X131"
+	"_X131_m"
+	"_X131" | SORT_BIG
+	"_X131" | SORT_BIG_m
+	"_X132"
+	"_X132_m"
+	"_X133"
+	"_X133_m"
+	"_X133" | SYNC
+	"_X133" | SYNC_m
+	"_X134"
+	"_X134_m"
+	"_X134" | SYNC
+	"_X134" | SYNC_m
+	"_X135"
+	"_X135_m"
+	"_X136"
+	"_X136_m"
+	"_X136" | TEE
+	"_X136" | TEE_m
+	"_X137"
+	"_X137_m"
+	"_X137" | TEE
+	"_X137" | TEE_m
+	"_X138"
+	"_X138_m"
+	"_X139"
+	"_X139_m"
+	"_X139" | TOUCH
+	"_X139" | TOUCH_m
+	"_X140"
+	"_X140_m"
+	"_X140" | TOUCH
+	"_X140" | TOUCH_m
+	"_X141"
+	"_X141_m"
+	"_X142"
+	"_X142_m"
+	"_X142" | TOYSH
+	"_X142" | TOYSH_m
+	"_X143"
+	"_X143_m"
+	"_X143" | TOYSH
+	"_X143" | TOYSH_m
+	"_X144"
+	"_X144_m"
+	TOYSH_TTY | TOYSH | TOYSH_m
+	TOYSH_TTY_m | TOYSH | TOYSH_m
+	TOYSH_TTY | TOYSH_TTY_m | TOYSH | TOYSH_m
+	"_X145" | TOYSH
+	"_X145" | TOYSH_m
+	TOYSH | TOYSH_m | "_X145"
+	"_X145_m"
+	"_X145" | TOYSH | TOYSH_TTY
+	"_X145" | TOYSH | TOYSH_TTY_m
+	"_X146" | "_X145"
+	"_X146" | TOYSH
+	"_X146" | TOYSH_m
+	"_X145" | TOYSH | TOYSH_m | "_X146"
+	"_X146_m"
+	"_X146" | TOYSH_TTY
+	"_X146" | TOYSH_TTY_m
+	"_X147"
+	"_X147_m"
+	TOYSH_PROFILE | TOYSH_TTY | TOYSH_TTY_m
+	TOYSH_PROFILE_m | TOYSH_TTY | TOYSH_TTY_m
+	TOYSH_PROFILE | TOYSH_PROFILE_m | TOYSH_TTY | TOYSH_TTY_m
+	"_X148" | TOYSH_TTY
+	"_X148" | TOYSH_TTY_m
+	TOYSH_TTY | TOYSH_TTY_m | "_X148"
+	"_X148_m"
+	"_X148" | TOYSH_TTY | TOYSH_PROFILE
+	"_X148" | TOYSH_TTY | TOYSH_PROFILE_m
+	"_X149" | "_X148"
+	"_X149" | TOYSH_TTY
+	"_X149" | TOYSH_TTY_m
+	"_X148" | TOYSH_TTY | TOYSH_TTY_m | "_X149"
+	"_X149_m"
+	"_X149" | TOYSH_PROFILE
+	"_X149" | TOYSH_PROFILE_m
+	"_X150"
+	"_X150_m"
+	TOYSH_JOBCTL | TOYSH_TTY | TOYSH_TTY_m
+	TOYSH_JOBCTL_m | TOYSH_TTY | TOYSH_TTY_m
+	TOYSH_JOBCTL | TOYSH_JOBCTL_m | TOYSH_TTY | TOYSH_TTY_m
+	"_X151" | TOYSH_TTY
+	"_X151" | TOYSH_TTY_m
+	TOYSH_TTY | TOYSH_TTY_m | "_X151"
+	"_X151_m"
+	"_X151" | TOYSH_TTY | TOYSH_JOBCTL
+	"_X151" | TOYSH_TTY | TOYSH_JOBCTL_m
+	"_X152" | "_X151"
+	"_X152" | TOYSH_TTY
+	"_X152" | TOYSH_TTY_m
+	"_X151" | TOYSH_TTY | TOYSH_TTY_m | "_X152"
+	"_X152_m"
+	"_X152" | TOYSH_JOBCTL
+	"_X152" | TOYSH_JOBCTL_m
+	"_X153"
+	"_X153_m"
+	TOYSH_FLOWCTL | TOYSH | TOYSH_m
+	TOYSH_FLOWCTL_m | TOYSH | TOYSH_m
+	TOYSH_FLOWCTL | TOYSH_FLOWCTL_m | TOYSH | TOYSH_m
+	"_X154" | TOYSH
+	"_X154" | TOYSH_m
+	TOYSH | TOYSH_m | "_X154"
+	"_X154_m"
+	"_X154" | TOYSH | TOYSH_FLOWCTL
+	"_X154" | TOYSH | TOYSH_FLOWCTL_m
+	"_X155" | "_X154"
+	"_X155" | TOYSH
+	"_X155" | TOYSH_m
+	"_X154" | TOYSH | TOYSH_m | "_X155"
+	"_X155_m"
+	"_X155" | TOYSH_FLOWCTL
+	"_X155" | TOYSH_FLOWCTL_m
+	"_X156"
+	"_X156_m"
+	TOYSH_QUOTES | TOYSH | TOYSH_m
+	TOYSH_QUOTES_m | TOYSH | TOYSH_m
+	TOYSH_QUOTES | TOYSH_QUOTES_m | TOYSH | TOYSH_m
+	"_X157" | TOYSH
+	"_X157" | TOYSH_m
+	TOYSH | TOYSH_m | "_X157"
+	"_X157_m"
+	"_X157" | TOYSH | TOYSH_QUOTES
+	"_X157" | TOYSH | TOYSH_QUOTES_m
+	"_X158" | "_X157"
+	"_X158" | TOYSH
+	"_X158" | TOYSH_m
+	"_X157" | TOYSH | TOYSH_m | "_X158"
+	"_X158_m"
+	"_X158" | TOYSH_QUOTES
+	"_X158" | TOYSH_QUOTES_m
+	"_X159"
+	"_X159_m"
+	TOYSH_WILDCARDS | TOYSH_QUOTES | TOYSH_QUOTES_m
+	TOYSH_WILDCARDS_m | TOYSH_QUOTES | TOYSH_QUOTES_m
+	TOYSH_WILDCARDS | TOYSH_WILDCARDS_m | TOYSH_QUOTES | TOYSH_QUOTES_m
+	"_X160" | TOYSH_QUOTES
+	"_X160" | TOYSH_QUOTES_m
+	TOYSH_QUOTES | TOYSH_QUOTES_m | "_X160"
+	"_X160_m"
+	"_X160" | TOYSH_QUOTES | TOYSH_WILDCARDS
+	"_X160" | TOYSH_QUOTES | TOYSH_WILDCARDS_m
+	"_X161" | "_X160"
+	"_X161" | TOYSH_QUOTES
+	"_X161" | TOYSH_QUOTES_m
+	"_X160" | TOYSH_QUOTES | TOYSH_QUOTES_m | "_X161"
+	"_X161_m"
+	"_X161" | TOYSH_WILDCARDS
+	"_X161" | TOYSH_WILDCARDS_m
+	"_X162"
+	"_X162_m"
+	TOYSH_PROCARGS | TOYSH_QUOTES | TOYSH_QUOTES_m
+	TOYSH_PROCARGS_m | TOYSH_QUOTES | TOYSH_QUOTES_m
+	TOYSH_PROCARGS | TOYSH_PROCARGS_m | TOYSH_QUOTES | TOYSH_QUOTES_m
+	"_X163" | TOYSH_QUOTES
+	"_X163" | TOYSH_QUOTES_m
+	TOYSH_QUOTES | TOYSH_QUOTES_m | "_X163"
+	"_X163_m"
+	"_X163" | TOYSH_QUOTES | TOYSH_PROCARGS
+	"_X163" | TOYSH_QUOTES | TOYSH_PROCARGS_m
+	"_X164" | "_X163"
+	"_X164" | TOYSH_QUOTES
+	"_X164" | TOYSH_QUOTES_m
+	"_X163" | TOYSH_QUOTES | TOYSH_QUOTES_m | "_X164"
+	"_X164_m"
+	"_X164" | TOYSH_PROCARGS
+	"_X164" | TOYSH_PROCARGS_m
+	"_X165"
+	"_X165_m"
+	TOYSH_ENVVARS | TOYSH_QUOTES | TOYSH_QUOTES_m
+	TOYSH_ENVVARS_m | TOYSH_QUOTES | TOYSH_QUOTES_m
+	TOYSH_ENVVARS | TOYSH_ENVVARS_m | TOYSH_QUOTES | TOYSH_QUOTES_m
+	"_X166" | TOYSH_QUOTES
+	"_X166" | TOYSH_QUOTES_m
+	TOYSH_QUOTES | TOYSH_QUOTES_m | "_X166"
+	"_X166_m"
+	"_X166" | TOYSH_QUOTES | TOYSH_ENVVARS
+	"_X166" | TOYSH_QUOTES | TOYSH_ENVVARS_m
+	"_X167" | "_X166"
+	"_X167" | TOYSH_QUOTES
+	"_X167" | TOYSH_QUOTES_m
+	"_X166" | TOYSH_QUOTES | TOYSH_QUOTES_m | "_X167"
+	"_X167_m"
+	"_X167" | TOYSH_ENVVARS
+	"_X167" | TOYSH_ENVVARS_m
+	"_X168"
+	"_X168_m"
+	TOYSH_LOCALS | TOYSH_ENVVARS | TOYSH_ENVVARS_m
+	TOYSH_LOCALS_m | TOYSH_ENVVARS | TOYSH_ENVVARS_m
+	TOYSH_LOCALS | TOYSH_LOCALS_m | TOYSH_ENVVARS | TOYSH_ENVVARS_m
+	"_X169" | TOYSH_ENVVARS
+	"_X169" | TOYSH_ENVVARS_m
+	TOYSH_ENVVARS | TOYSH_ENVVARS_m | "_X169"
+	"_X169_m"
+	"_X169" | TOYSH_ENVVARS | TOYSH_LOCALS
+	"_X169" | TOYSH_ENVVARS | TOYSH_LOCALS_m
+	"_X170" | "_X169"
+	"_X170" | TOYSH_ENVVARS
+	"_X170" | TOYSH_ENVVARS_m
+	"_X169" | TOYSH_ENVVARS | TOYSH_ENVVARS_m | "_X170"
+	"_X170_m"
+	"_X170" | TOYSH_LOCALS
+	"_X170" | TOYSH_LOCALS_m
+	"_X171"
+	"_X171_m"
+	TOYSH_ARRAYS | TOYSH_LOCALS | TOYSH_LOCALS_m
+	TOYSH_ARRAYS_m | TOYSH_LOCALS | TOYSH_LOCALS_m
+	TOYSH_ARRAYS | TOYSH_ARRAYS_m | TOYSH_LOCALS | TOYSH_LOCALS_m
+	"_X172" | TOYSH_LOCALS
+	"_X172" | TOYSH_LOCALS_m
+	TOYSH_LOCALS | TOYSH_LOCALS_m | "_X172"
+	"_X172_m"
+	"_X172" | TOYSH_LOCALS | TOYSH_ARRAYS
+	"_X172" | TOYSH_LOCALS | TOYSH_ARRAYS_m
+	"_X173" | "_X172"
+	"_X173" | TOYSH_LOCALS
+	"_X173" | TOYSH_LOCALS_m
+	"_X172" | TOYSH_LOCALS | TOYSH_LOCALS_m | "_X173"
+	"_X173_m"
+	"_X173" | TOYSH_ARRAYS
+	"_X173" | TOYSH_ARRAYS_m
+	"_X174"
+	"_X174_m"
+	TOYSH_PIPES | TOYSH | TOYSH_m
+	TOYSH_PIPES_m | TOYSH | TOYSH_m
+	TOYSH_PIPES | TOYSH_PIPES_m | TOYSH | TOYSH_m
+	"_X175" | TOYSH
+	"_X175" | TOYSH_m
+	TOYSH | TOYSH_m | "_X175"
+	"_X175_m"
+	"_X175" | TOYSH | TOYSH_PIPES
+	"_X175" | TOYSH | TOYSH_PIPES_m
+	"_X176" | "_X175"
+	"_X176" | TOYSH
+	"_X176" | TOYSH_m
+	"_X175" | TOYSH | TOYSH_m | "_X176"
+	"_X176_m"
+	"_X176" | TOYSH_PIPES
+	"_X176" | TOYSH_PIPES_m
+	"_X177"
+	"_X177_m"
+	TOYSH_BUILTINS | TOYSH | TOYSH_m
+	TOYSH_BUILTINS_m | TOYSH | TOYSH_m
+	TOYSH_BUILTINS | TOYSH_BUILTINS_m | TOYSH | TOYSH_m
+	"_X178" | TOYSH
+	"_X178" | TOYSH_m
+	TOYSH | TOYSH_m | "_X178"
+	"_X178_m"
+	"_X178" | TOYSH | TOYSH_BUILTINS
+	"_X178" | TOYSH | TOYSH_BUILTINS_m
+	"_X179" | "_X178"
+	"_X179" | TOYSH
+	"_X179" | TOYSH_m
+	"_X178" | TOYSH | TOYSH_m | "_X179"
+	"_X179_m"
+	"_X179" | TOYSH_BUILTINS
+	"_X179" | TOYSH_BUILTINS_m
+	"_X180"
+	"_X180_m"
+	EXIT | TOYSH | TOYSH_m
+	EXIT_m | TOYSH | TOYSH_m
+	EXIT | EXIT_m | TOYSH | TOYSH_m
+	"_X181"
+	"_X181_m"
+	"_X181" | TOYSH | EXIT
+	"_X181" | TOYSH | EXIT_m
+	"_X182" | "_X181"
+	"_X182" | TOYSH
+	"_X182" | TOYSH_m
+	"_X181" | TOYSH | TOYSH_m | "_X182"
+	"_X182_m"
+	"_X182" | EXIT
+	"_X182" | EXIT_m
+	"_X183"
+	"_X183_m"
+	CD | TOYSH | TOYSH_m
+	CD_m | TOYSH | TOYSH_m
+	CD | CD_m | TOYSH | TOYSH_m
+	"_X184"
+	"_X184_m"
+	"_X184" | TOYSH | CD
+	"_X184" | TOYSH | CD_m
+	"_X185" | "_X184"
+	"_X185" | TOYSH
+	"_X185" | TOYSH_m
+	"_X184" | TOYSH | TOYSH_m | "_X185"
+	"_X185_m"
+	"_X185" | CD
+	"_X185" | CD_m
+	"_X186"
+	"_X186_m"
+	CD_P | TOYSH | TOYSH_m
+	CD_P_m | TOYSH | TOYSH_m
+	CD_P | CD_P_m | TOYSH | TOYSH_m
+	"_X187"
+	"_X187_m"
+	"_X187" | TOYSH | CD_P
+	"_X187" | TOYSH | CD_P_m
+	"_X188" | "_X187"
+	"_X188" | TOYSH
+	"_X188" | TOYSH_m
+	"_X187" | TOYSH | TOYSH_m | "_X188"
+	"_X188_m"
+	"_X188" | CD_P
+	"_X188" | CD_P_m
+	"_X189"
+	"_X189_m"
+	"_X190"
+	"_X190_m"
+	"_X190" | TRUE
+	"_X190" | TRUE_m
+	"_X191"
+	"_X191_m"
+	"_X191" | TRUE
+	"_X191" | TRUE_m
+	"_X192"
+	"_X192_m"
+	"_X193"
+	"_X193_m"
+	"_X193" | TTY
+	"_X193" | TTY_m
+	"_X194"
+	"_X194_m"
+	"_X194" | TTY
+	"_X194" | TTY_m
+	"_X195"
+	"_X195_m"
+	"_X196"
+	"_X196_m"
+	"_X196" | UNAME
+	"_X196" | UNAME_m
+	"_X197"
+	"_X197_m"
+	"_X197" | UNAME
+	"_X197" | UNAME_m
+	"_X198"
+	"_X198_m"
+	"_X199"
+	"_X199_m"
+	"_X199" | WHICH
+	"_X199" | WHICH_m
+	"_X200"
+	"_X200_m"
+	"_X200" | WHICH
+	"_X200" | WHICH_m
+	"_X201"
+	"_X201_m"
+	"_X202"
+	"_X202_m"
+	"_X202" | YES
+	"_X202" | YES_m
+	"_X203"
+	"_X203_m"
+	"_X203" | YES
+	"_X203" | YES_m
+	"_X204"
+	"_X204_m"
+	TOYBOX | TOYBOX_m
+	TOYBOX_FREE | TOYBOX_FREE_m
+	TOYBOX_DEBUG | TOYBOX_DEBUG_m
+	BASENAME | BASENAME_m
+	BZCAT | BZCAT_m
+	CAT | CAT_m
+	CATV | CATV_m
+	CHROOT | CHROOT_m
+	CHVT | CHVT_m
+	CKSUM | CKSUM_m
+	COUNT | COUNT_m
+	CP | CP_m
+	DF | DF_m
+	DF_PEDANTIC | DF_PEDANTIC_m
+	DIRNAME | DIRNAME_m
+	DMESG | DMESG_m
+	ECHO | ECHO_m
+	FALSE | FALSE_m
+	HELLO | HELLO_m
+	HELP | HELP_m
+	HELP_LONG | HELP_LONG_m
+	MDEV | MDEV_m
+	MDEV_CONF | MDEV_CONF_m
+	MKE2FS | MKE2FS_m
+	MKE2FS_JOURNAL | MKE2FS_JOURNAL_m
+	MKE2FS_GEN | MKE2FS_GEN_m
+	MKE2FS_LABEL | MKE2FS_LABEL_m
+	MKE2FS_EXTENDED | MKE2FS_EXTENDED_m
+	MKFIFO | MKFIFO_m
+	MKSWAP | MKSWAP_m
+	NETCAT | NETCAT_m
+	NETCAT_LISTEN | NETCAT_LISTEN_m
+	ONEIT | ONEIT_m
+	PATCH | PATCH_m
+	PWD | PWD_m
+	READLINK | READLINK_m
+	READLINK_F | READLINK_F_m
+	RMDIR | RMDIR_m
+	SED | SED_m
+	SEQ | SEQ_m
+	SHA1SUM | SHA1SUM_m
+	SLEEP | SLEEP_m
+	SORT | SORT_m
+	SORT_BIG | SORT_BIG_m
+	SYNC | SYNC_m
+	TEE | TEE_m
+	TOUCH | TOUCH_m
+	TOYSH | TOYSH_m
+	TOYSH_TTY | TOYSH_TTY_m
+	TOYSH_PROFILE | TOYSH_PROFILE_m
+	TOYSH_JOBCTL | TOYSH_JOBCTL_m
+	TOYSH_FLOWCTL | TOYSH_FLOWCTL_m
+	TOYSH_QUOTES | TOYSH_QUOTES_m
+	TOYSH_WILDCARDS | TOYSH_WILDCARDS_m
+	TOYSH_PROCARGS | TOYSH_PROCARGS_m
+	TOYSH_ENVVARS | TOYSH_ENVVARS_m
+	TOYSH_LOCALS | TOYSH_LOCALS_m
+	TOYSH_ARRAYS | TOYSH_ARRAYS_m
+	TOYSH_PIPES | TOYSH_PIPES_m
+	TOYSH_BUILTINS | TOYSH_BUILTINS_m
+	EXIT | EXIT_m
+	CD | CD_m
+	CD_P | CD_P_m
+	TRUE | TRUE_m
+	TTY | TTY_m
+	UNAME | UNAME_m
+	WHICH | WHICH_m
+	YES | YES_m
+	DMESG | DMESG_m
+	SED | SED_m
+	PATCH | PATCH_m
+	BASENAME | BASENAME_m
+	CATV | CATV_m
+	TOYSH_ENVVARS | TOYSH_ENVVARS_m
+	TOYSH | TOYSH_m
+	MKE2FS_LABEL | MKE2FS_LABEL_m
+	SORT | SORT_m
+	TRUE | TRUE_m
+	TOYSH_PROCARGS | TOYSH_PROCARGS_m
+	MDEV | MDEV_m
+	DF | DF_m
+	READLINK | READLINK_m
+	TOYBOX_DEBUG | TOYBOX_DEBUG_m
+	TOYSH_TTY | TOYSH_TTY_m
+	EXIT | EXIT_m
+	BZCAT | BZCAT_m
+	ONEIT | ONEIT_m
+	TOYSH_JOBCTL | TOYSH_JOBCTL_m
+	DIRNAME | DIRNAME_m
+	MKE2FS_EXTENDED | MKE2FS_EXTENDED_m
+	TOYBOX_FREE | TOYBOX_FREE_m
+	CP | CP_m
+	TOYBOX | TOYBOX_m
+	NETCAT_LISTEN | NETCAT_LISTEN_m
+	UNAME | UNAME_m
+	MDEV_CONF | MDEV_CONF_m
+	MKE2FS | MKE2FS_m
+	FALSE | FALSE_m
+	TOYSH_PROFILE | TOYSH_PROFILE_m
+	TOYSH_ARRAYS | TOYSH_ARRAYS_m
+	MKE2FS_JOURNAL | MKE2FS_JOURNAL_m
+	COUNT | COUNT_m
+	DF_PEDANTIC | DF_PEDANTIC_m
+	SEQ | SEQ_m
+	MKSWAP | MKSWAP_m
+	TOYSH_PIPES | TOYSH_PIPES_m
+	TOYSH_BUILTINS | TOYSH_BUILTINS_m
+	HELP | HELP_m
+	TOYSH_LOCALS | TOYSH_LOCALS_m
+	TEE | TEE_m
+	MKE2FS_GEN | MKE2FS_GEN_m
+	SLEEP | SLEEP_m
+	PWD | PWD_m
+	WHICH | WHICH_m
+	SHA1SUM | SHA1SUM_m
+	CD | CD_m
+	CD_P | CD_P_m
+	NETCAT | NETCAT_m
+	TOYSH_FLOWCTL | TOYSH_FLOWCTL_m
+	CAT | CAT_m
+	ECHO | ECHO_m
+	TOYSH_WILDCARDS | TOYSH_WILDCARDS_m
+	SYNC | SYNC_m
+	READLINK_F | READLINK_F_m
+	YES | YES_m
+	CHROOT | CHROOT_m
+	CHVT | CHVT_m
+	TOYSH_QUOTES | TOYSH_QUOTES_m
+	RMDIR | RMDIR_m
+	HELLO | HELLO_m
+	CKSUM | CKSUM_m
+	SORT_BIG | SORT_BIG_m
+	MKFIFO | MKFIFO_m
+	HELP_LONG | HELP_LONG_m
+	TTY | TTY_m
+	TOUCH | TOUCH_m
