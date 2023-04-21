@@ -1,0 +1,202 @@
+features
+        CVE_2015_9448
+                mandatory
+                        types
+                                mandatory
+                                        application
+                        sources
+                                mandatory
+                                        nvd
+                        exploits
+                                optional
+                                        direct
+                                        indirect
+                        pressified
+                                mandatory
+                                        pressified_sendpress
+                                                mandatory
+                                                        pressified_sendpress_version
+                                                                alternative
+                                                                        pressified_sendpress_version_0__9__5__1
+                                                                        pressified_sendpress_version_1__0__12__10
+                                                                        pressified_sendpress_version_1__1__5__4
+                                                                        pressified_sendpress_version_0__9__3__2
+                                                                        pressified_sendpress_version_0__9__9__9__3
+                                                                        pressified_sendpress_version_0__8__8__1
+                                                                        pressified_sendpress_version_0__9__3
+                                                                        pressified_sendpress_version_1__0__9
+                                                                        pressified_sendpress_version_1__1__3__17
+                                                                        pressified_sendpress_version_1__1__0__2
+                                                                        pressified_sendpress_version_0__9__9__9__1
+                                                                        pressified_sendpress_version_0__9__3__3
+                                                                        pressified_sendpress_version_1__0__12__10__1
+                                                                        pressified_sendpress_version_0__9__2
+                                                                        pressified_sendpress_version_1__1__4__22
+                                                                        pressified_sendpress_version_1__1__3__10__1
+                                                                        pressified_sendpress_version_0__9__5
+                                                                        pressified_sendpress_version_0__9__7
+                                                                        pressified_sendpress_version_0__9__9__5
+                                                                        pressified_sendpress_version_1__1__4__2
+                                                                        pressified_sendpress_version_0__9__6__1
+                                                                        pressified_sendpress_version_0__9__9__6
+                                                                        pressified_sendpress_version_0__9__6
+                                                                        pressified_sendpress_version_0__9__5__3
+                                                                        pressified_sendpress_version_0__9__3__1
+                                                                        pressified_sendpress_version_0__9__9__1
+                                                                        pressified_sendpress_version_0__9__9
+                                                                        pressified_sendpress_version_0__9__9__9__4
+                                                                        pressified_sendpress_version_0__9__9__7
+                                                                        pressified_sendpress_version_1__1__2__25
+                                                                        pressified_sendpress_version_0__9__4__5
+                                                                        pressified_sendpress_version_0__9__9__3
+                                                                        pressified_sendpress_version_0__9__9__4
+                                                                        pressified_sendpress_version_0__9__9__9__6
+                                                                        pressified_sendpress_version_0__9__8__1
+                                                                        pressified_sendpress_version_0__9__8__7
+                                                                        pressified_sendpress_version_1__1__6__4
+                                                                        pressified_sendpress_version_1__1
+                                                                        pressified_sendpress_version_1__1__4__3
+                                                                        pressified_sendpress_version_1__1__7__21
+                                                                        pressified_sendpress_version_0__9__9__8
+                                                                        pressified_sendpress_version_1__1__2__24
+                                                                        pressified_sendpress_version_0__9__9__9__8
+                                                                        pressified_sendpress_version_0__9__8__6
+                                                                        pressified_sendpress_version_0__9__4__6
+                                                                        pressified_sendpress_version_0__9__4__2
+                                                                        pressified_sendpress_version_0__9__5__4
+                                                                        pressified_sendpress_version_0__9__9__9
+                                                                        pressified_sendpress_version_1__1__4__21
+                                                                        pressified_sendpress_version_0__9__9__9__5
+                                                                        pressified_sendpress_version_any
+                                                                        pressified_sendpress_version_0__9__4
+                                                                        pressified_sendpress_version_0__9__8__4
+                                                                        pressified_sendpress_version_0__9__2__1
+                                                                        pressified_sendpress_version_1__1__7__14
+                                                                        pressified_sendpress_version_1__0
+                                                                        pressified_sendpress_version_1__0__1
+                                                                        pressified_sendpress_version_0__9__7__1
+                                                                        pressified_sendpress_version_1__0__2
+                                                                        pressified_sendpress_version_0__9__9__2
+                                                                        pressified_sendpress_version_0__9__8__2
+                                                                        pressified_sendpress_version_0__9__9__9__7
+                                                                        pressified_sendpress_version_0__9__6__4
+                                                                        pressified_sendpress_version_0__9__3__4
+                                                                        pressified_sendpress_version_1__0__3
+                                                                        pressified_sendpress_version_1__0__12__11
+                                                                        pressified_sendpress_version_1__1__6__23
+                                                                        pressified_sendpress_version_0__9__8__5
+                                                                        pressified_sendpress_version_0__8__8
+                                                                        pressified_sendpress_version_0__9__4__7
+                                                                        pressified_sendpress_version_0__9__8
+                                                                        pressified_sendpress_version_1__1__3__10
+                                                                        pressified_sendpress_version_0__9__6__2
+                                                                        pressified_sendpress_version_1__1__6__12
+                                                                        pressified_sendpress_version_0__9__9__9__9
+                                                                        pressified_sendpress_version_1__1__2__22
+                                                                        pressified_sendpress_version_0__9__7__2
+                                                                        pressified_sendpress_version_0__9__4__1
+                                                                        pressified_sendpress_version_0__9__4__3
+                                                                        pressified_sendpress_version_0__9__7__3
+                                                                        pressified_sendpress_version_0__9__9__9__2
+                                                                        pressified_sendpress_version_0__9__5__2
+                                                                        pressified_sendpress_version_0__9__4__4
+                                                                        pressified_sendpress_version_0__9__8__3
+                                                                        pressified_sendpress_version_1__1__0__1
+                                                                        pressified_sendpress_version_0__9__6__3
+                                                                        pressified_sendpress_version_1__1__2__11
+                                                        pressified_sendpress_update
+                                                                alternative
+                                                                        pressified_sendpress_update_any
+                                                                        pressified_sendpress_update_beta
+                                                        pressified_sendpress_target__sw
+                                                                mandatory
+                                                                        pressified_sendpress_target__sw_wordpress
+
+constraints
+        pressified_sendpress => application
+        pressified_sendpress_version_0__9__5__1 => pressified_sendpress_update_any
+        pressified_sendpress_version_1__0__12__10 => pressified_sendpress_update_any
+        pressified_sendpress_version_1__1__5__4 => pressified_sendpress_update_any
+        pressified_sendpress_version_0__9__3__2 => pressified_sendpress_update_any
+        pressified_sendpress_version_0__9__9__9__3 => pressified_sendpress_update_any
+        pressified_sendpress_version_0__8__8__1 => pressified_sendpress_update_any
+        pressified_sendpress_version_0__9__3 => pressified_sendpress_update_any
+        pressified_sendpress_version_1__0__9 => pressified_sendpress_update_any
+        pressified_sendpress_version_1__1__3__17 => pressified_sendpress_update_any
+        pressified_sendpress_version_1__1__0__2 => pressified_sendpress_update_any
+        pressified_sendpress_version_0__9__9__9__1 => pressified_sendpress_update_any
+        pressified_sendpress_version_0__9__3__3 => pressified_sendpress_update_any
+        pressified_sendpress_version_1__0__12__10__1 => pressified_sendpress_update_any
+        pressified_sendpress_version_0__9__2 => pressified_sendpress_update_any
+        pressified_sendpress_version_1__1__4__22 => pressified_sendpress_update_any
+        pressified_sendpress_version_1__1__3__10__1 => pressified_sendpress_update_any
+        pressified_sendpress_version_0__9__5 => pressified_sendpress_update_any
+        pressified_sendpress_version_0__9__7 => pressified_sendpress_update_any
+        pressified_sendpress_version_0__9__9__5 => pressified_sendpress_update_any
+        pressified_sendpress_version_1__1__4__2 => pressified_sendpress_update_any
+        pressified_sendpress_version_0__9__6__1 => pressified_sendpress_update_any
+        pressified_sendpress_version_0__9__9__6 => pressified_sendpress_update_any
+        pressified_sendpress_version_0__9__6 => pressified_sendpress_update_any
+        pressified_sendpress_version_0__9__5__3 => pressified_sendpress_update_any
+        pressified_sendpress_version_0__9__3__1 => pressified_sendpress_update_any
+        pressified_sendpress_version_0__9__9__1 => pressified_sendpress_update_any
+        pressified_sendpress_version_0__9__9 => pressified_sendpress_update_any
+        pressified_sendpress_version_0__9__9__9__4 => pressified_sendpress_update_any
+        pressified_sendpress_version_0__9__9__7 => pressified_sendpress_update_any
+        pressified_sendpress_version_1__1__2__25 => pressified_sendpress_update_any
+        pressified_sendpress_version_0__9__4__5 => pressified_sendpress_update_any
+        pressified_sendpress_version_0__9__9__3 => pressified_sendpress_update_any
+        pressified_sendpress_version_0__9__9__4 => pressified_sendpress_update_any
+        pressified_sendpress_version_0__9__9__9__6 => pressified_sendpress_update_any
+        pressified_sendpress_version_0__9__8__1 => pressified_sendpress_update_any
+        pressified_sendpress_version_0__9__8__7 => pressified_sendpress_update_any
+        pressified_sendpress_version_1__1__6__4 => pressified_sendpress_update_any
+        pressified_sendpress_version_1__1 => pressified_sendpress_update_any
+        pressified_sendpress_version_1__1__4__3 => pressified_sendpress_update_any
+        pressified_sendpress_version_1__1__7__21 => pressified_sendpress_update_any
+        pressified_sendpress_version_0__9__9__8 => pressified_sendpress_update_any
+        pressified_sendpress_version_1__1__2__24 => pressified_sendpress_update_any
+        pressified_sendpress_version_0__9__9__9__8 => pressified_sendpress_update_any
+        pressified_sendpress_version_0__9__8__6 => pressified_sendpress_update_any
+        pressified_sendpress_version_0__9__4__6 => pressified_sendpress_update_any
+        pressified_sendpress_version_0__9__4__2 => pressified_sendpress_update_any
+        pressified_sendpress_version_0__9__5__4 => pressified_sendpress_update_any
+        pressified_sendpress_version_0__9__9__9 => pressified_sendpress_update_any
+        pressified_sendpress_version_1__1__4__21 => pressified_sendpress_update_any
+        pressified_sendpress_version_0__9__9__9__5 => pressified_sendpress_update_any
+        pressified_sendpress_version_any => pressified_sendpress_update_any
+        pressified_sendpress_version_0__9__4 => pressified_sendpress_update_any
+        pressified_sendpress_version_0__9__8__4 => pressified_sendpress_update_any
+        pressified_sendpress_version_1__1__7__14 => pressified_sendpress_update_any
+        pressified_sendpress_version_1__0 => pressified_sendpress_update_any
+        pressified_sendpress_version_1__0__1 => pressified_sendpress_update_any
+        pressified_sendpress_version_0__9__7__1 => pressified_sendpress_update_any
+        pressified_sendpress_version_1__0__2 => pressified_sendpress_update_any
+        pressified_sendpress_version_0__9__9__2 => pressified_sendpress_update_any
+        pressified_sendpress_version_0__9__8__2 => pressified_sendpress_update_any
+        pressified_sendpress_version_0__9__9__9__7 => pressified_sendpress_update_any
+        pressified_sendpress_version_0__9__6__4 => pressified_sendpress_update_any
+        pressified_sendpress_version_0__9__3__4 => pressified_sendpress_update_any
+        pressified_sendpress_version_1__0__3 => pressified_sendpress_update_any
+        pressified_sendpress_version_1__0__12__11 => pressified_sendpress_update_any
+        pressified_sendpress_version_1__1__6__23 => pressified_sendpress_update_any
+        pressified_sendpress_version_0__9__8__5 => pressified_sendpress_update_any
+        pressified_sendpress_version_0__8__8 => pressified_sendpress_update_any
+        pressified_sendpress_version_0__9__4__7 => pressified_sendpress_update_any
+        pressified_sendpress_version_0__9__8 => pressified_sendpress_update_any
+        pressified_sendpress_version_1__1__3__10 => pressified_sendpress_update_any
+        pressified_sendpress_version_0__9__6__2 => pressified_sendpress_update_any
+        pressified_sendpress_version_1__1__6__12 => pressified_sendpress_update_any
+        pressified_sendpress_version_0__9__9__9__9 => pressified_sendpress_update_any
+        pressified_sendpress_version_1__1__2__22 => pressified_sendpress_update_any
+        pressified_sendpress_version_0__9__7__2 => pressified_sendpress_update_any
+        pressified_sendpress_version_0__9__4__1 => pressified_sendpress_update_any
+        pressified_sendpress_version_0__9__4__3 => pressified_sendpress_update_any
+        pressified_sendpress_version_0__9__7__3 => pressified_sendpress_update_any
+        pressified_sendpress_version_0__9__9__9__2 => pressified_sendpress_update_any
+        pressified_sendpress_version_0__9__5__2 => pressified_sendpress_update_any
+        pressified_sendpress_version_0__9__4__4 => pressified_sendpress_update_any
+        pressified_sendpress_version_0__9__8__3 => pressified_sendpress_update_any
+        pressified_sendpress_version_1__1__0__1 => pressified_sendpress_update_any
+        pressified_sendpress_version_0__9__6__3 => pressified_sendpress_update_any
+        pressified_sendpress_version_1__1__2__11 => pressified_sendpress_update_any

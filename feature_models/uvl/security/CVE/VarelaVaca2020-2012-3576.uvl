@@ -1,0 +1,226 @@
+features
+        CVE_2012_3576
+                optional
+                        configs
+                                mandatory
+                                        rc0
+                                                mandatory
+                                                        rc0_wordpress
+                                                                mandatory
+                                                                        rc0_wordpress_wordpress
+                mandatory
+                        types
+                                mandatory
+                                        application
+                        sources
+                                mandatory
+                                        nvd
+                        exploits
+                                optional
+                                        direct
+                                                mandatory
+                                                        exploit_19023
+                                        indirect
+                        jquindlen
+                                mandatory
+                                        jquindlen_wpstorecart
+                                                mandatory
+                                                        jquindlen_wpstorecart_version
+                                                                alternative
+                                                                        jquindlen_wpstorecart_version_2__0__2
+                                                                        jquindlen_wpstorecart_version_2__5__14
+                                                                        jquindlen_wpstorecart_version_2__2__2
+                                                                        jquindlen_wpstorecart_version_2__4__3
+                                                                        jquindlen_wpstorecart_version_2__5__18
+                                                                        jquindlen_wpstorecart_version_2__5__17
+                                                                        jquindlen_wpstorecart_version_2__5__8
+                                                                        jquindlen_wpstorecart_version_2__0__5
+                                                                        jquindlen_wpstorecart_version_0__62
+                                                                        jquindlen_wpstorecart_version_2__5__3
+                                                                        jquindlen_wpstorecart_version_2__1__8
+                                                                        jquindlen_wpstorecart_version_2__5__7
+                                                                        jquindlen_wpstorecart_version_2__0__6
+                                                                        jquindlen_wpstorecart_version_2__1__2
+                                                                        jquindlen_wpstorecart_version_2__0__9
+                                                                        jquindlen_wpstorecart_version_2__0__11
+                                                                        jquindlen_wpstorecart_version_2__4__14
+                                                                        jquindlen_wpstorecart_version_2__5__23
+                                                                        jquindlen_wpstorecart_version_2__5__28
+                                                                        jquindlen_wpstorecart_version_2__3__10
+                                                                        jquindlen_wpstorecart_version_2__1__1
+                                                                        jquindlen_wpstorecart_version_2__4__9
+                                                                        jquindlen_wpstorecart_version_2__5__4
+                                                                        jquindlen_wpstorecart_version_2__5__2
+                                                                        jquindlen_wpstorecart_version_2__2__8
+                                                                        jquindlen_wpstorecart_version_2__2__4
+                                                                        jquindlen_wpstorecart_version_2__5__16
+                                                                        jquindlen_wpstorecart_version_2__4__6
+                                                                        jquindlen_wpstorecart_version_2__4__5
+                                                                        jquindlen_wpstorecart_version_2__3__0
+                                                                        jquindlen_wpstorecart_version_2__4__4
+                                                                        jquindlen_wpstorecart_version_2__4__1
+                                                                        jquindlen_wpstorecart_version_2__0__13
+                                                                        jquindlen_wpstorecart_version_2__0__1
+                                                                        jquindlen_wpstorecart_version_2__0__10
+                                                                        jquindlen_wpstorecart_version_2__0__8
+                                                                        jquindlen_wpstorecart_version_2__4__11
+                                                                        jquindlen_wpstorecart_version_2__3__16
+                                                                        jquindlen_wpstorecart_version_2__5__21
+                                                                        jquindlen_wpstorecart_version_2__0__4
+                                                                        jquindlen_wpstorecart_version_2__2__5
+                                                                        jquindlen_wpstorecart_version_2__3__13
+                                                                        jquindlen_wpstorecart_version_2__5__12
+                                                                        jquindlen_wpstorecart_version_2__3__17
+                                                                        jquindlen_wpstorecart_version_2__5__20
+                                                                        jquindlen_wpstorecart_version_2__3__12
+                                                                        jquindlen_wpstorecart_version_2__4__10
+                                                                        jquindlen_wpstorecart_version_2__3__9
+                                                                        jquindlen_wpstorecart_version_2__5__15
+                                                                        jquindlen_wpstorecart_version_2__4__2
+                                                                        jquindlen_wpstorecart_version_2__3__14
+                                                                        jquindlen_wpstorecart_version_2__5__25
+                                                                        jquindlen_wpstorecart_version_2__5__22
+                                                                        jquindlen_wpstorecart_version_2__1__7
+                                                                        jquindlen_wpstorecart_version_1__0__0
+                                                                        jquindlen_wpstorecart_version_2__3__8
+                                                                        jquindlen_wpstorecart_version_2__3__3
+                                                                        jquindlen_wpstorecart_version_2__0__7
+                                                                        jquindlen_wpstorecart_version_2__5__26
+                                                                        jquindlen_wpstorecart_version_2__3__15
+                                                                        jquindlen_wpstorecart_version_2__2__3
+                                                                        jquindlen_wpstorecart_version_2__1__5
+                                                                        jquindlen_wpstorecart_version_2__1__6
+                                                                        jquindlen_wpstorecart_version_2__0__3
+                                                                        jquindlen_wpstorecart_version_2__5__24
+                                                                        jquindlen_wpstorecart_version_2__5__6
+                                                                        jquindlen_wpstorecart_version_2__3__7
+                                                                        jquindlen_wpstorecart_version_2__3__11
+                                                                        jquindlen_wpstorecart_version_2__1__0
+                                                                        jquindlen_wpstorecart_version_2__1__3
+                                                                        jquindlen_wpstorecart_version_2__5__27
+                                                                        jquindlen_wpstorecart_version_2__5__0
+                                                                        jquindlen_wpstorecart_version_2__3__6
+                                                                        jquindlen_wpstorecart_version_2__3__1
+                                                                        jquindlen_wpstorecart_version_2__5__5
+                                                                        jquindlen_wpstorecart_version_2__2__9
+                                                                        jquindlen_wpstorecart_version_2__5__11
+                                                                        jquindlen_wpstorecart_version_2__2__0
+                                                                        jquindlen_wpstorecart_version_2__4__8
+                                                                        jquindlen_wpstorecart_version_2__3__2
+                                                                        jquindlen_wpstorecart_version_2__5__19
+                                                                        jquindlen_wpstorecart_version_2__0__12
+                                                                        jquindlen_wpstorecart_version_2__2__7
+                                                                        jquindlen_wpstorecart_version_2__1__4
+                                                                        jquindlen_wpstorecart_version_2__2__6
+                                                                        jquindlen_wpstorecart_version_2__5__10
+                                                                        jquindlen_wpstorecart_version_2__4__13
+                                                                        jquindlen_wpstorecart_version_2__4__12
+                                                                        jquindlen_wpstorecart_version_2__5__13
+                                                                        jquindlen_wpstorecart_version_2__2__1
+                                                                        jquindlen_wpstorecart_version_2__4__0
+                                                                        jquindlen_wpstorecart_version_2__5__1
+                                                                        jquindlen_wpstorecart_version_2__3__4
+                                                                        jquindlen_wpstorecart_version_2__4__7
+                                                                        jquindlen_wpstorecart_version_2__3__5
+                                                                        jquindlen_wpstorecart_version_2__0__0
+                                                                        jquindlen_wpstorecart_version_2__5__9
+
+constraints
+        jquindlen_wpstorecart => application
+        jquindlen_wpstorecart_version_2__0__2 => (rc0)
+        jquindlen_wpstorecart_version_2__5__14 => (rc0)
+        jquindlen_wpstorecart_version_2__2__2 => (rc0)
+        jquindlen_wpstorecart_version_2__4__3 => (rc0)
+        jquindlen_wpstorecart_version_2__5__18 => (rc0)
+        jquindlen_wpstorecart_version_2__5__17 => (rc0)
+        jquindlen_wpstorecart_version_2__5__8 => (rc0)
+        jquindlen_wpstorecart_version_2__0__5 => (rc0)
+        jquindlen_wpstorecart_version_0__62 => (rc0)
+        jquindlen_wpstorecart_version_2__5__3 => (rc0)
+        jquindlen_wpstorecart_version_2__1__8 => (rc0)
+        jquindlen_wpstorecart_version_2__5__7 => (rc0)
+        jquindlen_wpstorecart_version_2__0__6 => (rc0)
+        jquindlen_wpstorecart_version_2__1__2 => (rc0)
+        jquindlen_wpstorecart_version_2__0__9 => (rc0)
+        jquindlen_wpstorecart_version_2__0__11 => (rc0)
+        jquindlen_wpstorecart_version_2__4__14 => (rc0)
+        jquindlen_wpstorecart_version_2__5__23 => (rc0)
+        jquindlen_wpstorecart_version_2__5__28 => (rc0)
+        jquindlen_wpstorecart_version_2__3__10 => (rc0)
+        jquindlen_wpstorecart_version_2__1__1 => (rc0)
+        jquindlen_wpstorecart_version_2__4__9 => (rc0)
+        jquindlen_wpstorecart_version_2__5__4 => (rc0)
+        jquindlen_wpstorecart_version_2__5__2 => (rc0)
+        jquindlen_wpstorecart_version_2__2__8 => (rc0)
+        jquindlen_wpstorecart_version_2__2__4 => (rc0)
+        jquindlen_wpstorecart_version_2__5__16 => (rc0)
+        jquindlen_wpstorecart_version_2__4__6 => (rc0)
+        jquindlen_wpstorecart_version_2__4__5 => (rc0)
+        jquindlen_wpstorecart_version_2__3__0 => (rc0)
+        jquindlen_wpstorecart_version_2__4__4 => (rc0)
+        jquindlen_wpstorecart_version_2__4__1 => (rc0)
+        jquindlen_wpstorecart_version_2__0__13 => (rc0)
+        jquindlen_wpstorecart_version_2__0__1 => (rc0)
+        jquindlen_wpstorecart_version_2__0__10 => (rc0)
+        jquindlen_wpstorecart_version_2__0__8 => (rc0)
+        jquindlen_wpstorecart_version_2__4__11 => (rc0)
+        jquindlen_wpstorecart_version_2__3__16 => (rc0)
+        jquindlen_wpstorecart_version_2__5__21 => (rc0)
+        jquindlen_wpstorecart_version_2__0__4 => (rc0)
+        jquindlen_wpstorecart_version_2__2__5 => (rc0)
+        jquindlen_wpstorecart_version_2__3__13 => (rc0)
+        jquindlen_wpstorecart_version_2__5__12 => (rc0)
+        jquindlen_wpstorecart_version_2__3__17 => (rc0)
+        jquindlen_wpstorecart_version_2__5__20 => (rc0)
+        jquindlen_wpstorecart_version_2__3__12 => (rc0)
+        jquindlen_wpstorecart_version_2__4__10 => (rc0)
+        jquindlen_wpstorecart_version_2__3__9 => (rc0)
+        jquindlen_wpstorecart_version_2__5__15 => (rc0)
+        jquindlen_wpstorecart_version_2__4__2 => (rc0)
+        jquindlen_wpstorecart_version_2__3__14 => (rc0)
+        jquindlen_wpstorecart_version_2__5__25 => (rc0)
+        jquindlen_wpstorecart_version_2__5__22 => (rc0)
+        jquindlen_wpstorecart_version_2__1__7 => (rc0)
+        jquindlen_wpstorecart_version_1__0__0 => (rc0)
+        jquindlen_wpstorecart_version_2__3__8 => (rc0)
+        jquindlen_wpstorecart_version_2__3__3 => (rc0)
+        jquindlen_wpstorecart_version_2__0__7 => (rc0)
+        jquindlen_wpstorecart_version_2__5__26 => (rc0)
+        jquindlen_wpstorecart_version_2__3__15 => (rc0)
+        jquindlen_wpstorecart_version_2__2__3 => (rc0)
+        jquindlen_wpstorecart_version_2__1__5 => (rc0)
+        jquindlen_wpstorecart_version_2__1__6 => (rc0)
+        jquindlen_wpstorecart_version_2__0__3 => (rc0)
+        jquindlen_wpstorecart_version_2__5__24 => (rc0)
+        jquindlen_wpstorecart_version_2__5__6 => (rc0)
+        jquindlen_wpstorecart_version_2__3__7 => (rc0)
+        jquindlen_wpstorecart_version_2__3__11 => (rc0)
+        jquindlen_wpstorecart_version_2__1__0 => (rc0)
+        jquindlen_wpstorecart_version_2__1__3 => (rc0)
+        jquindlen_wpstorecart_version_2__5__27 => (rc0)
+        jquindlen_wpstorecart_version_2__5__0 => (rc0)
+        jquindlen_wpstorecart_version_2__3__6 => (rc0)
+        jquindlen_wpstorecart_version_2__3__1 => (rc0)
+        jquindlen_wpstorecart_version_2__5__5 => (rc0)
+        jquindlen_wpstorecart_version_2__2__9 => (rc0)
+        jquindlen_wpstorecart_version_2__5__11 => (rc0)
+        jquindlen_wpstorecart_version_2__2__0 => (rc0)
+        jquindlen_wpstorecart_version_2__4__8 => (rc0)
+        jquindlen_wpstorecart_version_2__3__2 => (rc0)
+        jquindlen_wpstorecart_version_2__5__19 => (rc0)
+        jquindlen_wpstorecart_version_2__0__12 => (rc0)
+        jquindlen_wpstorecart_version_2__2__7 => (rc0)
+        jquindlen_wpstorecart_version_2__1__4 => (rc0)
+        jquindlen_wpstorecart_version_2__2__6 => (rc0)
+        jquindlen_wpstorecart_version_2__5__10 => (rc0)
+        jquindlen_wpstorecart_version_2__4__13 => (rc0)
+        jquindlen_wpstorecart_version_2__4__12 => (rc0)
+        jquindlen_wpstorecart_version_2__5__13 => (rc0)
+        jquindlen_wpstorecart_version_2__2__1 => (rc0)
+        jquindlen_wpstorecart_version_2__4__0 => (rc0)
+        jquindlen_wpstorecart_version_2__5__1 => (rc0)
+        jquindlen_wpstorecart_version_2__3__4 => (rc0)
+        jquindlen_wpstorecart_version_2__4__7 => (rc0)
+        jquindlen_wpstorecart_version_2__3__5 => (rc0)
+        jquindlen_wpstorecart_version_2__0__0 => (rc0)
+        jquindlen_wpstorecart_version_2__5__9 => (rc0)

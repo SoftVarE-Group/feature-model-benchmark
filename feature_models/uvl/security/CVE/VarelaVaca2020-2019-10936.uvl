@@ -1,0 +1,736 @@
+features
+        CVE_2019_10936
+                optional
+                        configs
+                                alternative
+                                        rc0
+                                                mandatory
+                                                        rc0_siemens
+                                                                mandatory
+                                                                        rc0_siemens_dk__standard__ethernet__controller
+                                        rc1
+                                                mandatory
+                                                        rc1_siemens
+                                                                mandatory
+                                                                        rc1_siemens_ek_ertec__200
+                                        rc2
+                                                mandatory
+                                                        rc2_siemens
+                                                                mandatory
+                                                                        rc2_siemens_ek_ertec__200p
+                                        rc3
+                                                mandatory
+                                                        rc3_siemens
+                                                                mandatory
+                                                                        rc3_siemens_simatic__cfu__pa
+                                        rc4
+                                                mandatory
+                                                        rc4_siemens
+                                                                mandatory
+                                                                        rc4_siemens_simatic__et__200al
+                                        rc5
+                                                mandatory
+                                                        rc5_siemens
+                                                                mandatory
+                                                                        rc5_siemens_simatic__et__200m
+                                        rc6
+                                                mandatory
+                                                        rc6_siemens
+                                                                mandatory
+                                                                        rc6_siemens_simatic__et__200mp__im__155_5__pn__ba
+                                        rc7
+                                                mandatory
+                                                        rc7_siemens
+                                                                mandatory
+                                                                        rc7_siemens_simatic__et__200mp__im__155_5__pn__hf
+                                        rc8
+                                                mandatory
+                                                        rc8_siemens
+                                                                mandatory
+                                                                        rc8_siemens_simatic__et__200mp__im__155_5__pn__st
+                                        rc9
+                                                mandatory
+                                                        rc9_siemens
+                                                                mandatory
+                                                                        rc9_siemens_simatic__et__200s
+                                        rc10
+                                                mandatory
+                                                        rc10_siemens
+                                                                mandatory
+                                                                        rc10_siemens_simatic__et__200sp__im__155_6__pn__ba
+                                        rc11
+                                                mandatory
+                                                        rc11_siemens
+                                                                mandatory
+                                                                        rc11_siemens_simatic__et__200sp__im__155_6__pn__ha
+                                        rc12
+                                                mandatory
+                                                        rc12_siemens
+                                                                mandatory
+                                                                        rc12_siemens_simatic__et__200sp__im__155_6__pn__hf
+                                        rc13
+                                                mandatory
+                                                        rc13_siemens
+                                                                mandatory
+                                                                        rc13_siemens_simatic__et__200sp__im__155_6__pn__hs
+                                        rc14
+                                                mandatory
+                                                        rc14_siemens
+                                                                mandatory
+                                                                        rc14_siemens_simatic__et__200sp__im__155_6__pn__st
+                                        rc15
+                                                mandatory
+                                                        rc15_siemens
+                                                                mandatory
+                                                                        rc15_siemens_simatic__et__200sp__im__155_6__pn__2__hf
+                                        rc16
+                                                mandatory
+                                                        rc16_siemens
+                                                                mandatory
+                                                                        rc16_siemens_simatic__et__200sp__im__155_6__pn__3__hf
+                                        rc17
+                                                mandatory
+                                                        rc17_siemens
+                                                                mandatory
+                                                                        rc17_siemens_simatic__et__200ecopn
+                                        rc18
+                                                mandatory
+                                                        rc18_siemens
+                                                                mandatory
+                                                                        rc18_siemens_simatic__et__200pro
+                                        rc19
+                                                mandatory
+                                                        rc19_siemens
+                                                                mandatory
+                                                                        rc19_siemens_simatic__hmi__comfort__outdoor__panels__7
+                                        rc20
+                                                mandatory
+                                                        rc20_siemens
+                                                                mandatory
+                                                                        rc20_siemens_simatic__hmi__comfort__outdoor__panels__15
+                                        rc21
+                                                mandatory
+                                                        rc21_siemens
+                                                                mandatory
+                                                                        rc21_siemens_simatic__hmi__comfort__panels__4
+                                        rc22
+                                                mandatory
+                                                        rc22_siemens
+                                                                mandatory
+                                                                        rc22_siemens_simatic__hmi__comfort__panels__22
+                                        rc23
+                                                mandatory
+                                                        rc23_siemens
+                                                                mandatory
+                                                                        rc23_siemens_simatic__hmi__ktp__mobile__panels
+                                        rc24
+                                                mandatory
+                                                        rc24_siemens
+                                                                mandatory
+                                                                        rc24_siemens_simatic__pn__pn__coupler
+                                        rc25
+                                                mandatory
+                                                        rc25_siemens
+                                                                mandatory
+                                                                        rc25_siemens_simatic__profinet__driver
+                                        rc26
+                                                mandatory
+                                                        rc26_siemens
+                                                                mandatory
+                                                                        rc26_siemens_simatic__s7_1200__cpu
+                                        rc27
+                                                mandatory
+                                                        rc27_siemens
+                                                                mandatory
+                                                                        rc27_siemens_simatic__s7_1200__cpu__1211c
+                                        rc28
+                                                mandatory
+                                                        rc28_siemens
+                                                                mandatory
+                                                                        rc28_siemens_simatic__s7_1200__cpu__1212c
+                                        rc29
+                                                mandatory
+                                                        rc29_siemens
+                                                                mandatory
+                                                                        rc29_siemens_simatic__s7_1200__cpu__1214c
+                                        rc30
+                                                mandatory
+                                                        rc30_siemens
+                                                                mandatory
+                                                                        rc30_siemens_simatic__s7_1500__cpu
+                                        rc31
+                                                mandatory
+                                                        rc31_siemens
+                                                                mandatory
+                                                                        rc31_siemens_simatic__s7_1500s__cpu
+                                        rc32
+                                                mandatory
+                                                        rc32_siemens
+                                                                mandatory
+                                                                        rc32_siemens_simatic__s7_1500t__cpu
+                                        rc33
+                                                mandatory
+                                                        rc33_siemens
+                                                                mandatory
+                                                                        rc33_siemens_simatic__s7_1500__cpu__1518
+                                        rc34
+                                                mandatory
+                                                        rc34_siemens
+                                                                mandatory
+                                                                        rc34_siemens_simatic__s7_1500__cpu__1511c
+                                        rc35
+                                                mandatory
+                                                        rc35_siemens
+                                                                mandatory
+                                                                        rc35_siemens_simatic__s7_1500__cpu__1512c
+                                        rc36
+                                                mandatory
+                                                        rc36_siemens
+                                                                mandatory
+                                                                        rc36_siemens_simatic__s7_300__cpu
+                                        rc37
+                                                mandatory
+                                                        rc37_siemens
+                                                                mandatory
+                                                                        rc37_siemens_simatic__s7_300__cpu__312__ifm
+                                        rc38
+                                                mandatory
+                                                        rc38_siemens
+                                                                mandatory
+                                                                        rc38_siemens_simatic__s7_300__cpu__313
+                                        rc39
+                                                mandatory
+                                                        rc39_siemens
+                                                                mandatory
+                                                                        rc39_siemens_simatic__s7_300__cpu__314
+                                        rc40
+                                                mandatory
+                                                        rc40_siemens
+                                                                mandatory
+                                                                        rc40_siemens_simatic__s7_300__cpu__314__ifm
+                                        rc41
+                                                mandatory
+                                                        rc41_siemens
+                                                                mandatory
+                                                                        rc41_siemens_simatic__s7_300__cpu__315
+                                        rc42
+                                                mandatory
+                                                        rc42_siemens
+                                                                mandatory
+                                                                        rc42_siemens_simatic__s7_300__cpu__315_2__dp
+                                        rc43
+                                                mandatory
+                                                        rc43_siemens
+                                                                mandatory
+                                                                        rc43_siemens_simatic__s7_300__cpu__316_2__dp
+                                        rc44
+                                                mandatory
+                                                        rc44_siemens
+                                                                mandatory
+                                                                        rc44_siemens_simatic__s7_300__cpu__318_2
+                                        rc45
+                                                mandatory
+                                                        rc45_siemens
+                                                                mandatory
+                                                                        rc45_siemens_simatic__s7_400__pn__v7
+                                        rc46
+                                                mandatory
+                                                        rc46_siemens
+                                                                mandatory
+                                                                        rc46_siemens_simatic__s7_400__dp__v7
+                                        rc47
+                                                mandatory
+                                                        rc47_siemens
+                                                                mandatory
+                                                                        rc47_siemens_simatic__s7_400__v6
+                                        rc48
+                                                mandatory
+                                                        rc48_siemens
+                                                                mandatory
+                                                                        rc48_siemens_simatic__s7_400h__v6
+                                        rc49
+                                                mandatory
+                                                        rc49_siemens
+                                                                mandatory
+                                                                        rc49_siemens_simatic__s7_410__v8
+                                        rc50
+                                                mandatory
+                                                        rc50_siemens
+                                                                mandatory
+                                                                        rc50_siemens_simatic__winac__rtx____f____2010
+                                        rc51
+                                                mandatory
+                                                        rc51_siemens
+                                                                mandatory
+                                                                        rc51_siemens_sinamics__dcm
+                                        rc52
+                                                mandatory
+                                                        rc52_siemens
+                                                                mandatory
+                                                                        rc52_siemens_sinamics__dcp
+                                        rc53
+                                                mandatory
+                                                        rc53_siemens
+                                                                mandatory
+                                                                        rc53_siemens_sinamics__g110m
+                                        rc54
+                                                mandatory
+                                                        rc54_siemens
+                                                                mandatory
+                                                                        rc54_siemens_sinamics__g120
+                                        rc55
+                                                mandatory
+                                                        rc55_siemens
+                                                                mandatory
+                                                                        rc55_siemens_sinamics__g130
+                                        rc56
+                                                mandatory
+                                                        rc56_siemens
+                                                                mandatory
+                                                                        rc56_siemens_sinamics__g150
+                                        rc57
+                                                mandatory
+                                                        rc57_siemens
+                                                                mandatory
+                                                                        rc57_siemens_sinamics__gl150
+                                        rc58
+                                                mandatory
+                                                        rc58_siemens
+                                                                mandatory
+                                                                        rc58_siemens_sinamics__gm150
+                                        rc59
+                                                mandatory
+                                                        rc59_siemens
+                                                                mandatory
+                                                                        rc59_siemens_sinamics__s110
+                                        rc60
+                                                mandatory
+                                                        rc60_siemens
+                                                                mandatory
+                                                                        rc60_siemens_sinamics__s120
+                                        rc61
+                                                mandatory
+                                                        rc61_siemens
+                                                                mandatory
+                                                                        rc61_siemens_sinamics__s150
+                                        rc62
+                                                mandatory
+                                                        rc62_siemens
+                                                                mandatory
+                                                                        rc62_siemens_sinamics__sl150
+                                        rc63
+                                                mandatory
+                                                        rc63_siemens
+                                                                mandatory
+                                                                        rc63_siemens_sinamics__sm120
+                mandatory
+                        types
+                                mandatory
+                                        operating_system
+                                        application
+                        sources
+                                mandatory
+                                        nvd
+                        exploits
+                                optional
+                                        direct
+                                        indirect
+                        siemens
+                                alternative
+                                        siemens_dk__standard__ethernet__controller__firmware
+                                        siemens_ek_ertec__200__firmware
+                                        siemens_ek_ertec__200p__firmware
+                                                mandatory
+                                                        siemens_ek_ertec__200p__firmware_version
+                                                                alternative
+                                                                        siemens_ek_ertec__200p__firmware_version_4__5__0
+                                                                        siemens_ek_ertec__200p__firmware_version_4__6
+                                                                        siemens_ek_ertec__200p__firmware_version_any
+                                                                        siemens_ek_ertec__200p__firmware_version_4__5
+                                        siemens_simatic__et__200al__firmware
+                                        siemens_simatic__et__200m__firmware
+                                        siemens_simatic__et__200mp__im__155_5__pn__hf__firmware
+                                        siemens_simatic__et__200mp__im__155_5__pn__st__firmware
+                                        siemens_simatic__et__200s__firmware
+                                        siemens_simatic__et__200sp__im__155_6__pn__ba__firmware
+                                        siemens_simatic__et__200sp__im__155_6__pn__ha__firmware
+                                        siemens_simatic__et__200sp__im__155_6__pn__hs__firmware
+                                        siemens_simatic__et__200sp__im__155_6__pn__st__firmware
+                                        siemens_simatic__et__200ecopn__firmware
+                                        siemens_simatic__et__200pro__firmware
+                                        siemens_simatic__hmi__comfort__outdoor__panels__7__firmware
+                                        siemens_simatic__hmi__comfort__outdoor__panels__15__firmware
+                                        siemens_simatic__hmi__comfort__panels__4__firmware
+                                        siemens_simatic__hmi__comfort__panels__22__firmware
+                                        siemens_simatic__hmi__ktp__mobile__panels__firmware
+                                        siemens_simatic__pn__pn__coupler__firmware
+                                                mandatory
+                                                        siemens_simatic__pn__pn__coupler__firmware_version
+                                                                alternative
+                                                                        siemens_simatic__pn__pn__coupler__firmware_version_4__2
+                                                                        siemens_simatic__pn__pn__coupler__firmware_version_any
+                                        siemens_simatic__s7_1200__cpu__firmware
+                                                mandatory
+                                                        siemens_simatic__s7_1200__cpu__firmware_version
+                                                                alternative
+                                                                        siemens_simatic__s7_1200__cpu__firmware_version_any
+                                                                        siemens_simatic__s7_1200__cpu__firmware_version_4__4
+                                        siemens_simatic__s7_1200__cpu__1211c__firmware
+                                                mandatory
+                                                        siemens_simatic__s7_1200__cpu__1211c__firmware_version
+                                                                alternative
+                                                                        siemens_simatic__s7_1200__cpu__1211c__firmware_version_4__0
+                                                                        siemens_simatic__s7_1200__cpu__1211c__firmware_version_any
+                                                                        siemens_simatic__s7_1200__cpu__1211c__firmware_version_4__4
+                                        siemens_simatic__s7_1200__cpu__1212c__firmware
+                                                mandatory
+                                                        siemens_simatic__s7_1200__cpu__1212c__firmware_version
+                                                                alternative
+                                                                        siemens_simatic__s7_1200__cpu__1212c__firmware_version_4__0
+                                                                        siemens_simatic__s7_1200__cpu__1212c__firmware_version_any
+                                                                        siemens_simatic__s7_1200__cpu__1212c__firmware_version_4__4
+                                        siemens_simatic__s7_1200__cpu__1214c__firmware
+                                                mandatory
+                                                        siemens_simatic__s7_1200__cpu__1214c__firmware_version
+                                                                alternative
+                                                                        siemens_simatic__s7_1200__cpu__1214c__firmware_version_4__0
+                                                                        siemens_simatic__s7_1200__cpu__1214c__firmware_version_any
+                                                                        siemens_simatic__s7_1200__cpu__1214c__firmware_version_4__4
+                                        siemens_simatic__s7_1500__cpu__firmware
+                                                mandatory
+                                                        siemens_simatic__s7_1500__cpu__firmware_version
+                                                                alternative
+                                                                        siemens_simatic__s7_1500__cpu__firmware_version_1__8__2
+                                                                        siemens_simatic__s7_1500__cpu__firmware_version_1__5__1
+                                                                        siemens_simatic__s7_1500__cpu__firmware_version_1__6
+                                        siemens_simatic__s7_1500__cpu__1518__firmware
+                                        siemens_simatic__s7_1500__cpu__1511c__firmware
+                                        siemens_simatic__s7_1500__cpu__1512c__firmware
+                                        siemens_simatic__s7_300__cpu__firmware
+                                                mandatory
+                                                        siemens_simatic__s7_300__cpu__firmware_version
+                                                                alternative
+                                                                        siemens_simatic__s7_300__cpu__firmware_version_any
+                                                                        siemens_simatic__s7_300__cpu__firmware_version_3__2__17
+                                        siemens_simatic__s7_300__cpu__312__ifm__firmware
+                                                mandatory
+                                                        siemens_simatic__s7_300__cpu__312__ifm__firmware_version
+                                                                alternative
+                                                                        siemens_simatic__s7_300__cpu__312__ifm__firmware_version_any
+                                                                        siemens_simatic__s7_300__cpu__312__ifm__firmware_version_3__2__17
+                                        siemens_simatic__s7_300__cpu__313__firmware
+                                                mandatory
+                                                        siemens_simatic__s7_300__cpu__313__firmware_version
+                                                                alternative
+                                                                        siemens_simatic__s7_300__cpu__313__firmware_version_any
+                                                                        siemens_simatic__s7_300__cpu__313__firmware_version_3__2__17
+                                        siemens_simatic__s7_300__cpu__314__firmware
+                                                mandatory
+                                                        siemens_simatic__s7_300__cpu__314__firmware_version
+                                                                alternative
+                                                                        siemens_simatic__s7_300__cpu__314__firmware_version_any
+                                                                        siemens_simatic__s7_300__cpu__314__firmware_version_3__2__17
+                                        siemens_simatic__s7_300__cpu__314__ifm__firmware
+                                                mandatory
+                                                        siemens_simatic__s7_300__cpu__314__ifm__firmware_version
+                                                                alternative
+                                                                        siemens_simatic__s7_300__cpu__314__ifm__firmware_version_any
+                                                                        siemens_simatic__s7_300__cpu__314__ifm__firmware_version_3__2__17
+                                        siemens_simatic__s7_300__cpu__315__firmware
+                                                mandatory
+                                                        siemens_simatic__s7_300__cpu__315__firmware_version
+                                                                alternative
+                                                                        siemens_simatic__s7_300__cpu__315__firmware_version_any
+                                                                        siemens_simatic__s7_300__cpu__315__firmware_version_3__2__17
+                                        siemens_simatic__s7_300__cpu__315_2__dp__firmware
+                                                mandatory
+                                                        siemens_simatic__s7_300__cpu__315_2__dp__firmware_version
+                                                                alternative
+                                                                        siemens_simatic__s7_300__cpu__315_2__dp__firmware_version_any
+                                                                        siemens_simatic__s7_300__cpu__315_2__dp__firmware_version_3__2__17
+                                        siemens_simatic__s7_300__cpu__316_2__dp__firmware
+                                                mandatory
+                                                        siemens_simatic__s7_300__cpu__316_2__dp__firmware_version
+                                                                alternative
+                                                                        siemens_simatic__s7_300__cpu__316_2__dp__firmware_version_any
+                                                                        siemens_simatic__s7_300__cpu__316_2__dp__firmware_version_3__2__17
+                                        siemens_simatic__s7_300__cpu__318_2__firmware
+                                                mandatory
+                                                        siemens_simatic__s7_300__cpu__318_2__firmware_version
+                                                                alternative
+                                                                        siemens_simatic__s7_300__cpu__318_2__firmware_version_any
+                                                                        siemens_simatic__s7_300__cpu__318_2__firmware_version_3__2__17
+                                        siemens_simatic__s7_400__pn__v7__firmware
+                                        siemens_simatic__s7_400__dp__v7__firmware
+                                        siemens_simatic__s7_400__v6__firmware
+                                        siemens_simatic__s7_400h__v6__firmware
+                                                mandatory
+                                                        siemens_simatic__s7_400h__v6__firmware_version
+                                                                mandatory
+                                                                        siemens_simatic__s7_400h__v6__firmware_version_6__0__8
+                                        siemens_simatic__s7_410__v8__firmware
+                                        siemens_simatic__winac__rtx____f____firmware
+                                                mandatory
+                                                        siemens_simatic__winac__rtx____f____firmware_version
+                                                                mandatory
+                                                                        siemens_simatic__winac__rtx____f____firmware_version_2010
+                                        siemens_sinamics__dcm__firmware
+                                                mandatory
+                                                        siemens_sinamics__dcm__firmware_version
+                                                                alternative
+                                                                        siemens_sinamics__dcm__firmware_version_1__4
+                                                                        siemens_sinamics__dcm__firmware_version_1__5
+                                                        siemens_sinamics__dcm__firmware_update
+                                                                alternative
+                                                                        siemens_sinamics__dcm__firmware_update_sp1
+                                                                        siemens_sinamics__dcm__firmware_update_any
+                                        siemens_sinamics__dcp__firmware
+                                                mandatory
+                                                        siemens_sinamics__dcp__firmware_version
+                                                                alternative
+                                                                        siemens_sinamics__dcp__firmware_version_1__2
+                                                                        siemens_sinamics__dcp__firmware_version_any
+                                        siemens_sinamics__g110m__firmware
+                                                mandatory
+                                                        siemens_sinamics__g110m__firmware_version
+                                                                mandatory
+                                                                        siemens_sinamics__g110m__firmware_version_4__7
+                                        siemens_sinamics__g120__firmware
+                                                mandatory
+                                                        siemens_sinamics__g120__firmware_version
+                                                                mandatory
+                                                                        siemens_sinamics__g120__firmware_version_4__7
+                                        siemens_sinamics__g130__firmware
+                                                mandatory
+                                                        siemens_sinamics__g130__firmware_version
+                                                                alternative
+                                                                        siemens_sinamics__g130__firmware_version_4__8
+                                                                        siemens_sinamics__g130__firmware_version_4__7
+                                                                        siemens_sinamics__g130__firmware_version_any
+                                                                        siemens_sinamics__g130__firmware_version_5__2
+                                        siemens_sinamics__g150__firmware
+                                                mandatory
+                                                        siemens_sinamics__g150__firmware_version
+                                                                alternative
+                                                                        siemens_sinamics__g150__firmware_version_4__8
+                                                                        siemens_sinamics__g150__firmware_version_4__7
+                                                                        siemens_sinamics__g150__firmware_version_any
+                                                                        siemens_sinamics__g150__firmware_version_5__2
+                                        siemens_sinamics__gl150__firmware
+                                                mandatory
+                                                        siemens_sinamics__gl150__firmware_version
+                                                                alternative
+                                                                        siemens_sinamics__gl150__firmware_version_4__8
+                                                                        siemens_sinamics__gl150__firmware_version_4__7
+                                                                        siemens_sinamics__gl150__firmware_version_any
+                                        siemens_sinamics__gm150__firmware
+                                                mandatory
+                                                        siemens_sinamics__gm150__firmware_version
+                                                                alternative
+                                                                        siemens_sinamics__gm150__firmware_version_4__8
+                                                                        siemens_sinamics__gm150__firmware_version_4__7
+                                                                        siemens_sinamics__gm150__firmware_version_any
+                                        siemens_sinamics__s110__firmware
+                                        siemens_sinamics__s120__firmware
+                                                mandatory
+                                                        siemens_sinamics__s120__firmware_version
+                                                                alternative
+                                                                        siemens_sinamics__s120__firmware_version_4__8
+                                                                        siemens_sinamics__s120__firmware_version_4__7
+                                                                        siemens_sinamics__s120__firmware_version_any
+                                                                        siemens_sinamics__s120__firmware_version_5__2
+                                        siemens_sinamics__s150__firmware
+                                                mandatory
+                                                        siemens_sinamics__s150__firmware_version
+                                                                alternative
+                                                                        siemens_sinamics__s150__firmware_version_5__2
+                                                                        siemens_sinamics__s150__firmware_version_4__7
+                                                                        siemens_sinamics__s150__firmware_version_4__8
+                                                                        siemens_sinamics__s150__firmware_version_5__1
+                                                        siemens_sinamics__s150__firmware_update
+                                                                alternative
+                                                                        siemens_sinamics__s150__firmware_update_sp1__hotfix2
+                                                                        siemens_sinamics__s150__firmware_update_sp1__hf2
+                                                                        siemens_sinamics__s150__firmware_update_sp1
+                                                                        siemens_sinamics__s150__firmware_update_any
+                                        siemens_sinamics__sl150__firmware
+                                                mandatory
+                                                        siemens_sinamics__sl150__firmware_version
+                                                                alternative
+                                                                        siemens_sinamics__sl150__firmware_version_4__7
+                                                                        siemens_sinamics__sl150__firmware_version_any
+                                        siemens_sinamics__sm120__firmware
+                                        siemens_sinumerik__828d
+                                                mandatory
+                                                        siemens_sinumerik__828d_version
+                                                                mandatory
+                                                                        siemens_sinumerik__828d_version_4__8
+                                                        siemens_sinumerik__828d_update
+                                                                alternative
+                                                                        siemens_sinumerik__828d_update_sp4
+                                                                        siemens_sinumerik__828d_update_sp2
+                                                                        siemens_sinumerik__828d_update_sp1
+                                                                        siemens_sinumerik__828d_update_any
+                                                                        siemens_sinumerik__828d_update_sp3
+                                        siemens_sinumerik__840d__sl
+
+constraints
+        siemens_dk__standard__ethernet__controller__firmware => operating_system
+        siemens_ek_ertec__200__firmware => operating_system
+        siemens_ek_ertec__200p__firmware => operating_system
+        siemens_simatic__et__200al__firmware => operating_system
+        siemens_simatic__et__200m__firmware => operating_system
+        siemens_simatic__et__200mp__im__155_5__pn__hf__firmware => operating_system
+        siemens_simatic__et__200mp__im__155_5__pn__st__firmware => operating_system
+        siemens_simatic__et__200s__firmware => operating_system
+        siemens_simatic__et__200sp__im__155_6__pn__ba__firmware => operating_system
+        siemens_simatic__et__200sp__im__155_6__pn__ha__firmware => operating_system
+        siemens_simatic__et__200sp__im__155_6__pn__hs__firmware => operating_system
+        siemens_simatic__et__200sp__im__155_6__pn__st__firmware => operating_system
+        siemens_simatic__et__200ecopn__firmware => operating_system
+        siemens_simatic__et__200pro__firmware => operating_system
+        siemens_simatic__hmi__comfort__outdoor__panels__7__firmware => operating_system
+        siemens_simatic__hmi__comfort__outdoor__panels__15__firmware => operating_system
+        siemens_simatic__hmi__comfort__panels__4__firmware => operating_system
+        siemens_simatic__hmi__comfort__panels__22__firmware => operating_system
+        siemens_simatic__hmi__ktp__mobile__panels__firmware => operating_system
+        siemens_simatic__pn__pn__coupler__firmware => operating_system
+        siemens_simatic__s7_1200__cpu__firmware => operating_system
+        siemens_simatic__s7_1200__cpu__1211c__firmware => operating_system
+        siemens_simatic__s7_1200__cpu__1212c__firmware => operating_system
+        siemens_simatic__s7_1200__cpu__1214c__firmware => operating_system
+        siemens_simatic__s7_1500__cpu__firmware => operating_system
+        siemens_simatic__s7_1500__cpu__1518__firmware => operating_system
+        siemens_simatic__s7_1500__cpu__1511c__firmware => operating_system
+        siemens_simatic__s7_1500__cpu__1512c__firmware => operating_system
+        siemens_simatic__s7_300__cpu__firmware => operating_system
+        siemens_simatic__s7_300__cpu__312__ifm__firmware => operating_system
+        siemens_simatic__s7_300__cpu__313__firmware => operating_system
+        siemens_simatic__s7_300__cpu__314__firmware => operating_system
+        siemens_simatic__s7_300__cpu__314__ifm__firmware => operating_system
+        siemens_simatic__s7_300__cpu__315__firmware => operating_system
+        siemens_simatic__s7_300__cpu__315_2__dp__firmware => operating_system
+        siemens_simatic__s7_300__cpu__316_2__dp__firmware => operating_system
+        siemens_simatic__s7_300__cpu__318_2__firmware => operating_system
+        siemens_simatic__s7_400__pn__v7__firmware => operating_system
+        siemens_simatic__s7_400__dp__v7__firmware => operating_system
+        siemens_simatic__s7_400__v6__firmware => operating_system
+        siemens_simatic__s7_400h__v6__firmware => operating_system
+        siemens_simatic__s7_410__v8__firmware => operating_system
+        siemens_simatic__winac__rtx____f____firmware => operating_system
+        siemens_sinamics__dcm__firmware => operating_system
+        siemens_sinamics__dcp__firmware => operating_system
+        siemens_sinamics__g110m__firmware => operating_system
+        siemens_sinamics__g120__firmware => operating_system
+        siemens_sinamics__g130__firmware => operating_system
+        siemens_sinamics__g150__firmware => operating_system
+        siemens_sinamics__gl150__firmware => operating_system
+        siemens_sinamics__gm150__firmware => operating_system
+        siemens_sinamics__s110__firmware => operating_system
+        siemens_sinamics__s120__firmware => operating_system
+        siemens_sinamics__s150__firmware => operating_system
+        siemens_sinamics__sl150__firmware => operating_system
+        siemens_sinamics__sm120__firmware => operating_system
+        siemens_sinumerik__828d => application
+        siemens_sinumerik__840d__sl => application
+        siemens_dk__standard__ethernet__controller__firmware => (rc0)
+        siemens_ek_ertec__200__firmware => (rc1)
+        siemens_ek_ertec__200p__firmware_version_4__5__0 => (rc2)
+        siemens_ek_ertec__200p__firmware_version_4__6 => (rc2)
+        siemens_ek_ertec__200p__firmware_version_any => (rc2)
+        siemens_ek_ertec__200p__firmware_version_4__5 => (rc2)
+        siemens_simatic__et__200al__firmware => (rc4)
+        siemens_simatic__et__200m__firmware => (rc5)
+        siemens_simatic__et__200mp__im__155_5__pn__hf__firmware => (rc7)
+        siemens_simatic__et__200mp__im__155_5__pn__st__firmware => (rc8)
+        siemens_simatic__et__200s__firmware => (rc9)
+        siemens_simatic__et__200sp__im__155_6__pn__ba__firmware => (rc10)
+        siemens_simatic__et__200sp__im__155_6__pn__ha__firmware => (rc11)
+        siemens_simatic__et__200sp__im__155_6__pn__hs__firmware => (rc13)
+        siemens_simatic__et__200sp__im__155_6__pn__st__firmware => (rc14)
+        siemens_simatic__et__200ecopn__firmware => (rc17)
+        siemens_simatic__et__200pro__firmware => (rc18)
+        siemens_simatic__hmi__comfort__outdoor__panels__7__firmware => (rc19)
+        siemens_simatic__hmi__comfort__outdoor__panels__15__firmware => (rc20)
+        siemens_simatic__hmi__comfort__panels__4__firmware => (rc21)
+        siemens_simatic__hmi__comfort__panels__22__firmware => (rc22)
+        siemens_simatic__hmi__ktp__mobile__panels__firmware => (rc23)
+        siemens_simatic__pn__pn__coupler__firmware_version_4__2 => (rc24)
+        siemens_simatic__pn__pn__coupler__firmware_version_any => (rc24)
+        siemens_simatic__s7_1200__cpu__firmware_version_any => (rc26)
+        siemens_simatic__s7_1200__cpu__firmware_version_4__4 => (rc26)
+        siemens_simatic__s7_1200__cpu__1211c__firmware_version_4__0 => (rc27)
+        siemens_simatic__s7_1200__cpu__1211c__firmware_version_any => (rc27)
+        siemens_simatic__s7_1200__cpu__1211c__firmware_version_4__4 => (rc27)
+        siemens_simatic__s7_1200__cpu__1212c__firmware_version_4__0 => (rc28)
+        siemens_simatic__s7_1200__cpu__1212c__firmware_version_any => (rc28)
+        siemens_simatic__s7_1200__cpu__1212c__firmware_version_4__4 => (rc28)
+        siemens_simatic__s7_1200__cpu__1214c__firmware_version_4__0 => (rc29)
+        siemens_simatic__s7_1200__cpu__1214c__firmware_version_any => (rc29)
+        siemens_simatic__s7_1200__cpu__1214c__firmware_version_4__4 => (rc29)
+        siemens_simatic__s7_1500__cpu__firmware_version_1__8__2 => (rc30)
+        siemens_simatic__s7_1500__cpu__firmware_version_1__5__1 => (rc30)
+        siemens_simatic__s7_1500__cpu__firmware_version_1__6 => (rc30)
+        siemens_simatic__s7_1500__cpu__1518__firmware => (rc33)
+        siemens_simatic__s7_1500__cpu__1511c__firmware => (rc34)
+        siemens_simatic__s7_1500__cpu__1512c__firmware => (rc35)
+        siemens_simatic__s7_300__cpu__firmware_version_any => (rc36)
+        siemens_simatic__s7_300__cpu__firmware_version_3__2__17 => (rc36)
+        siemens_simatic__s7_300__cpu__312__ifm__firmware_version_any => (rc37)
+        siemens_simatic__s7_300__cpu__312__ifm__firmware_version_3__2__17 => (rc37)
+        siemens_simatic__s7_300__cpu__313__firmware_version_any => (rc38)
+        siemens_simatic__s7_300__cpu__313__firmware_version_3__2__17 => (rc38)
+        siemens_simatic__s7_300__cpu__314__firmware_version_any => (rc39)
+        siemens_simatic__s7_300__cpu__314__firmware_version_3__2__17 => (rc39)
+        siemens_simatic__s7_300__cpu__314__ifm__firmware_version_any => (rc40)
+        siemens_simatic__s7_300__cpu__314__ifm__firmware_version_3__2__17 => (rc40)
+        siemens_simatic__s7_300__cpu__315__firmware_version_any => (rc41)
+        siemens_simatic__s7_300__cpu__315__firmware_version_3__2__17 => (rc41)
+        siemens_simatic__s7_300__cpu__315_2__dp__firmware_version_any => (rc42)
+        siemens_simatic__s7_300__cpu__315_2__dp__firmware_version_3__2__17 => (rc42)
+        siemens_simatic__s7_300__cpu__316_2__dp__firmware_version_any => (rc43)
+        siemens_simatic__s7_300__cpu__316_2__dp__firmware_version_3__2__17 => (rc43)
+        siemens_simatic__s7_300__cpu__318_2__firmware_version_any => (rc44)
+        siemens_simatic__s7_300__cpu__318_2__firmware_version_3__2__17 => (rc44)
+        siemens_simatic__s7_400__pn__v7__firmware => (rc45)
+        siemens_simatic__s7_400__dp__v7__firmware => (rc46)
+        siemens_simatic__s7_400__v6__firmware => (rc47)
+        siemens_simatic__s7_400h__v6__firmware => (rc48)
+        siemens_simatic__s7_410__v8__firmware => (rc49)
+        siemens_simatic__winac__rtx____f____firmware => (rc50)
+        siemens_sinamics__dcm__firmware_version_1__4 => ((siemens_sinamics__dcm__firmware_update_sp1 & (rc51) & !siemens_sinamics__dcm__firmware_update_any & (rc51)) | (!siemens_sinamics__dcm__firmware_update_sp1 & (rc51) & siemens_sinamics__dcm__firmware_update_any & (rc51)))
+        siemens_sinamics__dcm__firmware_version_1__5 => siemens_sinamics__dcm__firmware_update_any
+        siemens_sinamics__dcm__firmware_version_1__5 => (rc51)
+        siemens_sinamics__dcp__firmware_version_1__2 => (rc52)
+        siemens_sinamics__dcp__firmware_version_any => (rc52)
+        siemens_sinamics__g110m__firmware => (rc53)
+        siemens_sinamics__g120__firmware => (rc54)
+        siemens_sinamics__g130__firmware_version_4__8 => (rc55)
+        siemens_sinamics__g130__firmware_version_4__7 => (rc55)
+        siemens_sinamics__g130__firmware_version_any => (rc55)
+        siemens_sinamics__g130__firmware_version_5__2 => (rc55)
+        siemens_sinamics__g150__firmware_version_4__8 => (rc56)
+        siemens_sinamics__g150__firmware_version_4__7 => (rc56)
+        siemens_sinamics__g150__firmware_version_any => (rc56)
+        siemens_sinamics__g150__firmware_version_5__2 => (rc56)
+        siemens_sinamics__gl150__firmware_version_4__8 => (rc57)
+        siemens_sinamics__gl150__firmware_version_4__7 => (rc57)
+        siemens_sinamics__gl150__firmware_version_any => (rc57)
+        siemens_sinamics__gm150__firmware_version_4__8 => (rc58)
+        siemens_sinamics__gm150__firmware_version_4__7 => (rc58)
+        siemens_sinamics__gm150__firmware_version_any => (rc58)
+        siemens_sinamics__s110__firmware => (rc59)
+        siemens_sinamics__s120__firmware_version_4__8 => (rc60)
+        siemens_sinamics__s120__firmware_version_4__7 => (rc60)
+        siemens_sinamics__s120__firmware_version_any => (rc60)
+        siemens_sinamics__s120__firmware_version_5__2 => (rc60)
+        siemens_sinamics__s150__firmware_version_5__2 => siemens_sinamics__s150__firmware_update_any
+        siemens_sinamics__s150__firmware_version_5__2 => (rc61)
+        siemens_sinamics__s150__firmware_version_4__7 => siemens_sinamics__s150__firmware_update_any
+        siemens_sinamics__s150__firmware_version_4__7 => (rc61)
+        siemens_sinamics__s150__firmware_version_4__8 => siemens_sinamics__s150__firmware_update_any
+        siemens_sinamics__s150__firmware_version_4__8 => (rc61)
+        siemens_sinamics__s150__firmware_version_5__1 => ((siemens_sinamics__s150__firmware_update_sp1__hotfix2 & (rc61) & !siemens_sinamics__s150__firmware_update_sp1__hf2 & (rc61) & !siemens_sinamics__s150__firmware_update_sp1 & (rc61) & !siemens_sinamics__s150__firmware_update_any & (rc61)) | (!siemens_sinamics__s150__firmware_update_sp1__hotfix2 & (rc61) & siemens_sinamics__s150__firmware_update_sp1__hf2 & (rc61) & !siemens_sinamics__s150__firmware_update_sp1 & (rc61) & !siemens_sinamics__s150__firmware_update_any & (rc61)) | (!siemens_sinamics__s150__firmware_update_sp1__hotfix2 & (rc61) & !siemens_sinamics__s150__firmware_update_sp1__hf2 & (rc61) & siemens_sinamics__s150__firmware_update_sp1 & (rc61) & !siemens_sinamics__s150__firmware_update_any & (rc61)) | (!siemens_sinamics__s150__firmware_update_sp1__hotfix2 & (rc61) & !siemens_sinamics__s150__firmware_update_sp1__hf2 & (rc61) & !siemens_sinamics__s150__firmware_update_sp1 & (rc61) & siemens_sinamics__s150__firmware_update_any & (rc61)))
+        siemens_sinamics__sl150__firmware_version_4__7 => (rc62)
+        siemens_sinamics__sl150__firmware_version_any => (rc62)
+        siemens_sinamics__sm120__firmware => (rc63)

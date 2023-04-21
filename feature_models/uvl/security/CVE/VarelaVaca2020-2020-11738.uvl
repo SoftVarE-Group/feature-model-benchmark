@@ -1,0 +1,756 @@
+features
+        CVE_2020_11738
+                mandatory
+                        types
+                                mandatory
+                                        application
+                        sources
+                                mandatory
+                                        nvd
+                        exploits
+                                optional
+                                        direct
+                                        indirect
+                        snapcreek
+                                mandatory
+                                        snapcreek_duplicator
+                                                mandatory
+                                                        snapcreek_duplicator_version
+                                                                alternative
+                                                                        snapcreek_duplicator_version_3__8__0__1
+                                                                        snapcreek_duplicator_version_3__0__4__1
+                                                                        snapcreek_duplicator_version_3__3__1
+                                                                        snapcreek_duplicator_version_1__0__13
+                                                                        snapcreek_duplicator_version_1__1__26
+                                                                        snapcreek_duplicator_version_3__4__9
+                                                                        snapcreek_duplicator_version_3__7__5__2
+                                                                        snapcreek_duplicator_version_3__4__6
+                                                                        snapcreek_duplicator_version_1__1__20
+                                                                        snapcreek_duplicator_version_3__7__3__2
+                                                                        snapcreek_duplicator_version_3__3__5__1
+                                                                        snapcreek_duplicator_version_3__4__6__1
+                                                                        snapcreek_duplicator_version_1__2__52
+                                                                        snapcreek_duplicator_version_0__4__4
+                                                                        snapcreek_duplicator_version_3__7__3
+                                                                        snapcreek_duplicator_version_3__7__6__1
+                                                                        snapcreek_duplicator_version_1__2__4
+                                                                        snapcreek_duplicator_version_1__2__28
+                                                                        snapcreek_duplicator_version_0__5__12
+                                                                        snapcreek_duplicator_version_0__5__18
+                                                                        snapcreek_duplicator_version_3__0__5
+                                                                        snapcreek_duplicator_version_0__2__8
+                                                                        snapcreek_duplicator_version_3__5__4
+                                                                        snapcreek_duplicator_version_1__3__22
+                                                                        snapcreek_duplicator_version_3__0__6
+                                                                        snapcreek_duplicator_version_2__0__9__1
+                                                                        snapcreek_duplicator_version_2__0__3
+                                                                        snapcreek_duplicator_version_3__3__5
+                                                                        snapcreek_duplicator_version_1__3__6
+                                                                        snapcreek_duplicator_version_2__0__7
+                                                                        snapcreek_duplicator_version_1__1__8
+                                                                        snapcreek_duplicator_version_0__5__28
+                                                                        snapcreek_duplicator_version_1__1__30
+                                                                        snapcreek_duplicator_version_3__0__15
+                                                                        snapcreek_duplicator_version_3__6__1
+                                                                        snapcreek_duplicator_version_3__7__1
+                                                                        snapcreek_duplicator_version_3__0__2
+                                                                        snapcreek_duplicator_version_2__0__10
+                                                                        snapcreek_duplicator_version_0__3__1
+                                                                        snapcreek_duplicator_version_1__0__18__1
+                                                                        snapcreek_duplicator_version_3__5__3
+                                                                        snapcreek_duplicator_version_1__3__20
+                                                                        snapcreek_duplicator_version_0__4__5
+                                                                        snapcreek_duplicator_version_1__0__16
+                                                                        snapcreek_duplicator_version_3__8__2__2
+                                                                        snapcreek_duplicator_version_0__2__5
+                                                                        snapcreek_duplicator_version_0__2__1
+                                                                        snapcreek_duplicator_version_1__0__7__2
+                                                                        snapcreek_duplicator_version_3__6__0
+                                                                        snapcreek_duplicator_version_1__2__12
+                                                                        snapcreek_duplicator_version_3__8__1__2
+                                                                        snapcreek_duplicator_version_2__0__11
+                                                                        snapcreek_duplicator_version_1__2__26
+                                                                        snapcreek_duplicator_version_3__8__1__3
+                                                                        snapcreek_duplicator_version_1__2__0
+                                                                        snapcreek_duplicator_version_1__0__4
+                                                                        snapcreek_duplicator_version_0__2__6
+                                                                        snapcreek_duplicator_version_3__8__3__2
+                                                                        snapcreek_duplicator_version_3__7__1__2
+                                                                        snapcreek_duplicator_version_3__7__9__1
+                                                                        snapcreek_duplicator_version_3__4__2
+                                                                        snapcreek_duplicator_version_3__0__10
+                                                                        snapcreek_duplicator_version_1__3__16
+                                                                        snapcreek_duplicator_version_1__3__14
+                                                                        snapcreek_duplicator_version_3__7__9
+                                                                        snapcreek_duplicator_version_0__5__22
+                                                                        snapcreek_duplicator_version_0__5__10
+                                                                        snapcreek_duplicator_version_3__4__0
+                                                                        snapcreek_duplicator_version_1__2__48
+                                                                        snapcreek_duplicator_version_0__5__26
+                                                                        snapcreek_duplicator_version_3__7__4__1
+                                                                        snapcreek_duplicator_version_1__0__2
+                                                                        snapcreek_duplicator_version_0__5__2
+                                                                        snapcreek_duplicator_version_3__0__11
+                                                                        snapcreek_duplicator_version_3__5__7__1
+                                                                        snapcreek_duplicator_version_0__2__2
+                                                                        snapcreek_duplicator_version_1__1__10
+                                                                        snapcreek_duplicator_version_3__7__4
+                                                                        snapcreek_duplicator_version_3__7__1__1
+                                                                        snapcreek_duplicator_version_1__2__30
+                                                                        snapcreek_duplicator_version_1__2__34
+                                                                        snapcreek_duplicator_version_1__0__7__1
+                                                                        snapcreek_duplicator_version_1__0__9
+                                                                        snapcreek_duplicator_version_0__5__0
+                                                                        snapcreek_duplicator_version_3__5__0
+                                                                        snapcreek_duplicator_version_1__3__10
+                                                                        snapcreek_duplicator_version_3__0__13__1
+                                                                        snapcreek_duplicator_version_1__0__12__1
+                                                                        snapcreek_duplicator_version_1__0__3
+                                                                        snapcreek_duplicator_version_3__7__5__1
+                                                                        snapcreek_duplicator_version_3__0__12
+                                                                        snapcreek_duplicator_version_3__5__4__1
+                                                                        snapcreek_duplicator_version_3__0__14
+                                                                        snapcreek_duplicator_version_3__8__4
+                                                                        snapcreek_duplicator_version_3__8__0
+                                                                        snapcreek_duplicator_version_1__1__12
+                                                                        snapcreek_duplicator_version_3__0__0
+                                                                        snapcreek_duplicator_version_0__4__1
+                                                                        snapcreek_duplicator_version_1__2__22
+                                                                        snapcreek_duplicator_version_3__4__7
+                                                                        snapcreek_duplicator_version_0__5__32
+                                                                        snapcreek_duplicator_version_1__1__32
+                                                                        snapcreek_duplicator_version_3__8__1__1
+                                                                        snapcreek_duplicator_version_3__6__0__1
+                                                                        snapcreek_duplicator_version_0__2__3
+                                                                        snapcreek_duplicator_version_0__5__16
+                                                                        snapcreek_duplicator_version_3__0__4
+                                                                        snapcreek_duplicator_version_3__7__0__1
+                                                                        snapcreek_duplicator_version_1__3
+                                                                        snapcreek_duplicator_version_1__0__17
+                                                                        snapcreek_duplicator_version_2__0__0
+                                                                        snapcreek_duplicator_version_1__0__6__1
+                                                                        snapcreek_duplicator_version_1__3__2
+                                                                        snapcreek_duplicator_version_3__5__4__2
+                                                                        snapcreek_duplicator_version_1__2__38
+                                                                        snapcreek_duplicator_version_2__0__4__1
+                                                                        snapcreek_duplicator_version_3__8__1
+                                                                        snapcreek_duplicator_version_3__4__1
+                                                                        snapcreek_duplicator_version_1__1__0
+                                                                        snapcreek_duplicator_version_3__2__0
+                                                                        snapcreek_duplicator_version_0__4__2
+                                                                        snapcreek_duplicator_version_3__4__0__2
+                                                                        snapcreek_duplicator_version_0__2__7
+                                                                        snapcreek_duplicator_version_0__1__0
+                                                                        snapcreek_duplicator_version_1__2__42
+                                                                        snapcreek_duplicator_version_1__1__28
+                                                                        snapcreek_duplicator_version_3__7__5
+                                                                        snapcreek_duplicator_version_1__3__12
+                                                                        snapcreek_duplicator_version_0__2__9
+                                                                        snapcreek_duplicator_version_1__0__11
+                                                                        snapcreek_duplicator_version_3__8__3
+                                                                        snapcreek_duplicator_version_3__7__0
+                                                                        snapcreek_duplicator_version_1__1__24
+                                                                        snapcreek_duplicator_version_2__0__5
+                                                                        snapcreek_duplicator_version_3__2__2
+                                                                        snapcreek_duplicator_version_3__4__2__2
+                                                                        snapcreek_duplicator_version_3__1__1
+                                                                        snapcreek_duplicator_version_3__0__15__2
+                                                                        snapcreek_duplicator_version_0__3__2
+                                                                        snapcreek_duplicator_version_1__0__1
+                                                                        snapcreek_duplicator_version_0__5__6
+                                                                        snapcreek_duplicator_version_1__1__14
+                                                                        snapcreek_duplicator_version_3__7__2
+                                                                        snapcreek_duplicator_version_3__3__0__1
+                                                                        snapcreek_duplicator_version_3__5__5
+                                                                        snapcreek_duplicator_version_3__3__3
+                                                                        snapcreek_duplicator_version_1__3__24
+                                                                        snapcreek_duplicator_version_0__4__6
+                                                                        snapcreek_duplicator_version_1__2__16
+                                                                        snapcreek_duplicator_version_3__7__8
+                                                                        snapcreek_duplicator_version_1__1__2
+                                                                        snapcreek_duplicator_version_1__2__6
+                                                                        snapcreek_duplicator_version_1__1__16
+                                                                        snapcreek_duplicator_version_3__0__13
+                                                                        snapcreek_duplicator_version_3__0__3
+                                                                        snapcreek_duplicator_version_3__4__8
+                                                                        snapcreek_duplicator_version_0__5__14
+                                                                        snapcreek_duplicator_version_2__0__6
+                                                                        snapcreek_duplicator_version_3__8__2__1
+                                                                        snapcreek_duplicator_version_1__0__7
+                                                                        snapcreek_duplicator_version_0__3__0
+                                                                        snapcreek_duplicator_version_1__2__50
+                                                                        snapcreek_duplicator_version_1__0__17__1
+                                                                        snapcreek_duplicator_version_3__0__13__2
+                                                                        snapcreek_duplicator_version_1__2__8
+                                                                        snapcreek_duplicator_version_3__3__6
+                                                                        snapcreek_duplicator_version_2__0__1
+                                                                        snapcreek_duplicator_version_1__3__26
+                                                                        snapcreek_duplicator_version_3__8__3__4
+                                                                        snapcreek_duplicator_version_1__1__34
+                                                                        snapcreek_duplicator_version_1__1__4
+                                                                        snapcreek_duplicator_version_1__0__18
+                                                                        snapcreek_duplicator_version_2__0__9
+                                                                        snapcreek_duplicator_version_0__4__0
+                                                                        snapcreek_duplicator_version_1__0__10
+                                                                        snapcreek_duplicator_version_3__0__9
+                                                                        snapcreek_duplicator_version_1__2__40
+                                                                        snapcreek_duplicator_version_2__0__12
+                                                                        snapcreek_duplicator_version_1__1__18
+                                                                        snapcreek_duplicator_version_1__0__11__1
+                                                                        snapcreek_duplicator_version_3__5__6
+                                                                        snapcreek_duplicator_version_3__7__8__1
+                                                                        snapcreek_duplicator_version_1__0__0
+                                                                        snapcreek_duplicator_version_3__7__6
+                                                                        snapcreek_duplicator_version_3__0__17
+                                                                        snapcreek_duplicator_version_1__0__5
+                                                                        snapcreek_duplicator_version_3__3__4
+                                                                        snapcreek_duplicator_version_3__2__1
+                                                                        snapcreek_duplicator_version_3__5__2
+                                                                        snapcreek_duplicator_version_3__7__3__1
+                                                                        snapcreek_duplicator_version_3__0__1
+                                                                        snapcreek_duplicator_version_1__0__8
+                                                                        snapcreek_duplicator_version_3__5__1
+                                                                        snapcreek_duplicator_version_1__2__20
+                                                                        snapcreek_duplicator_version_3__0__7
+                                                                        snapcreek_duplicator_version_3__1__0
+                                                                        snapcreek_duplicator_version_0__5__34
+                                                                        snapcreek_duplicator_version_3__8__2
+                                                                        snapcreek_duplicator_version_1__2__14
+                                                                        snapcreek_duplicator_version_0__2__0
+                                                                        snapcreek_duplicator_version_3__5__8
+                                                                        snapcreek_duplicator_version_3__0__16
+                                                                        snapcreek_duplicator_version_3__5__7
+                                                                        snapcreek_duplicator_version_3__8__3__3
+                                                                        snapcreek_duplicator_version_1__2__24
+                                                                        snapcreek_duplicator_version_1__3__19
+                                                                        snapcreek_duplicator_version_0__5__8
+                                                                        snapcreek_duplicator_version_1__0__15
+                                                                        snapcreek_duplicator_version_1__2__36
+                                                                        snapcreek_duplicator_version_3__4__3
+                                                                        snapcreek_duplicator_version_3__8__0__2
+                                                                        snapcreek_duplicator_version_0__5__30
+                                                                        snapcreek_duplicator_version_0__5__4
+                                                                        snapcreek_duplicator_version_2__0__2
+                                                                        snapcreek_duplicator_version_0__5__20
+                                                                        snapcreek_duplicator_version_3__4__4
+                                                                        snapcreek_duplicator_version_1__1__6
+                                                                        snapcreek_duplicator_version_2__0__8
+                                                                        snapcreek_duplicator_version_3__0__8
+                                                                        snapcreek_duplicator_version_3__3__2__1
+                                                                        snapcreek_duplicator_version_3__7__7
+                                                                        snapcreek_duplicator_version_0__5__1
+                                                                        snapcreek_duplicator_version_1__3__18
+                                                                        snapcreek_duplicator_version_0__2__4
+                                                                        snapcreek_duplicator_version_3__4__5
+                                                                        snapcreek_duplicator_version_1__1__22
+                                                                        snapcreek_duplicator_version_3__3__2
+                                                                        snapcreek_duplicator_version_1__2__46
+                                                                        snapcreek_duplicator_version_1__2__44
+                                                                        snapcreek_duplicator_version_0__4__3
+                                                                        snapcreek_duplicator_version_1__3__8
+                                                                        snapcreek_duplicator_version_3__7__8__2
+                                                                        snapcreek_duplicator_version_3__5__8__1
+                                                                        snapcreek_duplicator_version_3__8__3__1
+                                                                        snapcreek_duplicator_version_1__2__18
+                                                                        snapcreek_duplicator_version_1__0__14
+                                                                        snapcreek_duplicator_version_3__5__6__1
+                                                                        snapcreek_duplicator_version_3__0__15__1
+                                                                        snapcreek_duplicator_version_1__2__10
+                                                                        snapcreek_duplicator_version_3__0__0__1
+                                                                        snapcreek_duplicator_version_0__5__24
+                                                        snapcreek_duplicator_update
+                                                                alternative
+                                                                        snapcreek_duplicator_update_beta
+                                                                        snapcreek_duplicator_update_any
+                                                        snapcreek_duplicator_sw__edition
+                                                                alternative
+                                                                        snapcreek_duplicator_sw__edition_pro
+                                                                        snapcreek_duplicator_sw__edition_lite
+                                                                        snapcreek_duplicator_sw__edition_any
+                                                        snapcreek_duplicator_target__sw
+                                                                mandatory
+                                                                        snapcreek_duplicator_target__sw_wordpress
+
+constraints
+        snapcreek_duplicator => application
+        snapcreek_duplicator_version_3__8__0__1 => snapcreek_duplicator_sw__edition_pro
+        snapcreek_duplicator_version_3__8__0__1 => snapcreek_duplicator_update_any
+        snapcreek_duplicator_version_3__0__4__1 => snapcreek_duplicator_sw__edition_pro
+        snapcreek_duplicator_version_3__0__4__1 => snapcreek_duplicator_update_any
+        snapcreek_duplicator_version_3__3__1 => snapcreek_duplicator_sw__edition_pro
+        snapcreek_duplicator_version_3__3__1 => snapcreek_duplicator_update_any
+        snapcreek_duplicator_version_1__0__13 => snapcreek_duplicator_sw__edition_pro
+        snapcreek_duplicator_version_1__0__13 => snapcreek_duplicator_update_any
+        snapcreek_duplicator_version_1__1__26 => snapcreek_duplicator_sw__edition_lite
+        snapcreek_duplicator_version_1__1__26 => snapcreek_duplicator_update_any
+        snapcreek_duplicator_version_3__4__9 => snapcreek_duplicator_sw__edition_pro
+        snapcreek_duplicator_version_3__4__9 => snapcreek_duplicator_update_any
+        snapcreek_duplicator_version_3__7__5__2 => snapcreek_duplicator_sw__edition_pro
+        snapcreek_duplicator_version_3__7__5__2 => snapcreek_duplicator_update_any
+        snapcreek_duplicator_version_3__4__6 => snapcreek_duplicator_sw__edition_pro
+        snapcreek_duplicator_version_3__4__6 => snapcreek_duplicator_update_any
+        snapcreek_duplicator_version_1__1__20 => snapcreek_duplicator_sw__edition_lite
+        snapcreek_duplicator_version_1__1__20 => snapcreek_duplicator_update_any
+        snapcreek_duplicator_version_3__7__3__2 => snapcreek_duplicator_sw__edition_pro
+        snapcreek_duplicator_version_3__7__3__2 => snapcreek_duplicator_update_any
+        snapcreek_duplicator_version_3__3__5__1 => snapcreek_duplicator_sw__edition_pro
+        snapcreek_duplicator_version_3__3__5__1 => snapcreek_duplicator_update_any
+        snapcreek_duplicator_version_3__4__6__1 => snapcreek_duplicator_sw__edition_pro
+        snapcreek_duplicator_version_3__4__6__1 => snapcreek_duplicator_update_any
+        snapcreek_duplicator_version_1__2__52 => snapcreek_duplicator_sw__edition_lite
+        snapcreek_duplicator_version_1__2__52 => snapcreek_duplicator_update_any
+        snapcreek_duplicator_version_0__4__4 => snapcreek_duplicator_sw__edition_lite
+        snapcreek_duplicator_version_0__4__4 => snapcreek_duplicator_update_beta
+        snapcreek_duplicator_version_3__7__3 => snapcreek_duplicator_sw__edition_pro
+        snapcreek_duplicator_version_3__7__3 => snapcreek_duplicator_update_any
+        snapcreek_duplicator_version_3__7__6__1 => snapcreek_duplicator_sw__edition_pro
+        snapcreek_duplicator_version_3__7__6__1 => snapcreek_duplicator_update_any
+        snapcreek_duplicator_version_1__2__4 => snapcreek_duplicator_sw__edition_lite
+        snapcreek_duplicator_version_1__2__4 => snapcreek_duplicator_update_any
+        snapcreek_duplicator_version_1__2__28 => snapcreek_duplicator_sw__edition_any
+        snapcreek_duplicator_version_1__2__28 => snapcreek_duplicator_update_any
+        snapcreek_duplicator_version_0__5__12 => snapcreek_duplicator_sw__edition_lite
+        snapcreek_duplicator_version_0__5__12 => snapcreek_duplicator_update_any
+        snapcreek_duplicator_version_0__5__18 => snapcreek_duplicator_sw__edition_lite
+        snapcreek_duplicator_version_0__5__18 => snapcreek_duplicator_update_any
+        snapcreek_duplicator_version_3__0__5 => snapcreek_duplicator_sw__edition_pro
+        snapcreek_duplicator_version_3__0__5 => snapcreek_duplicator_update_any
+        snapcreek_duplicator_version_0__2__8 => snapcreek_duplicator_sw__edition_lite
+        snapcreek_duplicator_version_0__2__8 => snapcreek_duplicator_update_beta
+        snapcreek_duplicator_version_3__5__4 => snapcreek_duplicator_sw__edition_pro
+        snapcreek_duplicator_version_3__5__4 => snapcreek_duplicator_update_any
+        snapcreek_duplicator_version_1__3__22 => snapcreek_duplicator_sw__edition_any
+        snapcreek_duplicator_version_1__3__22 => snapcreek_duplicator_update_any
+        snapcreek_duplicator_version_3__0__6 => snapcreek_duplicator_sw__edition_pro
+        snapcreek_duplicator_version_3__0__6 => snapcreek_duplicator_update_any
+        snapcreek_duplicator_version_2__0__9__1 => snapcreek_duplicator_sw__edition_pro
+        snapcreek_duplicator_version_2__0__9__1 => snapcreek_duplicator_update_any
+        snapcreek_duplicator_version_2__0__3 => snapcreek_duplicator_sw__edition_pro
+        snapcreek_duplicator_version_2__0__3 => snapcreek_duplicator_update_any
+        snapcreek_duplicator_version_3__3__5 => snapcreek_duplicator_sw__edition_pro
+        snapcreek_duplicator_version_3__3__5 => snapcreek_duplicator_update_any
+        snapcreek_duplicator_version_1__3__6 => snapcreek_duplicator_sw__edition_lite
+        snapcreek_duplicator_version_1__3__6 => snapcreek_duplicator_update_any
+        snapcreek_duplicator_version_2__0__7 => snapcreek_duplicator_sw__edition_pro
+        snapcreek_duplicator_version_2__0__7 => snapcreek_duplicator_update_any
+        snapcreek_duplicator_version_1__1__8 => snapcreek_duplicator_sw__edition_lite
+        snapcreek_duplicator_version_1__1__8 => snapcreek_duplicator_update_any
+        snapcreek_duplicator_version_0__5__28 => snapcreek_duplicator_sw__edition_lite
+        snapcreek_duplicator_version_0__5__28 => snapcreek_duplicator_update_any
+        snapcreek_duplicator_version_1__1__30 => snapcreek_duplicator_sw__edition_lite
+        snapcreek_duplicator_version_1__1__30 => snapcreek_duplicator_update_any
+        snapcreek_duplicator_version_3__0__15 => snapcreek_duplicator_sw__edition_pro
+        snapcreek_duplicator_version_3__0__15 => snapcreek_duplicator_update_any
+        snapcreek_duplicator_version_3__6__1 => snapcreek_duplicator_sw__edition_pro
+        snapcreek_duplicator_version_3__6__1 => snapcreek_duplicator_update_any
+        snapcreek_duplicator_version_3__7__1 => snapcreek_duplicator_sw__edition_pro
+        snapcreek_duplicator_version_3__7__1 => snapcreek_duplicator_update_any
+        snapcreek_duplicator_version_3__0__2 => snapcreek_duplicator_sw__edition_pro
+        snapcreek_duplicator_version_3__0__2 => snapcreek_duplicator_update_any
+        snapcreek_duplicator_version_2__0__10 => snapcreek_duplicator_sw__edition_pro
+        snapcreek_duplicator_version_2__0__10 => snapcreek_duplicator_update_any
+        snapcreek_duplicator_version_0__3__1 => snapcreek_duplicator_sw__edition_lite
+        snapcreek_duplicator_version_0__3__1 => snapcreek_duplicator_update_beta
+        snapcreek_duplicator_version_1__0__18__1 => snapcreek_duplicator_sw__edition_pro
+        snapcreek_duplicator_version_1__0__18__1 => snapcreek_duplicator_update_any
+        snapcreek_duplicator_version_3__5__3 => snapcreek_duplicator_sw__edition_pro
+        snapcreek_duplicator_version_3__5__3 => snapcreek_duplicator_update_any
+        snapcreek_duplicator_version_1__3__20 => snapcreek_duplicator_sw__edition_any
+        snapcreek_duplicator_version_1__3__20 => snapcreek_duplicator_update_any
+        snapcreek_duplicator_version_0__4__5 => snapcreek_duplicator_sw__edition_lite
+        snapcreek_duplicator_version_0__4__5 => snapcreek_duplicator_update_beta
+        snapcreek_duplicator_version_1__0__16 => snapcreek_duplicator_sw__edition_pro
+        snapcreek_duplicator_version_1__0__16 => snapcreek_duplicator_update_any
+        snapcreek_duplicator_version_3__8__2__2 => snapcreek_duplicator_sw__edition_pro
+        snapcreek_duplicator_version_3__8__2__2 => snapcreek_duplicator_update_any
+        snapcreek_duplicator_version_0__2__5 => snapcreek_duplicator_sw__edition_lite
+        snapcreek_duplicator_version_0__2__5 => snapcreek_duplicator_update_beta
+        snapcreek_duplicator_version_0__2__1 => snapcreek_duplicator_sw__edition_lite
+        snapcreek_duplicator_version_0__2__1 => snapcreek_duplicator_update_beta
+        snapcreek_duplicator_version_1__0__7__2 => snapcreek_duplicator_sw__edition_pro
+        snapcreek_duplicator_version_1__0__7__2 => snapcreek_duplicator_update_any
+        snapcreek_duplicator_version_3__6__0 => snapcreek_duplicator_sw__edition_pro
+        snapcreek_duplicator_version_3__6__0 => snapcreek_duplicator_update_any
+        snapcreek_duplicator_version_1__2__12 => snapcreek_duplicator_sw__edition_lite
+        snapcreek_duplicator_version_1__2__12 => snapcreek_duplicator_update_any
+        snapcreek_duplicator_version_3__8__1__2 => snapcreek_duplicator_sw__edition_pro
+        snapcreek_duplicator_version_3__8__1__2 => snapcreek_duplicator_update_any
+        snapcreek_duplicator_version_2__0__11 => snapcreek_duplicator_sw__edition_pro
+        snapcreek_duplicator_version_2__0__11 => snapcreek_duplicator_update_any
+        snapcreek_duplicator_version_1__2__26 => snapcreek_duplicator_sw__edition_lite
+        snapcreek_duplicator_version_1__2__26 => snapcreek_duplicator_update_any
+        snapcreek_duplicator_version_3__8__1__3 => snapcreek_duplicator_sw__edition_pro
+        snapcreek_duplicator_version_3__8__1__3 => snapcreek_duplicator_update_any
+        snapcreek_duplicator_version_1__2__0 => snapcreek_duplicator_sw__edition_lite
+        snapcreek_duplicator_version_1__2__0 => snapcreek_duplicator_update_any
+        snapcreek_duplicator_version_1__0__4 => snapcreek_duplicator_sw__edition_pro
+        snapcreek_duplicator_version_1__0__4 => snapcreek_duplicator_update_any
+        snapcreek_duplicator_version_0__2__6 => snapcreek_duplicator_sw__edition_lite
+        snapcreek_duplicator_version_0__2__6 => snapcreek_duplicator_update_beta
+        snapcreek_duplicator_version_3__8__3__2 => snapcreek_duplicator_sw__edition_pro
+        snapcreek_duplicator_version_3__8__3__2 => snapcreek_duplicator_update_any
+        snapcreek_duplicator_version_3__7__1__2 => snapcreek_duplicator_sw__edition_pro
+        snapcreek_duplicator_version_3__7__1__2 => snapcreek_duplicator_update_any
+        snapcreek_duplicator_version_3__7__9__1 => snapcreek_duplicator_sw__edition_pro
+        snapcreek_duplicator_version_3__7__9__1 => snapcreek_duplicator_update_any
+        snapcreek_duplicator_version_3__4__2 => snapcreek_duplicator_sw__edition_pro
+        snapcreek_duplicator_version_3__4__2 => snapcreek_duplicator_update_any
+        snapcreek_duplicator_version_3__0__10 => snapcreek_duplicator_sw__edition_pro
+        snapcreek_duplicator_version_3__0__10 => snapcreek_duplicator_update_any
+        snapcreek_duplicator_version_1__3__16 => snapcreek_duplicator_sw__edition_lite
+        snapcreek_duplicator_version_1__3__16 => snapcreek_duplicator_update_any
+        snapcreek_duplicator_version_1__3__14 => snapcreek_duplicator_sw__edition_lite
+        snapcreek_duplicator_version_1__3__14 => snapcreek_duplicator_update_any
+        snapcreek_duplicator_version_3__7__9 => snapcreek_duplicator_sw__edition_pro
+        snapcreek_duplicator_version_3__7__9 => snapcreek_duplicator_update_any
+        snapcreek_duplicator_version_0__5__22 => snapcreek_duplicator_sw__edition_lite
+        snapcreek_duplicator_version_0__5__22 => snapcreek_duplicator_update_any
+        snapcreek_duplicator_version_0__5__10 => snapcreek_duplicator_sw__edition_lite
+        snapcreek_duplicator_version_0__5__10 => snapcreek_duplicator_update_any
+        snapcreek_duplicator_version_3__4__0 => snapcreek_duplicator_sw__edition_pro
+        snapcreek_duplicator_version_3__4__0 => snapcreek_duplicator_update_any
+        snapcreek_duplicator_version_1__2__48 => snapcreek_duplicator_sw__edition_lite
+        snapcreek_duplicator_version_1__2__48 => snapcreek_duplicator_update_any
+        snapcreek_duplicator_version_0__5__26 => snapcreek_duplicator_sw__edition_lite
+        snapcreek_duplicator_version_0__5__26 => snapcreek_duplicator_update_any
+        snapcreek_duplicator_version_3__7__4__1 => snapcreek_duplicator_sw__edition_pro
+        snapcreek_duplicator_version_3__7__4__1 => snapcreek_duplicator_update_any
+        snapcreek_duplicator_version_1__0__2 => snapcreek_duplicator_sw__edition_pro
+        snapcreek_duplicator_version_1__0__2 => snapcreek_duplicator_update_any
+        snapcreek_duplicator_version_0__5__2 => snapcreek_duplicator_sw__edition_lite
+        snapcreek_duplicator_version_0__5__2 => snapcreek_duplicator_update_any
+        snapcreek_duplicator_version_3__0__11 => snapcreek_duplicator_sw__edition_pro
+        snapcreek_duplicator_version_3__0__11 => snapcreek_duplicator_update_any
+        snapcreek_duplicator_version_3__5__7__1 => snapcreek_duplicator_sw__edition_pro
+        snapcreek_duplicator_version_3__5__7__1 => snapcreek_duplicator_update_any
+        snapcreek_duplicator_version_0__2__2 => snapcreek_duplicator_sw__edition_lite
+        snapcreek_duplicator_version_0__2__2 => snapcreek_duplicator_update_beta
+        snapcreek_duplicator_version_1__1__10 => snapcreek_duplicator_sw__edition_lite
+        snapcreek_duplicator_version_1__1__10 => snapcreek_duplicator_update_any
+        snapcreek_duplicator_version_3__7__4 => snapcreek_duplicator_sw__edition_pro
+        snapcreek_duplicator_version_3__7__4 => snapcreek_duplicator_update_any
+        snapcreek_duplicator_version_3__7__1__1 => snapcreek_duplicator_sw__edition_pro
+        snapcreek_duplicator_version_3__7__1__1 => snapcreek_duplicator_update_any
+        snapcreek_duplicator_version_1__2__30 => snapcreek_duplicator_sw__edition_lite
+        snapcreek_duplicator_version_1__2__30 => snapcreek_duplicator_update_any
+        snapcreek_duplicator_version_1__2__34 => snapcreek_duplicator_sw__edition_lite
+        snapcreek_duplicator_version_1__2__34 => snapcreek_duplicator_update_any
+        snapcreek_duplicator_version_1__0__7__1 => snapcreek_duplicator_sw__edition_pro
+        snapcreek_duplicator_version_1__0__7__1 => snapcreek_duplicator_update_any
+        snapcreek_duplicator_version_1__0__9 => snapcreek_duplicator_sw__edition_pro
+        snapcreek_duplicator_version_1__0__9 => snapcreek_duplicator_update_any
+        snapcreek_duplicator_version_0__5__0 => snapcreek_duplicator_sw__edition_lite
+        snapcreek_duplicator_version_0__5__0 => snapcreek_duplicator_update_any
+        snapcreek_duplicator_version_3__5__0 => snapcreek_duplicator_sw__edition_pro
+        snapcreek_duplicator_version_3__5__0 => snapcreek_duplicator_update_any
+        snapcreek_duplicator_version_1__3__10 => snapcreek_duplicator_sw__edition_lite
+        snapcreek_duplicator_version_1__3__10 => snapcreek_duplicator_update_any
+        snapcreek_duplicator_version_3__0__13__1 => snapcreek_duplicator_sw__edition_pro
+        snapcreek_duplicator_version_3__0__13__1 => snapcreek_duplicator_update_any
+        snapcreek_duplicator_version_1__0__12__1 => snapcreek_duplicator_sw__edition_pro
+        snapcreek_duplicator_version_1__0__12__1 => snapcreek_duplicator_update_any
+        snapcreek_duplicator_version_1__0__3 => snapcreek_duplicator_sw__edition_pro
+        snapcreek_duplicator_version_1__0__3 => snapcreek_duplicator_update_any
+        snapcreek_duplicator_version_3__7__5__1 => snapcreek_duplicator_sw__edition_pro
+        snapcreek_duplicator_version_3__7__5__1 => snapcreek_duplicator_update_any
+        snapcreek_duplicator_version_3__0__12 => snapcreek_duplicator_sw__edition_pro
+        snapcreek_duplicator_version_3__0__12 => snapcreek_duplicator_update_any
+        snapcreek_duplicator_version_3__5__4__1 => snapcreek_duplicator_sw__edition_pro
+        snapcreek_duplicator_version_3__5__4__1 => snapcreek_duplicator_update_any
+        snapcreek_duplicator_version_3__0__14 => snapcreek_duplicator_sw__edition_pro
+        snapcreek_duplicator_version_3__0__14 => snapcreek_duplicator_update_any
+        snapcreek_duplicator_version_3__8__4 => snapcreek_duplicator_sw__edition_pro
+        snapcreek_duplicator_version_3__8__4 => snapcreek_duplicator_update_any
+        snapcreek_duplicator_version_3__8__0 => snapcreek_duplicator_sw__edition_pro
+        snapcreek_duplicator_version_3__8__0 => snapcreek_duplicator_update_any
+        snapcreek_duplicator_version_1__1__12 => snapcreek_duplicator_sw__edition_lite
+        snapcreek_duplicator_version_1__1__12 => snapcreek_duplicator_update_any
+        snapcreek_duplicator_version_3__0__0 => snapcreek_duplicator_sw__edition_pro
+        snapcreek_duplicator_version_3__0__0 => snapcreek_duplicator_update_any
+        snapcreek_duplicator_version_0__4__1 => snapcreek_duplicator_sw__edition_lite
+        snapcreek_duplicator_version_0__4__1 => snapcreek_duplicator_update_beta
+        snapcreek_duplicator_version_1__2__22 => snapcreek_duplicator_sw__edition_lite
+        snapcreek_duplicator_version_1__2__22 => snapcreek_duplicator_update_any
+        snapcreek_duplicator_version_3__4__7 => snapcreek_duplicator_sw__edition_pro
+        snapcreek_duplicator_version_3__4__7 => snapcreek_duplicator_update_any
+        snapcreek_duplicator_version_0__5__32 => snapcreek_duplicator_sw__edition_lite
+        snapcreek_duplicator_version_0__5__32 => snapcreek_duplicator_update_any
+        snapcreek_duplicator_version_1__1__32 => snapcreek_duplicator_sw__edition_lite
+        snapcreek_duplicator_version_1__1__32 => snapcreek_duplicator_update_any
+        snapcreek_duplicator_version_3__8__1__1 => snapcreek_duplicator_sw__edition_pro
+        snapcreek_duplicator_version_3__8__1__1 => snapcreek_duplicator_update_any
+        snapcreek_duplicator_version_3__6__0__1 => snapcreek_duplicator_sw__edition_pro
+        snapcreek_duplicator_version_3__6__0__1 => snapcreek_duplicator_update_any
+        snapcreek_duplicator_version_0__2__3 => snapcreek_duplicator_sw__edition_lite
+        snapcreek_duplicator_version_0__2__3 => snapcreek_duplicator_update_beta
+        snapcreek_duplicator_version_0__5__16 => snapcreek_duplicator_sw__edition_lite
+        snapcreek_duplicator_version_0__5__16 => snapcreek_duplicator_update_any
+        snapcreek_duplicator_version_3__0__4 => snapcreek_duplicator_sw__edition_pro
+        snapcreek_duplicator_version_3__0__4 => snapcreek_duplicator_update_any
+        snapcreek_duplicator_version_3__7__0__1 => snapcreek_duplicator_sw__edition_pro
+        snapcreek_duplicator_version_3__7__0__1 => snapcreek_duplicator_update_any
+        snapcreek_duplicator_version_1__3 => snapcreek_duplicator_sw__edition_lite
+        snapcreek_duplicator_version_1__3 => snapcreek_duplicator_update_any
+        snapcreek_duplicator_version_1__0__17 => snapcreek_duplicator_sw__edition_pro
+        snapcreek_duplicator_version_1__0__17 => snapcreek_duplicator_update_any
+        snapcreek_duplicator_version_2__0__0 => snapcreek_duplicator_sw__edition_pro
+        snapcreek_duplicator_version_2__0__0 => snapcreek_duplicator_update_any
+        snapcreek_duplicator_version_1__0__6__1 => snapcreek_duplicator_sw__edition_pro
+        snapcreek_duplicator_version_1__0__6__1 => snapcreek_duplicator_update_any
+        snapcreek_duplicator_version_1__3__2 => snapcreek_duplicator_sw__edition_lite
+        snapcreek_duplicator_version_1__3__2 => snapcreek_duplicator_update_any
+        snapcreek_duplicator_version_3__5__4__2 => snapcreek_duplicator_sw__edition_pro
+        snapcreek_duplicator_version_3__5__4__2 => snapcreek_duplicator_update_any
+        snapcreek_duplicator_version_1__2__38 => snapcreek_duplicator_sw__edition_lite
+        snapcreek_duplicator_version_1__2__38 => snapcreek_duplicator_update_any
+        snapcreek_duplicator_version_2__0__4__1 => snapcreek_duplicator_sw__edition_pro
+        snapcreek_duplicator_version_2__0__4__1 => snapcreek_duplicator_update_any
+        snapcreek_duplicator_version_3__8__1 => snapcreek_duplicator_sw__edition_pro
+        snapcreek_duplicator_version_3__8__1 => snapcreek_duplicator_update_any
+        snapcreek_duplicator_version_3__4__1 => snapcreek_duplicator_sw__edition_pro
+        snapcreek_duplicator_version_3__4__1 => snapcreek_duplicator_update_any
+        snapcreek_duplicator_version_1__1__0 => snapcreek_duplicator_sw__edition_lite
+        snapcreek_duplicator_version_1__1__0 => snapcreek_duplicator_update_any
+        snapcreek_duplicator_version_3__2__0 => snapcreek_duplicator_sw__edition_pro
+        snapcreek_duplicator_version_3__2__0 => snapcreek_duplicator_update_any
+        snapcreek_duplicator_version_0__4__2 => snapcreek_duplicator_sw__edition_lite
+        snapcreek_duplicator_version_0__4__2 => snapcreek_duplicator_update_beta
+        snapcreek_duplicator_version_3__4__0__2 => snapcreek_duplicator_sw__edition_pro
+        snapcreek_duplicator_version_3__4__0__2 => snapcreek_duplicator_update_any
+        snapcreek_duplicator_version_0__2__7 => snapcreek_duplicator_sw__edition_lite
+        snapcreek_duplicator_version_0__2__7 => snapcreek_duplicator_update_beta
+        snapcreek_duplicator_version_0__1__0 => snapcreek_duplicator_sw__edition_lite
+        snapcreek_duplicator_version_0__1__0 => snapcreek_duplicator_update_beta
+        snapcreek_duplicator_version_1__2__42 => snapcreek_duplicator_sw__edition_lite
+        snapcreek_duplicator_version_1__2__42 => snapcreek_duplicator_update_any
+        snapcreek_duplicator_version_1__1__28 => snapcreek_duplicator_sw__edition_lite
+        snapcreek_duplicator_version_1__1__28 => snapcreek_duplicator_update_any
+        snapcreek_duplicator_version_3__7__5 => snapcreek_duplicator_sw__edition_pro
+        snapcreek_duplicator_version_3__7__5 => snapcreek_duplicator_update_any
+        snapcreek_duplicator_version_1__3__12 => snapcreek_duplicator_sw__edition_lite
+        snapcreek_duplicator_version_1__3__12 => snapcreek_duplicator_update_any
+        snapcreek_duplicator_version_0__2__9 => snapcreek_duplicator_sw__edition_lite
+        snapcreek_duplicator_version_0__2__9 => snapcreek_duplicator_update_beta
+        snapcreek_duplicator_version_1__0__11 => snapcreek_duplicator_sw__edition_pro
+        snapcreek_duplicator_version_1__0__11 => snapcreek_duplicator_update_any
+        snapcreek_duplicator_version_3__8__3 => snapcreek_duplicator_sw__edition_pro
+        snapcreek_duplicator_version_3__8__3 => snapcreek_duplicator_update_any
+        snapcreek_duplicator_version_3__7__0 => snapcreek_duplicator_sw__edition_pro
+        snapcreek_duplicator_version_3__7__0 => snapcreek_duplicator_update_any
+        snapcreek_duplicator_version_1__1__24 => snapcreek_duplicator_sw__edition_lite
+        snapcreek_duplicator_version_1__1__24 => snapcreek_duplicator_update_any
+        snapcreek_duplicator_version_2__0__5 => snapcreek_duplicator_sw__edition_pro
+        snapcreek_duplicator_version_2__0__5 => snapcreek_duplicator_update_any
+        snapcreek_duplicator_version_3__2__2 => snapcreek_duplicator_sw__edition_pro
+        snapcreek_duplicator_version_3__2__2 => snapcreek_duplicator_update_any
+        snapcreek_duplicator_version_3__4__2__2 => snapcreek_duplicator_sw__edition_pro
+        snapcreek_duplicator_version_3__4__2__2 => snapcreek_duplicator_update_any
+        snapcreek_duplicator_version_3__1__1 => snapcreek_duplicator_sw__edition_pro
+        snapcreek_duplicator_version_3__1__1 => snapcreek_duplicator_update_any
+        snapcreek_duplicator_version_3__0__15__2 => snapcreek_duplicator_sw__edition_pro
+        snapcreek_duplicator_version_3__0__15__2 => snapcreek_duplicator_update_any
+        snapcreek_duplicator_version_0__3__2 => snapcreek_duplicator_sw__edition_lite
+        snapcreek_duplicator_version_0__3__2 => snapcreek_duplicator_update_beta
+        snapcreek_duplicator_version_1__0__1 => snapcreek_duplicator_sw__edition_pro
+        snapcreek_duplicator_version_1__0__1 => snapcreek_duplicator_update_any
+        snapcreek_duplicator_version_0__5__6 => snapcreek_duplicator_sw__edition_lite
+        snapcreek_duplicator_version_0__5__6 => snapcreek_duplicator_update_any
+        snapcreek_duplicator_version_1__1__14 => snapcreek_duplicator_sw__edition_lite
+        snapcreek_duplicator_version_1__1__14 => snapcreek_duplicator_update_any
+        snapcreek_duplicator_version_3__7__2 => snapcreek_duplicator_sw__edition_pro
+        snapcreek_duplicator_version_3__7__2 => snapcreek_duplicator_update_any
+        snapcreek_duplicator_version_3__3__0__1 => snapcreek_duplicator_sw__edition_pro
+        snapcreek_duplicator_version_3__3__0__1 => snapcreek_duplicator_update_any
+        snapcreek_duplicator_version_3__5__5 => snapcreek_duplicator_sw__edition_pro
+        snapcreek_duplicator_version_3__5__5 => snapcreek_duplicator_update_any
+        snapcreek_duplicator_version_3__3__3 => snapcreek_duplicator_sw__edition_pro
+        snapcreek_duplicator_version_3__3__3 => snapcreek_duplicator_update_any
+        snapcreek_duplicator_version_1__3__24 => snapcreek_duplicator_sw__edition_any
+        snapcreek_duplicator_version_1__3__24 => snapcreek_duplicator_update_any
+        snapcreek_duplicator_version_0__4__6 => snapcreek_duplicator_sw__edition_lite
+        snapcreek_duplicator_version_0__4__6 => snapcreek_duplicator_update_beta
+        snapcreek_duplicator_version_1__2__16 => snapcreek_duplicator_sw__edition_lite
+        snapcreek_duplicator_version_1__2__16 => snapcreek_duplicator_update_any
+        snapcreek_duplicator_version_3__7__8 => snapcreek_duplicator_sw__edition_pro
+        snapcreek_duplicator_version_3__7__8 => snapcreek_duplicator_update_any
+        snapcreek_duplicator_version_1__1__2 => snapcreek_duplicator_sw__edition_lite
+        snapcreek_duplicator_version_1__1__2 => snapcreek_duplicator_update_any
+        snapcreek_duplicator_version_1__2__6 => snapcreek_duplicator_sw__edition_lite
+        snapcreek_duplicator_version_1__2__6 => snapcreek_duplicator_update_any
+        snapcreek_duplicator_version_1__1__16 => snapcreek_duplicator_sw__edition_lite
+        snapcreek_duplicator_version_1__1__16 => snapcreek_duplicator_update_any
+        snapcreek_duplicator_version_3__0__13 => snapcreek_duplicator_sw__edition_pro
+        snapcreek_duplicator_version_3__0__13 => snapcreek_duplicator_update_any
+        snapcreek_duplicator_version_3__0__3 => snapcreek_duplicator_sw__edition_pro
+        snapcreek_duplicator_version_3__0__3 => snapcreek_duplicator_update_any
+        snapcreek_duplicator_version_3__4__8 => snapcreek_duplicator_sw__edition_pro
+        snapcreek_duplicator_version_3__4__8 => snapcreek_duplicator_update_any
+        snapcreek_duplicator_version_0__5__14 => snapcreek_duplicator_sw__edition_lite
+        snapcreek_duplicator_version_0__5__14 => snapcreek_duplicator_update_any
+        snapcreek_duplicator_version_2__0__6 => snapcreek_duplicator_sw__edition_pro
+        snapcreek_duplicator_version_2__0__6 => snapcreek_duplicator_update_any
+        snapcreek_duplicator_version_3__8__2__1 => snapcreek_duplicator_sw__edition_pro
+        snapcreek_duplicator_version_3__8__2__1 => snapcreek_duplicator_update_any
+        snapcreek_duplicator_version_1__0__7 => snapcreek_duplicator_sw__edition_pro
+        snapcreek_duplicator_version_1__0__7 => snapcreek_duplicator_update_any
+        snapcreek_duplicator_version_0__3__0 => snapcreek_duplicator_sw__edition_lite
+        snapcreek_duplicator_version_0__3__0 => snapcreek_duplicator_update_beta
+        snapcreek_duplicator_version_1__2__50 => snapcreek_duplicator_sw__edition_lite
+        snapcreek_duplicator_version_1__2__50 => snapcreek_duplicator_update_any
+        snapcreek_duplicator_version_1__0__17__1 => snapcreek_duplicator_sw__edition_pro
+        snapcreek_duplicator_version_1__0__17__1 => snapcreek_duplicator_update_any
+        snapcreek_duplicator_version_3__0__13__2 => snapcreek_duplicator_sw__edition_pro
+        snapcreek_duplicator_version_3__0__13__2 => snapcreek_duplicator_update_any
+        snapcreek_duplicator_version_1__2__8 => snapcreek_duplicator_sw__edition_lite
+        snapcreek_duplicator_version_1__2__8 => snapcreek_duplicator_update_any
+        snapcreek_duplicator_version_3__3__6 => snapcreek_duplicator_sw__edition_pro
+        snapcreek_duplicator_version_3__3__6 => snapcreek_duplicator_update_any
+        snapcreek_duplicator_version_2__0__1 => snapcreek_duplicator_sw__edition_pro
+        snapcreek_duplicator_version_2__0__1 => snapcreek_duplicator_update_any
+        snapcreek_duplicator_version_1__3__26 => snapcreek_duplicator_sw__edition_any
+        snapcreek_duplicator_version_1__3__26 => snapcreek_duplicator_update_any
+        snapcreek_duplicator_version_3__8__3__4 => snapcreek_duplicator_sw__edition_pro
+        snapcreek_duplicator_version_3__8__3__4 => snapcreek_duplicator_update_any
+        snapcreek_duplicator_version_1__1__34 => snapcreek_duplicator_sw__edition_lite
+        snapcreek_duplicator_version_1__1__34 => snapcreek_duplicator_update_any
+        snapcreek_duplicator_version_1__1__4 => snapcreek_duplicator_sw__edition_lite
+        snapcreek_duplicator_version_1__1__4 => snapcreek_duplicator_update_any
+        snapcreek_duplicator_version_1__0__18 => snapcreek_duplicator_sw__edition_pro
+        snapcreek_duplicator_version_1__0__18 => snapcreek_duplicator_update_any
+        snapcreek_duplicator_version_2__0__9 => snapcreek_duplicator_sw__edition_pro
+        snapcreek_duplicator_version_2__0__9 => snapcreek_duplicator_update_any
+        snapcreek_duplicator_version_0__4__0 => snapcreek_duplicator_sw__edition_lite
+        snapcreek_duplicator_version_0__4__0 => snapcreek_duplicator_update_beta
+        snapcreek_duplicator_version_1__0__10 => snapcreek_duplicator_sw__edition_pro
+        snapcreek_duplicator_version_1__0__10 => snapcreek_duplicator_update_any
+        snapcreek_duplicator_version_3__0__9 => snapcreek_duplicator_sw__edition_pro
+        snapcreek_duplicator_version_3__0__9 => snapcreek_duplicator_update_any
+        snapcreek_duplicator_version_1__2__40 => snapcreek_duplicator_sw__edition_lite
+        snapcreek_duplicator_version_1__2__40 => snapcreek_duplicator_update_any
+        snapcreek_duplicator_version_2__0__12 => snapcreek_duplicator_sw__edition_pro
+        snapcreek_duplicator_version_2__0__12 => snapcreek_duplicator_update_any
+        snapcreek_duplicator_version_1__1__18 => snapcreek_duplicator_sw__edition_lite
+        snapcreek_duplicator_version_1__1__18 => snapcreek_duplicator_update_any
+        snapcreek_duplicator_version_1__0__11__1 => snapcreek_duplicator_sw__edition_pro
+        snapcreek_duplicator_version_1__0__11__1 => snapcreek_duplicator_update_any
+        snapcreek_duplicator_version_3__5__6 => snapcreek_duplicator_sw__edition_pro
+        snapcreek_duplicator_version_3__5__6 => snapcreek_duplicator_update_any
+        snapcreek_duplicator_version_3__7__8__1 => snapcreek_duplicator_sw__edition_pro
+        snapcreek_duplicator_version_3__7__8__1 => snapcreek_duplicator_update_any
+        snapcreek_duplicator_version_1__0__0 => snapcreek_duplicator_sw__edition_pro
+        snapcreek_duplicator_version_1__0__0 => snapcreek_duplicator_update_any
+        snapcreek_duplicator_version_3__7__6 => snapcreek_duplicator_sw__edition_pro
+        snapcreek_duplicator_version_3__7__6 => snapcreek_duplicator_update_any
+        snapcreek_duplicator_version_3__0__17 => snapcreek_duplicator_sw__edition_pro
+        snapcreek_duplicator_version_3__0__17 => snapcreek_duplicator_update_any
+        snapcreek_duplicator_version_1__0__5 => snapcreek_duplicator_sw__edition_pro
+        snapcreek_duplicator_version_1__0__5 => snapcreek_duplicator_update_any
+        snapcreek_duplicator_version_3__3__4 => snapcreek_duplicator_sw__edition_pro
+        snapcreek_duplicator_version_3__3__4 => snapcreek_duplicator_update_any
+        snapcreek_duplicator_version_3__2__1 => snapcreek_duplicator_sw__edition_pro
+        snapcreek_duplicator_version_3__2__1 => snapcreek_duplicator_update_any
+        snapcreek_duplicator_version_3__5__2 => snapcreek_duplicator_sw__edition_pro
+        snapcreek_duplicator_version_3__5__2 => snapcreek_duplicator_update_any
+        snapcreek_duplicator_version_3__7__3__1 => snapcreek_duplicator_sw__edition_pro
+        snapcreek_duplicator_version_3__7__3__1 => snapcreek_duplicator_update_any
+        snapcreek_duplicator_version_3__0__1 => snapcreek_duplicator_sw__edition_pro
+        snapcreek_duplicator_version_3__0__1 => snapcreek_duplicator_update_any
+        snapcreek_duplicator_version_1__0__8 => snapcreek_duplicator_sw__edition_pro
+        snapcreek_duplicator_version_1__0__8 => snapcreek_duplicator_update_any
+        snapcreek_duplicator_version_3__5__1 => snapcreek_duplicator_sw__edition_pro
+        snapcreek_duplicator_version_3__5__1 => snapcreek_duplicator_update_any
+        snapcreek_duplicator_version_1__2__20 => snapcreek_duplicator_sw__edition_lite
+        snapcreek_duplicator_version_1__2__20 => snapcreek_duplicator_update_any
+        snapcreek_duplicator_version_3__0__7 => snapcreek_duplicator_sw__edition_pro
+        snapcreek_duplicator_version_3__0__7 => snapcreek_duplicator_update_any
+        snapcreek_duplicator_version_3__1__0 => snapcreek_duplicator_sw__edition_pro
+        snapcreek_duplicator_version_3__1__0 => snapcreek_duplicator_update_any
+        snapcreek_duplicator_version_0__5__34 => snapcreek_duplicator_sw__edition_lite
+        snapcreek_duplicator_version_0__5__34 => snapcreek_duplicator_update_any
+        snapcreek_duplicator_version_3__8__2 => snapcreek_duplicator_sw__edition_pro
+        snapcreek_duplicator_version_3__8__2 => snapcreek_duplicator_update_any
+        snapcreek_duplicator_version_1__2__14 => snapcreek_duplicator_sw__edition_lite
+        snapcreek_duplicator_version_1__2__14 => snapcreek_duplicator_update_any
+        snapcreek_duplicator_version_0__2__0 => snapcreek_duplicator_sw__edition_lite
+        snapcreek_duplicator_version_0__2__0 => snapcreek_duplicator_update_beta
+        snapcreek_duplicator_version_3__5__8 => snapcreek_duplicator_sw__edition_pro
+        snapcreek_duplicator_version_3__5__8 => snapcreek_duplicator_update_any
+        snapcreek_duplicator_version_3__0__16 => snapcreek_duplicator_sw__edition_pro
+        snapcreek_duplicator_version_3__0__16 => snapcreek_duplicator_update_any
+        snapcreek_duplicator_version_3__5__7 => snapcreek_duplicator_sw__edition_pro
+        snapcreek_duplicator_version_3__5__7 => snapcreek_duplicator_update_any
+        snapcreek_duplicator_version_3__8__3__3 => snapcreek_duplicator_sw__edition_pro
+        snapcreek_duplicator_version_3__8__3__3 => snapcreek_duplicator_update_any
+        snapcreek_duplicator_version_1__2__24 => snapcreek_duplicator_sw__edition_lite
+        snapcreek_duplicator_version_1__2__24 => snapcreek_duplicator_update_any
+        snapcreek_duplicator_version_1__3__19 => snapcreek_duplicator_sw__edition_lite
+        snapcreek_duplicator_version_1__3__19 => snapcreek_duplicator_update_any
+        snapcreek_duplicator_version_0__5__8 => ((snapcreek_duplicator_sw__edition_lite & snapcreek_duplicator_update_any & !snapcreek_duplicator_sw__edition_any & snapcreek_duplicator_update_any) | (!snapcreek_duplicator_sw__edition_lite & snapcreek_duplicator_update_any & snapcreek_duplicator_sw__edition_any & snapcreek_duplicator_update_any))
+        snapcreek_duplicator_version_1__0__15 => snapcreek_duplicator_sw__edition_pro
+        snapcreek_duplicator_version_1__0__15 => snapcreek_duplicator_update_any
+        snapcreek_duplicator_version_1__2__36 => snapcreek_duplicator_sw__edition_lite
+        snapcreek_duplicator_version_1__2__36 => snapcreek_duplicator_update_any
+        snapcreek_duplicator_version_3__4__3 => snapcreek_duplicator_sw__edition_pro
+        snapcreek_duplicator_version_3__4__3 => snapcreek_duplicator_update_any
+        snapcreek_duplicator_version_3__8__0__2 => snapcreek_duplicator_sw__edition_pro
+        snapcreek_duplicator_version_3__8__0__2 => snapcreek_duplicator_update_any
+        snapcreek_duplicator_version_0__5__30 => snapcreek_duplicator_sw__edition_lite
+        snapcreek_duplicator_version_0__5__30 => snapcreek_duplicator_update_any
+        snapcreek_duplicator_version_0__5__4 => snapcreek_duplicator_sw__edition_lite
+        snapcreek_duplicator_version_0__5__4 => snapcreek_duplicator_update_any
+        snapcreek_duplicator_version_2__0__2 => snapcreek_duplicator_sw__edition_pro
+        snapcreek_duplicator_version_2__0__2 => snapcreek_duplicator_update_any
+        snapcreek_duplicator_version_0__5__20 => snapcreek_duplicator_sw__edition_lite
+        snapcreek_duplicator_version_0__5__20 => snapcreek_duplicator_update_any
+        snapcreek_duplicator_version_3__4__4 => snapcreek_duplicator_sw__edition_pro
+        snapcreek_duplicator_version_3__4__4 => snapcreek_duplicator_update_any
+        snapcreek_duplicator_version_1__1__6 => snapcreek_duplicator_sw__edition_lite
+        snapcreek_duplicator_version_1__1__6 => snapcreek_duplicator_update_any
+        snapcreek_duplicator_version_2__0__8 => snapcreek_duplicator_sw__edition_pro
+        snapcreek_duplicator_version_2__0__8 => snapcreek_duplicator_update_any
+        snapcreek_duplicator_version_3__0__8 => snapcreek_duplicator_sw__edition_pro
+        snapcreek_duplicator_version_3__0__8 => snapcreek_duplicator_update_any
+        snapcreek_duplicator_version_3__3__2__1 => snapcreek_duplicator_sw__edition_pro
+        snapcreek_duplicator_version_3__3__2__1 => snapcreek_duplicator_update_any
+        snapcreek_duplicator_version_3__7__7 => snapcreek_duplicator_sw__edition_pro
+        snapcreek_duplicator_version_3__7__7 => snapcreek_duplicator_update_any
+        snapcreek_duplicator_version_0__5__1 => snapcreek_duplicator_sw__edition_lite
+        snapcreek_duplicator_version_0__5__1 => snapcreek_duplicator_update_any
+        snapcreek_duplicator_version_1__3__18 => snapcreek_duplicator_sw__edition_lite
+        snapcreek_duplicator_version_1__3__18 => snapcreek_duplicator_update_any
+        snapcreek_duplicator_version_0__2__4 => snapcreek_duplicator_sw__edition_lite
+        snapcreek_duplicator_version_0__2__4 => snapcreek_duplicator_update_beta
+        snapcreek_duplicator_version_3__4__5 => snapcreek_duplicator_sw__edition_pro
+        snapcreek_duplicator_version_3__4__5 => snapcreek_duplicator_update_any
+        snapcreek_duplicator_version_1__1__22 => snapcreek_duplicator_sw__edition_lite
+        snapcreek_duplicator_version_1__1__22 => snapcreek_duplicator_update_any
+        snapcreek_duplicator_version_3__3__2 => snapcreek_duplicator_sw__edition_pro
+        snapcreek_duplicator_version_3__3__2 => snapcreek_duplicator_update_any
+        snapcreek_duplicator_version_1__2__46 => snapcreek_duplicator_sw__edition_lite
+        snapcreek_duplicator_version_1__2__46 => snapcreek_duplicator_update_any
+        snapcreek_duplicator_version_1__2__44 => snapcreek_duplicator_sw__edition_lite
+        snapcreek_duplicator_version_1__2__44 => snapcreek_duplicator_update_any
+        snapcreek_duplicator_version_0__4__3 => snapcreek_duplicator_sw__edition_lite
+        snapcreek_duplicator_version_0__4__3 => snapcreek_duplicator_update_beta
+        snapcreek_duplicator_version_1__3__8 => snapcreek_duplicator_sw__edition_lite
+        snapcreek_duplicator_version_1__3__8 => snapcreek_duplicator_update_any
+        snapcreek_duplicator_version_3__7__8__2 => snapcreek_duplicator_sw__edition_pro
+        snapcreek_duplicator_version_3__7__8__2 => snapcreek_duplicator_update_any
+        snapcreek_duplicator_version_3__5__8__1 => snapcreek_duplicator_sw__edition_pro
+        snapcreek_duplicator_version_3__5__8__1 => snapcreek_duplicator_update_any
+        snapcreek_duplicator_version_3__8__3__1 => snapcreek_duplicator_sw__edition_pro
+        snapcreek_duplicator_version_3__8__3__1 => snapcreek_duplicator_update_any
+        snapcreek_duplicator_version_1__2__18 => snapcreek_duplicator_sw__edition_lite
+        snapcreek_duplicator_version_1__2__18 => snapcreek_duplicator_update_any
+        snapcreek_duplicator_version_1__0__14 => snapcreek_duplicator_sw__edition_pro
+        snapcreek_duplicator_version_1__0__14 => snapcreek_duplicator_update_any
+        snapcreek_duplicator_version_3__5__6__1 => snapcreek_duplicator_sw__edition_pro
+        snapcreek_duplicator_version_3__5__6__1 => snapcreek_duplicator_update_any
+        snapcreek_duplicator_version_3__0__15__1 => snapcreek_duplicator_sw__edition_pro
+        snapcreek_duplicator_version_3__0__15__1 => snapcreek_duplicator_update_any
+        snapcreek_duplicator_version_1__2__10 => snapcreek_duplicator_sw__edition_lite
+        snapcreek_duplicator_version_1__2__10 => snapcreek_duplicator_update_any
+        snapcreek_duplicator_version_3__0__0__1 => snapcreek_duplicator_sw__edition_pro
+        snapcreek_duplicator_version_3__0__0__1 => snapcreek_duplicator_update_any
+        snapcreek_duplicator_version_0__5__24 => snapcreek_duplicator_sw__edition_lite
+        snapcreek_duplicator_version_0__5__24 => snapcreek_duplicator_update_any

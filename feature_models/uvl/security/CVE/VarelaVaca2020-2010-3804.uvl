@@ -1,0 +1,324 @@
+features
+        CVE_2010_3804
+                optional
+                        configs
+                                alternative
+                                        rc0
+                                                alternative
+                                                        rc0_apple
+                                                                alternative
+                                                                        rc0_apple_mac__os__x
+                                                                                mandatory
+                                                                                        rc0_apple_mac__os__x_version
+                                                                                                alternative
+                                                                                                        rc0_apple_mac__os__x_version_10__5__0
+                                                                                                        rc0_apple_mac__os__x_version_10__6__4
+                                                                                                        rc0_apple_mac__os__x_version_10__5__5
+                                                                                                        rc0_apple_mac__os__x_version_10__5__2
+                                                                                                        rc0_apple_mac__os__x_version_10__5__4
+                                                                                                        rc0_apple_mac__os__x_version_10__5__7
+                                                                                                        rc0_apple_mac__os__x_version_10__5__6
+                                                                                                        rc0_apple_mac__os__x_version_10__5
+                                                                                                        rc0_apple_mac__os__x_version_10__5__8
+                                                                                                        rc0_apple_mac__os__x_version_10__6__1
+                                                                                                        rc0_apple_mac__os__x_version_10__6__5
+                                                                                                        rc0_apple_mac__os__x_version_10__6__2
+                                                                                                        rc0_apple_mac__os__x_version_10__6__0
+                                                                                                        rc0_apple_mac__os__x_version_10__5__1
+                                                                                                        rc0_apple_mac__os__x_version_10__5__3
+                                                                                                        rc0_apple_mac__os__x_version_10__6__3
+                                                                        rc0_apple_mac__os__x__server
+                                                                                mandatory
+                                                                                        rc0_apple_mac__os__x__server_version
+                                                                                                alternative
+                                                                                                        rc0_apple_mac__os__x__server_version_10__5__0
+                                                                                                        rc0_apple_mac__os__x__server_version_10__6__4
+                                                                                                        rc0_apple_mac__os__x__server_version_10__5__5
+                                                                                                        rc0_apple_mac__os__x__server_version_10__5__2
+                                                                                                        rc0_apple_mac__os__x__server_version_10__5__4
+                                                                                                        rc0_apple_mac__os__x__server_version_10__5__3
+                                                                                                        rc0_apple_mac__os__x__server_version_10__5__7
+                                                                                                        rc0_apple_mac__os__x__server_version_10__5__6
+                                                                                                        rc0_apple_mac__os__x__server_version_10__5
+                                                                                                        rc0_apple_mac__os__x__server_version_10__6__1
+                                                                                                        rc0_apple_mac__os__x__server_version_10__6__5
+                                                                                                        rc0_apple_mac__os__x__server_version_10__6__2
+                                                                                                        rc0_apple_mac__os__x__server_version_10__6__0
+                                                                                                        rc0_apple_mac__os__x__server_version_10__5__1
+                                                                                                        rc0_apple_mac__os__x__server_version_10__5__8
+                                                                                                        rc0_apple_mac__os__x__server_version_10__6__3
+                                                        rc0_microsoft
+                                                                alternative
+                                                                        rc0_microsoft_windows__7
+                                                                        rc0_microsoft_windows__vista
+                                                                        rc0_microsoft_windows__xp
+                                                                                mandatory
+                                                                                        rc0_microsoft_windows__xp_update
+                                                                                                mandatory
+                                                                                                        rc0_microsoft_windows__xp_update_sp2
+                                        rc1
+                                                mandatory
+                                                        rc1_apple
+                                                                alternative
+                                                                        rc1_apple_mac__os__x
+                                                                                mandatory
+                                                                                        rc1_apple_mac__os__x_version
+                                                                                                alternative
+                                                                                                        rc1_apple_mac__os__x_version_10__4__9
+                                                                                                        rc1_apple_mac__os__x_version_10__4__4
+                                                                                                        rc1_apple_mac__os__x_version_10__4__0
+                                                                                                        rc1_apple_mac__os__x_version_10__4__2
+                                                                                                        rc1_apple_mac__os__x_version_10__4__11
+                                                                                                        rc1_apple_mac__os__x_version_10__4
+                                                                                                        rc1_apple_mac__os__x_version_10__4__10
+                                                                                                        rc1_apple_mac__os__x_version_10__4__1
+                                                                                                        rc1_apple_mac__os__x_version_10__4__3
+                                                                                                        rc1_apple_mac__os__x_version_10__4__8
+                                                                                                        rc1_apple_mac__os__x_version_10__4__7
+                                                                                                        rc1_apple_mac__os__x_version_10__4__5
+                                                                                                        rc1_apple_mac__os__x_version_10__4__6
+                                                                        rc1_apple_mac__os__x__server
+                                                                                mandatory
+                                                                                        rc1_apple_mac__os__x__server_version
+                                                                                                alternative
+                                                                                                        rc1_apple_mac__os__x__server_version_10__4__9
+                                                                                                        rc1_apple_mac__os__x__server_version_10__4__4
+                                                                                                        rc1_apple_mac__os__x__server_version_10__4__0
+                                                                                                        rc1_apple_mac__os__x__server_version_10__4__2
+                                                                                                        rc1_apple_mac__os__x__server_version_10__4__11
+                                                                                                        rc1_apple_mac__os__x__server_version_10__4
+                                                                                                        rc1_apple_mac__os__x__server_version_10__4__10
+                                                                                                        rc1_apple_mac__os__x__server_version_10__4__1
+                                                                                                        rc1_apple_mac__os__x__server_version_10__4__7
+                                                                                                        rc1_apple_mac__os__x__server_version_10__4__8
+                                                                                                        rc1_apple_mac__os__x__server_version_10__4__3
+                                                                                                        rc1_apple_mac__os__x__server_version_10__4__5
+                                                                                                        rc1_apple_mac__os__x__server_version_10__4__6
+                mandatory
+                        types
+                                mandatory
+                                        application
+                        sources
+                                mandatory
+                                        nvd
+                        exploits
+                                optional
+                                        direct
+                                                [1..2]
+                                                        exploit_35006
+                                                        exploit_35005
+                                        indirect
+                        apple
+                                alternative
+                                        apple_safari
+                                                mandatory
+                                                        apple_safari_version
+                                                                alternative
+                                                                        apple_safari_version_3__0__0b
+                                                                        apple_safari_version_1__1
+                                                                        apple_safari_version_3__0__1
+                                                                        apple_safari_version_1__2__4
+                                                                        apple_safari_version_3__1__2b
+                                                                        apple_safari_version_3__2__2
+                                                                        apple_safari_version_3__2__0
+                                                                        apple_safari_version_2__0
+                                                                        apple_safari_version_1__0__0b1
+                                                                        apple_safari_version_4__0__1
+                                                                        apple_safari_version_1__3
+                                                                        apple_safari_version_3__0__1b
+                                                                        apple_safari_version_1__0__1
+                                                                        apple_safari_version_2__0__1
+                                                                        apple_safari_version_1__2__5
+                                                                        apple_safari_version_1__2
+                                                                        apple_safari_version_2__0__3
+                                                                        apple_safari_version_3__2__0b
+                                                                        apple_safari_version_4__1__3
+                                                                        apple_safari_version_3__0__3
+                                                                        apple_safari_version_3__1__1
+                                                                        apple_safari_version_3__0__3b
+                                                                        apple_safari_version_5__0
+                                                                        apple_safari_version_4__0__2
+                                                                        apple_safari_version_1__1__0
+                                                                        apple_safari_version_1__2__3
+                                                                        apple_safari_version_4__0
+                                                                        apple_safari_version_1__0__3
+                                                                        apple_safari_version_1__3__1
+                                                                        apple_safari_version_1__0__0b2
+                                                                        apple_safari_version_2__0__0
+                                                                        apple_safari_version_3__1__0b
+                                                                        apple_safari_version_4__0__3
+                                                                        apple_safari_version_any
+                                                                        apple_safari_version_4__0__4
+                                                                        apple_safari_version_3__0__4
+                                                                        apple_safari_version_2
+                                                                        apple_safari_version_1__3__2
+                                                                        apple_safari_version_3__0__2b
+                                                                        apple_safari_version_3__0__4b
+                                                                        apple_safari_version_3__2__2b
+                                                                        apple_safari_version_5__0__1
+                                                                        apple_safari_version_1__3__0
+                                                                        apple_safari_version_1__0
+                                                                        apple_safari_version_4__0__5
+                                                                        apple_safari_version_1__0__2
+                                                                        apple_safari_version_1__2__1
+                                                                        apple_safari_version_4__1__2
+                                                                        apple_safari_version_4__0__0b
+                                                                        apple_safari_version_1__0b1
+                                                                        apple_safari_version_5__0__2
+                                                                        apple_safari_version_3__2__1b
+                                                                        apple_safari_version_2__0__4
+                                                                        apple_safari_version_3__1__0
+                                                                        apple_safari_version_3__2__1
+                                                                        apple_safari_version_1__1__1
+                                                                        apple_safari_version_2__0__2
+                                                                        apple_safari_version_4__1
+                                                                        apple_safari_version_3__0__0
+                                                                        apple_safari_version_3__0__5
+                                                                        apple_safari_version_3
+                                                                        apple_safari_version_3__0__2
+                                                                        apple_safari_version_3__0
+                                                                        apple_safari_version_1__2__0
+                                                                        apple_safari_version_4__1__1
+                                                                        apple_safari_version_3__1__1b
+                                                                        apple_safari_version_3__1__2
+                                                                        apple_safari_version_1__0__0
+                                                                        apple_safari_version_1__2__2
+                                                        apple_safari_update
+                                                                alternative
+                                                                        apple_safari_update_beta2
+                                                                        apple_safari_update_312__5
+                                                                        apple_safari_update_312__6
+                                                                        apple_safari_update_417__8
+                                                                        apple_safari_update_417__9
+                                                                        apple_safari_update_417__9__3
+                                                                        apple_safari_update_85__8
+                                                                        apple_safari_update_417__9__2
+                                                                        apple_safari_update_any
+                                                                        apple_safari_update_beta
+                                                                        apple_safari_update_85__8__1
+                                        apple_webkit
+
+constraints
+        apple_safari => application
+        apple_webkit => application
+        apple_safari_version_3__0__0b => (apple_safari_update_any)
+        apple_safari_version_1__1 => apple_safari_update_any
+        apple_safari_version_1__1 => ((rc0 & !rc1) | (!rc0 & rc1))
+        apple_safari_version_3__0__1 => (apple_safari_update_beta & ((rc0 & !rc1) | (!rc0 & rc1)))
+        apple_safari_version_1__2__4 => apple_safari_update_any
+        apple_safari_version_1__2__4 => ((rc0 & !rc1) | (!rc0 & rc1))
+        apple_safari_version_3__1__2b => apple_safari_update_any
+        apple_safari_version_3__1__2b => ((rc0 & !rc1) | (!rc0 & rc1))
+        apple_safari_version_3__2__2 => apple_safari_update_any
+        apple_safari_version_3__2__2 => ((rc0 & !rc1) | (!rc0 & rc1))
+        apple_safari_version_3__2__0 => apple_safari_update_any
+        apple_safari_version_3__2__0 => ((rc0 & !rc1) | (!rc0 & rc1))
+        apple_safari_version_2__0 => apple_safari_update_any
+        apple_safari_version_2__0 => ((rc0 & !rc1) | (!rc0 & rc1))
+        apple_safari_version_1__0__0b1 => apple_safari_update_any
+        apple_safari_version_1__0__0b1 => ((rc0 & !rc1) | (!rc0 & rc1))
+        apple_safari_version_4__0__1 => apple_safari_update_any
+        apple_safari_version_4__0__1 => ((rc0 & !rc1) | (!rc0 & rc1))
+        apple_safari_version_1__3 => apple_safari_update_any
+        apple_safari_version_1__3 => ((rc0 & !rc1) | (!rc0 & rc1))
+        apple_safari_version_3__0__1b => (apple_safari_update_any)
+        apple_safari_version_1__0__1 => apple_safari_update_any
+        apple_safari_version_1__0__1 => ((rc0 & !rc1) | (!rc0 & rc1))
+        apple_safari_version_2__0__1 => apple_safari_update_any
+        apple_safari_version_2__0__1 => ((rc0 & !rc1) | (!rc0 & rc1))
+        apple_safari_version_1__2__5 => apple_safari_update_any
+        apple_safari_version_1__2__5 => ((rc0 & !rc1) | (!rc0 & rc1))
+        apple_safari_version_1__2 => apple_safari_update_any
+        apple_safari_version_1__2 => ((rc0 & !rc1) | (!rc0 & rc1))
+        apple_safari_version_2__0__3 => ((apple_safari_update_417__8 & ((rc0 & !rc1) | (!rc0 & rc1)) & !apple_safari_update_417__9 & ((rc0 & !rc1) | (!rc0 & rc1)) & !apple_safari_update_417__9__3 & ((rc0 & !rc1) | (!rc0 & rc1)) & !apple_safari_update_417__9__2 & ((rc0 & !rc1) | (!rc0 & rc1)) & !apple_safari_update_any & ((rc0 & !rc1) | (!rc0 & rc1))) | (!apple_safari_update_417__8 & ((rc0 & !rc1) | (!rc0 & rc1)) & apple_safari_update_417__9 & ((rc0 & !rc1) | (!rc0 & rc1)) & !apple_safari_update_417__9__3 & ((rc0 & !rc1) | (!rc0 & rc1)) & !apple_safari_update_417__9__2 & ((rc0 & !rc1) | (!rc0 & rc1)) & !apple_safari_update_any & ((rc0 & !rc1) | (!rc0 & rc1))) | (!apple_safari_update_417__8 & ((rc0 & !rc1) | (!rc0 & rc1)) & !apple_safari_update_417__9 & ((rc0 & !rc1) | (!rc0 & rc1)) & apple_safari_update_417__9__3 & ((rc0 & !rc1) | (!rc0 & rc1)) & !apple_safari_update_417__9__2 & ((rc0 & !rc1) | (!rc0 & rc1)) & !apple_safari_update_any & ((rc0 & !rc1) | (!rc0 & rc1))) | (!apple_safari_update_417__8 & ((rc0 & !rc1) | (!rc0 & rc1)) & !apple_safari_update_417__9 & ((rc0 & !rc1) | (!rc0 & rc1)) & !apple_safari_update_417__9__3 & ((rc0 & !rc1) | (!rc0 & rc1)) & apple_safari_update_417__9__2 & ((rc0 & !rc1) | (!rc0 & rc1)) & !apple_safari_update_any & ((rc0 & !rc1) | (!rc0 & rc1))) | (!apple_safari_update_417__8 & ((rc0 & !rc1) | (!rc0 & rc1)) & !apple_safari_update_417__9 & ((rc0 & !rc1) | (!rc0 & rc1)) & !apple_safari_update_417__9__3 & ((rc0 & !rc1) | (!rc0 & rc1)) & !apple_safari_update_417__9__2 & ((rc0 & !rc1) | (!rc0 & rc1)) & apple_safari_update_any & ((rc0 & !rc1) | (!rc0 & rc1))))
+        apple_safari_version_3__2__0b => apple_safari_update_any
+        apple_safari_version_3__2__0b => ((rc0 & !rc1) | (!rc0 & rc1))
+        apple_safari_version_4__1__3 => apple_safari_update_any
+        apple_safari_version_4__1__3 => (rc0)
+        apple_safari_version_3__0__3 => (apple_safari_update_any)
+        apple_safari_version_3__1__1 => apple_safari_update_any
+        apple_safari_version_3__1__1 => ((rc0 & !rc1) | (!rc0 & rc1))
+        apple_safari_version_3__0__3b => (apple_safari_update_any)
+        apple_safari_version_5__0 => apple_safari_update_any
+        apple_safari_version_5__0 => (rc0)
+        apple_safari_version_4__0__2 => apple_safari_update_any
+        apple_safari_version_4__0__2 => ((rc0 & !rc1) | (!rc0 & rc1))
+        apple_safari_version_1__1__0 => apple_safari_update_any
+        apple_safari_version_1__1__0 => ((rc0 & !rc1) | (!rc0 & rc1))
+        apple_safari_version_1__2__3 => apple_safari_update_any
+        apple_safari_version_1__2__3 => ((rc0 & !rc1) | (!rc0 & rc1))
+        apple_safari_version_4__0 => ((apple_safari_update_any & ((rc0 & !rc1) | (!rc0 & rc1)) & !apple_safari_update_beta & ((rc0 & !rc1) | (!rc0 & rc1))) | (!apple_safari_update_any & ((rc0 & !rc1) | (!rc0 & rc1)) & apple_safari_update_beta & ((rc0 & !rc1) | (!rc0 & rc1))))
+        apple_safari_version_1__0__3 => ((apple_safari_update_85__8 & ((rc0 & !rc1) | (!rc0 & rc1)) & !apple_safari_update_any & ((rc0 & !rc1) | (!rc0 & rc1)) & !apple_safari_update_85__8__1 & ((rc0 & !rc1) | (!rc0 & rc1))) | (!apple_safari_update_85__8 & ((rc0 & !rc1) | (!rc0 & rc1)) & apple_safari_update_any & ((rc0 & !rc1) | (!rc0 & rc1)) & !apple_safari_update_85__8__1 & ((rc0 & !rc1) | (!rc0 & rc1))) | (!apple_safari_update_85__8 & ((rc0 & !rc1) | (!rc0 & rc1)) & !apple_safari_update_any & ((rc0 & !rc1) | (!rc0 & rc1)) & apple_safari_update_85__8__1 & ((rc0 & !rc1) | (!rc0 & rc1))))
+        apple_safari_version_1__3__1 => apple_safari_update_any
+        apple_safari_version_1__3__1 => ((rc0 & !rc1) | (!rc0 & rc1))
+        apple_safari_version_1__0__0b2 => apple_safari_update_any
+        apple_safari_version_1__0__0b2 => ((rc0 & !rc1) | (!rc0 & rc1))
+        apple_safari_version_2__0__0 => apple_safari_update_any
+        apple_safari_version_2__0__0 => ((rc0 & !rc1) | (!rc0 & rc1))
+        apple_safari_version_3__1__0b => (apple_safari_update_any)
+        apple_safari_version_4__0__3 => apple_safari_update_any
+        apple_safari_version_4__0__3 => ((rc0 & !rc1) | (!rc0 & rc1))
+        apple_safari_version_any => apple_safari_update_any
+        apple_safari_version_any => ((rc0 & !rc1) | (!rc0 & rc1))
+        apple_safari_version_4__0__4 => apple_safari_update_any
+        apple_safari_version_4__0__4 => ((rc0 & !rc1) | (!rc0 & rc1))
+        apple_safari_version_3__0__4 => (apple_safari_update_any)
+        apple_safari_version_2 => apple_safari_update_any
+        apple_safari_version_2 => ((rc0 & !rc1) | (!rc0 & rc1))
+        apple_safari_version_1__3__2 => ((apple_safari_update_312__5 & ((rc0 & !rc1) | (!rc0 & rc1)) & !apple_safari_update_312__6 & ((rc0 & !rc1) | (!rc0 & rc1)) & !apple_safari_update_any & ((rc0 & !rc1) | (!rc0 & rc1))) | (!apple_safari_update_312__5 & ((rc0 & !rc1) | (!rc0 & rc1)) & apple_safari_update_312__6 & ((rc0 & !rc1) | (!rc0 & rc1)) & !apple_safari_update_any & ((rc0 & !rc1) | (!rc0 & rc1))) | (!apple_safari_update_312__5 & ((rc0 & !rc1) | (!rc0 & rc1)) & !apple_safari_update_312__6 & ((rc0 & !rc1) | (!rc0 & rc1)) & apple_safari_update_any & ((rc0 & !rc1) | (!rc0 & rc1))))
+        apple_safari_version_3__0__2b => (apple_safari_update_any)
+        apple_safari_version_3__0__4b => (apple_safari_update_any)
+        apple_safari_version_3__2__2b => apple_safari_update_any
+        apple_safari_version_3__2__2b => ((rc0 & !rc1) | (!rc0 & rc1))
+        apple_safari_version_5__0__1 => apple_safari_update_any
+        apple_safari_version_5__0__1 => (rc0)
+        apple_safari_version_1__3__0 => apple_safari_update_any
+        apple_safari_version_1__3__0 => ((rc0 & !rc1) | (!rc0 & rc1))
+        apple_safari_version_1__0 => ((apple_safari_update_beta2 & ((rc0 & !rc1) | (!rc0 & rc1)) & !apple_safari_update_any & ((rc0 & !rc1) | (!rc0 & rc1)) & !apple_safari_update_beta & ((rc0 & !rc1) | (!rc0 & rc1))) | (!apple_safari_update_beta2 & ((rc0 & !rc1) | (!rc0 & rc1)) & apple_safari_update_any & ((rc0 & !rc1) | (!rc0 & rc1)) & !apple_safari_update_beta & ((rc0 & !rc1) | (!rc0 & rc1))) | (!apple_safari_update_beta2 & ((rc0 & !rc1) | (!rc0 & rc1)) & !apple_safari_update_any & ((rc0 & !rc1) | (!rc0 & rc1)) & apple_safari_update_beta & ((rc0 & !rc1) | (!rc0 & rc1))))
+        apple_safari_version_4__0__5 => apple_safari_update_any
+        apple_safari_version_4__0__5 => ((rc0 & !rc1) | (!rc0 & rc1))
+        apple_safari_version_1__0__2 => apple_safari_update_any
+        apple_safari_version_1__0__2 => ((rc0 & !rc1) | (!rc0 & rc1))
+        apple_safari_version_1__2__1 => apple_safari_update_any
+        apple_safari_version_1__2__1 => ((rc0 & !rc1) | (!rc0 & rc1))
+        apple_safari_version_4__1__2 => apple_safari_update_any
+        apple_safari_version_4__1__2 => ((rc0 & !rc1) | (!rc0 & rc1))
+        apple_safari_version_4__0__0b => apple_safari_update_any
+        apple_safari_version_4__0__0b => ((rc0 & !rc1) | (!rc0 & rc1))
+        apple_safari_version_1__0b1 => apple_safari_update_any
+        apple_safari_version_1__0b1 => ((rc0 & !rc1) | (!rc0 & rc1))
+        apple_safari_version_5__0__2 => apple_safari_update_any
+        apple_safari_version_5__0__2 => (rc0)
+        apple_safari_version_3__2__1b => apple_safari_update_any
+        apple_safari_version_3__2__1b => ((rc0 & !rc1) | (!rc0 & rc1))
+        apple_safari_version_2__0__4 => (apple_safari_update_any)
+        apple_safari_version_3__1__0 => (apple_safari_update_any)
+        apple_safari_version_3__2__1 => apple_safari_update_any
+        apple_safari_version_3__2__1 => ((rc0 & !rc1) | (!rc0 & rc1))
+        apple_safari_version_1__1__1 => apple_safari_update_any
+        apple_safari_version_1__1__1 => ((rc0 & !rc1) | (!rc0 & rc1))
+        apple_safari_version_2__0__2 => apple_safari_update_any
+        apple_safari_version_2__0__2 => ((rc0 & !rc1) | (!rc0 & rc1))
+        apple_safari_version_4__1 => apple_safari_update_any
+        apple_safari_version_4__1 => ((rc0 & !rc1) | (!rc0 & rc1))
+        apple_safari_version_3__0__0 => (apple_safari_update_any)
+        apple_safari_version_3__0__5 => apple_safari_update_any
+        apple_safari_version_3__0__5 => ((rc0 & !rc1) | (!rc0 & rc1))
+        apple_safari_version_3 => apple_safari_update_any
+        apple_safari_version_3 => ((rc0 & !rc1) | (!rc0 & rc1))
+        apple_safari_version_3__0__2 => (apple_safari_update_any)
+        apple_safari_version_3__0 => apple_safari_update_any
+        apple_safari_version_3__0 => ((rc0 & !rc1) | (!rc0 & rc1))
+        apple_safari_version_1__2__0 => apple_safari_update_any
+        apple_safari_version_1__2__0 => ((rc0 & !rc1) | (!rc0 & rc1))
+        apple_safari_version_4__1__1 => apple_safari_update_any
+        apple_safari_version_4__1__1 => ((rc0 & !rc1) | (!rc0 & rc1))
+        apple_safari_version_3__1__1b => apple_safari_update_any
+        apple_safari_version_3__1__1b => ((rc0 & !rc1) | (!rc0 & rc1))
+        apple_safari_version_3__1__2 => apple_safari_update_any
+        apple_safari_version_3__1__2 => ((rc0 & !rc1) | (!rc0 & rc1))
+        apple_safari_version_1__0__0 => apple_safari_update_any
+        apple_safari_version_1__0__0 => ((rc0 & !rc1) | (!rc0 & rc1))
+        apple_safari_version_1__2__2 => apple_safari_update_any
+        apple_safari_version_1__2__2 => ((rc0 & !rc1) | (!rc0 & rc1))
+        apple_webkit => ((rc0 & !rc1) | (!rc0 & rc1))

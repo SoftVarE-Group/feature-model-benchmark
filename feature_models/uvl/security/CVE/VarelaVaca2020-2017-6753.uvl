@@ -1,0 +1,180 @@
+features
+        CVE_2017_6753
+                mandatory
+                        types
+                                mandatory
+                                        application
+                        sources
+                                mandatory
+                                        nvd
+                        exploits
+                                optional
+                                        direct
+                                        indirect
+                        cisco
+                                alternative
+                                        cisco_webex__event__center
+                                                mandatory
+                                                        cisco_webex__event__center_version
+                                                                alternative
+                                                                        cisco_webex__event__center_version_t30__base
+                                                                        cisco_webex__event__center_version_t31__base
+                                                                        cisco_webex__event__center_version_t32__base
+                                        cisco_webex__meetings__server
+                                                mandatory
+                                                        cisco_webex__meetings__server_version
+                                                                alternative
+                                                                        cisco_webex__meetings__server_version_2__5__99__2
+                                                                        cisco_webex__meetings__server_version_1__5__base
+                                                                        cisco_webex__meetings__server_version_2__7__base
+                                                                        cisco_webex__meetings__server_version_1__1__base
+                                                                        cisco_webex__meetings__server_version_2__0__1__107
+                                                                        cisco_webex__meetings__server_version_2__0__base
+                                                                        cisco_webex__meetings__server_version_2__5__1__29
+                                                                        cisco_webex__meetings__server_version_2__8__base
+                                                                        cisco_webex__meetings__server_version_1__5__1__131
+                                                                        cisco_webex__meetings__server_version_2__6__1__39
+                                                                        cisco_webex__meetings__server_version_1__5__1__6
+                                                                        cisco_webex__meetings__server_version_2__7__1
+                                                                        cisco_webex__meetings__server_version_2__6__0
+                                                                        cisco_webex__meetings__server_version_2__5__base
+                                                                        cisco_webex__meetings__server_version_2__5__1__5
+                                        cisco_webex__meetings__server__2__5
+                                                mandatory
+                                                        cisco_webex__meetings__server__2__5_version
+                                                                alternative
+                                                                        cisco_webex__meetings__server__2__5_version_mr4
+                                                                        cisco_webex__meetings__server__2__5_version_mr1
+                                                                        cisco_webex__meetings__server__2__5_version_mr3
+                                                                        cisco_webex__meetings__server__2__5_version_mr6
+                                                                        cisco_webex__meetings__server__2__5_version_mr5
+                                                                        cisco_webex__meetings__server__2__5_version_mr2
+                                        cisco_webex__meetings__server__2__6
+                                                mandatory
+                                                        cisco_webex__meetings__server__2__6_version
+                                                                alternative
+                                                                        cisco_webex__meetings__server__2__6_version_mr1
+                                                                        cisco_webex__meetings__server__2__6_version_mr2
+                                                                        cisco_webex__meetings__server__2__6_version_mr3
+                                        cisco_webex__meetings__server__2__0__mr9__patch
+                                                mandatory
+                                                        cisco_webex__meetings__server__2__0__mr9__patch_version
+                                                                alternative
+                                                                        cisco_webex__meetings__server__2__0__mr9__patch_version_3
+                                                                        cisco_webex__meetings__server__2__0__mr9__patch_version_1
+                                                                        cisco_webex__meetings__server__2__0__mr9__patch_version_2
+                                        cisco_webex__meetings__server__2__0
+                                                mandatory
+                                                        cisco_webex__meetings__server__2__0_version
+                                                                alternative
+                                                                        cisco_webex__meetings__server__2__0_version_mr4
+                                                                        cisco_webex__meetings__server__2__0_version_mr3
+                                                                        cisco_webex__meetings__server__2__0_version_mr9
+                                                                        cisco_webex__meetings__server__2__0_version_mr6
+                                                                        cisco_webex__meetings__server__2__0_version_mr5
+                                                                        cisco_webex__meetings__server__2__0_version_mr8
+                                                                        cisco_webex__meetings__server__2__0_version_mr2
+                                                                        cisco_webex__meetings__server__2__0_version_mr7
+                                        cisco_webex__meetings__server__2__5__mr2__patch
+                                                mandatory
+                                                        cisco_webex__meetings__server__2__5__mr2__patch_version
+                                                                mandatory
+                                                                        cisco_webex__meetings__server__2__5__mr2__patch_version_1
+                                        cisco_webex__training__center
+                                                mandatory
+                                                        cisco_webex__training__center_version
+                                                                alternative
+                                                                        cisco_webex__training__center_version_t31__base
+                                                                        cisco_webex__training__center_version_t30__base
+                                                                        cisco_webex__training__center_version_t32__base
+                                        cisco_webex__meetings__server__2__6__mr3__patch
+                                                mandatory
+                                                        cisco_webex__meetings__server__2__6__mr3__patch_version
+                                                                alternative
+                                                                        cisco_webex__meetings__server__2__6__mr3__patch_version_1
+                                                                        cisco_webex__meetings__server__2__6__mr3__patch_version_2
+                                        cisco_webex__meetings__server__2__6__mr1__patch
+                                                mandatory
+                                                        cisco_webex__meetings__server__2__6__mr1__patch_version
+                                                                mandatory
+                                                                        cisco_webex__meetings__server__2__6__mr1__patch_version_1
+                                        cisco_webex__meetings__server__2__7__mr1__patch
+                                                mandatory
+                                                        cisco_webex__meetings__server__2__7__mr1__patch_version
+                                                                mandatory
+                                                                        cisco_webex__meetings__server__2__7__mr1__patch_version_1
+                                        cisco_webex__meeting__center
+                                                mandatory
+                                                        cisco_webex__meeting__center_version
+                                                                alternative
+                                                                        cisco_webex__meeting__center_version_t31__base
+                                                                        cisco_webex__meeting__center_version_t30__base
+                                                                        cisco_webex__meeting__center_version_t32__base
+                                        cisco_webex__meetings__server__2__5__mr5__patch
+                                                mandatory
+                                                        cisco_webex__meetings__server__2__5__mr5__patch_version
+                                                                mandatory
+                                                                        cisco_webex__meetings__server__2__5__mr5__patch_version_1
+                                        cisco_webex__meetings__server__2__0__mr8__patch
+                                                mandatory
+                                                        cisco_webex__meetings__server__2__0__mr8__patch_version
+                                                                mandatory
+                                                                        cisco_webex__meetings__server__2__0__mr8__patch_version_1
+                                        cisco_webex__meetings__server__2__6__mr2__patch
+                                                mandatory
+                                                        cisco_webex__meetings__server__2__6__mr2__patch_version
+                                                                mandatory
+                                                                        cisco_webex__meetings__server__2__6__mr2__patch_version_1
+                                        cisco_webex__support__center
+                                                mandatory
+                                                        cisco_webex__support__center_version
+                                                                alternative
+                                                                        cisco_webex__support__center_version_t31__base
+                                                                        cisco_webex__support__center_version_t30__base
+                                                                        cisco_webex__support__center_version_t32__base
+                                        cisco_webex__meetings__server__2__7__mr2__patch
+                                                mandatory
+                                                        cisco_webex__meetings__server__2__7__mr2__patch_version
+                                                                mandatory
+                                                                        cisco_webex__meetings__server__2__7__mr2__patch_version_1
+                                        cisco_webex__meetings__server__2__7
+                                                mandatory
+                                                        cisco_webex__meetings__server__2__7_version
+                                                                alternative
+                                                                        cisco_webex__meetings__server__2__7_version_mr1
+                                                                        cisco_webex__meetings__server__2__7_version_mr2
+                                        cisco_webex__meetings
+                                                mandatory
+                                                        cisco_webex__meetings_version
+                                                                mandatory
+                                                                        cisco_webex__meetings_version_t30__base
+                                        cisco_webex__meetings__server__2__5__mr6__patch
+                                                mandatory
+                                                        cisco_webex__meetings__server__2__5__mr6__patch_version
+                                                                alternative
+                                                                        cisco_webex__meetings__server__2__5__mr6__patch_version_4
+                                                                        cisco_webex__meetings__server__2__5__mr6__patch_version_3
+                                                                        cisco_webex__meetings__server__2__5__mr6__patch_version_1
+                                                                        cisco_webex__meetings__server__2__5__mr6__patch_version_2
+
+constraints
+        cisco_webex__event__center => application
+        cisco_webex__meetings__server => application
+        cisco_webex__meetings__server__2__5 => application
+        cisco_webex__meetings__server__2__6 => application
+        cisco_webex__meetings__server__2__0__mr9__patch => application
+        cisco_webex__meetings__server__2__0 => application
+        cisco_webex__meetings__server__2__5__mr2__patch => application
+        cisco_webex__training__center => application
+        cisco_webex__meetings__server__2__6__mr3__patch => application
+        cisco_webex__meetings__server__2__6__mr1__patch => application
+        cisco_webex__meetings__server__2__7__mr1__patch => application
+        cisco_webex__meeting__center => application
+        cisco_webex__meetings__server__2__5__mr5__patch => application
+        cisco_webex__meetings__server__2__0__mr8__patch => application
+        cisco_webex__meetings__server__2__6__mr2__patch => application
+        cisco_webex__support__center => application
+        cisco_webex__meetings__server__2__7__mr2__patch => application
+        cisco_webex__meetings__server__2__7 => application
+        cisco_webex__meetings => application
+        cisco_webex__meetings__server__2__5__mr6__patch => application

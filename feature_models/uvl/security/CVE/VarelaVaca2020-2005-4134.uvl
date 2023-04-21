@@ -1,0 +1,161 @@
+features
+        CVE_2005_4134
+                mandatory
+                        types
+                                mandatory
+                                        application
+                        sources
+                                mandatory
+                                        nvd
+                        exploits
+                                optional
+                                        direct
+                                                mandatory
+                                                        exploit_26762
+                                        indirect
+                alternative
+                        netscape
+                                mandatory
+                                        netscape_navigator
+                                                mandatory
+                                                        netscape_navigator_version
+                                                                alternative
+                                                                        netscape_navigator_version_4__61
+                                                                        netscape_navigator_version_2__02
+                                                                        netscape_navigator_version_6__2__3
+                                                                        netscape_navigator_version_7__2
+                                                                        netscape_navigator_version__navigator
+                                                                        netscape_navigator_version_4__03
+                                                                        netscape_navigator_version_7__0__2
+                                                                        netscape_navigator_version_any
+                                                                        netscape_navigator_version_6__1
+                                                                        netscape_navigator_version_6__0
+                                                                        netscape_navigator_version_4__02
+                                                                        netscape_navigator_version_4__05
+                                                                        netscape_navigator_version_4__04
+                                                                        netscape_navigator_version_4__77
+                                                                        netscape_navigator_version_4__08
+                                                                        netscape_navigator_version_7__1
+                                                                        netscape_navigator_version_4__0
+                                                                        netscape_navigator_version_6__2__2
+                                                                        netscape_navigator_version_4__7
+                                                                        netscape_navigator_version_4__5
+                                                                        netscape_navigator_version_4__07
+                                                                        netscape_navigator_version_6__2__1
+                                                                        netscape_navigator_version_8__0__3__3
+                                                                        netscape_navigator_version_4__75
+                                                                        netscape_navigator_version_8__0__3__4
+                                                                        netscape_navigator_version_7__0
+                                                                        netscape_navigator_version_4__01
+                                                                        netscape_navigator_version_7__02
+                                                                        netscape_navigator_version_8__0__40
+                                                                        netscape_navigator_version_4__06
+                                                                        netscape_navigator_version_6__2
+                                                                        netscape_navigator_version_6__01
+                        k_meleon__project
+                                mandatory
+                                        k_meleon__project_k_meleon
+                                                mandatory
+                                                        k_meleon__project_k_meleon_version
+                                                                alternative
+                                                                        k_meleon__project_k_meleon_version_0__9
+                                                                        k_meleon__project_k_meleon_version_0__8
+                                                                        k_meleon__project_k_meleon_version_0__8__1
+                                                                        k_meleon__project_k_meleon_version_0__7
+                                                                        k_meleon__project_k_meleon_version_0__7__service__pack__1
+                                                                        k_meleon__project_k_meleon_version_0__8__2
+                                                        k_meleon__project_k_meleon_update
+                                                                alternative
+                                                                        k_meleon__project_k_meleon_update_sp1
+                                                                        k_meleon__project_k_meleon_update_any
+                        mozilla
+                                alternative
+                                        mozilla_firefox
+                                                mandatory
+                                                        mozilla_firefox_version
+                                                                alternative
+                                                                        mozilla_firefox_version_0__6
+                                                                        mozilla_firefox_version_0__10
+                                                                        mozilla_firefox_version_0__7__1
+                                                                        mozilla_firefox_version_1__0__5
+                                                                        mozilla_firefox_version_1__0__4
+                                                                        mozilla_firefox_version_1__0__7
+                                                                        mozilla_firefox_version_1__0__1
+                                                                        mozilla_firefox_version_0__4
+                                                                        mozilla_firefox_version_1__0__6
+                                                                        mozilla_firefox_version_1__5
+                                                                        mozilla_firefox_version_0__8
+                                                                        mozilla_firefox_version_any
+                                                                        mozilla_firefox_version_0__9__3
+                                                                        mozilla_firefox_version_1__4__1
+                                                                        mozilla_firefox_version_0__9
+                                                                        mozilla_firefox_version_1__0__3
+                                                                        mozilla_firefox_version_0__7
+                                                                        mozilla_firefox_version_0__1
+                                                                        mozilla_firefox_version_0__2
+                                                                        mozilla_firefox_version_1__0
+                                                                        mozilla_firefox_version_0__6__1
+                                                                        mozilla_firefox_version_0__9__2
+                                                                        mozilla_firefox_version_0__9__1
+                                                                        mozilla_firefox_version_0__5
+                                                                        mozilla_firefox_version_0__10__1
+                                                                        mozilla_firefox_version_1__0__8
+                                                                        mozilla_firefox_version_1__0__2
+                                                                        mozilla_firefox_version_0__3
+                                                        mozilla_firefox_update
+                                                                alternative
+                                                                        mozilla_firefox_update_beta1
+                                                                        mozilla_firefox_update_rc
+                                                                        mozilla_firefox_update_any
+                                                                        mozilla_firefox_update_preview__release
+                                                                        mozilla_firefox_update_beta2
+                                        mozilla_mozilla__suite
+                                                mandatory
+                                                        mozilla_mozilla__suite_version
+                                                                alternative
+                                                                        mozilla_mozilla__suite_version_1__7__7
+                                                                        mozilla_mozilla__suite_version_1__7__6
+                                                                        mozilla_mozilla__suite_version_1__7__8
+                                                                        mozilla_mozilla__suite_version_any
+                                                                        mozilla_mozilla__suite_version_1__7__10
+                                                                        mozilla_mozilla__suite_version_1__7__12
+                                                                        mozilla_mozilla__suite_version_1__7__11
+
+constraints
+        netscape_navigator => application
+        k_meleon__project_k_meleon => application
+        mozilla_firefox => application
+        mozilla_mozilla__suite => application
+        k_meleon__project_k_meleon_version_0__9 => k_meleon__project_k_meleon_update_any
+        k_meleon__project_k_meleon_version_0__8 => k_meleon__project_k_meleon_update_any
+        k_meleon__project_k_meleon_version_0__8__1 => k_meleon__project_k_meleon_update_any
+        k_meleon__project_k_meleon_version_0__7__service__pack__1 => k_meleon__project_k_meleon_update_any
+        k_meleon__project_k_meleon_version_0__8__2 => k_meleon__project_k_meleon_update_any
+        mozilla_firefox_version_0__6 => mozilla_firefox_update_any
+        mozilla_firefox_version_0__10 => mozilla_firefox_update_any
+        mozilla_firefox_version_0__7__1 => mozilla_firefox_update_any
+        mozilla_firefox_version_1__0__5 => mozilla_firefox_update_any
+        mozilla_firefox_version_1__0__4 => mozilla_firefox_update_any
+        mozilla_firefox_version_1__0__7 => mozilla_firefox_update_any
+        mozilla_firefox_version_1__0__1 => mozilla_firefox_update_any
+        mozilla_firefox_version_0__4 => mozilla_firefox_update_any
+        mozilla_firefox_version_1__0__6 => mozilla_firefox_update_any
+        mozilla_firefox_version_1__5 => ((mozilla_firefox_update_beta1 & !mozilla_firefox_update_any & !mozilla_firefox_update_beta2) | (!mozilla_firefox_update_beta1 & mozilla_firefox_update_any & !mozilla_firefox_update_beta2) | (!mozilla_firefox_update_beta1 & !mozilla_firefox_update_any & mozilla_firefox_update_beta2))
+        mozilla_firefox_version_0__8 => mozilla_firefox_update_any
+        mozilla_firefox_version_any => mozilla_firefox_update_any
+        mozilla_firefox_version_0__9__3 => mozilla_firefox_update_any
+        mozilla_firefox_version_1__4__1 => mozilla_firefox_update_any
+        mozilla_firefox_version_0__9 => ((mozilla_firefox_update_rc & !mozilla_firefox_update_any) | (!mozilla_firefox_update_rc & mozilla_firefox_update_any))
+        mozilla_firefox_version_1__0__3 => mozilla_firefox_update_any
+        mozilla_firefox_version_0__7 => mozilla_firefox_update_any
+        mozilla_firefox_version_0__1 => mozilla_firefox_update_any
+        mozilla_firefox_version_0__2 => mozilla_firefox_update_any
+        mozilla_firefox_version_1__0 => ((mozilla_firefox_update_any & !mozilla_firefox_update_preview__release) | (!mozilla_firefox_update_any & mozilla_firefox_update_preview__release))
+        mozilla_firefox_version_0__6__1 => mozilla_firefox_update_any
+        mozilla_firefox_version_0__9__2 => mozilla_firefox_update_any
+        mozilla_firefox_version_0__9__1 => mozilla_firefox_update_any
+        mozilla_firefox_version_0__5 => mozilla_firefox_update_any
+        mozilla_firefox_version_0__10__1 => mozilla_firefox_update_any
+        mozilla_firefox_version_1__0__8 => mozilla_firefox_update_any
+        mozilla_firefox_version_1__0__2 => mozilla_firefox_update_any
+        mozilla_firefox_version_0__3 => mozilla_firefox_update_any

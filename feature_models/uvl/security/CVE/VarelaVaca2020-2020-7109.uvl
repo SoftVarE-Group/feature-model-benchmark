@@ -1,0 +1,743 @@
+features
+        CVE_2020_7109
+                mandatory
+                        types
+                                mandatory
+                                        application
+                        sources
+                                mandatory
+                                        nvd
+                        exploits
+                                optional
+                                        direct
+                                        indirect
+                        elementor
+                                mandatory
+                                        elementor_elementor__page__builder
+                                                mandatory
+                                                        elementor_elementor__page__builder_version
+                                                                alternative
+                                                                        elementor_elementor__page__builder_version_1__8__1
+                                                                        elementor_elementor__page__builder_version_1__1__4
+                                                                        elementor_elementor__page__builder_version_any
+                                                                        elementor_elementor__page__builder_version_1__0__11
+                                                                        elementor_elementor__page__builder_version_2__2__4
+                                                                        elementor_elementor__page__builder_version_2__2__5
+                                                                        elementor_elementor__page__builder_version_1__4__10
+                                                                        elementor_elementor__page__builder_version_2__0__4
+                                                                        elementor_elementor__page__builder_version_2__1__2
+                                                                        elementor_elementor__page__builder_version_2__5__2
+                                                                        elementor_elementor__page__builder_version_1__5__6
+                                                                        elementor_elementor__page__builder_version_2__4__4
+                                                                        elementor_elementor__page__builder_version_0__6__1
+                                                                        elementor_elementor__page__builder_version_0__10__0
+                                                                        elementor_elementor__page__builder_version_2__3__6
+                                                                        elementor_elementor__page__builder_version_2__5__0
+                                                                        elementor_elementor__page__builder_version_1__5__0
+                                                                        elementor_elementor__page__builder_version_2__0__10
+                                                                        elementor_elementor__page__builder_version_2__3__1
+                                                                        elementor_elementor__page__builder_version_1__5__3
+                                                                        elementor_elementor__page__builder_version_2__6__5
+                                                                        elementor_elementor__page__builder_version_0__3__1
+                                                                        elementor_elementor__page__builder_version_2__3__5
+                                                                        elementor_elementor__page__builder_version_1__13__2
+                                                                        elementor_elementor__page__builder_version_0__10__5
+                                                                        elementor_elementor__page__builder_version_1__9__3
+                                                                        elementor_elementor__page__builder_version_1__3__3
+                                                                        elementor_elementor__page__builder_version_2__2__2
+                                                                        elementor_elementor__page__builder_version_1__9__5
+                                                                        elementor_elementor__page__builder_version_1__2__1
+                                                                        elementor_elementor__page__builder_version_2__0__16
+                                                                        elementor_elementor__page__builder_version_2__5__15
+                                                                        elementor_elementor__page__builder_version_1__2__6
+                                                                        elementor_elementor__page__builder_version_2__7__1
+                                                                        elementor_elementor__page__builder_version_2__6__1
+                                                                        elementor_elementor__page__builder_version_1__2__2
+                                                                        elementor_elementor__page__builder_version_1__7__6
+                                                                        elementor_elementor__page__builder_version_1__9__2
+                                                                        elementor_elementor__page__builder_version_0__11__2
+                                                                        elementor_elementor__page__builder_version_0__9__0
+                                                                        elementor_elementor__page__builder_version_1__4__4
+                                                                        elementor_elementor__page__builder_version_1__15__4
+                                                                        elementor_elementor__page__builder_version_2__0__13
+                                                                        elementor_elementor__page__builder_version_1__1__3
+                                                                        elementor_elementor__page__builder_version_0__10__2
+                                                                        elementor_elementor__page__builder_version_2__2__3
+                                                                        elementor_elementor__page__builder_version_1__8__7
+                                                                        elementor_elementor__page__builder_version_1__15__1
+                                                                        elementor_elementor__page__builder_version_1__0__1
+                                                                        elementor_elementor__page__builder_version_1__0__9
+                                                                        elementor_elementor__page__builder_version_0__4__0
+                                                                        elementor_elementor__page__builder_version_1__1__6
+                                                                        elementor_elementor__page__builder_version_2__5__4
+                                                                        elementor_elementor__page__builder_version_1__1__1
+                                                                        elementor_elementor__page__builder_version_1__7__4
+                                                                        elementor_elementor__page__builder_version_2__6__6
+                                                                        elementor_elementor__page__builder_version_1__8__4
+                                                                        elementor_elementor__page__builder_version_1__12__3
+                                                                        elementor_elementor__page__builder_version_2__3__0
+                                                                        elementor_elementor__page__builder_version_1__2__0
+                                                                        elementor_elementor__page__builder_version_2__0__2
+                                                                        elementor_elementor__page__builder_version_2__6__7
+                                                                        elementor_elementor__page__builder_version_2__0__3
+                                                                        elementor_elementor__page__builder_version_2__1__6
+                                                                        elementor_elementor__page__builder_version_2__8__1
+                                                                        elementor_elementor__page__builder_version_0__7__3
+                                                                        elementor_elementor__page__builder_version_2__5__16
+                                                                        elementor_elementor__page__builder_version_1__1__5
+                                                                        elementor_elementor__page__builder_version_1__10__1
+                                                                        elementor_elementor__page__builder_version_0__9__3
+                                                                        elementor_elementor__page__builder_version_2__3__7
+                                                                        elementor_elementor__page__builder_version_1__1__7
+                                                                        elementor_elementor__page__builder_version_1__1__0
+                                                                        elementor_elementor__page__builder_version_2__6__2
+                                                                        elementor_elementor__page__builder_version_0__7__1
+                                                                        elementor_elementor__page__builder_version_1__4__7
+                                                                        elementor_elementor__page__builder_version_0__10__7
+                                                                        elementor_elementor__page__builder_version_1__6__2
+                                                                        elementor_elementor__page__builder_version_1__5__8
+                                                                        elementor_elementor__page__builder_version_0__6__0
+                                                                        elementor_elementor__page__builder_version_0__1__5
+                                                                        elementor_elementor__page__builder_version_1__7__12
+                                                                        elementor_elementor__page__builder_version_1__13__1
+                                                                        elementor_elementor__page__builder_version_1__3__2
+                                                                        elementor_elementor__page__builder_version_2__6__4
+                                                                        elementor_elementor__page__builder_version_2__3__2
+                                                                        elementor_elementor__page__builder_version_2__5__3
+                                                                        elementor_elementor__page__builder_version_1__14__1
+                                                                        elementor_elementor__page__builder_version_1__9__6
+                                                                        elementor_elementor__page__builder_version_2__0__14
+                                                                        elementor_elementor__page__builder_version_0__5__0
+                                                                        elementor_elementor__page__builder_version_1__3__4
+                                                                        elementor_elementor__page__builder_version_2__8__2
+                                                                        elementor_elementor__page__builder_version_1__0__12
+                                                                        elementor_elementor__page__builder_version_2__0__7
+                                                                        elementor_elementor__page__builder_version_0__3__2
+                                                                        elementor_elementor__page__builder_version_0__1__6
+                                                                        elementor_elementor__page__builder_version_2__6__3
+                                                                        elementor_elementor__page__builder_version_0__2__4
+                                                                        elementor_elementor__page__builder_version_1__0__7
+                                                                        elementor_elementor__page__builder_version_2__8__0
+                                                                        elementor_elementor__page__builder_version_0__5__2
+                                                                        elementor_elementor__page__builder_version_2__4__1
+                                                                        elementor_elementor__page__builder_version_1__5__4
+                                                                        elementor_elementor__page__builder_version_2__0__11
+                                                                        elementor_elementor__page__builder_version_2__5__7
+                                                                        elementor_elementor__page__builder_version_0__6__5
+                                                                        elementor_elementor__page__builder_version_1__4__0
+                                                                        elementor_elementor__page__builder_version_0__8__1
+                                                                        elementor_elementor__page__builder_version_2__4__3
+                                                                        elementor_elementor__page__builder_version_1__8__3
+                                                                        elementor_elementor__page__builder_version_1__7__5
+                                                                        elementor_elementor__page__builder_version_0__6__2
+                                                                        elementor_elementor__page__builder_version_1__7__7
+                                                                        elementor_elementor__page__builder_version_1__8__11
+                                                                        elementor_elementor__page__builder_version_1__3__1
+                                                                        elementor_elementor__page__builder_version_2__4__6
+                                                                        elementor_elementor__page__builder_version_1__2__4
+                                                                        elementor_elementor__page__builder_version_2__1__7
+                                                                        elementor_elementor__page__builder_version_2__0__6
+                                                                        elementor_elementor__page__builder_version_2__7__6
+                                                                        elementor_elementor__page__builder_version_1__12__1
+                                                                        elementor_elementor__page__builder_version_1__6__5
+                                                                        elementor_elementor__page__builder_version_2__2__6
+                                                                        elementor_elementor__page__builder_version_1__9__8
+                                                                        elementor_elementor__page__builder_version_1__0__5
+                                                                        elementor_elementor__page__builder_version_0__1__1
+                                                                        elementor_elementor__page__builder_version_0__10__3
+                                                                        elementor_elementor__page__builder_version_2__3__3
+                                                                        elementor_elementor__page__builder_version_1__7__10
+                                                                        elementor_elementor__page__builder_version_1__7__9
+                                                                        elementor_elementor__page__builder_version_2__5__1
+                                                                        elementor_elementor__page__builder_version_2__3__8
+                                                                        elementor_elementor__page__builder_version_0__4__1
+                                                                        elementor_elementor__page__builder_version_1__13__0
+                                                                        elementor_elementor__page__builder_version_1__7__0
+                                                                        elementor_elementor__page__builder_version_2__4__0
+                                                                        elementor_elementor__page__builder_version_2__3__4
+                                                                        elementor_elementor__page__builder_version_0__7__0
+                                                                        elementor_elementor__page__builder_version_2__5__13
+                                                                        elementor_elementor__page__builder_version_0__1__3
+                                                                        elementor_elementor__page__builder_version_1__8__0
+                                                                        elementor_elementor__page__builder_version_1__5__1
+                                                                        elementor_elementor__page__builder_version_0__2__1
+                                                                        elementor_elementor__page__builder_version_1__2__3
+                                                                        elementor_elementor__page__builder_version_2__5__14
+                                                                        elementor_elementor__page__builder_version_2__8__3
+                                                                        elementor_elementor__page__builder_version_1__7__8
+                                                                        elementor_elementor__page__builder_version_2__0__0
+                                                                        elementor_elementor__page__builder_version_1__1__2
+                                                                        elementor_elementor__page__builder_version_1__15__6
+                                                                        elementor_elementor__page__builder_version_1__5__5
+                                                                        elementor_elementor__page__builder_version_2__0__9
+                                                                        elementor_elementor__page__builder_version_2__7__2
+                                                                        elementor_elementor__page__builder_version_1__4__2
+                                                                        elementor_elementor__page__builder_version_1__7__3
+                                                                        elementor_elementor__page__builder_version_1__0__3
+                                                                        elementor_elementor__page__builder_version_2__0__12
+                                                                        elementor_elementor__page__builder_version_1__8__2
+                                                                        elementor_elementor__page__builder_version_0__2__0
+                                                                        elementor_elementor__page__builder_version_2__5__9
+                                                                        elementor_elementor__page__builder_version_2__6__0
+                                                                        elementor_elementor__page__builder_version_0__1__7
+                                                                        elementor_elementor__page__builder_version_1__7__1
+                                                                        elementor_elementor__page__builder_version_1__4__6
+                                                                        elementor_elementor__page__builder_version_1__0__2
+                                                                        elementor_elementor__page__builder_version_1__7__2
+                                                                        elementor_elementor__page__builder_version_0__11__0
+                                                                        elementor_elementor__page__builder_version_1__8__8
+                                                                        elementor_elementor__page__builder_version_1__10__2
+                                                                        elementor_elementor__page__builder_version_1__15__3
+                                                                        elementor_elementor__page__builder_version_2__1__3
+                                                                        elementor_elementor__page__builder_version_2__5__10
+                                                                        elementor_elementor__page__builder_version_1__5__2
+                                                                        elementor_elementor__page__builder_version_1__15__2
+                                                                        elementor_elementor__page__builder_version_1__4__1
+                                                                        elementor_elementor__page__builder_version_2__0__8
+                                                                        elementor_elementor__page__builder_version_0__10__1
+                                                                        elementor_elementor__page__builder_version_2__4__2
+                                                                        elementor_elementor__page__builder_version_1__15__0
+                                                                        elementor_elementor__page__builder_version_1__6__1
+                                                                        elementor_elementor__page__builder_version_2__7__0
+                                                                        elementor_elementor__page__builder_version_0__2__3
+                                                                        elementor_elementor__page__builder_version_0__9__1
+                                                                        elementor_elementor__page__builder_version_2__6__8
+                                                                        elementor_elementor__page__builder_version_2__1__8
+                                                                        elementor_elementor__page__builder_version_2__5__6
+                                                                        elementor_elementor__page__builder_version_1__8__9
+                                                                        elementor_elementor__page__builder_version_2__1__1
+                                                                        elementor_elementor__page__builder_version_1__8__10
+                                                                        elementor_elementor__page__builder_version_2__2__1
+                                                                        elementor_elementor__page__builder_version_0__10__4
+                                                                        elementor_elementor__page__builder_version_2__4__7
+                                                                        elementor_elementor__page__builder_version_1__8__6
+                                                                        elementor_elementor__page__builder_version_2__4__5
+                                                                        elementor_elementor__page__builder_version_0__2__5
+                                                                        elementor_elementor__page__builder_version_0__2__2
+                                                                        elementor_elementor__page__builder_version_1__12__2
+                                                                        elementor_elementor__page__builder_version_0__11__1
+                                                                        elementor_elementor__page__builder_version_1__4__8
+                                                                        elementor_elementor__page__builder_version_1__5__7
+                                                                        elementor_elementor__page__builder_version_1__8__5
+                                                                        elementor_elementor__page__builder_version_1__9__7
+                                                                        elementor_elementor__page__builder_version_2__7__4
+                                                                        elementor_elementor__page__builder_version_1__0__4
+                                                                        elementor_elementor__page__builder_version_1__6__4
+                                                                        elementor_elementor__page__builder_version_0__1__4
+                                                                        elementor_elementor__page__builder_version_2__5__8
+                                                                        elementor_elementor__page__builder_version_1__3__0
+                                                                        elementor_elementor__page__builder_version_1__4__5
+                                                                        elementor_elementor__page__builder_version_1__6__0
+                                                                        elementor_elementor__page__builder_version_1__14__0
+                                                                        elementor_elementor__page__builder_version_1__9__0
+                                                                        elementor_elementor__page__builder_version_1__0__6
+                                                                        elementor_elementor__page__builder_version_1__0__8
+                                                                        elementor_elementor__page__builder_version_1__12__0
+                                                                        elementor_elementor__page__builder_version_1__15__5
+                                                                        elementor_elementor__page__builder_version_1__7__11
+                                                                        elementor_elementor__page__builder_version_1__9__1
+                                                                        elementor_elementor__page__builder_version_1__0__10
+                                                                        elementor_elementor__page__builder_version_0__1__0
+                                                                        elementor_elementor__page__builder_version_0__5__1
+                                                                        elementor_elementor__page__builder_version_2__5__12
+                                                                        elementor_elementor__page__builder_version_1__4__3
+                                                                        elementor_elementor__page__builder_version_2__2__0
+                                                                        elementor_elementor__page__builder_version_2__7__5
+                                                                        elementor_elementor__page__builder_version_1__0__0
+                                                                        elementor_elementor__page__builder_version_2__0__1
+                                                                        elementor_elementor__page__builder_version_2__1__0
+                                                                        elementor_elementor__page__builder_version_0__3__0
+                                                                        elementor_elementor__page__builder_version_2__5__11
+                                                                        elementor_elementor__page__builder_version_1__5__9
+                                                                        elementor_elementor__page__builder_version_0__7__4
+                                                                        elementor_elementor__page__builder_version_1__8__12
+                                                                        elementor_elementor__page__builder_version_0__6__6
+                                                                        elementor_elementor__page__builder_version_0__8__0
+                                                                        elementor_elementor__page__builder_version_2__5__5
+                                                                        elementor_elementor__page__builder_version_1__4__9
+                                                                        elementor_elementor__page__builder_version_0__9__2
+                                                                        elementor_elementor__page__builder_version_2__2__7
+                                                                        elementor_elementor__page__builder_version_2__7__3
+                                                                        elementor_elementor__page__builder_version_1__9__4
+                                                                        elementor_elementor__page__builder_version_0__7__2
+                                                                        elementor_elementor__page__builder_version_2__1__4
+                                                                        elementor_elementor__page__builder_version_0__6__4
+                                                                        elementor_elementor__page__builder_version_2__0__5
+                                                                        elementor_elementor__page__builder_version_2__0__15
+                                                                        elementor_elementor__page__builder_version_1__2__5
+                                                                        elementor_elementor__page__builder_version_2__1__5
+                                                                        elementor_elementor__page__builder_version_1__3__5
+                                                                        elementor_elementor__page__builder_version_1__6__3
+                                                                        elementor_elementor__page__builder_version_0__1__2
+                                                                        elementor_elementor__page__builder_version_0__10__6
+                                                                        elementor_elementor__page__builder_version_1__10__0
+                                                                        elementor_elementor__page__builder_version_0__6__3
+                                                                        elementor_elementor__page__builder_version_1__11__0
+                                                        elementor_elementor__page__builder_update
+                                                                alternative
+                                                                        elementor_elementor__page__builder_update_rc2
+                                                                        elementor_elementor__page__builder_update_beta1
+                                                                        elementor_elementor__page__builder_update_beta3
+                                                                        elementor_elementor__page__builder_update_any
+                                                                        elementor_elementor__page__builder_update_rc3
+                                                                        elementor_elementor__page__builder_update_rc4
+                                                                        elementor_elementor__page__builder_update_beta5
+                                                                        elementor_elementor__page__builder_update_beta2
+                                                                        elementor_elementor__page__builder_update_rc1
+                                                                        elementor_elementor__page__builder_update_beta4
+                                                        elementor_elementor__page__builder_sw__edition
+                                                                alternative
+                                                                        elementor_elementor__page__builder_sw__edition_any
+                                                                        elementor_elementor__page__builder_sw__edition_pro
+                                                        elementor_elementor__page__builder_target__sw
+                                                                mandatory
+                                                                        elementor_elementor__page__builder_target__sw_wordpress
+
+constraints
+        elementor_elementor__page__builder => application
+        elementor_elementor__page__builder_version_1__8__1 => (elementor_elementor__page__builder_update_any)
+        elementor_elementor__page__builder_version_1__1__4 => elementor_elementor__page__builder_update_any
+        elementor_elementor__page__builder_version_1__1__4 => elementor_elementor__page__builder_sw__edition_any
+        elementor_elementor__page__builder_version_any => (elementor_elementor__page__builder_update_any)
+        elementor_elementor__page__builder_version_1__0__11 => elementor_elementor__page__builder_update_any
+        elementor_elementor__page__builder_version_1__0__11 => elementor_elementor__page__builder_sw__edition_any
+        elementor_elementor__page__builder_version_2__2__4 => elementor_elementor__page__builder_update_any
+        elementor_elementor__page__builder_version_2__2__4 => elementor_elementor__page__builder_sw__edition_any
+        elementor_elementor__page__builder_version_2__2__5 => elementor_elementor__page__builder_update_any
+        elementor_elementor__page__builder_version_2__2__5 => elementor_elementor__page__builder_sw__edition_any
+        elementor_elementor__page__builder_version_1__4__10 => elementor_elementor__page__builder_update_any
+        elementor_elementor__page__builder_version_1__4__10 => elementor_elementor__page__builder_sw__edition_any
+        elementor_elementor__page__builder_version_2__0__4 => (elementor_elementor__page__builder_update_any)
+        elementor_elementor__page__builder_version_2__1__2 => elementor_elementor__page__builder_update_any
+        elementor_elementor__page__builder_version_2__1__2 => elementor_elementor__page__builder_sw__edition_any
+        elementor_elementor__page__builder_version_2__5__2 => elementor_elementor__page__builder_update_any
+        elementor_elementor__page__builder_version_2__5__2 => elementor_elementor__page__builder_sw__edition_any
+        elementor_elementor__page__builder_version_1__5__6 => elementor_elementor__page__builder_update_any
+        elementor_elementor__page__builder_version_1__5__6 => elementor_elementor__page__builder_sw__edition_pro
+        elementor_elementor__page__builder_version_2__4__4 => elementor_elementor__page__builder_update_any
+        elementor_elementor__page__builder_version_2__4__4 => elementor_elementor__page__builder_sw__edition_any
+        elementor_elementor__page__builder_version_0__6__1 => elementor_elementor__page__builder_update_any
+        elementor_elementor__page__builder_version_0__6__1 => elementor_elementor__page__builder_sw__edition_any
+        elementor_elementor__page__builder_version_0__10__0 => elementor_elementor__page__builder_update_any
+        elementor_elementor__page__builder_version_0__10__0 => elementor_elementor__page__builder_sw__edition_any
+        elementor_elementor__page__builder_version_2__3__6 => elementor_elementor__page__builder_update_any
+        elementor_elementor__page__builder_version_2__3__6 => elementor_elementor__page__builder_sw__edition_any
+        elementor_elementor__page__builder_version_2__5__0 => ((elementor_elementor__page__builder_update_beta1 & elementor_elementor__page__builder_sw__edition_any & !elementor_elementor__page__builder_update_beta3 & elementor_elementor__page__builder_sw__edition_any & !elementor_elementor__page__builder_update_any & elementor_elementor__page__builder_sw__edition_any & !elementor_elementor__page__builder_update_beta2 & elementor_elementor__page__builder_sw__edition_any & !elementor_elementor__page__builder_update_beta4 & elementor_elementor__page__builder_sw__edition_any) | (!elementor_elementor__page__builder_update_beta1 & elementor_elementor__page__builder_sw__edition_any & elementor_elementor__page__builder_update_beta3 & elementor_elementor__page__builder_sw__edition_any & !elementor_elementor__page__builder_update_any & elementor_elementor__page__builder_sw__edition_any & !elementor_elementor__page__builder_update_beta2 & elementor_elementor__page__builder_sw__edition_any & !elementor_elementor__page__builder_update_beta4 & elementor_elementor__page__builder_sw__edition_any) | (!elementor_elementor__page__builder_update_beta1 & elementor_elementor__page__builder_sw__edition_any & !elementor_elementor__page__builder_update_beta3 & elementor_elementor__page__builder_sw__edition_any & elementor_elementor__page__builder_update_any & elementor_elementor__page__builder_sw__edition_any & !elementor_elementor__page__builder_update_beta2 & elementor_elementor__page__builder_sw__edition_any & !elementor_elementor__page__builder_update_beta4 & elementor_elementor__page__builder_sw__edition_any) | (!elementor_elementor__page__builder_update_beta1 & elementor_elementor__page__builder_sw__edition_any & !elementor_elementor__page__builder_update_beta3 & elementor_elementor__page__builder_sw__edition_any & !elementor_elementor__page__builder_update_any & elementor_elementor__page__builder_sw__edition_any & elementor_elementor__page__builder_update_beta2 & elementor_elementor__page__builder_sw__edition_any & !elementor_elementor__page__builder_update_beta4 & elementor_elementor__page__builder_sw__edition_any) | (!elementor_elementor__page__builder_update_beta1 & elementor_elementor__page__builder_sw__edition_any & !elementor_elementor__page__builder_update_beta3 & elementor_elementor__page__builder_sw__edition_any & !elementor_elementor__page__builder_update_any & elementor_elementor__page__builder_sw__edition_any & !elementor_elementor__page__builder_update_beta2 & elementor_elementor__page__builder_sw__edition_any & elementor_elementor__page__builder_update_beta4 & elementor_elementor__page__builder_sw__edition_any))
+        elementor_elementor__page__builder_version_1__5__0 => ((elementor_elementor__page__builder_update_rc2 & elementor_elementor__page__builder_sw__edition_any & !elementor_elementor__page__builder_update_rc3 & elementor_elementor__page__builder_sw__edition_any & !elementor_elementor__page__builder_update_rc1 & elementor_elementor__page__builder_sw__edition_any) | (!elementor_elementor__page__builder_update_rc2 & elementor_elementor__page__builder_sw__edition_any & elementor_elementor__page__builder_update_rc3 & elementor_elementor__page__builder_sw__edition_any & !elementor_elementor__page__builder_update_rc1 & elementor_elementor__page__builder_sw__edition_any) | (!elementor_elementor__page__builder_update_rc2 & elementor_elementor__page__builder_sw__edition_any & !elementor_elementor__page__builder_update_rc3 & elementor_elementor__page__builder_sw__edition_any & elementor_elementor__page__builder_update_rc1 & elementor_elementor__page__builder_sw__edition_any))
+        elementor_elementor__page__builder_version_2__0__10 => (elementor_elementor__page__builder_update_any)
+        elementor_elementor__page__builder_version_2__3__1 => elementor_elementor__page__builder_update_any
+        elementor_elementor__page__builder_version_2__3__1 => elementor_elementor__page__builder_sw__edition_any
+        elementor_elementor__page__builder_version_1__5__3 => (elementor_elementor__page__builder_update_any)
+        elementor_elementor__page__builder_version_2__6__5 => elementor_elementor__page__builder_update_any
+        elementor_elementor__page__builder_version_2__6__5 => elementor_elementor__page__builder_sw__edition_any
+        elementor_elementor__page__builder_version_0__3__1 => elementor_elementor__page__builder_update_any
+        elementor_elementor__page__builder_version_0__3__1 => elementor_elementor__page__builder_sw__edition_any
+        elementor_elementor__page__builder_version_2__3__5 => elementor_elementor__page__builder_update_any
+        elementor_elementor__page__builder_version_2__3__5 => elementor_elementor__page__builder_sw__edition_any
+        elementor_elementor__page__builder_version_1__13__2 => elementor_elementor__page__builder_update_any
+        elementor_elementor__page__builder_version_1__13__2 => elementor_elementor__page__builder_sw__edition_pro
+        elementor_elementor__page__builder_version_0__10__5 => elementor_elementor__page__builder_update_any
+        elementor_elementor__page__builder_version_0__10__5 => elementor_elementor__page__builder_sw__edition_any
+        elementor_elementor__page__builder_version_1__9__3 => (elementor_elementor__page__builder_update_any)
+        elementor_elementor__page__builder_version_1__3__3 => elementor_elementor__page__builder_update_any
+        elementor_elementor__page__builder_version_1__3__3 => elementor_elementor__page__builder_sw__edition_any
+        elementor_elementor__page__builder_version_2__2__2 => elementor_elementor__page__builder_update_any
+        elementor_elementor__page__builder_version_2__2__2 => elementor_elementor__page__builder_sw__edition_any
+        elementor_elementor__page__builder_version_1__9__5 => (elementor_elementor__page__builder_update_any)
+        elementor_elementor__page__builder_version_1__2__1 => (elementor_elementor__page__builder_update_any)
+        elementor_elementor__page__builder_version_2__0__16 => elementor_elementor__page__builder_update_any
+        elementor_elementor__page__builder_version_2__0__16 => elementor_elementor__page__builder_sw__edition_any
+        elementor_elementor__page__builder_version_2__5__15 => elementor_elementor__page__builder_update_any
+        elementor_elementor__page__builder_version_2__5__15 => elementor_elementor__page__builder_sw__edition_any
+        elementor_elementor__page__builder_version_1__2__6 => elementor_elementor__page__builder_update_any
+        elementor_elementor__page__builder_version_1__2__6 => elementor_elementor__page__builder_sw__edition_pro
+        elementor_elementor__page__builder_version_2__7__1 => elementor_elementor__page__builder_update_any
+        elementor_elementor__page__builder_version_2__7__1 => elementor_elementor__page__builder_sw__edition_any
+        elementor_elementor__page__builder_version_2__6__1 => elementor_elementor__page__builder_update_any
+        elementor_elementor__page__builder_version_2__6__1 => elementor_elementor__page__builder_sw__edition_any
+        elementor_elementor__page__builder_version_1__2__2 => (elementor_elementor__page__builder_update_any)
+        elementor_elementor__page__builder_version_1__7__6 => elementor_elementor__page__builder_update_any
+        elementor_elementor__page__builder_version_1__7__6 => elementor_elementor__page__builder_sw__edition_any
+        elementor_elementor__page__builder_version_1__9__2 => (elementor_elementor__page__builder_update_any)
+        elementor_elementor__page__builder_version_0__11__2 => elementor_elementor__page__builder_update_any
+        elementor_elementor__page__builder_version_0__11__2 => elementor_elementor__page__builder_sw__edition_any
+        elementor_elementor__page__builder_version_0__9__0 => elementor_elementor__page__builder_update_any
+        elementor_elementor__page__builder_version_0__9__0 => elementor_elementor__page__builder_sw__edition_any
+        elementor_elementor__page__builder_version_1__4__4 => (elementor_elementor__page__builder_update_any)
+        elementor_elementor__page__builder_version_1__15__4 => elementor_elementor__page__builder_update_any
+        elementor_elementor__page__builder_version_1__15__4 => elementor_elementor__page__builder_sw__edition_pro
+        elementor_elementor__page__builder_version_2__0__13 => elementor_elementor__page__builder_update_any
+        elementor_elementor__page__builder_version_2__0__13 => elementor_elementor__page__builder_sw__edition_any
+        elementor_elementor__page__builder_version_1__1__3 => elementor_elementor__page__builder_update_any
+        elementor_elementor__page__builder_version_1__1__3 => elementor_elementor__page__builder_sw__edition_any
+        elementor_elementor__page__builder_version_0__10__2 => elementor_elementor__page__builder_update_any
+        elementor_elementor__page__builder_version_0__10__2 => elementor_elementor__page__builder_sw__edition_any
+        elementor_elementor__page__builder_version_2__2__3 => elementor_elementor__page__builder_update_any
+        elementor_elementor__page__builder_version_2__2__3 => elementor_elementor__page__builder_sw__edition_any
+        elementor_elementor__page__builder_version_1__8__7 => elementor_elementor__page__builder_update_any
+        elementor_elementor__page__builder_version_1__8__7 => elementor_elementor__page__builder_sw__edition_any
+        elementor_elementor__page__builder_version_1__15__1 => elementor_elementor__page__builder_update_any
+        elementor_elementor__page__builder_version_1__15__1 => elementor_elementor__page__builder_sw__edition_pro
+        elementor_elementor__page__builder_version_1__0__1 => (elementor_elementor__page__builder_update_any)
+        elementor_elementor__page__builder_version_1__0__9 => (elementor_elementor__page__builder_update_any)
+        elementor_elementor__page__builder_version_0__4__0 => elementor_elementor__page__builder_update_any
+        elementor_elementor__page__builder_version_0__4__0 => elementor_elementor__page__builder_sw__edition_any
+        elementor_elementor__page__builder_version_1__1__6 => elementor_elementor__page__builder_update_any
+        elementor_elementor__page__builder_version_1__1__6 => elementor_elementor__page__builder_sw__edition_any
+        elementor_elementor__page__builder_version_2__5__4 => elementor_elementor__page__builder_update_any
+        elementor_elementor__page__builder_version_2__5__4 => elementor_elementor__page__builder_sw__edition_any
+        elementor_elementor__page__builder_version_1__1__1 => (elementor_elementor__page__builder_update_any)
+        elementor_elementor__page__builder_version_1__7__4 => elementor_elementor__page__builder_update_any
+        elementor_elementor__page__builder_version_1__7__4 => elementor_elementor__page__builder_sw__edition_any
+        elementor_elementor__page__builder_version_2__6__6 => elementor_elementor__page__builder_update_any
+        elementor_elementor__page__builder_version_2__6__6 => elementor_elementor__page__builder_sw__edition_any
+        elementor_elementor__page__builder_version_1__8__4 => elementor_elementor__page__builder_update_any
+        elementor_elementor__page__builder_version_1__8__4 => elementor_elementor__page__builder_sw__edition_any
+        elementor_elementor__page__builder_version_1__12__3 => elementor_elementor__page__builder_update_any
+        elementor_elementor__page__builder_version_1__12__3 => elementor_elementor__page__builder_sw__edition_pro
+        elementor_elementor__page__builder_version_2__3__0 => ((elementor_elementor__page__builder_update_beta1 & elementor_elementor__page__builder_sw__edition_any & !elementor_elementor__page__builder_update_beta3 & elementor_elementor__page__builder_sw__edition_any & !elementor_elementor__page__builder_update_any & elementor_elementor__page__builder_sw__edition_any & !elementor_elementor__page__builder_update_beta5 & elementor_elementor__page__builder_sw__edition_any & !elementor_elementor__page__builder_update_beta2 & elementor_elementor__page__builder_sw__edition_any & !elementor_elementor__page__builder_update_beta4 & elementor_elementor__page__builder_sw__edition_any) | (!elementor_elementor__page__builder_update_beta1 & elementor_elementor__page__builder_sw__edition_any & elementor_elementor__page__builder_update_beta3 & elementor_elementor__page__builder_sw__edition_any & !elementor_elementor__page__builder_update_any & elementor_elementor__page__builder_sw__edition_any & !elementor_elementor__page__builder_update_beta5 & elementor_elementor__page__builder_sw__edition_any & !elementor_elementor__page__builder_update_beta2 & elementor_elementor__page__builder_sw__edition_any & !elementor_elementor__page__builder_update_beta4 & elementor_elementor__page__builder_sw__edition_any) | (!elementor_elementor__page__builder_update_beta1 & elementor_elementor__page__builder_sw__edition_any & !elementor_elementor__page__builder_update_beta3 & elementor_elementor__page__builder_sw__edition_any & elementor_elementor__page__builder_update_any & elementor_elementor__page__builder_sw__edition_any & !elementor_elementor__page__builder_update_beta5 & elementor_elementor__page__builder_sw__edition_any & !elementor_elementor__page__builder_update_beta2 & elementor_elementor__page__builder_sw__edition_any & !elementor_elementor__page__builder_update_beta4 & elementor_elementor__page__builder_sw__edition_any) | (!elementor_elementor__page__builder_update_beta1 & elementor_elementor__page__builder_sw__edition_any & !elementor_elementor__page__builder_update_beta3 & elementor_elementor__page__builder_sw__edition_any & !elementor_elementor__page__builder_update_any & elementor_elementor__page__builder_sw__edition_any & elementor_elementor__page__builder_update_beta5 & elementor_elementor__page__builder_sw__edition_any & !elementor_elementor__page__builder_update_beta2 & elementor_elementor__page__builder_sw__edition_any & !elementor_elementor__page__builder_update_beta4 & elementor_elementor__page__builder_sw__edition_any) | (!elementor_elementor__page__builder_update_beta1 & elementor_elementor__page__builder_sw__edition_any & !elementor_elementor__page__builder_update_beta3 & elementor_elementor__page__builder_sw__edition_any & !elementor_elementor__page__builder_update_any & elementor_elementor__page__builder_sw__edition_any & !elementor_elementor__page__builder_update_beta5 & elementor_elementor__page__builder_sw__edition_any & elementor_elementor__page__builder_update_beta2 & elementor_elementor__page__builder_sw__edition_any & !elementor_elementor__page__builder_update_beta4 & elementor_elementor__page__builder_sw__edition_any) | (!elementor_elementor__page__builder_update_beta1 & elementor_elementor__page__builder_sw__edition_any & !elementor_elementor__page__builder_update_beta3 & elementor_elementor__page__builder_sw__edition_any & !elementor_elementor__page__builder_update_any & elementor_elementor__page__builder_sw__edition_any & !elementor_elementor__page__builder_update_beta5 & elementor_elementor__page__builder_sw__edition_any & !elementor_elementor__page__builder_update_beta2 & elementor_elementor__page__builder_sw__edition_any & elementor_elementor__page__builder_update_beta4 & elementor_elementor__page__builder_sw__edition_any))
+        elementor_elementor__page__builder_version_1__2__0 => (elementor_elementor__page__builder_update_any)
+        elementor_elementor__page__builder_version_2__0__2 => (elementor_elementor__page__builder_update_any)
+        elementor_elementor__page__builder_version_2__6__7 => elementor_elementor__page__builder_update_any
+        elementor_elementor__page__builder_version_2__6__7 => elementor_elementor__page__builder_sw__edition_any
+        elementor_elementor__page__builder_version_2__0__3 => (elementor_elementor__page__builder_update_any)
+        elementor_elementor__page__builder_version_2__1__6 => elementor_elementor__page__builder_update_any
+        elementor_elementor__page__builder_version_2__1__6 => elementor_elementor__page__builder_sw__edition_any
+        elementor_elementor__page__builder_version_2__8__1 => elementor_elementor__page__builder_update_any
+        elementor_elementor__page__builder_version_2__8__1 => elementor_elementor__page__builder_sw__edition_any
+        elementor_elementor__page__builder_version_0__7__3 => elementor_elementor__page__builder_update_any
+        elementor_elementor__page__builder_version_0__7__3 => elementor_elementor__page__builder_sw__edition_any
+        elementor_elementor__page__builder_version_2__5__16 => elementor_elementor__page__builder_update_any
+        elementor_elementor__page__builder_version_2__5__16 => elementor_elementor__page__builder_sw__edition_any
+        elementor_elementor__page__builder_version_1__1__5 => elementor_elementor__page__builder_update_any
+        elementor_elementor__page__builder_version_1__1__5 => elementor_elementor__page__builder_sw__edition_any
+        elementor_elementor__page__builder_version_1__10__1 => elementor_elementor__page__builder_update_any
+        elementor_elementor__page__builder_version_1__10__1 => elementor_elementor__page__builder_sw__edition_pro
+        elementor_elementor__page__builder_version_0__9__3 => elementor_elementor__page__builder_update_any
+        elementor_elementor__page__builder_version_0__9__3 => elementor_elementor__page__builder_sw__edition_any
+        elementor_elementor__page__builder_version_2__3__7 => elementor_elementor__page__builder_update_any
+        elementor_elementor__page__builder_version_2__3__7 => elementor_elementor__page__builder_sw__edition_any
+        elementor_elementor__page__builder_version_1__1__7 => elementor_elementor__page__builder_update_any
+        elementor_elementor__page__builder_version_1__1__7 => elementor_elementor__page__builder_sw__edition_any
+        elementor_elementor__page__builder_version_1__1__0 => (elementor_elementor__page__builder_update_any)
+        elementor_elementor__page__builder_version_2__6__2 => elementor_elementor__page__builder_update_any
+        elementor_elementor__page__builder_version_2__6__2 => elementor_elementor__page__builder_sw__edition_any
+        elementor_elementor__page__builder_version_0__7__1 => elementor_elementor__page__builder_update_any
+        elementor_elementor__page__builder_version_0__7__1 => elementor_elementor__page__builder_sw__edition_any
+        elementor_elementor__page__builder_version_1__4__7 => elementor_elementor__page__builder_update_any
+        elementor_elementor__page__builder_version_1__4__7 => elementor_elementor__page__builder_sw__edition_any
+        elementor_elementor__page__builder_version_0__10__7 => elementor_elementor__page__builder_update_any
+        elementor_elementor__page__builder_version_0__10__7 => elementor_elementor__page__builder_sw__edition_any
+        elementor_elementor__page__builder_version_1__6__2 => elementor_elementor__page__builder_update_any
+        elementor_elementor__page__builder_version_1__6__2 => elementor_elementor__page__builder_sw__edition_any
+        elementor_elementor__page__builder_version_1__5__8 => elementor_elementor__page__builder_update_any
+        elementor_elementor__page__builder_version_1__5__8 => elementor_elementor__page__builder_sw__edition_pro
+        elementor_elementor__page__builder_version_0__6__0 => elementor_elementor__page__builder_update_any
+        elementor_elementor__page__builder_version_0__6__0 => elementor_elementor__page__builder_sw__edition_any
+        elementor_elementor__page__builder_version_0__1__5 => elementor_elementor__page__builder_update_any
+        elementor_elementor__page__builder_version_0__1__5 => elementor_elementor__page__builder_sw__edition_any
+        elementor_elementor__page__builder_version_1__7__12 => elementor_elementor__page__builder_update_any
+        elementor_elementor__page__builder_version_1__7__12 => elementor_elementor__page__builder_sw__edition_any
+        elementor_elementor__page__builder_version_1__13__1 => elementor_elementor__page__builder_update_any
+        elementor_elementor__page__builder_version_1__13__1 => elementor_elementor__page__builder_sw__edition_pro
+        elementor_elementor__page__builder_version_1__3__2 => (elementor_elementor__page__builder_update_any)
+        elementor_elementor__page__builder_version_2__6__4 => elementor_elementor__page__builder_update_any
+        elementor_elementor__page__builder_version_2__6__4 => elementor_elementor__page__builder_sw__edition_any
+        elementor_elementor__page__builder_version_2__3__2 => elementor_elementor__page__builder_update_any
+        elementor_elementor__page__builder_version_2__3__2 => elementor_elementor__page__builder_sw__edition_any
+        elementor_elementor__page__builder_version_2__5__3 => elementor_elementor__page__builder_update_any
+        elementor_elementor__page__builder_version_2__5__3 => elementor_elementor__page__builder_sw__edition_any
+        elementor_elementor__page__builder_version_1__14__1 => elementor_elementor__page__builder_update_any
+        elementor_elementor__page__builder_version_1__14__1 => elementor_elementor__page__builder_sw__edition_pro
+        elementor_elementor__page__builder_version_1__9__6 => elementor_elementor__page__builder_update_any
+        elementor_elementor__page__builder_version_1__9__6 => elementor_elementor__page__builder_sw__edition_any
+        elementor_elementor__page__builder_version_2__0__14 => elementor_elementor__page__builder_update_any
+        elementor_elementor__page__builder_version_2__0__14 => elementor_elementor__page__builder_sw__edition_any
+        elementor_elementor__page__builder_version_0__5__0 => elementor_elementor__page__builder_update_any
+        elementor_elementor__page__builder_version_0__5__0 => elementor_elementor__page__builder_sw__edition_any
+        elementor_elementor__page__builder_version_1__3__4 => elementor_elementor__page__builder_update_any
+        elementor_elementor__page__builder_version_1__3__4 => elementor_elementor__page__builder_sw__edition_any
+        elementor_elementor__page__builder_version_2__8__2 => elementor_elementor__page__builder_update_any
+        elementor_elementor__page__builder_version_2__8__2 => elementor_elementor__page__builder_sw__edition_any
+        elementor_elementor__page__builder_version_1__0__12 => elementor_elementor__page__builder_update_any
+        elementor_elementor__page__builder_version_1__0__12 => elementor_elementor__page__builder_sw__edition_any
+        elementor_elementor__page__builder_version_2__0__7 => (elementor_elementor__page__builder_update_any)
+        elementor_elementor__page__builder_version_0__3__2 => elementor_elementor__page__builder_update_any
+        elementor_elementor__page__builder_version_0__3__2 => elementor_elementor__page__builder_sw__edition_any
+        elementor_elementor__page__builder_version_0__1__6 => elementor_elementor__page__builder_update_any
+        elementor_elementor__page__builder_version_0__1__6 => elementor_elementor__page__builder_sw__edition_any
+        elementor_elementor__page__builder_version_2__6__3 => elementor_elementor__page__builder_update_any
+        elementor_elementor__page__builder_version_2__6__3 => elementor_elementor__page__builder_sw__edition_any
+        elementor_elementor__page__builder_version_0__2__4 => elementor_elementor__page__builder_update_any
+        elementor_elementor__page__builder_version_0__2__4 => elementor_elementor__page__builder_sw__edition_any
+        elementor_elementor__page__builder_version_1__0__7 => (elementor_elementor__page__builder_update_any)
+        elementor_elementor__page__builder_version_2__8__0 => ((elementor_elementor__page__builder_update_beta1 & elementor_elementor__page__builder_sw__edition_any & !elementor_elementor__page__builder_update_beta3 & elementor_elementor__page__builder_sw__edition_any & !elementor_elementor__page__builder_update_any & elementor_elementor__page__builder_sw__edition_any & !elementor_elementor__page__builder_update_beta2 & elementor_elementor__page__builder_sw__edition_any & !elementor_elementor__page__builder_update_beta4 & elementor_elementor__page__builder_sw__edition_any) | (!elementor_elementor__page__builder_update_beta1 & elementor_elementor__page__builder_sw__edition_any & elementor_elementor__page__builder_update_beta3 & elementor_elementor__page__builder_sw__edition_any & !elementor_elementor__page__builder_update_any & elementor_elementor__page__builder_sw__edition_any & !elementor_elementor__page__builder_update_beta2 & elementor_elementor__page__builder_sw__edition_any & !elementor_elementor__page__builder_update_beta4 & elementor_elementor__page__builder_sw__edition_any) | (!elementor_elementor__page__builder_update_beta1 & elementor_elementor__page__builder_sw__edition_any & !elementor_elementor__page__builder_update_beta3 & elementor_elementor__page__builder_sw__edition_any & elementor_elementor__page__builder_update_any & elementor_elementor__page__builder_sw__edition_any & !elementor_elementor__page__builder_update_beta2 & elementor_elementor__page__builder_sw__edition_any & !elementor_elementor__page__builder_update_beta4 & elementor_elementor__page__builder_sw__edition_any) | (!elementor_elementor__page__builder_update_beta1 & elementor_elementor__page__builder_sw__edition_any & !elementor_elementor__page__builder_update_beta3 & elementor_elementor__page__builder_sw__edition_any & !elementor_elementor__page__builder_update_any & elementor_elementor__page__builder_sw__edition_any & elementor_elementor__page__builder_update_beta2 & elementor_elementor__page__builder_sw__edition_any & !elementor_elementor__page__builder_update_beta4 & elementor_elementor__page__builder_sw__edition_any) | (!elementor_elementor__page__builder_update_beta1 & elementor_elementor__page__builder_sw__edition_any & !elementor_elementor__page__builder_update_beta3 & elementor_elementor__page__builder_sw__edition_any & !elementor_elementor__page__builder_update_any & elementor_elementor__page__builder_sw__edition_any & !elementor_elementor__page__builder_update_beta2 & elementor_elementor__page__builder_sw__edition_any & elementor_elementor__page__builder_update_beta4 & elementor_elementor__page__builder_sw__edition_any))
+        elementor_elementor__page__builder_version_0__5__2 => elementor_elementor__page__builder_update_any
+        elementor_elementor__page__builder_version_0__5__2 => elementor_elementor__page__builder_sw__edition_any
+        elementor_elementor__page__builder_version_2__4__1 => elementor_elementor__page__builder_update_any
+        elementor_elementor__page__builder_version_2__4__1 => elementor_elementor__page__builder_sw__edition_any
+        elementor_elementor__page__builder_version_1__5__4 => (elementor_elementor__page__builder_update_any)
+        elementor_elementor__page__builder_version_2__0__11 => elementor_elementor__page__builder_update_any
+        elementor_elementor__page__builder_version_2__0__11 => elementor_elementor__page__builder_sw__edition_any
+        elementor_elementor__page__builder_version_2__5__7 => elementor_elementor__page__builder_update_any
+        elementor_elementor__page__builder_version_2__5__7 => elementor_elementor__page__builder_sw__edition_any
+        elementor_elementor__page__builder_version_0__6__5 => elementor_elementor__page__builder_update_any
+        elementor_elementor__page__builder_version_0__6__5 => elementor_elementor__page__builder_sw__edition_any
+        elementor_elementor__page__builder_version_1__4__0 => ((elementor_elementor__page__builder_update_rc2 & elementor_elementor__page__builder_sw__edition_any & !elementor_elementor__page__builder_update_rc3 & elementor_elementor__page__builder_sw__edition_any & !elementor_elementor__page__builder_update_rc1 & elementor_elementor__page__builder_sw__edition_any) | (!elementor_elementor__page__builder_update_rc2 & elementor_elementor__page__builder_sw__edition_any & elementor_elementor__page__builder_update_rc3 & elementor_elementor__page__builder_sw__edition_any & !elementor_elementor__page__builder_update_rc1 & elementor_elementor__page__builder_sw__edition_any) | (!elementor_elementor__page__builder_update_rc2 & elementor_elementor__page__builder_sw__edition_any & !elementor_elementor__page__builder_update_rc3 & elementor_elementor__page__builder_sw__edition_any & elementor_elementor__page__builder_update_rc1 & elementor_elementor__page__builder_sw__edition_any))
+        elementor_elementor__page__builder_version_0__8__1 => elementor_elementor__page__builder_update_any
+        elementor_elementor__page__builder_version_0__8__1 => elementor_elementor__page__builder_sw__edition_any
+        elementor_elementor__page__builder_version_2__4__3 => elementor_elementor__page__builder_update_any
+        elementor_elementor__page__builder_version_2__4__3 => elementor_elementor__page__builder_sw__edition_any
+        elementor_elementor__page__builder_version_1__8__3 => (elementor_elementor__page__builder_update_any)
+        elementor_elementor__page__builder_version_1__7__5 => elementor_elementor__page__builder_update_any
+        elementor_elementor__page__builder_version_1__7__5 => elementor_elementor__page__builder_sw__edition_any
+        elementor_elementor__page__builder_version_0__6__2 => elementor_elementor__page__builder_update_any
+        elementor_elementor__page__builder_version_0__6__2 => elementor_elementor__page__builder_sw__edition_any
+        elementor_elementor__page__builder_version_1__7__7 => elementor_elementor__page__builder_update_any
+        elementor_elementor__page__builder_version_1__7__7 => elementor_elementor__page__builder_sw__edition_any
+        elementor_elementor__page__builder_version_1__8__11 => elementor_elementor__page__builder_update_any
+        elementor_elementor__page__builder_version_1__8__11 => elementor_elementor__page__builder_sw__edition_any
+        elementor_elementor__page__builder_version_1__3__1 => (elementor_elementor__page__builder_update_any)
+        elementor_elementor__page__builder_version_2__4__6 => elementor_elementor__page__builder_update_any
+        elementor_elementor__page__builder_version_2__4__6 => elementor_elementor__page__builder_sw__edition_any
+        elementor_elementor__page__builder_version_1__2__4 => (elementor_elementor__page__builder_update_any)
+        elementor_elementor__page__builder_version_2__1__7 => elementor_elementor__page__builder_update_any
+        elementor_elementor__page__builder_version_2__1__7 => elementor_elementor__page__builder_sw__edition_any
+        elementor_elementor__page__builder_version_2__0__6 => (elementor_elementor__page__builder_update_any)
+        elementor_elementor__page__builder_version_2__7__6 => elementor_elementor__page__builder_update_any
+        elementor_elementor__page__builder_version_2__7__6 => elementor_elementor__page__builder_sw__edition_any
+        elementor_elementor__page__builder_version_1__12__1 => elementor_elementor__page__builder_update_any
+        elementor_elementor__page__builder_version_1__12__1 => elementor_elementor__page__builder_sw__edition_pro
+        elementor_elementor__page__builder_version_1__6__5 => elementor_elementor__page__builder_update_any
+        elementor_elementor__page__builder_version_1__6__5 => elementor_elementor__page__builder_sw__edition_any
+        elementor_elementor__page__builder_version_2__2__6 => elementor_elementor__page__builder_update_any
+        elementor_elementor__page__builder_version_2__2__6 => elementor_elementor__page__builder_sw__edition_any
+        elementor_elementor__page__builder_version_1__9__8 => elementor_elementor__page__builder_update_any
+        elementor_elementor__page__builder_version_1__9__8 => elementor_elementor__page__builder_sw__edition_any
+        elementor_elementor__page__builder_version_1__0__5 => (elementor_elementor__page__builder_update_any)
+        elementor_elementor__page__builder_version_0__1__1 => elementor_elementor__page__builder_update_any
+        elementor_elementor__page__builder_version_0__1__1 => elementor_elementor__page__builder_sw__edition_any
+        elementor_elementor__page__builder_version_0__10__3 => elementor_elementor__page__builder_update_any
+        elementor_elementor__page__builder_version_0__10__3 => elementor_elementor__page__builder_sw__edition_any
+        elementor_elementor__page__builder_version_2__3__3 => elementor_elementor__page__builder_update_any
+        elementor_elementor__page__builder_version_2__3__3 => elementor_elementor__page__builder_sw__edition_any
+        elementor_elementor__page__builder_version_1__7__10 => elementor_elementor__page__builder_update_any
+        elementor_elementor__page__builder_version_1__7__10 => elementor_elementor__page__builder_sw__edition_any
+        elementor_elementor__page__builder_version_1__7__9 => elementor_elementor__page__builder_update_any
+        elementor_elementor__page__builder_version_1__7__9 => elementor_elementor__page__builder_sw__edition_any
+        elementor_elementor__page__builder_version_2__5__1 => elementor_elementor__page__builder_update_any
+        elementor_elementor__page__builder_version_2__5__1 => elementor_elementor__page__builder_sw__edition_any
+        elementor_elementor__page__builder_version_2__3__8 => elementor_elementor__page__builder_update_any
+        elementor_elementor__page__builder_version_2__3__8 => elementor_elementor__page__builder_sw__edition_any
+        elementor_elementor__page__builder_version_0__4__1 => elementor_elementor__page__builder_update_any
+        elementor_elementor__page__builder_version_0__4__1 => elementor_elementor__page__builder_sw__edition_any
+        elementor_elementor__page__builder_version_1__13__0 => elementor_elementor__page__builder_update_any
+        elementor_elementor__page__builder_version_1__13__0 => elementor_elementor__page__builder_sw__edition_pro
+        elementor_elementor__page__builder_version_1__7__0 => ((elementor_elementor__page__builder_update_rc2 & elementor_elementor__page__builder_sw__edition_any & !elementor_elementor__page__builder_update_rc3 & elementor_elementor__page__builder_sw__edition_any & !elementor_elementor__page__builder_update_rc1 & elementor_elementor__page__builder_sw__edition_any) | (!elementor_elementor__page__builder_update_rc2 & elementor_elementor__page__builder_sw__edition_any & elementor_elementor__page__builder_update_rc3 & elementor_elementor__page__builder_sw__edition_any & !elementor_elementor__page__builder_update_rc1 & elementor_elementor__page__builder_sw__edition_any) | (!elementor_elementor__page__builder_update_rc2 & elementor_elementor__page__builder_sw__edition_any & !elementor_elementor__page__builder_update_rc3 & elementor_elementor__page__builder_sw__edition_any & elementor_elementor__page__builder_update_rc1 & elementor_elementor__page__builder_sw__edition_any))
+        elementor_elementor__page__builder_version_2__4__0 => ((elementor_elementor__page__builder_update_beta1 & elementor_elementor__page__builder_sw__edition_any & !elementor_elementor__page__builder_update_beta3 & elementor_elementor__page__builder_sw__edition_any & !elementor_elementor__page__builder_update_any & elementor_elementor__page__builder_sw__edition_any & !elementor_elementor__page__builder_update_beta2 & elementor_elementor__page__builder_sw__edition_any & !elementor_elementor__page__builder_update_beta4 & elementor_elementor__page__builder_sw__edition_any) | (!elementor_elementor__page__builder_update_beta1 & elementor_elementor__page__builder_sw__edition_any & elementor_elementor__page__builder_update_beta3 & elementor_elementor__page__builder_sw__edition_any & !elementor_elementor__page__builder_update_any & elementor_elementor__page__builder_sw__edition_any & !elementor_elementor__page__builder_update_beta2 & elementor_elementor__page__builder_sw__edition_any & !elementor_elementor__page__builder_update_beta4 & elementor_elementor__page__builder_sw__edition_any) | (!elementor_elementor__page__builder_update_beta1 & elementor_elementor__page__builder_sw__edition_any & !elementor_elementor__page__builder_update_beta3 & elementor_elementor__page__builder_sw__edition_any & elementor_elementor__page__builder_update_any & elementor_elementor__page__builder_sw__edition_any & !elementor_elementor__page__builder_update_beta2 & elementor_elementor__page__builder_sw__edition_any & !elementor_elementor__page__builder_update_beta4 & elementor_elementor__page__builder_sw__edition_any) | (!elementor_elementor__page__builder_update_beta1 & elementor_elementor__page__builder_sw__edition_any & !elementor_elementor__page__builder_update_beta3 & elementor_elementor__page__builder_sw__edition_any & !elementor_elementor__page__builder_update_any & elementor_elementor__page__builder_sw__edition_any & elementor_elementor__page__builder_update_beta2 & elementor_elementor__page__builder_sw__edition_any & !elementor_elementor__page__builder_update_beta4 & elementor_elementor__page__builder_sw__edition_any) | (!elementor_elementor__page__builder_update_beta1 & elementor_elementor__page__builder_sw__edition_any & !elementor_elementor__page__builder_update_beta3 & elementor_elementor__page__builder_sw__edition_any & !elementor_elementor__page__builder_update_any & elementor_elementor__page__builder_sw__edition_any & !elementor_elementor__page__builder_update_beta2 & elementor_elementor__page__builder_sw__edition_any & elementor_elementor__page__builder_update_beta4 & elementor_elementor__page__builder_sw__edition_any))
+        elementor_elementor__page__builder_version_2__3__4 => elementor_elementor__page__builder_update_any
+        elementor_elementor__page__builder_version_2__3__4 => elementor_elementor__page__builder_sw__edition_any
+        elementor_elementor__page__builder_version_0__7__0 => elementor_elementor__page__builder_update_any
+        elementor_elementor__page__builder_version_0__7__0 => elementor_elementor__page__builder_sw__edition_any
+        elementor_elementor__page__builder_version_2__5__13 => elementor_elementor__page__builder_update_any
+        elementor_elementor__page__builder_version_2__5__13 => elementor_elementor__page__builder_sw__edition_any
+        elementor_elementor__page__builder_version_0__1__3 => elementor_elementor__page__builder_update_any
+        elementor_elementor__page__builder_version_0__1__3 => elementor_elementor__page__builder_sw__edition_any
+        elementor_elementor__page__builder_version_1__8__0 => ((elementor_elementor__page__builder_update_rc2 & elementor_elementor__page__builder_sw__edition_any & !elementor_elementor__page__builder_update_rc3 & elementor_elementor__page__builder_sw__edition_any & !elementor_elementor__page__builder_update_rc1 & elementor_elementor__page__builder_sw__edition_any) | (!elementor_elementor__page__builder_update_rc2 & elementor_elementor__page__builder_sw__edition_any & elementor_elementor__page__builder_update_rc3 & elementor_elementor__page__builder_sw__edition_any & !elementor_elementor__page__builder_update_rc1 & elementor_elementor__page__builder_sw__edition_any) | (!elementor_elementor__page__builder_update_rc2 & elementor_elementor__page__builder_sw__edition_any & !elementor_elementor__page__builder_update_rc3 & elementor_elementor__page__builder_sw__edition_any & elementor_elementor__page__builder_update_rc1 & elementor_elementor__page__builder_sw__edition_any))
+        elementor_elementor__page__builder_version_1__5__1 => (elementor_elementor__page__builder_update_any)
+        elementor_elementor__page__builder_version_0__2__1 => elementor_elementor__page__builder_update_any
+        elementor_elementor__page__builder_version_0__2__1 => elementor_elementor__page__builder_sw__edition_any
+        elementor_elementor__page__builder_version_1__2__3 => (elementor_elementor__page__builder_update_any)
+        elementor_elementor__page__builder_version_2__5__14 => elementor_elementor__page__builder_update_any
+        elementor_elementor__page__builder_version_2__5__14 => elementor_elementor__page__builder_sw__edition_any
+        elementor_elementor__page__builder_version_2__8__3 => elementor_elementor__page__builder_update_any
+        elementor_elementor__page__builder_version_2__8__3 => elementor_elementor__page__builder_sw__edition_any
+        elementor_elementor__page__builder_version_1__7__8 => elementor_elementor__page__builder_update_any
+        elementor_elementor__page__builder_version_1__7__8 => elementor_elementor__page__builder_sw__edition_any
+        elementor_elementor__page__builder_version_2__0__0 => ((elementor_elementor__page__builder_update_beta1 & elementor_elementor__page__builder_sw__edition_any & !elementor_elementor__page__builder_update_beta3 & elementor_elementor__page__builder_sw__edition_any & !elementor_elementor__page__builder_update_beta2 & elementor_elementor__page__builder_sw__edition_any & !elementor_elementor__page__builder_update_beta4 & elementor_elementor__page__builder_sw__edition_any) | (!elementor_elementor__page__builder_update_beta1 & elementor_elementor__page__builder_sw__edition_any & elementor_elementor__page__builder_update_beta3 & elementor_elementor__page__builder_sw__edition_any & !elementor_elementor__page__builder_update_beta2 & elementor_elementor__page__builder_sw__edition_any & !elementor_elementor__page__builder_update_beta4 & elementor_elementor__page__builder_sw__edition_any) | (!elementor_elementor__page__builder_update_beta1 & elementor_elementor__page__builder_sw__edition_any & !elementor_elementor__page__builder_update_beta3 & elementor_elementor__page__builder_sw__edition_any & elementor_elementor__page__builder_update_beta2 & elementor_elementor__page__builder_sw__edition_any & !elementor_elementor__page__builder_update_beta4 & elementor_elementor__page__builder_sw__edition_any) | (!elementor_elementor__page__builder_update_beta1 & elementor_elementor__page__builder_sw__edition_any & !elementor_elementor__page__builder_update_beta3 & elementor_elementor__page__builder_sw__edition_any & !elementor_elementor__page__builder_update_beta2 & elementor_elementor__page__builder_sw__edition_any & elementor_elementor__page__builder_update_beta4 & elementor_elementor__page__builder_sw__edition_any))
+        elementor_elementor__page__builder_version_1__1__2 => elementor_elementor__page__builder_update_any
+        elementor_elementor__page__builder_version_1__1__2 => elementor_elementor__page__builder_sw__edition_any
+        elementor_elementor__page__builder_version_1__15__6 => elementor_elementor__page__builder_update_any
+        elementor_elementor__page__builder_version_1__15__6 => elementor_elementor__page__builder_sw__edition_pro
+        elementor_elementor__page__builder_version_1__5__5 => (elementor_elementor__page__builder_update_any)
+        elementor_elementor__page__builder_version_2__0__9 => (elementor_elementor__page__builder_update_any)
+        elementor_elementor__page__builder_version_2__7__2 => elementor_elementor__page__builder_update_any
+        elementor_elementor__page__builder_version_2__7__2 => elementor_elementor__page__builder_sw__edition_any
+        elementor_elementor__page__builder_version_1__4__2 => (elementor_elementor__page__builder_update_any)
+        elementor_elementor__page__builder_version_1__7__3 => elementor_elementor__page__builder_update_any
+        elementor_elementor__page__builder_version_1__7__3 => elementor_elementor__page__builder_sw__edition_any
+        elementor_elementor__page__builder_version_1__0__3 => (elementor_elementor__page__builder_update_any)
+        elementor_elementor__page__builder_version_2__0__12 => elementor_elementor__page__builder_update_any
+        elementor_elementor__page__builder_version_2__0__12 => elementor_elementor__page__builder_sw__edition_any
+        elementor_elementor__page__builder_version_1__8__2 => (elementor_elementor__page__builder_update_any)
+        elementor_elementor__page__builder_version_0__2__0 => elementor_elementor__page__builder_update_any
+        elementor_elementor__page__builder_version_0__2__0 => elementor_elementor__page__builder_sw__edition_any
+        elementor_elementor__page__builder_version_2__5__9 => elementor_elementor__page__builder_update_any
+        elementor_elementor__page__builder_version_2__5__9 => elementor_elementor__page__builder_sw__edition_any
+        elementor_elementor__page__builder_version_2__6__0 => ((elementor_elementor__page__builder_update_beta3 & elementor_elementor__page__builder_sw__edition_any & !elementor_elementor__page__builder_update_any & elementor_elementor__page__builder_sw__edition_any & !elementor_elementor__page__builder_update_beta2 & elementor_elementor__page__builder_sw__edition_any) | (!elementor_elementor__page__builder_update_beta3 & elementor_elementor__page__builder_sw__edition_any & elementor_elementor__page__builder_update_any & elementor_elementor__page__builder_sw__edition_any & !elementor_elementor__page__builder_update_beta2 & elementor_elementor__page__builder_sw__edition_any) | (!elementor_elementor__page__builder_update_beta3 & elementor_elementor__page__builder_sw__edition_any & !elementor_elementor__page__builder_update_any & elementor_elementor__page__builder_sw__edition_any & elementor_elementor__page__builder_update_beta2 & elementor_elementor__page__builder_sw__edition_any))
+        elementor_elementor__page__builder_version_0__1__7 => elementor_elementor__page__builder_update_any
+        elementor_elementor__page__builder_version_0__1__7 => elementor_elementor__page__builder_sw__edition_any
+        elementor_elementor__page__builder_version_1__7__1 => (elementor_elementor__page__builder_update_any)
+        elementor_elementor__page__builder_version_1__4__6 => elementor_elementor__page__builder_update_any
+        elementor_elementor__page__builder_version_1__4__6 => elementor_elementor__page__builder_sw__edition_any
+        elementor_elementor__page__builder_version_1__0__2 => (elementor_elementor__page__builder_update_any)
+        elementor_elementor__page__builder_version_1__7__2 => (elementor_elementor__page__builder_update_any)
+        elementor_elementor__page__builder_version_0__11__0 => elementor_elementor__page__builder_update_any
+        elementor_elementor__page__builder_version_0__11__0 => elementor_elementor__page__builder_sw__edition_any
+        elementor_elementor__page__builder_version_1__8__8 => elementor_elementor__page__builder_update_any
+        elementor_elementor__page__builder_version_1__8__8 => elementor_elementor__page__builder_sw__edition_any
+        elementor_elementor__page__builder_version_1__10__2 => elementor_elementor__page__builder_update_any
+        elementor_elementor__page__builder_version_1__10__2 => elementor_elementor__page__builder_sw__edition_pro
+        elementor_elementor__page__builder_version_1__15__3 => elementor_elementor__page__builder_update_any
+        elementor_elementor__page__builder_version_1__15__3 => elementor_elementor__page__builder_sw__edition_pro
+        elementor_elementor__page__builder_version_2__1__3 => elementor_elementor__page__builder_update_any
+        elementor_elementor__page__builder_version_2__1__3 => elementor_elementor__page__builder_sw__edition_any
+        elementor_elementor__page__builder_version_2__5__10 => elementor_elementor__page__builder_update_any
+        elementor_elementor__page__builder_version_2__5__10 => elementor_elementor__page__builder_sw__edition_any
+        elementor_elementor__page__builder_version_1__5__2 => (elementor_elementor__page__builder_update_any)
+        elementor_elementor__page__builder_version_1__15__2 => elementor_elementor__page__builder_update_any
+        elementor_elementor__page__builder_version_1__15__2 => elementor_elementor__page__builder_sw__edition_pro
+        elementor_elementor__page__builder_version_1__4__1 => (elementor_elementor__page__builder_update_any)
+        elementor_elementor__page__builder_version_2__0__8 => (elementor_elementor__page__builder_update_any)
+        elementor_elementor__page__builder_version_0__10__1 => elementor_elementor__page__builder_update_any
+        elementor_elementor__page__builder_version_0__10__1 => elementor_elementor__page__builder_sw__edition_any
+        elementor_elementor__page__builder_version_2__4__2 => elementor_elementor__page__builder_update_any
+        elementor_elementor__page__builder_version_2__4__2 => elementor_elementor__page__builder_sw__edition_any
+        elementor_elementor__page__builder_version_1__15__0 => elementor_elementor__page__builder_update_any
+        elementor_elementor__page__builder_version_1__15__0 => elementor_elementor__page__builder_sw__edition_pro
+        elementor_elementor__page__builder_version_1__6__1 => (elementor_elementor__page__builder_update_any)
+        elementor_elementor__page__builder_version_2__7__0 => ((elementor_elementor__page__builder_update_beta1 & elementor_elementor__page__builder_sw__edition_any & !elementor_elementor__page__builder_update_beta3 & elementor_elementor__page__builder_sw__edition_any & !elementor_elementor__page__builder_update_any & elementor_elementor__page__builder_sw__edition_any & !elementor_elementor__page__builder_update_beta2 & elementor_elementor__page__builder_sw__edition_any & !elementor_elementor__page__builder_update_beta4 & elementor_elementor__page__builder_sw__edition_any) | (!elementor_elementor__page__builder_update_beta1 & elementor_elementor__page__builder_sw__edition_any & elementor_elementor__page__builder_update_beta3 & elementor_elementor__page__builder_sw__edition_any & !elementor_elementor__page__builder_update_any & elementor_elementor__page__builder_sw__edition_any & !elementor_elementor__page__builder_update_beta2 & elementor_elementor__page__builder_sw__edition_any & !elementor_elementor__page__builder_update_beta4 & elementor_elementor__page__builder_sw__edition_any) | (!elementor_elementor__page__builder_update_beta1 & elementor_elementor__page__builder_sw__edition_any & !elementor_elementor__page__builder_update_beta3 & elementor_elementor__page__builder_sw__edition_any & elementor_elementor__page__builder_update_any & elementor_elementor__page__builder_sw__edition_any & !elementor_elementor__page__builder_update_beta2 & elementor_elementor__page__builder_sw__edition_any & !elementor_elementor__page__builder_update_beta4 & elementor_elementor__page__builder_sw__edition_any) | (!elementor_elementor__page__builder_update_beta1 & elementor_elementor__page__builder_sw__edition_any & !elementor_elementor__page__builder_update_beta3 & elementor_elementor__page__builder_sw__edition_any & !elementor_elementor__page__builder_update_any & elementor_elementor__page__builder_sw__edition_any & elementor_elementor__page__builder_update_beta2 & elementor_elementor__page__builder_sw__edition_any & !elementor_elementor__page__builder_update_beta4 & elementor_elementor__page__builder_sw__edition_any) | (!elementor_elementor__page__builder_update_beta1 & elementor_elementor__page__builder_sw__edition_any & !elementor_elementor__page__builder_update_beta3 & elementor_elementor__page__builder_sw__edition_any & !elementor_elementor__page__builder_update_any & elementor_elementor__page__builder_sw__edition_any & !elementor_elementor__page__builder_update_beta2 & elementor_elementor__page__builder_sw__edition_any & elementor_elementor__page__builder_update_beta4 & elementor_elementor__page__builder_sw__edition_any))
+        elementor_elementor__page__builder_version_0__2__3 => elementor_elementor__page__builder_update_any
+        elementor_elementor__page__builder_version_0__2__3 => elementor_elementor__page__builder_sw__edition_any
+        elementor_elementor__page__builder_version_0__9__1 => elementor_elementor__page__builder_update_any
+        elementor_elementor__page__builder_version_0__9__1 => elementor_elementor__page__builder_sw__edition_any
+        elementor_elementor__page__builder_version_2__6__8 => elementor_elementor__page__builder_update_any
+        elementor_elementor__page__builder_version_2__6__8 => elementor_elementor__page__builder_sw__edition_any
+        elementor_elementor__page__builder_version_2__1__8 => elementor_elementor__page__builder_update_any
+        elementor_elementor__page__builder_version_2__1__8 => elementor_elementor__page__builder_sw__edition_any
+        elementor_elementor__page__builder_version_2__5__6 => elementor_elementor__page__builder_update_any
+        elementor_elementor__page__builder_version_2__5__6 => elementor_elementor__page__builder_sw__edition_any
+        elementor_elementor__page__builder_version_1__8__9 => elementor_elementor__page__builder_update_any
+        elementor_elementor__page__builder_version_1__8__9 => elementor_elementor__page__builder_sw__edition_any
+        elementor_elementor__page__builder_version_2__1__1 => elementor_elementor__page__builder_update_any
+        elementor_elementor__page__builder_version_2__1__1 => elementor_elementor__page__builder_sw__edition_any
+        elementor_elementor__page__builder_version_1__8__10 => elementor_elementor__page__builder_update_any
+        elementor_elementor__page__builder_version_1__8__10 => elementor_elementor__page__builder_sw__edition_any
+        elementor_elementor__page__builder_version_2__2__1 => elementor_elementor__page__builder_update_any
+        elementor_elementor__page__builder_version_2__2__1 => elementor_elementor__page__builder_sw__edition_any
+        elementor_elementor__page__builder_version_0__10__4 => elementor_elementor__page__builder_update_any
+        elementor_elementor__page__builder_version_0__10__4 => elementor_elementor__page__builder_sw__edition_any
+        elementor_elementor__page__builder_version_2__4__7 => elementor_elementor__page__builder_update_any
+        elementor_elementor__page__builder_version_2__4__7 => elementor_elementor__page__builder_sw__edition_any
+        elementor_elementor__page__builder_version_1__8__6 => elementor_elementor__page__builder_update_any
+        elementor_elementor__page__builder_version_1__8__6 => elementor_elementor__page__builder_sw__edition_any
+        elementor_elementor__page__builder_version_2__4__5 => elementor_elementor__page__builder_update_any
+        elementor_elementor__page__builder_version_2__4__5 => elementor_elementor__page__builder_sw__edition_any
+        elementor_elementor__page__builder_version_0__2__5 => elementor_elementor__page__builder_update_any
+        elementor_elementor__page__builder_version_0__2__5 => elementor_elementor__page__builder_sw__edition_any
+        elementor_elementor__page__builder_version_0__2__2 => elementor_elementor__page__builder_update_any
+        elementor_elementor__page__builder_version_0__2__2 => elementor_elementor__page__builder_sw__edition_any
+        elementor_elementor__page__builder_version_1__12__2 => elementor_elementor__page__builder_update_any
+        elementor_elementor__page__builder_version_1__12__2 => elementor_elementor__page__builder_sw__edition_pro
+        elementor_elementor__page__builder_version_0__11__1 => elementor_elementor__page__builder_update_any
+        elementor_elementor__page__builder_version_0__11__1 => elementor_elementor__page__builder_sw__edition_any
+        elementor_elementor__page__builder_version_1__4__8 => elementor_elementor__page__builder_update_any
+        elementor_elementor__page__builder_version_1__4__8 => elementor_elementor__page__builder_sw__edition_any
+        elementor_elementor__page__builder_version_1__5__7 => elementor_elementor__page__builder_update_any
+        elementor_elementor__page__builder_version_1__5__7 => elementor_elementor__page__builder_sw__edition_pro
+        elementor_elementor__page__builder_version_1__8__5 => elementor_elementor__page__builder_update_any
+        elementor_elementor__page__builder_version_1__8__5 => elementor_elementor__page__builder_sw__edition_any
+        elementor_elementor__page__builder_version_1__9__7 => elementor_elementor__page__builder_update_any
+        elementor_elementor__page__builder_version_1__9__7 => elementor_elementor__page__builder_sw__edition_any
+        elementor_elementor__page__builder_version_2__7__4 => elementor_elementor__page__builder_update_any
+        elementor_elementor__page__builder_version_2__7__4 => elementor_elementor__page__builder_sw__edition_any
+        elementor_elementor__page__builder_version_1__0__4 => (elementor_elementor__page__builder_update_any)
+        elementor_elementor__page__builder_version_1__6__4 => elementor_elementor__page__builder_update_any
+        elementor_elementor__page__builder_version_1__6__4 => elementor_elementor__page__builder_sw__edition_any
+        elementor_elementor__page__builder_version_0__1__4 => elementor_elementor__page__builder_update_any
+        elementor_elementor__page__builder_version_0__1__4 => elementor_elementor__page__builder_sw__edition_any
+        elementor_elementor__page__builder_version_2__5__8 => elementor_elementor__page__builder_update_any
+        elementor_elementor__page__builder_version_2__5__8 => elementor_elementor__page__builder_sw__edition_any
+        elementor_elementor__page__builder_version_1__3__0 => (elementor_elementor__page__builder_update_any)
+        elementor_elementor__page__builder_version_1__4__5 => elementor_elementor__page__builder_update_any
+        elementor_elementor__page__builder_version_1__4__5 => elementor_elementor__page__builder_sw__edition_any
+        elementor_elementor__page__builder_version_1__6__0 => ((elementor_elementor__page__builder_update_rc2 & elementor_elementor__page__builder_sw__edition_any & !elementor_elementor__page__builder_update_rc3 & elementor_elementor__page__builder_sw__edition_any & !elementor_elementor__page__builder_update_rc4 & elementor_elementor__page__builder_sw__edition_any & !elementor_elementor__page__builder_update_rc1 & elementor_elementor__page__builder_sw__edition_any) | (!elementor_elementor__page__builder_update_rc2 & elementor_elementor__page__builder_sw__edition_any & elementor_elementor__page__builder_update_rc3 & elementor_elementor__page__builder_sw__edition_any & !elementor_elementor__page__builder_update_rc4 & elementor_elementor__page__builder_sw__edition_any & !elementor_elementor__page__builder_update_rc1 & elementor_elementor__page__builder_sw__edition_any) | (!elementor_elementor__page__builder_update_rc2 & elementor_elementor__page__builder_sw__edition_any & !elementor_elementor__page__builder_update_rc3 & elementor_elementor__page__builder_sw__edition_any & elementor_elementor__page__builder_update_rc4 & elementor_elementor__page__builder_sw__edition_any & !elementor_elementor__page__builder_update_rc1 & elementor_elementor__page__builder_sw__edition_any) | (!elementor_elementor__page__builder_update_rc2 & elementor_elementor__page__builder_sw__edition_any & !elementor_elementor__page__builder_update_rc3 & elementor_elementor__page__builder_sw__edition_any & !elementor_elementor__page__builder_update_rc4 & elementor_elementor__page__builder_sw__edition_any & elementor_elementor__page__builder_update_rc1 & elementor_elementor__page__builder_sw__edition_any))
+        elementor_elementor__page__builder_version_1__14__0 => elementor_elementor__page__builder_update_any
+        elementor_elementor__page__builder_version_1__14__0 => elementor_elementor__page__builder_sw__edition_pro
+        elementor_elementor__page__builder_version_1__9__0 => ((elementor_elementor__page__builder_update_rc2 & elementor_elementor__page__builder_sw__edition_any & !elementor_elementor__page__builder_update_rc3 & elementor_elementor__page__builder_sw__edition_any & !elementor_elementor__page__builder_update_rc1 & elementor_elementor__page__builder_sw__edition_any) | (!elementor_elementor__page__builder_update_rc2 & elementor_elementor__page__builder_sw__edition_any & elementor_elementor__page__builder_update_rc3 & elementor_elementor__page__builder_sw__edition_any & !elementor_elementor__page__builder_update_rc1 & elementor_elementor__page__builder_sw__edition_any) | (!elementor_elementor__page__builder_update_rc2 & elementor_elementor__page__builder_sw__edition_any & !elementor_elementor__page__builder_update_rc3 & elementor_elementor__page__builder_sw__edition_any & elementor_elementor__page__builder_update_rc1 & elementor_elementor__page__builder_sw__edition_any))
+        elementor_elementor__page__builder_version_1__0__6 => (elementor_elementor__page__builder_update_any)
+        elementor_elementor__page__builder_version_1__0__8 => (elementor_elementor__page__builder_update_any)
+        elementor_elementor__page__builder_version_1__12__0 => elementor_elementor__page__builder_update_any
+        elementor_elementor__page__builder_version_1__12__0 => elementor_elementor__page__builder_sw__edition_pro
+        elementor_elementor__page__builder_version_1__15__5 => elementor_elementor__page__builder_update_any
+        elementor_elementor__page__builder_version_1__15__5 => elementor_elementor__page__builder_sw__edition_pro
+        elementor_elementor__page__builder_version_1__7__11 => elementor_elementor__page__builder_update_any
+        elementor_elementor__page__builder_version_1__7__11 => elementor_elementor__page__builder_sw__edition_any
+        elementor_elementor__page__builder_version_1__9__1 => (elementor_elementor__page__builder_update_any)
+        elementor_elementor__page__builder_version_1__0__10 => elementor_elementor__page__builder_update_any
+        elementor_elementor__page__builder_version_1__0__10 => elementor_elementor__page__builder_sw__edition_any
+        elementor_elementor__page__builder_version_0__1__0 => elementor_elementor__page__builder_update_any
+        elementor_elementor__page__builder_version_0__1__0 => elementor_elementor__page__builder_sw__edition_any
+        elementor_elementor__page__builder_version_0__5__1 => elementor_elementor__page__builder_update_any
+        elementor_elementor__page__builder_version_0__5__1 => elementor_elementor__page__builder_sw__edition_any
+        elementor_elementor__page__builder_version_2__5__12 => elementor_elementor__page__builder_update_any
+        elementor_elementor__page__builder_version_2__5__12 => elementor_elementor__page__builder_sw__edition_any
+        elementor_elementor__page__builder_version_1__4__3 => (elementor_elementor__page__builder_update_any)
+        elementor_elementor__page__builder_version_2__2__0 => ((elementor_elementor__page__builder_update_beta1 & elementor_elementor__page__builder_sw__edition_any & !elementor_elementor__page__builder_update_beta3 & elementor_elementor__page__builder_sw__edition_any & !elementor_elementor__page__builder_update_any & elementor_elementor__page__builder_sw__edition_any & !elementor_elementor__page__builder_update_beta2 & elementor_elementor__page__builder_sw__edition_any) | (!elementor_elementor__page__builder_update_beta1 & elementor_elementor__page__builder_sw__edition_any & elementor_elementor__page__builder_update_beta3 & elementor_elementor__page__builder_sw__edition_any & !elementor_elementor__page__builder_update_any & elementor_elementor__page__builder_sw__edition_any & !elementor_elementor__page__builder_update_beta2 & elementor_elementor__page__builder_sw__edition_any) | (!elementor_elementor__page__builder_update_beta1 & elementor_elementor__page__builder_sw__edition_any & !elementor_elementor__page__builder_update_beta3 & elementor_elementor__page__builder_sw__edition_any & elementor_elementor__page__builder_update_any & elementor_elementor__page__builder_sw__edition_any & !elementor_elementor__page__builder_update_beta2 & elementor_elementor__page__builder_sw__edition_any) | (!elementor_elementor__page__builder_update_beta1 & elementor_elementor__page__builder_sw__edition_any & !elementor_elementor__page__builder_update_beta3 & elementor_elementor__page__builder_sw__edition_any & !elementor_elementor__page__builder_update_any & elementor_elementor__page__builder_sw__edition_any & elementor_elementor__page__builder_update_beta2 & elementor_elementor__page__builder_sw__edition_any))
+        elementor_elementor__page__builder_version_2__7__5 => elementor_elementor__page__builder_update_any
+        elementor_elementor__page__builder_version_2__7__5 => elementor_elementor__page__builder_sw__edition_any
+        elementor_elementor__page__builder_version_1__0__0 => (elementor_elementor__page__builder_update_any)
+        elementor_elementor__page__builder_version_2__0__1 => (elementor_elementor__page__builder_update_any)
+        elementor_elementor__page__builder_version_2__1__0 => ((elementor_elementor__page__builder_update_beta1 & elementor_elementor__page__builder_sw__edition_any & !elementor_elementor__page__builder_update_beta3 & elementor_elementor__page__builder_sw__edition_any & !elementor_elementor__page__builder_update_any & elementor_elementor__page__builder_sw__edition_any & !elementor_elementor__page__builder_update_beta2 & elementor_elementor__page__builder_sw__edition_any) | (!elementor_elementor__page__builder_update_beta1 & elementor_elementor__page__builder_sw__edition_any & elementor_elementor__page__builder_update_beta3 & elementor_elementor__page__builder_sw__edition_any & !elementor_elementor__page__builder_update_any & elementor_elementor__page__builder_sw__edition_any & !elementor_elementor__page__builder_update_beta2 & elementor_elementor__page__builder_sw__edition_any) | (!elementor_elementor__page__builder_update_beta1 & elementor_elementor__page__builder_sw__edition_any & !elementor_elementor__page__builder_update_beta3 & elementor_elementor__page__builder_sw__edition_any & elementor_elementor__page__builder_update_any & elementor_elementor__page__builder_sw__edition_any & !elementor_elementor__page__builder_update_beta2 & elementor_elementor__page__builder_sw__edition_any) | (!elementor_elementor__page__builder_update_beta1 & elementor_elementor__page__builder_sw__edition_any & !elementor_elementor__page__builder_update_beta3 & elementor_elementor__page__builder_sw__edition_any & !elementor_elementor__page__builder_update_any & elementor_elementor__page__builder_sw__edition_any & elementor_elementor__page__builder_update_beta2 & elementor_elementor__page__builder_sw__edition_any))
+        elementor_elementor__page__builder_version_0__3__0 => elementor_elementor__page__builder_update_any
+        elementor_elementor__page__builder_version_0__3__0 => elementor_elementor__page__builder_sw__edition_any
+        elementor_elementor__page__builder_version_2__5__11 => elementor_elementor__page__builder_update_any
+        elementor_elementor__page__builder_version_2__5__11 => elementor_elementor__page__builder_sw__edition_any
+        elementor_elementor__page__builder_version_1__5__9 => elementor_elementor__page__builder_update_any
+        elementor_elementor__page__builder_version_1__5__9 => elementor_elementor__page__builder_sw__edition_pro
+        elementor_elementor__page__builder_version_0__7__4 => elementor_elementor__page__builder_update_any
+        elementor_elementor__page__builder_version_0__7__4 => elementor_elementor__page__builder_sw__edition_any
+        elementor_elementor__page__builder_version_1__8__12 => elementor_elementor__page__builder_update_any
+        elementor_elementor__page__builder_version_1__8__12 => elementor_elementor__page__builder_sw__edition_any
+        elementor_elementor__page__builder_version_0__6__6 => elementor_elementor__page__builder_update_any
+        elementor_elementor__page__builder_version_0__6__6 => elementor_elementor__page__builder_sw__edition_any
+        elementor_elementor__page__builder_version_0__8__0 => elementor_elementor__page__builder_update_any
+        elementor_elementor__page__builder_version_0__8__0 => elementor_elementor__page__builder_sw__edition_any
+        elementor_elementor__page__builder_version_2__5__5 => elementor_elementor__page__builder_update_any
+        elementor_elementor__page__builder_version_2__5__5 => elementor_elementor__page__builder_sw__edition_any
+        elementor_elementor__page__builder_version_1__4__9 => elementor_elementor__page__builder_update_any
+        elementor_elementor__page__builder_version_1__4__9 => elementor_elementor__page__builder_sw__edition_any
+        elementor_elementor__page__builder_version_0__9__2 => elementor_elementor__page__builder_update_any
+        elementor_elementor__page__builder_version_0__9__2 => elementor_elementor__page__builder_sw__edition_any
+        elementor_elementor__page__builder_version_2__2__7 => elementor_elementor__page__builder_update_any
+        elementor_elementor__page__builder_version_2__2__7 => elementor_elementor__page__builder_sw__edition_any
+        elementor_elementor__page__builder_version_2__7__3 => elementor_elementor__page__builder_update_any
+        elementor_elementor__page__builder_version_2__7__3 => elementor_elementor__page__builder_sw__edition_any
+        elementor_elementor__page__builder_version_1__9__4 => (elementor_elementor__page__builder_update_any)
+        elementor_elementor__page__builder_version_0__7__2 => elementor_elementor__page__builder_update_any
+        elementor_elementor__page__builder_version_0__7__2 => elementor_elementor__page__builder_sw__edition_any
+        elementor_elementor__page__builder_version_2__1__4 => elementor_elementor__page__builder_update_any
+        elementor_elementor__page__builder_version_2__1__4 => elementor_elementor__page__builder_sw__edition_any
+        elementor_elementor__page__builder_version_0__6__4 => elementor_elementor__page__builder_update_any
+        elementor_elementor__page__builder_version_0__6__4 => elementor_elementor__page__builder_sw__edition_any
+        elementor_elementor__page__builder_version_2__0__5 => (elementor_elementor__page__builder_update_any)
+        elementor_elementor__page__builder_version_2__0__15 => elementor_elementor__page__builder_update_any
+        elementor_elementor__page__builder_version_2__0__15 => elementor_elementor__page__builder_sw__edition_any
+        elementor_elementor__page__builder_version_1__2__5 => elementor_elementor__page__builder_update_any
+        elementor_elementor__page__builder_version_1__2__5 => elementor_elementor__page__builder_sw__edition_pro
+        elementor_elementor__page__builder_version_2__1__5 => elementor_elementor__page__builder_update_any
+        elementor_elementor__page__builder_version_2__1__5 => elementor_elementor__page__builder_sw__edition_any
+        elementor_elementor__page__builder_version_1__3__5 => elementor_elementor__page__builder_update_any
+        elementor_elementor__page__builder_version_1__3__5 => elementor_elementor__page__builder_sw__edition_any
+        elementor_elementor__page__builder_version_1__6__3 => elementor_elementor__page__builder_update_any
+        elementor_elementor__page__builder_version_1__6__3 => elementor_elementor__page__builder_sw__edition_any
+        elementor_elementor__page__builder_version_0__1__2 => elementor_elementor__page__builder_update_any
+        elementor_elementor__page__builder_version_0__1__2 => elementor_elementor__page__builder_sw__edition_any
+        elementor_elementor__page__builder_version_0__10__6 => elementor_elementor__page__builder_update_any
+        elementor_elementor__page__builder_version_0__10__6 => elementor_elementor__page__builder_sw__edition_any
+        elementor_elementor__page__builder_version_1__10__0 => elementor_elementor__page__builder_update_any
+        elementor_elementor__page__builder_version_1__10__0 => elementor_elementor__page__builder_sw__edition_pro
+        elementor_elementor__page__builder_version_0__6__3 => elementor_elementor__page__builder_update_any
+        elementor_elementor__page__builder_version_0__6__3 => elementor_elementor__page__builder_sw__edition_any
+        elementor_elementor__page__builder_version_1__11__0 => elementor_elementor__page__builder_update_any
+        elementor_elementor__page__builder_version_1__11__0 => elementor_elementor__page__builder_sw__edition_pro

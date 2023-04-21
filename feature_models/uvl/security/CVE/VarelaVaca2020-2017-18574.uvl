@@ -1,0 +1,350 @@
+features
+        CVE_2017_18574
+                mandatory
+                        types
+                                mandatory
+                                        application
+                        sources
+                                mandatory
+                                        nvd
+                        exploits
+                                optional
+                                        direct
+                                        indirect
+                        ninjaforms
+                                mandatory
+                                        ninjaforms_ninja__forms
+                                                mandatory
+                                                        ninjaforms_ninja__forms_version
+                                                                alternative
+                                                                        ninjaforms_ninja__forms_version_2__6__4
+                                                                        ninjaforms_ninja__forms_version_2__9__20
+                                                                        ninjaforms_ninja__forms_version_2__3__8
+                                                                        ninjaforms_ninja__forms_version_3__0__30
+                                                                        ninjaforms_ninja__forms_version_2__2__33
+                                                                        ninjaforms_ninja__forms_version_3__0__9
+                                                                        ninjaforms_ninja__forms_version_2__7__4
+                                                                        ninjaforms_ninja__forms_version_2__6__1
+                                                                        ninjaforms_ninja__forms_version_2__9__17
+                                                                        ninjaforms_ninja__forms_version_2__9__26
+                                                                        ninjaforms_ninja__forms_version_2__5__3
+                                                                        ninjaforms_ninja__forms_version_2__9__57
+                                                                        ninjaforms_ninja__forms_version_2__9__55__2
+                                                                        ninjaforms_ninja__forms_version_2__9__21
+                                                                        ninjaforms_ninja__forms_version_3__0__15
+                                                                        ninjaforms_ninja__forms_version_2__8__8
+                                                                        ninjaforms_ninja__forms_version_2__9__15
+                                                                        ninjaforms_ninja__forms_version_2__5
+                                                                        ninjaforms_ninja__forms_version_2__9
+                                                                        ninjaforms_ninja__forms_version_2__8__3
+                                                                        ninjaforms_ninja__forms_version_2__9__52
+                                                                        ninjaforms_ninja__forms_version_3__0__21
+                                                                        ninjaforms_ninja__forms_version_2__9__55
+                                                                        ninjaforms_ninja__forms_version_3__0__10
+                                                                        ninjaforms_ninja__forms_version_2__9__32
+                                                                        ninjaforms_ninja__forms_version_3__0__7
+                                                                        ninjaforms_ninja__forms_version_2__9__10
+                                                                        ninjaforms_ninja__forms_version_2__7__2
+                                                                        ninjaforms_ninja__forms_version_2__6
+                                                                        ninjaforms_ninja__forms_version_2__9__23
+                                                                        ninjaforms_ninja__forms_version_3__0__16
+                                                                        ninjaforms_ninja__forms_version_2__9__4
+                                                                        ninjaforms_ninja__forms_version_2__7__5
+                                                                        ninjaforms_ninja__forms_version_3__0__13
+                                                                        ninjaforms_ninja__forms_version_2__9__25
+                                                                        ninjaforms_ninja__forms_version_3__0__6
+                                                                        ninjaforms_ninja__forms_version_2__5__1
+                                                                        ninjaforms_ninja__forms_version_2__9__51
+                                                                        ninjaforms_ninja__forms_version_2__9__16
+                                                                        ninjaforms_ninja__forms_version_2__8__5
+                                                                        ninjaforms_ninja__forms_version_2__2__54
+                                                                        ninjaforms_ninja__forms_version_2__9__5
+                                                                        ninjaforms_ninja__forms_version_2__3__4
+                                                                        ninjaforms_ninja__forms_version_2__9__34
+                                                                        ninjaforms_ninja__forms_version_2__9__40
+                                                                        ninjaforms_ninja__forms_version_2__9__45
+                                                                        ninjaforms_ninja__forms_version_2__9__56__1
+                                                                        ninjaforms_ninja__forms_version_2__9__1
+                                                                        ninjaforms_ninja__forms_version_2__3__5
+                                                                        ninjaforms_ninja__forms_version_2__2__48
+                                                                        ninjaforms_ninja__forms_version_3__0__22
+                                                                        ninjaforms_ninja__forms_version_2__9__18
+                                                                        ninjaforms_ninja__forms_version_2__2__39
+                                                                        ninjaforms_ninja__forms_version_2__8
+                                                                        ninjaforms_ninja__forms_version_2__9__47
+                                                                        ninjaforms_ninja__forms_version_2__9__8
+                                                                        ninjaforms_ninja__forms_version_3__0__4
+                                                                        ninjaforms_ninja__forms_version_2__9__53
+                                                                        ninjaforms_ninja__forms_version_2__2__7
+                                                                        ninjaforms_ninja__forms_version_2__9__9
+                                                                        ninjaforms_ninja__forms_version_3__0__8
+                                                                        ninjaforms_ninja__forms_version_2__2__41
+                                                                        ninjaforms_ninja__forms_version_2__2__50
+                                                                        ninjaforms_ninja__forms_version_2__2__47
+                                                                        ninjaforms_ninja__forms_version_2__4__2
+                                                                        ninjaforms_ninja__forms_version_2__2__55
+                                                                        ninjaforms_ninja__forms_version_2__9__49
+                                                                        ninjaforms_ninja__forms_version_3__0__11
+                                                                        ninjaforms_ninja__forms_version_3__0__26
+                                                                        ninjaforms_ninja__forms_version_2__7__6
+                                                                        ninjaforms_ninja__forms_version_2__9__6
+                                                                        ninjaforms_ninja__forms_version_2__2__45
+                                                                        ninjaforms_ninja__forms_version_2__9__38
+                                                                        ninjaforms_ninja__forms_version_2__9__31
+                                                                        ninjaforms_ninja__forms_version_2__9__42
+                                                                        ninjaforms_ninja__forms_version_2__9__56
+                                                                        ninjaforms_ninja__forms_version_2__9__55__1
+                                                                        ninjaforms_ninja__forms_version_2__7__1
+                                                                        ninjaforms_ninja__forms_version_2__9__43
+                                                                        ninjaforms_ninja__forms_version_2__2__43
+                                                                        ninjaforms_ninja__forms_version_2__8__2
+                                                                        ninjaforms_ninja__forms_version_2__2__35
+                                                                        ninjaforms_ninja__forms_version_2__9__48
+                                                                        ninjaforms_ninja__forms_version_3__0__24
+                                                                        ninjaforms_ninja__forms_version_2__9__11
+                                                                        ninjaforms_ninja__forms_version_2__8__12
+                                                                        ninjaforms_ninja__forms_version_2__8__13
+                                                                        ninjaforms_ninja__forms_version_3__0__2
+                                                                        ninjaforms_ninja__forms_version_2__9__58
+                                                                        ninjaforms_ninja__forms_version_2__9__35
+                                                                        ninjaforms_ninja__forms_version_2__3__3
+                                                                        ninjaforms_ninja__forms_version_2__9__14
+                                                                        ninjaforms_ninja__forms_version_3__0__1
+                                                                        ninjaforms_ninja__forms_version_2__9__30
+                                                                        ninjaforms_ninja__forms_version_2__2__37
+                                                                        ninjaforms_ninja__forms_version_2__2__36
+                                                                        ninjaforms_ninja__forms_version_3__0__27
+                                                                        ninjaforms_ninja__forms_version_2__9__50
+                                                                        ninjaforms_ninja__forms_version_3__0__29
+                                                                        ninjaforms_ninja__forms_version_2__9__44
+                                                                        ninjaforms_ninja__forms_version_2__6__5
+                                                                        ninjaforms_ninja__forms_version_3__0__19
+                                                                        ninjaforms_ninja__forms_version_2__9__22
+                                                                        ninjaforms_ninja__forms_version_3__0__3
+                                                                        ninjaforms_ninja__forms_version_2__9__29
+                                                                        ninjaforms_ninja__forms_version_2__2__51
+                                                                        ninjaforms_ninja__forms_version_2__2__34
+                                                                        ninjaforms_ninja__forms_version_3__0__18
+                                                                        ninjaforms_ninja__forms_version_2__3__1
+                                                                        ninjaforms_ninja__forms_version_3__0__25
+                                                                        ninjaforms_ninja__forms_version_2__9__2
+                                                                        ninjaforms_ninja__forms_version_3__0__12
+                                                                        ninjaforms_ninja__forms_version_2__9__39
+                                                                        ninjaforms_ninja__forms_version_2__3__6
+                                                                        ninjaforms_ninja__forms_version_3__0
+                                                                        ninjaforms_ninja__forms_version_2__9__46
+                                                                        ninjaforms_ninja__forms_version_2__2__6
+                                                                        ninjaforms_ninja__forms_version_2__6__3
+                                                                        ninjaforms_ninja__forms_version_2__3__2
+                                                                        ninjaforms_ninja__forms_version_3__0__28
+                                                                        ninjaforms_ninja__forms_version_2__8__6
+                                                                        ninjaforms_ninja__forms_version_2__3__7
+                                                                        ninjaforms_ninja__forms_version_2__6__2
+                                                                        ninjaforms_ninja__forms_version_2__3
+                                                                        ninjaforms_ninja__forms_version_2__2__40
+                                                                        ninjaforms_ninja__forms_version_2__8__7
+                                                                        ninjaforms_ninja__forms_version_2__2__52
+                                                                        ninjaforms_ninja__forms_version_2__2__46
+                                                                        ninjaforms_ninja__forms_version_2__9__12
+                                                                        ninjaforms_ninja__forms_version_2__9__33
+                                                                        ninjaforms_ninja__forms_version_2__7__7
+                                                                        ninjaforms_ninja__forms_version_2__2__49
+                                                                        ninjaforms_ninja__forms_version_3__0__17
+                                                                        ninjaforms_ninja__forms_version_3__0__14
+                                                                        ninjaforms_ninja__forms_version_2__5__2
+                                                                        ninjaforms_ninja__forms_version_2__8__11
+                                                                        ninjaforms_ninja__forms_version_2__2__31
+                                                                        ninjaforms_ninja__forms_version_2__2__53
+                                                                        ninjaforms_ninja__forms_version_2__4
+                                                                        ninjaforms_ninja__forms_version_2__9__56__2
+                                                                        ninjaforms_ninja__forms_version_2__9__27
+                                                                        ninjaforms_ninja__forms_version_2__7
+                                                                        ninjaforms_ninja__forms_version_3__0__5
+                                                                        ninjaforms_ninja__forms_version_3__0__23
+                                                                        ninjaforms_ninja__forms_version_2__9__37
+                                                                        ninjaforms_ninja__forms_version_2__7__3
+                                                                        ninjaforms_ninja__forms_version_2__9__7
+                                                                        ninjaforms_ninja__forms_version_2__4__1
+                                                                        ninjaforms_ninja__forms_version_2__9__41
+                                                                        ninjaforms_ninja__forms_version_2__8__10
+                                                                        ninjaforms_ninja__forms_version_2__9__54
+                                                                        ninjaforms_ninja__forms_version_3__0__20
+                                                                        ninjaforms_ninja__forms_version_2__8__9
+                                                                        ninjaforms_ninja__forms_version_2__9__36
+                                                                        ninjaforms_ninja__forms_version_2__9__19
+                                                                        ninjaforms_ninja__forms_version_2__9__24
+                                                                        ninjaforms_ninja__forms_version_2__9__13
+                                                                        ninjaforms_ninja__forms_version_2__8__1
+                                                                        ninjaforms_ninja__forms_version_2__9__28
+                                                                        ninjaforms_ninja__forms_version_2__9__3
+                                                                        ninjaforms_ninja__forms_version_2__8__4
+                                                        ninjaforms_ninja__forms_update
+                                                                alternative
+                                                                        ninjaforms_ninja__forms_update_any
+                                                                        ninjaforms_ninja__forms_update_beta
+                                                        ninjaforms_ninja__forms_target__sw
+                                                                mandatory
+                                                                        ninjaforms_ninja__forms_target__sw_wordpress
+
+constraints
+        ninjaforms_ninja__forms => application
+        ninjaforms_ninja__forms_version_2__6__4 => ninjaforms_ninja__forms_update_any
+        ninjaforms_ninja__forms_version_2__9__20 => ninjaforms_ninja__forms_update_any
+        ninjaforms_ninja__forms_version_2__3__8 => ninjaforms_ninja__forms_update_any
+        ninjaforms_ninja__forms_version_3__0__30 => ninjaforms_ninja__forms_update_any
+        ninjaforms_ninja__forms_version_2__2__33 => ninjaforms_ninja__forms_update_any
+        ninjaforms_ninja__forms_version_3__0__9 => ninjaforms_ninja__forms_update_any
+        ninjaforms_ninja__forms_version_2__7__4 => ninjaforms_ninja__forms_update_any
+        ninjaforms_ninja__forms_version_2__6__1 => ninjaforms_ninja__forms_update_any
+        ninjaforms_ninja__forms_version_2__9__17 => ninjaforms_ninja__forms_update_any
+        ninjaforms_ninja__forms_version_2__9__26 => ninjaforms_ninja__forms_update_any
+        ninjaforms_ninja__forms_version_2__5__3 => ninjaforms_ninja__forms_update_any
+        ninjaforms_ninja__forms_version_2__9__57 => ninjaforms_ninja__forms_update_any
+        ninjaforms_ninja__forms_version_2__9__55__2 => ninjaforms_ninja__forms_update_any
+        ninjaforms_ninja__forms_version_2__9__21 => ninjaforms_ninja__forms_update_any
+        ninjaforms_ninja__forms_version_3__0__15 => ninjaforms_ninja__forms_update_any
+        ninjaforms_ninja__forms_version_2__8__8 => ninjaforms_ninja__forms_update_any
+        ninjaforms_ninja__forms_version_2__9__15 => ninjaforms_ninja__forms_update_any
+        ninjaforms_ninja__forms_version_2__5 => ninjaforms_ninja__forms_update_any
+        ninjaforms_ninja__forms_version_2__9 => ninjaforms_ninja__forms_update_any
+        ninjaforms_ninja__forms_version_2__8__3 => ninjaforms_ninja__forms_update_any
+        ninjaforms_ninja__forms_version_2__9__52 => ninjaforms_ninja__forms_update_any
+        ninjaforms_ninja__forms_version_3__0__21 => ninjaforms_ninja__forms_update_any
+        ninjaforms_ninja__forms_version_2__9__55 => ninjaforms_ninja__forms_update_any
+        ninjaforms_ninja__forms_version_3__0__10 => ninjaforms_ninja__forms_update_any
+        ninjaforms_ninja__forms_version_2__9__32 => ninjaforms_ninja__forms_update_any
+        ninjaforms_ninja__forms_version_3__0__7 => ninjaforms_ninja__forms_update_any
+        ninjaforms_ninja__forms_version_2__9__10 => ninjaforms_ninja__forms_update_any
+        ninjaforms_ninja__forms_version_2__7__2 => ninjaforms_ninja__forms_update_any
+        ninjaforms_ninja__forms_version_2__6 => ninjaforms_ninja__forms_update_any
+        ninjaforms_ninja__forms_version_2__9__23 => ninjaforms_ninja__forms_update_any
+        ninjaforms_ninja__forms_version_3__0__16 => ninjaforms_ninja__forms_update_any
+        ninjaforms_ninja__forms_version_2__9__4 => ninjaforms_ninja__forms_update_any
+        ninjaforms_ninja__forms_version_2__7__5 => ninjaforms_ninja__forms_update_any
+        ninjaforms_ninja__forms_version_3__0__13 => ninjaforms_ninja__forms_update_any
+        ninjaforms_ninja__forms_version_2__9__25 => ninjaforms_ninja__forms_update_any
+        ninjaforms_ninja__forms_version_3__0__6 => ninjaforms_ninja__forms_update_any
+        ninjaforms_ninja__forms_version_2__5__1 => ninjaforms_ninja__forms_update_any
+        ninjaforms_ninja__forms_version_2__9__51 => ninjaforms_ninja__forms_update_any
+        ninjaforms_ninja__forms_version_2__9__16 => ninjaforms_ninja__forms_update_any
+        ninjaforms_ninja__forms_version_2__8__5 => ninjaforms_ninja__forms_update_any
+        ninjaforms_ninja__forms_version_2__2__54 => ninjaforms_ninja__forms_update_any
+        ninjaforms_ninja__forms_version_2__9__5 => ninjaforms_ninja__forms_update_any
+        ninjaforms_ninja__forms_version_2__3__4 => ninjaforms_ninja__forms_update_any
+        ninjaforms_ninja__forms_version_2__9__34 => ninjaforms_ninja__forms_update_any
+        ninjaforms_ninja__forms_version_2__9__40 => ninjaforms_ninja__forms_update_any
+        ninjaforms_ninja__forms_version_2__9__45 => ninjaforms_ninja__forms_update_any
+        ninjaforms_ninja__forms_version_2__9__56__1 => ninjaforms_ninja__forms_update_any
+        ninjaforms_ninja__forms_version_2__9__1 => ninjaforms_ninja__forms_update_any
+        ninjaforms_ninja__forms_version_2__3__5 => ninjaforms_ninja__forms_update_any
+        ninjaforms_ninja__forms_version_2__2__48 => ninjaforms_ninja__forms_update_any
+        ninjaforms_ninja__forms_version_3__0__22 => ninjaforms_ninja__forms_update_any
+        ninjaforms_ninja__forms_version_2__9__18 => ninjaforms_ninja__forms_update_any
+        ninjaforms_ninja__forms_version_2__2__39 => ninjaforms_ninja__forms_update_any
+        ninjaforms_ninja__forms_version_2__8 => ninjaforms_ninja__forms_update_any
+        ninjaforms_ninja__forms_version_2__9__47 => ninjaforms_ninja__forms_update_any
+        ninjaforms_ninja__forms_version_2__9__8 => ninjaforms_ninja__forms_update_any
+        ninjaforms_ninja__forms_version_3__0__4 => ninjaforms_ninja__forms_update_any
+        ninjaforms_ninja__forms_version_2__9__53 => ninjaforms_ninja__forms_update_any
+        ninjaforms_ninja__forms_version_2__2__7 => ninjaforms_ninja__forms_update_any
+        ninjaforms_ninja__forms_version_2__9__9 => ninjaforms_ninja__forms_update_any
+        ninjaforms_ninja__forms_version_3__0__8 => ninjaforms_ninja__forms_update_any
+        ninjaforms_ninja__forms_version_2__2__41 => ninjaforms_ninja__forms_update_any
+        ninjaforms_ninja__forms_version_2__2__50 => ninjaforms_ninja__forms_update_any
+        ninjaforms_ninja__forms_version_2__2__47 => ninjaforms_ninja__forms_update_any
+        ninjaforms_ninja__forms_version_2__4__2 => ninjaforms_ninja__forms_update_any
+        ninjaforms_ninja__forms_version_2__2__55 => ninjaforms_ninja__forms_update_any
+        ninjaforms_ninja__forms_version_2__9__49 => ninjaforms_ninja__forms_update_any
+        ninjaforms_ninja__forms_version_3__0__11 => ninjaforms_ninja__forms_update_any
+        ninjaforms_ninja__forms_version_3__0__26 => ninjaforms_ninja__forms_update_any
+        ninjaforms_ninja__forms_version_2__7__6 => ninjaforms_ninja__forms_update_any
+        ninjaforms_ninja__forms_version_2__9__6 => ninjaforms_ninja__forms_update_any
+        ninjaforms_ninja__forms_version_2__2__45 => ninjaforms_ninja__forms_update_any
+        ninjaforms_ninja__forms_version_2__9__38 => ninjaforms_ninja__forms_update_any
+        ninjaforms_ninja__forms_version_2__9__31 => ninjaforms_ninja__forms_update_any
+        ninjaforms_ninja__forms_version_2__9__42 => ninjaforms_ninja__forms_update_any
+        ninjaforms_ninja__forms_version_2__9__56 => ninjaforms_ninja__forms_update_any
+        ninjaforms_ninja__forms_version_2__9__55__1 => ninjaforms_ninja__forms_update_any
+        ninjaforms_ninja__forms_version_2__7__1 => ninjaforms_ninja__forms_update_any
+        ninjaforms_ninja__forms_version_2__9__43 => ninjaforms_ninja__forms_update_any
+        ninjaforms_ninja__forms_version_2__2__43 => ninjaforms_ninja__forms_update_any
+        ninjaforms_ninja__forms_version_2__8__2 => ninjaforms_ninja__forms_update_any
+        ninjaforms_ninja__forms_version_2__2__35 => ninjaforms_ninja__forms_update_any
+        ninjaforms_ninja__forms_version_2__9__48 => ninjaforms_ninja__forms_update_any
+        ninjaforms_ninja__forms_version_3__0__24 => ninjaforms_ninja__forms_update_any
+        ninjaforms_ninja__forms_version_2__9__11 => ninjaforms_ninja__forms_update_any
+        ninjaforms_ninja__forms_version_2__8__12 => ninjaforms_ninja__forms_update_any
+        ninjaforms_ninja__forms_version_2__8__13 => ninjaforms_ninja__forms_update_any
+        ninjaforms_ninja__forms_version_3__0__2 => ninjaforms_ninja__forms_update_any
+        ninjaforms_ninja__forms_version_2__9__58 => ninjaforms_ninja__forms_update_any
+        ninjaforms_ninja__forms_version_2__9__35 => ninjaforms_ninja__forms_update_any
+        ninjaforms_ninja__forms_version_2__3__3 => ninjaforms_ninja__forms_update_any
+        ninjaforms_ninja__forms_version_2__9__14 => ninjaforms_ninja__forms_update_any
+        ninjaforms_ninja__forms_version_3__0__1 => ninjaforms_ninja__forms_update_any
+        ninjaforms_ninja__forms_version_2__9__30 => ninjaforms_ninja__forms_update_any
+        ninjaforms_ninja__forms_version_2__2__37 => ninjaforms_ninja__forms_update_any
+        ninjaforms_ninja__forms_version_2__2__36 => ninjaforms_ninja__forms_update_any
+        ninjaforms_ninja__forms_version_3__0__27 => ninjaforms_ninja__forms_update_any
+        ninjaforms_ninja__forms_version_2__9__50 => ninjaforms_ninja__forms_update_any
+        ninjaforms_ninja__forms_version_3__0__29 => ninjaforms_ninja__forms_update_any
+        ninjaforms_ninja__forms_version_2__9__44 => ninjaforms_ninja__forms_update_any
+        ninjaforms_ninja__forms_version_2__6__5 => ninjaforms_ninja__forms_update_any
+        ninjaforms_ninja__forms_version_3__0__19 => ninjaforms_ninja__forms_update_any
+        ninjaforms_ninja__forms_version_2__9__22 => ninjaforms_ninja__forms_update_any
+        ninjaforms_ninja__forms_version_3__0__3 => ninjaforms_ninja__forms_update_any
+        ninjaforms_ninja__forms_version_2__9__29 => ninjaforms_ninja__forms_update_any
+        ninjaforms_ninja__forms_version_2__2__51 => ninjaforms_ninja__forms_update_any
+        ninjaforms_ninja__forms_version_2__2__34 => ninjaforms_ninja__forms_update_any
+        ninjaforms_ninja__forms_version_3__0__18 => ninjaforms_ninja__forms_update_any
+        ninjaforms_ninja__forms_version_2__3__1 => ninjaforms_ninja__forms_update_any
+        ninjaforms_ninja__forms_version_3__0__25 => ninjaforms_ninja__forms_update_any
+        ninjaforms_ninja__forms_version_2__9__2 => ninjaforms_ninja__forms_update_any
+        ninjaforms_ninja__forms_version_2__9__39 => ninjaforms_ninja__forms_update_any
+        ninjaforms_ninja__forms_version_2__3__6 => ninjaforms_ninja__forms_update_any
+        ninjaforms_ninja__forms_version_3__0 => ninjaforms_ninja__forms_update_any
+        ninjaforms_ninja__forms_version_2__9__46 => ninjaforms_ninja__forms_update_any
+        ninjaforms_ninja__forms_version_2__2__6 => ninjaforms_ninja__forms_update_any
+        ninjaforms_ninja__forms_version_2__6__3 => ninjaforms_ninja__forms_update_any
+        ninjaforms_ninja__forms_version_2__3__2 => ninjaforms_ninja__forms_update_any
+        ninjaforms_ninja__forms_version_3__0__28 => ninjaforms_ninja__forms_update_any
+        ninjaforms_ninja__forms_version_2__8__6 => ninjaforms_ninja__forms_update_any
+        ninjaforms_ninja__forms_version_2__3__7 => ninjaforms_ninja__forms_update_any
+        ninjaforms_ninja__forms_version_2__6__2 => ninjaforms_ninja__forms_update_any
+        ninjaforms_ninja__forms_version_2__3 => ninjaforms_ninja__forms_update_any
+        ninjaforms_ninja__forms_version_2__2__40 => ninjaforms_ninja__forms_update_any
+        ninjaforms_ninja__forms_version_2__8__7 => ninjaforms_ninja__forms_update_any
+        ninjaforms_ninja__forms_version_2__2__52 => ninjaforms_ninja__forms_update_any
+        ninjaforms_ninja__forms_version_2__2__46 => ninjaforms_ninja__forms_update_any
+        ninjaforms_ninja__forms_version_2__9__12 => ninjaforms_ninja__forms_update_any
+        ninjaforms_ninja__forms_version_2__9__33 => ninjaforms_ninja__forms_update_any
+        ninjaforms_ninja__forms_version_2__7__7 => ninjaforms_ninja__forms_update_any
+        ninjaforms_ninja__forms_version_2__2__49 => ninjaforms_ninja__forms_update_any
+        ninjaforms_ninja__forms_version_3__0__17 => ninjaforms_ninja__forms_update_any
+        ninjaforms_ninja__forms_version_3__0__14 => ninjaforms_ninja__forms_update_any
+        ninjaforms_ninja__forms_version_2__5__2 => ninjaforms_ninja__forms_update_any
+        ninjaforms_ninja__forms_version_2__8__11 => ninjaforms_ninja__forms_update_any
+        ninjaforms_ninja__forms_version_2__2__31 => ninjaforms_ninja__forms_update_any
+        ninjaforms_ninja__forms_version_2__2__53 => ninjaforms_ninja__forms_update_any
+        ninjaforms_ninja__forms_version_2__4 => ninjaforms_ninja__forms_update_any
+        ninjaforms_ninja__forms_version_2__9__56__2 => ninjaforms_ninja__forms_update_any
+        ninjaforms_ninja__forms_version_2__9__27 => ninjaforms_ninja__forms_update_any
+        ninjaforms_ninja__forms_version_2__7 => ninjaforms_ninja__forms_update_any
+        ninjaforms_ninja__forms_version_3__0__5 => ninjaforms_ninja__forms_update_any
+        ninjaforms_ninja__forms_version_3__0__23 => ninjaforms_ninja__forms_update_any
+        ninjaforms_ninja__forms_version_2__9__37 => ninjaforms_ninja__forms_update_any
+        ninjaforms_ninja__forms_version_2__7__3 => ninjaforms_ninja__forms_update_any
+        ninjaforms_ninja__forms_version_2__9__7 => ninjaforms_ninja__forms_update_any
+        ninjaforms_ninja__forms_version_2__4__1 => ninjaforms_ninja__forms_update_any
+        ninjaforms_ninja__forms_version_2__9__41 => ninjaforms_ninja__forms_update_any
+        ninjaforms_ninja__forms_version_2__8__10 => ninjaforms_ninja__forms_update_any
+        ninjaforms_ninja__forms_version_2__9__54 => ninjaforms_ninja__forms_update_any
+        ninjaforms_ninja__forms_version_3__0__20 => ninjaforms_ninja__forms_update_any
+        ninjaforms_ninja__forms_version_2__8__9 => ninjaforms_ninja__forms_update_any
+        ninjaforms_ninja__forms_version_2__9__36 => ninjaforms_ninja__forms_update_any
+        ninjaforms_ninja__forms_version_2__9__19 => ninjaforms_ninja__forms_update_any
+        ninjaforms_ninja__forms_version_2__9__24 => ninjaforms_ninja__forms_update_any
+        ninjaforms_ninja__forms_version_2__9__13 => ninjaforms_ninja__forms_update_any
+        ninjaforms_ninja__forms_version_2__8__1 => ninjaforms_ninja__forms_update_any
+        ninjaforms_ninja__forms_version_2__9__28 => ninjaforms_ninja__forms_update_any
+        ninjaforms_ninja__forms_version_2__9__3 => ninjaforms_ninja__forms_update_any
+        ninjaforms_ninja__forms_version_2__8__4 => ninjaforms_ninja__forms_update_any

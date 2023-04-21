@@ -1,0 +1,555 @@
+features
+        CVE_2018_13389
+                mandatory
+                        types
+                                mandatory
+                                        application
+                        sources
+                                mandatory
+                                        nvd
+                        exploits
+                                optional
+                                        direct
+                                        indirect
+                        atlassian
+                                mandatory
+                                        atlassian_confluence
+                                                mandatory
+                                                        atlassian_confluence_version
+                                                                alternative
+                                                                        atlassian_confluence_version_3__5__4
+                                                                        atlassian_confluence_version_5__10__7
+                                                                        atlassian_confluence_version_6__0__1
+                                                                        atlassian_confluence_version_3__4__6
+                                                                        atlassian_confluence_version_5__10__6
+                                                                        atlassian_confluence_version_2__6__2
+                                                                        atlassian_confluence_version_6__3__1
+                                                                        atlassian_confluence_version_5__9__1
+                                                                        atlassian_confluence_version_6__3__0
+                                                                        atlassian_confluence_version_6__0__3
+                                                                        atlassian_confluence_version_5__5__0
+                                                                        atlassian_confluence_version_2__0
+                                                                        atlassian_confluence_version_3__2__1
+                                                                        atlassian_confluence_version_2__10__1
+                                                                        atlassian_confluence_version_5__6__4
+                                                                        atlassian_confluence_version_5__0__3
+                                                                        atlassian_confluence_version_4__0__5
+                                                                        atlassian_confluence_version_6__5__3
+                                                                        atlassian_confluence_version_2__5__2
+                                                                        atlassian_confluence_version_5__3
+                                                                        atlassian_confluence_version_5__9__2
+                                                                        atlassian_confluence_version_5__0__1
+                                                                        atlassian_confluence_version_4__2__8
+                                                                        atlassian_confluence_version_2__4__5
+                                                                        atlassian_confluence_version_2__3__2
+                                                                        atlassian_confluence_version_2__2__1
+                                                                        atlassian_confluence_version_4__2__7
+                                                                        atlassian_confluence_version_4__2__0
+                                                                        atlassian_confluence_version_5__4
+                                                                        atlassian_confluence_version_2__9__1
+                                                                        atlassian_confluence_version_4__0__4
+                                                                        atlassian_confluence_version_5__8__8
+                                                                        atlassian_confluence_version_5__10__1
+                                                                        atlassian_confluence_version_4__3__7
+                                                                        atlassian_confluence_version_1__3__1
+                                                                        atlassian_confluence_version_5__9__8
+                                                                        atlassian_confluence_version_4__1__3
+                                                                        atlassian_confluence_version_1__4__4
+                                                                        atlassian_confluence_version_3__4__8
+                                                                        atlassian_confluence_version_6__0__0
+                                                                        atlassian_confluence_version_3__5__13
+                                                                        atlassian_confluence_version_5__6
+                                                                        atlassian_confluence_version_6__6
+                                                                        atlassian_confluence_version_5__8__10
+                                                                        atlassian_confluence_version_2__5__3
+                                                                        atlassian_confluence_version_4__1__10
+                                                                        atlassian_confluence_version_2__10
+                                                                        atlassian_confluence_version_6__0__2
+                                                                        atlassian_confluence_version_1__2__1
+                                                                        atlassian_confluence_version_3__4__2
+                                                                        atlassian_confluence_version_5__4__1
+                                                                        atlassian_confluence_version_5__9__5
+                                                                        atlassian_confluence_version_2__6
+                                                                        atlassian_confluence_version_6__2__0
+                                                                        atlassian_confluence_version_5__1__4
+                                                                        atlassian_confluence_version_5__8__17
+                                                                        atlassian_confluence_version_4__2__1
+                                                                        atlassian_confluence_version_3__5__16
+                                                                        atlassian_confluence_version_6__4__1
+                                                                        atlassian_confluence_version_2__7__4
+                                                                        atlassian_confluence_version_6__2__2
+                                                                        atlassian_confluence_version_2__5
+                                                                        atlassian_confluence_version_3__2
+                                                                        atlassian_confluence_version_2__8
+                                                                        atlassian_confluence_version_3__0__1
+                                                                        atlassian_confluence_version_5__7__1
+                                                                        atlassian_confluence_version_6__0__6
+                                                                        atlassian_confluence_version_6__1__4
+                                                                        atlassian_confluence_version_5__10__0
+                                                                        atlassian_confluence_version_2__2
+                                                                        atlassian_confluence_version_6__0__5
+                                                                        atlassian_confluence_version_5__10__8
+                                                                        atlassian_confluence_version_2__2__2
+                                                                        atlassian_confluence_version_5__6__1
+                                                                        atlassian_confluence_version_1__3__6
+                                                                        atlassian_confluence_version_2__2__7
+                                                                        atlassian_confluence_version_5__9__10
+                                                                        atlassian_confluence_version_4__3__2
+                                                                        atlassian_confluence_version_5__9__14
+                                                                        atlassian_confluence_version_5__1
+                                                                        atlassian_confluence_version_1__4__3
+                                                                        atlassian_confluence_version_6__0__4
+                                                                        atlassian_confluence_version_5__1__1
+                                                                        atlassian_confluence_version_2__5__8
+                                                                        atlassian_confluence_version_5__10__5
+                                                                        atlassian_confluence_version_2__1__2
+                                                                        atlassian_confluence_version_4__1__9
+                                                                        atlassian_confluence_version_5__10
+                                                                        atlassian_confluence_version_3__5__3
+                                                                        atlassian_confluence_version_5__9__3
+                                                                        atlassian_confluence_version_6__1__2
+                                                                        atlassian_confluence_version_3__5__7
+                                                                        atlassian_confluence_version_2__2__5
+                                                                        atlassian_confluence_version_2__5__5
+                                                                        atlassian_confluence_version_4__1__2
+                                                                        atlassian_confluence_version_2__10__2
+                                                                        atlassian_confluence_version_5__7__3
+                                                                        atlassian_confluence_version_3__4__9
+                                                                        atlassian_confluence_version_2__1__4
+                                                                        atlassian_confluence_version_5__3__1
+                                                                        atlassian_confluence_version_1__3
+                                                                        atlassian_confluence_version_2__2__8
+                                                                        atlassian_confluence_version_6__3
+                                                                        atlassian_confluence_version_4__1__5
+                                                                        atlassian_confluence_version_4__3__1
+                                                                        atlassian_confluence_version_2__7__3
+                                                                        atlassian_confluence_version_1__4__1
+                                                                        atlassian_confluence_version_6__6__0
+                                                                        atlassian_confluence_version_6__3__4
+                                                                        atlassian_confluence_version_5__6__6
+                                                                        atlassian_confluence_version_1__3__4
+                                                                        atlassian_confluence_version_6__5__1
+                                                                        atlassian_confluence_version_2__5__6
+                                                                        atlassian_confluence_version_3__5__11
+                                                                        atlassian_confluence_version_5__9__11
+                                                                        atlassian_confluence_version_3__4
+                                                                        atlassian_confluence_version_5__8__9
+                                                                        atlassian_confluence_version_5__8__18
+                                                                        atlassian_confluence_version_6__2__3
+                                                                        atlassian_confluence_version_5__5__7
+                                                                        atlassian_confluence_version_1__0__3
+                                                                        atlassian_confluence_version_3__5__17
+                                                                        atlassian_confluence_version_5__8__15
+                                                                        atlassian_confluence_version_4__0__3
+                                                                        atlassian_confluence_version_5__3__4
+                                                                        atlassian_confluence_version_5__9__12
+                                                                        atlassian_confluence_version_5__7__5
+                                                                        atlassian_confluence_version_1__2__2
+                                                                        atlassian_confluence_version_3__4__7
+                                                                        atlassian_confluence_version_1__3__2
+                                                                        atlassian_confluence_version_2__9__3
+                                                                        atlassian_confluence_version_2__5__4
+                                                                        atlassian_confluence_version_5__2__3
+                                                                        atlassian_confluence_version_4__2__12
+                                                                        atlassian_confluence_version_4__2__5
+                                                                        atlassian_confluence_version_4__3__3
+                                                                        atlassian_confluence_version_2__1__1
+                                                                        atlassian_confluence_version_5__0
+                                                                        atlassian_confluence_version_6__2__1
+                                                                        atlassian_confluence_version_5__0__2
+                                                                        atlassian_confluence_version_3__3__3
+                                                                        atlassian_confluence_version_2__8__3
+                                                                        atlassian_confluence_version_2__9__2
+                                                                        atlassian_confluence_version_3__0__2
+                                                                        atlassian_confluence_version_2__4
+                                                                        atlassian_confluence_version_1__4
+                                                                        atlassian_confluence_version_5__9__7
+                                                                        atlassian_confluence_version_3__0
+                                                                        atlassian_confluence_version_6__5__2
+                                                                        atlassian_confluence_version_4__1
+                                                                        atlassian_confluence_version_6__1__0
+                                                                        atlassian_confluence_version_4__1__4
+                                                                        atlassian_confluence_version_1__4__2
+                                                                        atlassian_confluence_version_3__3__1
+                                                                        atlassian_confluence_version_6__2
+                                                                        atlassian_confluence_version_2__2__9
+                                                                        atlassian_confluence_version_5__4__3
+                                                                        atlassian_confluence_version_1__1__1
+                                                                        atlassian_confluence_version_6__0__7
+                                                                        atlassian_confluence_version_1__0
+                                                                        atlassian_confluence_version_2__1
+                                                                        atlassian_confluence_version_6__2__4
+                                                                        atlassian_confluence_version_6__3__3
+                                                                        atlassian_confluence_version_2__4__4
+                                                                        atlassian_confluence_version_5__5__3
+                                                                        atlassian_confluence_version_2__8__2
+                                                                        atlassian_confluence_version_3__5__6
+                                                                        atlassian_confluence_version_5__7
+                                                                        atlassian_confluence_version_3__1__1
+                                                                        atlassian_confluence_version_2__6__3
+                                                                        atlassian_confluence_version_2__6__1
+                                                                        atlassian_confluence_version_3__5__5
+                                                                        atlassian_confluence_version_5__8__16
+                                                                        atlassian_confluence_version_2__3
+                                                                        atlassian_confluence_version_6__4
+                                                                        atlassian_confluence_version_5__8__2
+                                                                        atlassian_confluence_version_1__0__1
+                                                                        atlassian_confluence_version_4__1__6
+                                                                        atlassian_confluence_version_6__4__0
+                                                                        atlassian_confluence_version_3__4__1
+                                                                        atlassian_confluence_version_2__7__2
+                                                                        atlassian_confluence_version_5__8__4
+                                                                        atlassian_confluence_version_4__2__11
+                                                                        atlassian_confluence_version_6__1
+                                                                        atlassian_confluence_version_5__1__2
+                                                                        atlassian_confluence_version_2__2__3
+                                                                        atlassian_confluence_version_6__4__3
+                                                                        atlassian_confluence_version_5__9__4
+                                                                        atlassian_confluence_version_5__9__9
+                                                                        atlassian_confluence_version_4__3__6
+                                                                        atlassian_confluence_version_5__6__3
+                                                                        atlassian_confluence_version_5__7__6
+                                                                        atlassian_confluence_version_3__5__9
+                                                                        atlassian_confluence_version_6__4__2
+                                                                        atlassian_confluence_version_6__1__3
+                                                                        atlassian_confluence_version_3__5
+                                                                        atlassian_confluence_version_2__1__3
+                                                                        atlassian_confluence_version_4__2__13
+                                                                        atlassian_confluence_version_2__10__3
+                                                                        atlassian_confluence_version_5__9__6
+                                                                        atlassian_confluence_version_2__1__5
+                                                                        atlassian_confluence_version_5__5__6
+                                                                        atlassian_confluence_version_4__0__7
+                                                                        atlassian_confluence_version_2__2__4
+                                                                        atlassian_confluence_version_3__1__2
+                                                                        atlassian_confluence_version_2__8__1
+                                                                        atlassian_confluence_version_5__7__4
+                                                                        atlassian_confluence_version_2__5__7
+                                                                        atlassian_confluence_version_1__2__3
+                                                                        atlassian_confluence_version_5__10__4
+                                                                        atlassian_confluence_version_2__10__4
+                                                                        atlassian_confluence_version_3__3
+                                                                        atlassian_confluence_version_2__9
+                                                                        atlassian_confluence_version_5__5__1
+                                                                        atlassian_confluence_version_4__2__6
+                                                                        atlassian_confluence_version_5__10__2
+                                                                        atlassian_confluence_version_2__0__1
+                                                                        atlassian_confluence_version_2__5__1
+                                                                        atlassian_confluence_version_6__5__0
+                                                                        atlassian_confluence_version_4__1__7
+                                                                        atlassian_confluence_version_5__10__3
+                                                                        atlassian_confluence_version_3__1
+                                                                        atlassian_confluence_version_1__3__5
+                                                                        atlassian_confluence_version_2__7
+                                                                        atlassian_confluence_version_4__3__5
+                                                                        atlassian_confluence_version_6__1__1
+                                                                        atlassian_confluence_version_2__0__3
+                                                                        atlassian_confluence_version_2__7__1
+                                                                        atlassian_confluence_version_5__1__3
+                                                                        atlassian_confluence_version_5__2__5
+                                                                        atlassian_confluence_version_2__2__6a
+                                                                        atlassian_confluence_version_4__2__2
+                                                                        atlassian_confluence_version_2__3__1
+                                                                        atlassian_confluence_version_6__5
+                                                                        atlassian_confluence_version_2__3__3
+                                                                        atlassian_confluence_version_5__8__13
+                                                                        atlassian_confluence_version_5__5__2
+                                                                        atlassian_confluence_version_5__8__14
+                                                                        atlassian_confluence_version_2__4__2
+                                                                        atlassian_confluence_version_1__2
+                                                                        atlassian_confluence_version_any
+                                                                        atlassian_confluence_version_1__1
+                                                                        atlassian_confluence_version_5__2__4
+                                                                        atlassian_confluence_version_5__1__5
+                                                                        atlassian_confluence_version_5__8__6
+                                                                        atlassian_confluence_version_3__5__2
+                                                                        atlassian_confluence_version_5__10__9
+                                                                        atlassian_confluence_version_1__1__2
+                                                                        atlassian_confluence_version_5__4__2
+                                                                        atlassian_confluence_version_4__2__4
+                                                                        atlassian_confluence_version_6__3__2
+                                                                        atlassian_confluence_version_5__6__5
+                                                                        atlassian_confluence_version_4__2__3
+                                                                        atlassian_confluence_version_2__4__3
+                                                                        atlassian_confluence_version_3__5__1
+                                                                        atlassian_confluence_version_2__0__2
+                                                                        atlassian_confluence_version_5__8__5
+                                                                        atlassian_confluence_version_3__4__5
+                                                                        atlassian_confluence_version_6__0
+                                                                        atlassian_confluence_version_4__0
+                                                                        atlassian_confluence_version_3__4__3
+                                                                        atlassian_confluence_version_2__2__10
+                                                                        atlassian_confluence_version_5__5
+                                                                        atlassian_confluence_version_5__4__4
+                                                                        atlassian_confluence_version_4__3
+                                                        atlassian_confluence_update
+                                                                alternative
+                                                                        atlassian_confluence_update_beta
+                                                                        atlassian_confluence_update_any
+
+constraints
+        atlassian_confluence => application
+        atlassian_confluence_version_3__5__4 => atlassian_confluence_update_any
+        atlassian_confluence_version_5__10__7 => atlassian_confluence_update_any
+        atlassian_confluence_version_6__0__1 => atlassian_confluence_update_any
+        atlassian_confluence_version_3__4__6 => atlassian_confluence_update_any
+        atlassian_confluence_version_5__10__6 => atlassian_confluence_update_any
+        atlassian_confluence_version_2__6__2 => atlassian_confluence_update_any
+        atlassian_confluence_version_6__3__1 => atlassian_confluence_update_any
+        atlassian_confluence_version_5__9__1 => atlassian_confluence_update_any
+        atlassian_confluence_version_6__3__0 => atlassian_confluence_update_any
+        atlassian_confluence_version_6__0__3 => atlassian_confluence_update_any
+        atlassian_confluence_version_5__5__0 => atlassian_confluence_update_any
+        atlassian_confluence_version_2__0 => atlassian_confluence_update_any
+        atlassian_confluence_version_3__2__1 => atlassian_confluence_update_any
+        atlassian_confluence_version_2__10__1 => atlassian_confluence_update_any
+        atlassian_confluence_version_5__6__4 => atlassian_confluence_update_any
+        atlassian_confluence_version_5__0__3 => atlassian_confluence_update_any
+        atlassian_confluence_version_4__0__5 => atlassian_confluence_update_any
+        atlassian_confluence_version_6__5__3 => atlassian_confluence_update_any
+        atlassian_confluence_version_2__5__2 => atlassian_confluence_update_any
+        atlassian_confluence_version_5__3 => atlassian_confluence_update_any
+        atlassian_confluence_version_5__9__2 => atlassian_confluence_update_any
+        atlassian_confluence_version_5__0__1 => atlassian_confluence_update_any
+        atlassian_confluence_version_4__2__8 => atlassian_confluence_update_any
+        atlassian_confluence_version_2__4__5 => atlassian_confluence_update_any
+        atlassian_confluence_version_2__3__2 => atlassian_confluence_update_any
+        atlassian_confluence_version_2__2__1 => atlassian_confluence_update_any
+        atlassian_confluence_version_4__2__7 => atlassian_confluence_update_any
+        atlassian_confluence_version_4__2__0 => atlassian_confluence_update_any
+        atlassian_confluence_version_5__4 => atlassian_confluence_update_any
+        atlassian_confluence_version_2__9__1 => atlassian_confluence_update_any
+        atlassian_confluence_version_4__0__4 => atlassian_confluence_update_any
+        atlassian_confluence_version_5__8__8 => atlassian_confluence_update_any
+        atlassian_confluence_version_5__10__1 => atlassian_confluence_update_any
+        atlassian_confluence_version_4__3__7 => atlassian_confluence_update_any
+        atlassian_confluence_version_1__3__1 => atlassian_confluence_update_any
+        atlassian_confluence_version_5__9__8 => atlassian_confluence_update_any
+        atlassian_confluence_version_4__1__3 => atlassian_confluence_update_any
+        atlassian_confluence_version_1__4__4 => atlassian_confluence_update_any
+        atlassian_confluence_version_3__4__8 => atlassian_confluence_update_any
+        atlassian_confluence_version_6__0__0 => atlassian_confluence_update_any
+        atlassian_confluence_version_3__5__13 => atlassian_confluence_update_any
+        atlassian_confluence_version_5__6 => atlassian_confluence_update_any
+        atlassian_confluence_version_6__6 => atlassian_confluence_update_any
+        atlassian_confluence_version_5__8__10 => atlassian_confluence_update_any
+        atlassian_confluence_version_2__5__3 => atlassian_confluence_update_any
+        atlassian_confluence_version_4__1__10 => atlassian_confluence_update_any
+        atlassian_confluence_version_2__10 => atlassian_confluence_update_any
+        atlassian_confluence_version_6__0__2 => atlassian_confluence_update_any
+        atlassian_confluence_version_1__2__1 => atlassian_confluence_update_any
+        atlassian_confluence_version_3__4__2 => atlassian_confluence_update_any
+        atlassian_confluence_version_5__4__1 => atlassian_confluence_update_any
+        atlassian_confluence_version_5__9__5 => atlassian_confluence_update_any
+        atlassian_confluence_version_2__6 => atlassian_confluence_update_any
+        atlassian_confluence_version_6__2__0 => atlassian_confluence_update_any
+        atlassian_confluence_version_5__1__4 => atlassian_confluence_update_any
+        atlassian_confluence_version_5__8__17 => atlassian_confluence_update_any
+        atlassian_confluence_version_4__2__1 => atlassian_confluence_update_any
+        atlassian_confluence_version_3__5__16 => atlassian_confluence_update_any
+        atlassian_confluence_version_6__4__1 => atlassian_confluence_update_any
+        atlassian_confluence_version_2__7__4 => atlassian_confluence_update_any
+        atlassian_confluence_version_6__2__2 => atlassian_confluence_update_any
+        atlassian_confluence_version_2__5 => atlassian_confluence_update_any
+        atlassian_confluence_version_3__2 => atlassian_confluence_update_any
+        atlassian_confluence_version_3__0__1 => atlassian_confluence_update_any
+        atlassian_confluence_version_5__7__1 => atlassian_confluence_update_any
+        atlassian_confluence_version_6__0__6 => atlassian_confluence_update_any
+        atlassian_confluence_version_6__1__4 => atlassian_confluence_update_any
+        atlassian_confluence_version_5__10__0 => atlassian_confluence_update_any
+        atlassian_confluence_version_2__2 => atlassian_confluence_update_any
+        atlassian_confluence_version_6__0__5 => atlassian_confluence_update_any
+        atlassian_confluence_version_5__10__8 => atlassian_confluence_update_any
+        atlassian_confluence_version_2__2__2 => atlassian_confluence_update_any
+        atlassian_confluence_version_5__6__1 => atlassian_confluence_update_any
+        atlassian_confluence_version_1__3__6 => atlassian_confluence_update_any
+        atlassian_confluence_version_2__2__7 => atlassian_confluence_update_any
+        atlassian_confluence_version_5__9__10 => atlassian_confluence_update_any
+        atlassian_confluence_version_4__3__2 => atlassian_confluence_update_any
+        atlassian_confluence_version_5__9__14 => atlassian_confluence_update_any
+        atlassian_confluence_version_5__1 => atlassian_confluence_update_any
+        atlassian_confluence_version_1__4__3 => atlassian_confluence_update_any
+        atlassian_confluence_version_6__0__4 => atlassian_confluence_update_any
+        atlassian_confluence_version_5__1__1 => atlassian_confluence_update_any
+        atlassian_confluence_version_2__5__8 => atlassian_confluence_update_any
+        atlassian_confluence_version_5__10__5 => atlassian_confluence_update_any
+        atlassian_confluence_version_2__1__2 => atlassian_confluence_update_any
+        atlassian_confluence_version_4__1__9 => atlassian_confluence_update_any
+        atlassian_confluence_version_5__10 => atlassian_confluence_update_any
+        atlassian_confluence_version_3__5__3 => atlassian_confluence_update_any
+        atlassian_confluence_version_5__9__3 => atlassian_confluence_update_any
+        atlassian_confluence_version_6__1__2 => atlassian_confluence_update_any
+        atlassian_confluence_version_3__5__7 => atlassian_confluence_update_any
+        atlassian_confluence_version_2__2__5 => atlassian_confluence_update_any
+        atlassian_confluence_version_2__5__5 => atlassian_confluence_update_any
+        atlassian_confluence_version_4__1__2 => atlassian_confluence_update_any
+        atlassian_confluence_version_2__10__2 => atlassian_confluence_update_any
+        atlassian_confluence_version_5__7__3 => atlassian_confluence_update_any
+        atlassian_confluence_version_3__4__9 => atlassian_confluence_update_any
+        atlassian_confluence_version_2__1__4 => atlassian_confluence_update_any
+        atlassian_confluence_version_5__3__1 => atlassian_confluence_update_any
+        atlassian_confluence_version_1__3 => atlassian_confluence_update_any
+        atlassian_confluence_version_2__2__8 => atlassian_confluence_update_any
+        atlassian_confluence_version_6__3 => atlassian_confluence_update_any
+        atlassian_confluence_version_4__1__5 => atlassian_confluence_update_any
+        atlassian_confluence_version_4__3__1 => atlassian_confluence_update_any
+        atlassian_confluence_version_2__7__3 => atlassian_confluence_update_any
+        atlassian_confluence_version_1__4__1 => atlassian_confluence_update_any
+        atlassian_confluence_version_6__6__0 => atlassian_confluence_update_any
+        atlassian_confluence_version_6__3__4 => atlassian_confluence_update_any
+        atlassian_confluence_version_5__6__6 => atlassian_confluence_update_any
+        atlassian_confluence_version_1__3__4 => atlassian_confluence_update_any
+        atlassian_confluence_version_6__5__1 => atlassian_confluence_update_any
+        atlassian_confluence_version_2__5__6 => atlassian_confluence_update_any
+        atlassian_confluence_version_3__5__11 => atlassian_confluence_update_any
+        atlassian_confluence_version_5__9__11 => atlassian_confluence_update_any
+        atlassian_confluence_version_3__4 => atlassian_confluence_update_any
+        atlassian_confluence_version_5__8__9 => atlassian_confluence_update_any
+        atlassian_confluence_version_5__8__18 => atlassian_confluence_update_any
+        atlassian_confluence_version_6__2__3 => atlassian_confluence_update_any
+        atlassian_confluence_version_5__5__7 => atlassian_confluence_update_any
+        atlassian_confluence_version_1__0__3 => atlassian_confluence_update_any
+        atlassian_confluence_version_3__5__17 => atlassian_confluence_update_any
+        atlassian_confluence_version_5__8__15 => atlassian_confluence_update_any
+        atlassian_confluence_version_4__0__3 => atlassian_confluence_update_any
+        atlassian_confluence_version_5__3__4 => atlassian_confluence_update_any
+        atlassian_confluence_version_5__9__12 => atlassian_confluence_update_any
+        atlassian_confluence_version_5__7__5 => atlassian_confluence_update_any
+        atlassian_confluence_version_1__2__2 => atlassian_confluence_update_any
+        atlassian_confluence_version_3__4__7 => atlassian_confluence_update_any
+        atlassian_confluence_version_1__3__2 => atlassian_confluence_update_any
+        atlassian_confluence_version_2__9__3 => atlassian_confluence_update_any
+        atlassian_confluence_version_2__5__4 => atlassian_confluence_update_any
+        atlassian_confluence_version_5__2__3 => atlassian_confluence_update_any
+        atlassian_confluence_version_4__2__12 => atlassian_confluence_update_any
+        atlassian_confluence_version_4__2__5 => atlassian_confluence_update_any
+        atlassian_confluence_version_4__3__3 => atlassian_confluence_update_any
+        atlassian_confluence_version_2__1__1 => atlassian_confluence_update_any
+        atlassian_confluence_version_5__0 => atlassian_confluence_update_any
+        atlassian_confluence_version_6__2__1 => atlassian_confluence_update_any
+        atlassian_confluence_version_5__0__2 => atlassian_confluence_update_any
+        atlassian_confluence_version_3__3__3 => atlassian_confluence_update_any
+        atlassian_confluence_version_2__8__3 => atlassian_confluence_update_any
+        atlassian_confluence_version_2__9__2 => atlassian_confluence_update_any
+        atlassian_confluence_version_3__0__2 => atlassian_confluence_update_any
+        atlassian_confluence_version_2__4 => atlassian_confluence_update_any
+        atlassian_confluence_version_1__4 => atlassian_confluence_update_any
+        atlassian_confluence_version_5__9__7 => atlassian_confluence_update_any
+        atlassian_confluence_version_3__0 => atlassian_confluence_update_any
+        atlassian_confluence_version_6__5__2 => atlassian_confluence_update_any
+        atlassian_confluence_version_4__1 => atlassian_confluence_update_any
+        atlassian_confluence_version_6__1__0 => atlassian_confluence_update_any
+        atlassian_confluence_version_4__1__4 => atlassian_confluence_update_any
+        atlassian_confluence_version_1__4__2 => atlassian_confluence_update_any
+        atlassian_confluence_version_3__3__1 => atlassian_confluence_update_any
+        atlassian_confluence_version_6__2 => atlassian_confluence_update_any
+        atlassian_confluence_version_2__2__9 => atlassian_confluence_update_any
+        atlassian_confluence_version_5__4__3 => atlassian_confluence_update_any
+        atlassian_confluence_version_1__1__1 => atlassian_confluence_update_any
+        atlassian_confluence_version_6__0__7 => atlassian_confluence_update_any
+        atlassian_confluence_version_1__0 => atlassian_confluence_update_any
+        atlassian_confluence_version_2__1 => atlassian_confluence_update_any
+        atlassian_confluence_version_6__2__4 => atlassian_confluence_update_any
+        atlassian_confluence_version_6__3__3 => atlassian_confluence_update_any
+        atlassian_confluence_version_2__4__4 => atlassian_confluence_update_any
+        atlassian_confluence_version_5__5__3 => atlassian_confluence_update_any
+        atlassian_confluence_version_2__8__2 => atlassian_confluence_update_any
+        atlassian_confluence_version_3__5__6 => atlassian_confluence_update_any
+        atlassian_confluence_version_5__7 => atlassian_confluence_update_any
+        atlassian_confluence_version_3__1__1 => atlassian_confluence_update_any
+        atlassian_confluence_version_2__6__3 => atlassian_confluence_update_any
+        atlassian_confluence_version_2__6__1 => atlassian_confluence_update_any
+        atlassian_confluence_version_3__5__5 => atlassian_confluence_update_any
+        atlassian_confluence_version_5__8__16 => atlassian_confluence_update_any
+        atlassian_confluence_version_2__3 => atlassian_confluence_update_any
+        atlassian_confluence_version_6__4 => atlassian_confluence_update_any
+        atlassian_confluence_version_5__8__2 => atlassian_confluence_update_any
+        atlassian_confluence_version_1__0__1 => atlassian_confluence_update_any
+        atlassian_confluence_version_4__1__6 => atlassian_confluence_update_any
+        atlassian_confluence_version_6__4__0 => atlassian_confluence_update_any
+        atlassian_confluence_version_3__4__1 => atlassian_confluence_update_any
+        atlassian_confluence_version_2__7__2 => atlassian_confluence_update_any
+        atlassian_confluence_version_5__8__4 => atlassian_confluence_update_any
+        atlassian_confluence_version_4__2__11 => atlassian_confluence_update_any
+        atlassian_confluence_version_6__1 => atlassian_confluence_update_any
+        atlassian_confluence_version_5__1__2 => atlassian_confluence_update_any
+        atlassian_confluence_version_2__2__3 => atlassian_confluence_update_any
+        atlassian_confluence_version_6__4__3 => atlassian_confluence_update_any
+        atlassian_confluence_version_5__9__4 => atlassian_confluence_update_any
+        atlassian_confluence_version_5__9__9 => atlassian_confluence_update_any
+        atlassian_confluence_version_4__3__6 => atlassian_confluence_update_any
+        atlassian_confluence_version_5__6__3 => atlassian_confluence_update_any
+        atlassian_confluence_version_5__7__6 => atlassian_confluence_update_any
+        atlassian_confluence_version_3__5__9 => atlassian_confluence_update_any
+        atlassian_confluence_version_6__4__2 => atlassian_confluence_update_any
+        atlassian_confluence_version_6__1__3 => atlassian_confluence_update_any
+        atlassian_confluence_version_3__5 => atlassian_confluence_update_any
+        atlassian_confluence_version_2__1__3 => atlassian_confluence_update_any
+        atlassian_confluence_version_4__2__13 => atlassian_confluence_update_any
+        atlassian_confluence_version_2__10__3 => atlassian_confluence_update_any
+        atlassian_confluence_version_5__9__6 => atlassian_confluence_update_any
+        atlassian_confluence_version_2__1__5 => atlassian_confluence_update_any
+        atlassian_confluence_version_5__5__6 => atlassian_confluence_update_any
+        atlassian_confluence_version_4__0__7 => atlassian_confluence_update_any
+        atlassian_confluence_version_2__2__4 => atlassian_confluence_update_any
+        atlassian_confluence_version_3__1__2 => atlassian_confluence_update_any
+        atlassian_confluence_version_2__8__1 => atlassian_confluence_update_any
+        atlassian_confluence_version_5__7__4 => atlassian_confluence_update_any
+        atlassian_confluence_version_2__5__7 => atlassian_confluence_update_any
+        atlassian_confluence_version_1__2__3 => atlassian_confluence_update_any
+        atlassian_confluence_version_5__10__4 => atlassian_confluence_update_any
+        atlassian_confluence_version_2__10__4 => atlassian_confluence_update_any
+        atlassian_confluence_version_3__3 => atlassian_confluence_update_any
+        atlassian_confluence_version_2__9 => atlassian_confluence_update_any
+        atlassian_confluence_version_5__5__1 => atlassian_confluence_update_any
+        atlassian_confluence_version_4__2__6 => atlassian_confluence_update_any
+        atlassian_confluence_version_5__10__2 => atlassian_confluence_update_any
+        atlassian_confluence_version_2__0__1 => atlassian_confluence_update_any
+        atlassian_confluence_version_2__5__1 => atlassian_confluence_update_any
+        atlassian_confluence_version_6__5__0 => atlassian_confluence_update_any
+        atlassian_confluence_version_4__1__7 => atlassian_confluence_update_any
+        atlassian_confluence_version_5__10__3 => atlassian_confluence_update_any
+        atlassian_confluence_version_3__1 => atlassian_confluence_update_any
+        atlassian_confluence_version_1__3__5 => atlassian_confluence_update_any
+        atlassian_confluence_version_2__7 => atlassian_confluence_update_any
+        atlassian_confluence_version_4__3__5 => atlassian_confluence_update_any
+        atlassian_confluence_version_6__1__1 => atlassian_confluence_update_any
+        atlassian_confluence_version_2__0__3 => atlassian_confluence_update_any
+        atlassian_confluence_version_2__7__1 => atlassian_confluence_update_any
+        atlassian_confluence_version_5__1__3 => atlassian_confluence_update_any
+        atlassian_confluence_version_5__2__5 => atlassian_confluence_update_any
+        atlassian_confluence_version_2__2__6a => atlassian_confluence_update_any
+        atlassian_confluence_version_4__2__2 => atlassian_confluence_update_any
+        atlassian_confluence_version_2__3__1 => atlassian_confluence_update_any
+        atlassian_confluence_version_6__5 => atlassian_confluence_update_any
+        atlassian_confluence_version_2__3__3 => atlassian_confluence_update_any
+        atlassian_confluence_version_5__8__13 => atlassian_confluence_update_any
+        atlassian_confluence_version_5__5__2 => atlassian_confluence_update_any
+        atlassian_confluence_version_5__8__14 => atlassian_confluence_update_any
+        atlassian_confluence_version_2__4__2 => atlassian_confluence_update_any
+        atlassian_confluence_version_1__2 => atlassian_confluence_update_any
+        atlassian_confluence_version_any => atlassian_confluence_update_any
+        atlassian_confluence_version_1__1 => atlassian_confluence_update_any
+        atlassian_confluence_version_5__2__4 => atlassian_confluence_update_any
+        atlassian_confluence_version_5__1__5 => atlassian_confluence_update_any
+        atlassian_confluence_version_5__8__6 => atlassian_confluence_update_any
+        atlassian_confluence_version_3__5__2 => atlassian_confluence_update_any
+        atlassian_confluence_version_5__10__9 => atlassian_confluence_update_any
+        atlassian_confluence_version_1__1__2 => atlassian_confluence_update_any
+        atlassian_confluence_version_5__4__2 => atlassian_confluence_update_any
+        atlassian_confluence_version_4__2__4 => atlassian_confluence_update_any
+        atlassian_confluence_version_6__3__2 => atlassian_confluence_update_any
+        atlassian_confluence_version_5__6__5 => atlassian_confluence_update_any
+        atlassian_confluence_version_4__2__3 => atlassian_confluence_update_any
+        atlassian_confluence_version_2__4__3 => atlassian_confluence_update_any
+        atlassian_confluence_version_3__5__1 => atlassian_confluence_update_any
+        atlassian_confluence_version_2__0__2 => atlassian_confluence_update_any
+        atlassian_confluence_version_5__8__5 => atlassian_confluence_update_any
+        atlassian_confluence_version_3__4__5 => atlassian_confluence_update_any
+        atlassian_confluence_version_6__0 => atlassian_confluence_update_any
+        atlassian_confluence_version_4__0 => atlassian_confluence_update_any
+        atlassian_confluence_version_3__4__3 => atlassian_confluence_update_any
+        atlassian_confluence_version_2__2__10 => atlassian_confluence_update_any
+        atlassian_confluence_version_5__5 => atlassian_confluence_update_any
+        atlassian_confluence_version_5__4__4 => atlassian_confluence_update_any
+        atlassian_confluence_version_4__3 => atlassian_confluence_update_any

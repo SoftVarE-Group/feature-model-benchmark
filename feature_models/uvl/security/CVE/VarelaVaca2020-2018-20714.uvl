@@ -1,0 +1,379 @@
+features
+        CVE_2018_20714
+                mandatory
+                        types
+                                mandatory
+                                        application
+                        sources
+                                mandatory
+                                        nvd
+                        exploits
+                                optional
+                                        direct
+                                        indirect
+                        woocommerce
+                                mandatory
+                                        woocommerce_woocommerce
+                                                mandatory
+                                                        woocommerce_woocommerce_version
+                                                                alternative
+                                                                        woocommerce_woocommerce_version_2__0__15
+                                                                        woocommerce_woocommerce_version_3__3__3
+                                                                        woocommerce_woocommerce_version_2__0__7
+                                                                        woocommerce_woocommerce_version_3__2__5
+                                                                        woocommerce_woocommerce_version_2__3__11
+                                                                        woocommerce_woocommerce_version_1__6__3
+                                                                        woocommerce_woocommerce_version_2__0__12
+                                                                        woocommerce_woocommerce_version_3__3__1
+                                                                        woocommerce_woocommerce_version_2__0__9
+                                                                        woocommerce_woocommerce_version_3__0__2
+                                                                        woocommerce_woocommerce_version_2__0__11
+                                                                        woocommerce_woocommerce_version_1__2__2
+                                                                        woocommerce_woocommerce_version_1__3__1
+                                                                        woocommerce_woocommerce_version_3__1__2
+                                                                        woocommerce_woocommerce_version_3__0__8
+                                                                        woocommerce_woocommerce_version_1__1
+                                                                        woocommerce_woocommerce_version_2__4__12
+                                                                        woocommerce_woocommerce_version_2__6__8
+                                                                        woocommerce_woocommerce_version_3__2__4
+                                                                        woocommerce_woocommerce_version_2__6__6
+                                                                        woocommerce_woocommerce_version_2__1__8
+                                                                        woocommerce_woocommerce_version_3__1__0
+                                                                        woocommerce_woocommerce_version_2__0__16
+                                                                        woocommerce_woocommerce_version_3__3__5
+                                                                        woocommerce_woocommerce_version_3__0__0
+                                                                        woocommerce_woocommerce_version_1__5__2
+                                                                        woocommerce_woocommerce_version_1__2__4
+                                                                        woocommerce_woocommerce_version_2__3__8
+                                                                        woocommerce_woocommerce_version_1__4
+                                                                        woocommerce_woocommerce_version_3__3__2
+                                                                        woocommerce_woocommerce_version_1__2
+                                                                        woocommerce_woocommerce_version_3__0__7
+                                                                        woocommerce_woocommerce_version_2__3__6
+                                                                        woocommerce_woocommerce_version_1__3
+                                                                        woocommerce_woocommerce_version_2__4__4
+                                                                        woocommerce_woocommerce_version_2__1__6
+                                                                        woocommerce_woocommerce_version_2__0__18
+                                                                        woocommerce_woocommerce_version_3__2__0
+                                                                        woocommerce_woocommerce_version_1__6__5
+                                                                        woocommerce_woocommerce_version_2__6__14
+                                                                        woocommerce_woocommerce_version_2__0__13
+                                                                        woocommerce_woocommerce_version_2__5__2
+                                                                        woocommerce_woocommerce_version_2__0__0
+                                                                        woocommerce_woocommerce_version_2__6__4
+                                                                        woocommerce_woocommerce_version_2__3__10
+                                                                        woocommerce_woocommerce_version_2__6__13
+                                                                        woocommerce_woocommerce_version_1__6__5__2
+                                                                        woocommerce_woocommerce_version_2__0__5
+                                                                        woocommerce_woocommerce_version_2__1__10
+                                                                        woocommerce_woocommerce_version_2__2__10
+                                                                        woocommerce_woocommerce_version_2__3__0
+                                                                        woocommerce_woocommerce_version_3__3__0
+                                                                        woocommerce_woocommerce_version_2__6__10
+                                                                        woocommerce_woocommerce_version_2__1__1
+                                                                        woocommerce_woocommerce_version_3__0__6
+                                                                        woocommerce_woocommerce_version_2__3__1
+                                                                        woocommerce_woocommerce_version_2__5__5
+                                                                        woocommerce_woocommerce_version_1__6__6
+                                                                        woocommerce_woocommerce_version_2__0__17
+                                                                        woocommerce_woocommerce_version_3__0__9
+                                                                        woocommerce_woocommerce_version_2__5__4
+                                                                        woocommerce_woocommerce_version_2__4__0
+                                                                        woocommerce_woocommerce_version_2__6__1
+                                                                        woocommerce_woocommerce_version_2__0__20
+                                                                        woocommerce_woocommerce_version_1__4__1
+                                                                        woocommerce_woocommerce_version_1__2__1
+                                                                        woocommerce_woocommerce_version_3__0__5
+                                                                        woocommerce_woocommerce_version_3__0__4
+                                                                        woocommerce_woocommerce_version_1__2__3
+                                                                        woocommerce_woocommerce_version_2__2__3
+                                                                        woocommerce_woocommerce_version_1__4__2
+                                                                        woocommerce_woocommerce_version_2__2__9
+                                                                        woocommerce_woocommerce_version_2__1__11
+                                                                        woocommerce_woocommerce_version_1__0__6
+                                                                        woocommerce_woocommerce_version_2__4__2
+                                                                        woocommerce_woocommerce_version_2__0__6
+                                                                        woocommerce_woocommerce_version_1__5__6
+                                                                        woocommerce_woocommerce_version_1__0__1
+                                                                        woocommerce_woocommerce_version_2__6__5
+                                                                        woocommerce_woocommerce_version_1__3__2
+                                                                        woocommerce_woocommerce_version_2__0__1
+                                                                        woocommerce_woocommerce_version_2__1__2
+                                                                        woocommerce_woocommerce_version_3__4__2
+                                                                        woocommerce_woocommerce_version_2__0__14
+                                                                        woocommerce_woocommerce_version_2__3__3
+                                                                        woocommerce_woocommerce_version_3__3__4
+                                                                        woocommerce_woocommerce_version_2__1__7
+                                                                        woocommerce_woocommerce_version_1__1__1
+                                                                        woocommerce_woocommerce_version_2__5__3
+                                                                        woocommerce_woocommerce_version_2__1__9
+                                                                        woocommerce_woocommerce_version_1__5
+                                                                        woocommerce_woocommerce_version_2__6__11
+                                                                        woocommerce_woocommerce_version_2__4__8
+                                                                        woocommerce_woocommerce_version_2__2__0
+                                                                        woocommerce_woocommerce_version_1__6__4
+                                                                        woocommerce_woocommerce_version_2__4__3
+                                                                        woocommerce_woocommerce_version_2__3__5
+                                                                        woocommerce_woocommerce_version_1__4__3
+                                                                        woocommerce_woocommerce_version_3__4__0
+                                                                        woocommerce_woocommerce_version_3__2__2
+                                                                        woocommerce_woocommerce_version_2__4__7
+                                                                        woocommerce_woocommerce_version_3__0__1
+                                                                        woocommerce_woocommerce_version_1__1__2
+                                                                        woocommerce_woocommerce_version_2__1__0
+                                                                        woocommerce_woocommerce_version_2__3__9
+                                                                        woocommerce_woocommerce_version_2__2__4
+                                                                        woocommerce_woocommerce_version_3__4__4
+                                                                        woocommerce_woocommerce_version_2__4__13
+                                                                        woocommerce_woocommerce_version_1__1__3
+                                                                        woocommerce_woocommerce_version_3__1__1
+                                                                        woocommerce_woocommerce_version_2__6__0
+                                                                        woocommerce_woocommerce_version_2__6__3
+                                                                        woocommerce_woocommerce_version_3__4__3
+                                                                        woocommerce_woocommerce_version_2__2__5
+                                                                        woocommerce_woocommerce_version_2__3__12
+                                                                        woocommerce_woocommerce_version_2__0__10
+                                                                        woocommerce_woocommerce_version_2__4__11
+                                                                        woocommerce_woocommerce_version_1__5__8
+                                                                        woocommerce_woocommerce_version_2__3__13
+                                                                        woocommerce_woocommerce_version_1__5__5
+                                                                        woocommerce_woocommerce_version_2__3__4
+                                                                        woocommerce_woocommerce_version_2__6__7
+                                                                        woocommerce_woocommerce_version_3__2__1
+                                                                        woocommerce_woocommerce_version_2__7__0
+                                                                        woocommerce_woocommerce_version_2__4__9
+                                                                        woocommerce_woocommerce_version_3__2__6
+                                                                        woocommerce_woocommerce_version_2__0__3
+                                                                        woocommerce_woocommerce_version_2__1__12
+                                                                        woocommerce_woocommerce_version_2__4__5
+                                                                        woocommerce_woocommerce_version_1__0__3
+                                                                        woocommerce_woocommerce_version_1__4__4
+                                                                        woocommerce_woocommerce_version_1__0__2
+                                                                        woocommerce_woocommerce_version_1__6__5__1
+                                                                        woocommerce_woocommerce_version_2__0__4
+                                                                        woocommerce_woocommerce_version_1__5__7__1
+                                                                        woocommerce_woocommerce_version_1__5__4
+                                                                        woocommerce_woocommerce_version_1__6__2
+                                                                        woocommerce_woocommerce_version_1__6__0
+                                                                        woocommerce_woocommerce_version_2__0__8
+                                                                        woocommerce_woocommerce_version_1__0
+                                                                        woocommerce_woocommerce_version_2__1__4
+                                                                        woocommerce_woocommerce_version_3__4__5
+                                                                        woocommerce_woocommerce_version_2__5__0
+                                                                        woocommerce_woocommerce_version_2__6__2
+                                                                        woocommerce_woocommerce_version_2__1__3
+                                                                        woocommerce_woocommerce_version_2__2__7
+                                                                        woocommerce_woocommerce_version_3__4__1
+                                                                        woocommerce_woocommerce_version_3__0__3
+                                                                        woocommerce_woocommerce_version_3__3__6
+                                                                        woocommerce_woocommerce_version_1__5__3
+                                                                        woocommerce_woocommerce_version_2__1__5
+                                                                        woocommerce_woocommerce_version_2__0__2
+                                                                        woocommerce_woocommerce_version_2__3__2
+                                                                        woocommerce_woocommerce_version_2__4__6
+                                                                        woocommerce_woocommerce_version_1__6__1
+                                                                        woocommerce_woocommerce_version_2__4__10
+                                                                        woocommerce_woocommerce_version_2__2__6
+                                                                        woocommerce_woocommerce_version_1__5__7
+                                                                        woocommerce_woocommerce_version_1__5__2__1
+                                                                        woocommerce_woocommerce_version_2__3__7
+                                                                        woocommerce_woocommerce_version_2__5__1
+                                                                        woocommerce_woocommerce_version_3__2__3
+                                                                        woocommerce_woocommerce_version_2__2__2
+                                                                        woocommerce_woocommerce_version_2__2__8
+                                                                        woocommerce_woocommerce_version_2__4__1
+                                                                        woocommerce_woocommerce_version_2__2__1
+                                                                        woocommerce_woocommerce_version_2__6__12
+                                                                        woocommerce_woocommerce_version_1__5__1
+                                                                        woocommerce_woocommerce_version_2__0__19
+                                                                        woocommerce_woocommerce_version_2__2__11
+                                                                        woocommerce_woocommerce_version_2__6__9
+                                                        woocommerce_woocommerce_update
+                                                                alternative
+                                                                        woocommerce_woocommerce_update_beta3
+                                                                        woocommerce_woocommerce_update_beta2
+                                                                        woocommerce_woocommerce_update_beta4
+                                                                        woocommerce_woocommerce_update_any
+                                                                        woocommerce_woocommerce_update_beta0
+                                                                        woocommerce_woocommerce_update_rc3
+                                                                        woocommerce_woocommerce_update_rc1
+                                                                        woocommerce_woocommerce_update_rc2
+                                                                        woocommerce_woocommerce_update_beta1
+                                                                        woocommerce_woocommerce_update_beat1
+                                                        woocommerce_woocommerce_target__sw
+                                                                mandatory
+                                                                        woocommerce_woocommerce_target__sw_wordpress
+
+constraints
+        woocommerce_woocommerce => application
+        woocommerce_woocommerce_version_2__0__15 => woocommerce_woocommerce_update_any
+        woocommerce_woocommerce_version_3__3__3 => woocommerce_woocommerce_update_any
+        woocommerce_woocommerce_version_2__0__7 => woocommerce_woocommerce_update_any
+        woocommerce_woocommerce_version_3__2__5 => woocommerce_woocommerce_update_any
+        woocommerce_woocommerce_version_2__3__11 => woocommerce_woocommerce_update_any
+        woocommerce_woocommerce_version_1__6__3 => woocommerce_woocommerce_update_any
+        woocommerce_woocommerce_version_2__0__12 => woocommerce_woocommerce_update_any
+        woocommerce_woocommerce_version_3__3__1 => ((woocommerce_woocommerce_update_any & !woocommerce_woocommerce_update_rc1) | (!woocommerce_woocommerce_update_any & woocommerce_woocommerce_update_rc1))
+        woocommerce_woocommerce_version_2__0__9 => woocommerce_woocommerce_update_any
+        woocommerce_woocommerce_version_3__0__2 => woocommerce_woocommerce_update_any
+        woocommerce_woocommerce_version_2__0__11 => woocommerce_woocommerce_update_any
+        woocommerce_woocommerce_version_1__2__2 => woocommerce_woocommerce_update_any
+        woocommerce_woocommerce_version_1__3__1 => woocommerce_woocommerce_update_any
+        woocommerce_woocommerce_version_3__1__2 => woocommerce_woocommerce_update_any
+        woocommerce_woocommerce_version_3__0__8 => woocommerce_woocommerce_update_any
+        woocommerce_woocommerce_version_1__1 => woocommerce_woocommerce_update_any
+        woocommerce_woocommerce_version_2__4__12 => woocommerce_woocommerce_update_any
+        woocommerce_woocommerce_version_2__6__8 => woocommerce_woocommerce_update_any
+        woocommerce_woocommerce_version_3__2__4 => woocommerce_woocommerce_update_any
+        woocommerce_woocommerce_version_2__6__6 => woocommerce_woocommerce_update_any
+        woocommerce_woocommerce_version_2__1__8 => woocommerce_woocommerce_update_any
+        woocommerce_woocommerce_version_3__1__0 => ((woocommerce_woocommerce_update_beta2 & !woocommerce_woocommerce_update_any & !woocommerce_woocommerce_update_rc1 & !woocommerce_woocommerce_update_rc2 & !woocommerce_woocommerce_update_beta1) | (!woocommerce_woocommerce_update_beta2 & woocommerce_woocommerce_update_any & !woocommerce_woocommerce_update_rc1 & !woocommerce_woocommerce_update_rc2 & !woocommerce_woocommerce_update_beta1) | (!woocommerce_woocommerce_update_beta2 & !woocommerce_woocommerce_update_any & woocommerce_woocommerce_update_rc1 & !woocommerce_woocommerce_update_rc2 & !woocommerce_woocommerce_update_beta1) | (!woocommerce_woocommerce_update_beta2 & !woocommerce_woocommerce_update_any & !woocommerce_woocommerce_update_rc1 & woocommerce_woocommerce_update_rc2 & !woocommerce_woocommerce_update_beta1) | (!woocommerce_woocommerce_update_beta2 & !woocommerce_woocommerce_update_any & !woocommerce_woocommerce_update_rc1 & !woocommerce_woocommerce_update_rc2 & woocommerce_woocommerce_update_beta1))
+        woocommerce_woocommerce_version_2__0__16 => woocommerce_woocommerce_update_any
+        woocommerce_woocommerce_version_3__3__5 => woocommerce_woocommerce_update_any
+        woocommerce_woocommerce_version_3__0__0 => ((woocommerce_woocommerce_update_any & !woocommerce_woocommerce_update_rc1 & !woocommerce_woocommerce_update_rc2) | (!woocommerce_woocommerce_update_any & woocommerce_woocommerce_update_rc1 & !woocommerce_woocommerce_update_rc2) | (!woocommerce_woocommerce_update_any & !woocommerce_woocommerce_update_rc1 & woocommerce_woocommerce_update_rc2))
+        woocommerce_woocommerce_version_1__5__2 => woocommerce_woocommerce_update_any
+        woocommerce_woocommerce_version_1__2__4 => woocommerce_woocommerce_update_any
+        woocommerce_woocommerce_version_2__3__8 => woocommerce_woocommerce_update_any
+        woocommerce_woocommerce_version_1__4 => woocommerce_woocommerce_update_any
+        woocommerce_woocommerce_version_3__3__2 => ((woocommerce_woocommerce_update_any & !woocommerce_woocommerce_update_rc1) | (!woocommerce_woocommerce_update_any & woocommerce_woocommerce_update_rc1))
+        woocommerce_woocommerce_version_1__2 => woocommerce_woocommerce_update_any
+        woocommerce_woocommerce_version_3__0__7 => woocommerce_woocommerce_update_any
+        woocommerce_woocommerce_version_2__3__6 => woocommerce_woocommerce_update_any
+        woocommerce_woocommerce_version_1__3 => woocommerce_woocommerce_update_any
+        woocommerce_woocommerce_version_2__4__4 => woocommerce_woocommerce_update_any
+        woocommerce_woocommerce_version_2__1__6 => woocommerce_woocommerce_update_any
+        woocommerce_woocommerce_version_2__0__18 => woocommerce_woocommerce_update_any
+        woocommerce_woocommerce_version_3__2__0 => ((woocommerce_woocommerce_update_beta2 & !woocommerce_woocommerce_update_any & !woocommerce_woocommerce_update_rc1 & !woocommerce_woocommerce_update_rc2 & !woocommerce_woocommerce_update_beta1) | (!woocommerce_woocommerce_update_beta2 & woocommerce_woocommerce_update_any & !woocommerce_woocommerce_update_rc1 & !woocommerce_woocommerce_update_rc2 & !woocommerce_woocommerce_update_beta1) | (!woocommerce_woocommerce_update_beta2 & !woocommerce_woocommerce_update_any & woocommerce_woocommerce_update_rc1 & !woocommerce_woocommerce_update_rc2 & !woocommerce_woocommerce_update_beta1) | (!woocommerce_woocommerce_update_beta2 & !woocommerce_woocommerce_update_any & !woocommerce_woocommerce_update_rc1 & woocommerce_woocommerce_update_rc2 & !woocommerce_woocommerce_update_beta1) | (!woocommerce_woocommerce_update_beta2 & !woocommerce_woocommerce_update_any & !woocommerce_woocommerce_update_rc1 & !woocommerce_woocommerce_update_rc2 & woocommerce_woocommerce_update_beta1))
+        woocommerce_woocommerce_version_1__6__5 => woocommerce_woocommerce_update_any
+        woocommerce_woocommerce_version_2__6__14 => woocommerce_woocommerce_update_any
+        woocommerce_woocommerce_version_2__0__13 => woocommerce_woocommerce_update_any
+        woocommerce_woocommerce_version_2__5__2 => woocommerce_woocommerce_update_any
+        woocommerce_woocommerce_version_2__0__0 => ((woocommerce_woocommerce_update_beta3 & !woocommerce_woocommerce_update_beta2 & !woocommerce_woocommerce_update_any & !woocommerce_woocommerce_update_beta0 & !woocommerce_woocommerce_update_rc3 & !woocommerce_woocommerce_update_rc1 & !woocommerce_woocommerce_update_rc2 & !woocommerce_woocommerce_update_beta1) | (!woocommerce_woocommerce_update_beta3 & woocommerce_woocommerce_update_beta2 & !woocommerce_woocommerce_update_any & !woocommerce_woocommerce_update_beta0 & !woocommerce_woocommerce_update_rc3 & !woocommerce_woocommerce_update_rc1 & !woocommerce_woocommerce_update_rc2 & !woocommerce_woocommerce_update_beta1) | (!woocommerce_woocommerce_update_beta3 & !woocommerce_woocommerce_update_beta2 & woocommerce_woocommerce_update_any & !woocommerce_woocommerce_update_beta0 & !woocommerce_woocommerce_update_rc3 & !woocommerce_woocommerce_update_rc1 & !woocommerce_woocommerce_update_rc2 & !woocommerce_woocommerce_update_beta1) | (!woocommerce_woocommerce_update_beta3 & !woocommerce_woocommerce_update_beta2 & !woocommerce_woocommerce_update_any & woocommerce_woocommerce_update_beta0 & !woocommerce_woocommerce_update_rc3 & !woocommerce_woocommerce_update_rc1 & !woocommerce_woocommerce_update_rc2 & !woocommerce_woocommerce_update_beta1) | (!woocommerce_woocommerce_update_beta3 & !woocommerce_woocommerce_update_beta2 & !woocommerce_woocommerce_update_any & !woocommerce_woocommerce_update_beta0 & woocommerce_woocommerce_update_rc3 & !woocommerce_woocommerce_update_rc1 & !woocommerce_woocommerce_update_rc2 & !woocommerce_woocommerce_update_beta1) | (!woocommerce_woocommerce_update_beta3 & !woocommerce_woocommerce_update_beta2 & !woocommerce_woocommerce_update_any & !woocommerce_woocommerce_update_beta0 & !woocommerce_woocommerce_update_rc3 & woocommerce_woocommerce_update_rc1 & !woocommerce_woocommerce_update_rc2 & !woocommerce_woocommerce_update_beta1) | (!woocommerce_woocommerce_update_beta3 & !woocommerce_woocommerce_update_beta2 & !woocommerce_woocommerce_update_any & !woocommerce_woocommerce_update_beta0 & !woocommerce_woocommerce_update_rc3 & !woocommerce_woocommerce_update_rc1 & woocommerce_woocommerce_update_rc2 & !woocommerce_woocommerce_update_beta1) | (!woocommerce_woocommerce_update_beta3 & !woocommerce_woocommerce_update_beta2 & !woocommerce_woocommerce_update_any & !woocommerce_woocommerce_update_beta0 & !woocommerce_woocommerce_update_rc3 & !woocommerce_woocommerce_update_rc1 & !woocommerce_woocommerce_update_rc2 & woocommerce_woocommerce_update_beta1))
+        woocommerce_woocommerce_version_2__6__4 => woocommerce_woocommerce_update_any
+        woocommerce_woocommerce_version_2__3__10 => woocommerce_woocommerce_update_any
+        woocommerce_woocommerce_version_2__6__13 => woocommerce_woocommerce_update_any
+        woocommerce_woocommerce_version_1__6__5__2 => woocommerce_woocommerce_update_any
+        woocommerce_woocommerce_version_2__0__5 => woocommerce_woocommerce_update_any
+        woocommerce_woocommerce_version_2__1__10 => woocommerce_woocommerce_update_any
+        woocommerce_woocommerce_version_2__2__10 => woocommerce_woocommerce_update_any
+        woocommerce_woocommerce_version_2__3__0 => ((woocommerce_woocommerce_update_beta3 & !woocommerce_woocommerce_update_beta2 & !woocommerce_woocommerce_update_any & !woocommerce_woocommerce_update_rc1 & !woocommerce_woocommerce_update_beta1) | (!woocommerce_woocommerce_update_beta3 & woocommerce_woocommerce_update_beta2 & !woocommerce_woocommerce_update_any & !woocommerce_woocommerce_update_rc1 & !woocommerce_woocommerce_update_beta1) | (!woocommerce_woocommerce_update_beta3 & !woocommerce_woocommerce_update_beta2 & woocommerce_woocommerce_update_any & !woocommerce_woocommerce_update_rc1 & !woocommerce_woocommerce_update_beta1) | (!woocommerce_woocommerce_update_beta3 & !woocommerce_woocommerce_update_beta2 & !woocommerce_woocommerce_update_any & woocommerce_woocommerce_update_rc1 & !woocommerce_woocommerce_update_beta1) | (!woocommerce_woocommerce_update_beta3 & !woocommerce_woocommerce_update_beta2 & !woocommerce_woocommerce_update_any & !woocommerce_woocommerce_update_rc1 & woocommerce_woocommerce_update_beta1))
+        woocommerce_woocommerce_version_3__3__0 => ((woocommerce_woocommerce_update_beta2 & !woocommerce_woocommerce_update_any & !woocommerce_woocommerce_update_rc1 & !woocommerce_woocommerce_update_rc2 & !woocommerce_woocommerce_update_beta1) | (!woocommerce_woocommerce_update_beta2 & woocommerce_woocommerce_update_any & !woocommerce_woocommerce_update_rc1 & !woocommerce_woocommerce_update_rc2 & !woocommerce_woocommerce_update_beta1) | (!woocommerce_woocommerce_update_beta2 & !woocommerce_woocommerce_update_any & woocommerce_woocommerce_update_rc1 & !woocommerce_woocommerce_update_rc2 & !woocommerce_woocommerce_update_beta1) | (!woocommerce_woocommerce_update_beta2 & !woocommerce_woocommerce_update_any & !woocommerce_woocommerce_update_rc1 & woocommerce_woocommerce_update_rc2 & !woocommerce_woocommerce_update_beta1) | (!woocommerce_woocommerce_update_beta2 & !woocommerce_woocommerce_update_any & !woocommerce_woocommerce_update_rc1 & !woocommerce_woocommerce_update_rc2 & woocommerce_woocommerce_update_beta1))
+        woocommerce_woocommerce_version_2__6__10 => woocommerce_woocommerce_update_any
+        woocommerce_woocommerce_version_2__1__1 => woocommerce_woocommerce_update_any
+        woocommerce_woocommerce_version_3__0__6 => woocommerce_woocommerce_update_any
+        woocommerce_woocommerce_version_2__3__1 => woocommerce_woocommerce_update_any
+        woocommerce_woocommerce_version_2__5__5 => woocommerce_woocommerce_update_any
+        woocommerce_woocommerce_version_1__6__6 => woocommerce_woocommerce_update_any
+        woocommerce_woocommerce_version_2__0__17 => woocommerce_woocommerce_update_any
+        woocommerce_woocommerce_version_3__0__9 => woocommerce_woocommerce_update_any
+        woocommerce_woocommerce_version_2__5__4 => woocommerce_woocommerce_update_any
+        woocommerce_woocommerce_version_2__4__0 => ((woocommerce_woocommerce_update_beta3 & !woocommerce_woocommerce_update_beta2 & !woocommerce_woocommerce_update_beta4 & !woocommerce_woocommerce_update_any & !woocommerce_woocommerce_update_rc1 & !woocommerce_woocommerce_update_beta1) | (!woocommerce_woocommerce_update_beta3 & woocommerce_woocommerce_update_beta2 & !woocommerce_woocommerce_update_beta4 & !woocommerce_woocommerce_update_any & !woocommerce_woocommerce_update_rc1 & !woocommerce_woocommerce_update_beta1) | (!woocommerce_woocommerce_update_beta3 & !woocommerce_woocommerce_update_beta2 & woocommerce_woocommerce_update_beta4 & !woocommerce_woocommerce_update_any & !woocommerce_woocommerce_update_rc1 & !woocommerce_woocommerce_update_beta1) | (!woocommerce_woocommerce_update_beta3 & !woocommerce_woocommerce_update_beta2 & !woocommerce_woocommerce_update_beta4 & woocommerce_woocommerce_update_any & !woocommerce_woocommerce_update_rc1 & !woocommerce_woocommerce_update_beta1) | (!woocommerce_woocommerce_update_beta3 & !woocommerce_woocommerce_update_beta2 & !woocommerce_woocommerce_update_beta4 & !woocommerce_woocommerce_update_any & woocommerce_woocommerce_update_rc1 & !woocommerce_woocommerce_update_beta1) | (!woocommerce_woocommerce_update_beta3 & !woocommerce_woocommerce_update_beta2 & !woocommerce_woocommerce_update_beta4 & !woocommerce_woocommerce_update_any & !woocommerce_woocommerce_update_rc1 & woocommerce_woocommerce_update_beta1))
+        woocommerce_woocommerce_version_2__6__1 => woocommerce_woocommerce_update_any
+        woocommerce_woocommerce_version_2__0__20 => woocommerce_woocommerce_update_any
+        woocommerce_woocommerce_version_1__4__1 => woocommerce_woocommerce_update_any
+        woocommerce_woocommerce_version_1__2__1 => woocommerce_woocommerce_update_any
+        woocommerce_woocommerce_version_3__0__5 => woocommerce_woocommerce_update_any
+        woocommerce_woocommerce_version_3__0__4 => woocommerce_woocommerce_update_any
+        woocommerce_woocommerce_version_1__2__3 => woocommerce_woocommerce_update_any
+        woocommerce_woocommerce_version_2__2__3 => woocommerce_woocommerce_update_any
+        woocommerce_woocommerce_version_1__4__2 => woocommerce_woocommerce_update_any
+        woocommerce_woocommerce_version_2__2__9 => woocommerce_woocommerce_update_any
+        woocommerce_woocommerce_version_2__1__11 => woocommerce_woocommerce_update_any
+        woocommerce_woocommerce_version_1__0__6 => woocommerce_woocommerce_update_any
+        woocommerce_woocommerce_version_2__4__2 => woocommerce_woocommerce_update_any
+        woocommerce_woocommerce_version_2__0__6 => woocommerce_woocommerce_update_any
+        woocommerce_woocommerce_version_1__5__6 => woocommerce_woocommerce_update_any
+        woocommerce_woocommerce_version_1__0__1 => woocommerce_woocommerce_update_any
+        woocommerce_woocommerce_version_2__6__5 => woocommerce_woocommerce_update_any
+        woocommerce_woocommerce_version_1__3__2 => woocommerce_woocommerce_update_any
+        woocommerce_woocommerce_version_2__0__1 => woocommerce_woocommerce_update_any
+        woocommerce_woocommerce_version_2__1__2 => woocommerce_woocommerce_update_any
+        woocommerce_woocommerce_version_3__4__2 => woocommerce_woocommerce_update_any
+        woocommerce_woocommerce_version_2__0__14 => woocommerce_woocommerce_update_any
+        woocommerce_woocommerce_version_2__3__3 => woocommerce_woocommerce_update_any
+        woocommerce_woocommerce_version_3__3__4 => woocommerce_woocommerce_update_any
+        woocommerce_woocommerce_version_2__1__7 => woocommerce_woocommerce_update_any
+        woocommerce_woocommerce_version_1__1__1 => woocommerce_woocommerce_update_any
+        woocommerce_woocommerce_version_2__5__3 => woocommerce_woocommerce_update_any
+        woocommerce_woocommerce_version_2__1__9 => woocommerce_woocommerce_update_any
+        woocommerce_woocommerce_version_1__5 => woocommerce_woocommerce_update_any
+        woocommerce_woocommerce_version_2__6__11 => woocommerce_woocommerce_update_any
+        woocommerce_woocommerce_version_2__4__8 => woocommerce_woocommerce_update_any
+        woocommerce_woocommerce_version_2__2__0 => ((woocommerce_woocommerce_update_beta3 & !woocommerce_woocommerce_update_beta2 & !woocommerce_woocommerce_update_any & !woocommerce_woocommerce_update_rc1 & !woocommerce_woocommerce_update_beta1) | (!woocommerce_woocommerce_update_beta3 & woocommerce_woocommerce_update_beta2 & !woocommerce_woocommerce_update_any & !woocommerce_woocommerce_update_rc1 & !woocommerce_woocommerce_update_beta1) | (!woocommerce_woocommerce_update_beta3 & !woocommerce_woocommerce_update_beta2 & woocommerce_woocommerce_update_any & !woocommerce_woocommerce_update_rc1 & !woocommerce_woocommerce_update_beta1) | (!woocommerce_woocommerce_update_beta3 & !woocommerce_woocommerce_update_beta2 & !woocommerce_woocommerce_update_any & woocommerce_woocommerce_update_rc1 & !woocommerce_woocommerce_update_beta1) | (!woocommerce_woocommerce_update_beta3 & !woocommerce_woocommerce_update_beta2 & !woocommerce_woocommerce_update_any & !woocommerce_woocommerce_update_rc1 & woocommerce_woocommerce_update_beta1))
+        woocommerce_woocommerce_version_1__6__4 => woocommerce_woocommerce_update_any
+        woocommerce_woocommerce_version_2__4__3 => woocommerce_woocommerce_update_any
+        woocommerce_woocommerce_version_2__3__5 => woocommerce_woocommerce_update_any
+        woocommerce_woocommerce_version_1__4__3 => woocommerce_woocommerce_update_any
+        woocommerce_woocommerce_version_3__4__0 => ((woocommerce_woocommerce_update_beta2 & !woocommerce_woocommerce_update_any & !woocommerce_woocommerce_update_rc1 & !woocommerce_woocommerce_update_rc2 & !woocommerce_woocommerce_update_beta1) | (!woocommerce_woocommerce_update_beta2 & woocommerce_woocommerce_update_any & !woocommerce_woocommerce_update_rc1 & !woocommerce_woocommerce_update_rc2 & !woocommerce_woocommerce_update_beta1) | (!woocommerce_woocommerce_update_beta2 & !woocommerce_woocommerce_update_any & woocommerce_woocommerce_update_rc1 & !woocommerce_woocommerce_update_rc2 & !woocommerce_woocommerce_update_beta1) | (!woocommerce_woocommerce_update_beta2 & !woocommerce_woocommerce_update_any & !woocommerce_woocommerce_update_rc1 & woocommerce_woocommerce_update_rc2 & !woocommerce_woocommerce_update_beta1) | (!woocommerce_woocommerce_update_beta2 & !woocommerce_woocommerce_update_any & !woocommerce_woocommerce_update_rc1 & !woocommerce_woocommerce_update_rc2 & woocommerce_woocommerce_update_beta1))
+        woocommerce_woocommerce_version_3__2__2 => woocommerce_woocommerce_update_any
+        woocommerce_woocommerce_version_2__4__7 => woocommerce_woocommerce_update_any
+        woocommerce_woocommerce_version_3__0__1 => woocommerce_woocommerce_update_any
+        woocommerce_woocommerce_version_1__1__2 => woocommerce_woocommerce_update_any
+        woocommerce_woocommerce_version_2__1__0 => ((woocommerce_woocommerce_update_beta3 & !woocommerce_woocommerce_update_beta2 & !woocommerce_woocommerce_update_any & !woocommerce_woocommerce_update_rc1 & !woocommerce_woocommerce_update_rc2 & !woocommerce_woocommerce_update_beta1) | (!woocommerce_woocommerce_update_beta3 & woocommerce_woocommerce_update_beta2 & !woocommerce_woocommerce_update_any & !woocommerce_woocommerce_update_rc1 & !woocommerce_woocommerce_update_rc2 & !woocommerce_woocommerce_update_beta1) | (!woocommerce_woocommerce_update_beta3 & !woocommerce_woocommerce_update_beta2 & woocommerce_woocommerce_update_any & !woocommerce_woocommerce_update_rc1 & !woocommerce_woocommerce_update_rc2 & !woocommerce_woocommerce_update_beta1) | (!woocommerce_woocommerce_update_beta3 & !woocommerce_woocommerce_update_beta2 & !woocommerce_woocommerce_update_any & woocommerce_woocommerce_update_rc1 & !woocommerce_woocommerce_update_rc2 & !woocommerce_woocommerce_update_beta1) | (!woocommerce_woocommerce_update_beta3 & !woocommerce_woocommerce_update_beta2 & !woocommerce_woocommerce_update_any & !woocommerce_woocommerce_update_rc1 & woocommerce_woocommerce_update_rc2 & !woocommerce_woocommerce_update_beta1) | (!woocommerce_woocommerce_update_beta3 & !woocommerce_woocommerce_update_beta2 & !woocommerce_woocommerce_update_any & !woocommerce_woocommerce_update_rc1 & !woocommerce_woocommerce_update_rc2 & woocommerce_woocommerce_update_beta1))
+        woocommerce_woocommerce_version_2__3__9 => woocommerce_woocommerce_update_any
+        woocommerce_woocommerce_version_2__2__4 => woocommerce_woocommerce_update_any
+        woocommerce_woocommerce_version_3__4__4 => woocommerce_woocommerce_update_any
+        woocommerce_woocommerce_version_2__4__13 => woocommerce_woocommerce_update_any
+        woocommerce_woocommerce_version_1__1__3 => woocommerce_woocommerce_update_any
+        woocommerce_woocommerce_version_3__1__1 => woocommerce_woocommerce_update_any
+        woocommerce_woocommerce_version_2__6__0 => ((woocommerce_woocommerce_update_beta3 & !woocommerce_woocommerce_update_beta2 & !woocommerce_woocommerce_update_beta4 & !woocommerce_woocommerce_update_any & !woocommerce_woocommerce_update_rc1 & !woocommerce_woocommerce_update_rc2 & !woocommerce_woocommerce_update_beta1) | (!woocommerce_woocommerce_update_beta3 & woocommerce_woocommerce_update_beta2 & !woocommerce_woocommerce_update_beta4 & !woocommerce_woocommerce_update_any & !woocommerce_woocommerce_update_rc1 & !woocommerce_woocommerce_update_rc2 & !woocommerce_woocommerce_update_beta1) | (!woocommerce_woocommerce_update_beta3 & !woocommerce_woocommerce_update_beta2 & woocommerce_woocommerce_update_beta4 & !woocommerce_woocommerce_update_any & !woocommerce_woocommerce_update_rc1 & !woocommerce_woocommerce_update_rc2 & !woocommerce_woocommerce_update_beta1) | (!woocommerce_woocommerce_update_beta3 & !woocommerce_woocommerce_update_beta2 & !woocommerce_woocommerce_update_beta4 & woocommerce_woocommerce_update_any & !woocommerce_woocommerce_update_rc1 & !woocommerce_woocommerce_update_rc2 & !woocommerce_woocommerce_update_beta1) | (!woocommerce_woocommerce_update_beta3 & !woocommerce_woocommerce_update_beta2 & !woocommerce_woocommerce_update_beta4 & !woocommerce_woocommerce_update_any & woocommerce_woocommerce_update_rc1 & !woocommerce_woocommerce_update_rc2 & !woocommerce_woocommerce_update_beta1) | (!woocommerce_woocommerce_update_beta3 & !woocommerce_woocommerce_update_beta2 & !woocommerce_woocommerce_update_beta4 & !woocommerce_woocommerce_update_any & !woocommerce_woocommerce_update_rc1 & woocommerce_woocommerce_update_rc2 & !woocommerce_woocommerce_update_beta1) | (!woocommerce_woocommerce_update_beta3 & !woocommerce_woocommerce_update_beta2 & !woocommerce_woocommerce_update_beta4 & !woocommerce_woocommerce_update_any & !woocommerce_woocommerce_update_rc1 & !woocommerce_woocommerce_update_rc2 & woocommerce_woocommerce_update_beta1))
+        woocommerce_woocommerce_version_2__6__3 => woocommerce_woocommerce_update_any
+        woocommerce_woocommerce_version_3__4__3 => woocommerce_woocommerce_update_any
+        woocommerce_woocommerce_version_2__2__5 => woocommerce_woocommerce_update_any
+        woocommerce_woocommerce_version_2__3__12 => woocommerce_woocommerce_update_any
+        woocommerce_woocommerce_version_2__0__10 => woocommerce_woocommerce_update_any
+        woocommerce_woocommerce_version_2__4__11 => woocommerce_woocommerce_update_any
+        woocommerce_woocommerce_version_1__5__8 => woocommerce_woocommerce_update_any
+        woocommerce_woocommerce_version_2__3__13 => woocommerce_woocommerce_update_any
+        woocommerce_woocommerce_version_1__5__5 => woocommerce_woocommerce_update_any
+        woocommerce_woocommerce_version_2__3__4 => woocommerce_woocommerce_update_any
+        woocommerce_woocommerce_version_2__6__7 => woocommerce_woocommerce_update_any
+        woocommerce_woocommerce_version_3__2__1 => woocommerce_woocommerce_update_any
+        woocommerce_woocommerce_version_2__7__0 => ((woocommerce_woocommerce_update_beta3 & !woocommerce_woocommerce_update_beta2 & !woocommerce_woocommerce_update_beta4 & !woocommerce_woocommerce_update_any & !woocommerce_woocommerce_update_rc1 & !woocommerce_woocommerce_update_beta1 & !woocommerce_woocommerce_update_beat1) | (!woocommerce_woocommerce_update_beta3 & woocommerce_woocommerce_update_beta2 & !woocommerce_woocommerce_update_beta4 & !woocommerce_woocommerce_update_any & !woocommerce_woocommerce_update_rc1 & !woocommerce_woocommerce_update_beta1 & !woocommerce_woocommerce_update_beat1) | (!woocommerce_woocommerce_update_beta3 & !woocommerce_woocommerce_update_beta2 & woocommerce_woocommerce_update_beta4 & !woocommerce_woocommerce_update_any & !woocommerce_woocommerce_update_rc1 & !woocommerce_woocommerce_update_beta1 & !woocommerce_woocommerce_update_beat1) | (!woocommerce_woocommerce_update_beta3 & !woocommerce_woocommerce_update_beta2 & !woocommerce_woocommerce_update_beta4 & woocommerce_woocommerce_update_any & !woocommerce_woocommerce_update_rc1 & !woocommerce_woocommerce_update_beta1 & !woocommerce_woocommerce_update_beat1) | (!woocommerce_woocommerce_update_beta3 & !woocommerce_woocommerce_update_beta2 & !woocommerce_woocommerce_update_beta4 & !woocommerce_woocommerce_update_any & woocommerce_woocommerce_update_rc1 & !woocommerce_woocommerce_update_beta1 & !woocommerce_woocommerce_update_beat1) | (!woocommerce_woocommerce_update_beta3 & !woocommerce_woocommerce_update_beta2 & !woocommerce_woocommerce_update_beta4 & !woocommerce_woocommerce_update_any & !woocommerce_woocommerce_update_rc1 & woocommerce_woocommerce_update_beta1 & !woocommerce_woocommerce_update_beat1) | (!woocommerce_woocommerce_update_beta3 & !woocommerce_woocommerce_update_beta2 & !woocommerce_woocommerce_update_beta4 & !woocommerce_woocommerce_update_any & !woocommerce_woocommerce_update_rc1 & !woocommerce_woocommerce_update_beta1 & woocommerce_woocommerce_update_beat1))
+        woocommerce_woocommerce_version_2__4__9 => woocommerce_woocommerce_update_any
+        woocommerce_woocommerce_version_3__2__6 => woocommerce_woocommerce_update_any
+        woocommerce_woocommerce_version_2__0__3 => woocommerce_woocommerce_update_any
+        woocommerce_woocommerce_version_2__1__12 => woocommerce_woocommerce_update_any
+        woocommerce_woocommerce_version_2__4__5 => woocommerce_woocommerce_update_any
+        woocommerce_woocommerce_version_1__0__3 => woocommerce_woocommerce_update_any
+        woocommerce_woocommerce_version_1__4__4 => woocommerce_woocommerce_update_any
+        woocommerce_woocommerce_version_1__0__2 => woocommerce_woocommerce_update_any
+        woocommerce_woocommerce_version_1__6__5__1 => woocommerce_woocommerce_update_any
+        woocommerce_woocommerce_version_2__0__4 => woocommerce_woocommerce_update_any
+        woocommerce_woocommerce_version_1__5__7__1 => woocommerce_woocommerce_update_any
+        woocommerce_woocommerce_version_1__5__4 => woocommerce_woocommerce_update_any
+        woocommerce_woocommerce_version_1__6__2 => woocommerce_woocommerce_update_any
+        woocommerce_woocommerce_version_1__6__0 => ((woocommerce_woocommerce_update_any & !woocommerce_woocommerce_update_beta1) | (!woocommerce_woocommerce_update_any & woocommerce_woocommerce_update_beta1))
+        woocommerce_woocommerce_version_2__0__8 => woocommerce_woocommerce_update_any
+        woocommerce_woocommerce_version_1__0 => woocommerce_woocommerce_update_any
+        woocommerce_woocommerce_version_2__1__4 => woocommerce_woocommerce_update_any
+        woocommerce_woocommerce_version_3__4__5 => woocommerce_woocommerce_update_any
+        woocommerce_woocommerce_version_2__5__0 => ((woocommerce_woocommerce_update_beta3 & !woocommerce_woocommerce_update_beta2 & !woocommerce_woocommerce_update_any & !woocommerce_woocommerce_update_rc3 & !woocommerce_woocommerce_update_rc1 & !woocommerce_woocommerce_update_rc2 & !woocommerce_woocommerce_update_beta1) | (!woocommerce_woocommerce_update_beta3 & woocommerce_woocommerce_update_beta2 & !woocommerce_woocommerce_update_any & !woocommerce_woocommerce_update_rc3 & !woocommerce_woocommerce_update_rc1 & !woocommerce_woocommerce_update_rc2 & !woocommerce_woocommerce_update_beta1) | (!woocommerce_woocommerce_update_beta3 & !woocommerce_woocommerce_update_beta2 & woocommerce_woocommerce_update_any & !woocommerce_woocommerce_update_rc3 & !woocommerce_woocommerce_update_rc1 & !woocommerce_woocommerce_update_rc2 & !woocommerce_woocommerce_update_beta1) | (!woocommerce_woocommerce_update_beta3 & !woocommerce_woocommerce_update_beta2 & !woocommerce_woocommerce_update_any & woocommerce_woocommerce_update_rc3 & !woocommerce_woocommerce_update_rc1 & !woocommerce_woocommerce_update_rc2 & !woocommerce_woocommerce_update_beta1) | (!woocommerce_woocommerce_update_beta3 & !woocommerce_woocommerce_update_beta2 & !woocommerce_woocommerce_update_any & !woocommerce_woocommerce_update_rc3 & woocommerce_woocommerce_update_rc1 & !woocommerce_woocommerce_update_rc2 & !woocommerce_woocommerce_update_beta1) | (!woocommerce_woocommerce_update_beta3 & !woocommerce_woocommerce_update_beta2 & !woocommerce_woocommerce_update_any & !woocommerce_woocommerce_update_rc3 & !woocommerce_woocommerce_update_rc1 & woocommerce_woocommerce_update_rc2 & !woocommerce_woocommerce_update_beta1) | (!woocommerce_woocommerce_update_beta3 & !woocommerce_woocommerce_update_beta2 & !woocommerce_woocommerce_update_any & !woocommerce_woocommerce_update_rc3 & !woocommerce_woocommerce_update_rc1 & !woocommerce_woocommerce_update_rc2 & woocommerce_woocommerce_update_beta1))
+        woocommerce_woocommerce_version_2__6__2 => woocommerce_woocommerce_update_any
+        woocommerce_woocommerce_version_2__1__3 => woocommerce_woocommerce_update_any
+        woocommerce_woocommerce_version_2__2__7 => woocommerce_woocommerce_update_any
+        woocommerce_woocommerce_version_3__4__1 => woocommerce_woocommerce_update_any
+        woocommerce_woocommerce_version_3__0__3 => woocommerce_woocommerce_update_any
+        woocommerce_woocommerce_version_3__3__6 => woocommerce_woocommerce_update_any
+        woocommerce_woocommerce_version_1__5__3 => woocommerce_woocommerce_update_any
+        woocommerce_woocommerce_version_2__1__5 => woocommerce_woocommerce_update_any
+        woocommerce_woocommerce_version_2__0__2 => woocommerce_woocommerce_update_any
+        woocommerce_woocommerce_version_2__3__2 => woocommerce_woocommerce_update_any
+        woocommerce_woocommerce_version_2__4__6 => woocommerce_woocommerce_update_any
+        woocommerce_woocommerce_version_1__6__1 => woocommerce_woocommerce_update_any
+        woocommerce_woocommerce_version_2__4__10 => woocommerce_woocommerce_update_any
+        woocommerce_woocommerce_version_2__2__6 => woocommerce_woocommerce_update_any
+        woocommerce_woocommerce_version_1__5__7 => woocommerce_woocommerce_update_any
+        woocommerce_woocommerce_version_1__5__2__1 => woocommerce_woocommerce_update_any
+        woocommerce_woocommerce_version_2__3__7 => woocommerce_woocommerce_update_any
+        woocommerce_woocommerce_version_2__5__1 => woocommerce_woocommerce_update_any
+        woocommerce_woocommerce_version_3__2__3 => woocommerce_woocommerce_update_any
+        woocommerce_woocommerce_version_2__2__2 => woocommerce_woocommerce_update_any
+        woocommerce_woocommerce_version_2__2__8 => woocommerce_woocommerce_update_any
+        woocommerce_woocommerce_version_2__4__1 => woocommerce_woocommerce_update_any
+        woocommerce_woocommerce_version_2__2__1 => woocommerce_woocommerce_update_any
+        woocommerce_woocommerce_version_2__6__12 => woocommerce_woocommerce_update_any
+        woocommerce_woocommerce_version_1__5__1 => woocommerce_woocommerce_update_any
+        woocommerce_woocommerce_version_2__0__19 => woocommerce_woocommerce_update_any
+        woocommerce_woocommerce_version_2__2__11 => woocommerce_woocommerce_update_any
+        woocommerce_woocommerce_version_2__6__9 => woocommerce_woocommerce_update_any

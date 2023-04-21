@@ -1,0 +1,343 @@
+features
+        CVE_2012_0454
+                optional
+                        configs
+                                alternative
+                                        rc0
+                                                mandatory
+                                                        rc0_microsoft
+                                                                mandatory
+                                                                        rc0_microsoft_windows__7
+                                        rc1
+                                                mandatory
+                                                        rc1_microsoft
+                                                                mandatory
+                                                                        rc1_microsoft_windows__7
+                                        rc2
+                                                mandatory
+                                                        rc2_microsoft
+                                                                mandatory
+                                                                        rc2_microsoft_windows__7
+                                        rc3
+                                                mandatory
+                                                        rc3_microsoft
+                                                                mandatory
+                                                                        rc3_microsoft_windows__7
+                                        rc4
+                                                mandatory
+                                                        rc4_microsoft
+                                                                mandatory
+                                                                        rc4_microsoft_windows__7
+                mandatory
+                        types
+                                mandatory
+                                        application
+                        sources
+                                mandatory
+                                        nvd
+                        exploits
+                                optional
+                                        direct
+                                        indirect
+                        mozilla
+                                alternative
+                                        mozilla_firefox
+                                                mandatory
+                                                        mozilla_firefox_version
+                                                                alternative
+                                                                        mozilla_firefox_version_7__0__1
+                                                                        mozilla_firefox_version_6__0
+                                                                        mozilla_firefox_version_9__0__1
+                                                                        mozilla_firefox_version_4__0__1
+                                                                        mozilla_firefox_version_8__0
+                                                                        mozilla_firefox_version_9__0
+                                                                        mozilla_firefox_version_5__0__1
+                                                                        mozilla_firefox_version_6__0__1
+                                                                        mozilla_firefox_version_8__0__1
+                                                                        mozilla_firefox_version_4__0
+                                                                        mozilla_firefox_version_5__0
+                                                                        mozilla_firefox_version_7__0
+                                                                        mozilla_firefox_version_6__0__2
+                                                        mozilla_firefox_update
+                                                                alternative
+                                                                        mozilla_firefox_update_beta9
+                                                                        mozilla_firefox_update_beta11
+                                                                        mozilla_firefox_update_beta2
+                                                                        mozilla_firefox_update_beta1
+                                                                        mozilla_firefox_update_beta12
+                                                                        mozilla_firefox_update_beta4
+                                                                        mozilla_firefox_update_beta8
+                                                                        mozilla_firefox_update_beta7
+                                                                        mozilla_firefox_update_beta3
+                                                                        mozilla_firefox_update_beta5
+                                                                        mozilla_firefox_update_beta10
+                                                                        mozilla_firefox_update_beta6
+                                                                        mozilla_firefox_update_any
+                                        mozilla_firefox__esr
+                                                mandatory
+                                                        mozilla_firefox__esr_version
+                                                                alternative
+                                                                        mozilla_firefox__esr_version_10__2
+                                                                        mozilla_firefox__esr_version_10__0
+                                                                        mozilla_firefox__esr_version_10__1
+                                        mozilla_thunderbird
+                                                mandatory
+                                                        mozilla_thunderbird_version
+                                                                alternative
+                                                                        mozilla_thunderbird_version_7__0__1
+                                                                        mozilla_thunderbird_version_6__0
+                                                                        mozilla_thunderbird_version_9__0__1
+                                                                        mozilla_thunderbird_version_8__0
+                                                                        mozilla_thunderbird_version_9__0
+                                                                        mozilla_thunderbird_version_6__0__1
+                                                                        mozilla_thunderbird_version_5__0
+                                                                        mozilla_thunderbird_version_7__0
+                                                                        mozilla_thunderbird_version_6__0__2
+                                        mozilla_thunderbird__esr
+                                                mandatory
+                                                        mozilla_thunderbird__esr_version
+                                                                alternative
+                                                                        mozilla_thunderbird__esr_version_10__0__2
+                                                                        mozilla_thunderbird__esr_version_10__0
+                                                                        mozilla_thunderbird__esr_version_10__0__1
+                                        mozilla_seamonkey
+                                                mandatory
+                                                        mozilla_seamonkey_version
+                                                                alternative
+                                                                        mozilla_seamonkey_version_1__1__6
+                                                                        mozilla_seamonkey_version_1__0__3
+                                                                        mozilla_seamonkey_version_2__0__2
+                                                                        mozilla_seamonkey_version_1__1__3
+                                                                        mozilla_seamonkey_version_2__0__9
+                                                                        mozilla_seamonkey_version_2__2
+                                                                        mozilla_seamonkey_version_2__3__1
+                                                                        mozilla_seamonkey_version_2__4__1
+                                                                        mozilla_seamonkey_version_2__3__2
+                                                                        mozilla_seamonkey_version_2__0__11
+                                                                        mozilla_seamonkey_version_1__1__8
+                                                                        mozilla_seamonkey_version_1__1__15
+                                                                        mozilla_seamonkey_version_1__1__10
+                                                                        mozilla_seamonkey_version_1__1__4
+                                                                        mozilla_seamonkey_version_2__0__10
+                                                                        mozilla_seamonkey_version_2__0__12
+                                                                        mozilla_seamonkey_version_1__1
+                                                                        mozilla_seamonkey_version_1__0
+                                                                        mozilla_seamonkey_version_2__3
+                                                                        mozilla_seamonkey_version_1__0__8
+                                                                        mozilla_seamonkey_version_2__0__1
+                                                                        mozilla_seamonkey_version_2__0__7
+                                                                        mozilla_seamonkey_version_1__1__19
+                                                                        mozilla_seamonkey_version_1__1__1
+                                                                        mozilla_seamonkey_version_1__5__0__8
+                                                                        mozilla_seamonkey_version_2__3__3
+                                                                        mozilla_seamonkey_version_1__5__0__10
+                                                                        mozilla_seamonkey_version_1__5__0__9
+                                                                        mozilla_seamonkey_version_1__0__4
+                                                                        mozilla_seamonkey_version_2__5
+                                                                        mozilla_seamonkey_version_1__0__2
+                                                                        mozilla_seamonkey_version_2__6
+                                                                        mozilla_seamonkey_version_1__1__11
+                                                                        mozilla_seamonkey_version_1__1__2
+                                                                        mozilla_seamonkey_version_1__1__14
+                                                                        mozilla_seamonkey_version_2__7
+                                                                        mozilla_seamonkey_version_1__1__9
+                                                                        mozilla_seamonkey_version_2__6__1
+                                                                        mozilla_seamonkey_version_2__0__6
+                                                                        mozilla_seamonkey_version_2__0
+                                                                        mozilla_seamonkey_version_1__0__1
+                                                                        mozilla_seamonkey_version_2__0__5
+                                                                        mozilla_seamonkey_version_1__1__13
+                                                                        mozilla_seamonkey_version_2__1
+                                                                        mozilla_seamonkey_version_1__1__16
+                                                                        mozilla_seamonkey_version_1__0__7
+                                                                        mozilla_seamonkey_version_2__0__4
+                                                                        mozilla_seamonkey_version_1__1__17
+                                                                        mozilla_seamonkey_version_2__0__14
+                                                                        mozilla_seamonkey_version_2__0__13
+                                                                        mozilla_seamonkey_version_2__0__8
+                                                                        mozilla_seamonkey_version_1__0__9
+                                                                        mozilla_seamonkey_version_1__1__7
+                                                                        mozilla_seamonkey_version_1__0__6
+                                                                        mozilla_seamonkey_version_1__1__5
+                                                                        mozilla_seamonkey_version_2__4
+                                                                        mozilla_seamonkey_version_2__0__3
+                                                                        mozilla_seamonkey_version_1__0__5
+                                                                        mozilla_seamonkey_version_1__1__18
+                                                                        mozilla_seamonkey_version_1__1__12
+                                                        mozilla_seamonkey_update
+                                                                alternative
+                                                                        mozilla_seamonkey_update_alpha
+                                                                        mozilla_seamonkey_update_beta
+                                                                        mozilla_seamonkey_update_alpha__1
+                                                                        mozilla_seamonkey_update_beta2
+                                                                        mozilla_seamonkey_update_alpha__3
+                                                                        mozilla_seamonkey_update_beta1
+                                                                        mozilla_seamonkey_update_beta__2
+                                                                        mozilla_seamonkey_update_beta4
+                                                                        mozilla_seamonkey_update_alpha1
+                                                                        mozilla_seamonkey_update_alpha3
+                                                                        mozilla_seamonkey_update_alpha__2
+                                                                        mozilla_seamonkey_update_beta3
+                                                                        mozilla_seamonkey_update_beta5
+                                                                        mozilla_seamonkey_update_rc1
+                                                                        mozilla_seamonkey_update_alpha2
+                                                                        mozilla_seamonkey_update_beta__1
+                                                                        mozilla_seamonkey_update_rc2
+                                                                        mozilla_seamonkey_update_any
+
+constraints
+        mozilla_firefox => application
+        mozilla_firefox__esr => application
+        mozilla_thunderbird => application
+        mozilla_thunderbird__esr => application
+        mozilla_seamonkey => application
+        mozilla_firefox_version_7__0__1 => mozilla_firefox_update_any
+        mozilla_firefox_version_7__0__1 => (rc0)
+        mozilla_firefox_version_6__0 => mozilla_firefox_update_any
+        mozilla_firefox_version_6__0 => (rc0)
+        mozilla_firefox_version_9__0__1 => mozilla_firefox_update_any
+        mozilla_firefox_version_9__0__1 => (rc0)
+        mozilla_firefox_version_4__0__1 => mozilla_firefox_update_any
+        mozilla_firefox_version_4__0__1 => (rc0)
+        mozilla_firefox_version_8__0 => mozilla_firefox_update_any
+        mozilla_firefox_version_8__0 => (rc0)
+        mozilla_firefox_version_9__0 => mozilla_firefox_update_any
+        mozilla_firefox_version_9__0 => (rc0)
+        mozilla_firefox_version_5__0__1 => mozilla_firefox_update_any
+        mozilla_firefox_version_5__0__1 => (rc0)
+        mozilla_firefox_version_6__0__1 => mozilla_firefox_update_any
+        mozilla_firefox_version_6__0__1 => (rc0)
+        mozilla_firefox_version_8__0__1 => mozilla_firefox_update_any
+        mozilla_firefox_version_8__0__1 => (rc0)
+        mozilla_firefox_version_4__0 => ((mozilla_firefox_update_beta9 & (rc0) & !mozilla_firefox_update_beta11 & (rc0) & !mozilla_firefox_update_beta2 & (rc0) & !mozilla_firefox_update_beta1 & (rc0) & !mozilla_firefox_update_beta12 & (rc0) & !mozilla_firefox_update_beta4 & (rc0) & !mozilla_firefox_update_beta8 & (rc0) & !mozilla_firefox_update_beta7 & (rc0) & !mozilla_firefox_update_beta3 & (rc0) & !mozilla_firefox_update_beta5 & (rc0) & !mozilla_firefox_update_beta10 & (rc0) & !mozilla_firefox_update_beta6 & (rc0) & !mozilla_firefox_update_any & (rc0)) | (!mozilla_firefox_update_beta9 & (rc0) & mozilla_firefox_update_beta11 & (rc0) & !mozilla_firefox_update_beta2 & (rc0) & !mozilla_firefox_update_beta1 & (rc0) & !mozilla_firefox_update_beta12 & (rc0) & !mozilla_firefox_update_beta4 & (rc0) & !mozilla_firefox_update_beta8 & (rc0) & !mozilla_firefox_update_beta7 & (rc0) & !mozilla_firefox_update_beta3 & (rc0) & !mozilla_firefox_update_beta5 & (rc0) & !mozilla_firefox_update_beta10 & (rc0) & !mozilla_firefox_update_beta6 & (rc0) & !mozilla_firefox_update_any & (rc0)) | (!mozilla_firefox_update_beta9 & (rc0) & !mozilla_firefox_update_beta11 & (rc0) & mozilla_firefox_update_beta2 & (rc0) & !mozilla_firefox_update_beta1 & (rc0) & !mozilla_firefox_update_beta12 & (rc0) & !mozilla_firefox_update_beta4 & (rc0) & !mozilla_firefox_update_beta8 & (rc0) & !mozilla_firefox_update_beta7 & (rc0) & !mozilla_firefox_update_beta3 & (rc0) & !mozilla_firefox_update_beta5 & (rc0) & !mozilla_firefox_update_beta10 & (rc0) & !mozilla_firefox_update_beta6 & (rc0) & !mozilla_firefox_update_any & (rc0)) | (!mozilla_firefox_update_beta9 & (rc0) & !mozilla_firefox_update_beta11 & (rc0) & !mozilla_firefox_update_beta2 & (rc0) & mozilla_firefox_update_beta1 & (rc0) & !mozilla_firefox_update_beta12 & (rc0) & !mozilla_firefox_update_beta4 & (rc0) & !mozilla_firefox_update_beta8 & (rc0) & !mozilla_firefox_update_beta7 & (rc0) & !mozilla_firefox_update_beta3 & (rc0) & !mozilla_firefox_update_beta5 & (rc0) & !mozilla_firefox_update_beta10 & (rc0) & !mozilla_firefox_update_beta6 & (rc0) & !mozilla_firefox_update_any & (rc0)) | (!mozilla_firefox_update_beta9 & (rc0) & !mozilla_firefox_update_beta11 & (rc0) & !mozilla_firefox_update_beta2 & (rc0) & !mozilla_firefox_update_beta1 & (rc0) & mozilla_firefox_update_beta12 & (rc0) & !mozilla_firefox_update_beta4 & (rc0) & !mozilla_firefox_update_beta8 & (rc0) & !mozilla_firefox_update_beta7 & (rc0) & !mozilla_firefox_update_beta3 & (rc0) & !mozilla_firefox_update_beta5 & (rc0) & !mozilla_firefox_update_beta10 & (rc0) & !mozilla_firefox_update_beta6 & (rc0) & !mozilla_firefox_update_any & (rc0)) | (!mozilla_firefox_update_beta9 & (rc0) & !mozilla_firefox_update_beta11 & (rc0) & !mozilla_firefox_update_beta2 & (rc0) & !mozilla_firefox_update_beta1 & (rc0) & !mozilla_firefox_update_beta12 & (rc0) & mozilla_firefox_update_beta4 & (rc0) & !mozilla_firefox_update_beta8 & (rc0) & !mozilla_firefox_update_beta7 & (rc0) & !mozilla_firefox_update_beta3 & (rc0) & !mozilla_firefox_update_beta5 & (rc0) & !mozilla_firefox_update_beta10 & (rc0) & !mozilla_firefox_update_beta6 & (rc0) & !mozilla_firefox_update_any & (rc0)) | (!mozilla_firefox_update_beta9 & (rc0) & !mozilla_firefox_update_beta11 & (rc0) & !mozilla_firefox_update_beta2 & (rc0) & !mozilla_firefox_update_beta1 & (rc0) & !mozilla_firefox_update_beta12 & (rc0) & !mozilla_firefox_update_beta4 & (rc0) & mozilla_firefox_update_beta8 & (rc0) & !mozilla_firefox_update_beta7 & (rc0) & !mozilla_firefox_update_beta3 & (rc0) & !mozilla_firefox_update_beta5 & (rc0) & !mozilla_firefox_update_beta10 & (rc0) & !mozilla_firefox_update_beta6 & (rc0) & !mozilla_firefox_update_any & (rc0)) | (!mozilla_firefox_update_beta9 & (rc0) & !mozilla_firefox_update_beta11 & (rc0) & !mozilla_firefox_update_beta2 & (rc0) & !mozilla_firefox_update_beta1 & (rc0) & !mozilla_firefox_update_beta12 & (rc0) & !mozilla_firefox_update_beta4 & (rc0) & !mozilla_firefox_update_beta8 & (rc0) & mozilla_firefox_update_beta7 & (rc0) & !mozilla_firefox_update_beta3 & (rc0) & !mozilla_firefox_update_beta5 & (rc0) & !mozilla_firefox_update_beta10 & (rc0) & !mozilla_firefox_update_beta6 & (rc0) & !mozilla_firefox_update_any & (rc0)) | (!mozilla_firefox_update_beta9 & (rc0) & !mozilla_firefox_update_beta11 & (rc0) & !mozilla_firefox_update_beta2 & (rc0) & !mozilla_firefox_update_beta1 & (rc0) & !mozilla_firefox_update_beta12 & (rc0) & !mozilla_firefox_update_beta4 & (rc0) & !mozilla_firefox_update_beta8 & (rc0) & !mozilla_firefox_update_beta7 & (rc0) & mozilla_firefox_update_beta3 & (rc0) & !mozilla_firefox_update_beta5 & (rc0) & !mozilla_firefox_update_beta10 & (rc0) & !mozilla_firefox_update_beta6 & (rc0) & !mozilla_firefox_update_any & (rc0)) | (!mozilla_firefox_update_beta9 & (rc0) & !mozilla_firefox_update_beta11 & (rc0) & !mozilla_firefox_update_beta2 & (rc0) & !mozilla_firefox_update_beta1 & (rc0) & !mozilla_firefox_update_beta12 & (rc0) & !mozilla_firefox_update_beta4 & (rc0) & !mozilla_firefox_update_beta8 & (rc0) & !mozilla_firefox_update_beta7 & (rc0) & !mozilla_firefox_update_beta3 & (rc0) & mozilla_firefox_update_beta5 & (rc0) & !mozilla_firefox_update_beta10 & (rc0) & !mozilla_firefox_update_beta6 & (rc0) & !mozilla_firefox_update_any & (rc0)) | (!mozilla_firefox_update_beta9 & (rc0) & !mozilla_firefox_update_beta11 & (rc0) & !mozilla_firefox_update_beta2 & (rc0) & !mozilla_firefox_update_beta1 & (rc0) & !mozilla_firefox_update_beta12 & (rc0) & !mozilla_firefox_update_beta4 & (rc0) & !mozilla_firefox_update_beta8 & (rc0) & !mozilla_firefox_update_beta7 & (rc0) & !mozilla_firefox_update_beta3 & (rc0) & !mozilla_firefox_update_beta5 & (rc0) & mozilla_firefox_update_beta10 & (rc0) & !mozilla_firefox_update_beta6 & (rc0) & !mozilla_firefox_update_any & (rc0)) | (!mozilla_firefox_update_beta9 & (rc0) & !mozilla_firefox_update_beta11 & (rc0) & !mozilla_firefox_update_beta2 & (rc0) & !mozilla_firefox_update_beta1 & (rc0) & !mozilla_firefox_update_beta12 & (rc0) & !mozilla_firefox_update_beta4 & (rc0) & !mozilla_firefox_update_beta8 & (rc0) & !mozilla_firefox_update_beta7 & (rc0) & !mozilla_firefox_update_beta3 & (rc0) & !mozilla_firefox_update_beta5 & (rc0) & !mozilla_firefox_update_beta10 & (rc0) & mozilla_firefox_update_beta6 & (rc0) & !mozilla_firefox_update_any & (rc0)) | (!mozilla_firefox_update_beta9 & (rc0) & !mozilla_firefox_update_beta11 & (rc0) & !mozilla_firefox_update_beta2 & (rc0) & !mozilla_firefox_update_beta1 & (rc0) & !mozilla_firefox_update_beta12 & (rc0) & !mozilla_firefox_update_beta4 & (rc0) & !mozilla_firefox_update_beta8 & (rc0) & !mozilla_firefox_update_beta7 & (rc0) & !mozilla_firefox_update_beta3 & (rc0) & !mozilla_firefox_update_beta5 & (rc0) & !mozilla_firefox_update_beta10 & (rc0) & !mozilla_firefox_update_beta6 & (rc0) & mozilla_firefox_update_any & (rc0)))
+        mozilla_firefox_version_5__0 => mozilla_firefox_update_any
+        mozilla_firefox_version_5__0 => (rc0)
+        mozilla_firefox_version_7__0 => mozilla_firefox_update_any
+        mozilla_firefox_version_7__0 => (rc0)
+        mozilla_firefox_version_6__0__2 => mozilla_firefox_update_any
+        mozilla_firefox_version_6__0__2 => (rc0)
+        mozilla_firefox__esr_version_10__2 => (rc1)
+        mozilla_firefox__esr_version_10__0 => (rc1)
+        mozilla_firefox__esr_version_10__1 => (rc1)
+        mozilla_thunderbird_version_7__0__1 => (rc2)
+        mozilla_thunderbird_version_6__0 => (rc2)
+        mozilla_thunderbird_version_9__0__1 => (rc2)
+        mozilla_thunderbird_version_8__0 => (rc2)
+        mozilla_thunderbird_version_9__0 => (rc2)
+        mozilla_thunderbird_version_6__0__1 => (rc2)
+        mozilla_thunderbird_version_5__0 => (rc2)
+        mozilla_thunderbird_version_7__0 => (rc2)
+        mozilla_thunderbird_version_6__0__2 => (rc2)
+        mozilla_thunderbird__esr_version_10__0__2 => (rc3)
+        mozilla_thunderbird__esr_version_10__0 => (rc3)
+        mozilla_thunderbird__esr_version_10__0__1 => (rc3)
+        mozilla_seamonkey_version_1__1__6 => mozilla_seamonkey_update_any
+        mozilla_seamonkey_version_1__1__6 => (rc4)
+        mozilla_seamonkey_version_1__0__3 => mozilla_seamonkey_update_any
+        mozilla_seamonkey_version_1__0__3 => (rc4)
+        mozilla_seamonkey_version_2__0__2 => mozilla_seamonkey_update_any
+        mozilla_seamonkey_version_2__0__2 => (rc4)
+        mozilla_seamonkey_version_1__1__3 => mozilla_seamonkey_update_any
+        mozilla_seamonkey_version_1__1__3 => (rc4)
+        mozilla_seamonkey_version_2__0__9 => mozilla_seamonkey_update_any
+        mozilla_seamonkey_version_2__0__9 => (rc4)
+        mozilla_seamonkey_version_2__2 => ((mozilla_seamonkey_update_beta2 & (rc4) & !mozilla_seamonkey_update_beta1 & (rc4) & !mozilla_seamonkey_update_beta3 & (rc4) & !mozilla_seamonkey_update_any & (rc4)) | (!mozilla_seamonkey_update_beta2 & (rc4) & mozilla_seamonkey_update_beta1 & (rc4) & !mozilla_seamonkey_update_beta3 & (rc4) & !mozilla_seamonkey_update_any & (rc4)) | (!mozilla_seamonkey_update_beta2 & (rc4) & !mozilla_seamonkey_update_beta1 & (rc4) & mozilla_seamonkey_update_beta3 & (rc4) & !mozilla_seamonkey_update_any & (rc4)) | (!mozilla_seamonkey_update_beta2 & (rc4) & !mozilla_seamonkey_update_beta1 & (rc4) & !mozilla_seamonkey_update_beta3 & (rc4) & mozilla_seamonkey_update_any & (rc4)))
+        mozilla_seamonkey_version_2__3__1 => mozilla_seamonkey_update_any
+        mozilla_seamonkey_version_2__3__1 => (rc4)
+        mozilla_seamonkey_version_2__4__1 => mozilla_seamonkey_update_any
+        mozilla_seamonkey_version_2__4__1 => (rc4)
+        mozilla_seamonkey_version_2__3__2 => mozilla_seamonkey_update_any
+        mozilla_seamonkey_version_2__3__2 => (rc4)
+        mozilla_seamonkey_version_2__0__11 => mozilla_seamonkey_update_any
+        mozilla_seamonkey_version_2__0__11 => (rc4)
+        mozilla_seamonkey_version_1__1__8 => mozilla_seamonkey_update_any
+        mozilla_seamonkey_version_1__1__8 => (rc4)
+        mozilla_seamonkey_version_1__1__15 => mozilla_seamonkey_update_any
+        mozilla_seamonkey_version_1__1__15 => (rc4)
+        mozilla_seamonkey_version_1__1__10 => mozilla_seamonkey_update_any
+        mozilla_seamonkey_version_1__1__10 => (rc4)
+        mozilla_seamonkey_version_1__1__4 => mozilla_seamonkey_update_any
+        mozilla_seamonkey_version_1__1__4 => (rc4)
+        mozilla_seamonkey_version_2__0__10 => mozilla_seamonkey_update_any
+        mozilla_seamonkey_version_2__0__10 => (rc4)
+        mozilla_seamonkey_version_2__0__12 => mozilla_seamonkey_update_any
+        mozilla_seamonkey_version_2__0__12 => (rc4)
+        mozilla_seamonkey_version_1__1 => ((mozilla_seamonkey_update_alpha & (rc4) & !mozilla_seamonkey_update_beta & (rc4) & !mozilla_seamonkey_update_any & (rc4)) | (!mozilla_seamonkey_update_alpha & (rc4) & mozilla_seamonkey_update_beta & (rc4) & !mozilla_seamonkey_update_any & (rc4)) | (!mozilla_seamonkey_update_alpha & (rc4) & !mozilla_seamonkey_update_beta & (rc4) & mozilla_seamonkey_update_any & (rc4)))
+        mozilla_seamonkey_version_1__0 => ((mozilla_seamonkey_update_alpha & (rc4) & !mozilla_seamonkey_update_beta & (rc4) & !mozilla_seamonkey_update_any & (rc4)) | (!mozilla_seamonkey_update_alpha & (rc4) & mozilla_seamonkey_update_beta & (rc4) & !mozilla_seamonkey_update_any & (rc4)) | (!mozilla_seamonkey_update_alpha & (rc4) & !mozilla_seamonkey_update_beta & (rc4) & mozilla_seamonkey_update_any & (rc4)))
+        mozilla_seamonkey_version_2__3 => ((mozilla_seamonkey_update_beta2 & (rc4) & !mozilla_seamonkey_update_beta1 & (rc4) & !mozilla_seamonkey_update_beta3 & (rc4) & !mozilla_seamonkey_update_any & (rc4)) | (!mozilla_seamonkey_update_beta2 & (rc4) & mozilla_seamonkey_update_beta1 & (rc4) & !mozilla_seamonkey_update_beta3 & (rc4) & !mozilla_seamonkey_update_any & (rc4)) | (!mozilla_seamonkey_update_beta2 & (rc4) & !mozilla_seamonkey_update_beta1 & (rc4) & mozilla_seamonkey_update_beta3 & (rc4) & !mozilla_seamonkey_update_any & (rc4)) | (!mozilla_seamonkey_update_beta2 & (rc4) & !mozilla_seamonkey_update_beta1 & (rc4) & !mozilla_seamonkey_update_beta3 & (rc4) & mozilla_seamonkey_update_any & (rc4)))
+        mozilla_seamonkey_version_1__0__8 => mozilla_seamonkey_update_any
+        mozilla_seamonkey_version_1__0__8 => (rc4)
+        mozilla_seamonkey_version_2__0__1 => mozilla_seamonkey_update_any
+        mozilla_seamonkey_version_2__0__1 => (rc4)
+        mozilla_seamonkey_version_2__0__7 => mozilla_seamonkey_update_any
+        mozilla_seamonkey_version_2__0__7 => (rc4)
+        mozilla_seamonkey_version_1__1__19 => mozilla_seamonkey_update_any
+        mozilla_seamonkey_version_1__1__19 => (rc4)
+        mozilla_seamonkey_version_1__1__1 => mozilla_seamonkey_update_any
+        mozilla_seamonkey_version_1__1__1 => (rc4)
+        mozilla_seamonkey_version_1__5__0__8 => mozilla_seamonkey_update_any
+        mozilla_seamonkey_version_1__5__0__8 => (rc4)
+        mozilla_seamonkey_version_2__3__3 => mozilla_seamonkey_update_any
+        mozilla_seamonkey_version_2__3__3 => (rc4)
+        mozilla_seamonkey_version_1__5__0__10 => mozilla_seamonkey_update_any
+        mozilla_seamonkey_version_1__5__0__10 => (rc4)
+        mozilla_seamonkey_version_1__5__0__9 => mozilla_seamonkey_update_any
+        mozilla_seamonkey_version_1__5__0__9 => (rc4)
+        mozilla_seamonkey_version_1__0__4 => mozilla_seamonkey_update_any
+        mozilla_seamonkey_version_1__0__4 => (rc4)
+        mozilla_seamonkey_version_2__5 => ((mozilla_seamonkey_update_beta2 & (rc4) & !mozilla_seamonkey_update_beta1 & (rc4) & !mozilla_seamonkey_update_beta4 & (rc4) & !mozilla_seamonkey_update_beta3 & (rc4) & !mozilla_seamonkey_update_any & (rc4)) | (!mozilla_seamonkey_update_beta2 & (rc4) & mozilla_seamonkey_update_beta1 & (rc4) & !mozilla_seamonkey_update_beta4 & (rc4) & !mozilla_seamonkey_update_beta3 & (rc4) & !mozilla_seamonkey_update_any & (rc4)) | (!mozilla_seamonkey_update_beta2 & (rc4) & !mozilla_seamonkey_update_beta1 & (rc4) & mozilla_seamonkey_update_beta4 & (rc4) & !mozilla_seamonkey_update_beta3 & (rc4) & !mozilla_seamonkey_update_any & (rc4)) | (!mozilla_seamonkey_update_beta2 & (rc4) & !mozilla_seamonkey_update_beta1 & (rc4) & !mozilla_seamonkey_update_beta4 & (rc4) & mozilla_seamonkey_update_beta3 & (rc4) & !mozilla_seamonkey_update_any & (rc4)) | (!mozilla_seamonkey_update_beta2 & (rc4) & !mozilla_seamonkey_update_beta1 & (rc4) & !mozilla_seamonkey_update_beta4 & (rc4) & !mozilla_seamonkey_update_beta3 & (rc4) & mozilla_seamonkey_update_any & (rc4)))
+        mozilla_seamonkey_version_1__0__2 => mozilla_seamonkey_update_any
+        mozilla_seamonkey_version_1__0__2 => (rc4)
+        mozilla_seamonkey_version_2__6 => ((mozilla_seamonkey_update_beta2 & (rc4) & !mozilla_seamonkey_update_beta1 & (rc4) & !mozilla_seamonkey_update_beta4 & (rc4) & !mozilla_seamonkey_update_beta3 & (rc4) & !mozilla_seamonkey_update_any & (rc4)) | (!mozilla_seamonkey_update_beta2 & (rc4) & mozilla_seamonkey_update_beta1 & (rc4) & !mozilla_seamonkey_update_beta4 & (rc4) & !mozilla_seamonkey_update_beta3 & (rc4) & !mozilla_seamonkey_update_any & (rc4)) | (!mozilla_seamonkey_update_beta2 & (rc4) & !mozilla_seamonkey_update_beta1 & (rc4) & mozilla_seamonkey_update_beta4 & (rc4) & !mozilla_seamonkey_update_beta3 & (rc4) & !mozilla_seamonkey_update_any & (rc4)) | (!mozilla_seamonkey_update_beta2 & (rc4) & !mozilla_seamonkey_update_beta1 & (rc4) & !mozilla_seamonkey_update_beta4 & (rc4) & mozilla_seamonkey_update_beta3 & (rc4) & !mozilla_seamonkey_update_any & (rc4)) | (!mozilla_seamonkey_update_beta2 & (rc4) & !mozilla_seamonkey_update_beta1 & (rc4) & !mozilla_seamonkey_update_beta4 & (rc4) & !mozilla_seamonkey_update_beta3 & (rc4) & mozilla_seamonkey_update_any & (rc4)))
+        mozilla_seamonkey_version_1__1__11 => mozilla_seamonkey_update_any
+        mozilla_seamonkey_version_1__1__11 => (rc4)
+        mozilla_seamonkey_version_1__1__2 => mozilla_seamonkey_update_any
+        mozilla_seamonkey_version_1__1__2 => (rc4)
+        mozilla_seamonkey_version_1__1__14 => mozilla_seamonkey_update_any
+        mozilla_seamonkey_version_1__1__14 => (rc4)
+        mozilla_seamonkey_version_2__7 => ((mozilla_seamonkey_update_beta2 & (rc4) & !mozilla_seamonkey_update_beta1 & (rc4) & !mozilla_seamonkey_update_beta4 & (rc4) & !mozilla_seamonkey_update_beta3 & (rc4) & !mozilla_seamonkey_update_beta5 & (rc4)) | (!mozilla_seamonkey_update_beta2 & (rc4) & mozilla_seamonkey_update_beta1 & (rc4) & !mozilla_seamonkey_update_beta4 & (rc4) & !mozilla_seamonkey_update_beta3 & (rc4) & !mozilla_seamonkey_update_beta5 & (rc4)) | (!mozilla_seamonkey_update_beta2 & (rc4) & !mozilla_seamonkey_update_beta1 & (rc4) & mozilla_seamonkey_update_beta4 & (rc4) & !mozilla_seamonkey_update_beta3 & (rc4) & !mozilla_seamonkey_update_beta5 & (rc4)) | (!mozilla_seamonkey_update_beta2 & (rc4) & !mozilla_seamonkey_update_beta1 & (rc4) & !mozilla_seamonkey_update_beta4 & (rc4) & mozilla_seamonkey_update_beta3 & (rc4) & !mozilla_seamonkey_update_beta5 & (rc4)) | (!mozilla_seamonkey_update_beta2 & (rc4) & !mozilla_seamonkey_update_beta1 & (rc4) & !mozilla_seamonkey_update_beta4 & (rc4) & !mozilla_seamonkey_update_beta3 & (rc4) & mozilla_seamonkey_update_beta5 & (rc4)))
+        mozilla_seamonkey_version_1__1__9 => mozilla_seamonkey_update_any
+        mozilla_seamonkey_version_1__1__9 => (rc4)
+        mozilla_seamonkey_version_2__6__1 => mozilla_seamonkey_update_any
+        mozilla_seamonkey_version_2__6__1 => (rc4)
+        mozilla_seamonkey_version_2__0__6 => mozilla_seamonkey_update_any
+        mozilla_seamonkey_version_2__0__6 => (rc4)
+        mozilla_seamonkey_version_2__0 => ((mozilla_seamonkey_update_alpha__1 & (rc4) & !mozilla_seamonkey_update_alpha__3 & (rc4) & !mozilla_seamonkey_update_beta__2 & (rc4) & !mozilla_seamonkey_update_alpha__2 & (rc4) & !mozilla_seamonkey_update_rc1 & (rc4) & !mozilla_seamonkey_update_beta__1 & (rc4) & !mozilla_seamonkey_update_rc2 & (rc4) & !mozilla_seamonkey_update_any & (rc4)) | (!mozilla_seamonkey_update_alpha__1 & (rc4) & mozilla_seamonkey_update_alpha__3 & (rc4) & !mozilla_seamonkey_update_beta__2 & (rc4) & !mozilla_seamonkey_update_alpha__2 & (rc4) & !mozilla_seamonkey_update_rc1 & (rc4) & !mozilla_seamonkey_update_beta__1 & (rc4) & !mozilla_seamonkey_update_rc2 & (rc4) & !mozilla_seamonkey_update_any & (rc4)) | (!mozilla_seamonkey_update_alpha__1 & (rc4) & !mozilla_seamonkey_update_alpha__3 & (rc4) & mozilla_seamonkey_update_beta__2 & (rc4) & !mozilla_seamonkey_update_alpha__2 & (rc4) & !mozilla_seamonkey_update_rc1 & (rc4) & !mozilla_seamonkey_update_beta__1 & (rc4) & !mozilla_seamonkey_update_rc2 & (rc4) & !mozilla_seamonkey_update_any & (rc4)) | (!mozilla_seamonkey_update_alpha__1 & (rc4) & !mozilla_seamonkey_update_alpha__3 & (rc4) & !mozilla_seamonkey_update_beta__2 & (rc4) & mozilla_seamonkey_update_alpha__2 & (rc4) & !mozilla_seamonkey_update_rc1 & (rc4) & !mozilla_seamonkey_update_beta__1 & (rc4) & !mozilla_seamonkey_update_rc2 & (rc4) & !mozilla_seamonkey_update_any & (rc4)) | (!mozilla_seamonkey_update_alpha__1 & (rc4) & !mozilla_seamonkey_update_alpha__3 & (rc4) & !mozilla_seamonkey_update_beta__2 & (rc4) & !mozilla_seamonkey_update_alpha__2 & (rc4) & mozilla_seamonkey_update_rc1 & (rc4) & !mozilla_seamonkey_update_beta__1 & (rc4) & !mozilla_seamonkey_update_rc2 & (rc4) & !mozilla_seamonkey_update_any & (rc4)) | (!mozilla_seamonkey_update_alpha__1 & (rc4) & !mozilla_seamonkey_update_alpha__3 & (rc4) & !mozilla_seamonkey_update_beta__2 & (rc4) & !mozilla_seamonkey_update_alpha__2 & (rc4) & !mozilla_seamonkey_update_rc1 & (rc4) & mozilla_seamonkey_update_beta__1 & (rc4) & !mozilla_seamonkey_update_rc2 & (rc4) & !mozilla_seamonkey_update_any & (rc4)) | (!mozilla_seamonkey_update_alpha__1 & (rc4) & !mozilla_seamonkey_update_alpha__3 & (rc4) & !mozilla_seamonkey_update_beta__2 & (rc4) & !mozilla_seamonkey_update_alpha__2 & (rc4) & !mozilla_seamonkey_update_rc1 & (rc4) & !mozilla_seamonkey_update_beta__1 & (rc4) & mozilla_seamonkey_update_rc2 & (rc4) & !mozilla_seamonkey_update_any & (rc4)) | (!mozilla_seamonkey_update_alpha__1 & (rc4) & !mozilla_seamonkey_update_alpha__3 & (rc4) & !mozilla_seamonkey_update_beta__2 & (rc4) & !mozilla_seamonkey_update_alpha__2 & (rc4) & !mozilla_seamonkey_update_rc1 & (rc4) & !mozilla_seamonkey_update_beta__1 & (rc4) & !mozilla_seamonkey_update_rc2 & (rc4) & mozilla_seamonkey_update_any & (rc4)))
+        mozilla_seamonkey_version_1__0__1 => mozilla_seamonkey_update_any
+        mozilla_seamonkey_version_1__0__1 => (rc4)
+        mozilla_seamonkey_version_2__0__5 => mozilla_seamonkey_update_any
+        mozilla_seamonkey_version_2__0__5 => (rc4)
+        mozilla_seamonkey_version_1__1__13 => mozilla_seamonkey_update_any
+        mozilla_seamonkey_version_1__1__13 => (rc4)
+        mozilla_seamonkey_version_2__1 => ((mozilla_seamonkey_update_beta2 & (rc4) & !mozilla_seamonkey_update_beta1 & (rc4) & !mozilla_seamonkey_update_alpha1 & (rc4) & !mozilla_seamonkey_update_alpha3 & (rc4) & !mozilla_seamonkey_update_beta3 & (rc4) & !mozilla_seamonkey_update_rc1 & (rc4) & !mozilla_seamonkey_update_alpha2 & (rc4) & !mozilla_seamonkey_update_rc2 & (rc4) & !mozilla_seamonkey_update_any & (rc4)) | (!mozilla_seamonkey_update_beta2 & (rc4) & mozilla_seamonkey_update_beta1 & (rc4) & !mozilla_seamonkey_update_alpha1 & (rc4) & !mozilla_seamonkey_update_alpha3 & (rc4) & !mozilla_seamonkey_update_beta3 & (rc4) & !mozilla_seamonkey_update_rc1 & (rc4) & !mozilla_seamonkey_update_alpha2 & (rc4) & !mozilla_seamonkey_update_rc2 & (rc4) & !mozilla_seamonkey_update_any & (rc4)) | (!mozilla_seamonkey_update_beta2 & (rc4) & !mozilla_seamonkey_update_beta1 & (rc4) & mozilla_seamonkey_update_alpha1 & (rc4) & !mozilla_seamonkey_update_alpha3 & (rc4) & !mozilla_seamonkey_update_beta3 & (rc4) & !mozilla_seamonkey_update_rc1 & (rc4) & !mozilla_seamonkey_update_alpha2 & (rc4) & !mozilla_seamonkey_update_rc2 & (rc4) & !mozilla_seamonkey_update_any & (rc4)) | (!mozilla_seamonkey_update_beta2 & (rc4) & !mozilla_seamonkey_update_beta1 & (rc4) & !mozilla_seamonkey_update_alpha1 & (rc4) & mozilla_seamonkey_update_alpha3 & (rc4) & !mozilla_seamonkey_update_beta3 & (rc4) & !mozilla_seamonkey_update_rc1 & (rc4) & !mozilla_seamonkey_update_alpha2 & (rc4) & !mozilla_seamonkey_update_rc2 & (rc4) & !mozilla_seamonkey_update_any & (rc4)) | (!mozilla_seamonkey_update_beta2 & (rc4) & !mozilla_seamonkey_update_beta1 & (rc4) & !mozilla_seamonkey_update_alpha1 & (rc4) & !mozilla_seamonkey_update_alpha3 & (rc4) & mozilla_seamonkey_update_beta3 & (rc4) & !mozilla_seamonkey_update_rc1 & (rc4) & !mozilla_seamonkey_update_alpha2 & (rc4) & !mozilla_seamonkey_update_rc2 & (rc4) & !mozilla_seamonkey_update_any & (rc4)) | (!mozilla_seamonkey_update_beta2 & (rc4) & !mozilla_seamonkey_update_beta1 & (rc4) & !mozilla_seamonkey_update_alpha1 & (rc4) & !mozilla_seamonkey_update_alpha3 & (rc4) & !mozilla_seamonkey_update_beta3 & (rc4) & mozilla_seamonkey_update_rc1 & (rc4) & !mozilla_seamonkey_update_alpha2 & (rc4) & !mozilla_seamonkey_update_rc2 & (rc4) & !mozilla_seamonkey_update_any & (rc4)) | (!mozilla_seamonkey_update_beta2 & (rc4) & !mozilla_seamonkey_update_beta1 & (rc4) & !mozilla_seamonkey_update_alpha1 & (rc4) & !mozilla_seamonkey_update_alpha3 & (rc4) & !mozilla_seamonkey_update_beta3 & (rc4) & !mozilla_seamonkey_update_rc1 & (rc4) & mozilla_seamonkey_update_alpha2 & (rc4) & !mozilla_seamonkey_update_rc2 & (rc4) & !mozilla_seamonkey_update_any & (rc4)) | (!mozilla_seamonkey_update_beta2 & (rc4) & !mozilla_seamonkey_update_beta1 & (rc4) & !mozilla_seamonkey_update_alpha1 & (rc4) & !mozilla_seamonkey_update_alpha3 & (rc4) & !mozilla_seamonkey_update_beta3 & (rc4) & !mozilla_seamonkey_update_rc1 & (rc4) & !mozilla_seamonkey_update_alpha2 & (rc4) & mozilla_seamonkey_update_rc2 & (rc4) & !mozilla_seamonkey_update_any & (rc4)) | (!mozilla_seamonkey_update_beta2 & (rc4) & !mozilla_seamonkey_update_beta1 & (rc4) & !mozilla_seamonkey_update_alpha1 & (rc4) & !mozilla_seamonkey_update_alpha3 & (rc4) & !mozilla_seamonkey_update_beta3 & (rc4) & !mozilla_seamonkey_update_rc1 & (rc4) & !mozilla_seamonkey_update_alpha2 & (rc4) & !mozilla_seamonkey_update_rc2 & (rc4) & mozilla_seamonkey_update_any & (rc4)))
+        mozilla_seamonkey_version_1__1__16 => mozilla_seamonkey_update_any
+        mozilla_seamonkey_version_1__1__16 => (rc4)
+        mozilla_seamonkey_version_1__0__7 => mozilla_seamonkey_update_any
+        mozilla_seamonkey_version_1__0__7 => (rc4)
+        mozilla_seamonkey_version_2__0__4 => mozilla_seamonkey_update_any
+        mozilla_seamonkey_version_2__0__4 => (rc4)
+        mozilla_seamonkey_version_1__1__17 => mozilla_seamonkey_update_any
+        mozilla_seamonkey_version_1__1__17 => (rc4)
+        mozilla_seamonkey_version_2__0__14 => mozilla_seamonkey_update_any
+        mozilla_seamonkey_version_2__0__14 => (rc4)
+        mozilla_seamonkey_version_2__0__13 => mozilla_seamonkey_update_any
+        mozilla_seamonkey_version_2__0__13 => (rc4)
+        mozilla_seamonkey_version_2__0__8 => mozilla_seamonkey_update_any
+        mozilla_seamonkey_version_2__0__8 => (rc4)
+        mozilla_seamonkey_version_1__0__9 => mozilla_seamonkey_update_any
+        mozilla_seamonkey_version_1__0__9 => (rc4)
+        mozilla_seamonkey_version_1__1__7 => mozilla_seamonkey_update_any
+        mozilla_seamonkey_version_1__1__7 => (rc4)
+        mozilla_seamonkey_version_1__0__6 => mozilla_seamonkey_update_any
+        mozilla_seamonkey_version_1__0__6 => (rc4)
+        mozilla_seamonkey_version_1__1__5 => mozilla_seamonkey_update_any
+        mozilla_seamonkey_version_1__1__5 => (rc4)
+        mozilla_seamonkey_version_2__4 => ((mozilla_seamonkey_update_beta2 & (rc4) & !mozilla_seamonkey_update_beta1 & (rc4) & !mozilla_seamonkey_update_beta3 & (rc4) & !mozilla_seamonkey_update_any & (rc4)) | (!mozilla_seamonkey_update_beta2 & (rc4) & mozilla_seamonkey_update_beta1 & (rc4) & !mozilla_seamonkey_update_beta3 & (rc4) & !mozilla_seamonkey_update_any & (rc4)) | (!mozilla_seamonkey_update_beta2 & (rc4) & !mozilla_seamonkey_update_beta1 & (rc4) & mozilla_seamonkey_update_beta3 & (rc4) & !mozilla_seamonkey_update_any & (rc4)) | (!mozilla_seamonkey_update_beta2 & (rc4) & !mozilla_seamonkey_update_beta1 & (rc4) & !mozilla_seamonkey_update_beta3 & (rc4) & mozilla_seamonkey_update_any & (rc4)))
+        mozilla_seamonkey_version_2__0__3 => mozilla_seamonkey_update_any
+        mozilla_seamonkey_version_2__0__3 => (rc4)
+        mozilla_seamonkey_version_1__0__5 => mozilla_seamonkey_update_any
+        mozilla_seamonkey_version_1__0__5 => (rc4)
+        mozilla_seamonkey_version_1__1__18 => mozilla_seamonkey_update_any
+        mozilla_seamonkey_version_1__1__18 => (rc4)
+        mozilla_seamonkey_version_1__1__12 => mozilla_seamonkey_update_any
+        mozilla_seamonkey_version_1__1__12 => (rc4)

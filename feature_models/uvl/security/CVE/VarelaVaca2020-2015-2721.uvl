@@ -1,0 +1,1270 @@
+features
+        CVE_2015_2721
+                optional
+                        configs
+                                mandatory
+                                        rc0
+                                                mandatory
+                                                        rc0_mozilla
+                                                                alternative
+                                                                        rc0_mozilla_thunderbird
+                                                                                mandatory
+                                                                                        rc0_mozilla_thunderbird_version
+                                                                                                alternative
+                                                                                                        rc0_mozilla_thunderbird_version_17__0
+                                                                                                        rc0_mozilla_thunderbird_version_2__0__0__4
+                                                                                                        rc0_mozilla_thunderbird_version_any
+                                                                                                        rc0_mozilla_thunderbird_version_24__4
+                                                                                                        rc0_mozilla_thunderbird_version_12__0__1
+                                                                                                        rc0_mozilla_thunderbird_version_1__0__2
+                                                                                                        rc0_mozilla_thunderbird_version_23__0
+                                                                                                        rc0_mozilla_thunderbird_version_24__5__0
+                                                                                                        rc0_mozilla_thunderbird_version_1__0__6
+                                                                                                        rc0_mozilla_thunderbird_version_3__0__10
+                                                                                                        rc0_mozilla_thunderbird_version_1__5__0__8
+                                                                                                        rc0_mozilla_thunderbird_version_3__1__17
+                                                                                                        rc0_mozilla_thunderbird_version_2__0__0__12
+                                                                                                        rc0_mozilla_thunderbird_version_30__0
+                                                                                                        rc0_mozilla_thunderbird_version_2__0__0__17
+                                                                                                        rc0_mozilla_thunderbird_version_3__0__4
+                                                                                                        rc0_mozilla_thunderbird_version_1__0__8
+                                                                                                        rc0_mozilla_thunderbird_version_20__0
+                                                                                                        rc0_mozilla_thunderbird_version_0__9
+                                                                                                        rc0_mozilla_thunderbird_version_2__0__0__9
+                                                                                                        rc0_mozilla_thunderbird_version_24__0
+                                                                                                        rc0_mozilla_thunderbird_version_1__5__0__4
+                                                                                                        rc0_mozilla_thunderbird_version_25__0
+                                                                                                        rc0_mozilla_thunderbird_version_1__5__0__5
+                                                                                                        rc0_mozilla_thunderbird_version_29__0
+                                                                                                        rc0_mozilla_thunderbird_version_3__1
+                                                                                                        rc0_mozilla_thunderbird_version_38__0
+                                                                                                        rc0_mozilla_thunderbird_version_31__3__0
+                                                                                                        rc0_mozilla_thunderbird_version_2__0__0__18
+                                                                                                        rc0_mozilla_thunderbird_version_34__0
+                                                                                                        rc0_mozilla_thunderbird_version_0__7__1
+                                                                                                        rc0_mozilla_thunderbird_version_3__1__5
+                                                                                                        rc0_mozilla_thunderbird_version_7__0__1
+                                                                                                        rc0_mozilla_thunderbird_version_15__0__1
+                                                                                                        rc0_mozilla_thunderbird_version_27__0
+                                                                                                        rc0_mozilla_thunderbird_version_2__0__0__16
+                                                                                                        rc0_mozilla_thunderbird_version_0__7__2
+                                                                                                        rc0_mozilla_thunderbird_version_31__6__0
+                                                                                                        rc0_mozilla_thunderbird_version_17__0__2
+                                                                                                        rc0_mozilla_thunderbird_version_31__7
+                                                                                                        rc0_mozilla_thunderbird_version_10__0__1
+                                                                                                        rc0_mozilla_thunderbird_version_3__1__3
+                                                                                                        rc0_mozilla_thunderbird_version_1__5__0__9
+                                                                                                        rc0_mozilla_thunderbird_version_24__0__1
+                                                                                                        rc0_mozilla_thunderbird_version_17__0__9
+                                                                                                        rc0_mozilla_thunderbird_version_3__3
+                                                                                                        rc0_mozilla_thunderbird_version_3__0__7
+                                                                                                        rc0_mozilla_thunderbird_version_31__1__2
+                                                                                                        rc0_mozilla_thunderbird_version_2__0
+                                                                                                        rc0_mozilla_thunderbird_version_28__0
+                                                                                                        rc0_mozilla_thunderbird_version_9__0__1
+                                                                                                        rc0_mozilla_thunderbird_version_1__5__0__2
+                                                                                                        rc0_mozilla_thunderbird_version_3__1__11
+                                                                                                        rc0_mozilla_thunderbird_version_31__0
+                                                                                                        rc0_mozilla_thunderbird_version_31__5__0
+                                                                                                        rc0_mozilla_thunderbird_version_3__0
+                                                                                                        rc0_mozilla_thunderbird_version_11__0
+                                                                                                        rc0_mozilla_thunderbird_version_3__1__18
+                                                                                                        rc0_mozilla_thunderbird_version_2__0__0__22
+                                                                                                        rc0_mozilla_thunderbird_version_1__5__0__10
+                                                                                                        rc0_mozilla_thunderbird_version_1__0
+                                                                                                        rc0_mozilla_thunderbird_version_2__0__0__14
+                                                                                                        rc0_mozilla_thunderbird_version_17__0__5
+                                                                                                        rc0_mozilla_thunderbird_version_2__0__14
+                                                                                                        rc0_mozilla_thunderbird_version_3__1__6
+                                                                                                        rc0_mozilla_thunderbird_version_5__0
+                                                                                                        rc0_mozilla_thunderbird_version_24__3__0
+                                                                                                        rc0_mozilla_thunderbird_version_13__0__1
+                                                                                                        rc0_mozilla_thunderbird_version_0__6
+                                                                                                        rc0_mozilla_thunderbird_version_3__1__7
+                                                                                                        rc0_mozilla_thunderbird_version_24__2__0
+                                                                                                        rc0_mozilla_thunderbird_version_3__1__10
+                                                                                                        rc0_mozilla_thunderbird_version_2__0__0__21
+                                                                                                        rc0_mozilla_thunderbird_version_10__0__2
+                                                                                                        rc0_mozilla_thunderbird_version_3__1__2
+                                                                                                        rc0_mozilla_thunderbird_version_6__0
+                                                                                                        rc0_mozilla_thunderbird_version_1__5
+                                                                                                        rc0_mozilla_thunderbird_version_31__4__0
+                                                                                                        rc0_mozilla_thunderbird_version_2__0__0__23
+                                                                                                        rc0_mozilla_thunderbird_version_18__0
+                                                                                                        rc0_mozilla_thunderbird_version_9__0
+                                                                                                        rc0_mozilla_thunderbird_version_10__0
+                                                                                                        rc0_mozilla_thunderbird_version_24__8__1
+                                                                                                        rc0_mozilla_thunderbird_version_1__1
+                                                                                                        rc0_mozilla_thunderbird_version_2__0__0__6
+                                                                                                        rc0_mozilla_thunderbird_version_38__0__1
+                                                                                                        rc0_mozilla_thunderbird_version_3__1__20
+                                                                                                        rc0_mozilla_thunderbird_version_24__7__0
+                                                                                                        rc0_mozilla_thunderbird_version_3__1__16
+                                                                                                        rc0_mozilla_thunderbird_version_3__0__2
+                                                                                                        rc0_mozilla_thunderbird_version_17__0__8
+                                                                                                        rc0_mozilla_thunderbird_version_8__0
+                                                                                                        rc0_mozilla_thunderbird_version_3__1__9
+                                                                                                        rc0_mozilla_thunderbird_version_0__1
+                                                                                                        rc0_mozilla_thunderbird_version_16__0__2
+                                                                                                        rc0_mozilla_thunderbird_version_0__3
+                                                                                                        rc0_mozilla_thunderbird_version_11__0__1
+                                                                                                        rc0_mozilla_thunderbird_version_3__0__1
+                                                                                                        rc0_mozilla_thunderbird_version_22__0
+                                                                                                        rc0_mozilla_thunderbird_version_1__5__0__12
+                                                                                                        rc0_mozilla_thunderbird_version_3__0__8
+                                                                                                        rc0_mozilla_thunderbird_version_36__0
+                                                                                                        rc0_mozilla_thunderbird_version_15__0
+                                                                                                        rc0_mozilla_thunderbird_version_31__7__0
+                                                                                                        rc0_mozilla_thunderbird_version_6__0__2
+                                                                                                        rc0_mozilla_thunderbird_version_3__0__3
+                                                                                                        rc0_mozilla_thunderbird_version_3__1__8
+                                                                                                        rc0_mozilla_thunderbird_version_17__0__10
+                                                                                                        rc0_mozilla_thunderbird_version_0__8
+                                                                                                        rc0_mozilla_thunderbird_version_0__7__3
+                                                                                                        rc0_mozilla_thunderbird_version_31__2__0
+                                                                                                        rc0_mozilla_thunderbird_version_31__1__0
+                                                                                                        rc0_mozilla_thunderbird_version_24__4__0
+                                                                                                        rc0_mozilla_thunderbird_version_16__0
+                                                                                                        rc0_mozilla_thunderbird_version_2__0__0__19
+                                                                                                        rc0_mozilla_thunderbird_version_26__0
+                                                                                                        rc0_mozilla_thunderbird_version_3__1__15
+                                                                                                        rc0_mozilla_thunderbird_version_3__1__12
+                                                                                                        rc0_mozilla_thunderbird_version_31__8__0
+                                                                                                        rc0_mozilla_thunderbird_version_32__0
+                                                                                                        rc0_mozilla_thunderbird_version_1__5__0__14
+                                                                                                        rc0_mozilla_thunderbird_version_3__1__14
+                                                                                                        rc0_mozilla_thunderbird_version_3__1__4
+                                                                                                        rc0_mozilla_thunderbird_version_6__0__1
+                                                                                                        rc0_mozilla_thunderbird_version_24__1__0
+                                                                                                        rc0_mozilla_thunderbird_version_1__5__0__7
+                                                                                                        rc0_mozilla_thunderbird_version_0__5
+                                                                                                        rc0_mozilla_thunderbird_version_7__0
+                                                                                                        rc0_mozilla_thunderbird_version_0__7
+                                                                                                        rc0_mozilla_thunderbird_version_17__0__4
+                                                                                                        rc0_mozilla_thunderbird_version_1__0__5
+                                                                                                        rc0_mozilla_thunderbird_version_13__0
+                                                                                                        rc0_mozilla_thunderbird_version_3__0__9
+                                                                                                        rc0_mozilla_thunderbird_version_3__1__19
+                                                                                                        rc0_mozilla_thunderbird_version_17__0__3
+                                                                                                        rc0_mozilla_thunderbird_version_19__0
+                                                                                                        rc0_mozilla_thunderbird_version_2__0__0__24
+                                                                                                        rc0_mozilla_thunderbird_version_14__0
+                                                                                                        rc0_mozilla_thunderbird_version_21__0
+                                                                                                        rc0_mozilla_thunderbird_version_0__4
+                                                                                                        rc0_mozilla_thunderbird_version_3__0__11
+                                                                                                        rc0_mozilla_thunderbird_version_31__1__1
+                                                                                                        rc0_mozilla_thunderbird_version_1__5__0__13
+                                                                                                        rc0_mozilla_thunderbird_version_37__0
+                                                                                                        rc0_mozilla_thunderbird_version_24__3
+                                                                                                        rc0_mozilla_thunderbird_version_1__0__7
+                                                                                                        rc0_mozilla_thunderbird_version_24__1__1
+                                                                                                        rc0_mozilla_thunderbird_version_3__0__6
+                                                                                                        rc0_mozilla_thunderbird_version_2__0__0__0
+                                                                                                        rc0_mozilla_thunderbird_version_24__6__0
+                                                                                                        rc0_mozilla_thunderbird_version_17__0__7
+                                                                                                        rc0_mozilla_thunderbird_version_16__0__1
+                                                                                                        rc0_mozilla_thunderbird_version_33__0
+                                                                                                        rc0_mozilla_thunderbird_version_3__0__5
+                                                                                                        rc0_mozilla_thunderbird_version_3__1__13
+                                                                                                        rc0_mozilla_thunderbird_version_12__0
+                                                                                                        rc0_mozilla_thunderbird_version_3__1__1
+                                                                                                        rc0_mozilla_thunderbird_version_17__0__6
+                                                                                                        rc0_mozilla_thunderbird_version_2__0__0__5
+                                                                                                        rc0_mozilla_thunderbird_version_0__2
+                                                                                                        rc0_mozilla_thunderbird_version_24__8__0
+                                                                                        rc0_mozilla_thunderbird_update
+                                                                                                alternative
+                                                                                                        rc0_mozilla_thunderbird_update_alpha2
+                                                                                                        rc0_mozilla_thunderbird_update_rc2
+                                                                                                        rc0_mozilla_thunderbird_update_alpha1
+                                                                                                        rc0_mozilla_thunderbird_update_alpha3
+                                                                                                        rc0_mozilla_thunderbird_update_any
+                                                                                                        rc0_mozilla_thunderbird_update_beta2
+                                                                                                        rc0_mozilla_thunderbird_update_beta1
+                                                                                                        rc0_mozilla_thunderbird_update_beta6
+                                                                                                        rc0_mozilla_thunderbird_update_rc
+                                                                                                        rc0_mozilla_thunderbird_update_beta5
+                                                                                                        rc0_mozilla_thunderbird_update_rc1
+                                                                                                        rc0_mozilla_thunderbird_update_beta4
+                                                                                                        rc0_mozilla_thunderbird_update_beta3
+                                                                        rc0_mozilla_firefox__esr
+                                                                                mandatory
+                                                                                        rc0_mozilla_firefox__esr_version
+                                                                                                alternative
+                                                                                                        rc0_mozilla_firefox__esr_version_31__1__0
+                                                                                                        rc0_mozilla_firefox__esr_version_31__5__3
+                                                                                                        rc0_mozilla_firefox__esr_version_31__1
+                                                                                                        rc0_mozilla_firefox__esr_version_31__7__0
+                                                                                                        rc0_mozilla_firefox__esr_version_31__1__1
+                                                                                                        rc0_mozilla_firefox__esr_version_31__3
+                                                                                                        rc0_mozilla_firefox__esr_version_38__0
+                                                                                                        rc0_mozilla_firefox__esr_version_31__6__0
+                                                                                                        rc0_mozilla_firefox__esr_version_31__5
+                                                                                                        rc0_mozilla_firefox__esr_version_31__5__1
+                                                                                                        rc0_mozilla_firefox__esr_version_31__3__0
+                                                                                                        rc0_mozilla_firefox__esr_version_31__4
+                                                                                                        rc0_mozilla_firefox__esr_version_31__0
+                                                                                                        rc0_mozilla_firefox__esr_version_31__2
+                                                                                                        rc0_mozilla_firefox__esr_version_31__5__2
+                                                                        rc0_mozilla_firefox
+                                                                                mandatory
+                                                                                        rc0_mozilla_firefox_version
+                                                                                                alternative
+                                                                                                        rc0_mozilla_firefox_version_17__0
+                                                                                                        rc0_mozilla_firefox_version_2__0__0__4
+                                                                                                        rc0_mozilla_firefox_version_any
+                                                                                                        rc0_mozilla_firefox_version_2__0__0__15
+                                                                                                        rc0_mozilla_firefox_version_1__4__1
+                                                                                                        rc0_mozilla_firefox_version_0__6__1
+                                                                                                        rc0_mozilla_firefox_version_32__0__3
+                                                                                                        rc0_mozilla_firefox_version_1__0__2
+                                                                                                        rc0_mozilla_firefox_version_23__0
+                                                                                                        rc0_mozilla_firefox_version_3__6__15
+                                                                                                        rc0_mozilla_firefox_version_24__5__0
+                                                                                                        rc0_mozilla_firefox_version_1__5__0__11
+                                                                                                        rc0_mozilla_firefox_version_3__0__10
+                                                                                                        rc0_mozilla_firefox_version_1__0__6
+                                                                                                        rc0_mozilla_firefox_version_1__5__0__8
+                                                                                                        rc0_mozilla_firefox_version_3__0__13
+                                                                                                        rc0_mozilla_firefox_version_2__0__0__12
+                                                                                                        rc0_mozilla_firefox_version_15__1
+                                                                                                        rc0_mozilla_firefox_version_1__5__2
+                                                                                                        rc0_mozilla_firefox_version_2__0__0__17
+                                                                                                        rc0_mozilla_firefox_version_30__0
+                                                                                                        rc0_mozilla_firefox_version_3__0__4
+                                                                                                        rc0_mozilla_firefox_version_1__0__8
+                                                                                                        rc0_mozilla_firefox_version_20__0
+                                                                                                        rc0_mozilla_firefox_version_1__5__1
+                                                                                                        rc0_mozilla_firefox_version_0__9
+                                                                                                        rc0_mozilla_firefox_version_33__0__2
+                                                                                                        rc0_mozilla_firefox_version_2__0__0__9
+                                                                                                        rc0_mozilla_firefox_version_3__6__23
+                                                                                                        rc0_mozilla_firefox_version_3__6__17
+                                                                                                        rc0_mozilla_firefox_version_3__6
+                                                                                                        rc0_mozilla_firefox_version_24__0
+                                                                                                        rc0_mozilla_firefox_version_1__5__0__4
+                                                                                                        rc0_mozilla_firefox_version_3__0__12
+                                                                                                        rc0_mozilla_firefox_version_31__5__3
+                                                                                                        rc0_mozilla_firefox_version_25__0
+                                                                                                        rc0_mozilla_firefox_version_3__6__11
+                                                                                                        rc0_mozilla_firefox_version_1__5__0__5
+                                                                                                        rc0_mozilla_firefox_version_29__0
+                                                                                                        rc0_mozilla_firefox_version_23__0__1
+                                                                                                        rc0_mozilla_firefox_version_38__0
+                                                                                                        rc0_mozilla_firefox_version_31__3__0
+                                                                                                        rc0_mozilla_firefox_version_2__0__0__18
+                                                                                                        rc0_mozilla_firefox_version_34__0
+                                                                                                        rc0_mozilla_firefox_version_1__0__4
+                                                                                                        rc0_mozilla_firefox_version_0__7__1
+                                                                                                        rc0_mozilla_firefox_version_10__0__5
+                                                                                                        rc0_mozilla_firefox_version_7__0__1
+                                                                                                        rc0_mozilla_firefox_version_19__0__2
+                                                                                                        rc0_mozilla_firefox_version_19__1
+                                                                                                        rc0_mozilla_firefox_version_15__0__1
+                                                                                                        rc0_mozilla_firefox_version_27__0
+                                                                                                        rc0_mozilla_firefox_version_3__6__9
+                                                                                                        rc0_mozilla_firefox_version_33__1__1
+                                                                                                        rc0_mozilla_firefox_version_2__0__0__16
+                                                                                                        rc0_mozilla_firefox_version_25__1
+                                                                                                        rc0_mozilla_firefox_version_3__0__18
+                                                                                                        rc0_mozilla_firefox_version_10__0__8
+                                                                                                        rc0_mozilla_firefox_version_31__6__0
+                                                                                                        rc0_mozilla_firefox_version_17__0__2
+                                                                                                        rc0_mozilla_firefox_version_10__0__1
+                                                                                                        rc0_mozilla_firefox_version_20__0__1
+                                                                                                        rc0_mozilla_firefox_version_27__0__1
+                                                                                                        rc0_mozilla_firefox_version_18__0__1
+                                                                                                        rc0_mozilla_firefox_version_3__6__10
+                                                                                                        rc0_mozilla_firefox_version_35__0
+                                                                                                        rc0_mozilla_firefox_version_1__0__3
+                                                                                                        rc0_mozilla_firefox_version_1__5__6
+                                                                                                        rc0_mozilla_firefox_version_1__5__0__9
+                                                                                                        rc0_mozilla_firefox_version_17__0__9
+                                                                                                        rc0_mozilla_firefox_version_3__6__24
+                                                                                                        rc0_mozilla_firefox_version_10__0__12
+                                                                                                        rc0_mozilla_firefox_version_3__0__7
+                                                                                                        rc0_mozilla_firefox_version_3__6__7
+                                                                                                        rc0_mozilla_firefox_version_3__5__17
+                                                                                                        rc0_mozilla_firefox_version_17__2
+                                                                                                        rc0_mozilla_firefox_version_34__0__5
+                                                                                                        rc0_mozilla_firefox_version_2__0
+                                                                                                        rc0_mozilla_firefox_version_28__0
+                                                                                                        rc0_mozilla_firefox_version_9__0__1
+                                                                                                        rc0_mozilla_firefox_version_1__5__0__6
+                                                                                                        rc0_mozilla_firefox_version_33__0__1
+                                                                                                        rc0_mozilla_firefox_version_36__0__4
+                                                                                                        rc0_mozilla_firefox_version_18__2
+                                                                                                        rc0_mozilla_firefox_version_10__0__6
+                                                                                                        rc0_mozilla_firefox_version_1__5__8
+                                                                                                        rc0_mozilla_firefox_version_1__5__0__2
+                                                                                                        rc0_mozilla_firefox_version_2__0__0__2
+                                                                                                        rc0_mozilla_firefox_version_33__0__3
+                                                                                                        rc0_mozilla_firefox_version_3__6__13
+                                                                                                        rc0_mozilla_firefox_version_3__5__5
+                                                                                                        rc0_mozilla_firefox_version_31__0
+                                                                                                        rc0_mozilla_firefox_version_3__5__15
+                                                                                                        rc0_mozilla_firefox_version_31__5__0
+                                                                                                        rc0_mozilla_firefox_version_3__0
+                                                                                                        rc0_mozilla_firefox_version_3__5__11
+                                                                                                        rc0_mozilla_firefox_version_11__0
+                                                                                                        rc0_mozilla_firefox_version_1__5__5
+                                                                                                        rc0_mozilla_firefox_version_1__5__0__10
+                                                                                                        rc0_mozilla_firefox_version_20__2
+                                                                                                        rc0_mozilla_firefox_version_3__0__17
+                                                                                                        rc0_mozilla_firefox_version_3__5
+                                                                                                        rc0_mozilla_firefox_version_3__6__22
+                                                                                                        rc0_mozilla_firefox_version_1__0
+                                                                                                        rc0_mozilla_firefox_version_2__0__0__14
+                                                                                                        rc0_mozilla_firefox_version_17__0__5
+                                                                                                        rc0_mozilla_firefox_version_3__6__12
+                                                                                                        rc0_mozilla_firefox_version_5__0
+                                                                                                        rc0_mozilla_firefox_version_24__3__0
+                                                                                                        rc0_mozilla_firefox_version_13__0__1
+                                                                                                        rc0_mozilla_firefox_version_0__6
+                                                                                                        rc0_mozilla_firefox_version_3__5__2
+                                                                                                        rc0_mozilla_firefox_version_24__2__0
+                                                                                                        rc0_mozilla_firefox_version_0__10
+                                                                                                        rc0_mozilla_firefox_version_3__5__10
+                                                                                                        rc0_mozilla_firefox_version_3__6__6
+                                                                                                        rc0_mozilla_firefox_version_16__1
+                                                                                                        rc0_mozilla_firefox_version_10__0__2
+                                                                                                        rc0_mozilla_firefox_version_6__0
+                                                                                                        rc0_mozilla_firefox_version_1__5
+                                                                                                        rc0_mozilla_firefox_version_31__4__0
+                                                                                                        rc0_mozilla_firefox_version_1__5__7
+                                                                                                        rc0_mozilla_firefox_version_18__0
+                                                                                                        rc0_mozilla_firefox_version_2__0__0__3
+                                                                                                        rc0_mozilla_firefox_version_9__0
+                                                                                                        rc0_mozilla_firefox_version_3__5__13
+                                                                                                        rc0_mozilla_firefox_version_3__6__25
+                                                                                                        rc0_mozilla_firefox_version_3__0__15
+                                                                                                        rc0_mozilla_firefox_version_10__0
+                                                                                                        rc0_mozilla_firefox_version_3__6__4
+                                                                                                        rc0_mozilla_firefox_version_24__8__1
+                                                                                                        rc0_mozilla_firefox_version_2__0__0__6
+                                                                                                        rc0_mozilla_firefox_version_10__0__11
+                                                                                                        rc0_mozilla_firefox_version_38__0__1
+                                                                                                        rc0_mozilla_firefox_version_17__0__11
+                                                                                                        rc0_mozilla_firefox_version_24__7__0
+                                                                                                        rc0_mozilla_firefox_version_16__2
+                                                                                                        rc0_mozilla_firefox_version_3__0__2
+                                                                                                        rc0_mozilla_firefox_version_17__3
+                                                                                                        rc0_mozilla_firefox_version_3__5__18
+                                                                                                        rc0_mozilla_firefox_version_17__0__8
+                                                                                                        rc0_mozilla_firefox_version_3__6__14
+                                                                                                        rc0_mozilla_firefox_version_8__0
+                                                                                                        rc0_mozilla_firefox_version_3__5__7
+                                                                                                        rc0_mozilla_firefox_version_3__0__14
+                                                                                                        rc0_mozilla_firefox_version_0__1
+                                                                                                        rc0_mozilla_firefox_version_3__0__19
+                                                                                                        rc0_mozilla_firefox_version_0__3
+                                                                                                        rc0_mozilla_firefox_version_3__6__3
+                                                                                                        rc0_mozilla_firefox_version_16__0__2
+                                                                                                        rc0_mozilla_firefox_version_2__0__0__1
+                                                                                                        rc0_mozilla_firefox_version_3__0__1
+                                                                                                        rc0_mozilla_firefox_version_22__0
+                                                                                                        rc0_mozilla_firefox_version_17__1
+                                                                                                        rc0_mozilla_firefox_version_1__5__0__12
+                                                                                                        rc0_mozilla_firefox_version_33__1
+                                                                                                        rc0_mozilla_firefox_version_3__0__8
+                                                                                                        rc0_mozilla_firefox_version_3__6__20
+                                                                                                        rc0_mozilla_firefox_version_1__5__4
+                                                                                                        rc0_mozilla_firefox_version_29__0__1
+                                                                                                        rc0_mozilla_firefox_version_36__0
+                                                                                                        rc0_mozilla_firefox_version_15__0
+                                                                                                        rc0_mozilla_firefox_version_3__5__12
+                                                                                                        rc0_mozilla_firefox_version_31__7__0
+                                                                                                        rc0_mozilla_firefox_version_38__0__5
+                                                                                                        rc0_mozilla_firefox_version_2__0__0__13
+                                                                                                        rc0_mozilla_firefox_version_6__0__2
+                                                                                                        rc0_mozilla_firefox_version_1__0__1
+                                                                                                        rc0_mozilla_firefox_version_3__0__3
+                                                                                                        rc0_mozilla_firefox_version_0__10__1
+                                                                                                        rc0_mozilla_firefox_version_17__0__10
+                                                                                                        rc0_mozilla_firefox_version_0__9__3
+                                                                                                        rc0_mozilla_firefox_version_0__8
+                                                                                                        rc0_mozilla_firefox_version_3__6__2
+                                                                                                        rc0_mozilla_firefox_version_31__2__0
+                                                                                                        rc0_mozilla_firefox_version_3__6__28
+                                                                                                        rc0_mozilla_firefox_version_36__0__1
+                                                                                                        rc0_mozilla_firefox_version_18__1
+                                                                                                        rc0_mozilla_firefox_version_31__1__0
+                                                                                                        rc0_mozilla_firefox_version_24__4__0
+                                                                                                        rc0_mozilla_firefox_version_3__5__9
+                                                                                                        rc0_mozilla_firefox_version_36__0__3
+                                                                                                        rc0_mozilla_firefox_version_2__0__0__19
+                                                                                                        rc0_mozilla_firefox_version_8__0__1
+                                                                                                        rc0_mozilla_firefox_version_26__0
+                                                                                                        rc0_mozilla_firefox_version_3__0__16
+                                                                                                        rc0_mozilla_firefox_version_3__6__8
+                                                                                                        rc0_mozilla_firefox_version_32__0__2
+                                                                                                        rc0_mozilla_firefox_version_16__0
+                                                                                                        rc0_mozilla_firefox_version_31__8__0
+                                                                                                        rc0_mozilla_firefox_version_24__1
+                                                                                                        rc0_mozilla_firefox_version_3__6__26
+                                                                                                        rc0_mozilla_firefox_version_10__0__4
+                                                                                                        rc0_mozilla_firefox_version_3__6__27
+                                                                                                        rc0_mozilla_firefox_version_3__5__8
+                                                                                                        rc0_mozilla_firefox_version_32__0
+                                                                                                        rc0_mozilla_firefox_version_10__0__7
+                                                                                                        rc0_mozilla_firefox_version_3__5__6
+                                                                                                        rc0_mozilla_firefox_version_6__0__1
+                                                                                                        rc0_mozilla_firefox_version_24__1__0
+                                                                                                        rc0_mozilla_firefox_version_3__6__18
+                                                                                                        rc0_mozilla_firefox_version_1__5__0__7
+                                                                                                        rc0_mozilla_firefox_version_1__5__0__1
+                                                                                                        rc0_mozilla_firefox_version_3__6__19
+                                                                                                        rc0_mozilla_firefox_version_3__5__16
+                                                                                                        rc0_mozilla_firefox_version_0__5
+                                                                                                        rc0_mozilla_firefox_version_7__0
+                                                                                                        rc0_mozilla_firefox_version_0__7
+                                                                                                        rc0_mozilla_firefox_version_2__0__0__20
+                                                                                                        rc0_mozilla_firefox_version_17__0__4
+                                                                                                        rc0_mozilla_firefox_version_3__5__19
+                                                                                                        rc0_mozilla_firefox_version_19__0__1
+                                                                                                        rc0_mozilla_firefox_version_10__0__10
+                                                                                                        rc0_mozilla_firefox_version_0__9__1
+                                                                                                        rc0_mozilla_firefox_version_1__0__5
+                                                                                                        rc0_mozilla_firefox_version_13__0
+                                                                                                        rc0_mozilla_firefox_version_3__0__9
+                                                                                                        rc0_mozilla_firefox_version_17__0__3
+                                                                                                        rc0_mozilla_firefox_version_19__0
+                                                                                                        rc0_mozilla_firefox_version_3__6__16
+                                                                                                        rc0_mozilla_firefox_version_5__0__1
+                                                                                                        rc0_mozilla_firefox_version_37__0__2
+                                                                                                        rc0_mozilla_firefox_version_14__0
+                                                                                                        rc0_mozilla_firefox_version_37__0__1
+                                                                                                        rc0_mozilla_firefox_version_18__0__2
+                                                                                                        rc0_mozilla_firefox_version_21__0
+                                                                                                        rc0_mozilla_firefox_version_1__8
+                                                                                                        rc0_mozilla_firefox_version_0__4
+                                                                                                        rc0_mozilla_firefox_version_3__0__11
+                                                                                                        rc0_mozilla_firefox_version_31__1__1
+                                                                                                        rc0_mozilla_firefox_version_37__0
+                                                                                                        rc0_mozilla_firefox_version_35__0__1
+                                                                                                        rc0_mozilla_firefox_version_2__0__0__11
+                                                                                                        rc0_mozilla_firefox_version_0__9__2
+                                                                                                        rc0_mozilla_firefox_version_10__0__3
+                                                                                                        rc0_mozilla_firefox_version_24__1__1
+                                                                                                        rc0_mozilla_firefox_version_1__0__7
+                                                                                                        rc0_mozilla_firefox_version_3__0__6
+                                                                                                        rc0_mozilla_firefox_version_20__1
+                                                                                                        rc0_mozilla_firefox_version_31__5__2
+                                                                                                        rc0_mozilla_firefox_version_2__0__0__8
+                                                                                                        rc0_mozilla_firefox_version_3__6__21
+                                                                                                        rc0_mozilla_firefox_version_1__5__3
+                                                                                                        rc0_mozilla_firefox_version_24__6__0
+                                                                                                        rc0_mozilla_firefox_version_17__0__7
+                                                                                                        rc0_mozilla_firefox_version_2__0__0__10
+                                                                                                        rc0_mozilla_firefox_version_3__5__4
+                                                                                                        rc0_mozilla_firefox_version_3__5__14
+                                                                                                        rc0_mozilla_firefox_version_16__0__1
+                                                                                                        rc0_mozilla_firefox_version_10__0__9
+                                                                                                        rc0_mozilla_firefox_version_14__0__1
+                                                                                                        rc0_mozilla_firefox_version_38__1__0
+                                                                                                        rc0_mozilla_firefox_version_33__0
+                                                                                                        rc0_mozilla_firefox_version_32__0__1
+                                                                                                        rc0_mozilla_firefox_version_25__0__1
+                                                                                                        rc0_mozilla_firefox_version_3__0__5
+                                                                                                        rc0_mozilla_firefox_version_3__5__1
+                                                                                                        rc0_mozilla_firefox_version_4__0__1
+                                                                                                        rc0_mozilla_firefox_version_3__5__3
+                                                                                                        rc0_mozilla_firefox_version_12__0
+                                                                                                        rc0_mozilla_firefox_version_17__0__6
+                                                                                                        rc0_mozilla_firefox_version_4__0
+                                                                                                        rc0_mozilla_firefox_version_1__5__0__3
+                                                                                                        rc0_mozilla_firefox_version_2__0__0__7
+                                                                                                        rc0_mozilla_firefox_version_2__0__0__5
+                                                                                                        rc0_mozilla_firefox_version_0__2
+                                                                                                        rc0_mozilla_firefox_version_24__8__0
+                                                                                                        rc0_mozilla_firefox_version_17__0__1
+                                                                                        rc0_mozilla_firefox_update
+                                                                                                alternative
+                                                                                                        rc0_mozilla_firefox_update_alpha1
+                                                                                                        rc0_mozilla_firefox_update_beta9
+                                                                                                        rc0_mozilla_firefox_update_beta7
+                                                                                                        rc0_mozilla_firefox_update_any
+                                                                                                        rc0_mozilla_firefox_update_beta2
+                                                                                                        rc0_mozilla_firefox_update_beta1
+                                                                                                        rc0_mozilla_firefox_update_beta6
+                                                                                                        rc0_mozilla_firefox_update_beta12
+                                                                                                        rc0_mozilla_firefox_update_preview__release
+                                                                                                        rc0_mozilla_firefox_update_rc
+                                                                                                        rc0_mozilla_firefox_update_beta5
+                                                                                                        rc0_mozilla_firefox_update_a1
+                                                                                                        rc0_mozilla_firefox_update_beta4
+                                                                                                        rc0_mozilla_firefox_update_beta11
+                                                                                                        rc0_mozilla_firefox_update_beta10
+                                                                                                        rc0_mozilla_firefox_update_beta8
+                                                                                                        rc0_mozilla_firefox_update_beta3
+                                                                                        rc0_mozilla_firefox_target__sw
+                                                                                                alternative
+                                                                                                        rc0_mozilla_firefox_target__sw_iphone__os
+                                                                                                        rc0_mozilla_firefox_target__sw_any
+                mandatory
+                        types
+                                mandatory
+                                        application
+                                        operating_system
+                        sources
+                                mandatory
+                                        nvd
+                        exploits
+                                optional
+                                        direct
+                                        indirect
+                alternative
+                        canonical
+                                mandatory
+                                        canonical_ubuntu__linux
+                                                mandatory
+                                                        canonical_ubuntu__linux_version
+                                                                alternative
+                                                                        canonical_ubuntu__linux_version_14__04
+                                                                        canonical_ubuntu__linux_version_14__10
+                                                                        canonical_ubuntu__linux_version_15__04
+                                                                        canonical_ubuntu__linux_version_12__04
+                                                        canonical_ubuntu__linux_sw__edition
+                                                                alternative
+                                                                        canonical_ubuntu__linux_sw__edition_lts
+                                                                        canonical_ubuntu__linux_sw__edition_any
+                        debian
+                                mandatory
+                                        debian_debian__linux
+                                                mandatory
+                                                        debian_debian__linux_version
+                                                                alternative
+                                                                        debian_debian__linux_version_7__0
+                                                                        debian_debian__linux_version_8__0
+                        novell
+                                alternative
+                                        novell_suse__linux__enterprise__software__development__kit
+                                                mandatory
+                                                        novell_suse__linux__enterprise__software__development__kit_version
+                                                                mandatory
+                                                                        novell_suse__linux__enterprise__software__development__kit_version_12__0
+                                        novell_suse__linux__enterprise__server
+                                                mandatory
+                                                        novell_suse__linux__enterprise__server_version
+                                                                alternative
+                                                                        novell_suse__linux__enterprise__server_version_11
+                                                                        novell_suse__linux__enterprise__server_version_12__0
+                                                        novell_suse__linux__enterprise__server_update
+                                                                alternative
+                                                                        novell_suse__linux__enterprise__server_update_any
+                                                                        novell_suse__linux__enterprise__server_update_sp4
+                                        novell_suse__linux__enterprise__desktop
+                                                mandatory
+                                                        novell_suse__linux__enterprise__desktop_version
+                                                                mandatory
+                                                                        novell_suse__linux__enterprise__desktop_version_12__0
+                        mozilla
+                                mandatory
+                                        mozilla_network__security__services
+                                                mandatory
+                                                        mozilla_network__security__services_version
+                                                                mandatory
+                                                                        mozilla_network__security__services_version_3__19
+                        oracle
+                                alternative
+                                        oracle_vm__server
+                                                mandatory
+                                                        oracle_vm__server_version
+                                                                mandatory
+                                                                        oracle_vm__server_version_3__2
+                                        oracle_solaris
+                                                mandatory
+                                                        oracle_solaris_version
+                                                                mandatory
+                                                                        oracle_solaris_version_11__3
+
+constraints
+        canonical_ubuntu__linux => operating_system
+        debian_debian__linux => operating_system
+        novell_suse__linux__enterprise__software__development__kit => operating_system
+        novell_suse__linux__enterprise__server => operating_system
+        novell_suse__linux__enterprise__desktop => operating_system
+        mozilla_network__security__services => application
+        oracle_vm__server => operating_system
+        oracle_solaris => operating_system
+        canonical_ubuntu__linux_version_14__04 => canonical_ubuntu__linux_sw__edition_lts
+        canonical_ubuntu__linux_version_14__10 => canonical_ubuntu__linux_sw__edition_any
+        canonical_ubuntu__linux_version_15__04 => canonical_ubuntu__linux_sw__edition_any
+        canonical_ubuntu__linux_version_12__04 => canonical_ubuntu__linux_sw__edition_lts
+        novell_suse__linux__enterprise__server_version_11 => novell_suse__linux__enterprise__server_update_sp4
+        novell_suse__linux__enterprise__server_version_12__0 => novell_suse__linux__enterprise__server_update_any
+        mozilla_network__security__services => (rc0)
+        rc0_mozilla_thunderbird_version_17__0 => ((rc0_mozilla_thunderbird_update_any & !rc0_mozilla_thunderbird_update_beta2 & !rc0_mozilla_thunderbird_update_beta1 & !rc0_mozilla_thunderbird_update_beta3) | (!rc0_mozilla_thunderbird_update_any & rc0_mozilla_thunderbird_update_beta2 & !rc0_mozilla_thunderbird_update_beta1 & !rc0_mozilla_thunderbird_update_beta3) | (!rc0_mozilla_thunderbird_update_any & !rc0_mozilla_thunderbird_update_beta2 & rc0_mozilla_thunderbird_update_beta1 & !rc0_mozilla_thunderbird_update_beta3) | (!rc0_mozilla_thunderbird_update_any & !rc0_mozilla_thunderbird_update_beta2 & !rc0_mozilla_thunderbird_update_beta1 & rc0_mozilla_thunderbird_update_beta3))
+        rc0_mozilla_thunderbird_version_2__0__0__4 => rc0_mozilla_thunderbird_update_any
+        rc0_mozilla_thunderbird_version_any => rc0_mozilla_thunderbird_update_any
+        rc0_mozilla_thunderbird_version_24__4 => rc0_mozilla_thunderbird_update_any
+        rc0_mozilla_thunderbird_version_12__0__1 => rc0_mozilla_thunderbird_update_any
+        rc0_mozilla_thunderbird_version_1__0__2 => rc0_mozilla_thunderbird_update_any
+        rc0_mozilla_thunderbird_version_23__0 => rc0_mozilla_thunderbird_update_beta1
+        rc0_mozilla_thunderbird_version_24__5__0 => rc0_mozilla_thunderbird_update_any
+        rc0_mozilla_thunderbird_version_1__0__6 => rc0_mozilla_thunderbird_update_any
+        rc0_mozilla_thunderbird_version_3__0__10 => rc0_mozilla_thunderbird_update_any
+        rc0_mozilla_thunderbird_version_1__5__0__8 => rc0_mozilla_thunderbird_update_any
+        rc0_mozilla_thunderbird_version_3__1__17 => rc0_mozilla_thunderbird_update_any
+        rc0_mozilla_thunderbird_version_2__0__0__12 => rc0_mozilla_thunderbird_update_any
+        rc0_mozilla_thunderbird_version_30__0 => rc0_mozilla_thunderbird_update_beta1
+        rc0_mozilla_thunderbird_version_2__0__0__17 => rc0_mozilla_thunderbird_update_any
+        rc0_mozilla_thunderbird_version_3__0__4 => rc0_mozilla_thunderbird_update_any
+        rc0_mozilla_thunderbird_version_1__0__8 => rc0_mozilla_thunderbird_update_any
+        rc0_mozilla_thunderbird_version_20__0 => rc0_mozilla_thunderbird_update_beta1
+        rc0_mozilla_thunderbird_version_0__9 => rc0_mozilla_thunderbird_update_any
+        rc0_mozilla_thunderbird_version_2__0__0__9 => rc0_mozilla_thunderbird_update_any
+        rc0_mozilla_thunderbird_version_24__0 => ((rc0_mozilla_thunderbird_update_any & !rc0_mozilla_thunderbird_update_beta2 & !rc0_mozilla_thunderbird_update_beta1 & !rc0_mozilla_thunderbird_update_beta3) | (!rc0_mozilla_thunderbird_update_any & rc0_mozilla_thunderbird_update_beta2 & !rc0_mozilla_thunderbird_update_beta1 & !rc0_mozilla_thunderbird_update_beta3) | (!rc0_mozilla_thunderbird_update_any & !rc0_mozilla_thunderbird_update_beta2 & rc0_mozilla_thunderbird_update_beta1 & !rc0_mozilla_thunderbird_update_beta3) | (!rc0_mozilla_thunderbird_update_any & !rc0_mozilla_thunderbird_update_beta2 & !rc0_mozilla_thunderbird_update_beta1 & rc0_mozilla_thunderbird_update_beta3))
+        rc0_mozilla_thunderbird_version_1__5__0__4 => rc0_mozilla_thunderbird_update_any
+        rc0_mozilla_thunderbird_version_25__0 => rc0_mozilla_thunderbird_update_beta1
+        rc0_mozilla_thunderbird_version_1__5__0__5 => rc0_mozilla_thunderbird_update_any
+        rc0_mozilla_thunderbird_version_29__0 => rc0_mozilla_thunderbird_update_beta1
+        rc0_mozilla_thunderbird_version_3__1 => ((rc0_mozilla_thunderbird_update_rc2 & !rc0_mozilla_thunderbird_update_alpha1 & !rc0_mozilla_thunderbird_update_any & !rc0_mozilla_thunderbird_update_beta2 & !rc0_mozilla_thunderbird_update_beta1 & !rc0_mozilla_thunderbird_update_rc1) | (!rc0_mozilla_thunderbird_update_rc2 & rc0_mozilla_thunderbird_update_alpha1 & !rc0_mozilla_thunderbird_update_any & !rc0_mozilla_thunderbird_update_beta2 & !rc0_mozilla_thunderbird_update_beta1 & !rc0_mozilla_thunderbird_update_rc1) | (!rc0_mozilla_thunderbird_update_rc2 & !rc0_mozilla_thunderbird_update_alpha1 & rc0_mozilla_thunderbird_update_any & !rc0_mozilla_thunderbird_update_beta2 & !rc0_mozilla_thunderbird_update_beta1 & !rc0_mozilla_thunderbird_update_rc1) | (!rc0_mozilla_thunderbird_update_rc2 & !rc0_mozilla_thunderbird_update_alpha1 & !rc0_mozilla_thunderbird_update_any & rc0_mozilla_thunderbird_update_beta2 & !rc0_mozilla_thunderbird_update_beta1 & !rc0_mozilla_thunderbird_update_rc1) | (!rc0_mozilla_thunderbird_update_rc2 & !rc0_mozilla_thunderbird_update_alpha1 & !rc0_mozilla_thunderbird_update_any & !rc0_mozilla_thunderbird_update_beta2 & rc0_mozilla_thunderbird_update_beta1 & !rc0_mozilla_thunderbird_update_rc1) | (!rc0_mozilla_thunderbird_update_rc2 & !rc0_mozilla_thunderbird_update_alpha1 & !rc0_mozilla_thunderbird_update_any & !rc0_mozilla_thunderbird_update_beta2 & !rc0_mozilla_thunderbird_update_beta1 & rc0_mozilla_thunderbird_update_rc1))
+        rc0_mozilla_thunderbird_version_38__0 => ((rc0_mozilla_thunderbird_update_any & !rc0_mozilla_thunderbird_update_beta2 & !rc0_mozilla_thunderbird_update_beta1 & !rc0_mozilla_thunderbird_update_beta6 & !rc0_mozilla_thunderbird_update_beta5 & !rc0_mozilla_thunderbird_update_beta4 & !rc0_mozilla_thunderbird_update_beta3) | (!rc0_mozilla_thunderbird_update_any & rc0_mozilla_thunderbird_update_beta2 & !rc0_mozilla_thunderbird_update_beta1 & !rc0_mozilla_thunderbird_update_beta6 & !rc0_mozilla_thunderbird_update_beta5 & !rc0_mozilla_thunderbird_update_beta4 & !rc0_mozilla_thunderbird_update_beta3) | (!rc0_mozilla_thunderbird_update_any & !rc0_mozilla_thunderbird_update_beta2 & rc0_mozilla_thunderbird_update_beta1 & !rc0_mozilla_thunderbird_update_beta6 & !rc0_mozilla_thunderbird_update_beta5 & !rc0_mozilla_thunderbird_update_beta4 & !rc0_mozilla_thunderbird_update_beta3) | (!rc0_mozilla_thunderbird_update_any & !rc0_mozilla_thunderbird_update_beta2 & !rc0_mozilla_thunderbird_update_beta1 & rc0_mozilla_thunderbird_update_beta6 & !rc0_mozilla_thunderbird_update_beta5 & !rc0_mozilla_thunderbird_update_beta4 & !rc0_mozilla_thunderbird_update_beta3) | (!rc0_mozilla_thunderbird_update_any & !rc0_mozilla_thunderbird_update_beta2 & !rc0_mozilla_thunderbird_update_beta1 & !rc0_mozilla_thunderbird_update_beta6 & rc0_mozilla_thunderbird_update_beta5 & !rc0_mozilla_thunderbird_update_beta4 & !rc0_mozilla_thunderbird_update_beta3) | (!rc0_mozilla_thunderbird_update_any & !rc0_mozilla_thunderbird_update_beta2 & !rc0_mozilla_thunderbird_update_beta1 & !rc0_mozilla_thunderbird_update_beta6 & !rc0_mozilla_thunderbird_update_beta5 & rc0_mozilla_thunderbird_update_beta4 & !rc0_mozilla_thunderbird_update_beta3) | (!rc0_mozilla_thunderbird_update_any & !rc0_mozilla_thunderbird_update_beta2 & !rc0_mozilla_thunderbird_update_beta1 & !rc0_mozilla_thunderbird_update_beta6 & !rc0_mozilla_thunderbird_update_beta5 & !rc0_mozilla_thunderbird_update_beta4 & rc0_mozilla_thunderbird_update_beta3))
+        rc0_mozilla_thunderbird_version_31__3__0 => rc0_mozilla_thunderbird_update_any
+        rc0_mozilla_thunderbird_version_2__0__0__18 => rc0_mozilla_thunderbird_update_any
+        rc0_mozilla_thunderbird_version_34__0 => rc0_mozilla_thunderbird_update_beta1
+        rc0_mozilla_thunderbird_version_0__7__1 => rc0_mozilla_thunderbird_update_any
+        rc0_mozilla_thunderbird_version_3__1__5 => rc0_mozilla_thunderbird_update_any
+        rc0_mozilla_thunderbird_version_7__0__1 => rc0_mozilla_thunderbird_update_any
+        rc0_mozilla_thunderbird_version_15__0__1 => rc0_mozilla_thunderbird_update_any
+        rc0_mozilla_thunderbird_version_27__0 => rc0_mozilla_thunderbird_update_beta1
+        rc0_mozilla_thunderbird_version_2__0__0__16 => rc0_mozilla_thunderbird_update_any
+        rc0_mozilla_thunderbird_version_0__7__2 => rc0_mozilla_thunderbird_update_any
+        rc0_mozilla_thunderbird_version_31__6__0 => rc0_mozilla_thunderbird_update_any
+        rc0_mozilla_thunderbird_version_17__0__2 => rc0_mozilla_thunderbird_update_any
+        rc0_mozilla_thunderbird_version_31__7 => rc0_mozilla_thunderbird_update_any
+        rc0_mozilla_thunderbird_version_10__0__1 => rc0_mozilla_thunderbird_update_any
+        rc0_mozilla_thunderbird_version_3__1__3 => rc0_mozilla_thunderbird_update_any
+        rc0_mozilla_thunderbird_version_1__5__0__9 => rc0_mozilla_thunderbird_update_any
+        rc0_mozilla_thunderbird_version_24__0__1 => rc0_mozilla_thunderbird_update_any
+        rc0_mozilla_thunderbird_version_17__0__9 => rc0_mozilla_thunderbird_update_any
+        rc0_mozilla_thunderbird_version_3__3 => ((rc0_mozilla_thunderbird_update_alpha2 & !rc0_mozilla_thunderbird_update_alpha1 & !rc0_mozilla_thunderbird_update_alpha3) | (!rc0_mozilla_thunderbird_update_alpha2 & rc0_mozilla_thunderbird_update_alpha1 & !rc0_mozilla_thunderbird_update_alpha3) | (!rc0_mozilla_thunderbird_update_alpha2 & !rc0_mozilla_thunderbird_update_alpha1 & rc0_mozilla_thunderbird_update_alpha3))
+        rc0_mozilla_thunderbird_version_3__0__7 => rc0_mozilla_thunderbird_update_any
+        rc0_mozilla_thunderbird_version_31__1__2 => rc0_mozilla_thunderbird_update_any
+        rc0_mozilla_thunderbird_version_2__0 => ((rc0_mozilla_thunderbird_update_alpha1 & !rc0_mozilla_thunderbird_update_any & !rc0_mozilla_thunderbird_update_beta2 & !rc0_mozilla_thunderbird_update_beta1) | (!rc0_mozilla_thunderbird_update_alpha1 & rc0_mozilla_thunderbird_update_any & !rc0_mozilla_thunderbird_update_beta2 & !rc0_mozilla_thunderbird_update_beta1) | (!rc0_mozilla_thunderbird_update_alpha1 & !rc0_mozilla_thunderbird_update_any & rc0_mozilla_thunderbird_update_beta2 & !rc0_mozilla_thunderbird_update_beta1) | (!rc0_mozilla_thunderbird_update_alpha1 & !rc0_mozilla_thunderbird_update_any & !rc0_mozilla_thunderbird_update_beta2 & rc0_mozilla_thunderbird_update_beta1))
+        rc0_mozilla_thunderbird_version_28__0 => rc0_mozilla_thunderbird_update_beta1
+        rc0_mozilla_thunderbird_version_9__0__1 => rc0_mozilla_thunderbird_update_any
+        rc0_mozilla_thunderbird_version_1__5__0__2 => rc0_mozilla_thunderbird_update_any
+        rc0_mozilla_thunderbird_version_3__1__11 => rc0_mozilla_thunderbird_update_any
+        rc0_mozilla_thunderbird_version_31__0 => ((rc0_mozilla_thunderbird_update_any & !rc0_mozilla_thunderbird_update_beta2 & !rc0_mozilla_thunderbird_update_beta1 & !rc0_mozilla_thunderbird_update_beta3) | (!rc0_mozilla_thunderbird_update_any & rc0_mozilla_thunderbird_update_beta2 & !rc0_mozilla_thunderbird_update_beta1 & !rc0_mozilla_thunderbird_update_beta3) | (!rc0_mozilla_thunderbird_update_any & !rc0_mozilla_thunderbird_update_beta2 & rc0_mozilla_thunderbird_update_beta1 & !rc0_mozilla_thunderbird_update_beta3) | (!rc0_mozilla_thunderbird_update_any & !rc0_mozilla_thunderbird_update_beta2 & !rc0_mozilla_thunderbird_update_beta1 & rc0_mozilla_thunderbird_update_beta3))
+        rc0_mozilla_thunderbird_version_31__5__0 => rc0_mozilla_thunderbird_update_any
+        rc0_mozilla_thunderbird_version_3__0 => ((rc0_mozilla_thunderbird_update_alpha2 & !rc0_mozilla_thunderbird_update_rc2 & !rc0_mozilla_thunderbird_update_alpha1 & !rc0_mozilla_thunderbird_update_alpha3 & !rc0_mozilla_thunderbird_update_any & !rc0_mozilla_thunderbird_update_beta2 & !rc0_mozilla_thunderbird_update_beta1 & !rc0_mozilla_thunderbird_update_rc1 & !rc0_mozilla_thunderbird_update_beta4 & !rc0_mozilla_thunderbird_update_beta3) | (!rc0_mozilla_thunderbird_update_alpha2 & rc0_mozilla_thunderbird_update_rc2 & !rc0_mozilla_thunderbird_update_alpha1 & !rc0_mozilla_thunderbird_update_alpha3 & !rc0_mozilla_thunderbird_update_any & !rc0_mozilla_thunderbird_update_beta2 & !rc0_mozilla_thunderbird_update_beta1 & !rc0_mozilla_thunderbird_update_rc1 & !rc0_mozilla_thunderbird_update_beta4 & !rc0_mozilla_thunderbird_update_beta3) | (!rc0_mozilla_thunderbird_update_alpha2 & !rc0_mozilla_thunderbird_update_rc2 & rc0_mozilla_thunderbird_update_alpha1 & !rc0_mozilla_thunderbird_update_alpha3 & !rc0_mozilla_thunderbird_update_any & !rc0_mozilla_thunderbird_update_beta2 & !rc0_mozilla_thunderbird_update_beta1 & !rc0_mozilla_thunderbird_update_rc1 & !rc0_mozilla_thunderbird_update_beta4 & !rc0_mozilla_thunderbird_update_beta3) | (!rc0_mozilla_thunderbird_update_alpha2 & !rc0_mozilla_thunderbird_update_rc2 & !rc0_mozilla_thunderbird_update_alpha1 & rc0_mozilla_thunderbird_update_alpha3 & !rc0_mozilla_thunderbird_update_any & !rc0_mozilla_thunderbird_update_beta2 & !rc0_mozilla_thunderbird_update_beta1 & !rc0_mozilla_thunderbird_update_rc1 & !rc0_mozilla_thunderbird_update_beta4 & !rc0_mozilla_thunderbird_update_beta3) | (!rc0_mozilla_thunderbird_update_alpha2 & !rc0_mozilla_thunderbird_update_rc2 & !rc0_mozilla_thunderbird_update_alpha1 & !rc0_mozilla_thunderbird_update_alpha3 & rc0_mozilla_thunderbird_update_any & !rc0_mozilla_thunderbird_update_beta2 & !rc0_mozilla_thunderbird_update_beta1 & !rc0_mozilla_thunderbird_update_rc1 & !rc0_mozilla_thunderbird_update_beta4 & !rc0_mozilla_thunderbird_update_beta3) | (!rc0_mozilla_thunderbird_update_alpha2 & !rc0_mozilla_thunderbird_update_rc2 & !rc0_mozilla_thunderbird_update_alpha1 & !rc0_mozilla_thunderbird_update_alpha3 & !rc0_mozilla_thunderbird_update_any & rc0_mozilla_thunderbird_update_beta2 & !rc0_mozilla_thunderbird_update_beta1 & !rc0_mozilla_thunderbird_update_rc1 & !rc0_mozilla_thunderbird_update_beta4 & !rc0_mozilla_thunderbird_update_beta3) | (!rc0_mozilla_thunderbird_update_alpha2 & !rc0_mozilla_thunderbird_update_rc2 & !rc0_mozilla_thunderbird_update_alpha1 & !rc0_mozilla_thunderbird_update_alpha3 & !rc0_mozilla_thunderbird_update_any & !rc0_mozilla_thunderbird_update_beta2 & rc0_mozilla_thunderbird_update_beta1 & !rc0_mozilla_thunderbird_update_rc1 & !rc0_mozilla_thunderbird_update_beta4 & !rc0_mozilla_thunderbird_update_beta3) | (!rc0_mozilla_thunderbird_update_alpha2 & !rc0_mozilla_thunderbird_update_rc2 & !rc0_mozilla_thunderbird_update_alpha1 & !rc0_mozilla_thunderbird_update_alpha3 & !rc0_mozilla_thunderbird_update_any & !rc0_mozilla_thunderbird_update_beta2 & !rc0_mozilla_thunderbird_update_beta1 & rc0_mozilla_thunderbird_update_rc1 & !rc0_mozilla_thunderbird_update_beta4 & !rc0_mozilla_thunderbird_update_beta3) | (!rc0_mozilla_thunderbird_update_alpha2 & !rc0_mozilla_thunderbird_update_rc2 & !rc0_mozilla_thunderbird_update_alpha1 & !rc0_mozilla_thunderbird_update_alpha3 & !rc0_mozilla_thunderbird_update_any & !rc0_mozilla_thunderbird_update_beta2 & !rc0_mozilla_thunderbird_update_beta1 & !rc0_mozilla_thunderbird_update_rc1 & rc0_mozilla_thunderbird_update_beta4 & !rc0_mozilla_thunderbird_update_beta3) | (!rc0_mozilla_thunderbird_update_alpha2 & !rc0_mozilla_thunderbird_update_rc2 & !rc0_mozilla_thunderbird_update_alpha1 & !rc0_mozilla_thunderbird_update_alpha3 & !rc0_mozilla_thunderbird_update_any & !rc0_mozilla_thunderbird_update_beta2 & !rc0_mozilla_thunderbird_update_beta1 & !rc0_mozilla_thunderbird_update_rc1 & !rc0_mozilla_thunderbird_update_beta4 & rc0_mozilla_thunderbird_update_beta3))
+        rc0_mozilla_thunderbird_version_11__0 => ((rc0_mozilla_thunderbird_update_any & !rc0_mozilla_thunderbird_update_beta2 & !rc0_mozilla_thunderbird_update_beta1 & !rc0_mozilla_thunderbird_update_beta5 & !rc0_mozilla_thunderbird_update_beta4 & !rc0_mozilla_thunderbird_update_beta3) | (!rc0_mozilla_thunderbird_update_any & rc0_mozilla_thunderbird_update_beta2 & !rc0_mozilla_thunderbird_update_beta1 & !rc0_mozilla_thunderbird_update_beta5 & !rc0_mozilla_thunderbird_update_beta4 & !rc0_mozilla_thunderbird_update_beta3) | (!rc0_mozilla_thunderbird_update_any & !rc0_mozilla_thunderbird_update_beta2 & rc0_mozilla_thunderbird_update_beta1 & !rc0_mozilla_thunderbird_update_beta5 & !rc0_mozilla_thunderbird_update_beta4 & !rc0_mozilla_thunderbird_update_beta3) | (!rc0_mozilla_thunderbird_update_any & !rc0_mozilla_thunderbird_update_beta2 & !rc0_mozilla_thunderbird_update_beta1 & rc0_mozilla_thunderbird_update_beta5 & !rc0_mozilla_thunderbird_update_beta4 & !rc0_mozilla_thunderbird_update_beta3) | (!rc0_mozilla_thunderbird_update_any & !rc0_mozilla_thunderbird_update_beta2 & !rc0_mozilla_thunderbird_update_beta1 & !rc0_mozilla_thunderbird_update_beta5 & rc0_mozilla_thunderbird_update_beta4 & !rc0_mozilla_thunderbird_update_beta3) | (!rc0_mozilla_thunderbird_update_any & !rc0_mozilla_thunderbird_update_beta2 & !rc0_mozilla_thunderbird_update_beta1 & !rc0_mozilla_thunderbird_update_beta5 & !rc0_mozilla_thunderbird_update_beta4 & rc0_mozilla_thunderbird_update_beta3))
+        rc0_mozilla_thunderbird_version_3__1__18 => rc0_mozilla_thunderbird_update_any
+        rc0_mozilla_thunderbird_version_2__0__0__22 => rc0_mozilla_thunderbird_update_any
+        rc0_mozilla_thunderbird_version_1__5__0__10 => rc0_mozilla_thunderbird_update_any
+        rc0_mozilla_thunderbird_version_1__0 => ((rc0_mozilla_thunderbird_update_any & !rc0_mozilla_thunderbird_update_rc) | (!rc0_mozilla_thunderbird_update_any & rc0_mozilla_thunderbird_update_rc))
+        rc0_mozilla_thunderbird_version_2__0__0__14 => rc0_mozilla_thunderbird_update_any
+        rc0_mozilla_thunderbird_version_17__0__5 => rc0_mozilla_thunderbird_update_any
+        rc0_mozilla_thunderbird_version_2__0__14 => rc0_mozilla_thunderbird_update_any
+        rc0_mozilla_thunderbird_version_3__1__6 => rc0_mozilla_thunderbird_update_any
+        rc0_mozilla_thunderbird_version_5__0 => ((rc0_mozilla_thunderbird_update_any & !rc0_mozilla_thunderbird_update_beta2 & !rc0_mozilla_thunderbird_update_beta1) | (!rc0_mozilla_thunderbird_update_any & rc0_mozilla_thunderbird_update_beta2 & !rc0_mozilla_thunderbird_update_beta1) | (!rc0_mozilla_thunderbird_update_any & !rc0_mozilla_thunderbird_update_beta2 & rc0_mozilla_thunderbird_update_beta1))
+        rc0_mozilla_thunderbird_version_24__3__0 => rc0_mozilla_thunderbird_update_any
+        rc0_mozilla_thunderbird_version_13__0__1 => rc0_mozilla_thunderbird_update_any
+        rc0_mozilla_thunderbird_version_0__6 => rc0_mozilla_thunderbird_update_any
+        rc0_mozilla_thunderbird_version_3__1__7 => rc0_mozilla_thunderbird_update_any
+        rc0_mozilla_thunderbird_version_24__2__0 => rc0_mozilla_thunderbird_update_any
+        rc0_mozilla_thunderbird_version_3__1__10 => rc0_mozilla_thunderbird_update_any
+        rc0_mozilla_thunderbird_version_2__0__0__21 => rc0_mozilla_thunderbird_update_any
+        rc0_mozilla_thunderbird_version_10__0__2 => rc0_mozilla_thunderbird_update_any
+        rc0_mozilla_thunderbird_version_3__1__2 => rc0_mozilla_thunderbird_update_any
+        rc0_mozilla_thunderbird_version_6__0 => ((rc0_mozilla_thunderbird_update_any & !rc0_mozilla_thunderbird_update_beta2 & !rc0_mozilla_thunderbird_update_beta1 & !rc0_mozilla_thunderbird_update_beta3) | (!rc0_mozilla_thunderbird_update_any & rc0_mozilla_thunderbird_update_beta2 & !rc0_mozilla_thunderbird_update_beta1 & !rc0_mozilla_thunderbird_update_beta3) | (!rc0_mozilla_thunderbird_update_any & !rc0_mozilla_thunderbird_update_beta2 & rc0_mozilla_thunderbird_update_beta1 & !rc0_mozilla_thunderbird_update_beta3) | (!rc0_mozilla_thunderbird_update_any & !rc0_mozilla_thunderbird_update_beta2 & !rc0_mozilla_thunderbird_update_beta1 & rc0_mozilla_thunderbird_update_beta3))
+        rc0_mozilla_thunderbird_version_1__5 => ((rc0_mozilla_thunderbird_update_rc2 & !rc0_mozilla_thunderbird_update_any & !rc0_mozilla_thunderbird_update_beta2 & !rc0_mozilla_thunderbird_update_beta1 & !rc0_mozilla_thunderbird_update_rc1) | (!rc0_mozilla_thunderbird_update_rc2 & rc0_mozilla_thunderbird_update_any & !rc0_mozilla_thunderbird_update_beta2 & !rc0_mozilla_thunderbird_update_beta1 & !rc0_mozilla_thunderbird_update_rc1) | (!rc0_mozilla_thunderbird_update_rc2 & !rc0_mozilla_thunderbird_update_any & rc0_mozilla_thunderbird_update_beta2 & !rc0_mozilla_thunderbird_update_beta1 & !rc0_mozilla_thunderbird_update_rc1) | (!rc0_mozilla_thunderbird_update_rc2 & !rc0_mozilla_thunderbird_update_any & !rc0_mozilla_thunderbird_update_beta2 & rc0_mozilla_thunderbird_update_beta1 & !rc0_mozilla_thunderbird_update_rc1) | (!rc0_mozilla_thunderbird_update_rc2 & !rc0_mozilla_thunderbird_update_any & !rc0_mozilla_thunderbird_update_beta2 & !rc0_mozilla_thunderbird_update_beta1 & rc0_mozilla_thunderbird_update_rc1))
+        rc0_mozilla_thunderbird_version_31__4__0 => rc0_mozilla_thunderbird_update_any
+        rc0_mozilla_thunderbird_version_2__0__0__23 => rc0_mozilla_thunderbird_update_any
+        rc0_mozilla_thunderbird_version_18__0 => rc0_mozilla_thunderbird_update_beta1
+        rc0_mozilla_thunderbird_version_9__0 => ((rc0_mozilla_thunderbird_update_any & !rc0_mozilla_thunderbird_update_beta2 & !rc0_mozilla_thunderbird_update_beta1 & !rc0_mozilla_thunderbird_update_beta5 & !rc0_mozilla_thunderbird_update_beta4 & !rc0_mozilla_thunderbird_update_beta3) | (!rc0_mozilla_thunderbird_update_any & rc0_mozilla_thunderbird_update_beta2 & !rc0_mozilla_thunderbird_update_beta1 & !rc0_mozilla_thunderbird_update_beta5 & !rc0_mozilla_thunderbird_update_beta4 & !rc0_mozilla_thunderbird_update_beta3) | (!rc0_mozilla_thunderbird_update_any & !rc0_mozilla_thunderbird_update_beta2 & rc0_mozilla_thunderbird_update_beta1 & !rc0_mozilla_thunderbird_update_beta5 & !rc0_mozilla_thunderbird_update_beta4 & !rc0_mozilla_thunderbird_update_beta3) | (!rc0_mozilla_thunderbird_update_any & !rc0_mozilla_thunderbird_update_beta2 & !rc0_mozilla_thunderbird_update_beta1 & rc0_mozilla_thunderbird_update_beta5 & !rc0_mozilla_thunderbird_update_beta4 & !rc0_mozilla_thunderbird_update_beta3) | (!rc0_mozilla_thunderbird_update_any & !rc0_mozilla_thunderbird_update_beta2 & !rc0_mozilla_thunderbird_update_beta1 & !rc0_mozilla_thunderbird_update_beta5 & rc0_mozilla_thunderbird_update_beta4 & !rc0_mozilla_thunderbird_update_beta3) | (!rc0_mozilla_thunderbird_update_any & !rc0_mozilla_thunderbird_update_beta2 & !rc0_mozilla_thunderbird_update_beta1 & !rc0_mozilla_thunderbird_update_beta5 & !rc0_mozilla_thunderbird_update_beta4 & rc0_mozilla_thunderbird_update_beta3))
+        rc0_mozilla_thunderbird_version_10__0 => ((rc0_mozilla_thunderbird_update_any & !rc0_mozilla_thunderbird_update_beta2 & !rc0_mozilla_thunderbird_update_beta1 & !rc0_mozilla_thunderbird_update_beta5 & !rc0_mozilla_thunderbird_update_beta4 & !rc0_mozilla_thunderbird_update_beta3) | (!rc0_mozilla_thunderbird_update_any & rc0_mozilla_thunderbird_update_beta2 & !rc0_mozilla_thunderbird_update_beta1 & !rc0_mozilla_thunderbird_update_beta5 & !rc0_mozilla_thunderbird_update_beta4 & !rc0_mozilla_thunderbird_update_beta3) | (!rc0_mozilla_thunderbird_update_any & !rc0_mozilla_thunderbird_update_beta2 & rc0_mozilla_thunderbird_update_beta1 & !rc0_mozilla_thunderbird_update_beta5 & !rc0_mozilla_thunderbird_update_beta4 & !rc0_mozilla_thunderbird_update_beta3) | (!rc0_mozilla_thunderbird_update_any & !rc0_mozilla_thunderbird_update_beta2 & !rc0_mozilla_thunderbird_update_beta1 & rc0_mozilla_thunderbird_update_beta5 & !rc0_mozilla_thunderbird_update_beta4 & !rc0_mozilla_thunderbird_update_beta3) | (!rc0_mozilla_thunderbird_update_any & !rc0_mozilla_thunderbird_update_beta2 & !rc0_mozilla_thunderbird_update_beta1 & !rc0_mozilla_thunderbird_update_beta5 & rc0_mozilla_thunderbird_update_beta4 & !rc0_mozilla_thunderbird_update_beta3) | (!rc0_mozilla_thunderbird_update_any & !rc0_mozilla_thunderbird_update_beta2 & !rc0_mozilla_thunderbird_update_beta1 & !rc0_mozilla_thunderbird_update_beta5 & !rc0_mozilla_thunderbird_update_beta4 & rc0_mozilla_thunderbird_update_beta3))
+        rc0_mozilla_thunderbird_version_24__8__1 => rc0_mozilla_thunderbird_update_any
+        rc0_mozilla_thunderbird_version_1__1 => ((rc0_mozilla_thunderbird_update_alpha2 & !rc0_mozilla_thunderbird_update_alpha1) | (!rc0_mozilla_thunderbird_update_alpha2 & rc0_mozilla_thunderbird_update_alpha1))
+        rc0_mozilla_thunderbird_version_2__0__0__6 => rc0_mozilla_thunderbird_update_any
+        rc0_mozilla_thunderbird_version_38__0__1 => rc0_mozilla_thunderbird_update_any
+        rc0_mozilla_thunderbird_version_3__1__20 => rc0_mozilla_thunderbird_update_any
+        rc0_mozilla_thunderbird_version_24__7__0 => rc0_mozilla_thunderbird_update_any
+        rc0_mozilla_thunderbird_version_3__1__16 => rc0_mozilla_thunderbird_update_any
+        rc0_mozilla_thunderbird_version_3__0__2 => rc0_mozilla_thunderbird_update_any
+        rc0_mozilla_thunderbird_version_17__0__8 => rc0_mozilla_thunderbird_update_any
+        rc0_mozilla_thunderbird_version_8__0 => ((rc0_mozilla_thunderbird_update_any & !rc0_mozilla_thunderbird_update_beta2 & !rc0_mozilla_thunderbird_update_beta1 & !rc0_mozilla_thunderbird_update_beta5 & !rc0_mozilla_thunderbird_update_beta4 & !rc0_mozilla_thunderbird_update_beta3) | (!rc0_mozilla_thunderbird_update_any & rc0_mozilla_thunderbird_update_beta2 & !rc0_mozilla_thunderbird_update_beta1 & !rc0_mozilla_thunderbird_update_beta5 & !rc0_mozilla_thunderbird_update_beta4 & !rc0_mozilla_thunderbird_update_beta3) | (!rc0_mozilla_thunderbird_update_any & !rc0_mozilla_thunderbird_update_beta2 & rc0_mozilla_thunderbird_update_beta1 & !rc0_mozilla_thunderbird_update_beta5 & !rc0_mozilla_thunderbird_update_beta4 & !rc0_mozilla_thunderbird_update_beta3) | (!rc0_mozilla_thunderbird_update_any & !rc0_mozilla_thunderbird_update_beta2 & !rc0_mozilla_thunderbird_update_beta1 & rc0_mozilla_thunderbird_update_beta5 & !rc0_mozilla_thunderbird_update_beta4 & !rc0_mozilla_thunderbird_update_beta3) | (!rc0_mozilla_thunderbird_update_any & !rc0_mozilla_thunderbird_update_beta2 & !rc0_mozilla_thunderbird_update_beta1 & !rc0_mozilla_thunderbird_update_beta5 & rc0_mozilla_thunderbird_update_beta4 & !rc0_mozilla_thunderbird_update_beta3) | (!rc0_mozilla_thunderbird_update_any & !rc0_mozilla_thunderbird_update_beta2 & !rc0_mozilla_thunderbird_update_beta1 & !rc0_mozilla_thunderbird_update_beta5 & !rc0_mozilla_thunderbird_update_beta4 & rc0_mozilla_thunderbird_update_beta3))
+        rc0_mozilla_thunderbird_version_3__1__9 => rc0_mozilla_thunderbird_update_any
+        rc0_mozilla_thunderbird_version_0__1 => rc0_mozilla_thunderbird_update_any
+        rc0_mozilla_thunderbird_version_16__0__2 => rc0_mozilla_thunderbird_update_any
+        rc0_mozilla_thunderbird_version_0__3 => rc0_mozilla_thunderbird_update_any
+        rc0_mozilla_thunderbird_version_11__0__1 => rc0_mozilla_thunderbird_update_any
+        rc0_mozilla_thunderbird_version_3__0__1 => rc0_mozilla_thunderbird_update_any
+        rc0_mozilla_thunderbird_version_22__0 => rc0_mozilla_thunderbird_update_beta1
+        rc0_mozilla_thunderbird_version_1__5__0__12 => rc0_mozilla_thunderbird_update_any
+        rc0_mozilla_thunderbird_version_3__0__8 => rc0_mozilla_thunderbird_update_any
+        rc0_mozilla_thunderbird_version_36__0 => rc0_mozilla_thunderbird_update_beta1
+        rc0_mozilla_thunderbird_version_15__0 => ((rc0_mozilla_thunderbird_update_any & !rc0_mozilla_thunderbird_update_beta2 & !rc0_mozilla_thunderbird_update_beta1 & !rc0_mozilla_thunderbird_update_beta5 & !rc0_mozilla_thunderbird_update_beta4 & !rc0_mozilla_thunderbird_update_beta3) | (!rc0_mozilla_thunderbird_update_any & rc0_mozilla_thunderbird_update_beta2 & !rc0_mozilla_thunderbird_update_beta1 & !rc0_mozilla_thunderbird_update_beta5 & !rc0_mozilla_thunderbird_update_beta4 & !rc0_mozilla_thunderbird_update_beta3) | (!rc0_mozilla_thunderbird_update_any & !rc0_mozilla_thunderbird_update_beta2 & rc0_mozilla_thunderbird_update_beta1 & !rc0_mozilla_thunderbird_update_beta5 & !rc0_mozilla_thunderbird_update_beta4 & !rc0_mozilla_thunderbird_update_beta3) | (!rc0_mozilla_thunderbird_update_any & !rc0_mozilla_thunderbird_update_beta2 & !rc0_mozilla_thunderbird_update_beta1 & rc0_mozilla_thunderbird_update_beta5 & !rc0_mozilla_thunderbird_update_beta4 & !rc0_mozilla_thunderbird_update_beta3) | (!rc0_mozilla_thunderbird_update_any & !rc0_mozilla_thunderbird_update_beta2 & !rc0_mozilla_thunderbird_update_beta1 & !rc0_mozilla_thunderbird_update_beta5 & rc0_mozilla_thunderbird_update_beta4 & !rc0_mozilla_thunderbird_update_beta3) | (!rc0_mozilla_thunderbird_update_any & !rc0_mozilla_thunderbird_update_beta2 & !rc0_mozilla_thunderbird_update_beta1 & !rc0_mozilla_thunderbird_update_beta5 & !rc0_mozilla_thunderbird_update_beta4 & rc0_mozilla_thunderbird_update_beta3))
+        rc0_mozilla_thunderbird_version_31__7__0 => rc0_mozilla_thunderbird_update_any
+        rc0_mozilla_thunderbird_version_6__0__2 => rc0_mozilla_thunderbird_update_any
+        rc0_mozilla_thunderbird_version_3__0__3 => rc0_mozilla_thunderbird_update_any
+        rc0_mozilla_thunderbird_version_3__1__8 => rc0_mozilla_thunderbird_update_any
+        rc0_mozilla_thunderbird_version_17__0__10 => rc0_mozilla_thunderbird_update_any
+        rc0_mozilla_thunderbird_version_0__8 => rc0_mozilla_thunderbird_update_any
+        rc0_mozilla_thunderbird_version_0__7__3 => rc0_mozilla_thunderbird_update_any
+        rc0_mozilla_thunderbird_version_31__2__0 => rc0_mozilla_thunderbird_update_any
+        rc0_mozilla_thunderbird_version_31__1__0 => rc0_mozilla_thunderbird_update_any
+        rc0_mozilla_thunderbird_version_24__4__0 => rc0_mozilla_thunderbird_update_any
+        rc0_mozilla_thunderbird_version_16__0 => ((rc0_mozilla_thunderbird_update_any & !rc0_mozilla_thunderbird_update_beta2 & !rc0_mozilla_thunderbird_update_beta1 & !rc0_mozilla_thunderbird_update_beta4 & !rc0_mozilla_thunderbird_update_beta3) | (!rc0_mozilla_thunderbird_update_any & rc0_mozilla_thunderbird_update_beta2 & !rc0_mozilla_thunderbird_update_beta1 & !rc0_mozilla_thunderbird_update_beta4 & !rc0_mozilla_thunderbird_update_beta3) | (!rc0_mozilla_thunderbird_update_any & !rc0_mozilla_thunderbird_update_beta2 & rc0_mozilla_thunderbird_update_beta1 & !rc0_mozilla_thunderbird_update_beta4 & !rc0_mozilla_thunderbird_update_beta3) | (!rc0_mozilla_thunderbird_update_any & !rc0_mozilla_thunderbird_update_beta2 & !rc0_mozilla_thunderbird_update_beta1 & rc0_mozilla_thunderbird_update_beta4 & !rc0_mozilla_thunderbird_update_beta3) | (!rc0_mozilla_thunderbird_update_any & !rc0_mozilla_thunderbird_update_beta2 & !rc0_mozilla_thunderbird_update_beta1 & !rc0_mozilla_thunderbird_update_beta4 & rc0_mozilla_thunderbird_update_beta3))
+        rc0_mozilla_thunderbird_version_2__0__0__19 => rc0_mozilla_thunderbird_update_any
+        rc0_mozilla_thunderbird_version_26__0 => rc0_mozilla_thunderbird_update_beta1
+        rc0_mozilla_thunderbird_version_3__1__15 => rc0_mozilla_thunderbird_update_any
+        rc0_mozilla_thunderbird_version_3__1__12 => rc0_mozilla_thunderbird_update_any
+        rc0_mozilla_thunderbird_version_31__8__0 => rc0_mozilla_thunderbird_update_any
+        rc0_mozilla_thunderbird_version_32__0 => rc0_mozilla_thunderbird_update_beta1
+        rc0_mozilla_thunderbird_version_1__5__0__14 => rc0_mozilla_thunderbird_update_any
+        rc0_mozilla_thunderbird_version_3__1__14 => rc0_mozilla_thunderbird_update_any
+        rc0_mozilla_thunderbird_version_3__1__4 => rc0_mozilla_thunderbird_update_any
+        rc0_mozilla_thunderbird_version_6__0__1 => rc0_mozilla_thunderbird_update_any
+        rc0_mozilla_thunderbird_version_24__1__0 => rc0_mozilla_thunderbird_update_any
+        rc0_mozilla_thunderbird_version_1__5__0__7 => rc0_mozilla_thunderbird_update_any
+        rc0_mozilla_thunderbird_version_0__5 => rc0_mozilla_thunderbird_update_any
+        rc0_mozilla_thunderbird_version_7__0 => ((rc0_mozilla_thunderbird_update_any & !rc0_mozilla_thunderbird_update_beta2 & !rc0_mozilla_thunderbird_update_beta1 & !rc0_mozilla_thunderbird_update_beta3) | (!rc0_mozilla_thunderbird_update_any & rc0_mozilla_thunderbird_update_beta2 & !rc0_mozilla_thunderbird_update_beta1 & !rc0_mozilla_thunderbird_update_beta3) | (!rc0_mozilla_thunderbird_update_any & !rc0_mozilla_thunderbird_update_beta2 & rc0_mozilla_thunderbird_update_beta1 & !rc0_mozilla_thunderbird_update_beta3) | (!rc0_mozilla_thunderbird_update_any & !rc0_mozilla_thunderbird_update_beta2 & !rc0_mozilla_thunderbird_update_beta1 & rc0_mozilla_thunderbird_update_beta3))
+        rc0_mozilla_thunderbird_version_0__7 => ((rc0_mozilla_thunderbird_update_any & !rc0_mozilla_thunderbird_update_rc) | (!rc0_mozilla_thunderbird_update_any & rc0_mozilla_thunderbird_update_rc))
+        rc0_mozilla_thunderbird_version_17__0__4 => rc0_mozilla_thunderbird_update_any
+        rc0_mozilla_thunderbird_version_1__0__5 => rc0_mozilla_thunderbird_update_any
+        rc0_mozilla_thunderbird_version_13__0 => ((rc0_mozilla_thunderbird_update_any & !rc0_mozilla_thunderbird_update_beta2 & !rc0_mozilla_thunderbird_update_beta1 & !rc0_mozilla_thunderbird_update_beta4 & !rc0_mozilla_thunderbird_update_beta3) | (!rc0_mozilla_thunderbird_update_any & rc0_mozilla_thunderbird_update_beta2 & !rc0_mozilla_thunderbird_update_beta1 & !rc0_mozilla_thunderbird_update_beta4 & !rc0_mozilla_thunderbird_update_beta3) | (!rc0_mozilla_thunderbird_update_any & !rc0_mozilla_thunderbird_update_beta2 & rc0_mozilla_thunderbird_update_beta1 & !rc0_mozilla_thunderbird_update_beta4 & !rc0_mozilla_thunderbird_update_beta3) | (!rc0_mozilla_thunderbird_update_any & !rc0_mozilla_thunderbird_update_beta2 & !rc0_mozilla_thunderbird_update_beta1 & rc0_mozilla_thunderbird_update_beta4 & !rc0_mozilla_thunderbird_update_beta3) | (!rc0_mozilla_thunderbird_update_any & !rc0_mozilla_thunderbird_update_beta2 & !rc0_mozilla_thunderbird_update_beta1 & !rc0_mozilla_thunderbird_update_beta4 & rc0_mozilla_thunderbird_update_beta3))
+        rc0_mozilla_thunderbird_version_3__0__9 => rc0_mozilla_thunderbird_update_any
+        rc0_mozilla_thunderbird_version_3__1__19 => rc0_mozilla_thunderbird_update_any
+        rc0_mozilla_thunderbird_version_17__0__3 => rc0_mozilla_thunderbird_update_any
+        rc0_mozilla_thunderbird_version_19__0 => rc0_mozilla_thunderbird_update_beta1
+        rc0_mozilla_thunderbird_version_2__0__0__24 => rc0_mozilla_thunderbird_update_any
+        rc0_mozilla_thunderbird_version_14__0 => ((rc0_mozilla_thunderbird_update_any & !rc0_mozilla_thunderbird_update_beta2 & !rc0_mozilla_thunderbird_update_beta1 & !rc0_mozilla_thunderbird_update_beta5 & !rc0_mozilla_thunderbird_update_beta4 & !rc0_mozilla_thunderbird_update_beta3) | (!rc0_mozilla_thunderbird_update_any & rc0_mozilla_thunderbird_update_beta2 & !rc0_mozilla_thunderbird_update_beta1 & !rc0_mozilla_thunderbird_update_beta5 & !rc0_mozilla_thunderbird_update_beta4 & !rc0_mozilla_thunderbird_update_beta3) | (!rc0_mozilla_thunderbird_update_any & !rc0_mozilla_thunderbird_update_beta2 & rc0_mozilla_thunderbird_update_beta1 & !rc0_mozilla_thunderbird_update_beta5 & !rc0_mozilla_thunderbird_update_beta4 & !rc0_mozilla_thunderbird_update_beta3) | (!rc0_mozilla_thunderbird_update_any & !rc0_mozilla_thunderbird_update_beta2 & !rc0_mozilla_thunderbird_update_beta1 & rc0_mozilla_thunderbird_update_beta5 & !rc0_mozilla_thunderbird_update_beta4 & !rc0_mozilla_thunderbird_update_beta3) | (!rc0_mozilla_thunderbird_update_any & !rc0_mozilla_thunderbird_update_beta2 & !rc0_mozilla_thunderbird_update_beta1 & !rc0_mozilla_thunderbird_update_beta5 & rc0_mozilla_thunderbird_update_beta4 & !rc0_mozilla_thunderbird_update_beta3) | (!rc0_mozilla_thunderbird_update_any & !rc0_mozilla_thunderbird_update_beta2 & !rc0_mozilla_thunderbird_update_beta1 & !rc0_mozilla_thunderbird_update_beta5 & !rc0_mozilla_thunderbird_update_beta4 & rc0_mozilla_thunderbird_update_beta3))
+        rc0_mozilla_thunderbird_version_21__0 => rc0_mozilla_thunderbird_update_beta1
+        rc0_mozilla_thunderbird_version_0__4 => rc0_mozilla_thunderbird_update_any
+        rc0_mozilla_thunderbird_version_3__0__11 => rc0_mozilla_thunderbird_update_any
+        rc0_mozilla_thunderbird_version_31__1__1 => rc0_mozilla_thunderbird_update_any
+        rc0_mozilla_thunderbird_version_1__5__0__13 => rc0_mozilla_thunderbird_update_any
+        rc0_mozilla_thunderbird_version_37__0 => rc0_mozilla_thunderbird_update_beta1
+        rc0_mozilla_thunderbird_version_24__3 => rc0_mozilla_thunderbird_update_any
+        rc0_mozilla_thunderbird_version_1__0__7 => rc0_mozilla_thunderbird_update_any
+        rc0_mozilla_thunderbird_version_24__1__1 => rc0_mozilla_thunderbird_update_any
+        rc0_mozilla_thunderbird_version_3__0__6 => rc0_mozilla_thunderbird_update_any
+        rc0_mozilla_thunderbird_version_2__0__0__0 => ((rc0_mozilla_thunderbird_update_any & !rc0_mozilla_thunderbird_update_rc1) | (!rc0_mozilla_thunderbird_update_any & rc0_mozilla_thunderbird_update_rc1))
+        rc0_mozilla_thunderbird_version_24__6__0 => rc0_mozilla_thunderbird_update_any
+        rc0_mozilla_thunderbird_version_17__0__7 => rc0_mozilla_thunderbird_update_any
+        rc0_mozilla_thunderbird_version_16__0__1 => rc0_mozilla_thunderbird_update_any
+        rc0_mozilla_thunderbird_version_33__0 => rc0_mozilla_thunderbird_update_beta1
+        rc0_mozilla_thunderbird_version_3__0__5 => rc0_mozilla_thunderbird_update_any
+        rc0_mozilla_thunderbird_version_3__1__13 => rc0_mozilla_thunderbird_update_any
+        rc0_mozilla_thunderbird_version_12__0 => ((rc0_mozilla_thunderbird_update_any & !rc0_mozilla_thunderbird_update_beta2 & !rc0_mozilla_thunderbird_update_beta1 & !rc0_mozilla_thunderbird_update_beta5 & !rc0_mozilla_thunderbird_update_beta4 & !rc0_mozilla_thunderbird_update_beta3) | (!rc0_mozilla_thunderbird_update_any & rc0_mozilla_thunderbird_update_beta2 & !rc0_mozilla_thunderbird_update_beta1 & !rc0_mozilla_thunderbird_update_beta5 & !rc0_mozilla_thunderbird_update_beta4 & !rc0_mozilla_thunderbird_update_beta3) | (!rc0_mozilla_thunderbird_update_any & !rc0_mozilla_thunderbird_update_beta2 & rc0_mozilla_thunderbird_update_beta1 & !rc0_mozilla_thunderbird_update_beta5 & !rc0_mozilla_thunderbird_update_beta4 & !rc0_mozilla_thunderbird_update_beta3) | (!rc0_mozilla_thunderbird_update_any & !rc0_mozilla_thunderbird_update_beta2 & !rc0_mozilla_thunderbird_update_beta1 & rc0_mozilla_thunderbird_update_beta5 & !rc0_mozilla_thunderbird_update_beta4 & !rc0_mozilla_thunderbird_update_beta3) | (!rc0_mozilla_thunderbird_update_any & !rc0_mozilla_thunderbird_update_beta2 & !rc0_mozilla_thunderbird_update_beta1 & !rc0_mozilla_thunderbird_update_beta5 & rc0_mozilla_thunderbird_update_beta4 & !rc0_mozilla_thunderbird_update_beta3) | (!rc0_mozilla_thunderbird_update_any & !rc0_mozilla_thunderbird_update_beta2 & !rc0_mozilla_thunderbird_update_beta1 & !rc0_mozilla_thunderbird_update_beta5 & !rc0_mozilla_thunderbird_update_beta4 & rc0_mozilla_thunderbird_update_beta3))
+        rc0_mozilla_thunderbird_version_3__1__1 => rc0_mozilla_thunderbird_update_any
+        rc0_mozilla_thunderbird_version_17__0__6 => rc0_mozilla_thunderbird_update_any
+        rc0_mozilla_thunderbird_version_2__0__0__5 => rc0_mozilla_thunderbird_update_any
+        rc0_mozilla_thunderbird_version_0__2 => rc0_mozilla_thunderbird_update_any
+        rc0_mozilla_thunderbird_version_24__8__0 => rc0_mozilla_thunderbird_update_any
+        rc0_mozilla_firefox_version_17__0 => (rc0_mozilla_firefox_update_any)
+        rc0_mozilla_firefox_version_2__0__0__4 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_2__0__0__4 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_any => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_any => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_2__0__0__15 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_2__0__0__15 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_1__4__1 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_1__4__1 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_0__6__1 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_0__6__1 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_32__0__3 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_32__0__3 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_1__0__2 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_1__0__2 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_23__0 => (rc0_mozilla_firefox_update_any)
+        rc0_mozilla_firefox_version_3__6__15 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_3__6__15 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_24__5__0 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_24__5__0 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_1__5__0__11 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_1__5__0__11 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_3__0__10 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_3__0__10 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_1__0__6 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_1__0__6 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_1__5__0__8 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_1__5__0__8 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_3__0__13 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_3__0__13 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_2__0__0__12 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_2__0__0__12 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_15__1 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_15__1 => rc0_mozilla_firefox_target__sw_iphone__os
+        rc0_mozilla_firefox_version_1__5__2 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_1__5__2 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_2__0__0__17 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_2__0__0__17 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_30__0 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_30__0 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_3__0__4 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_3__0__4 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_1__0__8 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_1__0__8 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_20__0 => (rc0_mozilla_firefox_update_alpha1 & rc0_mozilla_firefox_target__sw_any)
+        rc0_mozilla_firefox_version_1__5__1 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_1__5__1 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_0__9 => ((rc0_mozilla_firefox_update_any & rc0_mozilla_firefox_target__sw_any & !rc0_mozilla_firefox_update_rc & rc0_mozilla_firefox_target__sw_any) | (!rc0_mozilla_firefox_update_any & rc0_mozilla_firefox_target__sw_any & rc0_mozilla_firefox_update_rc & rc0_mozilla_firefox_target__sw_any))
+        rc0_mozilla_firefox_version_33__0__2 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_33__0__2 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_2__0__0__9 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_2__0__0__9 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_3__6__23 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_3__6__23 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_3__6__17 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_3__6__17 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_3__6 => ((rc0_mozilla_firefox_update_any & rc0_mozilla_firefox_target__sw_any & !rc0_mozilla_firefox_update_a1 & rc0_mozilla_firefox_target__sw_any) | (!rc0_mozilla_firefox_update_any & rc0_mozilla_firefox_target__sw_any & rc0_mozilla_firefox_update_a1 & rc0_mozilla_firefox_target__sw_any))
+        rc0_mozilla_firefox_version_24__0 => (rc0_mozilla_firefox_update_any)
+        rc0_mozilla_firefox_version_1__5__0__4 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_1__5__0__4 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_3__0__12 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_3__0__12 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_31__5__3 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_31__5__3 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_25__0 => (rc0_mozilla_firefox_update_any)
+        rc0_mozilla_firefox_version_3__6__11 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_3__6__11 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_1__5__0__5 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_1__5__0__5 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_29__0 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_29__0 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_23__0__1 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_23__0__1 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_38__0 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_38__0 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_31__3__0 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_31__3__0 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_2__0__0__18 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_2__0__0__18 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_34__0 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_34__0 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_1__0__4 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_1__0__4 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_0__7__1 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_0__7__1 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_10__0__5 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_10__0__5 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_7__0__1 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_7__0__1 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_19__0__2 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_19__0__2 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_19__1 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_19__1 => rc0_mozilla_firefox_target__sw_iphone__os
+        rc0_mozilla_firefox_version_15__0__1 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_15__0__1 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_27__0 => (rc0_mozilla_firefox_update_any)
+        rc0_mozilla_firefox_version_3__6__9 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_3__6__9 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_33__1__1 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_33__1__1 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_2__0__0__16 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_2__0__0__16 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_25__1 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_25__1 => rc0_mozilla_firefox_target__sw_iphone__os
+        rc0_mozilla_firefox_version_3__0__18 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_3__0__18 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_10__0__8 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_10__0__8 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_31__6__0 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_31__6__0 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_17__0__2 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_17__0__2 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_10__0__1 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_10__0__1 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_20__0__1 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_20__0__1 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_27__0__1 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_27__0__1 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_18__0__1 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_18__0__1 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_3__6__10 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_3__6__10 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_35__0 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_35__0 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_1__0__3 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_1__0__3 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_1__5__6 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_1__5__6 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_1__5__0__9 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_1__5__0__9 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_17__0__9 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_17__0__9 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_3__6__24 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_3__6__24 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_10__0__12 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_10__0__12 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_3__0__7 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_3__0__7 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_3__6__7 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_3__6__7 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_3__5__17 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_3__5__17 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_17__2 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_17__2 => rc0_mozilla_firefox_target__sw_iphone__os
+        rc0_mozilla_firefox_version_34__0__5 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_34__0__5 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_2__0 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_2__0 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_28__0 => (rc0_mozilla_firefox_update_any)
+        rc0_mozilla_firefox_version_9__0__1 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_9__0__1 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_1__5__0__6 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_1__5__0__6 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_33__0__1 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_33__0__1 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_36__0__4 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_36__0__4 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_18__2 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_18__2 => rc0_mozilla_firefox_target__sw_iphone__os
+        rc0_mozilla_firefox_version_10__0__6 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_10__0__6 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_1__5__8 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_1__5__8 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_1__5__0__2 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_1__5__0__2 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_2__0__0__2 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_2__0__0__2 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_33__0__3 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_33__0__3 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_3__6__13 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_3__6__13 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_3__5__5 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_3__5__5 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_31__0 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_31__0 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_3__5__15 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_3__5__15 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_31__5__0 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_31__5__0 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_3__0 => ((rc0_mozilla_firefox_update_any & rc0_mozilla_firefox_target__sw_any & !rc0_mozilla_firefox_update_beta2 & rc0_mozilla_firefox_target__sw_any) | (!rc0_mozilla_firefox_update_any & rc0_mozilla_firefox_target__sw_any & rc0_mozilla_firefox_update_beta2 & rc0_mozilla_firefox_target__sw_any))
+        rc0_mozilla_firefox_version_3__5__11 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_3__5__11 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_11__0 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_11__0 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_1__5__5 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_1__5__5 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_1__5__0__10 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_1__5__0__10 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_20__2 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_20__2 => rc0_mozilla_firefox_target__sw_iphone__os
+        rc0_mozilla_firefox_version_3__0__17 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_3__0__17 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_3__5 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_3__5 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_3__6__22 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_3__6__22 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_1__0 => ((rc0_mozilla_firefox_update_any & rc0_mozilla_firefox_target__sw_any & !rc0_mozilla_firefox_update_preview__release & rc0_mozilla_firefox_target__sw_any) | (!rc0_mozilla_firefox_update_any & rc0_mozilla_firefox_target__sw_any & rc0_mozilla_firefox_update_preview__release & rc0_mozilla_firefox_target__sw_any))
+        rc0_mozilla_firefox_version_2__0__0__14 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_2__0__0__14 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_17__0__5 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_17__0__5 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_3__6__12 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_3__6__12 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_5__0 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_5__0 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_24__3__0 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_24__3__0 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_13__0__1 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_13__0__1 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_0__6 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_0__6 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_3__5__2 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_3__5__2 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_24__2__0 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_24__2__0 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_0__10 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_0__10 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_3__5__10 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_3__5__10 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_3__6__6 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_3__6__6 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_16__1 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_16__1 => rc0_mozilla_firefox_target__sw_iphone__os
+        rc0_mozilla_firefox_version_10__0__2 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_10__0__2 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_6__0 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_6__0 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_1__5 => ((rc0_mozilla_firefox_update_any & rc0_mozilla_firefox_target__sw_any & !rc0_mozilla_firefox_update_beta2 & rc0_mozilla_firefox_target__sw_any & !rc0_mozilla_firefox_update_beta1 & rc0_mozilla_firefox_target__sw_any) | (!rc0_mozilla_firefox_update_any & rc0_mozilla_firefox_target__sw_any & rc0_mozilla_firefox_update_beta2 & rc0_mozilla_firefox_target__sw_any & !rc0_mozilla_firefox_update_beta1 & rc0_mozilla_firefox_target__sw_any) | (!rc0_mozilla_firefox_update_any & rc0_mozilla_firefox_target__sw_any & !rc0_mozilla_firefox_update_beta2 & rc0_mozilla_firefox_target__sw_any & rc0_mozilla_firefox_update_beta1 & rc0_mozilla_firefox_target__sw_any))
+        rc0_mozilla_firefox_version_31__4__0 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_31__4__0 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_1__5__7 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_1__5__7 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_18__0 => (rc0_mozilla_firefox_update_any)
+        rc0_mozilla_firefox_version_2__0__0__3 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_2__0__0__3 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_9__0 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_9__0 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_3__5__13 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_3__5__13 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_3__6__25 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_3__6__25 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_3__0__15 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_3__0__15 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_10__0 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_10__0 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_3__6__4 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_3__6__4 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_24__8__1 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_24__8__1 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_2__0__0__6 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_2__0__0__6 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_10__0__11 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_10__0__11 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_38__0__1 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_38__0__1 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_17__0__11 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_17__0__11 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_24__7__0 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_24__7__0 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_16__2 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_16__2 => rc0_mozilla_firefox_target__sw_iphone__os
+        rc0_mozilla_firefox_version_3__0__2 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_3__0__2 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_17__3 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_17__3 => rc0_mozilla_firefox_target__sw_iphone__os
+        rc0_mozilla_firefox_version_3__5__18 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_3__5__18 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_17__0__8 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_17__0__8 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_3__6__14 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_3__6__14 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_8__0 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_8__0 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_3__5__7 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_3__5__7 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_3__0__14 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_3__0__14 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_0__1 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_0__1 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_3__0__19 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_3__0__19 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_0__3 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_0__3 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_3__6__3 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_3__6__3 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_16__0__2 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_16__0__2 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_2__0__0__1 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_2__0__0__1 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_3__0__1 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_3__0__1 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_22__0 => (rc0_mozilla_firefox_update_any)
+        rc0_mozilla_firefox_version_17__1 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_17__1 => rc0_mozilla_firefox_target__sw_iphone__os
+        rc0_mozilla_firefox_version_1__5__0__12 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_1__5__0__12 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_33__1 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_33__1 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_3__0__8 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_3__0__8 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_3__6__20 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_3__6__20 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_1__5__4 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_1__5__4 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_29__0__1 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_29__0__1 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_36__0 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_36__0 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_15__0 => (rc0_mozilla_firefox_update_any)
+        rc0_mozilla_firefox_version_3__5__12 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_3__5__12 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_31__7__0 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_31__7__0 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_38__0__5 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_38__0__5 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_2__0__0__13 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_2__0__0__13 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_6__0__2 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_6__0__2 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_1__0__1 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_1__0__1 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_3__0__3 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_3__0__3 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_0__10__1 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_0__10__1 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_17__0__10 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_17__0__10 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_0__9__3 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_0__9__3 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_0__8 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_0__8 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_3__6__2 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_3__6__2 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_31__2__0 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_31__2__0 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_3__6__28 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_3__6__28 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_36__0__1 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_36__0__1 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_18__1 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_18__1 => rc0_mozilla_firefox_target__sw_iphone__os
+        rc0_mozilla_firefox_version_31__1__0 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_31__1__0 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_24__4__0 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_24__4__0 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_3__5__9 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_3__5__9 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_36__0__3 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_36__0__3 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_2__0__0__19 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_2__0__0__19 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_8__0__1 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_8__0__1 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_26__0 => (rc0_mozilla_firefox_update_any)
+        rc0_mozilla_firefox_version_3__0__16 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_3__0__16 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_3__6__8 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_3__6__8 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_32__0__2 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_32__0__2 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_16__0 => (rc0_mozilla_firefox_update_any)
+        rc0_mozilla_firefox_version_31__8__0 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_31__8__0 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_24__1 => (rc0_mozilla_firefox_update_any)
+        rc0_mozilla_firefox_version_3__6__26 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_3__6__26 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_10__0__4 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_10__0__4 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_3__6__27 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_3__6__27 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_3__5__8 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_3__5__8 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_32__0 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_32__0 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_10__0__7 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_10__0__7 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_3__5__6 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_3__5__6 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_6__0__1 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_6__0__1 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_24__1__0 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_24__1__0 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_3__6__18 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_3__6__18 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_1__5__0__7 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_1__5__0__7 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_1__5__0__1 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_1__5__0__1 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_3__6__19 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_3__6__19 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_3__5__16 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_3__5__16 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_0__5 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_0__5 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_7__0 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_7__0 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_0__7 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_0__7 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_2__0__0__20 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_2__0__0__20 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_17__0__4 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_17__0__4 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_3__5__19 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_3__5__19 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_19__0__1 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_19__0__1 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_10__0__10 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_10__0__10 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_0__9__1 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_0__9__1 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_1__0__5 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_1__0__5 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_13__0 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_13__0 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_3__0__9 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_3__0__9 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_17__0__3 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_17__0__3 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_19__0 => (rc0_mozilla_firefox_update_any)
+        rc0_mozilla_firefox_version_3__6__16 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_3__6__16 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_5__0__1 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_5__0__1 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_37__0__2 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_37__0__2 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_14__0 => (rc0_mozilla_firefox_update_any)
+        rc0_mozilla_firefox_version_37__0__1 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_37__0__1 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_18__0__2 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_18__0__2 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_21__0 => (rc0_mozilla_firefox_update_any)
+        rc0_mozilla_firefox_version_1__8 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_1__8 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_0__4 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_0__4 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_3__0__11 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_3__0__11 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_31__1__1 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_31__1__1 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_37__0 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_37__0 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_35__0__1 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_35__0__1 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_2__0__0__11 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_2__0__0__11 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_0__9__2 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_0__9__2 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_10__0__3 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_10__0__3 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_24__1__1 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_24__1__1 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_1__0__7 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_1__0__7 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_3__0__6 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_3__0__6 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_20__1 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_20__1 => rc0_mozilla_firefox_target__sw_iphone__os
+        rc0_mozilla_firefox_version_31__5__2 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_31__5__2 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_2__0__0__8 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_2__0__0__8 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_3__6__21 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_3__6__21 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_1__5__3 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_1__5__3 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_24__6__0 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_24__6__0 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_17__0__7 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_17__0__7 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_2__0__0__10 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_2__0__0__10 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_3__5__4 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_3__5__4 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_3__5__14 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_3__5__14 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_16__0__1 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_16__0__1 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_10__0__9 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_10__0__9 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_14__0__1 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_14__0__1 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_38__1__0 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_38__1__0 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_33__0 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_33__0 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_32__0__1 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_32__0__1 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_25__0__1 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_25__0__1 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_3__0__5 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_3__0__5 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_3__5__1 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_3__5__1 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_4__0__1 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_4__0__1 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_3__5__3 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_3__5__3 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_12__0 => ((rc0_mozilla_firefox_update_any & rc0_mozilla_firefox_target__sw_any & !rc0_mozilla_firefox_update_beta6 & rc0_mozilla_firefox_target__sw_any) | (!rc0_mozilla_firefox_update_any & rc0_mozilla_firefox_target__sw_any & rc0_mozilla_firefox_update_beta6 & rc0_mozilla_firefox_target__sw_any))
+        rc0_mozilla_firefox_version_17__0__6 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_17__0__6 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_4__0 => ((rc0_mozilla_firefox_update_beta9 & rc0_mozilla_firefox_target__sw_any & !rc0_mozilla_firefox_update_beta7 & rc0_mozilla_firefox_target__sw_any & !rc0_mozilla_firefox_update_any & rc0_mozilla_firefox_target__sw_any & !rc0_mozilla_firefox_update_beta2 & rc0_mozilla_firefox_target__sw_any & !rc0_mozilla_firefox_update_beta1 & rc0_mozilla_firefox_target__sw_any & !rc0_mozilla_firefox_update_beta6 & rc0_mozilla_firefox_target__sw_any & !rc0_mozilla_firefox_update_beta12 & rc0_mozilla_firefox_target__sw_any & !rc0_mozilla_firefox_update_beta5 & rc0_mozilla_firefox_target__sw_any & !rc0_mozilla_firefox_update_beta4 & rc0_mozilla_firefox_target__sw_any & !rc0_mozilla_firefox_update_beta11 & rc0_mozilla_firefox_target__sw_any & !rc0_mozilla_firefox_update_beta10 & rc0_mozilla_firefox_target__sw_any & !rc0_mozilla_firefox_update_beta8 & rc0_mozilla_firefox_target__sw_any & !rc0_mozilla_firefox_update_beta3 & rc0_mozilla_firefox_target__sw_any) | (!rc0_mozilla_firefox_update_beta9 & rc0_mozilla_firefox_target__sw_any & rc0_mozilla_firefox_update_beta7 & rc0_mozilla_firefox_target__sw_any & !rc0_mozilla_firefox_update_any & rc0_mozilla_firefox_target__sw_any & !rc0_mozilla_firefox_update_beta2 & rc0_mozilla_firefox_target__sw_any & !rc0_mozilla_firefox_update_beta1 & rc0_mozilla_firefox_target__sw_any & !rc0_mozilla_firefox_update_beta6 & rc0_mozilla_firefox_target__sw_any & !rc0_mozilla_firefox_update_beta12 & rc0_mozilla_firefox_target__sw_any & !rc0_mozilla_firefox_update_beta5 & rc0_mozilla_firefox_target__sw_any & !rc0_mozilla_firefox_update_beta4 & rc0_mozilla_firefox_target__sw_any & !rc0_mozilla_firefox_update_beta11 & rc0_mozilla_firefox_target__sw_any & !rc0_mozilla_firefox_update_beta10 & rc0_mozilla_firefox_target__sw_any & !rc0_mozilla_firefox_update_beta8 & rc0_mozilla_firefox_target__sw_any & !rc0_mozilla_firefox_update_beta3 & rc0_mozilla_firefox_target__sw_any) | (!rc0_mozilla_firefox_update_beta9 & rc0_mozilla_firefox_target__sw_any & !rc0_mozilla_firefox_update_beta7 & rc0_mozilla_firefox_target__sw_any & rc0_mozilla_firefox_update_any & rc0_mozilla_firefox_target__sw_any & !rc0_mozilla_firefox_update_beta2 & rc0_mozilla_firefox_target__sw_any & !rc0_mozilla_firefox_update_beta1 & rc0_mozilla_firefox_target__sw_any & !rc0_mozilla_firefox_update_beta6 & rc0_mozilla_firefox_target__sw_any & !rc0_mozilla_firefox_update_beta12 & rc0_mozilla_firefox_target__sw_any & !rc0_mozilla_firefox_update_beta5 & rc0_mozilla_firefox_target__sw_any & !rc0_mozilla_firefox_update_beta4 & rc0_mozilla_firefox_target__sw_any & !rc0_mozilla_firefox_update_beta11 & rc0_mozilla_firefox_target__sw_any & !rc0_mozilla_firefox_update_beta10 & rc0_mozilla_firefox_target__sw_any & !rc0_mozilla_firefox_update_beta8 & rc0_mozilla_firefox_target__sw_any & !rc0_mozilla_firefox_update_beta3 & rc0_mozilla_firefox_target__sw_any) | (!rc0_mozilla_firefox_update_beta9 & rc0_mozilla_firefox_target__sw_any & !rc0_mozilla_firefox_update_beta7 & rc0_mozilla_firefox_target__sw_any & !rc0_mozilla_firefox_update_any & rc0_mozilla_firefox_target__sw_any & rc0_mozilla_firefox_update_beta2 & rc0_mozilla_firefox_target__sw_any & !rc0_mozilla_firefox_update_beta1 & rc0_mozilla_firefox_target__sw_any & !rc0_mozilla_firefox_update_beta6 & rc0_mozilla_firefox_target__sw_any & !rc0_mozilla_firefox_update_beta12 & rc0_mozilla_firefox_target__sw_any & !rc0_mozilla_firefox_update_beta5 & rc0_mozilla_firefox_target__sw_any & !rc0_mozilla_firefox_update_beta4 & rc0_mozilla_firefox_target__sw_any & !rc0_mozilla_firefox_update_beta11 & rc0_mozilla_firefox_target__sw_any & !rc0_mozilla_firefox_update_beta10 & rc0_mozilla_firefox_target__sw_any & !rc0_mozilla_firefox_update_beta8 & rc0_mozilla_firefox_target__sw_any & !rc0_mozilla_firefox_update_beta3 & rc0_mozilla_firefox_target__sw_any) | (!rc0_mozilla_firefox_update_beta9 & rc0_mozilla_firefox_target__sw_any & !rc0_mozilla_firefox_update_beta7 & rc0_mozilla_firefox_target__sw_any & !rc0_mozilla_firefox_update_any & rc0_mozilla_firefox_target__sw_any & !rc0_mozilla_firefox_update_beta2 & rc0_mozilla_firefox_target__sw_any & rc0_mozilla_firefox_update_beta1 & rc0_mozilla_firefox_target__sw_any & !rc0_mozilla_firefox_update_beta6 & rc0_mozilla_firefox_target__sw_any & !rc0_mozilla_firefox_update_beta12 & rc0_mozilla_firefox_target__sw_any & !rc0_mozilla_firefox_update_beta5 & rc0_mozilla_firefox_target__sw_any & !rc0_mozilla_firefox_update_beta4 & rc0_mozilla_firefox_target__sw_any & !rc0_mozilla_firefox_update_beta11 & rc0_mozilla_firefox_target__sw_any & !rc0_mozilla_firefox_update_beta10 & rc0_mozilla_firefox_target__sw_any & !rc0_mozilla_firefox_update_beta8 & rc0_mozilla_firefox_target__sw_any & !rc0_mozilla_firefox_update_beta3 & rc0_mozilla_firefox_target__sw_any) | (!rc0_mozilla_firefox_update_beta9 & rc0_mozilla_firefox_target__sw_any & !rc0_mozilla_firefox_update_beta7 & rc0_mozilla_firefox_target__sw_any & !rc0_mozilla_firefox_update_any & rc0_mozilla_firefox_target__sw_any & !rc0_mozilla_firefox_update_beta2 & rc0_mozilla_firefox_target__sw_any & !rc0_mozilla_firefox_update_beta1 & rc0_mozilla_firefox_target__sw_any & rc0_mozilla_firefox_update_beta6 & rc0_mozilla_firefox_target__sw_any & !rc0_mozilla_firefox_update_beta12 & rc0_mozilla_firefox_target__sw_any & !rc0_mozilla_firefox_update_beta5 & rc0_mozilla_firefox_target__sw_any & !rc0_mozilla_firefox_update_beta4 & rc0_mozilla_firefox_target__sw_any & !rc0_mozilla_firefox_update_beta11 & rc0_mozilla_firefox_target__sw_any & !rc0_mozilla_firefox_update_beta10 & rc0_mozilla_firefox_target__sw_any & !rc0_mozilla_firefox_update_beta8 & rc0_mozilla_firefox_target__sw_any & !rc0_mozilla_firefox_update_beta3 & rc0_mozilla_firefox_target__sw_any) | (!rc0_mozilla_firefox_update_beta9 & rc0_mozilla_firefox_target__sw_any & !rc0_mozilla_firefox_update_beta7 & rc0_mozilla_firefox_target__sw_any & !rc0_mozilla_firefox_update_any & rc0_mozilla_firefox_target__sw_any & !rc0_mozilla_firefox_update_beta2 & rc0_mozilla_firefox_target__sw_any & !rc0_mozilla_firefox_update_beta1 & rc0_mozilla_firefox_target__sw_any & !rc0_mozilla_firefox_update_beta6 & rc0_mozilla_firefox_target__sw_any & rc0_mozilla_firefox_update_beta12 & rc0_mozilla_firefox_target__sw_any & !rc0_mozilla_firefox_update_beta5 & rc0_mozilla_firefox_target__sw_any & !rc0_mozilla_firefox_update_beta4 & rc0_mozilla_firefox_target__sw_any & !rc0_mozilla_firefox_update_beta11 & rc0_mozilla_firefox_target__sw_any & !rc0_mozilla_firefox_update_beta10 & rc0_mozilla_firefox_target__sw_any & !rc0_mozilla_firefox_update_beta8 & rc0_mozilla_firefox_target__sw_any & !rc0_mozilla_firefox_update_beta3 & rc0_mozilla_firefox_target__sw_any) | (!rc0_mozilla_firefox_update_beta9 & rc0_mozilla_firefox_target__sw_any & !rc0_mozilla_firefox_update_beta7 & rc0_mozilla_firefox_target__sw_any & !rc0_mozilla_firefox_update_any & rc0_mozilla_firefox_target__sw_any & !rc0_mozilla_firefox_update_beta2 & rc0_mozilla_firefox_target__sw_any & !rc0_mozilla_firefox_update_beta1 & rc0_mozilla_firefox_target__sw_any & !rc0_mozilla_firefox_update_beta6 & rc0_mozilla_firefox_target__sw_any & !rc0_mozilla_firefox_update_beta12 & rc0_mozilla_firefox_target__sw_any & rc0_mozilla_firefox_update_beta5 & rc0_mozilla_firefox_target__sw_any & !rc0_mozilla_firefox_update_beta4 & rc0_mozilla_firefox_target__sw_any & !rc0_mozilla_firefox_update_beta11 & rc0_mozilla_firefox_target__sw_any & !rc0_mozilla_firefox_update_beta10 & rc0_mozilla_firefox_target__sw_any & !rc0_mozilla_firefox_update_beta8 & rc0_mozilla_firefox_target__sw_any & !rc0_mozilla_firefox_update_beta3 & rc0_mozilla_firefox_target__sw_any) | (!rc0_mozilla_firefox_update_beta9 & rc0_mozilla_firefox_target__sw_any & !rc0_mozilla_firefox_update_beta7 & rc0_mozilla_firefox_target__sw_any & !rc0_mozilla_firefox_update_any & rc0_mozilla_firefox_target__sw_any & !rc0_mozilla_firefox_update_beta2 & rc0_mozilla_firefox_target__sw_any & !rc0_mozilla_firefox_update_beta1 & rc0_mozilla_firefox_target__sw_any & !rc0_mozilla_firefox_update_beta6 & rc0_mozilla_firefox_target__sw_any & !rc0_mozilla_firefox_update_beta12 & rc0_mozilla_firefox_target__sw_any & !rc0_mozilla_firefox_update_beta5 & rc0_mozilla_firefox_target__sw_any & rc0_mozilla_firefox_update_beta4 & rc0_mozilla_firefox_target__sw_any & !rc0_mozilla_firefox_update_beta11 & rc0_mozilla_firefox_target__sw_any & !rc0_mozilla_firefox_update_beta10 & rc0_mozilla_firefox_target__sw_any & !rc0_mozilla_firefox_update_beta8 & rc0_mozilla_firefox_target__sw_any & !rc0_mozilla_firefox_update_beta3 & rc0_mozilla_firefox_target__sw_any) | (!rc0_mozilla_firefox_update_beta9 & rc0_mozilla_firefox_target__sw_any & !rc0_mozilla_firefox_update_beta7 & rc0_mozilla_firefox_target__sw_any & !rc0_mozilla_firefox_update_any & rc0_mozilla_firefox_target__sw_any & !rc0_mozilla_firefox_update_beta2 & rc0_mozilla_firefox_target__sw_any & !rc0_mozilla_firefox_update_beta1 & rc0_mozilla_firefox_target__sw_any & !rc0_mozilla_firefox_update_beta6 & rc0_mozilla_firefox_target__sw_any & !rc0_mozilla_firefox_update_beta12 & rc0_mozilla_firefox_target__sw_any & !rc0_mozilla_firefox_update_beta5 & rc0_mozilla_firefox_target__sw_any & !rc0_mozilla_firefox_update_beta4 & rc0_mozilla_firefox_target__sw_any & rc0_mozilla_firefox_update_beta11 & rc0_mozilla_firefox_target__sw_any & !rc0_mozilla_firefox_update_beta10 & rc0_mozilla_firefox_target__sw_any & !rc0_mozilla_firefox_update_beta8 & rc0_mozilla_firefox_target__sw_any & !rc0_mozilla_firefox_update_beta3 & rc0_mozilla_firefox_target__sw_any) | (!rc0_mozilla_firefox_update_beta9 & rc0_mozilla_firefox_target__sw_any & !rc0_mozilla_firefox_update_beta7 & rc0_mozilla_firefox_target__sw_any & !rc0_mozilla_firefox_update_any & rc0_mozilla_firefox_target__sw_any & !rc0_mozilla_firefox_update_beta2 & rc0_mozilla_firefox_target__sw_any & !rc0_mozilla_firefox_update_beta1 & rc0_mozilla_firefox_target__sw_any & !rc0_mozilla_firefox_update_beta6 & rc0_mozilla_firefox_target__sw_any & !rc0_mozilla_firefox_update_beta12 & rc0_mozilla_firefox_target__sw_any & !rc0_mozilla_firefox_update_beta5 & rc0_mozilla_firefox_target__sw_any & !rc0_mozilla_firefox_update_beta4 & rc0_mozilla_firefox_target__sw_any & !rc0_mozilla_firefox_update_beta11 & rc0_mozilla_firefox_target__sw_any & rc0_mozilla_firefox_update_beta10 & rc0_mozilla_firefox_target__sw_any & !rc0_mozilla_firefox_update_beta8 & rc0_mozilla_firefox_target__sw_any & !rc0_mozilla_firefox_update_beta3 & rc0_mozilla_firefox_target__sw_any) | (!rc0_mozilla_firefox_update_beta9 & rc0_mozilla_firefox_target__sw_any & !rc0_mozilla_firefox_update_beta7 & rc0_mozilla_firefox_target__sw_any & !rc0_mozilla_firefox_update_any & rc0_mozilla_firefox_target__sw_any & !rc0_mozilla_firefox_update_beta2 & rc0_mozilla_firefox_target__sw_any & !rc0_mozilla_firefox_update_beta1 & rc0_mozilla_firefox_target__sw_any & !rc0_mozilla_firefox_update_beta6 & rc0_mozilla_firefox_target__sw_any & !rc0_mozilla_firefox_update_beta12 & rc0_mozilla_firefox_target__sw_any & !rc0_mozilla_firefox_update_beta5 & rc0_mozilla_firefox_target__sw_any & !rc0_mozilla_firefox_update_beta4 & rc0_mozilla_firefox_target__sw_any & !rc0_mozilla_firefox_update_beta11 & rc0_mozilla_firefox_target__sw_any & !rc0_mozilla_firefox_update_beta10 & rc0_mozilla_firefox_target__sw_any & rc0_mozilla_firefox_update_beta8 & rc0_mozilla_firefox_target__sw_any & !rc0_mozilla_firefox_update_beta3 & rc0_mozilla_firefox_target__sw_any) | (!rc0_mozilla_firefox_update_beta9 & rc0_mozilla_firefox_target__sw_any & !rc0_mozilla_firefox_update_beta7 & rc0_mozilla_firefox_target__sw_any & !rc0_mozilla_firefox_update_any & rc0_mozilla_firefox_target__sw_any & !rc0_mozilla_firefox_update_beta2 & rc0_mozilla_firefox_target__sw_any & !rc0_mozilla_firefox_update_beta1 & rc0_mozilla_firefox_target__sw_any & !rc0_mozilla_firefox_update_beta6 & rc0_mozilla_firefox_target__sw_any & !rc0_mozilla_firefox_update_beta12 & rc0_mozilla_firefox_target__sw_any & !rc0_mozilla_firefox_update_beta5 & rc0_mozilla_firefox_target__sw_any & !rc0_mozilla_firefox_update_beta4 & rc0_mozilla_firefox_target__sw_any & !rc0_mozilla_firefox_update_beta11 & rc0_mozilla_firefox_target__sw_any & !rc0_mozilla_firefox_update_beta10 & rc0_mozilla_firefox_target__sw_any & !rc0_mozilla_firefox_update_beta8 & rc0_mozilla_firefox_target__sw_any & rc0_mozilla_firefox_update_beta3 & rc0_mozilla_firefox_target__sw_any))
+        rc0_mozilla_firefox_version_1__5__0__3 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_1__5__0__3 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_2__0__0__7 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_2__0__0__7 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_2__0__0__5 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_2__0__0__5 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_0__2 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_0__2 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_24__8__0 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_24__8__0 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_17__0__1 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_17__0__1 => rc0_mozilla_firefox_target__sw_any

@@ -1,0 +1,322 @@
+namespace FRS_CS
+
+features
+	FRS_CS
+		mandatory
+			PhysicalComponents
+				mandatory
+					Channel
+						mandatory
+							Network
+								or
+									WBAN
+									WLAN
+									LAN
+									BAN
+									WAN
+					Client
+						mandatory
+							CaptureDevice
+								mandatory
+									Camera
+										alternative
+											Thermal
+											NIR
+											a3D
+											HR
+											LR
+								optional
+									Microphone
+							Extractor
+								alternative
+									CNN
+										alternative
+											Facenet
+											ArcFace
+											Baidu
+											FR3DNet
+											CocoLoss
+									Holistic
+										alternative
+											SIFT
+											FisherFaces
+											EigenFaces
+											Gabor
+											SLDA
+											ICA
+									Hybrid
+										alternative
+											MRF
+											RBFQT
+					Server
+						mandatory
+							Comparator
+							Decision
+								optional
+									DistanceMetric
+										alternative
+											Binary
+											Float
+											Integer
+									Threshold
+							Storage
+								mandatory
+									BiometricEnrollmentDatabase
+			SecurityServices
+				mandatory
+					Properties
+						or
+							Confidentiality
+							Integrity
+							Availability
+							Authenticity
+							Traceability
+							Authentication
+					UEBA
+						or
+							EDR
+							XDR
+							EPP
+					TemplateProtection
+						alternative
+							CancellableBiometrics
+								alternative
+									BioConvolving
+									Salting
+									ARH
+									BloomFilter
+									BioHashing
+							HE
+								alternative
+									FHE
+										alternative
+											BGV
+											CKKS
+											BFV
+									PHE
+										alternative
+											Kyber
+											Saber
+											ClassicMcEliece
+											Paillier
+											NTRU
+							CryptoSystem
+								alternative
+									FuzzyCommitment
+									FuzzyExtractor
+									eSketch
+									FuzzyVault
+					PDP
+					SecChannel
+						mandatory
+							Protocol
+								alternative
+									TLS11
+									TLS12
+									TLS13
+						optional
+							BilateralAuthentication
+				optional
+					MultifactorAuthentication
+						or
+							Password
+							Token
+							TOTP
+							SMS
+							MultiBiometrics
+					IsolationModule
+						or
+							HardBased
+								alternative
+									HSM
+									TPM
+									SE
+									MTM
+							SoftBased
+								alternative
+									TEE
+									SecureBoot
+									TrustZone
+					MAC
+						alternative
+							HMAC
+							KMAC
+							CMAC
+					PostQuantumResistance_Template
+					ASpoofingTechnique
+						or
+							Static
+								or
+									LBP
+									GLCM
+									QC
+									NIRImages
+									FaceTemperature
+							Dynamic
+								or
+									Eye_movement
+									rPPG
+									Pupil_changes
+									ReadChallenge
+					SystemUpdates
+			PrivacyServices
+				mandatory
+					ZKP
+						alternative
+							Ligero
+							NIZKPoK
+							ZK_SNARK
+							Aurora
+							Hyrax
+							ZK_STARK
+					PIR
+						alternative
+							sDEPIR
+							pDEPIR
+							ORAM
+							VSPIR
+							PSIR
+					EPID
+				optional
+					Obfuscation
+						or
+							Shuffling
+							RepeteableMasking
+							Secret_Padding
+		optional
+			BiometricPerformanceService
+				mandatory
+					Accuracy
+						alternative
+							VeryHigh
+							High
+							Medium
+					TemplateSize
+						alternative
+							Small
+							Medium_1
+							Large
+					AuthenticationSpeed
+						alternative
+							VeryFast
+							Fast
+							Medium_2
+					SystemSecurityLevel
+						alternative
+							VeryHigh_1
+							High_1
+							Medium_3
+							Low
+
+constraints
+	!FuzzyVault | Fast
+	!BioHashing | Fast
+	!BFV | Medium_1
+	!BGV | Medium_1
+	!CKKS | Large
+	!Paillier | Large
+	!NTRU | Small
+	!Saber | Small
+	NIR | !NIRImages
+	!Kyber | Small
+	!LR | !Holistic
+	!Salting | Medium_2
+	!BioConvolving | Medium_2
+	!ARH | Medium_2
+	a3D | !FR3DNet
+	Microphone | !ReadChallenge
+	!BioHashing | Medium_1
+	!LR | !LBP
+	!BloomFilter | Fast
+	!LR | !GLCM
+	!ARH | Large
+	!LR | !QC
+	!Salting | Large
+	!Traceability | ASpoofingTechnique
+	Server | !Traceability
+	!CKKS | Medium_2
+	Shuffling | !VeryHigh_1
+	Secret_Padding | !VeryHigh_1
+	LBP | !VeryHigh_1
+	QC | !VeryHigh_1
+	!FuzzyVault | Small
+	!eSketch | Large
+	SMS | !VeryHigh_1
+	MultiBiometrics | !VeryHigh_1
+	!FuzzyCommitment | Medium_1
+	!FuzzyExtractor | Small
+	!Client | UEBA
+	!Paillier | Medium_2
+	!BiometricEnrollmentDatabase | PDP
+	!Integrity | IsolationModule
+	!Integrity | MAC
+	!CaptureDevice | ASpoofingTechnique
+	!eSketch | Medium_2
+	!FuzzyExtractor | Medium_2
+	!Integrity | PDP
+	!FuzzyCommitment | Fast
+	!Network | SecChannel
+	!NTRU | VeryFast
+	!EDR | !XDR
+	EDR | !VeryHigh_1
+	EPP | !VeryHigh_1
+	!VeryHigh_1 | BilateralAuthentication
+	TEE | !VeryHigh_1
+	HSM | !VeryHigh_1
+	PostQuantumResistance_Template | !VeryHigh_1
+	ReadChallenge | !VeryHigh_1
+	CNN | !VeryHigh_1
+	rPPG | !VeryHigh_1
+	!BioConvolving | Medium_1
+	!BloomFilter | Large
+	Authentication | !VeryHigh_1
+	Traceability | !VeryHigh_1
+	SystemUpdates | !VeryHigh_1
+	CNN | !High_1
+	MultifactorAuthentication | !High_1
+	HR | !VeryHigh_1
+	Confidentiality | !VeryHigh_1
+	Integrity | !VeryHigh_1
+	Authenticity | !VeryHigh_1
+	LBP | !High_1
+	UEBA | !High_1
+	!High_1 | BilateralAuthentication
+	ReadChallenge | !High_1
+	IsolationModule | !High_1
+	!PostQuantumResistance_Template | !Medium_3
+	SystemUpdates | !High_1
+	!CancellableBiometrics | !High_1
+	Threshold | !HE
+	!PostQuantumResistance_Template | !High_1
+	Threshold | !CancellableBiometrics
+	!Threshold | !CryptoSystem
+	!HardBased | !Medium_3
+	SoftBased | !Medium_3
+	EDR | !Medium_3
+	!Medium_3 | !BilateralAuthentication
+	!MultifactorAuthentication | !Medium_3
+	!IsolationModule | !Low
+	!PostQuantumResistance_Template | !Low
+	!Low | !BilateralAuthentication
+	!MultifactorAuthentication | !Low
+	TLS13 | !VeryFast
+	!CNN | VeryFast
+	!ClassicMcEliece | Small
+	!ClassicMcEliece | VeryFast
+	!HE | Obfuscation
+	Extractor | !Traceability
+	MultifactorAuthentication | !VeryHigh_1
+	!ClassicMcEliece | PostQuantumResistance_Template
+	!Kyber | PostQuantumResistance_Template
+	!Saber | PostQuantumResistance_Template
+	BiometricEnrollmentDatabase | !Availability
+	Float | !Paillier
+	Float | !BGV
+	Float | !BFV
+	!DistanceMetric | !CryptoSystem
+	Binary | !Saber
+	Binary | !Kyber
+	Binary | !ClassicMcEliece
+	Confidentiality | !TemplateProtection
+	Integer | !CKKS
+	!Saber | VeryFast

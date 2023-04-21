@@ -1,0 +1,382 @@
+features
+        CVE_2020_8549
+                mandatory
+                        types
+                                mandatory
+                                        application
+                        sources
+                                mandatory
+                                        nvd
+                        exploits
+                                optional
+                                        direct
+                                        indirect
+                        machothemes
+                                mandatory
+                                        machothemes_strong__testimonials
+                                                mandatory
+                                                        machothemes_strong__testimonials_version
+                                                                alternative
+                                                                        machothemes_strong__testimonials_version_2__13
+                                                                        machothemes_strong__testimonials_version_2__31__1
+                                                                        machothemes_strong__testimonials_version_2__39__3
+                                                                        machothemes_strong__testimonials_version_1__16__6
+                                                                        machothemes_strong__testimonials_version_2__4
+                                                                        machothemes_strong__testimonials_version_2__5__8
+                                                                        machothemes_strong__testimonials_version_1__25__6
+                                                                        machothemes_strong__testimonials_version_2__4__1
+                                                                        machothemes_strong__testimonials_version_2__15
+                                                                        machothemes_strong__testimonials_version_2__28__3
+                                                                        machothemes_strong__testimonials_version_1__16__2
+                                                                        machothemes_strong__testimonials_version_2__31
+                                                                        machothemes_strong__testimonials_version_2__37
+                                                                        machothemes_strong__testimonials_version_2__21
+                                                                        machothemes_strong__testimonials_version_2__31__6
+                                                                        machothemes_strong__testimonials_version_2__2__2
+                                                                        machothemes_strong__testimonials_version_1__16__1
+                                                                        machothemes_strong__testimonials_version_2__32__3
+                                                                        machothemes_strong__testimonials_version_2__18
+                                                                        machothemes_strong__testimonials_version_2__2__9
+                                                                        machothemes_strong__testimonials_version_2__22__3
+                                                                        machothemes_strong__testimonials_version_2__13__5
+                                                                        machothemes_strong__testimonials_version_2__32
+                                                                        machothemes_strong__testimonials_version_2__14__2
+                                                                        machothemes_strong__testimonials_version_2__27__1
+                                                                        machothemes_strong__testimonials_version_2__6__1
+                                                                        machothemes_strong__testimonials_version_1__16__8
+                                                                        machothemes_strong__testimonials_version_2__16__5
+                                                                        machothemes_strong__testimonials_version_2__0__0
+                                                                        machothemes_strong__testimonials_version_2__14
+                                                                        machothemes_strong__testimonials_version_1__19
+                                                                        machothemes_strong__testimonials_version_2__2__3
+                                                                        machothemes_strong__testimonials_version_2__39__2
+                                                                        machothemes_strong__testimonials_version_2__31__2
+                                                                        machothemes_strong__testimonials_version_1__23
+                                                                        machothemes_strong__testimonials_version_1__18__2
+                                                                        machothemes_strong__testimonials_version_2__30__7
+                                                                        machothemes_strong__testimonials_version_2__5__5
+                                                                        machothemes_strong__testimonials_version_2__16__4
+                                                                        machothemes_strong__testimonials_version_2__17__2
+                                                                        machothemes_strong__testimonials_version_2__13__3
+                                                                        machothemes_strong__testimonials_version_2__38__1
+                                                                        machothemes_strong__testimonials_version_2__26__2
+                                                                        machothemes_strong__testimonials_version_2__2__5
+                                                                        machothemes_strong__testimonials_version_1__21
+                                                                        machothemes_strong__testimonials_version_2__22__5
+                                                                        machothemes_strong__testimonials_version_2__6
+                                                                        machothemes_strong__testimonials_version_2__16__2
+                                                                        machothemes_strong__testimonials_version_2__26__8
+                                                                        machothemes_strong__testimonials_version_2__2__6
+                                                                        machothemes_strong__testimonials_version_2__21__2
+                                                                        machothemes_strong__testimonials_version_2__26__6
+                                                                        machothemes_strong__testimonials_version_2__2__8
+                                                                        machothemes_strong__testimonials_version_2__16__1
+                                                                        machothemes_strong__testimonials_version_2__3
+                                                                        machothemes_strong__testimonials_version_2__16
+                                                                        machothemes_strong__testimonials_version_2__12__4
+                                                                        machothemes_strong__testimonials_version_2__34
+                                                                        machothemes_strong__testimonials_version_2__5
+                                                                        machothemes_strong__testimonials_version_2__17
+                                                                        machothemes_strong__testimonials_version_2__26__3
+                                                                        machothemes_strong__testimonials_version_2__28__1
+                                                                        machothemes_strong__testimonials_version_2__39__1
+                                                                        machothemes_strong__testimonials_version_2__23
+                                                                        machothemes_strong__testimonials_version_2__22__4
+                                                                        machothemes_strong__testimonials_version_2__3__2
+                                                                        machothemes_strong__testimonials_version_2__26__4
+                                                                        machothemes_strong__testimonials_version_2__0
+                                                                        machothemes_strong__testimonials_version_2__17__1
+                                                                        machothemes_strong__testimonials_version_2__30__3
+                                                                        machothemes_strong__testimonials_version_2__30
+                                                                        machothemes_strong__testimonials_version_1__16__12
+                                                                        machothemes_strong__testimonials_version_2__38
+                                                                        machothemes_strong__testimonials_version_2__22__2
+                                                                        machothemes_strong__testimonials_version_2__22__1
+                                                                        machothemes_strong__testimonials_version_2__30__5
+                                                                        machothemes_strong__testimonials_version_2__23__2
+                                                                        machothemes_strong__testimonials_version_2__31__9__1
+                                                                        machothemes_strong__testimonials_version_2__20
+                                                                        machothemes_strong__testimonials_version_2__25
+                                                                        machothemes_strong__testimonials_version_2__2__4
+                                                                        machothemes_strong__testimonials_version_1__16__9
+                                                                        machothemes_strong__testimonials_version_2__26__1
+                                                                        machothemes_strong__testimonials_version_1__18__5
+                                                                        machothemes_strong__testimonials_version_2__3__1
+                                                                        machothemes_strong__testimonials_version_2__29__1
+                                                                        machothemes_strong__testimonials_version_1__18__1
+                                                                        machothemes_strong__testimonials_version_2__31__4
+                                                                        machothemes_strong__testimonials_version_2__5__3
+                                                                        machothemes_strong__testimonials_version_2__1
+                                                                        machothemes_strong__testimonials_version_1__22
+                                                                        machothemes_strong__testimonials_version_1__16__14
+                                                                        machothemes_strong__testimonials_version_2__19__1
+                                                                        machothemes_strong__testimonials_version_2__13__1
+                                                                        machothemes_strong__testimonials_version_2__26__9
+                                                                        machothemes_strong__testimonials_version_2__30__2
+                                                                        machothemes_strong__testimonials_version_1__17__1
+                                                                        machothemes_strong__testimonials_version_2__26__10
+                                                                        machothemes_strong__testimonials_version_1__16__5
+                                                                        machothemes_strong__testimonials_version_2__31__8
+                                                                        machothemes_strong__testimonials_version_2__5__7
+                                                                        machothemes_strong__testimonials_version_1__17
+                                                                        machothemes_strong__testimonials_version_2__3__3
+                                                                        machothemes_strong__testimonials_version_2__30__8
+                                                                        machothemes_strong__testimonials_version_2__24
+                                                                        machothemes_strong__testimonials_version_2__23__1
+                                                                        machothemes_strong__testimonials_version_2__31__9
+                                                                        machothemes_strong__testimonials_version_2__40__0
+                                                                        machothemes_strong__testimonials_version_2__7
+                                                                        machothemes_strong__testimonials_version_2__8__1
+                                                                        machothemes_strong__testimonials_version_2__27
+                                                                        machothemes_strong__testimonials_version_2__28__2
+                                                                        machothemes_strong__testimonials_version_2__5__2
+                                                                        machothemes_strong__testimonials_version_1__16__7
+                                                                        machothemes_strong__testimonials_version_2__31__10
+                                                                        machothemes_strong__testimonials_version_2__28__4
+                                                                        machothemes_strong__testimonials_version_2__30__1
+                                                                        machothemes_strong__testimonials_version_1__25__5
+                                                                        machothemes_strong__testimonials_version_2__5__4
+                                                                        machothemes_strong__testimonials_version_2__26
+                                                                        machothemes_strong__testimonials_version_2__19
+                                                                        machothemes_strong__testimonials_version_2__18__2
+                                                                        machothemes_strong__testimonials_version_2__29
+                                                                        machothemes_strong__testimonials_version_2__25__1
+                                                                        machothemes_strong__testimonials_version_2__39
+                                                                        machothemes_strong__testimonials_version_2__2__11
+                                                                        machothemes_strong__testimonials_version_1__18__3
+                                                                        machothemes_strong__testimonials_version_2__2
+                                                                        machothemes_strong__testimonials_version_any
+                                                                        machothemes_strong__testimonials_version_2__25__2
+                                                                        machothemes_strong__testimonials_version_2__17__3
+                                                                        machothemes_strong__testimonials_version_2__22__6
+                                                                        machothemes_strong__testimonials_version_2__2__7
+                                                                        machothemes_strong__testimonials_version_2__22
+                                                                        machothemes_strong__testimonials_version_2__31__7
+                                                                        machothemes_strong__testimonials_version_2__2__12
+                                                                        machothemes_strong__testimonials_version_2__17__4
+                                                                        machothemes_strong__testimonials_version_2__30__9
+                                                                        machothemes_strong__testimonials_version_2__5__1
+                                                                        machothemes_strong__testimonials_version_1__17__2
+                                                                        machothemes_strong__testimonials_version_2__13__4
+                                                                        machothemes_strong__testimonials_version_1__16
+                                                                        machothemes_strong__testimonials_version_2__35
+                                                                        machothemes_strong__testimonials_version_2__30__4
+                                                                        machothemes_strong__testimonials_version_2__28__0
+                                                                        machothemes_strong__testimonials_version_2__31__5
+                                                                        machothemes_strong__testimonials_version_2__21__1
+                                                                        machothemes_strong__testimonials_version_2__27__2
+                                                                        machothemes_strong__testimonials_version_1__16__11
+                                                                        machothemes_strong__testimonials_version_1__20
+                                                                        machothemes_strong__testimonials_version_2__32__4
+                                                                        machothemes_strong__testimonials_version_1__16__10
+                                                                        machothemes_strong__testimonials_version_1__20__2
+                                                                        machothemes_strong__testimonials_version_1__25__7
+                                                                        machothemes_strong__testimonials_version_1__18__4
+                                                                        machothemes_strong__testimonials_version_2__17__5
+                                                                        machothemes_strong__testimonials_version_1__16__4
+                                                                        machothemes_strong__testimonials_version_2__2__10
+                                                                        machothemes_strong__testimonials_version_2__14__1
+                                                                        machothemes_strong__testimonials_version_2__0__1
+                                                                        machothemes_strong__testimonials_version_1__16__13
+                                                                        machothemes_strong__testimonials_version_2__36
+                                                                        machothemes_strong__testimonials_version_2__26__5
+                                                                        machothemes_strong__testimonials_version_2__14__3
+                                                                        machothemes_strong__testimonials_version_2__32__2
+                                                                        machothemes_strong__testimonials_version_2__19__2
+                                                                        machothemes_strong__testimonials_version_2__31__3
+                                                                        machothemes_strong__testimonials_version_2__32__1
+                                                                        machothemes_strong__testimonials_version_2__16__3
+                                                                        machothemes_strong__testimonials_version_2__13__2
+                                                                        machothemes_strong__testimonials_version_1__18
+                                                                        machothemes_strong__testimonials_version_1__16__3
+                                                                        machothemes_strong__testimonials_version_1__20__1
+                                                                        machothemes_strong__testimonials_version_2__2__1
+                                                                        machothemes_strong__testimonials_version_2__30__6
+                                                                        machothemes_strong__testimonials_version_2__26__7
+                                                        machothemes_strong__testimonials_update
+                                                                alternative
+                                                                        machothemes_strong__testimonials_update_beta__1
+                                                                        machothemes_strong__testimonials_update_any
+                                                                        machothemes_strong__testimonials_update_rc1
+                                                        machothemes_strong__testimonials_target__sw
+                                                                mandatory
+                                                                        machothemes_strong__testimonials_target__sw_wordpress
+
+constraints
+        machothemes_strong__testimonials => application
+        machothemes_strong__testimonials_version_2__13 => machothemes_strong__testimonials_update_any
+        machothemes_strong__testimonials_version_2__31__1 => machothemes_strong__testimonials_update_any
+        machothemes_strong__testimonials_version_2__39__3 => machothemes_strong__testimonials_update_any
+        machothemes_strong__testimonials_version_1__16__6 => machothemes_strong__testimonials_update_any
+        machothemes_strong__testimonials_version_2__4 => machothemes_strong__testimonials_update_any
+        machothemes_strong__testimonials_version_2__5__8 => machothemes_strong__testimonials_update_any
+        machothemes_strong__testimonials_version_1__25__6 => machothemes_strong__testimonials_update_any
+        machothemes_strong__testimonials_version_2__4__1 => machothemes_strong__testimonials_update_any
+        machothemes_strong__testimonials_version_2__15 => machothemes_strong__testimonials_update_any
+        machothemes_strong__testimonials_version_2__28__3 => machothemes_strong__testimonials_update_any
+        machothemes_strong__testimonials_version_1__16__2 => machothemes_strong__testimonials_update_any
+        machothemes_strong__testimonials_version_2__31 => machothemes_strong__testimonials_update_any
+        machothemes_strong__testimonials_version_2__37 => machothemes_strong__testimonials_update_any
+        machothemes_strong__testimonials_version_2__21 => machothemes_strong__testimonials_update_any
+        machothemes_strong__testimonials_version_2__31__6 => machothemes_strong__testimonials_update_any
+        machothemes_strong__testimonials_version_2__2__2 => machothemes_strong__testimonials_update_any
+        machothemes_strong__testimonials_version_1__16__1 => machothemes_strong__testimonials_update_any
+        machothemes_strong__testimonials_version_2__32__3 => machothemes_strong__testimonials_update_any
+        machothemes_strong__testimonials_version_2__18 => machothemes_strong__testimonials_update_any
+        machothemes_strong__testimonials_version_2__2__9 => machothemes_strong__testimonials_update_any
+        machothemes_strong__testimonials_version_2__22__3 => machothemes_strong__testimonials_update_any
+        machothemes_strong__testimonials_version_2__13__5 => machothemes_strong__testimonials_update_any
+        machothemes_strong__testimonials_version_2__32 => machothemes_strong__testimonials_update_any
+        machothemes_strong__testimonials_version_2__14__2 => machothemes_strong__testimonials_update_any
+        machothemes_strong__testimonials_version_2__27__1 => machothemes_strong__testimonials_update_any
+        machothemes_strong__testimonials_version_2__6__1 => machothemes_strong__testimonials_update_any
+        machothemes_strong__testimonials_version_1__16__8 => machothemes_strong__testimonials_update_any
+        machothemes_strong__testimonials_version_2__16__5 => machothemes_strong__testimonials_update_any
+        machothemes_strong__testimonials_version_2__0__0 => machothemes_strong__testimonials_update_any
+        machothemes_strong__testimonials_version_2__14 => machothemes_strong__testimonials_update_any
+        machothemes_strong__testimonials_version_1__19 => machothemes_strong__testimonials_update_any
+        machothemes_strong__testimonials_version_2__2__3 => machothemes_strong__testimonials_update_any
+        machothemes_strong__testimonials_version_2__39__2 => machothemes_strong__testimonials_update_any
+        machothemes_strong__testimonials_version_2__31__2 => machothemes_strong__testimonials_update_any
+        machothemes_strong__testimonials_version_1__23 => machothemes_strong__testimonials_update_any
+        machothemes_strong__testimonials_version_1__18__2 => machothemes_strong__testimonials_update_any
+        machothemes_strong__testimonials_version_2__30__7 => machothemes_strong__testimonials_update_any
+        machothemes_strong__testimonials_version_2__5__5 => machothemes_strong__testimonials_update_any
+        machothemes_strong__testimonials_version_2__16__4 => machothemes_strong__testimonials_update_any
+        machothemes_strong__testimonials_version_2__17__2 => machothemes_strong__testimonials_update_any
+        machothemes_strong__testimonials_version_2__13__3 => machothemes_strong__testimonials_update_any
+        machothemes_strong__testimonials_version_2__38__1 => machothemes_strong__testimonials_update_any
+        machothemes_strong__testimonials_version_2__26__2 => machothemes_strong__testimonials_update_any
+        machothemes_strong__testimonials_version_2__2__5 => machothemes_strong__testimonials_update_any
+        machothemes_strong__testimonials_version_1__21 => machothemes_strong__testimonials_update_any
+        machothemes_strong__testimonials_version_2__22__5 => machothemes_strong__testimonials_update_any
+        machothemes_strong__testimonials_version_2__6 => machothemes_strong__testimonials_update_any
+        machothemes_strong__testimonials_version_2__16__2 => machothemes_strong__testimonials_update_any
+        machothemes_strong__testimonials_version_2__26__8 => machothemes_strong__testimonials_update_any
+        machothemes_strong__testimonials_version_2__2__6 => machothemes_strong__testimonials_update_any
+        machothemes_strong__testimonials_version_2__21__2 => machothemes_strong__testimonials_update_any
+        machothemes_strong__testimonials_version_2__26__6 => machothemes_strong__testimonials_update_any
+        machothemes_strong__testimonials_version_2__2__8 => machothemes_strong__testimonials_update_any
+        machothemes_strong__testimonials_version_2__16__1 => machothemes_strong__testimonials_update_any
+        machothemes_strong__testimonials_version_2__3 => machothemes_strong__testimonials_update_any
+        machothemes_strong__testimonials_version_2__16 => machothemes_strong__testimonials_update_any
+        machothemes_strong__testimonials_version_2__12__4 => machothemes_strong__testimonials_update_any
+        machothemes_strong__testimonials_version_2__34 => machothemes_strong__testimonials_update_any
+        machothemes_strong__testimonials_version_2__5 => machothemes_strong__testimonials_update_any
+        machothemes_strong__testimonials_version_2__17 => machothemes_strong__testimonials_update_any
+        machothemes_strong__testimonials_version_2__26__3 => machothemes_strong__testimonials_update_any
+        machothemes_strong__testimonials_version_2__28__1 => machothemes_strong__testimonials_update_any
+        machothemes_strong__testimonials_version_2__39__1 => machothemes_strong__testimonials_update_any
+        machothemes_strong__testimonials_version_2__23 => machothemes_strong__testimonials_update_any
+        machothemes_strong__testimonials_version_2__22__4 => machothemes_strong__testimonials_update_any
+        machothemes_strong__testimonials_version_2__3__2 => machothemes_strong__testimonials_update_any
+        machothemes_strong__testimonials_version_2__26__4 => machothemes_strong__testimonials_update_any
+        machothemes_strong__testimonials_version_2__0 => machothemes_strong__testimonials_update_rc1
+        machothemes_strong__testimonials_version_2__17__1 => machothemes_strong__testimonials_update_any
+        machothemes_strong__testimonials_version_2__30__3 => machothemes_strong__testimonials_update_any
+        machothemes_strong__testimonials_version_2__30 => machothemes_strong__testimonials_update_any
+        machothemes_strong__testimonials_version_1__16__12 => machothemes_strong__testimonials_update_any
+        machothemes_strong__testimonials_version_2__38 => machothemes_strong__testimonials_update_any
+        machothemes_strong__testimonials_version_2__22__2 => machothemes_strong__testimonials_update_any
+        machothemes_strong__testimonials_version_2__22__1 => machothemes_strong__testimonials_update_any
+        machothemes_strong__testimonials_version_2__30__5 => machothemes_strong__testimonials_update_any
+        machothemes_strong__testimonials_version_2__23__2 => machothemes_strong__testimonials_update_any
+        machothemes_strong__testimonials_version_2__31__9__1 => machothemes_strong__testimonials_update_any
+        machothemes_strong__testimonials_version_2__20 => machothemes_strong__testimonials_update_any
+        machothemes_strong__testimonials_version_2__25 => machothemes_strong__testimonials_update_any
+        machothemes_strong__testimonials_version_2__2__4 => machothemes_strong__testimonials_update_any
+        machothemes_strong__testimonials_version_1__16__9 => machothemes_strong__testimonials_update_any
+        machothemes_strong__testimonials_version_2__26__1 => machothemes_strong__testimonials_update_any
+        machothemes_strong__testimonials_version_1__18__5 => machothemes_strong__testimonials_update_any
+        machothemes_strong__testimonials_version_2__3__1 => machothemes_strong__testimonials_update_any
+        machothemes_strong__testimonials_version_2__29__1 => machothemes_strong__testimonials_update_any
+        machothemes_strong__testimonials_version_1__18__1 => machothemes_strong__testimonials_update_any
+        machothemes_strong__testimonials_version_2__31__4 => machothemes_strong__testimonials_update_any
+        machothemes_strong__testimonials_version_2__5__3 => machothemes_strong__testimonials_update_any
+        machothemes_strong__testimonials_version_2__1 => machothemes_strong__testimonials_update_any
+        machothemes_strong__testimonials_version_1__22 => machothemes_strong__testimonials_update_any
+        machothemes_strong__testimonials_version_1__16__14 => machothemes_strong__testimonials_update_any
+        machothemes_strong__testimonials_version_2__19__1 => machothemes_strong__testimonials_update_any
+        machothemes_strong__testimonials_version_2__13__1 => machothemes_strong__testimonials_update_any
+        machothemes_strong__testimonials_version_2__26__9 => machothemes_strong__testimonials_update_any
+        machothemes_strong__testimonials_version_2__30__2 => machothemes_strong__testimonials_update_any
+        machothemes_strong__testimonials_version_1__17__1 => machothemes_strong__testimonials_update_any
+        machothemes_strong__testimonials_version_2__26__10 => machothemes_strong__testimonials_update_any
+        machothemes_strong__testimonials_version_1__16__5 => machothemes_strong__testimonials_update_any
+        machothemes_strong__testimonials_version_2__31__8 => machothemes_strong__testimonials_update_any
+        machothemes_strong__testimonials_version_2__5__7 => machothemes_strong__testimonials_update_any
+        machothemes_strong__testimonials_version_1__17 => machothemes_strong__testimonials_update_any
+        machothemes_strong__testimonials_version_2__3__3 => machothemes_strong__testimonials_update_any
+        machothemes_strong__testimonials_version_2__30__8 => machothemes_strong__testimonials_update_any
+        machothemes_strong__testimonials_version_2__24 => machothemes_strong__testimonials_update_any
+        machothemes_strong__testimonials_version_2__23__1 => machothemes_strong__testimonials_update_any
+        machothemes_strong__testimonials_version_2__31__9 => machothemes_strong__testimonials_update_any
+        machothemes_strong__testimonials_version_2__40__0 => machothemes_strong__testimonials_update_any
+        machothemes_strong__testimonials_version_2__7 => machothemes_strong__testimonials_update_any
+        machothemes_strong__testimonials_version_2__8__1 => machothemes_strong__testimonials_update_any
+        machothemes_strong__testimonials_version_2__27 => machothemes_strong__testimonials_update_any
+        machothemes_strong__testimonials_version_2__28__2 => machothemes_strong__testimonials_update_any
+        machothemes_strong__testimonials_version_2__5__2 => machothemes_strong__testimonials_update_any
+        machothemes_strong__testimonials_version_1__16__7 => machothemes_strong__testimonials_update_any
+        machothemes_strong__testimonials_version_2__31__10 => machothemes_strong__testimonials_update_any
+        machothemes_strong__testimonials_version_2__28__4 => machothemes_strong__testimonials_update_any
+        machothemes_strong__testimonials_version_2__30__1 => machothemes_strong__testimonials_update_any
+        machothemes_strong__testimonials_version_1__25__5 => machothemes_strong__testimonials_update_any
+        machothemes_strong__testimonials_version_2__5__4 => machothemes_strong__testimonials_update_any
+        machothemes_strong__testimonials_version_2__26 => machothemes_strong__testimonials_update_any
+        machothemes_strong__testimonials_version_2__19 => machothemes_strong__testimonials_update_any
+        machothemes_strong__testimonials_version_2__18__2 => machothemes_strong__testimonials_update_any
+        machothemes_strong__testimonials_version_2__29 => machothemes_strong__testimonials_update_any
+        machothemes_strong__testimonials_version_2__25__1 => machothemes_strong__testimonials_update_any
+        machothemes_strong__testimonials_version_2__39 => machothemes_strong__testimonials_update_any
+        machothemes_strong__testimonials_version_2__2__11 => machothemes_strong__testimonials_update_any
+        machothemes_strong__testimonials_version_1__18__3 => machothemes_strong__testimonials_update_any
+        machothemes_strong__testimonials_version_2__2 => machothemes_strong__testimonials_update_any
+        machothemes_strong__testimonials_version_any => machothemes_strong__testimonials_update_any
+        machothemes_strong__testimonials_version_2__25__2 => machothemes_strong__testimonials_update_any
+        machothemes_strong__testimonials_version_2__17__3 => machothemes_strong__testimonials_update_any
+        machothemes_strong__testimonials_version_2__22__6 => machothemes_strong__testimonials_update_any
+        machothemes_strong__testimonials_version_2__2__7 => machothemes_strong__testimonials_update_any
+        machothemes_strong__testimonials_version_2__22 => machothemes_strong__testimonials_update_any
+        machothemes_strong__testimonials_version_2__31__7 => machothemes_strong__testimonials_update_any
+        machothemes_strong__testimonials_version_2__2__12 => machothemes_strong__testimonials_update_any
+        machothemes_strong__testimonials_version_2__17__4 => machothemes_strong__testimonials_update_any
+        machothemes_strong__testimonials_version_2__30__9 => machothemes_strong__testimonials_update_any
+        machothemes_strong__testimonials_version_2__5__1 => machothemes_strong__testimonials_update_any
+        machothemes_strong__testimonials_version_1__17__2 => machothemes_strong__testimonials_update_any
+        machothemes_strong__testimonials_version_2__13__4 => machothemes_strong__testimonials_update_any
+        machothemes_strong__testimonials_version_1__16 => machothemes_strong__testimonials_update_any
+        machothemes_strong__testimonials_version_2__35 => machothemes_strong__testimonials_update_any
+        machothemes_strong__testimonials_version_2__30__4 => machothemes_strong__testimonials_update_any
+        machothemes_strong__testimonials_version_2__28__0 => ((machothemes_strong__testimonials_update_beta__1 & !machothemes_strong__testimonials_update_any) | (!machothemes_strong__testimonials_update_beta__1 & machothemes_strong__testimonials_update_any))
+        machothemes_strong__testimonials_version_2__31__5 => machothemes_strong__testimonials_update_any
+        machothemes_strong__testimonials_version_2__21__1 => machothemes_strong__testimonials_update_any
+        machothemes_strong__testimonials_version_2__27__2 => machothemes_strong__testimonials_update_any
+        machothemes_strong__testimonials_version_1__16__11 => machothemes_strong__testimonials_update_any
+        machothemes_strong__testimonials_version_1__20 => machothemes_strong__testimonials_update_any
+        machothemes_strong__testimonials_version_2__32__4 => machothemes_strong__testimonials_update_any
+        machothemes_strong__testimonials_version_1__16__10 => machothemes_strong__testimonials_update_any
+        machothemes_strong__testimonials_version_1__20__2 => machothemes_strong__testimonials_update_any
+        machothemes_strong__testimonials_version_1__25__7 => machothemes_strong__testimonials_update_any
+        machothemes_strong__testimonials_version_1__18__4 => machothemes_strong__testimonials_update_any
+        machothemes_strong__testimonials_version_2__17__5 => machothemes_strong__testimonials_update_any
+        machothemes_strong__testimonials_version_1__16__4 => machothemes_strong__testimonials_update_any
+        machothemes_strong__testimonials_version_2__2__10 => machothemes_strong__testimonials_update_any
+        machothemes_strong__testimonials_version_2__14__1 => machothemes_strong__testimonials_update_any
+        machothemes_strong__testimonials_version_2__0__1 => machothemes_strong__testimonials_update_any
+        machothemes_strong__testimonials_version_1__16__13 => machothemes_strong__testimonials_update_any
+        machothemes_strong__testimonials_version_2__36 => machothemes_strong__testimonials_update_any
+        machothemes_strong__testimonials_version_2__26__5 => machothemes_strong__testimonials_update_any
+        machothemes_strong__testimonials_version_2__14__3 => machothemes_strong__testimonials_update_any
+        machothemes_strong__testimonials_version_2__32__2 => machothemes_strong__testimonials_update_any
+        machothemes_strong__testimonials_version_2__19__2 => machothemes_strong__testimonials_update_any
+        machothemes_strong__testimonials_version_2__31__3 => machothemes_strong__testimonials_update_any
+        machothemes_strong__testimonials_version_2__32__1 => machothemes_strong__testimonials_update_any
+        machothemes_strong__testimonials_version_2__16__3 => machothemes_strong__testimonials_update_any
+        machothemes_strong__testimonials_version_2__13__2 => machothemes_strong__testimonials_update_any
+        machothemes_strong__testimonials_version_1__18 => machothemes_strong__testimonials_update_any
+        machothemes_strong__testimonials_version_1__16__3 => machothemes_strong__testimonials_update_any
+        machothemes_strong__testimonials_version_1__20__1 => machothemes_strong__testimonials_update_any
+        machothemes_strong__testimonials_version_2__2__1 => machothemes_strong__testimonials_update_any
+        machothemes_strong__testimonials_version_2__30__6 => machothemes_strong__testimonials_update_any
+        machothemes_strong__testimonials_version_2__26__7 => machothemes_strong__testimonials_update_any

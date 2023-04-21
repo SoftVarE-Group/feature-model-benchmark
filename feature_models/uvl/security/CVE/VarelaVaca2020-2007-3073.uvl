@@ -1,0 +1,243 @@
+features
+        CVE_2007_3073
+                optional
+                        configs
+                                mandatory
+                                        rc0
+                                                alternative
+                                                        rc0_apple
+                                                                mandatory
+                                                                        rc0_apple_mac__os__x
+                                                                                mandatory
+                                                                                        rc0_apple_mac__os__x_version
+                                                                                                alternative
+                                                                                                        rc0_apple_mac__os__x_version_10__3__6
+                                                                                                        rc0_apple_mac__os__x_version_10__4__3
+                                                                                                        rc0_apple_mac__os__x_version_10__3
+                                                                                                        rc0_apple_mac__os__x_version_10__2__5
+                                                                                                        rc0_apple_mac__os__x_version_any
+                                                                                                        rc0_apple_mac__os__x_version_10__3__1
+                                                                                                        rc0_apple_mac__os__x_version_10__2__1
+                                                                                                        rc0_apple_mac__os__x_version_10__3__9
+                                                                                                        rc0_apple_mac__os__x_version_10__1__3
+                                                                                                        rc0_apple_mac__os__x_version_10__4__9
+                                                                                                        rc0_apple_mac__os__x_version_10__2__4
+                                                                                                        rc0_apple_mac__os__x_version_10__0__2
+                                                                                                        rc0_apple_mac__os__x_version_10__1__1
+                                                                                                        rc0_apple_mac__os__x_version_10__2__7
+                                                                                                        rc0_apple_mac__os__x_version_10__4__4
+                                                                                                        rc0_apple_mac__os__x_version_10__2__2
+                                                                                                        rc0_apple_mac__os__x_version_10__0
+                                                                                                        rc0_apple_mac__os__x_version_10__3__2
+                                                                                                        rc0_apple_mac__os__x_version_10__2__3
+                                                                                                        rc0_apple_mac__os__x_version_10__4__6
+                                                                                                        rc0_apple_mac__os__x_version_10__3__7
+                                                                                                        rc0_apple_mac__os__x_version_10__1
+                                                                                                        rc0_apple_mac__os__x_version_10__4__7
+                                                                                                        rc0_apple_mac__os__x_version_10__2__6
+                                                                                                        rc0_apple_mac__os__x_version_10__0__3
+                                                                                                        rc0_apple_mac__os__x_version_10__4__8
+                                                                                                        rc0_apple_mac__os__x_version_10__3__4
+                                                                                                        rc0_apple_mac__os__x_version_10__2
+                                                                                                        rc0_apple_mac__os__x_version_10__4__5
+                                                                                                        rc0_apple_mac__os__x_version_10__0__1
+                                                                                                        rc0_apple_mac__os__x_version_10__4
+                                                                                                        rc0_apple_mac__os__x_version_10__0__4
+                                                                                                        rc0_apple_mac__os__x_version_10__4__2
+                                                                                                        rc0_apple_mac__os__x_version_10__1__4
+                                                                                                        rc0_apple_mac__os__x_version_10__4__1
+                                                                                                        rc0_apple_mac__os__x_version_10__1__5
+                                                                                                        rc0_apple_mac__os__x_version_10__3__5
+                                                                                                        rc0_apple_mac__os__x_version_10__1__2
+                                                                                                        rc0_apple_mac__os__x_version_10__2__8
+                                                                                                        rc0_apple_mac__os__x_version_10__3__8
+                                                                                                        rc0_apple_mac__os__x_version_10__3__3
+                                                        rc0_unix
+                                                                mandatory
+                                                                        rc0_unix_unix
+                mandatory
+                        types
+                                mandatory
+                                        application
+                        sources
+                                mandatory
+                                        nvd
+                        exploits
+                                optional
+                                        direct
+                                        indirect
+                        mozilla
+                                mandatory
+                                        mozilla_firefox
+                                                mandatory
+                                                        mozilla_firefox_version
+                                                                alternative
+                                                                        mozilla_firefox_version_1__5__0__3
+                                                                        mozilla_firefox_version_1__0__6
+                                                                        mozilla_firefox_version_1__5__7
+                                                                        mozilla_firefox_version_any
+                                                                        mozilla_firefox_version_0__3
+                                                                        mozilla_firefox_version_1__5__8
+                                                                        mozilla_firefox_version_1__5__0__10
+                                                                        mozilla_firefox_version_0__9
+                                                                        mozilla_firefox_version_0__5
+                                                                        mozilla_firefox_version_2__0__0__4
+                                                                        mozilla_firefox_version_1__5__0__1
+                                                                        mozilla_firefox_version_1__0
+                                                                        mozilla_firefox_version_0__6__1
+                                                                        mozilla_firefox_version_2__0__0__2
+                                                                        mozilla_firefox_version_1__5__0__5
+                                                                        mozilla_firefox_version_1__5__0__7
+                                                                        mozilla_firefox_version_0__1
+                                                                        mozilla_firefox_version_0__9__2
+                                                                        mozilla_firefox_version_1__5__5
+                                                                        mozilla_firefox_version_0__6
+                                                                        mozilla_firefox_version_1__5__0__8
+                                                                        mozilla_firefox_version_1__0__4
+                                                                        mozilla_firefox_version_1__5
+                                                                        mozilla_firefox_version_0__2
+                                                                        mozilla_firefox_version_1__5__0__6
+                                                                        mozilla_firefox_version_1__5__2
+                                                                        mozilla_firefox_version_1__5__0__11
+                                                                        mozilla_firefox_version_2__0
+                                                                        mozilla_firefox_version_1__0__1
+                                                                        mozilla_firefox_version_1__0__7
+                                                                        mozilla_firefox_version_2__0__0__1
+                                                                        mozilla_firefox_version_1__5__3
+                                                                        mozilla_firefox_version_1__5__0__2
+                                                                        mozilla_firefox_version_2__0__0__3
+                                                                        mozilla_firefox_version_0__9__1
+                                                                        mozilla_firefox_version_0__8
+                                                                        mozilla_firefox_version_1__5__0__9
+                                                                        mozilla_firefox_version_1__5__4
+                                                                        mozilla_firefox_version_0__10
+                                                                        mozilla_firefox_version_1__0__8
+                                                                        mozilla_firefox_version_1__5__0__12
+                                                                        mozilla_firefox_version_1__0__2
+                                                                        mozilla_firefox_version_0__10__1
+                                                                        mozilla_firefox_version_0__7__1
+                                                                        mozilla_firefox_version_1__0__3
+                                                                        mozilla_firefox_version_1__0__5
+                                                                        mozilla_firefox_version_0__4
+                                                                        mozilla_firefox_version_0__7
+                                                                        mozilla_firefox_version_1__5__0__4
+                                                                        mozilla_firefox_version_1__5__6
+                                                                        mozilla_firefox_version_1__8
+                                                                        mozilla_firefox_version_1__4__1
+                                                                        mozilla_firefox_version_1__5__1
+                                                                        mozilla_firefox_version_0__9__3
+                                                        mozilla_firefox_update
+                                                                alternative
+                                                                        mozilla_firefox_update_any
+                                                                        mozilla_firefox_update_preview__release
+                                                                        mozilla_firefox_update_rc
+                                                                        mozilla_firefox_update_beta1
+                                                                        mozilla_firefox_update_beta2
+
+constraints
+        mozilla_firefox => application
+        mozilla_firefox_version_1__5__0__3 => mozilla_firefox_update_any
+        mozilla_firefox_version_1__5__0__3 => (rc0)
+        mozilla_firefox_version_1__0__6 => mozilla_firefox_update_any
+        mozilla_firefox_version_1__0__6 => (rc0)
+        mozilla_firefox_version_1__5__7 => mozilla_firefox_update_any
+        mozilla_firefox_version_1__5__7 => (rc0)
+        mozilla_firefox_version_any => mozilla_firefox_update_any
+        mozilla_firefox_version_any => (rc0)
+        mozilla_firefox_version_0__3 => mozilla_firefox_update_any
+        mozilla_firefox_version_0__3 => (rc0)
+        mozilla_firefox_version_1__5__8 => mozilla_firefox_update_any
+        mozilla_firefox_version_1__5__8 => (rc0)
+        mozilla_firefox_version_1__5__0__10 => mozilla_firefox_update_any
+        mozilla_firefox_version_1__5__0__10 => (rc0)
+        mozilla_firefox_version_0__9 => ((mozilla_firefox_update_any & (rc0) & !mozilla_firefox_update_rc & (rc0)) | (!mozilla_firefox_update_any & (rc0) & mozilla_firefox_update_rc & (rc0)))
+        mozilla_firefox_version_0__5 => mozilla_firefox_update_any
+        mozilla_firefox_version_0__5 => (rc0)
+        mozilla_firefox_version_2__0__0__4 => mozilla_firefox_update_any
+        mozilla_firefox_version_2__0__0__4 => (rc0)
+        mozilla_firefox_version_1__5__0__1 => mozilla_firefox_update_any
+        mozilla_firefox_version_1__5__0__1 => (rc0)
+        mozilla_firefox_version_1__0 => ((mozilla_firefox_update_any & (rc0) & !mozilla_firefox_update_preview__release & (rc0)) | (!mozilla_firefox_update_any & (rc0) & mozilla_firefox_update_preview__release & (rc0)))
+        mozilla_firefox_version_0__6__1 => mozilla_firefox_update_any
+        mozilla_firefox_version_0__6__1 => (rc0)
+        mozilla_firefox_version_2__0__0__2 => mozilla_firefox_update_any
+        mozilla_firefox_version_2__0__0__2 => (rc0)
+        mozilla_firefox_version_1__5__0__5 => mozilla_firefox_update_any
+        mozilla_firefox_version_1__5__0__5 => (rc0)
+        mozilla_firefox_version_1__5__0__7 => mozilla_firefox_update_any
+        mozilla_firefox_version_1__5__0__7 => (rc0)
+        mozilla_firefox_version_0__1 => mozilla_firefox_update_any
+        mozilla_firefox_version_0__1 => (rc0)
+        mozilla_firefox_version_0__9__2 => mozilla_firefox_update_any
+        mozilla_firefox_version_0__9__2 => (rc0)
+        mozilla_firefox_version_1__5__5 => mozilla_firefox_update_any
+        mozilla_firefox_version_1__5__5 => (rc0)
+        mozilla_firefox_version_0__6 => mozilla_firefox_update_any
+        mozilla_firefox_version_0__6 => (rc0)
+        mozilla_firefox_version_1__5__0__8 => mozilla_firefox_update_any
+        mozilla_firefox_version_1__5__0__8 => (rc0)
+        mozilla_firefox_version_1__0__4 => mozilla_firefox_update_any
+        mozilla_firefox_version_1__0__4 => (rc0)
+        mozilla_firefox_version_1__5 => ((mozilla_firefox_update_any & (rc0) & !mozilla_firefox_update_beta1 & (rc0) & !mozilla_firefox_update_beta2 & (rc0)) | (!mozilla_firefox_update_any & (rc0) & mozilla_firefox_update_beta1 & (rc0) & !mozilla_firefox_update_beta2 & (rc0)) | (!mozilla_firefox_update_any & (rc0) & !mozilla_firefox_update_beta1 & (rc0) & mozilla_firefox_update_beta2 & (rc0)))
+        mozilla_firefox_version_0__2 => mozilla_firefox_update_any
+        mozilla_firefox_version_0__2 => (rc0)
+        mozilla_firefox_version_1__5__0__6 => mozilla_firefox_update_any
+        mozilla_firefox_version_1__5__0__6 => (rc0)
+        mozilla_firefox_version_1__5__2 => mozilla_firefox_update_any
+        mozilla_firefox_version_1__5__2 => (rc0)
+        mozilla_firefox_version_1__5__0__11 => mozilla_firefox_update_any
+        mozilla_firefox_version_1__5__0__11 => (rc0)
+        mozilla_firefox_version_2__0 => mozilla_firefox_update_any
+        mozilla_firefox_version_2__0 => (rc0)
+        mozilla_firefox_version_1__0__1 => mozilla_firefox_update_any
+        mozilla_firefox_version_1__0__1 => (rc0)
+        mozilla_firefox_version_1__0__7 => mozilla_firefox_update_any
+        mozilla_firefox_version_1__0__7 => (rc0)
+        mozilla_firefox_version_2__0__0__1 => mozilla_firefox_update_any
+        mozilla_firefox_version_2__0__0__1 => (rc0)
+        mozilla_firefox_version_1__5__3 => mozilla_firefox_update_any
+        mozilla_firefox_version_1__5__3 => (rc0)
+        mozilla_firefox_version_1__5__0__2 => mozilla_firefox_update_any
+        mozilla_firefox_version_1__5__0__2 => (rc0)
+        mozilla_firefox_version_2__0__0__3 => mozilla_firefox_update_any
+        mozilla_firefox_version_2__0__0__3 => (rc0)
+        mozilla_firefox_version_0__9__1 => mozilla_firefox_update_any
+        mozilla_firefox_version_0__9__1 => (rc0)
+        mozilla_firefox_version_0__8 => mozilla_firefox_update_any
+        mozilla_firefox_version_0__8 => (rc0)
+        mozilla_firefox_version_1__5__0__9 => mozilla_firefox_update_any
+        mozilla_firefox_version_1__5__0__9 => (rc0)
+        mozilla_firefox_version_1__5__4 => mozilla_firefox_update_any
+        mozilla_firefox_version_1__5__4 => (rc0)
+        mozilla_firefox_version_0__10 => mozilla_firefox_update_any
+        mozilla_firefox_version_0__10 => (rc0)
+        mozilla_firefox_version_1__0__8 => mozilla_firefox_update_any
+        mozilla_firefox_version_1__0__8 => (rc0)
+        mozilla_firefox_version_1__5__0__12 => mozilla_firefox_update_any
+        mozilla_firefox_version_1__5__0__12 => (rc0)
+        mozilla_firefox_version_1__0__2 => mozilla_firefox_update_any
+        mozilla_firefox_version_1__0__2 => (rc0)
+        mozilla_firefox_version_0__10__1 => mozilla_firefox_update_any
+        mozilla_firefox_version_0__10__1 => (rc0)
+        mozilla_firefox_version_0__7__1 => mozilla_firefox_update_any
+        mozilla_firefox_version_0__7__1 => (rc0)
+        mozilla_firefox_version_1__0__3 => mozilla_firefox_update_any
+        mozilla_firefox_version_1__0__3 => (rc0)
+        mozilla_firefox_version_1__0__5 => mozilla_firefox_update_any
+        mozilla_firefox_version_1__0__5 => (rc0)
+        mozilla_firefox_version_0__4 => mozilla_firefox_update_any
+        mozilla_firefox_version_0__4 => (rc0)
+        mozilla_firefox_version_0__7 => mozilla_firefox_update_any
+        mozilla_firefox_version_0__7 => (rc0)
+        mozilla_firefox_version_1__5__0__4 => mozilla_firefox_update_any
+        mozilla_firefox_version_1__5__0__4 => (rc0)
+        mozilla_firefox_version_1__5__6 => mozilla_firefox_update_any
+        mozilla_firefox_version_1__5__6 => (rc0)
+        mozilla_firefox_version_1__8 => mozilla_firefox_update_any
+        mozilla_firefox_version_1__8 => (rc0)
+        mozilla_firefox_version_1__4__1 => mozilla_firefox_update_any
+        mozilla_firefox_version_1__4__1 => (rc0)
+        mozilla_firefox_version_1__5__1 => mozilla_firefox_update_any
+        mozilla_firefox_version_1__5__1 => (rc0)
+        mozilla_firefox_version_0__9__3 => mozilla_firefox_update_any
+        mozilla_firefox_version_0__9__3 => (rc0)

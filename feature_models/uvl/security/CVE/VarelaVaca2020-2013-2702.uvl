@@ -1,0 +1,282 @@
+features
+        CVE_2013_2702
+                optional
+                        configs
+                                mandatory
+                                        rc0
+                                                mandatory
+                                                        rc0_wordpress
+                                                                mandatory
+                                                                        rc0_wordpress_wordpress
+                mandatory
+                        types
+                                mandatory
+                                        application
+                        sources
+                                mandatory
+                                        nvd
+                        exploits
+                                optional
+                                        direct
+                                        indirect
+                        thulasidas
+                                mandatory
+                                        thulasidas_easy_adsense_lite
+                                                mandatory
+                                                        thulasidas_easy_adsense_lite_version
+                                                                alternative
+                                                                        thulasidas_easy_adsense_lite_version_2__21
+                                                                        thulasidas_easy_adsense_lite_version_2__91
+                                                                        thulasidas_easy_adsense_lite_version_1__02
+                                                                        thulasidas_easy_adsense_lite_version_5__08
+                                                                        thulasidas_easy_adsense_lite_version_2__55
+                                                                        thulasidas_easy_adsense_lite_version_2__70
+                                                                        thulasidas_easy_adsense_lite_version_1__60
+                                                                        thulasidas_easy_adsense_lite_version_2__53
+                                                                        thulasidas_easy_adsense_lite_version_2__72
+                                                                        thulasidas_easy_adsense_lite_version_2__31
+                                                                        thulasidas_easy_adsense_lite_version_2__34
+                                                                        thulasidas_easy_adsense_lite_version_2__01
+                                                                        thulasidas_easy_adsense_lite_version_1__61
+                                                                        thulasidas_easy_adsense_lite_version_5__00
+                                                                        thulasidas_easy_adsense_lite_version_5__03
+                                                                        thulasidas_easy_adsense_lite_version_2__81
+                                                                        thulasidas_easy_adsense_lite_version_2__97
+                                                                        thulasidas_easy_adsense_lite_version_2__37
+                                                                        thulasidas_easy_adsense_lite_version_5__12
+                                                                        thulasidas_easy_adsense_lite_version_1__20
+                                                                        thulasidas_easy_adsense_lite_version_2__38
+                                                                        thulasidas_easy_adsense_lite_version_5__02
+                                                                        thulasidas_easy_adsense_lite_version_1__30
+                                                                        thulasidas_easy_adsense_lite_version_2__90
+                                                                        thulasidas_easy_adsense_lite_version_6__03
+                                                                        thulasidas_easy_adsense_lite_version_2__61
+                                                                        thulasidas_easy_adsense_lite_version_2__57
+                                                                        thulasidas_easy_adsense_lite_version_2__64
+                                                                        thulasidas_easy_adsense_lite_version_3__01
+                                                                        thulasidas_easy_adsense_lite_version_1__40
+                                                                        thulasidas_easy_adsense_lite_version_1__50
+                                                                        thulasidas_easy_adsense_lite_version_2__78
+                                                                        thulasidas_easy_adsense_lite_version_2__80
+                                                                        thulasidas_easy_adsense_lite_version_5__23
+                                                                        thulasidas_easy_adsense_lite_version_6__04
+                                                                        thulasidas_easy_adsense_lite_version_2__24
+                                                                        thulasidas_easy_adsense_lite_version_2__79
+                                                                        thulasidas_easy_adsense_lite_version_5__17
+                                                                        thulasidas_easy_adsense_lite_version_6__01
+                                                                        thulasidas_easy_adsense_lite_version_4__03
+                                                                        thulasidas_easy_adsense_lite_version_2__52
+                                                                        thulasidas_easy_adsense_lite_version_2__75
+                                                                        thulasidas_easy_adsense_lite_version_2__35
+                                                                        thulasidas_easy_adsense_lite_version_2__88
+                                                                        thulasidas_easy_adsense_lite_version_4__10
+                                                                        thulasidas_easy_adsense_lite_version_2__86
+                                                                        thulasidas_easy_adsense_lite_version_5__19
+                                                                        thulasidas_easy_adsense_lite_version_5__10
+                                                                        thulasidas_easy_adsense_lite_version_2__73
+                                                                        thulasidas_easy_adsense_lite_version_2__95
+                                                                        thulasidas_easy_adsense_lite_version_2__36
+                                                                        thulasidas_easy_adsense_lite_version_6__02
+                                                                        thulasidas_easy_adsense_lite_version_5__09
+                                                                        thulasidas_easy_adsense_lite_version_5__04
+                                                                        thulasidas_easy_adsense_lite_version_5__11
+                                                                        thulasidas_easy_adsense_lite_version_5__14
+                                                                        thulasidas_easy_adsense_lite_version_2__71
+                                                                        thulasidas_easy_adsense_lite_version_2__50
+                                                                        thulasidas_easy_adsense_lite_version_4__00
+                                                                        thulasidas_easy_adsense_lite_version_2__11
+                                                                        thulasidas_easy_adsense_lite_version_2__62
+                                                                        thulasidas_easy_adsense_lite_version_4__09
+                                                                        thulasidas_easy_adsense_lite_version_2__54
+                                                                        thulasidas_easy_adsense_lite_version_5__01
+                                                                        thulasidas_easy_adsense_lite_version_3__00
+                                                                        thulasidas_easy_adsense_lite_version_2__59
+                                                                        thulasidas_easy_adsense_lite_version_6__05
+                                                                        thulasidas_easy_adsense_lite_version_2__32
+                                                                        thulasidas_easy_adsense_lite_version_4__04
+                                                                        thulasidas_easy_adsense_lite_version_1__10
+                                                                        thulasidas_easy_adsense_lite_version_2__63
+                                                                        thulasidas_easy_adsense_lite_version_2__85
+                                                                        thulasidas_easy_adsense_lite_version_2__30
+                                                                        thulasidas_easy_adsense_lite_version_1__01
+                                                                        thulasidas_easy_adsense_lite_version_5__18
+                                                                        thulasidas_easy_adsense_lite_version_2__60
+                                                                        thulasidas_easy_adsense_lite_version_1__80
+                                                                        thulasidas_easy_adsense_lite_version_4__06
+                                                                        thulasidas_easy_adsense_lite_version_6__00
+                                                                        thulasidas_easy_adsense_lite_version_5__22
+                                                                        thulasidas_easy_adsense_lite_version_2__93
+                                                                        thulasidas_easy_adsense_lite_version_2__51
+                                                                        thulasidas_easy_adsense_lite_version_4__02
+                                                                        thulasidas_easy_adsense_lite_version_2__94
+                                                                        thulasidas_easy_adsense_lite_version_5__15
+                                                                        thulasidas_easy_adsense_lite_version_2__96
+                                                                        thulasidas_easy_adsense_lite_version_5__20
+                                                                        thulasidas_easy_adsense_lite_version_5__05
+                                                                        thulasidas_easy_adsense_lite_version_5__16
+                                                                        thulasidas_easy_adsense_lite_version_2__99
+                                                                        thulasidas_easy_adsense_lite_version_2__98
+                                                                        thulasidas_easy_adsense_lite_version_2__82
+                                                                        thulasidas_easy_adsense_lite_version_2__89
+                                                                        thulasidas_easy_adsense_lite_version_2__84
+                                                                        thulasidas_easy_adsense_lite_version_1__82
+                                                                        thulasidas_easy_adsense_lite_version_1__00
+                                                                        thulasidas_easy_adsense_lite_version_2__20
+                                                                        thulasidas_easy_adsense_lite_version_5__13
+                                                                        thulasidas_easy_adsense_lite_version_2__25
+                                                                        thulasidas_easy_adsense_lite_version_2__76
+                                                                        thulasidas_easy_adsense_lite_version_2__83
+                                                                        thulasidas_easy_adsense_lite_version_1__81
+                                                                        thulasidas_easy_adsense_lite_version_2__77
+                                                                        thulasidas_easy_adsense_lite_version_2__00
+                                                                        thulasidas_easy_adsense_lite_version_2__56
+                                                                        thulasidas_easy_adsense_lite_version_5__07
+                                                                        thulasidas_easy_adsense_lite_version_2__23
+                                                                        thulasidas_easy_adsense_lite_version_2__87
+                                                                        thulasidas_easy_adsense_lite_version_5__21
+                                                                        thulasidas_easy_adsense_lite_version_4__07
+                                                                        thulasidas_easy_adsense_lite_version_5__06
+                                                                        thulasidas_easy_adsense_lite_version_5__24
+                                                                        thulasidas_easy_adsense_lite_version_2__41
+                                                                        thulasidas_easy_adsense_lite_version_1__70
+                                                                        thulasidas_easy_adsense_lite_version_2__92
+                                                                        thulasidas_easy_adsense_lite_version_4__05
+                                                                        thulasidas_easy_adsense_lite_version_2__33
+                                                                        thulasidas_easy_adsense_lite_version_6__06
+                                                                        thulasidas_easy_adsense_lite_version_2__40
+                                                                        thulasidas_easy_adsense_lite_version_4__01
+                                                                        thulasidas_easy_adsense_lite_version_2__26
+                                                                        thulasidas_easy_adsense_lite_version_4__08
+                                                                        thulasidas_easy_adsense_lite_version_2__22
+                                                                        thulasidas_easy_adsense_lite_version_3__02
+                                                                        thulasidas_easy_adsense_lite_version_2__58
+                                                                        thulasidas_easy_adsense_lite_version_2__10
+
+constraints
+        thulasidas_easy_adsense_lite => application
+        thulasidas_easy_adsense_lite_version_2__21 => (rc0)
+        thulasidas_easy_adsense_lite_version_2__91 => (rc0)
+        thulasidas_easy_adsense_lite_version_1__02 => (rc0)
+        thulasidas_easy_adsense_lite_version_5__08 => (rc0)
+        thulasidas_easy_adsense_lite_version_2__55 => (rc0)
+        thulasidas_easy_adsense_lite_version_2__70 => (rc0)
+        thulasidas_easy_adsense_lite_version_1__60 => (rc0)
+        thulasidas_easy_adsense_lite_version_2__53 => (rc0)
+        thulasidas_easy_adsense_lite_version_2__72 => (rc0)
+        thulasidas_easy_adsense_lite_version_2__31 => (rc0)
+        thulasidas_easy_adsense_lite_version_2__34 => (rc0)
+        thulasidas_easy_adsense_lite_version_2__01 => (rc0)
+        thulasidas_easy_adsense_lite_version_1__61 => (rc0)
+        thulasidas_easy_adsense_lite_version_5__00 => (rc0)
+        thulasidas_easy_adsense_lite_version_5__03 => (rc0)
+        thulasidas_easy_adsense_lite_version_2__81 => (rc0)
+        thulasidas_easy_adsense_lite_version_2__97 => (rc0)
+        thulasidas_easy_adsense_lite_version_2__37 => (rc0)
+        thulasidas_easy_adsense_lite_version_5__12 => (rc0)
+        thulasidas_easy_adsense_lite_version_1__20 => (rc0)
+        thulasidas_easy_adsense_lite_version_2__38 => (rc0)
+        thulasidas_easy_adsense_lite_version_5__02 => (rc0)
+        thulasidas_easy_adsense_lite_version_1__30 => (rc0)
+        thulasidas_easy_adsense_lite_version_2__90 => (rc0)
+        thulasidas_easy_adsense_lite_version_6__03 => (rc0)
+        thulasidas_easy_adsense_lite_version_2__61 => (rc0)
+        thulasidas_easy_adsense_lite_version_2__57 => (rc0)
+        thulasidas_easy_adsense_lite_version_2__64 => (rc0)
+        thulasidas_easy_adsense_lite_version_3__01 => (rc0)
+        thulasidas_easy_adsense_lite_version_1__40 => (rc0)
+        thulasidas_easy_adsense_lite_version_1__50 => (rc0)
+        thulasidas_easy_adsense_lite_version_2__78 => (rc0)
+        thulasidas_easy_adsense_lite_version_2__80 => (rc0)
+        thulasidas_easy_adsense_lite_version_5__23 => (rc0)
+        thulasidas_easy_adsense_lite_version_6__04 => (rc0)
+        thulasidas_easy_adsense_lite_version_2__24 => (rc0)
+        thulasidas_easy_adsense_lite_version_2__79 => (rc0)
+        thulasidas_easy_adsense_lite_version_5__17 => (rc0)
+        thulasidas_easy_adsense_lite_version_6__01 => (rc0)
+        thulasidas_easy_adsense_lite_version_4__03 => (rc0)
+        thulasidas_easy_adsense_lite_version_2__52 => (rc0)
+        thulasidas_easy_adsense_lite_version_2__75 => (rc0)
+        thulasidas_easy_adsense_lite_version_2__35 => (rc0)
+        thulasidas_easy_adsense_lite_version_2__88 => (rc0)
+        thulasidas_easy_adsense_lite_version_4__10 => (rc0)
+        thulasidas_easy_adsense_lite_version_2__86 => (rc0)
+        thulasidas_easy_adsense_lite_version_5__19 => (rc0)
+        thulasidas_easy_adsense_lite_version_5__10 => (rc0)
+        thulasidas_easy_adsense_lite_version_2__73 => (rc0)
+        thulasidas_easy_adsense_lite_version_2__95 => (rc0)
+        thulasidas_easy_adsense_lite_version_2__36 => (rc0)
+        thulasidas_easy_adsense_lite_version_6__02 => (rc0)
+        thulasidas_easy_adsense_lite_version_5__09 => (rc0)
+        thulasidas_easy_adsense_lite_version_5__04 => (rc0)
+        thulasidas_easy_adsense_lite_version_5__11 => (rc0)
+        thulasidas_easy_adsense_lite_version_5__14 => (rc0)
+        thulasidas_easy_adsense_lite_version_2__71 => (rc0)
+        thulasidas_easy_adsense_lite_version_2__50 => (rc0)
+        thulasidas_easy_adsense_lite_version_4__00 => (rc0)
+        thulasidas_easy_adsense_lite_version_2__11 => (rc0)
+        thulasidas_easy_adsense_lite_version_2__62 => (rc0)
+        thulasidas_easy_adsense_lite_version_4__09 => (rc0)
+        thulasidas_easy_adsense_lite_version_2__54 => (rc0)
+        thulasidas_easy_adsense_lite_version_5__01 => (rc0)
+        thulasidas_easy_adsense_lite_version_3__00 => (rc0)
+        thulasidas_easy_adsense_lite_version_2__59 => (rc0)
+        thulasidas_easy_adsense_lite_version_6__05 => (rc0)
+        thulasidas_easy_adsense_lite_version_2__32 => (rc0)
+        thulasidas_easy_adsense_lite_version_4__04 => (rc0)
+        thulasidas_easy_adsense_lite_version_1__10 => (rc0)
+        thulasidas_easy_adsense_lite_version_2__63 => (rc0)
+        thulasidas_easy_adsense_lite_version_2__85 => (rc0)
+        thulasidas_easy_adsense_lite_version_2__30 => (rc0)
+        thulasidas_easy_adsense_lite_version_1__01 => (rc0)
+        thulasidas_easy_adsense_lite_version_5__18 => (rc0)
+        thulasidas_easy_adsense_lite_version_2__60 => (rc0)
+        thulasidas_easy_adsense_lite_version_1__80 => (rc0)
+        thulasidas_easy_adsense_lite_version_4__06 => (rc0)
+        thulasidas_easy_adsense_lite_version_6__00 => (rc0)
+        thulasidas_easy_adsense_lite_version_5__22 => (rc0)
+        thulasidas_easy_adsense_lite_version_2__93 => (rc0)
+        thulasidas_easy_adsense_lite_version_2__51 => (rc0)
+        thulasidas_easy_adsense_lite_version_4__02 => (rc0)
+        thulasidas_easy_adsense_lite_version_2__94 => (rc0)
+        thulasidas_easy_adsense_lite_version_5__15 => (rc0)
+        thulasidas_easy_adsense_lite_version_2__96 => (rc0)
+        thulasidas_easy_adsense_lite_version_5__20 => (rc0)
+        thulasidas_easy_adsense_lite_version_5__05 => (rc0)
+        thulasidas_easy_adsense_lite_version_5__16 => (rc0)
+        thulasidas_easy_adsense_lite_version_2__99 => (rc0)
+        thulasidas_easy_adsense_lite_version_2__98 => (rc0)
+        thulasidas_easy_adsense_lite_version_2__82 => (rc0)
+        thulasidas_easy_adsense_lite_version_2__89 => (rc0)
+        thulasidas_easy_adsense_lite_version_2__84 => (rc0)
+        thulasidas_easy_adsense_lite_version_1__82 => (rc0)
+        thulasidas_easy_adsense_lite_version_1__00 => (rc0)
+        thulasidas_easy_adsense_lite_version_2__20 => (rc0)
+        thulasidas_easy_adsense_lite_version_5__13 => (rc0)
+        thulasidas_easy_adsense_lite_version_2__25 => (rc0)
+        thulasidas_easy_adsense_lite_version_2__76 => (rc0)
+        thulasidas_easy_adsense_lite_version_2__83 => (rc0)
+        thulasidas_easy_adsense_lite_version_1__81 => (rc0)
+        thulasidas_easy_adsense_lite_version_2__77 => (rc0)
+        thulasidas_easy_adsense_lite_version_2__00 => (rc0)
+        thulasidas_easy_adsense_lite_version_2__56 => (rc0)
+        thulasidas_easy_adsense_lite_version_5__07 => (rc0)
+        thulasidas_easy_adsense_lite_version_2__23 => (rc0)
+        thulasidas_easy_adsense_lite_version_2__87 => (rc0)
+        thulasidas_easy_adsense_lite_version_5__21 => (rc0)
+        thulasidas_easy_adsense_lite_version_4__07 => (rc0)
+        thulasidas_easy_adsense_lite_version_5__06 => (rc0)
+        thulasidas_easy_adsense_lite_version_5__24 => (rc0)
+        thulasidas_easy_adsense_lite_version_2__41 => (rc0)
+        thulasidas_easy_adsense_lite_version_1__70 => (rc0)
+        thulasidas_easy_adsense_lite_version_2__92 => (rc0)
+        thulasidas_easy_adsense_lite_version_4__05 => (rc0)
+        thulasidas_easy_adsense_lite_version_2__33 => (rc0)
+        thulasidas_easy_adsense_lite_version_6__06 => (rc0)
+        thulasidas_easy_adsense_lite_version_2__40 => (rc0)
+        thulasidas_easy_adsense_lite_version_4__01 => (rc0)
+        thulasidas_easy_adsense_lite_version_2__26 => (rc0)
+        thulasidas_easy_adsense_lite_version_4__08 => (rc0)
+        thulasidas_easy_adsense_lite_version_2__22 => (rc0)
+        thulasidas_easy_adsense_lite_version_3__02 => (rc0)
+        thulasidas_easy_adsense_lite_version_2__58 => (rc0)
+        thulasidas_easy_adsense_lite_version_2__10 => (rc0)

@@ -1,0 +1,622 @@
+features
+        CVE_2019_10692
+                mandatory
+                        types
+                                mandatory
+                                        application
+                        sources
+                                mandatory
+                                        nvd
+                        exploits
+                                optional
+                                        direct
+                                        indirect
+                        codecabin
+                                mandatory
+                                        codecabin_wp__google__maps
+                                                mandatory
+                                                        codecabin_wp__google__maps_version
+                                                                alternative
+                                                                        codecabin_wp__google__maps_version_3__4
+                                                                        codecabin_wp__google__maps_version_6__0__28
+                                                                        codecabin_wp__google__maps_version_7__10__49
+                                                                        codecabin_wp__google__maps_version_7__10__10
+                                                                        codecabin_wp__google__maps_version_4__07
+                                                                        codecabin_wp__google__maps_version_7__10__16
+                                                                        codecabin_wp__google__maps_version_7__0__03
+                                                                        codecabin_wp__google__maps_version_7__10__08
+                                                                        codecabin_wp__google__maps_version_7__10__60
+                                                                        codecabin_wp__google__maps_version_4__18
+                                                                        codecabin_wp__google__maps_version_5__52
+                                                                        codecabin_wp__google__maps_version_5__69
+                                                                        codecabin_wp__google__maps_version_4__14
+                                                                        codecabin_wp__google__maps_version_5__12
+                                                                        codecabin_wp__google__maps_version_7__10__21
+                                                                        codecabin_wp__google__maps_version_5__36
+                                                                        codecabin_wp__google__maps_version_6__3__01
+                                                                        codecabin_wp__google__maps_version_6__0__26
+                                                                        codecabin_wp__google__maps_version_7__08
+                                                                        codecabin_wp__google__maps_version_5__54
+                                                                        codecabin_wp__google__maps_version_6__0__24
+                                                                        codecabin_wp__google__maps_version_5__22
+                                                                        codecabin_wp__google__maps_version_3__8
+                                                                        codecabin_wp__google__maps_version_6__08
+                                                                        codecabin_wp__google__maps_version_7__10__40
+                                                                        codecabin_wp__google__maps_version_6__0__20
+                                                                        codecabin_wp__google__maps_version_5__53
+                                                                        codecabin_wp__google__maps_version_5__58
+                                                                        codecabin_wp__google__maps_version_5__66
+                                                                        codecabin_wp__google__maps_version_7__11__04
+                                                                        codecabin_wp__google__maps_version_6__1__7
+                                                                        codecabin_wp__google__maps_version_5__14
+                                                                        codecabin_wp__google__maps_version_4__10
+                                                                        codecabin_wp__google__maps_version_7__05
+                                                                        codecabin_wp__google__maps_version_7__10__46
+                                                                        codecabin_wp__google__maps_version_7__01
+                                                                        codecabin_wp__google__maps_version_6__3__04
+                                                                        codecabin_wp__google__maps_version_6__1__2
+                                                                        codecabin_wp__google__maps_version_6__0__30
+                                                                        codecabin_wp__google__maps_version_7__11__10
+                                                                        codecabin_wp__google__maps_version_6__01
+                                                                        codecabin_wp__google__maps_version_7__10__25
+                                                                        codecabin_wp__google__maps_version_6__4__01
+                                                                        codecabin_wp__google__maps_version_7__11__09
+                                                                        codecabin_wp__google__maps_version_7__10__52
+                                                                        codecabin_wp__google__maps_version_6__2__2
+                                                                        codecabin_wp__google__maps_version_6__3__06
+                                                                        codecabin_wp__google__maps_version_5__25
+                                                                        codecabin_wp__google__maps_version_6__0__17
+                                                                        codecabin_wp__google__maps_version_7__10__22
+                                                                        codecabin_wp__google__maps_version_5__50
+                                                                        codecabin_wp__google__maps_version_6__0__2
+                                                                        codecabin_wp__google__maps_version_5__04
+                                                                        codecabin_wp__google__maps_version_7__09
+                                                                        codecabin_wp__google__maps_version_4__16
+                                                                        codecabin_wp__google__maps_version_4__0
+                                                                        codecabin_wp__google__maps_version_6__2__0
+                                                                        codecabin_wp__google__maps_version_6__0__25
+                                                                        codecabin_wp__google__maps_version_6__0__4
+                                                                        codecabin_wp__google__maps_version_6__0__27
+                                                                        codecabin_wp__google__maps_version_7__11__01
+                                                                        codecabin_wp__google__maps_version_7__10__02
+                                                                        codecabin_wp__google__maps_version_6__0__11
+                                                                        codecabin_wp__google__maps_version_7__10__00
+                                                                        codecabin_wp__google__maps_version_6__1__4
+                                                                        codecabin_wp__google__maps_version_7__10__17
+                                                                        codecabin_wp__google__maps_version_4__11
+                                                                        codecabin_wp__google__maps_version_7__10__51
+                                                                        codecabin_wp__google__maps_version_6__14
+                                                                        codecabin_wp__google__maps_version_3__9
+                                                                        codecabin_wp__google__maps_version_7__10__03
+                                                                        codecabin_wp__google__maps_version_5__39
+                                                                        codecabin_wp__google__maps_version_7__10__31
+                                                                        codecabin_wp__google__maps_version_7__0__02
+                                                                        codecabin_wp__google__maps_version_6__0__19
+                                                                        codecabin_wp__google__maps_version_7__10__30
+                                                                        codecabin_wp__google__maps_version_6__02
+                                                                        codecabin_wp__google__maps_version_7__11__15
+                                                                        codecabin_wp__google__maps_version_6__0__0
+                                                                        codecabin_wp__google__maps_version_6__07
+                                                                        codecabin_wp__google__maps_version_any
+                                                                        codecabin_wp__google__maps_version_6__4__00
+                                                                        codecabin_wp__google__maps_version_6__3__12
+                                                                        codecabin_wp__google__maps_version_6__3__05
+                                                                        codecabin_wp__google__maps_version_5__08
+                                                                        codecabin_wp__google__maps_version_5__63
+                                                                        codecabin_wp__google__maps_version_7__11__14
+                                                                        codecabin_wp__google__maps_version_5__26
+                                                                        codecabin_wp__google__maps_version_5__59
+                                                                        codecabin_wp__google__maps_version_5__34
+                                                                        codecabin_wp__google__maps_version_3__10
+                                                                        codecabin_wp__google__maps_version_6__3__15
+                                                                        codecabin_wp__google__maps_version_5__02
+                                                                        codecabin_wp__google__maps_version_6__04
+                                                                        codecabin_wp__google__maps_version_6__4__05
+                                                                        codecabin_wp__google__maps_version_5__0
+                                                                        codecabin_wp__google__maps_version_6__0__29
+                                                                        codecabin_wp__google__maps_version_5__64
+                                                                        codecabin_wp__google__maps_version_6__13
+                                                                        codecabin_wp__google__maps_version_7__10__27
+                                                                        codecabin_wp__google__maps_version_7__10__56
+                                                                        codecabin_wp__google__maps_version_5__16
+                                                                        codecabin_wp__google__maps_version_6__2__1
+                                                                        codecabin_wp__google__maps_version_5__37
+                                                                        codecabin_wp__google__maps_version_4__06
+                                                                        codecabin_wp__google__maps_version_7__10__05
+                                                                        codecabin_wp__google__maps_version_6__3__10
+                                                                        codecabin_wp__google__maps_version_6__0__15
+                                                                        codecabin_wp__google__maps_version_3__6
+                                                                        codecabin_wp__google__maps_version_5__60
+                                                                        codecabin_wp__google__maps_version_7__10__24
+                                                                        codecabin_wp__google__maps_version_7__10__26
+                                                                        codecabin_wp__google__maps_version_6__10
+                                                                        codecabin_wp__google__maps_version_7__11__03
+                                                                        codecabin_wp__google__maps_version_7__10__45
+                                                                        codecabin_wp__google__maps_version_7__10__09
+                                                                        codecabin_wp__google__maps_version_5__17
+                                                                        codecabin_wp__google__maps_version_5__01
+                                                                        codecabin_wp__google__maps_version_7__10__50
+                                                                        codecabin_wp__google__maps_version_5__09
+                                                                        codecabin_wp__google__maps_version_5__35
+                                                                        codecabin_wp__google__maps_version_2__1
+                                                                        codecabin_wp__google__maps_version_6__1__1
+                                                                        codecabin_wp__google__maps_version_6__12
+                                                                        codecabin_wp__google__maps_version_6__0__8
+                                                                        codecabin_wp__google__maps_version_7__07
+                                                                        codecabin_wp__google__maps_version_6__3__13
+                                                                        codecabin_wp__google__maps_version_6__17
+                                                                        codecabin_wp__google__maps_version_6__0__10
+                                                                        codecabin_wp__google__maps_version_6__4__08
+                                                                        codecabin_wp__google__maps_version_4__12
+                                                                        codecabin_wp__google__maps_version_7__10__33
+                                                                        codecabin_wp__google__maps_version_7__10__36
+                                                                        codecabin_wp__google__maps_version_5__03
+                                                                        codecabin_wp__google__maps_version_7__11__11
+                                                                        codecabin_wp__google__maps_version_5__05
+                                                                        codecabin_wp__google__maps_version_6__0__13
+                                                                        codecabin_wp__google__maps_version_7__10__14
+                                                                        codecabin_wp__google__maps_version_4__13
+                                                                        codecabin_wp__google__maps_version_5__13
+                                                                        codecabin_wp__google__maps_version_6__3__0
+                                                                        codecabin_wp__google__maps_version_5__33
+                                                                        codecabin_wp__google__maps_version_7__10__15
+                                                                        codecabin_wp__google__maps_version_5__70
+                                                                        codecabin_wp__google__maps_version_7__10__19
+                                                                        codecabin_wp__google__maps_version_6__18
+                                                                        codecabin_wp__google__maps_version_7__10__53
+                                                                        codecabin_wp__google__maps_version_5__61
+                                                                        codecabin_wp__google__maps_version_7__10__07
+                                                                        codecabin_wp__google__maps_version_5__28
+                                                                        codecabin_wp__google__maps_version_4__02
+                                                                        codecabin_wp__google__maps_version_3__3
+                                                                        codecabin_wp__google__maps_version_6__06
+                                                                        codecabin_wp__google__maps_version_7__03
+                                                                        codecabin_wp__google__maps_version_6__0__3
+                                                                        codecabin_wp__google__maps_version_3__0
+                                                                        codecabin_wp__google__maps_version_5__55
+                                                                        codecabin_wp__google__maps_version_5__57
+                                                                        codecabin_wp__google__maps_version_5__45
+                                                                        codecabin_wp__google__maps_version_5__19
+                                                                        codecabin_wp__google__maps_version_3__11
+                                                                        codecabin_wp__google__maps_version_4__08
+                                                                        codecabin_wp__google__maps_version_6__0__31
+                                                                        codecabin_wp__google__maps_version_5__38
+                                                                        codecabin_wp__google__maps_version_7__10__34
+                                                                        codecabin_wp__google__maps_version_5__48
+                                                                        codecabin_wp__google__maps_version_6__3__17
+                                                                        codecabin_wp__google__maps_version_7__10__42
+                                                                        codecabin_wp__google__maps_version_6__1__0
+                                                                        codecabin_wp__google__maps_version_6__1__10
+                                                                        codecabin_wp__google__maps_version_7__04
+                                                                        codecabin_wp__google__maps_version_7__10__57
+                                                                        codecabin_wp__google__maps_version_6__3__03
+                                                                        codecabin_wp__google__maps_version_3__1
+                                                                        codecabin_wp__google__maps_version_7__10__35
+                                                                        codecabin_wp__google__maps_version_6__3__02
+                                                                        codecabin_wp__google__maps_version_5__06
+                                                                        codecabin_wp__google__maps_version_5__07
+                                                                        codecabin_wp__google__maps_version_7__11__13
+                                                                        codecabin_wp__google__maps_version_7__10__01
+                                                                        codecabin_wp__google__maps_version_5__49
+                                                                        codecabin_wp__google__maps_version_6__05
+                                                                        codecabin_wp__google__maps_version_6__4__04
+                                                                        codecabin_wp__google__maps_version_4__03
+                                                                        codecabin_wp__google__maps_version_7__10__48
+                                                                        codecabin_wp__google__maps_version_6__0__21
+                                                                        codecabin_wp__google__maps_version_7__11__00
+                                                                        codecabin_wp__google__maps_version_5__23
+                                                                        codecabin_wp__google__maps_version_7__10__18
+                                                                        codecabin_wp__google__maps_version_6__00
+                                                                        codecabin_wp__google__maps_version_7__06
+                                                                        codecabin_wp__google__maps_version_7__10__59
+                                                                        codecabin_wp__google__maps_version_6__03
+                                                                        codecabin_wp__google__maps_version_6__0__1
+                                                                        codecabin_wp__google__maps_version_7__10__06
+                                                                        codecabin_wp__google__maps_version_5__41
+                                                                        codecabin_wp__google__maps_version_4__15
+                                                                        codecabin_wp__google__maps_version_6__1__6
+                                                                        codecabin_wp__google__maps_version_5__67
+                                                                        codecabin_wp__google__maps_version_5__32
+                                                                        codecabin_wp__google__maps_version_6__4__07
+                                                                        codecabin_wp__google__maps_version_4__04
+                                                                        codecabin_wp__google__maps_version_7__10__55
+                                                                        codecabin_wp__google__maps_version_6__15
+                                                                        codecabin_wp__google__maps_version_3__5
+                                                                        codecabin_wp__google__maps_version_4__01
+                                                                        codecabin_wp__google__maps_version_7__10__39
+                                                                        codecabin_wp__google__maps_version_6__0__18
+                                                                        codecabin_wp__google__maps_version_7__10__41
+                                                                        codecabin_wp__google__maps_version_6__1__3
+                                                                        codecabin_wp__google__maps_version_3__7
+                                                                        codecabin_wp__google__maps_version_7__11__08
+                                                                        codecabin_wp__google__maps_version_7__10__04
+                                                                        codecabin_wp__google__maps_version_6__09
+                                                                        codecabin_wp__google__maps_version_5__47
+                                                                        codecabin_wp__google__maps_version_7__02
+                                                                        codecabin_wp__google__maps_version_6__0__22
+                                                                        codecabin_wp__google__maps_version_6__4__03
+                                                                        codecabin_wp__google__maps_version_7__10__11
+                                                                        codecabin_wp__google__maps_version_6__3__16
+                                                                        codecabin_wp__google__maps_version_7__10__38
+                                                                        codecabin_wp__google__maps_version_4__05
+                                                                        codecabin_wp__google__maps_version_6__4__06
+                                                                        codecabin_wp__google__maps_version_6__3__11
+                                                                        codecabin_wp__google__maps_version_7__11__17
+                                                                        codecabin_wp__google__maps_version_7__00
+                                                                        codecabin_wp__google__maps_version_5__15
+                                                                        codecabin_wp__google__maps_version_7__10__44
+                                                                        codecabin_wp__google__maps_version_6__1__9
+                                                                        codecabin_wp__google__maps_version_7__10__43
+                                                                        codecabin_wp__google__maps_version_5__40
+                                                                        codecabin_wp__google__maps_version_5__27
+                                                                        codecabin_wp__google__maps_version_6__3__08
+                                                                        codecabin_wp__google__maps_version_7__10__54
+                                                                        codecabin_wp__google__maps_version_7__10__13
+                                                                        codecabin_wp__google__maps_version_6__19
+                                                                        codecabin_wp__google__maps_version_5__43
+                                                                        codecabin_wp__google__maps_version_5__31
+                                                                        codecabin_wp__google__maps_version_7__10__23
+                                                                        codecabin_wp__google__maps_version_5__62
+                                                                        codecabin_wp__google__maps_version_6__3__18
+                                                                        codecabin_wp__google__maps_version_5__56
+                                                                        codecabin_wp__google__maps_version_5__51
+                                                                        codecabin_wp__google__maps_version_7__0__01
+                                                                        codecabin_wp__google__maps_version_6__3__14
+                                                                        codecabin_wp__google__maps_version_5__30
+                                                                        codecabin_wp__google__maps_version_7__10__28
+                                                                        codecabin_wp__google__maps_version_3__2
+                                                                        codecabin_wp__google__maps_version_6__0__6
+                                                                        codecabin_wp__google__maps_version_6__1__8
+                                                                        codecabin_wp__google__maps_version_7__11__05
+                                                                        codecabin_wp__google__maps_version_5__46
+                                                                        codecabin_wp__google__maps_version_6__2__3
+                                                                        codecabin_wp__google__maps_version_6__3__19
+                                                                        codecabin_wp__google__maps_version_6__0__16
+                                                                        codecabin_wp__google__maps_version_6__0__7
+                                                                        codecabin_wp__google__maps_version_5__24
+                                                                        codecabin_wp__google__maps_version_3__12
+                                                                        codecabin_wp__google__maps_version_7__11__07
+                                                                        codecabin_wp__google__maps_version_6__0__9
+                                                                        codecabin_wp__google__maps_version_5__42
+                                                                        codecabin_wp__google__maps_version_7__10__32
+                                                                        codecabin_wp__google__maps_version_5__21
+                                                                        codecabin_wp__google__maps_version_4__09
+                                                                        codecabin_wp__google__maps_version_5__10
+                                                                        codecabin_wp__google__maps_version_5__29
+                                                                        codecabin_wp__google__maps_version_7__10__58
+                                                                        codecabin_wp__google__maps_version_6__11
+                                                                        codecabin_wp__google__maps_version_7__10__37
+                                                                        codecabin_wp__google__maps_version_7__0__00
+                                                                        codecabin_wp__google__maps_version_4__17
+                                                                        codecabin_wp__google__maps_version_6__4__02
+                                                                        codecabin_wp__google__maps_version_6__3__09
+                                                                        codecabin_wp__google__maps_version_5__20
+                                                                        codecabin_wp__google__maps_version_7__10__20
+                                                                        codecabin_wp__google__maps_version_6__3__20
+                                                                        codecabin_wp__google__maps_version_5__11
+                                                                        codecabin_wp__google__maps_version_6__16
+                                                                        codecabin_wp__google__maps_version_6__0__5
+                                                                        codecabin_wp__google__maps_version_5__68
+                                                                        codecabin_wp__google__maps_version_7__0__04
+                                                                        codecabin_wp__google__maps_version_5__65
+                                                                        codecabin_wp__google__maps_version_7__11__02
+                                                                        codecabin_wp__google__maps_version_7__11__06
+                                                                        codecabin_wp__google__maps_version_6__3__07
+                                                                        codecabin_wp__google__maps_version_7__11__16
+                                                                        codecabin_wp__google__maps_version_5__18
+                                                                        codecabin_wp__google__maps_version_6__0__23
+                                                                        codecabin_wp__google__maps_version_6__1__5
+                                                                        codecabin_wp__google__maps_version_7__11__12
+                                                                        codecabin_wp__google__maps_version_6__0__14
+                                                                        codecabin_wp__google__maps_version_7__10__12
+                                                                        codecabin_wp__google__maps_version_7__10__29
+                                                                        codecabin_wp__google__maps_version_7__10__47
+                                                                        codecabin_wp__google__maps_version_5__44
+                                                                        codecabin_wp__google__maps_version_6__0__12
+                                                        codecabin_wp__google__maps_sw__edition
+                                                                alternative
+                                                                        codecabin_wp__google__maps_sw__edition_free
+                                                                        codecabin_wp__google__maps_sw__edition_pro
+                                                                        codecabin_wp__google__maps_sw__edition_any
+                                                        codecabin_wp__google__maps_target__sw
+                                                                mandatory
+                                                                        codecabin_wp__google__maps_target__sw_wordpress
+
+constraints
+        codecabin_wp__google__maps => application
+        codecabin_wp__google__maps_version_3__4 => codecabin_wp__google__maps_sw__edition_pro
+        codecabin_wp__google__maps_version_6__0__28 => codecabin_wp__google__maps_sw__edition_any
+        codecabin_wp__google__maps_version_7__10__49 => ((codecabin_wp__google__maps_sw__edition_pro & !codecabin_wp__google__maps_sw__edition_any) | (!codecabin_wp__google__maps_sw__edition_pro & codecabin_wp__google__maps_sw__edition_any))
+        codecabin_wp__google__maps_version_7__10__10 => ((codecabin_wp__google__maps_sw__edition_pro & !codecabin_wp__google__maps_sw__edition_any) | (!codecabin_wp__google__maps_sw__edition_pro & codecabin_wp__google__maps_sw__edition_any))
+        codecabin_wp__google__maps_version_4__07 => codecabin_wp__google__maps_sw__edition_pro
+        codecabin_wp__google__maps_version_7__10__16 => ((codecabin_wp__google__maps_sw__edition_pro & !codecabin_wp__google__maps_sw__edition_any) | (!codecabin_wp__google__maps_sw__edition_pro & codecabin_wp__google__maps_sw__edition_any))
+        codecabin_wp__google__maps_version_7__0__03 => codecabin_wp__google__maps_sw__edition_any
+        codecabin_wp__google__maps_version_7__10__08 => ((codecabin_wp__google__maps_sw__edition_pro & !codecabin_wp__google__maps_sw__edition_any) | (!codecabin_wp__google__maps_sw__edition_pro & codecabin_wp__google__maps_sw__edition_any))
+        codecabin_wp__google__maps_version_7__10__60 => codecabin_wp__google__maps_sw__edition_pro
+        codecabin_wp__google__maps_version_4__18 => codecabin_wp__google__maps_sw__edition_pro
+        codecabin_wp__google__maps_version_5__52 => codecabin_wp__google__maps_sw__edition_pro
+        codecabin_wp__google__maps_version_5__69 => codecabin_wp__google__maps_sw__edition_pro
+        codecabin_wp__google__maps_version_4__14 => codecabin_wp__google__maps_sw__edition_pro
+        codecabin_wp__google__maps_version_5__12 => ((codecabin_wp__google__maps_sw__edition_pro & !codecabin_wp__google__maps_sw__edition_any) | (!codecabin_wp__google__maps_sw__edition_pro & codecabin_wp__google__maps_sw__edition_any))
+        codecabin_wp__google__maps_version_7__10__21 => ((codecabin_wp__google__maps_sw__edition_pro & !codecabin_wp__google__maps_sw__edition_any) | (!codecabin_wp__google__maps_sw__edition_pro & codecabin_wp__google__maps_sw__edition_any))
+        codecabin_wp__google__maps_version_5__36 => codecabin_wp__google__maps_sw__edition_pro
+        codecabin_wp__google__maps_version_6__3__01 => codecabin_wp__google__maps_sw__edition_any
+        codecabin_wp__google__maps_version_6__0__26 => codecabin_wp__google__maps_sw__edition_any
+        codecabin_wp__google__maps_version_7__08 => codecabin_wp__google__maps_sw__edition_pro
+        codecabin_wp__google__maps_version_5__54 => codecabin_wp__google__maps_sw__edition_pro
+        codecabin_wp__google__maps_version_6__0__24 => codecabin_wp__google__maps_sw__edition_any
+        codecabin_wp__google__maps_version_5__22 => ((codecabin_wp__google__maps_sw__edition_pro & !codecabin_wp__google__maps_sw__edition_any) | (!codecabin_wp__google__maps_sw__edition_pro & codecabin_wp__google__maps_sw__edition_any))
+        codecabin_wp__google__maps_version_3__8 => codecabin_wp__google__maps_sw__edition_pro
+        codecabin_wp__google__maps_version_6__08 => codecabin_wp__google__maps_sw__edition_pro
+        codecabin_wp__google__maps_version_7__10__40 => ((codecabin_wp__google__maps_sw__edition_pro & !codecabin_wp__google__maps_sw__edition_any) | (!codecabin_wp__google__maps_sw__edition_pro & codecabin_wp__google__maps_sw__edition_any))
+        codecabin_wp__google__maps_version_6__0__20 => codecabin_wp__google__maps_sw__edition_any
+        codecabin_wp__google__maps_version_5__53 => codecabin_wp__google__maps_sw__edition_pro
+        codecabin_wp__google__maps_version_5__58 => codecabin_wp__google__maps_sw__edition_pro
+        codecabin_wp__google__maps_version_5__66 => codecabin_wp__google__maps_sw__edition_pro
+        codecabin_wp__google__maps_version_7__11__04 => ((codecabin_wp__google__maps_sw__edition_pro & !codecabin_wp__google__maps_sw__edition_any) | (!codecabin_wp__google__maps_sw__edition_pro & codecabin_wp__google__maps_sw__edition_any))
+        codecabin_wp__google__maps_version_6__1__7 => codecabin_wp__google__maps_sw__edition_any
+        codecabin_wp__google__maps_version_5__14 => ((codecabin_wp__google__maps_sw__edition_pro & !codecabin_wp__google__maps_sw__edition_any) | (!codecabin_wp__google__maps_sw__edition_pro & codecabin_wp__google__maps_sw__edition_any))
+        codecabin_wp__google__maps_version_4__10 => codecabin_wp__google__maps_sw__edition_pro
+        codecabin_wp__google__maps_version_7__05 => codecabin_wp__google__maps_sw__edition_pro
+        codecabin_wp__google__maps_version_7__10__46 => ((codecabin_wp__google__maps_sw__edition_pro & !codecabin_wp__google__maps_sw__edition_any) | (!codecabin_wp__google__maps_sw__edition_pro & codecabin_wp__google__maps_sw__edition_any))
+        codecabin_wp__google__maps_version_7__01 => codecabin_wp__google__maps_sw__edition_pro
+        codecabin_wp__google__maps_version_6__3__04 => codecabin_wp__google__maps_sw__edition_any
+        codecabin_wp__google__maps_version_6__1__2 => codecabin_wp__google__maps_sw__edition_any
+        codecabin_wp__google__maps_version_6__0__30 => codecabin_wp__google__maps_sw__edition_any
+        codecabin_wp__google__maps_version_7__11__10 => ((codecabin_wp__google__maps_sw__edition_pro & !codecabin_wp__google__maps_sw__edition_any) | (!codecabin_wp__google__maps_sw__edition_pro & codecabin_wp__google__maps_sw__edition_any))
+        codecabin_wp__google__maps_version_6__01 => codecabin_wp__google__maps_sw__edition_pro
+        codecabin_wp__google__maps_version_7__10__25 => ((codecabin_wp__google__maps_sw__edition_pro & !codecabin_wp__google__maps_sw__edition_any) | (!codecabin_wp__google__maps_sw__edition_pro & codecabin_wp__google__maps_sw__edition_any))
+        codecabin_wp__google__maps_version_6__4__01 => codecabin_wp__google__maps_sw__edition_any
+        codecabin_wp__google__maps_version_7__11__09 => ((codecabin_wp__google__maps_sw__edition_pro & !codecabin_wp__google__maps_sw__edition_any) | (!codecabin_wp__google__maps_sw__edition_pro & codecabin_wp__google__maps_sw__edition_any))
+        codecabin_wp__google__maps_version_7__10__52 => ((codecabin_wp__google__maps_sw__edition_pro & !codecabin_wp__google__maps_sw__edition_any) | (!codecabin_wp__google__maps_sw__edition_pro & codecabin_wp__google__maps_sw__edition_any))
+        codecabin_wp__google__maps_version_6__2__2 => codecabin_wp__google__maps_sw__edition_any
+        codecabin_wp__google__maps_version_6__3__06 => codecabin_wp__google__maps_sw__edition_any
+        codecabin_wp__google__maps_version_5__25 => codecabin_wp__google__maps_sw__edition_pro
+        codecabin_wp__google__maps_version_6__0__17 => codecabin_wp__google__maps_sw__edition_any
+        codecabin_wp__google__maps_version_7__10__22 => ((codecabin_wp__google__maps_sw__edition_pro & !codecabin_wp__google__maps_sw__edition_any) | (!codecabin_wp__google__maps_sw__edition_pro & codecabin_wp__google__maps_sw__edition_any))
+        codecabin_wp__google__maps_version_5__50 => codecabin_wp__google__maps_sw__edition_pro
+        codecabin_wp__google__maps_version_6__0__2 => codecabin_wp__google__maps_sw__edition_any
+        codecabin_wp__google__maps_version_5__04 => codecabin_wp__google__maps_sw__edition_pro
+        codecabin_wp__google__maps_version_7__09 => codecabin_wp__google__maps_sw__edition_pro
+        codecabin_wp__google__maps_version_4__16 => codecabin_wp__google__maps_sw__edition_pro
+        codecabin_wp__google__maps_version_4__0 => codecabin_wp__google__maps_sw__edition_pro
+        codecabin_wp__google__maps_version_6__2__0 => codecabin_wp__google__maps_sw__edition_any
+        codecabin_wp__google__maps_version_6__0__25 => codecabin_wp__google__maps_sw__edition_any
+        codecabin_wp__google__maps_version_6__0__4 => codecabin_wp__google__maps_sw__edition_any
+        codecabin_wp__google__maps_version_6__0__27 => codecabin_wp__google__maps_sw__edition_any
+        codecabin_wp__google__maps_version_7__11__01 => ((codecabin_wp__google__maps_sw__edition_pro & !codecabin_wp__google__maps_sw__edition_any) | (!codecabin_wp__google__maps_sw__edition_pro & codecabin_wp__google__maps_sw__edition_any))
+        codecabin_wp__google__maps_version_7__10__02 => ((codecabin_wp__google__maps_sw__edition_pro & !codecabin_wp__google__maps_sw__edition_any) | (!codecabin_wp__google__maps_sw__edition_pro & codecabin_wp__google__maps_sw__edition_any))
+        codecabin_wp__google__maps_version_6__0__11 => codecabin_wp__google__maps_sw__edition_any
+        codecabin_wp__google__maps_version_7__10__00 => ((codecabin_wp__google__maps_sw__edition_pro & !codecabin_wp__google__maps_sw__edition_any) | (!codecabin_wp__google__maps_sw__edition_pro & codecabin_wp__google__maps_sw__edition_any))
+        codecabin_wp__google__maps_version_6__1__4 => codecabin_wp__google__maps_sw__edition_any
+        codecabin_wp__google__maps_version_7__10__17 => ((codecabin_wp__google__maps_sw__edition_pro & !codecabin_wp__google__maps_sw__edition_any) | (!codecabin_wp__google__maps_sw__edition_pro & codecabin_wp__google__maps_sw__edition_any))
+        codecabin_wp__google__maps_version_4__11 => codecabin_wp__google__maps_sw__edition_pro
+        codecabin_wp__google__maps_version_7__10__51 => ((codecabin_wp__google__maps_sw__edition_pro & !codecabin_wp__google__maps_sw__edition_any) | (!codecabin_wp__google__maps_sw__edition_pro & codecabin_wp__google__maps_sw__edition_any))
+        codecabin_wp__google__maps_version_6__14 => codecabin_wp__google__maps_sw__edition_pro
+        codecabin_wp__google__maps_version_3__9 => codecabin_wp__google__maps_sw__edition_pro
+        codecabin_wp__google__maps_version_7__10__03 => ((codecabin_wp__google__maps_sw__edition_pro & !codecabin_wp__google__maps_sw__edition_any) | (!codecabin_wp__google__maps_sw__edition_pro & codecabin_wp__google__maps_sw__edition_any))
+        codecabin_wp__google__maps_version_5__39 => codecabin_wp__google__maps_sw__edition_pro
+        codecabin_wp__google__maps_version_7__10__31 => ((codecabin_wp__google__maps_sw__edition_pro & !codecabin_wp__google__maps_sw__edition_any) | (!codecabin_wp__google__maps_sw__edition_pro & codecabin_wp__google__maps_sw__edition_any))
+        codecabin_wp__google__maps_version_7__0__02 => codecabin_wp__google__maps_sw__edition_any
+        codecabin_wp__google__maps_version_6__0__19 => codecabin_wp__google__maps_sw__edition_any
+        codecabin_wp__google__maps_version_7__10__30 => ((codecabin_wp__google__maps_sw__edition_pro & !codecabin_wp__google__maps_sw__edition_any) | (!codecabin_wp__google__maps_sw__edition_pro & codecabin_wp__google__maps_sw__edition_any))
+        codecabin_wp__google__maps_version_6__02 => codecabin_wp__google__maps_sw__edition_pro
+        codecabin_wp__google__maps_version_7__11__15 => ((codecabin_wp__google__maps_sw__edition_pro & !codecabin_wp__google__maps_sw__edition_any) | (!codecabin_wp__google__maps_sw__edition_pro & codecabin_wp__google__maps_sw__edition_any))
+        codecabin_wp__google__maps_version_6__0__0 => codecabin_wp__google__maps_sw__edition_any
+        codecabin_wp__google__maps_version_6__07 => codecabin_wp__google__maps_sw__edition_pro
+        codecabin_wp__google__maps_version_any => ((codecabin_wp__google__maps_sw__edition_free & !codecabin_wp__google__maps_sw__edition_pro) | (!codecabin_wp__google__maps_sw__edition_free & codecabin_wp__google__maps_sw__edition_pro))
+        codecabin_wp__google__maps_version_6__4__00 => codecabin_wp__google__maps_sw__edition_any
+        codecabin_wp__google__maps_version_6__3__12 => codecabin_wp__google__maps_sw__edition_any
+        codecabin_wp__google__maps_version_6__3__05 => codecabin_wp__google__maps_sw__edition_any
+        codecabin_wp__google__maps_version_5__08 => codecabin_wp__google__maps_sw__edition_pro
+        codecabin_wp__google__maps_version_5__63 => codecabin_wp__google__maps_sw__edition_pro
+        codecabin_wp__google__maps_version_7__11__14 => ((codecabin_wp__google__maps_sw__edition_pro & !codecabin_wp__google__maps_sw__edition_any) | (!codecabin_wp__google__maps_sw__edition_pro & codecabin_wp__google__maps_sw__edition_any))
+        codecabin_wp__google__maps_version_5__26 => codecabin_wp__google__maps_sw__edition_pro
+        codecabin_wp__google__maps_version_5__59 => codecabin_wp__google__maps_sw__edition_pro
+        codecabin_wp__google__maps_version_5__34 => codecabin_wp__google__maps_sw__edition_pro
+        codecabin_wp__google__maps_version_3__10 => codecabin_wp__google__maps_sw__edition_pro
+        codecabin_wp__google__maps_version_6__3__15 => codecabin_wp__google__maps_sw__edition_any
+        codecabin_wp__google__maps_version_5__02 => codecabin_wp__google__maps_sw__edition_pro
+        codecabin_wp__google__maps_version_6__04 => codecabin_wp__google__maps_sw__edition_pro
+        codecabin_wp__google__maps_version_6__4__05 => codecabin_wp__google__maps_sw__edition_any
+        codecabin_wp__google__maps_version_5__0 => codecabin_wp__google__maps_sw__edition_pro
+        codecabin_wp__google__maps_version_6__0__29 => codecabin_wp__google__maps_sw__edition_any
+        codecabin_wp__google__maps_version_5__64 => codecabin_wp__google__maps_sw__edition_pro
+        codecabin_wp__google__maps_version_6__13 => codecabin_wp__google__maps_sw__edition_pro
+        codecabin_wp__google__maps_version_7__10__27 => ((codecabin_wp__google__maps_sw__edition_pro & !codecabin_wp__google__maps_sw__edition_any) | (!codecabin_wp__google__maps_sw__edition_pro & codecabin_wp__google__maps_sw__edition_any))
+        codecabin_wp__google__maps_version_7__10__56 => ((codecabin_wp__google__maps_sw__edition_pro & !codecabin_wp__google__maps_sw__edition_any) | (!codecabin_wp__google__maps_sw__edition_pro & codecabin_wp__google__maps_sw__edition_any))
+        codecabin_wp__google__maps_version_5__16 => ((codecabin_wp__google__maps_sw__edition_pro & !codecabin_wp__google__maps_sw__edition_any) | (!codecabin_wp__google__maps_sw__edition_pro & codecabin_wp__google__maps_sw__edition_any))
+        codecabin_wp__google__maps_version_6__2__1 => codecabin_wp__google__maps_sw__edition_any
+        codecabin_wp__google__maps_version_5__37 => codecabin_wp__google__maps_sw__edition_pro
+        codecabin_wp__google__maps_version_4__06 => codecabin_wp__google__maps_sw__edition_pro
+        codecabin_wp__google__maps_version_7__10__05 => ((codecabin_wp__google__maps_sw__edition_pro & !codecabin_wp__google__maps_sw__edition_any) | (!codecabin_wp__google__maps_sw__edition_pro & codecabin_wp__google__maps_sw__edition_any))
+        codecabin_wp__google__maps_version_6__3__10 => codecabin_wp__google__maps_sw__edition_any
+        codecabin_wp__google__maps_version_6__0__15 => codecabin_wp__google__maps_sw__edition_any
+        codecabin_wp__google__maps_version_3__6 => codecabin_wp__google__maps_sw__edition_pro
+        codecabin_wp__google__maps_version_5__60 => codecabin_wp__google__maps_sw__edition_pro
+        codecabin_wp__google__maps_version_7__10__24 => ((codecabin_wp__google__maps_sw__edition_pro & !codecabin_wp__google__maps_sw__edition_any) | (!codecabin_wp__google__maps_sw__edition_pro & codecabin_wp__google__maps_sw__edition_any))
+        codecabin_wp__google__maps_version_7__10__26 => ((codecabin_wp__google__maps_sw__edition_pro & !codecabin_wp__google__maps_sw__edition_any) | (!codecabin_wp__google__maps_sw__edition_pro & codecabin_wp__google__maps_sw__edition_any))
+        codecabin_wp__google__maps_version_6__10 => codecabin_wp__google__maps_sw__edition_pro
+        codecabin_wp__google__maps_version_7__11__03 => ((codecabin_wp__google__maps_sw__edition_pro & !codecabin_wp__google__maps_sw__edition_any) | (!codecabin_wp__google__maps_sw__edition_pro & codecabin_wp__google__maps_sw__edition_any))
+        codecabin_wp__google__maps_version_7__10__45 => ((codecabin_wp__google__maps_sw__edition_pro & !codecabin_wp__google__maps_sw__edition_any) | (!codecabin_wp__google__maps_sw__edition_pro & codecabin_wp__google__maps_sw__edition_any))
+        codecabin_wp__google__maps_version_7__10__09 => ((codecabin_wp__google__maps_sw__edition_pro & !codecabin_wp__google__maps_sw__edition_any) | (!codecabin_wp__google__maps_sw__edition_pro & codecabin_wp__google__maps_sw__edition_any))
+        codecabin_wp__google__maps_version_5__17 => ((codecabin_wp__google__maps_sw__edition_pro & !codecabin_wp__google__maps_sw__edition_any) | (!codecabin_wp__google__maps_sw__edition_pro & codecabin_wp__google__maps_sw__edition_any))
+        codecabin_wp__google__maps_version_5__01 => codecabin_wp__google__maps_sw__edition_pro
+        codecabin_wp__google__maps_version_7__10__50 => ((codecabin_wp__google__maps_sw__edition_pro & !codecabin_wp__google__maps_sw__edition_any) | (!codecabin_wp__google__maps_sw__edition_pro & codecabin_wp__google__maps_sw__edition_any))
+        codecabin_wp__google__maps_version_5__09 => codecabin_wp__google__maps_sw__edition_pro
+        codecabin_wp__google__maps_version_5__35 => codecabin_wp__google__maps_sw__edition_pro
+        codecabin_wp__google__maps_version_2__1 => codecabin_wp__google__maps_sw__edition_pro
+        codecabin_wp__google__maps_version_6__1__1 => codecabin_wp__google__maps_sw__edition_any
+        codecabin_wp__google__maps_version_6__12 => codecabin_wp__google__maps_sw__edition_pro
+        codecabin_wp__google__maps_version_6__0__8 => codecabin_wp__google__maps_sw__edition_any
+        codecabin_wp__google__maps_version_7__07 => codecabin_wp__google__maps_sw__edition_pro
+        codecabin_wp__google__maps_version_6__3__13 => codecabin_wp__google__maps_sw__edition_any
+        codecabin_wp__google__maps_version_6__17 => codecabin_wp__google__maps_sw__edition_pro
+        codecabin_wp__google__maps_version_6__0__10 => codecabin_wp__google__maps_sw__edition_any
+        codecabin_wp__google__maps_version_6__4__08 => codecabin_wp__google__maps_sw__edition_any
+        codecabin_wp__google__maps_version_4__12 => codecabin_wp__google__maps_sw__edition_pro
+        codecabin_wp__google__maps_version_7__10__33 => ((codecabin_wp__google__maps_sw__edition_pro & !codecabin_wp__google__maps_sw__edition_any) | (!codecabin_wp__google__maps_sw__edition_pro & codecabin_wp__google__maps_sw__edition_any))
+        codecabin_wp__google__maps_version_7__10__36 => ((codecabin_wp__google__maps_sw__edition_pro & !codecabin_wp__google__maps_sw__edition_any) | (!codecabin_wp__google__maps_sw__edition_pro & codecabin_wp__google__maps_sw__edition_any))
+        codecabin_wp__google__maps_version_5__03 => codecabin_wp__google__maps_sw__edition_pro
+        codecabin_wp__google__maps_version_7__11__11 => ((codecabin_wp__google__maps_sw__edition_pro & !codecabin_wp__google__maps_sw__edition_any) | (!codecabin_wp__google__maps_sw__edition_pro & codecabin_wp__google__maps_sw__edition_any))
+        codecabin_wp__google__maps_version_5__05 => codecabin_wp__google__maps_sw__edition_pro
+        codecabin_wp__google__maps_version_6__0__13 => codecabin_wp__google__maps_sw__edition_any
+        codecabin_wp__google__maps_version_7__10__14 => ((codecabin_wp__google__maps_sw__edition_pro & !codecabin_wp__google__maps_sw__edition_any) | (!codecabin_wp__google__maps_sw__edition_pro & codecabin_wp__google__maps_sw__edition_any))
+        codecabin_wp__google__maps_version_4__13 => codecabin_wp__google__maps_sw__edition_pro
+        codecabin_wp__google__maps_version_5__13 => ((codecabin_wp__google__maps_sw__edition_pro & !codecabin_wp__google__maps_sw__edition_any) | (!codecabin_wp__google__maps_sw__edition_pro & codecabin_wp__google__maps_sw__edition_any))
+        codecabin_wp__google__maps_version_6__3__0 => codecabin_wp__google__maps_sw__edition_any
+        codecabin_wp__google__maps_version_5__33 => codecabin_wp__google__maps_sw__edition_pro
+        codecabin_wp__google__maps_version_7__10__15 => ((codecabin_wp__google__maps_sw__edition_pro & !codecabin_wp__google__maps_sw__edition_any) | (!codecabin_wp__google__maps_sw__edition_pro & codecabin_wp__google__maps_sw__edition_any))
+        codecabin_wp__google__maps_version_5__70 => codecabin_wp__google__maps_sw__edition_pro
+        codecabin_wp__google__maps_version_7__10__19 => ((codecabin_wp__google__maps_sw__edition_pro & !codecabin_wp__google__maps_sw__edition_any) | (!codecabin_wp__google__maps_sw__edition_pro & codecabin_wp__google__maps_sw__edition_any))
+        codecabin_wp__google__maps_version_6__18 => codecabin_wp__google__maps_sw__edition_pro
+        codecabin_wp__google__maps_version_7__10__53 => ((codecabin_wp__google__maps_sw__edition_pro & !codecabin_wp__google__maps_sw__edition_any) | (!codecabin_wp__google__maps_sw__edition_pro & codecabin_wp__google__maps_sw__edition_any))
+        codecabin_wp__google__maps_version_5__61 => codecabin_wp__google__maps_sw__edition_pro
+        codecabin_wp__google__maps_version_7__10__07 => ((codecabin_wp__google__maps_sw__edition_pro & !codecabin_wp__google__maps_sw__edition_any) | (!codecabin_wp__google__maps_sw__edition_pro & codecabin_wp__google__maps_sw__edition_any))
+        codecabin_wp__google__maps_version_5__28 => codecabin_wp__google__maps_sw__edition_pro
+        codecabin_wp__google__maps_version_4__02 => codecabin_wp__google__maps_sw__edition_pro
+        codecabin_wp__google__maps_version_3__3 => codecabin_wp__google__maps_sw__edition_pro
+        codecabin_wp__google__maps_version_6__06 => codecabin_wp__google__maps_sw__edition_pro
+        codecabin_wp__google__maps_version_7__03 => codecabin_wp__google__maps_sw__edition_pro
+        codecabin_wp__google__maps_version_6__0__3 => codecabin_wp__google__maps_sw__edition_any
+        codecabin_wp__google__maps_version_3__0 => codecabin_wp__google__maps_sw__edition_pro
+        codecabin_wp__google__maps_version_5__55 => codecabin_wp__google__maps_sw__edition_pro
+        codecabin_wp__google__maps_version_5__57 => codecabin_wp__google__maps_sw__edition_pro
+        codecabin_wp__google__maps_version_5__45 => codecabin_wp__google__maps_sw__edition_pro
+        codecabin_wp__google__maps_version_5__19 => ((codecabin_wp__google__maps_sw__edition_pro & !codecabin_wp__google__maps_sw__edition_any) | (!codecabin_wp__google__maps_sw__edition_pro & codecabin_wp__google__maps_sw__edition_any))
+        codecabin_wp__google__maps_version_3__11 => codecabin_wp__google__maps_sw__edition_pro
+        codecabin_wp__google__maps_version_4__08 => codecabin_wp__google__maps_sw__edition_pro
+        codecabin_wp__google__maps_version_6__0__31 => codecabin_wp__google__maps_sw__edition_any
+        codecabin_wp__google__maps_version_5__38 => codecabin_wp__google__maps_sw__edition_pro
+        codecabin_wp__google__maps_version_7__10__34 => ((codecabin_wp__google__maps_sw__edition_pro & !codecabin_wp__google__maps_sw__edition_any) | (!codecabin_wp__google__maps_sw__edition_pro & codecabin_wp__google__maps_sw__edition_any))
+        codecabin_wp__google__maps_version_5__48 => codecabin_wp__google__maps_sw__edition_pro
+        codecabin_wp__google__maps_version_6__3__17 => codecabin_wp__google__maps_sw__edition_any
+        codecabin_wp__google__maps_version_7__10__42 => ((codecabin_wp__google__maps_sw__edition_pro & !codecabin_wp__google__maps_sw__edition_any) | (!codecabin_wp__google__maps_sw__edition_pro & codecabin_wp__google__maps_sw__edition_any))
+        codecabin_wp__google__maps_version_6__1__0 => codecabin_wp__google__maps_sw__edition_any
+        codecabin_wp__google__maps_version_6__1__10 => codecabin_wp__google__maps_sw__edition_any
+        codecabin_wp__google__maps_version_7__04 => codecabin_wp__google__maps_sw__edition_pro
+        codecabin_wp__google__maps_version_7__10__57 => ((codecabin_wp__google__maps_sw__edition_pro & !codecabin_wp__google__maps_sw__edition_any) | (!codecabin_wp__google__maps_sw__edition_pro & codecabin_wp__google__maps_sw__edition_any))
+        codecabin_wp__google__maps_version_6__3__03 => codecabin_wp__google__maps_sw__edition_any
+        codecabin_wp__google__maps_version_3__1 => codecabin_wp__google__maps_sw__edition_pro
+        codecabin_wp__google__maps_version_7__10__35 => ((codecabin_wp__google__maps_sw__edition_pro & !codecabin_wp__google__maps_sw__edition_any) | (!codecabin_wp__google__maps_sw__edition_pro & codecabin_wp__google__maps_sw__edition_any))
+        codecabin_wp__google__maps_version_6__3__02 => codecabin_wp__google__maps_sw__edition_any
+        codecabin_wp__google__maps_version_5__06 => codecabin_wp__google__maps_sw__edition_pro
+        codecabin_wp__google__maps_version_5__07 => codecabin_wp__google__maps_sw__edition_pro
+        codecabin_wp__google__maps_version_7__11__13 => ((codecabin_wp__google__maps_sw__edition_pro & !codecabin_wp__google__maps_sw__edition_any) | (!codecabin_wp__google__maps_sw__edition_pro & codecabin_wp__google__maps_sw__edition_any))
+        codecabin_wp__google__maps_version_7__10__01 => ((codecabin_wp__google__maps_sw__edition_pro & !codecabin_wp__google__maps_sw__edition_any) | (!codecabin_wp__google__maps_sw__edition_pro & codecabin_wp__google__maps_sw__edition_any))
+        codecabin_wp__google__maps_version_5__49 => codecabin_wp__google__maps_sw__edition_pro
+        codecabin_wp__google__maps_version_6__05 => codecabin_wp__google__maps_sw__edition_pro
+        codecabin_wp__google__maps_version_6__4__04 => codecabin_wp__google__maps_sw__edition_any
+        codecabin_wp__google__maps_version_4__03 => codecabin_wp__google__maps_sw__edition_pro
+        codecabin_wp__google__maps_version_7__10__48 => ((codecabin_wp__google__maps_sw__edition_pro & !codecabin_wp__google__maps_sw__edition_any) | (!codecabin_wp__google__maps_sw__edition_pro & codecabin_wp__google__maps_sw__edition_any))
+        codecabin_wp__google__maps_version_6__0__21 => codecabin_wp__google__maps_sw__edition_any
+        codecabin_wp__google__maps_version_7__11__00 => ((codecabin_wp__google__maps_sw__edition_pro & !codecabin_wp__google__maps_sw__edition_any) | (!codecabin_wp__google__maps_sw__edition_pro & codecabin_wp__google__maps_sw__edition_any))
+        codecabin_wp__google__maps_version_5__23 => ((codecabin_wp__google__maps_sw__edition_pro & !codecabin_wp__google__maps_sw__edition_any) | (!codecabin_wp__google__maps_sw__edition_pro & codecabin_wp__google__maps_sw__edition_any))
+        codecabin_wp__google__maps_version_7__10__18 => ((codecabin_wp__google__maps_sw__edition_pro & !codecabin_wp__google__maps_sw__edition_any) | (!codecabin_wp__google__maps_sw__edition_pro & codecabin_wp__google__maps_sw__edition_any))
+        codecabin_wp__google__maps_version_6__00 => codecabin_wp__google__maps_sw__edition_pro
+        codecabin_wp__google__maps_version_7__06 => codecabin_wp__google__maps_sw__edition_pro
+        codecabin_wp__google__maps_version_7__10__59 => codecabin_wp__google__maps_sw__edition_pro
+        codecabin_wp__google__maps_version_6__03 => codecabin_wp__google__maps_sw__edition_pro
+        codecabin_wp__google__maps_version_6__0__1 => codecabin_wp__google__maps_sw__edition_any
+        codecabin_wp__google__maps_version_7__10__06 => ((codecabin_wp__google__maps_sw__edition_pro & !codecabin_wp__google__maps_sw__edition_any) | (!codecabin_wp__google__maps_sw__edition_pro & codecabin_wp__google__maps_sw__edition_any))
+        codecabin_wp__google__maps_version_5__41 => codecabin_wp__google__maps_sw__edition_pro
+        codecabin_wp__google__maps_version_4__15 => codecabin_wp__google__maps_sw__edition_pro
+        codecabin_wp__google__maps_version_6__1__6 => codecabin_wp__google__maps_sw__edition_any
+        codecabin_wp__google__maps_version_5__67 => codecabin_wp__google__maps_sw__edition_pro
+        codecabin_wp__google__maps_version_5__32 => codecabin_wp__google__maps_sw__edition_pro
+        codecabin_wp__google__maps_version_6__4__07 => codecabin_wp__google__maps_sw__edition_any
+        codecabin_wp__google__maps_version_4__04 => codecabin_wp__google__maps_sw__edition_pro
+        codecabin_wp__google__maps_version_7__10__55 => ((codecabin_wp__google__maps_sw__edition_pro & !codecabin_wp__google__maps_sw__edition_any) | (!codecabin_wp__google__maps_sw__edition_pro & codecabin_wp__google__maps_sw__edition_any))
+        codecabin_wp__google__maps_version_6__15 => codecabin_wp__google__maps_sw__edition_pro
+        codecabin_wp__google__maps_version_3__5 => codecabin_wp__google__maps_sw__edition_pro
+        codecabin_wp__google__maps_version_4__01 => codecabin_wp__google__maps_sw__edition_pro
+        codecabin_wp__google__maps_version_7__10__39 => ((codecabin_wp__google__maps_sw__edition_pro & !codecabin_wp__google__maps_sw__edition_any) | (!codecabin_wp__google__maps_sw__edition_pro & codecabin_wp__google__maps_sw__edition_any))
+        codecabin_wp__google__maps_version_6__0__18 => codecabin_wp__google__maps_sw__edition_any
+        codecabin_wp__google__maps_version_7__10__41 => ((codecabin_wp__google__maps_sw__edition_pro & !codecabin_wp__google__maps_sw__edition_any) | (!codecabin_wp__google__maps_sw__edition_pro & codecabin_wp__google__maps_sw__edition_any))
+        codecabin_wp__google__maps_version_6__1__3 => codecabin_wp__google__maps_sw__edition_any
+        codecabin_wp__google__maps_version_3__7 => codecabin_wp__google__maps_sw__edition_pro
+        codecabin_wp__google__maps_version_7__11__08 => ((codecabin_wp__google__maps_sw__edition_pro & !codecabin_wp__google__maps_sw__edition_any) | (!codecabin_wp__google__maps_sw__edition_pro & codecabin_wp__google__maps_sw__edition_any))
+        codecabin_wp__google__maps_version_7__10__04 => ((codecabin_wp__google__maps_sw__edition_pro & !codecabin_wp__google__maps_sw__edition_any) | (!codecabin_wp__google__maps_sw__edition_pro & codecabin_wp__google__maps_sw__edition_any))
+        codecabin_wp__google__maps_version_6__09 => codecabin_wp__google__maps_sw__edition_pro
+        codecabin_wp__google__maps_version_5__47 => codecabin_wp__google__maps_sw__edition_pro
+        codecabin_wp__google__maps_version_7__02 => codecabin_wp__google__maps_sw__edition_pro
+        codecabin_wp__google__maps_version_6__0__22 => codecabin_wp__google__maps_sw__edition_any
+        codecabin_wp__google__maps_version_6__4__03 => codecabin_wp__google__maps_sw__edition_any
+        codecabin_wp__google__maps_version_7__10__11 => ((codecabin_wp__google__maps_sw__edition_pro & !codecabin_wp__google__maps_sw__edition_any) | (!codecabin_wp__google__maps_sw__edition_pro & codecabin_wp__google__maps_sw__edition_any))
+        codecabin_wp__google__maps_version_6__3__16 => codecabin_wp__google__maps_sw__edition_any
+        codecabin_wp__google__maps_version_7__10__38 => ((codecabin_wp__google__maps_sw__edition_pro & !codecabin_wp__google__maps_sw__edition_any) | (!codecabin_wp__google__maps_sw__edition_pro & codecabin_wp__google__maps_sw__edition_any))
+        codecabin_wp__google__maps_version_4__05 => codecabin_wp__google__maps_sw__edition_pro
+        codecabin_wp__google__maps_version_6__4__06 => codecabin_wp__google__maps_sw__edition_any
+        codecabin_wp__google__maps_version_6__3__11 => codecabin_wp__google__maps_sw__edition_any
+        codecabin_wp__google__maps_version_7__11__17 => ((codecabin_wp__google__maps_sw__edition_pro & !codecabin_wp__google__maps_sw__edition_any) | (!codecabin_wp__google__maps_sw__edition_pro & codecabin_wp__google__maps_sw__edition_any))
+        codecabin_wp__google__maps_version_7__00 => codecabin_wp__google__maps_sw__edition_pro
+        codecabin_wp__google__maps_version_5__15 => ((codecabin_wp__google__maps_sw__edition_pro & !codecabin_wp__google__maps_sw__edition_any) | (!codecabin_wp__google__maps_sw__edition_pro & codecabin_wp__google__maps_sw__edition_any))
+        codecabin_wp__google__maps_version_7__10__44 => ((codecabin_wp__google__maps_sw__edition_pro & !codecabin_wp__google__maps_sw__edition_any) | (!codecabin_wp__google__maps_sw__edition_pro & codecabin_wp__google__maps_sw__edition_any))
+        codecabin_wp__google__maps_version_6__1__9 => codecabin_wp__google__maps_sw__edition_any
+        codecabin_wp__google__maps_version_7__10__43 => ((codecabin_wp__google__maps_sw__edition_pro & !codecabin_wp__google__maps_sw__edition_any) | (!codecabin_wp__google__maps_sw__edition_pro & codecabin_wp__google__maps_sw__edition_any))
+        codecabin_wp__google__maps_version_5__40 => codecabin_wp__google__maps_sw__edition_pro
+        codecabin_wp__google__maps_version_5__27 => codecabin_wp__google__maps_sw__edition_pro
+        codecabin_wp__google__maps_version_6__3__08 => codecabin_wp__google__maps_sw__edition_any
+        codecabin_wp__google__maps_version_7__10__54 => ((codecabin_wp__google__maps_sw__edition_pro & !codecabin_wp__google__maps_sw__edition_any) | (!codecabin_wp__google__maps_sw__edition_pro & codecabin_wp__google__maps_sw__edition_any))
+        codecabin_wp__google__maps_version_7__10__13 => ((codecabin_wp__google__maps_sw__edition_pro & !codecabin_wp__google__maps_sw__edition_any) | (!codecabin_wp__google__maps_sw__edition_pro & codecabin_wp__google__maps_sw__edition_any))
+        codecabin_wp__google__maps_version_6__19 => codecabin_wp__google__maps_sw__edition_pro
+        codecabin_wp__google__maps_version_5__43 => codecabin_wp__google__maps_sw__edition_pro
+        codecabin_wp__google__maps_version_5__31 => codecabin_wp__google__maps_sw__edition_pro
+        codecabin_wp__google__maps_version_7__10__23 => ((codecabin_wp__google__maps_sw__edition_pro & !codecabin_wp__google__maps_sw__edition_any) | (!codecabin_wp__google__maps_sw__edition_pro & codecabin_wp__google__maps_sw__edition_any))
+        codecabin_wp__google__maps_version_5__62 => codecabin_wp__google__maps_sw__edition_pro
+        codecabin_wp__google__maps_version_6__3__18 => codecabin_wp__google__maps_sw__edition_any
+        codecabin_wp__google__maps_version_5__56 => codecabin_wp__google__maps_sw__edition_pro
+        codecabin_wp__google__maps_version_5__51 => codecabin_wp__google__maps_sw__edition_pro
+        codecabin_wp__google__maps_version_7__0__01 => codecabin_wp__google__maps_sw__edition_any
+        codecabin_wp__google__maps_version_6__3__14 => codecabin_wp__google__maps_sw__edition_any
+        codecabin_wp__google__maps_version_5__30 => codecabin_wp__google__maps_sw__edition_pro
+        codecabin_wp__google__maps_version_7__10__28 => ((codecabin_wp__google__maps_sw__edition_pro & !codecabin_wp__google__maps_sw__edition_any) | (!codecabin_wp__google__maps_sw__edition_pro & codecabin_wp__google__maps_sw__edition_any))
+        codecabin_wp__google__maps_version_3__2 => codecabin_wp__google__maps_sw__edition_pro
+        codecabin_wp__google__maps_version_6__0__6 => codecabin_wp__google__maps_sw__edition_any
+        codecabin_wp__google__maps_version_6__1__8 => codecabin_wp__google__maps_sw__edition_any
+        codecabin_wp__google__maps_version_7__11__05 => ((codecabin_wp__google__maps_sw__edition_pro & !codecabin_wp__google__maps_sw__edition_any) | (!codecabin_wp__google__maps_sw__edition_pro & codecabin_wp__google__maps_sw__edition_any))
+        codecabin_wp__google__maps_version_5__46 => codecabin_wp__google__maps_sw__edition_pro
+        codecabin_wp__google__maps_version_6__2__3 => codecabin_wp__google__maps_sw__edition_any
+        codecabin_wp__google__maps_version_6__3__19 => codecabin_wp__google__maps_sw__edition_any
+        codecabin_wp__google__maps_version_6__0__16 => codecabin_wp__google__maps_sw__edition_any
+        codecabin_wp__google__maps_version_6__0__7 => codecabin_wp__google__maps_sw__edition_any
+        codecabin_wp__google__maps_version_5__24 => ((codecabin_wp__google__maps_sw__edition_pro & !codecabin_wp__google__maps_sw__edition_any) | (!codecabin_wp__google__maps_sw__edition_pro & codecabin_wp__google__maps_sw__edition_any))
+        codecabin_wp__google__maps_version_3__12 => codecabin_wp__google__maps_sw__edition_pro
+        codecabin_wp__google__maps_version_7__11__07 => ((codecabin_wp__google__maps_sw__edition_pro & !codecabin_wp__google__maps_sw__edition_any) | (!codecabin_wp__google__maps_sw__edition_pro & codecabin_wp__google__maps_sw__edition_any))
+        codecabin_wp__google__maps_version_6__0__9 => codecabin_wp__google__maps_sw__edition_any
+        codecabin_wp__google__maps_version_5__42 => codecabin_wp__google__maps_sw__edition_pro
+        codecabin_wp__google__maps_version_7__10__32 => ((codecabin_wp__google__maps_sw__edition_pro & !codecabin_wp__google__maps_sw__edition_any) | (!codecabin_wp__google__maps_sw__edition_pro & codecabin_wp__google__maps_sw__edition_any))
+        codecabin_wp__google__maps_version_5__21 => ((codecabin_wp__google__maps_sw__edition_pro & !codecabin_wp__google__maps_sw__edition_any) | (!codecabin_wp__google__maps_sw__edition_pro & codecabin_wp__google__maps_sw__edition_any))
+        codecabin_wp__google__maps_version_4__09 => codecabin_wp__google__maps_sw__edition_pro
+        codecabin_wp__google__maps_version_5__10 => codecabin_wp__google__maps_sw__edition_pro
+        codecabin_wp__google__maps_version_5__29 => codecabin_wp__google__maps_sw__edition_pro
+        codecabin_wp__google__maps_version_7__10__58 => ((codecabin_wp__google__maps_sw__edition_pro & !codecabin_wp__google__maps_sw__edition_any) | (!codecabin_wp__google__maps_sw__edition_pro & codecabin_wp__google__maps_sw__edition_any))
+        codecabin_wp__google__maps_version_6__11 => codecabin_wp__google__maps_sw__edition_pro
+        codecabin_wp__google__maps_version_7__10__37 => ((codecabin_wp__google__maps_sw__edition_pro & !codecabin_wp__google__maps_sw__edition_any) | (!codecabin_wp__google__maps_sw__edition_pro & codecabin_wp__google__maps_sw__edition_any))
+        codecabin_wp__google__maps_version_7__0__00 => codecabin_wp__google__maps_sw__edition_any
+        codecabin_wp__google__maps_version_4__17 => codecabin_wp__google__maps_sw__edition_pro
+        codecabin_wp__google__maps_version_6__4__02 => codecabin_wp__google__maps_sw__edition_any
+        codecabin_wp__google__maps_version_6__3__09 => codecabin_wp__google__maps_sw__edition_any
+        codecabin_wp__google__maps_version_5__20 => ((codecabin_wp__google__maps_sw__edition_pro & !codecabin_wp__google__maps_sw__edition_any) | (!codecabin_wp__google__maps_sw__edition_pro & codecabin_wp__google__maps_sw__edition_any))
+        codecabin_wp__google__maps_version_7__10__20 => ((codecabin_wp__google__maps_sw__edition_pro & !codecabin_wp__google__maps_sw__edition_any) | (!codecabin_wp__google__maps_sw__edition_pro & codecabin_wp__google__maps_sw__edition_any))
+        codecabin_wp__google__maps_version_6__3__20 => codecabin_wp__google__maps_sw__edition_any
+        codecabin_wp__google__maps_version_5__11 => ((codecabin_wp__google__maps_sw__edition_pro & !codecabin_wp__google__maps_sw__edition_any) | (!codecabin_wp__google__maps_sw__edition_pro & codecabin_wp__google__maps_sw__edition_any))
+        codecabin_wp__google__maps_version_6__16 => codecabin_wp__google__maps_sw__edition_pro
+        codecabin_wp__google__maps_version_6__0__5 => codecabin_wp__google__maps_sw__edition_any
+        codecabin_wp__google__maps_version_5__68 => codecabin_wp__google__maps_sw__edition_pro
+        codecabin_wp__google__maps_version_7__0__04 => codecabin_wp__google__maps_sw__edition_any
+        codecabin_wp__google__maps_version_5__65 => codecabin_wp__google__maps_sw__edition_pro
+        codecabin_wp__google__maps_version_7__11__02 => ((codecabin_wp__google__maps_sw__edition_pro & !codecabin_wp__google__maps_sw__edition_any) | (!codecabin_wp__google__maps_sw__edition_pro & codecabin_wp__google__maps_sw__edition_any))
+        codecabin_wp__google__maps_version_7__11__06 => ((codecabin_wp__google__maps_sw__edition_pro & !codecabin_wp__google__maps_sw__edition_any) | (!codecabin_wp__google__maps_sw__edition_pro & codecabin_wp__google__maps_sw__edition_any))
+        codecabin_wp__google__maps_version_6__3__07 => codecabin_wp__google__maps_sw__edition_any
+        codecabin_wp__google__maps_version_7__11__16 => ((codecabin_wp__google__maps_sw__edition_pro & !codecabin_wp__google__maps_sw__edition_any) | (!codecabin_wp__google__maps_sw__edition_pro & codecabin_wp__google__maps_sw__edition_any))
+        codecabin_wp__google__maps_version_5__18 => ((codecabin_wp__google__maps_sw__edition_pro & !codecabin_wp__google__maps_sw__edition_any) | (!codecabin_wp__google__maps_sw__edition_pro & codecabin_wp__google__maps_sw__edition_any))
+        codecabin_wp__google__maps_version_6__0__23 => codecabin_wp__google__maps_sw__edition_any
+        codecabin_wp__google__maps_version_6__1__5 => codecabin_wp__google__maps_sw__edition_any
+        codecabin_wp__google__maps_version_7__11__12 => ((codecabin_wp__google__maps_sw__edition_pro & !codecabin_wp__google__maps_sw__edition_any) | (!codecabin_wp__google__maps_sw__edition_pro & codecabin_wp__google__maps_sw__edition_any))
+        codecabin_wp__google__maps_version_6__0__14 => codecabin_wp__google__maps_sw__edition_any
+        codecabin_wp__google__maps_version_7__10__12 => ((codecabin_wp__google__maps_sw__edition_pro & !codecabin_wp__google__maps_sw__edition_any) | (!codecabin_wp__google__maps_sw__edition_pro & codecabin_wp__google__maps_sw__edition_any))
+        codecabin_wp__google__maps_version_7__10__29 => ((codecabin_wp__google__maps_sw__edition_pro & !codecabin_wp__google__maps_sw__edition_any) | (!codecabin_wp__google__maps_sw__edition_pro & codecabin_wp__google__maps_sw__edition_any))
+        codecabin_wp__google__maps_version_7__10__47 => ((codecabin_wp__google__maps_sw__edition_pro & !codecabin_wp__google__maps_sw__edition_any) | (!codecabin_wp__google__maps_sw__edition_pro & codecabin_wp__google__maps_sw__edition_any))
+        codecabin_wp__google__maps_version_5__44 => codecabin_wp__google__maps_sw__edition_pro
+        codecabin_wp__google__maps_version_6__0__12 => codecabin_wp__google__maps_sw__edition_any

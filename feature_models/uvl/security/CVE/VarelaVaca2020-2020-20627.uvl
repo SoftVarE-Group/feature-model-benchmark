@@ -1,0 +1,233 @@
+features
+        CVE_2020_20627
+                mandatory
+                        types
+                                mandatory
+                                        application
+                        sources
+                                mandatory
+                                        nvd
+                        exploits
+                                optional
+                                        direct
+                                        indirect
+                        impress
+                                mandatory
+                                        impress_givewp
+                                                mandatory
+                                                        impress_givewp_version
+                                                                alternative
+                                                                        impress_givewp_version_2__1__0
+                                                                        impress_givewp_version_2__4__0
+                                                                        impress_givewp_version_1__3__1__1
+                                                                        impress_givewp_version_1__6__3
+                                                                        impress_givewp_version_2__1__4
+                                                                        impress_givewp_version_1__7__1
+                                                                        impress_givewp_version_2__4__1
+                                                                        impress_givewp_version_2__4__3
+                                                                        impress_givewp_version_1__4
+                                                                        impress_givewp_version_2__0__3
+                                                                        impress_givewp_version_2__0__4
+                                                                        impress_givewp_version_1__8__16
+                                                                        impress_givewp_version_1__3__2
+                                                                        impress_givewp_version_1__4__2
+                                                                        impress_givewp_version_2__0__6
+                                                                        impress_givewp_version_1__4__5
+                                                                        impress_givewp_version_1__4__1
+                                                                        impress_givewp_version_2__4__7
+                                                                        impress_givewp_version_1__3__3
+                                                                        impress_givewp_version_2__0__2
+                                                                        impress_givewp_version_1__8__4
+                                                                        impress_givewp_version_2__1__7
+                                                                        impress_givewp_version_2__3__0
+                                                                        impress_givewp_version_1__0
+                                                                        impress_givewp_version_2__3__1
+                                                                        impress_givewp_version_1__5__1
+                                                                        impress_givewp_version_2__2__2
+                                                                        impress_givewp_version_1__8__12
+                                                                        impress_givewp_version_2__5__4
+                                                                        impress_givewp_version_0__8__6
+                                                                        impress_givewp_version_1__8__10
+                                                                        impress_givewp_version_1__0__1
+                                                                        impress_givewp_version_2__5__8
+                                                                        impress_givewp_version_2__5__5
+                                                                        impress_givewp_version_1__8__6
+                                                                        impress_givewp_version_1__6
+                                                                        impress_givewp_version_2__2__1
+                                                                        impress_givewp_version_0__9
+                                                                        impress_givewp_version_1__6__4
+                                                                        impress_givewp_version_1__8
+                                                                        impress_givewp_version_1__2__1
+                                                                        impress_givewp_version_2__4__2
+                                                                        impress_givewp_version_1__8__9
+                                                                        impress_givewp_version_1__3__6
+                                                                        impress_givewp_version_2__2__3
+                                                                        impress_givewp_version_1__8__2
+                                                                        impress_givewp_version_1__8__18
+                                                                        impress_givewp_version_1__8__17
+                                                                        impress_givewp_version_2__4__4
+                                                                        impress_givewp_version_2__1__6
+                                                                        impress_givewp_version_1__5
+                                                                        impress_givewp_version_1__8__7__1
+                                                                        impress_givewp_version_1__8__1
+                                                                        impress_givewp_version_1__6__1
+                                                                        impress_givewp_version_2__4__6
+                                                                        impress_givewp_version_2__5__6
+                                                                        impress_givewp_version_1__5__2
+                                                                        impress_givewp_version_0__9__5
+                                                                        impress_givewp_version_1__8__14
+                                                                        impress_givewp_version_1__3__0__1
+                                                                        impress_givewp_version_1__3__4
+                                                                        impress_givewp_version_1__8__19
+                                                                        impress_givewp_version_1__7
+                                                                        impress_givewp_version_2__0__5
+                                                                        impress_givewp_version_1__4__3
+                                                                        impress_givewp_version_1__8__5
+                                                                        impress_givewp_version_2__5__1
+                                                                        impress_givewp_version_2__2__5
+                                                                        impress_givewp_version_1__3
+                                                                        impress_givewp_version_1__4__4
+                                                                        impress_givewp_version_1__3__1
+                                                                        impress_givewp_version_1__6__2
+                                                                        impress_givewp_version_2__4__5
+                                                                        impress_givewp_version_1__1
+                                                                        impress_givewp_version_1__3__5
+                                                                        impress_givewp_version_2__0__0
+                                                                        impress_givewp_version_0__9__5__1
+                                                                        impress_givewp_version_2__1__5
+                                                                        impress_givewp_version_1__8__15
+                                                                        impress_givewp_version_0__8__5
+                                                                        impress_givewp_version_1__3__0__3
+                                                                        impress_givewp_version_1__3__0__4
+                                                                        impress_givewp_version_2__5__2
+                                                                        impress_givewp_version_1__8__8
+                                                                        impress_givewp_version_2__5__7
+                                                                        impress_givewp_version_2__5__9
+                                                                        impress_givewp_version_2__1__2
+                                                                        impress_givewp_version_2__1__1
+                                                                        impress_givewp_version_1__3__0__2
+                                                                        impress_givewp_version_1__8__13
+                                                                        impress_givewp_version_1__8__7
+                                                                        impress_givewp_version_1__8__3
+                                                                        impress_givewp_version_2__2__4
+                                                                        impress_givewp_version_1__8__11
+                                                                        impress_givewp_version_2__5__0
+                                                                        impress_givewp_version_0__8
+                                                                        impress_givewp_version_2__0__1
+                                                                        impress_givewp_version_2__1__3
+                                                                        impress_givewp_version_1__7__2
+                                                                        impress_givewp_version_2__2__0
+                                                                        impress_givewp_version_2__5__3
+                                                                        impress_givewp_version_1__2
+                                                        impress_givewp_update
+                                                                alternative
+                                                                        impress_givewp_update_any
+                                                                        impress_givewp_update_beta
+                                                        impress_givewp_target__sw
+                                                                mandatory
+                                                                        impress_givewp_target__sw_wordpress
+
+constraints
+        impress_givewp => application
+        impress_givewp_version_2__1__0 => impress_givewp_update_any
+        impress_givewp_version_2__4__0 => impress_givewp_update_any
+        impress_givewp_version_1__3__1__1 => impress_givewp_update_any
+        impress_givewp_version_1__6__3 => impress_givewp_update_any
+        impress_givewp_version_2__1__4 => impress_givewp_update_any
+        impress_givewp_version_1__7__1 => impress_givewp_update_any
+        impress_givewp_version_2__4__1 => impress_givewp_update_any
+        impress_givewp_version_2__4__3 => impress_givewp_update_any
+        impress_givewp_version_1__4 => impress_givewp_update_any
+        impress_givewp_version_2__0__3 => impress_givewp_update_any
+        impress_givewp_version_2__0__4 => impress_givewp_update_any
+        impress_givewp_version_1__8__16 => impress_givewp_update_any
+        impress_givewp_version_1__3__2 => impress_givewp_update_any
+        impress_givewp_version_1__4__2 => impress_givewp_update_any
+        impress_givewp_version_2__0__6 => impress_givewp_update_any
+        impress_givewp_version_1__4__5 => impress_givewp_update_any
+        impress_givewp_version_1__4__1 => impress_givewp_update_any
+        impress_givewp_version_2__4__7 => impress_givewp_update_any
+        impress_givewp_version_1__3__3 => impress_givewp_update_any
+        impress_givewp_version_2__0__2 => impress_givewp_update_any
+        impress_givewp_version_1__8__4 => impress_givewp_update_any
+        impress_givewp_version_2__1__7 => impress_givewp_update_any
+        impress_givewp_version_2__3__0 => impress_givewp_update_any
+        impress_givewp_version_1__0 => impress_givewp_update_any
+        impress_givewp_version_2__3__1 => impress_givewp_update_any
+        impress_givewp_version_1__5__1 => impress_givewp_update_any
+        impress_givewp_version_2__2__2 => impress_givewp_update_any
+        impress_givewp_version_1__8__12 => impress_givewp_update_any
+        impress_givewp_version_2__5__4 => impress_givewp_update_any
+        impress_givewp_version_0__8__6 => impress_givewp_update_beta
+        impress_givewp_version_1__8__10 => impress_givewp_update_any
+        impress_givewp_version_1__0__1 => impress_givewp_update_any
+        impress_givewp_version_2__5__8 => impress_givewp_update_any
+        impress_givewp_version_2__5__5 => impress_givewp_update_any
+        impress_givewp_version_1__8__6 => impress_givewp_update_any
+        impress_givewp_version_1__6 => impress_givewp_update_any
+        impress_givewp_version_2__2__1 => impress_givewp_update_any
+        impress_givewp_version_0__9 => impress_givewp_update_beta
+        impress_givewp_version_1__6__4 => impress_givewp_update_any
+        impress_givewp_version_1__8 => impress_givewp_update_any
+        impress_givewp_version_1__2__1 => impress_givewp_update_any
+        impress_givewp_version_2__4__2 => impress_givewp_update_any
+        impress_givewp_version_1__8__9 => impress_givewp_update_any
+        impress_givewp_version_1__3__6 => impress_givewp_update_any
+        impress_givewp_version_2__2__3 => impress_givewp_update_any
+        impress_givewp_version_1__8__2 => impress_givewp_update_any
+        impress_givewp_version_1__8__18 => impress_givewp_update_any
+        impress_givewp_version_1__8__17 => impress_givewp_update_any
+        impress_givewp_version_2__4__4 => impress_givewp_update_any
+        impress_givewp_version_2__1__6 => impress_givewp_update_any
+        impress_givewp_version_1__5 => impress_givewp_update_any
+        impress_givewp_version_1__8__7__1 => impress_givewp_update_any
+        impress_givewp_version_1__8__1 => impress_givewp_update_any
+        impress_givewp_version_1__6__1 => impress_givewp_update_any
+        impress_givewp_version_2__4__6 => impress_givewp_update_any
+        impress_givewp_version_2__5__6 => impress_givewp_update_any
+        impress_givewp_version_1__5__2 => impress_givewp_update_any
+        impress_givewp_version_0__9__5 => impress_givewp_update_beta
+        impress_givewp_version_1__8__14 => impress_givewp_update_any
+        impress_givewp_version_1__3__0__1 => impress_givewp_update_any
+        impress_givewp_version_1__3__4 => impress_givewp_update_any
+        impress_givewp_version_1__8__19 => impress_givewp_update_any
+        impress_givewp_version_1__7 => impress_givewp_update_any
+        impress_givewp_version_2__0__5 => impress_givewp_update_any
+        impress_givewp_version_1__4__3 => impress_givewp_update_any
+        impress_givewp_version_1__8__5 => impress_givewp_update_any
+        impress_givewp_version_2__5__1 => impress_givewp_update_any
+        impress_givewp_version_2__2__5 => impress_givewp_update_any
+        impress_givewp_version_1__3 => impress_givewp_update_any
+        impress_givewp_version_1__4__4 => impress_givewp_update_any
+        impress_givewp_version_1__3__1 => impress_givewp_update_any
+        impress_givewp_version_1__6__2 => impress_givewp_update_any
+        impress_givewp_version_2__4__5 => impress_givewp_update_any
+        impress_givewp_version_1__1 => impress_givewp_update_any
+        impress_givewp_version_1__3__5 => impress_givewp_update_any
+        impress_givewp_version_2__0__0 => impress_givewp_update_any
+        impress_givewp_version_0__9__5__1 => impress_givewp_update_beta
+        impress_givewp_version_2__1__5 => impress_givewp_update_any
+        impress_givewp_version_1__8__15 => impress_givewp_update_any
+        impress_givewp_version_0__8__5 => impress_givewp_update_beta
+        impress_givewp_version_1__3__0__3 => impress_givewp_update_any
+        impress_givewp_version_1__3__0__4 => impress_givewp_update_any
+        impress_givewp_version_2__5__2 => impress_givewp_update_any
+        impress_givewp_version_1__8__8 => impress_givewp_update_any
+        impress_givewp_version_2__5__7 => impress_givewp_update_any
+        impress_givewp_version_2__5__9 => impress_givewp_update_any
+        impress_givewp_version_2__1__2 => impress_givewp_update_any
+        impress_givewp_version_2__1__1 => impress_givewp_update_any
+        impress_givewp_version_1__3__0__2 => impress_givewp_update_any
+        impress_givewp_version_1__8__13 => impress_givewp_update_any
+        impress_givewp_version_1__8__7 => impress_givewp_update_any
+        impress_givewp_version_1__8__3 => impress_givewp_update_any
+        impress_givewp_version_2__2__4 => impress_givewp_update_any
+        impress_givewp_version_1__8__11 => impress_givewp_update_any
+        impress_givewp_version_2__5__0 => impress_givewp_update_any
+        impress_givewp_version_0__8 => impress_givewp_update_beta
+        impress_givewp_version_2__0__1 => impress_givewp_update_any
+        impress_givewp_version_2__1__3 => impress_givewp_update_any
+        impress_givewp_version_1__7__2 => impress_givewp_update_any
+        impress_givewp_version_2__2__0 => impress_givewp_update_any
+        impress_givewp_version_2__5__3 => impress_givewp_update_any
+        impress_givewp_version_1__2 => impress_givewp_update_any

@@ -1,0 +1,262 @@
+features
+        CVE_2019_8070
+                optional
+                        configs
+                                alternative
+                                        rc0
+                                                alternative
+                                                        rc0_apple
+                                                                mandatory
+                                                                        rc0_apple_macos
+                                                        rc0_linux
+                                                                mandatory
+                                                                        rc0_linux_linux__kernel
+                                                        rc0_microsoft
+                                                                mandatory
+                                                                        rc0_microsoft_windows
+                                        rc1
+                                                alternative
+                                                        rc1_google
+                                                                mandatory
+                                                                        rc1_google_chrome__os
+                                                        rc1_microsoft
+                                                                mandatory
+                                                                        rc1_microsoft_windows
+                                                        rc1_apple
+                                                                mandatory
+                                                                        rc1_apple_macos
+                                                        rc1_linux
+                                                                mandatory
+                                                                        rc1_linux_linux__kernel
+                                        rc2
+                                                mandatory
+                                                        rc2_microsoft
+                                                                alternative
+                                                                        rc2_microsoft_windows__8__1
+                                                                        rc2_microsoft_windows__10
+                mandatory
+                        types
+                                mandatory
+                                        application
+                        sources
+                                mandatory
+                                        nvd
+                        exploits
+                                optional
+                                        direct
+                                        indirect
+                        adobe
+                                alternative
+                                        adobe_flash__player__desktop__runtime
+                                                mandatory
+                                                        adobe_flash__player__desktop__runtime_version
+                                                                alternative
+                                                                        adobe_flash__player__desktop__runtime_version_26__0__0__151
+                                                                        adobe_flash__player__desktop__runtime_version_32__0__0__207
+                                                                        adobe_flash__player__desktop__runtime_version_30__0__0__134
+                                                                        adobe_flash__player__desktop__runtime_version_32__0__0__171
+                                                                        adobe_flash__player__desktop__runtime_version_21__0__0__226
+                                                                        adobe_flash__player__desktop__runtime_version_27__0__0__130
+                                                                        adobe_flash__player__desktop__runtime_version_32__0__0__156
+                                                                        adobe_flash__player__desktop__runtime_version_32__0__0__238
+                                                                        adobe_flash__player__desktop__runtime_version_32__0__0__101
+                                                                        adobe_flash__player__desktop__runtime_version_31__0__0__148
+                                                                        adobe_flash__player__desktop__runtime_version_27__0__0__183
+                                                                        adobe_flash__player__desktop__runtime_version_27__0__0__170
+                                                                        adobe_flash__player__desktop__runtime_version_30__0__0__113
+                                                                        adobe_flash__player__desktop__runtime_version_29__0__0__113
+                                                                        adobe_flash__player__desktop__runtime_version_26__0__0__131
+                                                                        adobe_flash__player__desktop__runtime_version_29__0__0__171
+                                                                        adobe_flash__player__desktop__runtime_version_32__0__0__223
+                                                                        adobe_flash__player__desktop__runtime_version_31__0__0__153
+                                                                        adobe_flash__player__desktop__runtime_version_28__0__0__137
+                                                                        adobe_flash__player__desktop__runtime_version_18__0
+                                                                        adobe_flash__player__desktop__runtime_version_29__0__0__140
+                                                                        adobe_flash__player__desktop__runtime_version_32__0__0__142
+                                                                        adobe_flash__player__desktop__runtime_version_27__0__0__159
+                                                                        adobe_flash__player__desktop__runtime_version_28__0__0__126
+                                                                        adobe_flash__player__desktop__runtime_version_23__0__0__162
+                                                                        adobe_flash__player__desktop__runtime_version_26__0__0__137
+                                                                        adobe_flash__player__desktop__runtime_version_27__0__0__187
+                                                                        adobe_flash__player__desktop__runtime_version_28__0__0__161
+                                                                        adobe_flash__player__desktop__runtime_version_16__0__0__287
+                                                                        adobe_flash__player__desktop__runtime_version_18__0__0__203
+                                                                        adobe_flash__player__desktop__runtime_version_31__0__0__108
+                                                                        adobe_flash__player__desktop__runtime_version_32__0__0__114
+                                                                        adobe_flash__player__desktop__runtime_version_30__0__0__154
+                                                                        adobe_flash__player__desktop__runtime_version_31__0__0__122
+                                        adobe_flash__player
+                                                mandatory
+                                                        adobe_flash__player_version
+                                                                alternative
+                                                                        adobe_flash__player_version_26__0__0__151
+                                                                        adobe_flash__player_version_20__0__0__306
+                                                                        adobe_flash__player_version_31__0__0__122
+                                                                        adobe_flash__player_version_23__0
+                                                                        adobe_flash__player_version_32__0__0__207
+                                                                        adobe_flash__player_version_30__0__0__134
+                                                                        adobe_flash__player_version_24__0__0__194
+                                                                        adobe_flash__player_version_21__0__0__241
+                                                                        adobe_flash__player_version_18__0__0__204
+                                                                        adobe_flash__player_version_23__0__0__257
+                                                                        adobe_flash__player_version_32__0__0__171
+                                                                        adobe_flash__player_version_24__0__0__221
+                                                                        adobe_flash__player_version_27__0__0__130
+                                                                        adobe_flash__player_version_32__0__0__156
+                                                                        adobe_flash__player_version_25__0__0__127
+                                                                        adobe_flash__player_version_32__0__0__238
+                                                                        adobe_flash__player_version_32__0__0__101
+                                                                        adobe_flash__player_version_31__0__0__148
+                                                                        adobe_flash__player_version_27__0__0__183
+                                                                        adobe_flash__player_version_19__0__0__245
+                                                                        adobe_flash__player_version_27__0__0__170
+                                                                        adobe_flash__player_version_23__0__0__185
+                                                                        adobe_flash__player_version_26__0__0__120
+                                                                        adobe_flash__player_version_29__0__0__113
+                                                                        adobe_flash__player_version_29__0__0__171
+                                                                        adobe_flash__player_version_26__0__0__131
+                                                                        adobe_flash__player_version_25__0__0__171
+                                                                        adobe_flash__player_version_30__0__0__113
+                                                                        adobe_flash__player_version_32__0__0__223
+                                                                        adobe_flash__player_version_31__0__0__153
+                                                                        adobe_flash__player_version_28__0__0__137
+                                                                        adobe_flash__player_version_18__0
+                                                                        adobe_flash__player_version_29__0__0__140
+                                                                        adobe_flash__player_version_21__0__0__242
+                                                                        adobe_flash__player_version_32__0__0__142
+                                                                        adobe_flash__player_version_22__0__0__211
+                                                                        adobe_flash__player_version_27__0__0__159
+                                                                        adobe_flash__player_version_21__0__0__216
+                                                                        adobe_flash__player_version_32__0__0__192
+                                                                        adobe_flash__player_version_26__0__0__126
+                                                                        adobe_flash__player_version_28__0__0__126
+                                                                        adobe_flash__player_version_21__0__0__97
+                                                                        adobe_flash__player_version_25__0__0__163
+                                                                        adobe_flash__player_version_23__0__0__162
+                                                                        adobe_flash__player_version_22__0__0__192
+                                                                        adobe_flash__player_version_20__0__0__228
+                                                                        adobe_flash__player_version_26__0__0__137
+                                                                        adobe_flash__player_version_27__0__0__187
+                                                                        adobe_flash__player_version_24__0__0__186
+                                                                        adobe_flash__player_version_28__0__0__161
+                                                                        adobe_flash__player_version_16__0__0__287
+                                                                        adobe_flash__player_version_18__0__0__203
+                                                                        adobe_flash__player_version_23__0__0__205
+                                                                        adobe_flash__player_version_31__0__0__108
+                                                                        adobe_flash__player_version_32__0__0__114
+                                                                        adobe_flash__player_version_30__0__0__154
+                                                                        adobe_flash__player_version_25__0__0__148
+                                                                        adobe_flash__player_version_23__0__0__207
+                                                        adobe_flash__player_target__sw
+                                                                alternative
+                                                                        adobe_flash__player_target__sw_internet__explorer
+                                                                        adobe_flash__player_target__sw_edge
+                                                                        adobe_flash__player_target__sw_chrome
+
+constraints
+        adobe_flash__player__desktop__runtime => application
+        adobe_flash__player => application
+        adobe_flash__player__desktop__runtime_version_26__0__0__151 => (rc0)
+        adobe_flash__player__desktop__runtime_version_32__0__0__207 => (rc0)
+        adobe_flash__player__desktop__runtime_version_30__0__0__134 => (rc0)
+        adobe_flash__player__desktop__runtime_version_32__0__0__171 => (rc0)
+        adobe_flash__player__desktop__runtime_version_21__0__0__226 => (rc0)
+        adobe_flash__player__desktop__runtime_version_27__0__0__130 => (rc0)
+        adobe_flash__player__desktop__runtime_version_32__0__0__156 => (rc0)
+        adobe_flash__player__desktop__runtime_version_32__0__0__238 => (rc0)
+        adobe_flash__player__desktop__runtime_version_32__0__0__101 => (rc0)
+        adobe_flash__player__desktop__runtime_version_31__0__0__148 => (rc0)
+        adobe_flash__player__desktop__runtime_version_27__0__0__183 => (rc0)
+        adobe_flash__player__desktop__runtime_version_27__0__0__170 => (rc0)
+        adobe_flash__player__desktop__runtime_version_30__0__0__113 => (rc0)
+        adobe_flash__player__desktop__runtime_version_29__0__0__113 => (rc0)
+        adobe_flash__player__desktop__runtime_version_26__0__0__131 => (rc0)
+        adobe_flash__player__desktop__runtime_version_29__0__0__171 => (rc0)
+        adobe_flash__player__desktop__runtime_version_32__0__0__223 => (rc0)
+        adobe_flash__player__desktop__runtime_version_31__0__0__153 => (rc0)
+        adobe_flash__player__desktop__runtime_version_28__0__0__137 => (rc0)
+        adobe_flash__player__desktop__runtime_version_18__0 => (rc0)
+        adobe_flash__player__desktop__runtime_version_29__0__0__140 => (rc0)
+        adobe_flash__player__desktop__runtime_version_32__0__0__142 => (rc0)
+        adobe_flash__player__desktop__runtime_version_27__0__0__159 => (rc0)
+        adobe_flash__player__desktop__runtime_version_28__0__0__126 => (rc0)
+        adobe_flash__player__desktop__runtime_version_23__0__0__162 => (rc0)
+        adobe_flash__player__desktop__runtime_version_26__0__0__137 => (rc0)
+        adobe_flash__player__desktop__runtime_version_27__0__0__187 => (rc0)
+        adobe_flash__player__desktop__runtime_version_28__0__0__161 => (rc0)
+        adobe_flash__player__desktop__runtime_version_16__0__0__287 => (rc0)
+        adobe_flash__player__desktop__runtime_version_18__0__0__203 => (rc0)
+        adobe_flash__player__desktop__runtime_version_31__0__0__108 => (rc0)
+        adobe_flash__player__desktop__runtime_version_32__0__0__114 => (rc0)
+        adobe_flash__player__desktop__runtime_version_30__0__0__154 => (rc0)
+        adobe_flash__player__desktop__runtime_version_31__0__0__122 => (rc0)
+        adobe_flash__player_version_26__0__0__151 => ((adobe_flash__player_target__sw_internet__explorer & (rc2) & !adobe_flash__player_target__sw_edge & (rc2) & !adobe_flash__player_target__sw_chrome & (rc1)) | (!adobe_flash__player_target__sw_internet__explorer & (rc2) & adobe_flash__player_target__sw_edge & (rc2) & !adobe_flash__player_target__sw_chrome & (rc1)) | (!adobe_flash__player_target__sw_internet__explorer & (rc2) & !adobe_flash__player_target__sw_edge & (rc2) & adobe_flash__player_target__sw_chrome & (rc1)))
+        adobe_flash__player_version_20__0__0__306 => ((adobe_flash__player_target__sw_internet__explorer & (rc2) & !adobe_flash__player_target__sw_edge & (rc2) & !adobe_flash__player_target__sw_chrome & (rc1)) | (!adobe_flash__player_target__sw_internet__explorer & (rc2) & adobe_flash__player_target__sw_edge & (rc2) & !adobe_flash__player_target__sw_chrome & (rc1)) | (!adobe_flash__player_target__sw_internet__explorer & (rc2) & !adobe_flash__player_target__sw_edge & (rc2) & adobe_flash__player_target__sw_chrome & (rc1)))
+        adobe_flash__player_version_31__0__0__122 => ((adobe_flash__player_target__sw_edge & (rc2) & !adobe_flash__player_target__sw_chrome & (rc1)) | (!adobe_flash__player_target__sw_edge & (rc2) & adobe_flash__player_target__sw_chrome & (rc1)))
+        adobe_flash__player_version_23__0 => ((adobe_flash__player_target__sw_edge & (rc2) & !adobe_flash__player_target__sw_chrome & (rc1)) | (!adobe_flash__player_target__sw_edge & (rc2) & adobe_flash__player_target__sw_chrome & (rc1)))
+        adobe_flash__player_version_32__0__0__207 => ((adobe_flash__player_target__sw_internet__explorer & (rc2) & !adobe_flash__player_target__sw_edge & (rc2) & !adobe_flash__player_target__sw_chrome & (rc1)) | (!adobe_flash__player_target__sw_internet__explorer & (rc2) & adobe_flash__player_target__sw_edge & (rc2) & !adobe_flash__player_target__sw_chrome & (rc1)) | (!adobe_flash__player_target__sw_internet__explorer & (rc2) & !adobe_flash__player_target__sw_edge & (rc2) & adobe_flash__player_target__sw_chrome & (rc1)))
+        adobe_flash__player_version_30__0__0__134 => ((adobe_flash__player_target__sw_edge & (rc2) & !adobe_flash__player_target__sw_chrome & (rc1)) | (!adobe_flash__player_target__sw_edge & (rc2) & adobe_flash__player_target__sw_chrome & (rc1)))
+        adobe_flash__player_version_24__0__0__194 => ((adobe_flash__player_target__sw_internet__explorer & (rc2) & !adobe_flash__player_target__sw_edge & (rc2) & !adobe_flash__player_target__sw_chrome & (rc1)) | (!adobe_flash__player_target__sw_internet__explorer & (rc2) & adobe_flash__player_target__sw_edge & (rc2) & !adobe_flash__player_target__sw_chrome & (rc1)) | (!adobe_flash__player_target__sw_internet__explorer & (rc2) & !adobe_flash__player_target__sw_edge & (rc2) & adobe_flash__player_target__sw_chrome & (rc1)))
+        adobe_flash__player_version_21__0__0__241 => ((adobe_flash__player_target__sw_internet__explorer & (rc2) & !adobe_flash__player_target__sw_edge & (rc2)) | (!adobe_flash__player_target__sw_internet__explorer & (rc2) & adobe_flash__player_target__sw_edge & (rc2)))
+        adobe_flash__player_version_18__0__0__204 => adobe_flash__player_target__sw_chrome
+        adobe_flash__player_version_18__0__0__204 => (rc1)
+        adobe_flash__player_version_23__0__0__257 => adobe_flash__player_target__sw_chrome
+        adobe_flash__player_version_23__0__0__257 => (rc1)
+        adobe_flash__player_version_32__0__0__171 => ((adobe_flash__player_target__sw_edge & (rc2) & !adobe_flash__player_target__sw_chrome & (rc1)) | (!adobe_flash__player_target__sw_edge & (rc2) & adobe_flash__player_target__sw_chrome & (rc1)))
+        adobe_flash__player_version_24__0__0__221 => ((adobe_flash__player_target__sw_internet__explorer & (rc2) & !adobe_flash__player_target__sw_edge & (rc2) & !adobe_flash__player_target__sw_chrome & (rc1)) | (!adobe_flash__player_target__sw_internet__explorer & (rc2) & adobe_flash__player_target__sw_edge & (rc2) & !adobe_flash__player_target__sw_chrome & (rc1)) | (!adobe_flash__player_target__sw_internet__explorer & (rc2) & !adobe_flash__player_target__sw_edge & (rc2) & adobe_flash__player_target__sw_chrome & (rc1)))
+        adobe_flash__player_version_27__0__0__130 => ((adobe_flash__player_target__sw_edge & (rc2) & !adobe_flash__player_target__sw_chrome & (rc1)) | (!adobe_flash__player_target__sw_edge & (rc2) & adobe_flash__player_target__sw_chrome & (rc1)))
+        adobe_flash__player_version_32__0__0__156 => ((adobe_flash__player_target__sw_edge & (rc2) & !adobe_flash__player_target__sw_chrome & (rc1)) | (!adobe_flash__player_target__sw_edge & (rc2) & adobe_flash__player_target__sw_chrome & (rc1)))
+        adobe_flash__player_version_25__0__0__127 => ((adobe_flash__player_target__sw_internet__explorer & (rc2) & !adobe_flash__player_target__sw_edge & (rc2) & !adobe_flash__player_target__sw_chrome & (rc1)) | (!adobe_flash__player_target__sw_internet__explorer & (rc2) & adobe_flash__player_target__sw_edge & (rc2) & !adobe_flash__player_target__sw_chrome & (rc1)) | (!adobe_flash__player_target__sw_internet__explorer & (rc2) & !adobe_flash__player_target__sw_edge & (rc2) & adobe_flash__player_target__sw_chrome & (rc1)))
+        adobe_flash__player_version_32__0__0__238 => adobe_flash__player_target__sw_chrome
+        adobe_flash__player_version_32__0__0__238 => (rc1)
+        adobe_flash__player_version_32__0__0__101 => ((adobe_flash__player_target__sw_edge & (rc2) & !adobe_flash__player_target__sw_chrome & (rc1)) | (!adobe_flash__player_target__sw_edge & (rc2) & adobe_flash__player_target__sw_chrome & (rc1)))
+        adobe_flash__player_version_31__0__0__148 => ((adobe_flash__player_target__sw_edge & (rc2) & !adobe_flash__player_target__sw_chrome & (rc1)) | (!adobe_flash__player_target__sw_edge & (rc2) & adobe_flash__player_target__sw_chrome & (rc1)))
+        adobe_flash__player_version_27__0__0__183 => ((adobe_flash__player_target__sw_edge & (rc2) & !adobe_flash__player_target__sw_chrome & (rc1)) | (!adobe_flash__player_target__sw_edge & (rc2) & adobe_flash__player_target__sw_chrome & (rc1)))
+        adobe_flash__player_version_19__0__0__245 => ((adobe_flash__player_target__sw_internet__explorer & (rc2) & !adobe_flash__player_target__sw_edge & (rc2) & !adobe_flash__player_target__sw_chrome & (rc1)) | (!adobe_flash__player_target__sw_internet__explorer & (rc2) & adobe_flash__player_target__sw_edge & (rc2) & !adobe_flash__player_target__sw_chrome & (rc1)) | (!adobe_flash__player_target__sw_internet__explorer & (rc2) & !adobe_flash__player_target__sw_edge & (rc2) & adobe_flash__player_target__sw_chrome & (rc1)))
+        adobe_flash__player_version_27__0__0__170 => ((adobe_flash__player_target__sw_edge & (rc2) & !adobe_flash__player_target__sw_chrome & (rc1)) | (!adobe_flash__player_target__sw_edge & (rc2) & adobe_flash__player_target__sw_chrome & (rc1)))
+        adobe_flash__player_version_23__0__0__185 => ((adobe_flash__player_target__sw_internet__explorer & (rc2) & !adobe_flash__player_target__sw_edge & (rc2) & !adobe_flash__player_target__sw_chrome & (rc1)) | (!adobe_flash__player_target__sw_internet__explorer & (rc2) & adobe_flash__player_target__sw_edge & (rc2) & !adobe_flash__player_target__sw_chrome & (rc1)) | (!adobe_flash__player_target__sw_internet__explorer & (rc2) & !adobe_flash__player_target__sw_edge & (rc2) & adobe_flash__player_target__sw_chrome & (rc1)))
+        adobe_flash__player_version_26__0__0__120 => adobe_flash__player_target__sw_edge
+        adobe_flash__player_version_26__0__0__120 => (rc2)
+        adobe_flash__player_version_29__0__0__113 => ((adobe_flash__player_target__sw_edge & (rc2) & !adobe_flash__player_target__sw_chrome & (rc1)) | (!adobe_flash__player_target__sw_edge & (rc2) & adobe_flash__player_target__sw_chrome & (rc1)))
+        adobe_flash__player_version_29__0__0__171 => ((adobe_flash__player_target__sw_edge & (rc2) & !adobe_flash__player_target__sw_chrome & (rc1)) | (!adobe_flash__player_target__sw_edge & (rc2) & adobe_flash__player_target__sw_chrome & (rc1)))
+        adobe_flash__player_version_26__0__0__131 => adobe_flash__player_target__sw_chrome
+        adobe_flash__player_version_26__0__0__131 => (rc1)
+        adobe_flash__player_version_25__0__0__171 => ((adobe_flash__player_target__sw_internet__explorer & (rc2) & !adobe_flash__player_target__sw_edge & (rc2) & !adobe_flash__player_target__sw_chrome & (rc1)) | (!adobe_flash__player_target__sw_internet__explorer & (rc2) & adobe_flash__player_target__sw_edge & (rc2) & !adobe_flash__player_target__sw_chrome & (rc1)) | (!adobe_flash__player_target__sw_internet__explorer & (rc2) & !adobe_flash__player_target__sw_edge & (rc2) & adobe_flash__player_target__sw_chrome & (rc1)))
+        adobe_flash__player_version_30__0__0__113 => ((adobe_flash__player_target__sw_edge & (rc2) & !adobe_flash__player_target__sw_chrome & (rc1)) | (!adobe_flash__player_target__sw_edge & (rc2) & adobe_flash__player_target__sw_chrome & (rc1)))
+        adobe_flash__player_version_32__0__0__223 => adobe_flash__player_target__sw_chrome
+        adobe_flash__player_version_32__0__0__223 => (rc1)
+        adobe_flash__player_version_31__0__0__153 => ((adobe_flash__player_target__sw_edge & (rc2) & !adobe_flash__player_target__sw_chrome & (rc1)) | (!adobe_flash__player_target__sw_edge & (rc2) & adobe_flash__player_target__sw_chrome & (rc1)))
+        adobe_flash__player_version_28__0__0__137 => ((adobe_flash__player_target__sw_edge & (rc2) & !adobe_flash__player_target__sw_chrome & (rc1)) | (!adobe_flash__player_target__sw_edge & (rc2) & adobe_flash__player_target__sw_chrome & (rc1)))
+        adobe_flash__player_version_18__0 => adobe_flash__player_target__sw_chrome
+        adobe_flash__player_version_18__0 => (rc1)
+        adobe_flash__player_version_29__0__0__140 => ((adobe_flash__player_target__sw_edge & (rc2) & !adobe_flash__player_target__sw_chrome & (rc1)) | (!adobe_flash__player_target__sw_edge & (rc2) & adobe_flash__player_target__sw_chrome & (rc1)))
+        adobe_flash__player_version_21__0__0__242 => ((adobe_flash__player_target__sw_internet__explorer & (rc2) & !adobe_flash__player_target__sw_edge & (rc2) & !adobe_flash__player_target__sw_chrome & (rc1)) | (!adobe_flash__player_target__sw_internet__explorer & (rc2) & adobe_flash__player_target__sw_edge & (rc2) & !adobe_flash__player_target__sw_chrome & (rc1)) | (!adobe_flash__player_target__sw_internet__explorer & (rc2) & !adobe_flash__player_target__sw_edge & (rc2) & adobe_flash__player_target__sw_chrome & (rc1)))
+        adobe_flash__player_version_32__0__0__142 => ((adobe_flash__player_target__sw_edge & (rc2) & !adobe_flash__player_target__sw_chrome & (rc1)) | (!adobe_flash__player_target__sw_edge & (rc2) & adobe_flash__player_target__sw_chrome & (rc1)))
+        adobe_flash__player_version_22__0__0__211 => ((adobe_flash__player_target__sw_internet__explorer & (rc2) & !adobe_flash__player_target__sw_edge & (rc2) & !adobe_flash__player_target__sw_chrome & (rc1)) | (!adobe_flash__player_target__sw_internet__explorer & (rc2) & adobe_flash__player_target__sw_edge & (rc2) & !adobe_flash__player_target__sw_chrome & (rc1)) | (!adobe_flash__player_target__sw_internet__explorer & (rc2) & !adobe_flash__player_target__sw_edge & (rc2) & adobe_flash__player_target__sw_chrome & (rc1)))
+        adobe_flash__player_version_27__0__0__159 => ((adobe_flash__player_target__sw_edge & (rc2) & !adobe_flash__player_target__sw_chrome & (rc1)) | (!adobe_flash__player_target__sw_edge & (rc2) & adobe_flash__player_target__sw_chrome & (rc1)))
+        adobe_flash__player_version_21__0__0__216 => adobe_flash__player_target__sw_chrome
+        adobe_flash__player_version_21__0__0__216 => (rc1)
+        adobe_flash__player_version_32__0__0__192 => ((adobe_flash__player_target__sw_internet__explorer & (rc2) & !adobe_flash__player_target__sw_edge & (rc2) & !adobe_flash__player_target__sw_chrome & (rc1)) | (!adobe_flash__player_target__sw_internet__explorer & (rc2) & adobe_flash__player_target__sw_edge & (rc2) & !adobe_flash__player_target__sw_chrome & (rc1)) | (!adobe_flash__player_target__sw_internet__explorer & (rc2) & !adobe_flash__player_target__sw_edge & (rc2) & adobe_flash__player_target__sw_chrome & (rc1)))
+        adobe_flash__player_version_26__0__0__126 => adobe_flash__player_target__sw_chrome
+        adobe_flash__player_version_26__0__0__126 => (rc1)
+        adobe_flash__player_version_28__0__0__126 => ((adobe_flash__player_target__sw_edge & (rc2) & !adobe_flash__player_target__sw_chrome & (rc1)) | (!adobe_flash__player_target__sw_edge & (rc2) & adobe_flash__player_target__sw_chrome & (rc1)))
+        adobe_flash__player_version_21__0__0__97 => ((adobe_flash__player_target__sw_internet__explorer & (rc2) & !adobe_flash__player_target__sw_edge & (rc2) & !adobe_flash__player_target__sw_chrome & (rc1)) | (!adobe_flash__player_target__sw_internet__explorer & (rc2) & adobe_flash__player_target__sw_edge & (rc2) & !adobe_flash__player_target__sw_chrome & (rc1)) | (!adobe_flash__player_target__sw_internet__explorer & (rc2) & !adobe_flash__player_target__sw_edge & (rc2) & adobe_flash__player_target__sw_chrome & (rc1)))
+        adobe_flash__player_version_25__0__0__163 => adobe_flash__player_target__sw_chrome
+        adobe_flash__player_version_25__0__0__163 => (rc1)
+        adobe_flash__player_version_23__0__0__162 => ((adobe_flash__player_target__sw_internet__explorer & (rc2) & !adobe_flash__player_target__sw_edge & (rc2) & !adobe_flash__player_target__sw_chrome & (rc1)) | (!adobe_flash__player_target__sw_internet__explorer & (rc2) & adobe_flash__player_target__sw_edge & (rc2) & !adobe_flash__player_target__sw_chrome & (rc1)) | (!adobe_flash__player_target__sw_internet__explorer & (rc2) & !adobe_flash__player_target__sw_edge & (rc2) & adobe_flash__player_target__sw_chrome & (rc1)))
+        adobe_flash__player_version_22__0__0__192 => ((adobe_flash__player_target__sw_internet__explorer & (rc2) & !adobe_flash__player_target__sw_edge & (rc2) & !adobe_flash__player_target__sw_chrome & (rc1)) | (!adobe_flash__player_target__sw_internet__explorer & (rc2) & adobe_flash__player_target__sw_edge & (rc2) & !adobe_flash__player_target__sw_chrome & (rc1)) | (!adobe_flash__player_target__sw_internet__explorer & (rc2) & !adobe_flash__player_target__sw_edge & (rc2) & adobe_flash__player_target__sw_chrome & (rc1)))
+        adobe_flash__player_version_20__0__0__228 => ((adobe_flash__player_target__sw_internet__explorer & (rc2) & !adobe_flash__player_target__sw_edge & (rc2) & !adobe_flash__player_target__sw_chrome & (rc1)) | (!adobe_flash__player_target__sw_internet__explorer & (rc2) & adobe_flash__player_target__sw_edge & (rc2) & !adobe_flash__player_target__sw_chrome & (rc1)) | (!adobe_flash__player_target__sw_internet__explorer & (rc2) & !adobe_flash__player_target__sw_edge & (rc2) & adobe_flash__player_target__sw_chrome & (rc1)))
+        adobe_flash__player_version_26__0__0__137 => ((adobe_flash__player_target__sw_edge & (rc2) & !adobe_flash__player_target__sw_chrome & (rc1)) | (!adobe_flash__player_target__sw_edge & (rc2) & adobe_flash__player_target__sw_chrome & (rc1)))
+        adobe_flash__player_version_27__0__0__187 => ((adobe_flash__player_target__sw_edge & (rc2) & !adobe_flash__player_target__sw_chrome & (rc1)) | (!adobe_flash__player_target__sw_edge & (rc2) & adobe_flash__player_target__sw_chrome & (rc1)))
+        adobe_flash__player_version_24__0__0__186 => ((adobe_flash__player_target__sw_internet__explorer & (rc2) & !adobe_flash__player_target__sw_edge & (rc2) & !adobe_flash__player_target__sw_chrome & (rc1)) | (!adobe_flash__player_target__sw_internet__explorer & (rc2) & adobe_flash__player_target__sw_edge & (rc2) & !adobe_flash__player_target__sw_chrome & (rc1)) | (!adobe_flash__player_target__sw_internet__explorer & (rc2) & !adobe_flash__player_target__sw_edge & (rc2) & adobe_flash__player_target__sw_chrome & (rc1)))
+        adobe_flash__player_version_28__0__0__161 => ((adobe_flash__player_target__sw_edge & (rc2) & !adobe_flash__player_target__sw_chrome & (rc1)) | (!adobe_flash__player_target__sw_edge & (rc2) & adobe_flash__player_target__sw_chrome & (rc1)))
+        adobe_flash__player_version_16__0__0__287 => adobe_flash__player_target__sw_chrome
+        adobe_flash__player_version_16__0__0__287 => (rc1)
+        adobe_flash__player_version_18__0__0__203 => adobe_flash__player_target__sw_chrome
+        adobe_flash__player_version_18__0__0__203 => (rc1)
+        adobe_flash__player_version_23__0__0__205 => ((adobe_flash__player_target__sw_internet__explorer & (rc2) & !adobe_flash__player_target__sw_edge & (rc2) & !adobe_flash__player_target__sw_chrome & (rc1)) | (!adobe_flash__player_target__sw_internet__explorer & (rc2) & adobe_flash__player_target__sw_edge & (rc2) & !adobe_flash__player_target__sw_chrome & (rc1)) | (!adobe_flash__player_target__sw_internet__explorer & (rc2) & !adobe_flash__player_target__sw_edge & (rc2) & adobe_flash__player_target__sw_chrome & (rc1)))
+        adobe_flash__player_version_31__0__0__108 => ((adobe_flash__player_target__sw_edge & (rc2) & !adobe_flash__player_target__sw_chrome & (rc1)) | (!adobe_flash__player_target__sw_edge & (rc2) & adobe_flash__player_target__sw_chrome & (rc1)))
+        adobe_flash__player_version_32__0__0__114 => ((adobe_flash__player_target__sw_internet__explorer & (rc2) & !adobe_flash__player_target__sw_edge & (rc2) & !adobe_flash__player_target__sw_chrome & (rc1)) | (!adobe_flash__player_target__sw_internet__explorer & (rc2) & adobe_flash__player_target__sw_edge & (rc2) & !adobe_flash__player_target__sw_chrome & (rc1)) | (!adobe_flash__player_target__sw_internet__explorer & (rc2) & !adobe_flash__player_target__sw_edge & (rc2) & adobe_flash__player_target__sw_chrome & (rc1)))
+        adobe_flash__player_version_30__0__0__154 => ((adobe_flash__player_target__sw_edge & (rc2) & !adobe_flash__player_target__sw_chrome & (rc1)) | (!adobe_flash__player_target__sw_edge & (rc2) & adobe_flash__player_target__sw_chrome & (rc1)))
+        adobe_flash__player_version_25__0__0__148 => ((adobe_flash__player_target__sw_internet__explorer & (rc2) & !adobe_flash__player_target__sw_edge & (rc2) & !adobe_flash__player_target__sw_chrome & (rc1)) | (!adobe_flash__player_target__sw_internet__explorer & (rc2) & adobe_flash__player_target__sw_edge & (rc2) & !adobe_flash__player_target__sw_chrome & (rc1)) | (!adobe_flash__player_target__sw_internet__explorer & (rc2) & !adobe_flash__player_target__sw_edge & (rc2) & adobe_flash__player_target__sw_chrome & (rc1)))
+        adobe_flash__player_version_23__0__0__207 => ((adobe_flash__player_target__sw_internet__explorer & (rc2) & !adobe_flash__player_target__sw_edge & (rc2) & !adobe_flash__player_target__sw_chrome & (rc1)) | (!adobe_flash__player_target__sw_internet__explorer & (rc2) & adobe_flash__player_target__sw_edge & (rc2) & !adobe_flash__player_target__sw_chrome & (rc1)) | (!adobe_flash__player_target__sw_internet__explorer & (rc2) & !adobe_flash__player_target__sw_edge & (rc2) & adobe_flash__player_target__sw_chrome & (rc1)))

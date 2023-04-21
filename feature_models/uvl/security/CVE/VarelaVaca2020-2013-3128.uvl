@@ -1,0 +1,38 @@
+features
+        microsoft___net__framework_update
+                alternative
+                        microsoft__net__framework_update_sp2
+                        microsoft__net__framework_update_any
+
+constraints
+        microsoft_windows__7 => operating_system
+        microsoft_windows__8 => operating_system
+        microsoft_windows__rt => operating_system
+        microsoft_windows__server__2003 => operating_system
+        microsoft_windows__server__2008 => operating_system
+        microsoft_windows__server__2012 => operating_system
+        microsoft_windows__vista => operating_system
+        microsoft_windows__xp => operating_system
+        microsoft__net__framework => application
+        microsoft_windows__server__2008_target__hw_x86 => microsoft_windows__server__2008_version_any
+        microsoft_windows__server__2008_target__hw_x86 => microsoft_windows__server__2008_update_sp2
+        microsoft_windows__server__2008_target__hw_x64 => ((microsoft_windows__server__2008_version_r2 & microsoft_windows__server__2008_update_sp1 & !microsoft_windows__server__2008_version_any & microsoft_windows__server__2008_update_sp2) | (!microsoft_windows__server__2008_version_r2 & microsoft_windows__server__2008_update_sp1 & microsoft_windows__server__2008_version_any & microsoft_windows__server__2008_update_sp2))
+        microsoft_windows__server__2008_target__hw_itanium => ((microsoft_windows__server__2008_version_r2 & microsoft_windows__server__2008_update_sp1 & !microsoft_windows__server__2008_version_any & microsoft_windows__server__2008_update_sp2) | (!microsoft_windows__server__2008_version_r2 & microsoft_windows__server__2008_update_sp1 & microsoft_windows__server__2008_version_any & microsoft_windows__server__2008_update_sp2))
+        microsoft_windows__xp_update_sp2 => microsoft_windows__xp_sw__edition_professional
+        microsoft_windows__xp_update_sp2 => microsoft_windows__xp_target__hw_x64
+        microsoft_windows__xp_update_sp3 => microsoft_windows__xp_sw__edition_any
+        microsoft_windows__xp_update_sp3 => microsoft_windows__xp_target__hw_any
+        microsoft__net__framework_version_3__5__1 => microsoft__net__framework_update_any
+        microsoft__net__framework_version_3__5__1 => (rc2)
+        microsoft__net__framework_version_4__0 => microsoft__net__framework_update_any
+        microsoft__net__framework_version_4__0 => (rc3)
+        microsoft__net__framework_version_4__5 => microsoft__net__framework_update_any
+        microsoft__net__framework_version_4__5 => (rc4)
+        microsoft__net__framework_version_3__0 => microsoft__net__framework_update_sp2
+        microsoft__net__framework_version_3__0 => (rc0)
+        microsoft__net__framework_version_3__5 => microsoft__net__framework_update_any
+        microsoft__net__framework_version_3__5 => (rc1)
+        rc0_microsoft_windows__xp_update_sp2 => rc0_microsoft_windows__xp_sw__edition_professional
+        rc0_microsoft_windows__xp_update_sp2 => rc0_microsoft_windows__xp_target__hw_x64
+        rc0_microsoft_windows__xp_update_sp3 => rc0_microsoft_windows__xp_sw__edition_any
+        rc0_microsoft_windows__xp_update_sp3 => rc0_microsoft_windows__xp_target__hw_any

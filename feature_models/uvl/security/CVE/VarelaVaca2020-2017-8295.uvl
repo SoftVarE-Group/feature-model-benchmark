@@ -1,0 +1,865 @@
+features
+        CVE_2017_8295
+                mandatory
+                        types
+                                mandatory
+                                        application
+                        sources
+                                mandatory
+                                        nvd
+                        exploits
+                                optional
+                                        direct
+                                                mandatory
+                                                        exploit_41963
+                                        indirect
+                        wordpress
+                                mandatory
+                                        wordpress_wordpress
+                                                mandatory
+                                                        wordpress_wordpress_version
+                                                                alternative
+                                                                        wordpress_wordpress_version_4__6__13
+                                                                        wordpress_wordpress_version_2__9__1
+                                                                        wordpress_wordpress_version_4__4__1
+                                                                        wordpress_wordpress_version_3__7__20
+                                                                        wordpress_wordpress_version_4__1__29
+                                                                        wordpress_wordpress_version_any
+                                                                        wordpress_wordpress_version_3__9__32
+                                                                        wordpress_wordpress_version_4__6__11
+                                                                        wordpress_wordpress_version_3__8__33
+                                                                        wordpress_wordpress_version_4__2__7
+                                                                        wordpress_wordpress_version_4__1__11
+                                                                        wordpress_wordpress_version_3__7__25
+                                                                        wordpress_wordpress_version_4__0__18
+                                                                        wordpress_wordpress_version_3__7__34
+                                                                        wordpress_wordpress_version_2__8__5__1
+                                                                        wordpress_wordpress_version_3__8__3
+                                                                        wordpress_wordpress_version_2__3__3
+                                                                        wordpress_wordpress_version_3__7__36
+                                                                        wordpress_wordpress_version_4__3__13
+                                                                        wordpress_wordpress_version_4__4__24
+                                                                        wordpress_wordpress_version_1__1__1
+                                                                        wordpress_wordpress_version_3__8__4
+                                                                        wordpress_wordpress_version_4__4__8
+                                                                        wordpress_wordpress_version_4__3__19
+                                                                        wordpress_wordpress_version_3__7__32
+                                                                        wordpress_wordpress_version_4__0__6
+                                                                        wordpress_wordpress_version_3__4
+                                                                        wordpress_wordpress_version_3__8__8
+                                                                        wordpress_wordpress_version_4__4__21
+                                                                        wordpress_wordpress_version_4__1__30
+                                                                        wordpress_wordpress_version_4__2__14
+                                                                        wordpress_wordpress_version_1__6__2
+                                                                        wordpress_wordpress_version_4__5__4
+                                                                        wordpress_wordpress_version_4__3__0
+                                                                        wordpress_wordpress_version_3__8__20
+                                                                        wordpress_wordpress_version_4__6__14
+                                                                        wordpress_wordpress_version_2__8__2
+                                                                        wordpress_wordpress_version_3__5
+                                                                        wordpress_wordpress_version_4__2__4
+                                                                        wordpress_wordpress_version_4__1__16
+                                                                        wordpress_wordpress_version_4__5__9
+                                                                        wordpress_wordpress_version_3__7
+                                                                        wordpress_wordpress_version_4__2__8
+                                                                        wordpress_wordpress_version_3__9__10
+                                                                        wordpress_wordpress_version_4__0__4
+                                                                        wordpress_wordpress_version_4__0__8
+                                                                        wordpress_wordpress_version_4__1__10
+                                                                        wordpress_wordpress_version_4__7__1
+                                                                        wordpress_wordpress_version_3__7__15
+                                                                        wordpress_wordpress_version_4__2__15
+                                                                        wordpress_wordpress_version_3__1__1
+                                                                        wordpress_wordpress_version_1__0__1
+                                                                        wordpress_wordpress_version_3__5__1
+                                                                        wordpress_wordpress_version_3__5__0
+                                                                        wordpress_wordpress_version_4__2__21
+                                                                        wordpress_wordpress_version_3__8__28
+                                                                        wordpress_wordpress_version_1__5__1__1
+                                                                        wordpress_wordpress_version_2__1
+                                                                        wordpress_wordpress_version_4__1__24
+                                                                        wordpress_wordpress_version_2__1__1
+                                                                        wordpress_wordpress_version_4__6__19
+                                                                        wordpress_wordpress_version_1__3
+                                                                        wordpress_wordpress_version_3__9__11
+                                                                        wordpress_wordpress_version_4__5
+                                                                        wordpress_wordpress_version_3__7__4
+                                                                        wordpress_wordpress_version_3__9__19
+                                                                        wordpress_wordpress_version_3__7__10
+                                                                        wordpress_wordpress_version_4__5__17
+                                                                        wordpress_wordpress_version_4__0__15
+                                                                        wordpress_wordpress_version_4__3
+                                                                        wordpress_wordpress_version_4__3__2
+                                                                        wordpress_wordpress_version_3__7__6
+                                                                        wordpress_wordpress_version_4__1__1
+                                                                        wordpress_wordpress_version_4__0__26
+                                                                        wordpress_wordpress_version_1__3__3
+                                                                        wordpress_wordpress_version_3__8__12
+                                                                        wordpress_wordpress_version_4__4__4
+                                                                        wordpress_wordpress_version_3__7__8
+                                                                        wordpress_wordpress_version_4__7__4
+                                                                        wordpress_wordpress_version_3__8__30
+                                                                        wordpress_wordpress_version_4__6__8
+                                                                        wordpress_wordpress_version_1__5__2
+                                                                        wordpress_wordpress_version_4__5__14
+                                                                        wordpress_wordpress_version_3__8__15
+                                                                        wordpress_wordpress_version_4__1__20
+                                                                        wordpress_wordpress_version_3__7__23
+                                                                        wordpress_wordpress_version_3__9__29
+                                                                        wordpress_wordpress_version_2__8__5__2
+                                                                        wordpress_wordpress_version_1__2__2
+                                                                        wordpress_wordpress_version_1__2__3
+                                                                        wordpress_wordpress_version_3__9__7
+                                                                        wordpress_wordpress_version_4__4__12
+                                                                        wordpress_wordpress_version_3__8__36
+                                                                        wordpress_wordpress_version_4__3__15
+                                                                        wordpress_wordpress_version_3__9__31
+                                                                        wordpress_wordpress_version_3__8__13
+                                                                        wordpress_wordpress_version_4__0__5
+                                                                        wordpress_wordpress_version_4__6
+                                                                        wordpress_wordpress_version_4__4__2
+                                                                        wordpress_wordpress_version_3__4__2
+                                                                        wordpress_wordpress_version_4__7__3
+                                                                        wordpress_wordpress_version_4__5__2
+                                                                        wordpress_wordpress_version_4__4__9
+                                                                        wordpress_wordpress_version_4__3__21
+                                                                        wordpress_wordpress_version_1__5__1__3
+                                                                        wordpress_wordpress_version_4__4__18
+                                                                        wordpress_wordpress_version_4__2__16
+                                                                        wordpress_wordpress_version_4__0__32
+                                                                        wordpress_wordpress_version_4__5__12
+                                                                        wordpress_wordpress_version_4__6__5
+                                                                        wordpress_wordpress_version_4__4__7
+                                                                        wordpress_wordpress_version_4__2__26
+                                                                        wordpress_wordpress_version_2__7
+                                                                        wordpress_wordpress_version_0__711
+                                                                        wordpress_wordpress_version_3__7__9
+                                                                        wordpress_wordpress_version_4__3__5
+                                                                        wordpress_wordpress_version_4__3__7
+                                                                        wordpress_wordpress_version_4__1
+                                                                        wordpress_wordpress_version_4__1__25
+                                                                        wordpress_wordpress_version_3__8__22
+                                                                        wordpress_wordpress_version_3__9__28
+                                                                        wordpress_wordpress_version_4__0__1
+                                                                        wordpress_wordpress_version_4__2__28
+                                                                        wordpress_wordpress_version_4__1__27
+                                                                        wordpress_wordpress_version_3__9__23
+                                                                        wordpress_wordpress_version_4__1__32
+                                                                        wordpress_wordpress_version_4__6__1
+                                                                        wordpress_wordpress_version_4__7__2
+                                                                        wordpress_wordpress_version_2__3
+                                                                        wordpress_wordpress_version_3__8__5
+                                                                        wordpress_wordpress_version_4__3__16
+                                                                        wordpress_wordpress_version_3__7__7
+                                                                        wordpress_wordpress_version_4__3__20
+                                                                        wordpress_wordpress_version_2__6__2
+                                                                        wordpress_wordpress_version_3__9__33
+                                                                        wordpress_wordpress_version_2__8__6
+                                                                        wordpress_wordpress_version_4__6__15
+                                                                        wordpress_wordpress_version_4__4__16
+                                                                        wordpress_wordpress_version_4__2__19
+                                                                        wordpress_wordpress_version_4__4__14
+                                                                        wordpress_wordpress_version_4__4__5
+                                                                        wordpress_wordpress_version_4__1__2
+                                                                        wordpress_wordpress_version_1__3__2
+                                                                        wordpress_wordpress_version_3__7__28
+                                                                        wordpress_wordpress_version_3__3__1
+                                                                        wordpress_wordpress_version_3__7__16
+                                                                        wordpress_wordpress_version_4__5__15
+                                                                        wordpress_wordpress_version_4__3__11
+                                                                        wordpress_wordpress_version_3__3
+                                                                        wordpress_wordpress_version_3__4__0
+                                                                        wordpress_wordpress_version_3__7__35
+                                                                        wordpress_wordpress_version_4__4__3
+                                                                        wordpress_wordpress_version_3__8__18
+                                                                        wordpress_wordpress_version_3__1__4
+                                                                        wordpress_wordpress_version_2__2__2
+                                                                        wordpress_wordpress_version_4__5__11
+                                                                        wordpress_wordpress_version_3__8__29
+                                                                        wordpress_wordpress_version_3__8__34
+                                                                        wordpress_wordpress_version_4__1__33
+                                                                        wordpress_wordpress_version_3__7__29
+                                                                        wordpress_wordpress_version_2__8__1
+                                                                        wordpress_wordpress_version_4__0__23
+                                                                        wordpress_wordpress_version_2__8
+                                                                        wordpress_wordpress_version_3__9__16
+                                                                        wordpress_wordpress_version_3__1__3
+                                                                        wordpress_wordpress_version_4__3__25
+                                                                        wordpress_wordpress_version_3__9__5
+                                                                        wordpress_wordpress_version_3__9__34
+                                                                        wordpress_wordpress_version_4__5__13
+                                                                        wordpress_wordpress_version_4__6__20
+                                                                        wordpress_wordpress_version_2__5
+                                                                        wordpress_wordpress_version_0__72
+                                                                        wordpress_wordpress_version_4__3__26
+                                                                        wordpress_wordpress_version_4__6__4
+                                                                        wordpress_wordpress_version_4__3__22
+                                                                        wordpress_wordpress_version_3__8__9
+                                                                        wordpress_wordpress_version_1__0
+                                                                        wordpress_wordpress_version_4__2
+                                                                        wordpress_wordpress_version_3__0__3
+                                                                        wordpress_wordpress_version_4__1__31
+                                                                        wordpress_wordpress_version_3__9__25
+                                                                        wordpress_wordpress_version_4__0__19
+                                                                        wordpress_wordpress_version_4__1__13
+                                                                        wordpress_wordpress_version_2__2__1
+                                                                        wordpress_wordpress_version_3__8__31
+                                                                        wordpress_wordpress_version_4__6__6
+                                                                        wordpress_wordpress_version_4__1__15
+                                                                        wordpress_wordpress_version_4__1__6
+                                                                        wordpress_wordpress_version_2__0__6
+                                                                        wordpress_wordpress_version_4__1__9
+                                                                        wordpress_wordpress_version_3__6__1
+                                                                        wordpress_wordpress_version_3__8__32
+                                                                        wordpress_wordpress_version_3__9__17
+                                                                        wordpress_wordpress_version_3__7__19
+                                                                        wordpress_wordpress_version_4__6__2
+                                                                        wordpress_wordpress_version_3__7__33
+                                                                        wordpress_wordpress_version_4__2__18
+                                                                        wordpress_wordpress_version_4__2__2
+                                                                        wordpress_wordpress_version_4__4__19
+                                                                        wordpress_wordpress_version_4__4__20
+                                                                        wordpress_wordpress_version_4__5__16
+                                                                        wordpress_wordpress_version_3__9__27
+                                                                        wordpress_wordpress_version_4__1__5
+                                                                        wordpress_wordpress_version_4__4__17
+                                                                        wordpress_wordpress_version_4__0__12
+                                                                        wordpress_wordpress_version_3__9__12
+                                                                        wordpress_wordpress_version_3__7__1
+                                                                        wordpress_wordpress_version_4__2__20
+                                                                        wordpress_wordpress_version_4__3__18
+                                                                        wordpress_wordpress_version_3__8__7
+                                                                        wordpress_wordpress_version_3__8__25
+                                                                        wordpress_wordpress_version_4__5__19
+                                                                        wordpress_wordpress_version_4__2__30
+                                                                        wordpress_wordpress_version_1__5__1
+                                                                        wordpress_wordpress_version_3__8__14
+                                                                        wordpress_wordpress_version_4__3__24
+                                                                        wordpress_wordpress_version_3__8__17
+                                                                        wordpress_wordpress_version_4__0__17
+                                                                        wordpress_wordpress_version_4__3__8
+                                                                        wordpress_wordpress_version_3__9__4
+                                                                        wordpress_wordpress_version_4__1__14
+                                                                        wordpress_wordpress_version_4__0__33
+                                                                        wordpress_wordpress_version_4__3__9
+                                                                        wordpress_wordpress_version_4__0__30
+                                                                        wordpress_wordpress_version_4__0__24
+                                                                        wordpress_wordpress_version_3__8__16
+                                                                        wordpress_wordpress_version_4__4__10
+                                                                        wordpress_wordpress_version_3__9__13
+                                                                        wordpress_wordpress_version_3__8__24
+                                                                        wordpress_wordpress_version_4__5__1
+                                                                        wordpress_wordpress_version_1__2
+                                                                        wordpress_wordpress_version_3__8__19
+                                                                        wordpress_wordpress_version_3__0__2
+                                                                        wordpress_wordpress_version_4__6__16
+                                                                        wordpress_wordpress_version_4__5__24
+                                                                        wordpress_wordpress_version_3__1__2
+                                                                        wordpress_wordpress_version_3__5__2
+                                                                        wordpress_wordpress_version_2__0__7
+                                                                        wordpress_wordpress_version_4__0__22
+                                                                        wordpress_wordpress_version_3__0
+                                                                        wordpress_wordpress_version_3__7__14
+                                                                        wordpress_wordpress_version_4__2__25
+                                                                        wordpress_wordpress_version_2__3__1
+                                                                        wordpress_wordpress_version_4__6__21
+                                                                        wordpress_wordpress_version_4__5__10
+                                                                        wordpress_wordpress_version_4__2__11
+                                                                        wordpress_wordpress_version_4__0__21
+                                                                        wordpress_wordpress_version_3__0__4
+                                                                        wordpress_wordpress_version_4__0__3
+                                                                        wordpress_wordpress_version_2__0
+                                                                        wordpress_wordpress_version_1__2__1
+                                                                        wordpress_wordpress_version_4__6__17
+                                                                        wordpress_wordpress_version_4__0
+                                                                        wordpress_wordpress_version_4__4__15
+                                                                        wordpress_wordpress_version_3__9__2
+                                                                        wordpress_wordpress_version_4__6__12
+                                                                        wordpress_wordpress_version_2__8__3
+                                                                        wordpress_wordpress_version_3__9__6
+                                                                        wordpress_wordpress_version_3__2__1
+                                                                        wordpress_wordpress_version_2__0__9
+                                                                        wordpress_wordpress_version_4__0__31
+                                                                        wordpress_wordpress_version_3__4__1
+                                                                        wordpress_wordpress_version_3__7__13
+                                                                        wordpress_wordpress_version_4__2__6
+                                                                        wordpress_wordpress_version_3__8__26
+                                                                        wordpress_wordpress_version_3__8__21
+                                                                        wordpress_wordpress_version_1__5
+                                                                        wordpress_wordpress_version_3__9__9
+                                                                        wordpress_wordpress_version_4__0__20
+                                                                        wordpress_wordpress_version_4__0__27
+                                                                        wordpress_wordpress_version_4__4__22
+                                                                        wordpress_wordpress_version_4__4__6
+                                                                        wordpress_wordpress_version_2__3__2
+                                                                        wordpress_wordpress_version_4__3__1
+                                                                        wordpress_wordpress_version_2__0__10
+                                                                        wordpress_wordpress_version_4__4__13
+                                                                        wordpress_wordpress_version_4__4__11
+                                                                        wordpress_wordpress_version_4__5__5
+                                                                        wordpress_wordpress_version_2__0__5
+                                                                        wordpress_wordpress_version_4__0__13
+                                                                        wordpress_wordpress_version_2__0__11
+                                                                        wordpress_wordpress_version_3__8__1
+                                                                        wordpress_wordpress_version_4__0__28
+                                                                        wordpress_wordpress_version_3__1
+                                                                        wordpress_wordpress_version_4__2__12
+                                                                        wordpress_wordpress_version_4__4
+                                                                        wordpress_wordpress_version_3__8__6
+                                                                        wordpress_wordpress_version_4__1__23
+                                                                        wordpress_wordpress_version_2__5__1
+                                                                        wordpress_wordpress_version_4__6__18
+                                                                        wordpress_wordpress_version_1__0__2
+                                                                        wordpress_wordpress_version_4__1__8
+                                                                        wordpress_wordpress_version_4__6__9
+                                                                        wordpress_wordpress_version_4__0__16
+                                                                        wordpress_wordpress_version_1__2__5
+                                                                        wordpress_wordpress_version_2__1__3
+                                                                        wordpress_wordpress_version_4__1__21
+                                                                        wordpress_wordpress_version_3__8__2
+                                                                        wordpress_wordpress_version_4__1__3
+                                                                        wordpress_wordpress_version_4__1__19
+                                                                        wordpress_wordpress_version_4__1__17
+                                                                        wordpress_wordpress_version_4__1__18
+                                                                        wordpress_wordpress_version_3__8
+                                                                        wordpress_wordpress_version_3__7__26
+                                                                        wordpress_wordpress_version_4__5__22
+                                                                        wordpress_wordpress_version_2__9__2
+                                                                        wordpress_wordpress_version_3__9__3
+                                                                        wordpress_wordpress_version_3__8__35
+                                                                        wordpress_wordpress_version_3__8__10
+                                                                        wordpress_wordpress_version_3__0__6
+                                                                        wordpress_wordpress_version_4__2__3
+                                                                        wordpress_wordpress_version_3__8__11
+                                                                        wordpress_wordpress_version_2__9__1__1
+                                                                        wordpress_wordpress_version_4__2__27
+                                                                        wordpress_wordpress_version_4__2__29
+                                                                        wordpress_wordpress_version_4__3__14
+                                                                        wordpress_wordpress_version_3__9__22
+                                                                        wordpress_wordpress_version_4__1__4
+                                                                        wordpress_wordpress_version_3__9__1
+                                                                        wordpress_wordpress_version_2__8__5
+                                                                        wordpress_wordpress_version_3__6
+                                                                        wordpress_wordpress_version_1__2__4
+                                                                        wordpress_wordpress_version_4__2__5
+                                                                        wordpress_wordpress_version_4__3__12
+                                                                        wordpress_wordpress_version_3__0__5
+                                                                        wordpress_wordpress_version_4__7
+                                                                        wordpress_wordpress_version_4__4__0
+                                                                        wordpress_wordpress_version_4__5__7
+                                                                        wordpress_wordpress_version_4__0__25
+                                                                        wordpress_wordpress_version_2__6__5
+                                                                        wordpress_wordpress_version_3__9__21
+                                                                        wordpress_wordpress_version_4__0__2
+                                                                        wordpress_wordpress_version_3__7__24
+                                                                        wordpress_wordpress_version_3__7__21
+                                                                        wordpress_wordpress_version_4__6__7
+                                                                        wordpress_wordpress_version_2__0__4
+                                                                        wordpress_wordpress_version_3__9__0
+                                                                        wordpress_wordpress_version_3__7__31
+                                                                        wordpress_wordpress_version_4__0__7
+                                                                        wordpress_wordpress_version_4__0__10
+                                                                        wordpress_wordpress_version_3__9__18
+                                                                        wordpress_wordpress_version_2__8__4
+                                                                        wordpress_wordpress_version_4__1__22
+                                                                        wordpress_wordpress_version_3__8__27
+                                                                        wordpress_wordpress_version_2__0__2
+                                                                        wordpress_wordpress_version_2__9
+                                                                        wordpress_wordpress_version_4__3__6
+                                                                        wordpress_wordpress_version_3__9__15
+                                                                        wordpress_wordpress_version_3__7__17
+                                                                        wordpress_wordpress_version_3__8__23
+                                                                        wordpress_wordpress_version_4__5__6
+                                                                        wordpress_wordpress_version_4__3__3
+                                                                        wordpress_wordpress_version_4__6__3
+                                                                        wordpress_wordpress_version_3__7__3
+                                                                        wordpress_wordpress_version_3__7__30
+                                                                        wordpress_wordpress_version_4__2__1
+                                                                        wordpress_wordpress_version_3__9__14
+                                                                        wordpress_wordpress_version_4__3__17
+                                                                        wordpress_wordpress_version_2__7__1
+                                                                        wordpress_wordpress_version_3__3__2
+                                                                        wordpress_wordpress_version_2__6
+                                                                        wordpress_wordpress_version_3__7__27
+                                                                        wordpress_wordpress_version_2__0__3
+                                                                        wordpress_wordpress_version_4__1__26
+                                                                        wordpress_wordpress_version_4__5__18
+                                                                        wordpress_wordpress_version_4__0__14
+                                                                        wordpress_wordpress_version_3__9__24
+                                                                        wordpress_wordpress_version_3__9__26
+                                                                        wordpress_wordpress_version_4__5__21
+                                                                        wordpress_wordpress_version_3__7__12
+                                                                        wordpress_wordpress_version_4__3__4
+                                                                        wordpress_wordpress_version_4__2__10
+                                                                        wordpress_wordpress_version_4__2__24
+                                                                        wordpress_wordpress_version_3__9__8
+                                                                        wordpress_wordpress_version_4__5__3
+                                                                        wordpress_wordpress_version_3__9__20
+                                                                        wordpress_wordpress_version_4__4__23
+                                                                        wordpress_wordpress_version_3__7__22
+                                                                        wordpress_wordpress_version_0__71
+                                                                        wordpress_wordpress_version_4__3__10
+                                                                        wordpress_wordpress_version_4__1__7
+                                                                        wordpress_wordpress_version_4__2__13
+                                                                        wordpress_wordpress_version_3__7__5
+                                                                        wordpress_wordpress_version_4__5__20
+                                                                        wordpress_wordpress_version_3__9
+                                                                        wordpress_wordpress_version_3__0__1
+                                                                        wordpress_wordpress_version_2__0__1
+                                                                        wordpress_wordpress_version_3__9__30
+                                                                        wordpress_wordpress_version_2__1__2
+                                                                        wordpress_wordpress_version_3__7__18
+                                                                        wordpress_wordpress_version_4__1__28
+                                                                        wordpress_wordpress_version_4__0__29
+                                                                        wordpress_wordpress_version_4__1__12
+                                                                        wordpress_wordpress_version_4__3__23
+                                                                        wordpress_wordpress_version_4__2__22
+                                                                        wordpress_wordpress_version_3__7__2
+                                                                        wordpress_wordpress_version_4__0__11
+                                                                        wordpress_wordpress_version_2__2
+                                                                        wordpress_wordpress_version_4__2__17
+                                                                        wordpress_wordpress_version_1__5__1__2
+                                                                        wordpress_wordpress_version_2__0__8
+                                                                        wordpress_wordpress_version_4__6__10
+                                                                        wordpress_wordpress_version_3__2
+                                                                        wordpress_wordpress_version_4__2__9
+                                                                        wordpress_wordpress_version_4__0__9
+                                                                        wordpress_wordpress_version_2__6__3
+                                                                        wordpress_wordpress_version_2__2__3
+                                                                        wordpress_wordpress_version_4__5__8
+                                                                        wordpress_wordpress_version_4__2__23
+                                                                        wordpress_wordpress_version_4__5__23
+                                                                        wordpress_wordpress_version_3__7__11
+                                                                        wordpress_wordpress_version_2__6__1
+                                                                        wordpress_wordpress_version_4__4__25
+                                                                        wordpress_wordpress_version_3__3__3
+                                                        wordpress_wordpress_update
+                                                                alternative
+                                                                        wordpress_wordpress_update_beta
+                                                                        wordpress_wordpress_update_beta2
+                                                                        wordpress_wordpress_update_rc2
+                                                                        wordpress_wordpress_update_any
+                                                                        wordpress_wordpress_update_rc4
+                                                                        wordpress_wordpress_update_rc1
+                                                                        wordpress_wordpress_update_beta1
+                                                                        wordpress_wordpress_update_beta4
+                                                                        wordpress_wordpress_update_a
+                                                                        wordpress_wordpress_update_beta3
+                                                                        wordpress_wordpress_update_rc3
+
+constraints
+        wordpress_wordpress => application
+        wordpress_wordpress_version_4__6__13 => wordpress_wordpress_update_any
+        wordpress_wordpress_version_2__9__1 => ((wordpress_wordpress_update_any & !wordpress_wordpress_update_rc1 & !wordpress_wordpress_update_beta1) | (!wordpress_wordpress_update_any & wordpress_wordpress_update_rc1 & !wordpress_wordpress_update_beta1) | (!wordpress_wordpress_update_any & !wordpress_wordpress_update_rc1 & wordpress_wordpress_update_beta1))
+        wordpress_wordpress_version_4__4__1 => wordpress_wordpress_update_any
+        wordpress_wordpress_version_3__7__20 => wordpress_wordpress_update_any
+        wordpress_wordpress_version_4__1__29 => wordpress_wordpress_update_any
+        wordpress_wordpress_version_any => wordpress_wordpress_update_any
+        wordpress_wordpress_version_3__9__32 => wordpress_wordpress_update_any
+        wordpress_wordpress_version_4__6__11 => wordpress_wordpress_update_any
+        wordpress_wordpress_version_3__8__33 => wordpress_wordpress_update_any
+        wordpress_wordpress_version_4__2__7 => wordpress_wordpress_update_any
+        wordpress_wordpress_version_4__1__11 => wordpress_wordpress_update_any
+        wordpress_wordpress_version_3__7__25 => wordpress_wordpress_update_any
+        wordpress_wordpress_version_4__0__18 => wordpress_wordpress_update_any
+        wordpress_wordpress_version_3__7__34 => wordpress_wordpress_update_any
+        wordpress_wordpress_version_2__8__5__1 => wordpress_wordpress_update_any
+        wordpress_wordpress_version_3__8__3 => wordpress_wordpress_update_any
+        wordpress_wordpress_version_2__3__3 => wordpress_wordpress_update_any
+        wordpress_wordpress_version_3__7__36 => wordpress_wordpress_update_any
+        wordpress_wordpress_version_4__3__13 => wordpress_wordpress_update_any
+        wordpress_wordpress_version_4__4__24 => wordpress_wordpress_update_any
+        wordpress_wordpress_version_1__1__1 => wordpress_wordpress_update_any
+        wordpress_wordpress_version_3__8__4 => wordpress_wordpress_update_any
+        wordpress_wordpress_version_4__4__8 => wordpress_wordpress_update_any
+        wordpress_wordpress_version_4__3__19 => wordpress_wordpress_update_any
+        wordpress_wordpress_version_3__7__32 => wordpress_wordpress_update_any
+        wordpress_wordpress_version_4__0__6 => wordpress_wordpress_update_any
+        wordpress_wordpress_version_3__4 => ((wordpress_wordpress_update_beta2 & !wordpress_wordpress_update_rc2 & !wordpress_wordpress_update_any & !wordpress_wordpress_update_rc4 & !wordpress_wordpress_update_rc1 & !wordpress_wordpress_update_beta1 & !wordpress_wordpress_update_beta4 & !wordpress_wordpress_update_beta3 & !wordpress_wordpress_update_rc3) | (!wordpress_wordpress_update_beta2 & wordpress_wordpress_update_rc2 & !wordpress_wordpress_update_any & !wordpress_wordpress_update_rc4 & !wordpress_wordpress_update_rc1 & !wordpress_wordpress_update_beta1 & !wordpress_wordpress_update_beta4 & !wordpress_wordpress_update_beta3 & !wordpress_wordpress_update_rc3) | (!wordpress_wordpress_update_beta2 & !wordpress_wordpress_update_rc2 & wordpress_wordpress_update_any & !wordpress_wordpress_update_rc4 & !wordpress_wordpress_update_rc1 & !wordpress_wordpress_update_beta1 & !wordpress_wordpress_update_beta4 & !wordpress_wordpress_update_beta3 & !wordpress_wordpress_update_rc3) | (!wordpress_wordpress_update_beta2 & !wordpress_wordpress_update_rc2 & !wordpress_wordpress_update_any & wordpress_wordpress_update_rc4 & !wordpress_wordpress_update_rc1 & !wordpress_wordpress_update_beta1 & !wordpress_wordpress_update_beta4 & !wordpress_wordpress_update_beta3 & !wordpress_wordpress_update_rc3) | (!wordpress_wordpress_update_beta2 & !wordpress_wordpress_update_rc2 & !wordpress_wordpress_update_any & !wordpress_wordpress_update_rc4 & wordpress_wordpress_update_rc1 & !wordpress_wordpress_update_beta1 & !wordpress_wordpress_update_beta4 & !wordpress_wordpress_update_beta3 & !wordpress_wordpress_update_rc3) | (!wordpress_wordpress_update_beta2 & !wordpress_wordpress_update_rc2 & !wordpress_wordpress_update_any & !wordpress_wordpress_update_rc4 & !wordpress_wordpress_update_rc1 & wordpress_wordpress_update_beta1 & !wordpress_wordpress_update_beta4 & !wordpress_wordpress_update_beta3 & !wordpress_wordpress_update_rc3) | (!wordpress_wordpress_update_beta2 & !wordpress_wordpress_update_rc2 & !wordpress_wordpress_update_any & !wordpress_wordpress_update_rc4 & !wordpress_wordpress_update_rc1 & !wordpress_wordpress_update_beta1 & wordpress_wordpress_update_beta4 & !wordpress_wordpress_update_beta3 & !wordpress_wordpress_update_rc3) | (!wordpress_wordpress_update_beta2 & !wordpress_wordpress_update_rc2 & !wordpress_wordpress_update_any & !wordpress_wordpress_update_rc4 & !wordpress_wordpress_update_rc1 & !wordpress_wordpress_update_beta1 & !wordpress_wordpress_update_beta4 & wordpress_wordpress_update_beta3 & !wordpress_wordpress_update_rc3) | (!wordpress_wordpress_update_beta2 & !wordpress_wordpress_update_rc2 & !wordpress_wordpress_update_any & !wordpress_wordpress_update_rc4 & !wordpress_wordpress_update_rc1 & !wordpress_wordpress_update_beta1 & !wordpress_wordpress_update_beta4 & !wordpress_wordpress_update_beta3 & wordpress_wordpress_update_rc3))
+        wordpress_wordpress_version_3__8__8 => wordpress_wordpress_update_any
+        wordpress_wordpress_version_4__4__21 => wordpress_wordpress_update_any
+        wordpress_wordpress_version_4__1__30 => wordpress_wordpress_update_any
+        wordpress_wordpress_version_4__2__14 => wordpress_wordpress_update_any
+        wordpress_wordpress_version_1__6__2 => wordpress_wordpress_update_any
+        wordpress_wordpress_version_4__5__4 => wordpress_wordpress_update_any
+        wordpress_wordpress_version_4__3__0 => wordpress_wordpress_update_any
+        wordpress_wordpress_version_3__8__20 => wordpress_wordpress_update_any
+        wordpress_wordpress_version_4__6__14 => wordpress_wordpress_update_any
+        wordpress_wordpress_version_2__8__2 => wordpress_wordpress_update_any
+        wordpress_wordpress_version_3__5 => ((wordpress_wordpress_update_beta2 & !wordpress_wordpress_update_rc2 & !wordpress_wordpress_update_any & !wordpress_wordpress_update_rc4 & !wordpress_wordpress_update_rc1 & !wordpress_wordpress_update_beta1 & !wordpress_wordpress_update_beta3 & !wordpress_wordpress_update_rc3) | (!wordpress_wordpress_update_beta2 & wordpress_wordpress_update_rc2 & !wordpress_wordpress_update_any & !wordpress_wordpress_update_rc4 & !wordpress_wordpress_update_rc1 & !wordpress_wordpress_update_beta1 & !wordpress_wordpress_update_beta3 & !wordpress_wordpress_update_rc3) | (!wordpress_wordpress_update_beta2 & !wordpress_wordpress_update_rc2 & wordpress_wordpress_update_any & !wordpress_wordpress_update_rc4 & !wordpress_wordpress_update_rc1 & !wordpress_wordpress_update_beta1 & !wordpress_wordpress_update_beta3 & !wordpress_wordpress_update_rc3) | (!wordpress_wordpress_update_beta2 & !wordpress_wordpress_update_rc2 & !wordpress_wordpress_update_any & wordpress_wordpress_update_rc4 & !wordpress_wordpress_update_rc1 & !wordpress_wordpress_update_beta1 & !wordpress_wordpress_update_beta3 & !wordpress_wordpress_update_rc3) | (!wordpress_wordpress_update_beta2 & !wordpress_wordpress_update_rc2 & !wordpress_wordpress_update_any & !wordpress_wordpress_update_rc4 & wordpress_wordpress_update_rc1 & !wordpress_wordpress_update_beta1 & !wordpress_wordpress_update_beta3 & !wordpress_wordpress_update_rc3) | (!wordpress_wordpress_update_beta2 & !wordpress_wordpress_update_rc2 & !wordpress_wordpress_update_any & !wordpress_wordpress_update_rc4 & !wordpress_wordpress_update_rc1 & wordpress_wordpress_update_beta1 & !wordpress_wordpress_update_beta3 & !wordpress_wordpress_update_rc3) | (!wordpress_wordpress_update_beta2 & !wordpress_wordpress_update_rc2 & !wordpress_wordpress_update_any & !wordpress_wordpress_update_rc4 & !wordpress_wordpress_update_rc1 & !wordpress_wordpress_update_beta1 & wordpress_wordpress_update_beta3 & !wordpress_wordpress_update_rc3) | (!wordpress_wordpress_update_beta2 & !wordpress_wordpress_update_rc2 & !wordpress_wordpress_update_any & !wordpress_wordpress_update_rc4 & !wordpress_wordpress_update_rc1 & !wordpress_wordpress_update_beta1 & !wordpress_wordpress_update_beta3 & wordpress_wordpress_update_rc3))
+        wordpress_wordpress_version_4__2__4 => ((wordpress_wordpress_update_any & !wordpress_wordpress_update_rc1) | (!wordpress_wordpress_update_any & wordpress_wordpress_update_rc1))
+        wordpress_wordpress_version_4__1__16 => wordpress_wordpress_update_any
+        wordpress_wordpress_version_4__5__9 => wordpress_wordpress_update_any
+        wordpress_wordpress_version_3__7 => ((wordpress_wordpress_update_beta2 & !wordpress_wordpress_update_rc2 & !wordpress_wordpress_update_any & !wordpress_wordpress_update_rc1 & !wordpress_wordpress_update_beta1) | (!wordpress_wordpress_update_beta2 & wordpress_wordpress_update_rc2 & !wordpress_wordpress_update_any & !wordpress_wordpress_update_rc1 & !wordpress_wordpress_update_beta1) | (!wordpress_wordpress_update_beta2 & !wordpress_wordpress_update_rc2 & wordpress_wordpress_update_any & !wordpress_wordpress_update_rc1 & !wordpress_wordpress_update_beta1) | (!wordpress_wordpress_update_beta2 & !wordpress_wordpress_update_rc2 & !wordpress_wordpress_update_any & wordpress_wordpress_update_rc1 & !wordpress_wordpress_update_beta1) | (!wordpress_wordpress_update_beta2 & !wordpress_wordpress_update_rc2 & !wordpress_wordpress_update_any & !wordpress_wordpress_update_rc1 & wordpress_wordpress_update_beta1))
+        wordpress_wordpress_version_4__2__8 => wordpress_wordpress_update_any
+        wordpress_wordpress_version_3__9__10 => wordpress_wordpress_update_any
+        wordpress_wordpress_version_4__0__4 => wordpress_wordpress_update_any
+        wordpress_wordpress_version_4__0__8 => wordpress_wordpress_update_any
+        wordpress_wordpress_version_4__1__10 => wordpress_wordpress_update_any
+        wordpress_wordpress_version_4__7__1 => ((wordpress_wordpress_update_any & !wordpress_wordpress_update_rc1) | (!wordpress_wordpress_update_any & wordpress_wordpress_update_rc1))
+        wordpress_wordpress_version_3__7__15 => wordpress_wordpress_update_any
+        wordpress_wordpress_version_4__2__15 => wordpress_wordpress_update_any
+        wordpress_wordpress_version_3__1__1 => ((wordpress_wordpress_update_any & !wordpress_wordpress_update_rc1) | (!wordpress_wordpress_update_any & wordpress_wordpress_update_rc1))
+        wordpress_wordpress_version_1__0__1 => ((wordpress_wordpress_update_any & !wordpress_wordpress_update_rc1) | (!wordpress_wordpress_update_any & wordpress_wordpress_update_rc1))
+        wordpress_wordpress_version_3__5__1 => wordpress_wordpress_update_any
+        wordpress_wordpress_version_3__5__0 => wordpress_wordpress_update_any
+        wordpress_wordpress_version_4__2__21 => wordpress_wordpress_update_any
+        wordpress_wordpress_version_3__8__28 => wordpress_wordpress_update_any
+        wordpress_wordpress_version_1__5__1__1 => wordpress_wordpress_update_any
+        wordpress_wordpress_version_2__1 => ((wordpress_wordpress_update_beta2 & !wordpress_wordpress_update_rc2 & !wordpress_wordpress_update_any & !wordpress_wordpress_update_rc1 & !wordpress_wordpress_update_beta1 & !wordpress_wordpress_update_beta4 & !wordpress_wordpress_update_beta3) | (!wordpress_wordpress_update_beta2 & wordpress_wordpress_update_rc2 & !wordpress_wordpress_update_any & !wordpress_wordpress_update_rc1 & !wordpress_wordpress_update_beta1 & !wordpress_wordpress_update_beta4 & !wordpress_wordpress_update_beta3) | (!wordpress_wordpress_update_beta2 & !wordpress_wordpress_update_rc2 & wordpress_wordpress_update_any & !wordpress_wordpress_update_rc1 & !wordpress_wordpress_update_beta1 & !wordpress_wordpress_update_beta4 & !wordpress_wordpress_update_beta3) | (!wordpress_wordpress_update_beta2 & !wordpress_wordpress_update_rc2 & !wordpress_wordpress_update_any & wordpress_wordpress_update_rc1 & !wordpress_wordpress_update_beta1 & !wordpress_wordpress_update_beta4 & !wordpress_wordpress_update_beta3) | (!wordpress_wordpress_update_beta2 & !wordpress_wordpress_update_rc2 & !wordpress_wordpress_update_any & !wordpress_wordpress_update_rc1 & wordpress_wordpress_update_beta1 & !wordpress_wordpress_update_beta4 & !wordpress_wordpress_update_beta3) | (!wordpress_wordpress_update_beta2 & !wordpress_wordpress_update_rc2 & !wordpress_wordpress_update_any & !wordpress_wordpress_update_rc1 & !wordpress_wordpress_update_beta1 & wordpress_wordpress_update_beta4 & !wordpress_wordpress_update_beta3) | (!wordpress_wordpress_update_beta2 & !wordpress_wordpress_update_rc2 & !wordpress_wordpress_update_any & !wordpress_wordpress_update_rc1 & !wordpress_wordpress_update_beta1 & !wordpress_wordpress_update_beta4 & wordpress_wordpress_update_beta3))
+        wordpress_wordpress_version_4__1__24 => wordpress_wordpress_update_any
+        wordpress_wordpress_version_2__1__1 => ((wordpress_wordpress_update_any & !wordpress_wordpress_update_rc1 & !wordpress_wordpress_update_beta1) | (!wordpress_wordpress_update_any & wordpress_wordpress_update_rc1 & !wordpress_wordpress_update_beta1) | (!wordpress_wordpress_update_any & !wordpress_wordpress_update_rc1 & wordpress_wordpress_update_beta1))
+        wordpress_wordpress_version_4__6__19 => wordpress_wordpress_update_any
+        wordpress_wordpress_version_1__3 => wordpress_wordpress_update_any
+        wordpress_wordpress_version_3__9__11 => wordpress_wordpress_update_any
+        wordpress_wordpress_version_4__5 => ((wordpress_wordpress_update_beta2 & !wordpress_wordpress_update_rc2 & !wordpress_wordpress_update_any & !wordpress_wordpress_update_rc1 & !wordpress_wordpress_update_beta1 & !wordpress_wordpress_update_beta4 & !wordpress_wordpress_update_beta3 & !wordpress_wordpress_update_rc3) | (!wordpress_wordpress_update_beta2 & wordpress_wordpress_update_rc2 & !wordpress_wordpress_update_any & !wordpress_wordpress_update_rc1 & !wordpress_wordpress_update_beta1 & !wordpress_wordpress_update_beta4 & !wordpress_wordpress_update_beta3 & !wordpress_wordpress_update_rc3) | (!wordpress_wordpress_update_beta2 & !wordpress_wordpress_update_rc2 & wordpress_wordpress_update_any & !wordpress_wordpress_update_rc1 & !wordpress_wordpress_update_beta1 & !wordpress_wordpress_update_beta4 & !wordpress_wordpress_update_beta3 & !wordpress_wordpress_update_rc3) | (!wordpress_wordpress_update_beta2 & !wordpress_wordpress_update_rc2 & !wordpress_wordpress_update_any & wordpress_wordpress_update_rc1 & !wordpress_wordpress_update_beta1 & !wordpress_wordpress_update_beta4 & !wordpress_wordpress_update_beta3 & !wordpress_wordpress_update_rc3) | (!wordpress_wordpress_update_beta2 & !wordpress_wordpress_update_rc2 & !wordpress_wordpress_update_any & !wordpress_wordpress_update_rc1 & wordpress_wordpress_update_beta1 & !wordpress_wordpress_update_beta4 & !wordpress_wordpress_update_beta3 & !wordpress_wordpress_update_rc3) | (!wordpress_wordpress_update_beta2 & !wordpress_wordpress_update_rc2 & !wordpress_wordpress_update_any & !wordpress_wordpress_update_rc1 & !wordpress_wordpress_update_beta1 & wordpress_wordpress_update_beta4 & !wordpress_wordpress_update_beta3 & !wordpress_wordpress_update_rc3) | (!wordpress_wordpress_update_beta2 & !wordpress_wordpress_update_rc2 & !wordpress_wordpress_update_any & !wordpress_wordpress_update_rc1 & !wordpress_wordpress_update_beta1 & !wordpress_wordpress_update_beta4 & wordpress_wordpress_update_beta3 & !wordpress_wordpress_update_rc3) | (!wordpress_wordpress_update_beta2 & !wordpress_wordpress_update_rc2 & !wordpress_wordpress_update_any & !wordpress_wordpress_update_rc1 & !wordpress_wordpress_update_beta1 & !wordpress_wordpress_update_beta4 & !wordpress_wordpress_update_beta3 & wordpress_wordpress_update_rc3))
+        wordpress_wordpress_version_3__7__4 => wordpress_wordpress_update_any
+        wordpress_wordpress_version_3__9__19 => wordpress_wordpress_update_any
+        wordpress_wordpress_version_3__7__10 => wordpress_wordpress_update_any
+        wordpress_wordpress_version_4__5__17 => wordpress_wordpress_update_any
+        wordpress_wordpress_version_4__0__15 => wordpress_wordpress_update_any
+        wordpress_wordpress_version_4__3 => ((wordpress_wordpress_update_beta2 & !wordpress_wordpress_update_rc2 & !wordpress_wordpress_update_any & !wordpress_wordpress_update_rc1 & !wordpress_wordpress_update_beta1 & !wordpress_wordpress_update_beta4 & !wordpress_wordpress_update_beta3 & !wordpress_wordpress_update_rc3) | (!wordpress_wordpress_update_beta2 & wordpress_wordpress_update_rc2 & !wordpress_wordpress_update_any & !wordpress_wordpress_update_rc1 & !wordpress_wordpress_update_beta1 & !wordpress_wordpress_update_beta4 & !wordpress_wordpress_update_beta3 & !wordpress_wordpress_update_rc3) | (!wordpress_wordpress_update_beta2 & !wordpress_wordpress_update_rc2 & wordpress_wordpress_update_any & !wordpress_wordpress_update_rc1 & !wordpress_wordpress_update_beta1 & !wordpress_wordpress_update_beta4 & !wordpress_wordpress_update_beta3 & !wordpress_wordpress_update_rc3) | (!wordpress_wordpress_update_beta2 & !wordpress_wordpress_update_rc2 & !wordpress_wordpress_update_any & wordpress_wordpress_update_rc1 & !wordpress_wordpress_update_beta1 & !wordpress_wordpress_update_beta4 & !wordpress_wordpress_update_beta3 & !wordpress_wordpress_update_rc3) | (!wordpress_wordpress_update_beta2 & !wordpress_wordpress_update_rc2 & !wordpress_wordpress_update_any & !wordpress_wordpress_update_rc1 & wordpress_wordpress_update_beta1 & !wordpress_wordpress_update_beta4 & !wordpress_wordpress_update_beta3 & !wordpress_wordpress_update_rc3) | (!wordpress_wordpress_update_beta2 & !wordpress_wordpress_update_rc2 & !wordpress_wordpress_update_any & !wordpress_wordpress_update_rc1 & !wordpress_wordpress_update_beta1 & wordpress_wordpress_update_beta4 & !wordpress_wordpress_update_beta3 & !wordpress_wordpress_update_rc3) | (!wordpress_wordpress_update_beta2 & !wordpress_wordpress_update_rc2 & !wordpress_wordpress_update_any & !wordpress_wordpress_update_rc1 & !wordpress_wordpress_update_beta1 & !wordpress_wordpress_update_beta4 & wordpress_wordpress_update_beta3 & !wordpress_wordpress_update_rc3) | (!wordpress_wordpress_update_beta2 & !wordpress_wordpress_update_rc2 & !wordpress_wordpress_update_any & !wordpress_wordpress_update_rc1 & !wordpress_wordpress_update_beta1 & !wordpress_wordpress_update_beta4 & !wordpress_wordpress_update_beta3 & wordpress_wordpress_update_rc3))
+        wordpress_wordpress_version_4__3__2 => wordpress_wordpress_update_any
+        wordpress_wordpress_version_3__7__6 => wordpress_wordpress_update_any
+        wordpress_wordpress_version_4__1__1 => wordpress_wordpress_update_any
+        wordpress_wordpress_version_4__0__26 => wordpress_wordpress_update_any
+        wordpress_wordpress_version_1__3__3 => wordpress_wordpress_update_any
+        wordpress_wordpress_version_3__8__12 => wordpress_wordpress_update_any
+        wordpress_wordpress_version_4__4__4 => wordpress_wordpress_update_any
+        wordpress_wordpress_version_3__7__8 => wordpress_wordpress_update_any
+        wordpress_wordpress_version_4__7__4 => ((wordpress_wordpress_update_any & !wordpress_wordpress_update_rc1) | (!wordpress_wordpress_update_any & wordpress_wordpress_update_rc1))
+        wordpress_wordpress_version_3__8__30 => wordpress_wordpress_update_any
+        wordpress_wordpress_version_4__6__8 => wordpress_wordpress_update_any
+        wordpress_wordpress_version_1__5__2 => wordpress_wordpress_update_any
+        wordpress_wordpress_version_4__5__14 => wordpress_wordpress_update_any
+        wordpress_wordpress_version_3__8__15 => wordpress_wordpress_update_any
+        wordpress_wordpress_version_4__1__20 => wordpress_wordpress_update_any
+        wordpress_wordpress_version_3__7__23 => wordpress_wordpress_update_any
+        wordpress_wordpress_version_3__9__29 => wordpress_wordpress_update_any
+        wordpress_wordpress_version_2__8__5__2 => wordpress_wordpress_update_any
+        wordpress_wordpress_version_1__2__2 => wordpress_wordpress_update_any
+        wordpress_wordpress_version_1__2__3 => wordpress_wordpress_update_any
+        wordpress_wordpress_version_3__9__7 => wordpress_wordpress_update_any
+        wordpress_wordpress_version_4__4__12 => wordpress_wordpress_update_any
+        wordpress_wordpress_version_3__8__36 => wordpress_wordpress_update_any
+        wordpress_wordpress_version_4__3__15 => wordpress_wordpress_update_any
+        wordpress_wordpress_version_3__9__31 => wordpress_wordpress_update_any
+        wordpress_wordpress_version_3__8__13 => wordpress_wordpress_update_any
+        wordpress_wordpress_version_4__0__5 => wordpress_wordpress_update_any
+        wordpress_wordpress_version_4__6 => ((wordpress_wordpress_update_beta2 & !wordpress_wordpress_update_rc2 & !wordpress_wordpress_update_any & !wordpress_wordpress_update_rc4 & !wordpress_wordpress_update_rc1 & !wordpress_wordpress_update_beta1 & !wordpress_wordpress_update_beta4 & !wordpress_wordpress_update_beta3 & !wordpress_wordpress_update_rc3) | (!wordpress_wordpress_update_beta2 & wordpress_wordpress_update_rc2 & !wordpress_wordpress_update_any & !wordpress_wordpress_update_rc4 & !wordpress_wordpress_update_rc1 & !wordpress_wordpress_update_beta1 & !wordpress_wordpress_update_beta4 & !wordpress_wordpress_update_beta3 & !wordpress_wordpress_update_rc3) | (!wordpress_wordpress_update_beta2 & !wordpress_wordpress_update_rc2 & wordpress_wordpress_update_any & !wordpress_wordpress_update_rc4 & !wordpress_wordpress_update_rc1 & !wordpress_wordpress_update_beta1 & !wordpress_wordpress_update_beta4 & !wordpress_wordpress_update_beta3 & !wordpress_wordpress_update_rc3) | (!wordpress_wordpress_update_beta2 & !wordpress_wordpress_update_rc2 & !wordpress_wordpress_update_any & wordpress_wordpress_update_rc4 & !wordpress_wordpress_update_rc1 & !wordpress_wordpress_update_beta1 & !wordpress_wordpress_update_beta4 & !wordpress_wordpress_update_beta3 & !wordpress_wordpress_update_rc3) | (!wordpress_wordpress_update_beta2 & !wordpress_wordpress_update_rc2 & !wordpress_wordpress_update_any & !wordpress_wordpress_update_rc4 & wordpress_wordpress_update_rc1 & !wordpress_wordpress_update_beta1 & !wordpress_wordpress_update_beta4 & !wordpress_wordpress_update_beta3 & !wordpress_wordpress_update_rc3) | (!wordpress_wordpress_update_beta2 & !wordpress_wordpress_update_rc2 & !wordpress_wordpress_update_any & !wordpress_wordpress_update_rc4 & !wordpress_wordpress_update_rc1 & wordpress_wordpress_update_beta1 & !wordpress_wordpress_update_beta4 & !wordpress_wordpress_update_beta3 & !wordpress_wordpress_update_rc3) | (!wordpress_wordpress_update_beta2 & !wordpress_wordpress_update_rc2 & !wordpress_wordpress_update_any & !wordpress_wordpress_update_rc4 & !wordpress_wordpress_update_rc1 & !wordpress_wordpress_update_beta1 & wordpress_wordpress_update_beta4 & !wordpress_wordpress_update_beta3 & !wordpress_wordpress_update_rc3) | (!wordpress_wordpress_update_beta2 & !wordpress_wordpress_update_rc2 & !wordpress_wordpress_update_any & !wordpress_wordpress_update_rc4 & !wordpress_wordpress_update_rc1 & !wordpress_wordpress_update_beta1 & !wordpress_wordpress_update_beta4 & wordpress_wordpress_update_beta3 & !wordpress_wordpress_update_rc3) | (!wordpress_wordpress_update_beta2 & !wordpress_wordpress_update_rc2 & !wordpress_wordpress_update_any & !wordpress_wordpress_update_rc4 & !wordpress_wordpress_update_rc1 & !wordpress_wordpress_update_beta1 & !wordpress_wordpress_update_beta4 & !wordpress_wordpress_update_beta3 & wordpress_wordpress_update_rc3))
+        wordpress_wordpress_version_4__4__2 => wordpress_wordpress_update_any
+        wordpress_wordpress_version_3__4__2 => wordpress_wordpress_update_any
+        wordpress_wordpress_version_4__7__3 => ((wordpress_wordpress_update_any & !wordpress_wordpress_update_rc1) | (!wordpress_wordpress_update_any & wordpress_wordpress_update_rc1))
+        wordpress_wordpress_version_4__5__2 => wordpress_wordpress_update_any
+        wordpress_wordpress_version_4__4__9 => wordpress_wordpress_update_any
+        wordpress_wordpress_version_4__3__21 => wordpress_wordpress_update_any
+        wordpress_wordpress_version_1__5__1__3 => wordpress_wordpress_update_any
+        wordpress_wordpress_version_4__4__18 => wordpress_wordpress_update_any
+        wordpress_wordpress_version_4__2__16 => wordpress_wordpress_update_any
+        wordpress_wordpress_version_4__0__32 => wordpress_wordpress_update_any
+        wordpress_wordpress_version_4__5__12 => wordpress_wordpress_update_any
+        wordpress_wordpress_version_4__6__5 => wordpress_wordpress_update_any
+        wordpress_wordpress_version_4__4__7 => wordpress_wordpress_update_any
+        wordpress_wordpress_version_4__2__26 => wordpress_wordpress_update_any
+        wordpress_wordpress_version_2__7 => ((wordpress_wordpress_update_beta2 & !wordpress_wordpress_update_rc2 & !wordpress_wordpress_update_any & !wordpress_wordpress_update_rc1 & !wordpress_wordpress_update_beta1 & !wordpress_wordpress_update_beta3) | (!wordpress_wordpress_update_beta2 & wordpress_wordpress_update_rc2 & !wordpress_wordpress_update_any & !wordpress_wordpress_update_rc1 & !wordpress_wordpress_update_beta1 & !wordpress_wordpress_update_beta3) | (!wordpress_wordpress_update_beta2 & !wordpress_wordpress_update_rc2 & wordpress_wordpress_update_any & !wordpress_wordpress_update_rc1 & !wordpress_wordpress_update_beta1 & !wordpress_wordpress_update_beta3) | (!wordpress_wordpress_update_beta2 & !wordpress_wordpress_update_rc2 & !wordpress_wordpress_update_any & wordpress_wordpress_update_rc1 & !wordpress_wordpress_update_beta1 & !wordpress_wordpress_update_beta3) | (!wordpress_wordpress_update_beta2 & !wordpress_wordpress_update_rc2 & !wordpress_wordpress_update_any & !wordpress_wordpress_update_rc1 & wordpress_wordpress_update_beta1 & !wordpress_wordpress_update_beta3) | (!wordpress_wordpress_update_beta2 & !wordpress_wordpress_update_rc2 & !wordpress_wordpress_update_any & !wordpress_wordpress_update_rc1 & !wordpress_wordpress_update_beta1 & wordpress_wordpress_update_beta3))
+        wordpress_wordpress_version_0__711 => wordpress_wordpress_update_any
+        wordpress_wordpress_version_3__7__9 => wordpress_wordpress_update_any
+        wordpress_wordpress_version_4__3__5 => wordpress_wordpress_update_any
+        wordpress_wordpress_version_4__3__7 => wordpress_wordpress_update_any
+        wordpress_wordpress_version_4__1 => ((wordpress_wordpress_update_beta2 & !wordpress_wordpress_update_rc2 & !wordpress_wordpress_update_any & !wordpress_wordpress_update_rc1 & !wordpress_wordpress_update_beta1 & !wordpress_wordpress_update_rc3) | (!wordpress_wordpress_update_beta2 & wordpress_wordpress_update_rc2 & !wordpress_wordpress_update_any & !wordpress_wordpress_update_rc1 & !wordpress_wordpress_update_beta1 & !wordpress_wordpress_update_rc3) | (!wordpress_wordpress_update_beta2 & !wordpress_wordpress_update_rc2 & wordpress_wordpress_update_any & !wordpress_wordpress_update_rc1 & !wordpress_wordpress_update_beta1 & !wordpress_wordpress_update_rc3) | (!wordpress_wordpress_update_beta2 & !wordpress_wordpress_update_rc2 & !wordpress_wordpress_update_any & wordpress_wordpress_update_rc1 & !wordpress_wordpress_update_beta1 & !wordpress_wordpress_update_rc3) | (!wordpress_wordpress_update_beta2 & !wordpress_wordpress_update_rc2 & !wordpress_wordpress_update_any & !wordpress_wordpress_update_rc1 & wordpress_wordpress_update_beta1 & !wordpress_wordpress_update_rc3) | (!wordpress_wordpress_update_beta2 & !wordpress_wordpress_update_rc2 & !wordpress_wordpress_update_any & !wordpress_wordpress_update_rc1 & !wordpress_wordpress_update_beta1 & wordpress_wordpress_update_rc3))
+        wordpress_wordpress_version_4__1__25 => wordpress_wordpress_update_any
+        wordpress_wordpress_version_3__8__22 => wordpress_wordpress_update_any
+        wordpress_wordpress_version_3__9__28 => wordpress_wordpress_update_any
+        wordpress_wordpress_version_4__0__1 => wordpress_wordpress_update_any
+        wordpress_wordpress_version_4__2__28 => wordpress_wordpress_update_any
+        wordpress_wordpress_version_4__1__27 => wordpress_wordpress_update_any
+        wordpress_wordpress_version_3__9__23 => wordpress_wordpress_update_any
+        wordpress_wordpress_version_4__1__32 => wordpress_wordpress_update_any
+        wordpress_wordpress_version_4__6__1 => ((wordpress_wordpress_update_any & !wordpress_wordpress_update_rc1) | (!wordpress_wordpress_update_any & wordpress_wordpress_update_rc1))
+        wordpress_wordpress_version_4__7__2 => wordpress_wordpress_update_any
+        wordpress_wordpress_version_2__3 => ((wordpress_wordpress_update_beta2 & !wordpress_wordpress_update_any & !wordpress_wordpress_update_rc1 & !wordpress_wordpress_update_beta1 & !wordpress_wordpress_update_beta3) | (!wordpress_wordpress_update_beta2 & wordpress_wordpress_update_any & !wordpress_wordpress_update_rc1 & !wordpress_wordpress_update_beta1 & !wordpress_wordpress_update_beta3) | (!wordpress_wordpress_update_beta2 & !wordpress_wordpress_update_any & wordpress_wordpress_update_rc1 & !wordpress_wordpress_update_beta1 & !wordpress_wordpress_update_beta3) | (!wordpress_wordpress_update_beta2 & !wordpress_wordpress_update_any & !wordpress_wordpress_update_rc1 & wordpress_wordpress_update_beta1 & !wordpress_wordpress_update_beta3) | (!wordpress_wordpress_update_beta2 & !wordpress_wordpress_update_any & !wordpress_wordpress_update_rc1 & !wordpress_wordpress_update_beta1 & wordpress_wordpress_update_beta3))
+        wordpress_wordpress_version_3__8__5 => wordpress_wordpress_update_any
+        wordpress_wordpress_version_4__3__16 => wordpress_wordpress_update_any
+        wordpress_wordpress_version_3__7__7 => wordpress_wordpress_update_any
+        wordpress_wordpress_version_4__3__20 => wordpress_wordpress_update_any
+        wordpress_wordpress_version_2__6__2 => wordpress_wordpress_update_any
+        wordpress_wordpress_version_3__9__33 => wordpress_wordpress_update_any
+        wordpress_wordpress_version_2__8__6 => ((wordpress_wordpress_update_any & !wordpress_wordpress_update_beta1) | (!wordpress_wordpress_update_any & wordpress_wordpress_update_beta1))
+        wordpress_wordpress_version_4__6__15 => wordpress_wordpress_update_any
+        wordpress_wordpress_version_4__4__16 => wordpress_wordpress_update_any
+        wordpress_wordpress_version_4__2__19 => wordpress_wordpress_update_any
+        wordpress_wordpress_version_4__4__14 => wordpress_wordpress_update_any
+        wordpress_wordpress_version_4__4__5 => wordpress_wordpress_update_any
+        wordpress_wordpress_version_4__1__2 => wordpress_wordpress_update_any
+        wordpress_wordpress_version_1__3__2 => wordpress_wordpress_update_any
+        wordpress_wordpress_version_3__7__28 => wordpress_wordpress_update_any
+        wordpress_wordpress_version_3__3__1 => wordpress_wordpress_update_any
+        wordpress_wordpress_version_3__7__16 => wordpress_wordpress_update_any
+        wordpress_wordpress_version_4__5__15 => wordpress_wordpress_update_any
+        wordpress_wordpress_version_4__3__11 => wordpress_wordpress_update_any
+        wordpress_wordpress_version_3__3 => ((wordpress_wordpress_update_beta2 & !wordpress_wordpress_update_rc2 & !wordpress_wordpress_update_any & !wordpress_wordpress_update_rc1 & !wordpress_wordpress_update_beta1 & !wordpress_wordpress_update_beta4 & !wordpress_wordpress_update_beta3 & !wordpress_wordpress_update_rc3) | (!wordpress_wordpress_update_beta2 & wordpress_wordpress_update_rc2 & !wordpress_wordpress_update_any & !wordpress_wordpress_update_rc1 & !wordpress_wordpress_update_beta1 & !wordpress_wordpress_update_beta4 & !wordpress_wordpress_update_beta3 & !wordpress_wordpress_update_rc3) | (!wordpress_wordpress_update_beta2 & !wordpress_wordpress_update_rc2 & wordpress_wordpress_update_any & !wordpress_wordpress_update_rc1 & !wordpress_wordpress_update_beta1 & !wordpress_wordpress_update_beta4 & !wordpress_wordpress_update_beta3 & !wordpress_wordpress_update_rc3) | (!wordpress_wordpress_update_beta2 & !wordpress_wordpress_update_rc2 & !wordpress_wordpress_update_any & wordpress_wordpress_update_rc1 & !wordpress_wordpress_update_beta1 & !wordpress_wordpress_update_beta4 & !wordpress_wordpress_update_beta3 & !wordpress_wordpress_update_rc3) | (!wordpress_wordpress_update_beta2 & !wordpress_wordpress_update_rc2 & !wordpress_wordpress_update_any & !wordpress_wordpress_update_rc1 & wordpress_wordpress_update_beta1 & !wordpress_wordpress_update_beta4 & !wordpress_wordpress_update_beta3 & !wordpress_wordpress_update_rc3) | (!wordpress_wordpress_update_beta2 & !wordpress_wordpress_update_rc2 & !wordpress_wordpress_update_any & !wordpress_wordpress_update_rc1 & !wordpress_wordpress_update_beta1 & wordpress_wordpress_update_beta4 & !wordpress_wordpress_update_beta3 & !wordpress_wordpress_update_rc3) | (!wordpress_wordpress_update_beta2 & !wordpress_wordpress_update_rc2 & !wordpress_wordpress_update_any & !wordpress_wordpress_update_rc1 & !wordpress_wordpress_update_beta1 & !wordpress_wordpress_update_beta4 & wordpress_wordpress_update_beta3 & !wordpress_wordpress_update_rc3) | (!wordpress_wordpress_update_beta2 & !wordpress_wordpress_update_rc2 & !wordpress_wordpress_update_any & !wordpress_wordpress_update_rc1 & !wordpress_wordpress_update_beta1 & !wordpress_wordpress_update_beta4 & !wordpress_wordpress_update_beta3 & wordpress_wordpress_update_rc3))
+        wordpress_wordpress_version_3__4__0 => wordpress_wordpress_update_any
+        wordpress_wordpress_version_3__7__35 => wordpress_wordpress_update_any
+        wordpress_wordpress_version_4__4__3 => wordpress_wordpress_update_any
+        wordpress_wordpress_version_3__8__18 => wordpress_wordpress_update_any
+        wordpress_wordpress_version_3__1__4 => wordpress_wordpress_update_any
+        wordpress_wordpress_version_2__2__2 => wordpress_wordpress_update_any
+        wordpress_wordpress_version_4__5__11 => wordpress_wordpress_update_any
+        wordpress_wordpress_version_3__8__29 => wordpress_wordpress_update_any
+        wordpress_wordpress_version_3__8__34 => wordpress_wordpress_update_any
+        wordpress_wordpress_version_4__1__33 => wordpress_wordpress_update_any
+        wordpress_wordpress_version_3__7__29 => wordpress_wordpress_update_any
+        wordpress_wordpress_version_2__8__1 => ((wordpress_wordpress_update_beta2 & !wordpress_wordpress_update_any & !wordpress_wordpress_update_rc1 & !wordpress_wordpress_update_beta1) | (!wordpress_wordpress_update_beta2 & wordpress_wordpress_update_any & !wordpress_wordpress_update_rc1 & !wordpress_wordpress_update_beta1) | (!wordpress_wordpress_update_beta2 & !wordpress_wordpress_update_any & wordpress_wordpress_update_rc1 & !wordpress_wordpress_update_beta1) | (!wordpress_wordpress_update_beta2 & !wordpress_wordpress_update_any & !wordpress_wordpress_update_rc1 & wordpress_wordpress_update_beta1))
+        wordpress_wordpress_version_4__0__23 => wordpress_wordpress_update_any
+        wordpress_wordpress_version_2__8 => ((wordpress_wordpress_update_beta2 & !wordpress_wordpress_update_any & !wordpress_wordpress_update_rc1 & !wordpress_wordpress_update_beta1) | (!wordpress_wordpress_update_beta2 & wordpress_wordpress_update_any & !wordpress_wordpress_update_rc1 & !wordpress_wordpress_update_beta1) | (!wordpress_wordpress_update_beta2 & !wordpress_wordpress_update_any & wordpress_wordpress_update_rc1 & !wordpress_wordpress_update_beta1) | (!wordpress_wordpress_update_beta2 & !wordpress_wordpress_update_any & !wordpress_wordpress_update_rc1 & wordpress_wordpress_update_beta1))
+        wordpress_wordpress_version_3__9__16 => wordpress_wordpress_update_any
+        wordpress_wordpress_version_3__1__3 => wordpress_wordpress_update_any
+        wordpress_wordpress_version_4__3__25 => wordpress_wordpress_update_any
+        wordpress_wordpress_version_3__9__5 => wordpress_wordpress_update_any
+        wordpress_wordpress_version_3__9__34 => wordpress_wordpress_update_any
+        wordpress_wordpress_version_4__5__13 => wordpress_wordpress_update_any
+        wordpress_wordpress_version_4__6__20 => wordpress_wordpress_update_any
+        wordpress_wordpress_version_2__5 => ((wordpress_wordpress_update_rc2 & !wordpress_wordpress_update_any & !wordpress_wordpress_update_rc1 & !wordpress_wordpress_update_rc3) | (!wordpress_wordpress_update_rc2 & wordpress_wordpress_update_any & !wordpress_wordpress_update_rc1 & !wordpress_wordpress_update_rc3) | (!wordpress_wordpress_update_rc2 & !wordpress_wordpress_update_any & wordpress_wordpress_update_rc1 & !wordpress_wordpress_update_rc3) | (!wordpress_wordpress_update_rc2 & !wordpress_wordpress_update_any & !wordpress_wordpress_update_rc1 & wordpress_wordpress_update_rc3))
+        wordpress_wordpress_version_0__72 => ((wordpress_wordpress_update_beta2 & !wordpress_wordpress_update_rc1 & !wordpress_wordpress_update_beta1) | (!wordpress_wordpress_update_beta2 & wordpress_wordpress_update_rc1 & !wordpress_wordpress_update_beta1) | (!wordpress_wordpress_update_beta2 & !wordpress_wordpress_update_rc1 & wordpress_wordpress_update_beta1))
+        wordpress_wordpress_version_4__3__26 => wordpress_wordpress_update_any
+        wordpress_wordpress_version_4__6__4 => wordpress_wordpress_update_any
+        wordpress_wordpress_version_4__3__22 => wordpress_wordpress_update_any
+        wordpress_wordpress_version_3__8__9 => wordpress_wordpress_update_any
+        wordpress_wordpress_version_1__0 => ((wordpress_wordpress_update_any & !wordpress_wordpress_update_rc1) | (!wordpress_wordpress_update_any & wordpress_wordpress_update_rc1))
+        wordpress_wordpress_version_4__2 => ((wordpress_wordpress_update_beta2 & !wordpress_wordpress_update_rc2 & !wordpress_wordpress_update_any & !wordpress_wordpress_update_rc4 & !wordpress_wordpress_update_rc1 & !wordpress_wordpress_update_beta1 & !wordpress_wordpress_update_beta4 & !wordpress_wordpress_update_beta3 & !wordpress_wordpress_update_rc3) | (!wordpress_wordpress_update_beta2 & wordpress_wordpress_update_rc2 & !wordpress_wordpress_update_any & !wordpress_wordpress_update_rc4 & !wordpress_wordpress_update_rc1 & !wordpress_wordpress_update_beta1 & !wordpress_wordpress_update_beta4 & !wordpress_wordpress_update_beta3 & !wordpress_wordpress_update_rc3) | (!wordpress_wordpress_update_beta2 & !wordpress_wordpress_update_rc2 & wordpress_wordpress_update_any & !wordpress_wordpress_update_rc4 & !wordpress_wordpress_update_rc1 & !wordpress_wordpress_update_beta1 & !wordpress_wordpress_update_beta4 & !wordpress_wordpress_update_beta3 & !wordpress_wordpress_update_rc3) | (!wordpress_wordpress_update_beta2 & !wordpress_wordpress_update_rc2 & !wordpress_wordpress_update_any & wordpress_wordpress_update_rc4 & !wordpress_wordpress_update_rc1 & !wordpress_wordpress_update_beta1 & !wordpress_wordpress_update_beta4 & !wordpress_wordpress_update_beta3 & !wordpress_wordpress_update_rc3) | (!wordpress_wordpress_update_beta2 & !wordpress_wordpress_update_rc2 & !wordpress_wordpress_update_any & !wordpress_wordpress_update_rc4 & wordpress_wordpress_update_rc1 & !wordpress_wordpress_update_beta1 & !wordpress_wordpress_update_beta4 & !wordpress_wordpress_update_beta3 & !wordpress_wordpress_update_rc3) | (!wordpress_wordpress_update_beta2 & !wordpress_wordpress_update_rc2 & !wordpress_wordpress_update_any & !wordpress_wordpress_update_rc4 & !wordpress_wordpress_update_rc1 & wordpress_wordpress_update_beta1 & !wordpress_wordpress_update_beta4 & !wordpress_wordpress_update_beta3 & !wordpress_wordpress_update_rc3) | (!wordpress_wordpress_update_beta2 & !wordpress_wordpress_update_rc2 & !wordpress_wordpress_update_any & !wordpress_wordpress_update_rc4 & !wordpress_wordpress_update_rc1 & !wordpress_wordpress_update_beta1 & wordpress_wordpress_update_beta4 & !wordpress_wordpress_update_beta3 & !wordpress_wordpress_update_rc3) | (!wordpress_wordpress_update_beta2 & !wordpress_wordpress_update_rc2 & !wordpress_wordpress_update_any & !wordpress_wordpress_update_rc4 & !wordpress_wordpress_update_rc1 & !wordpress_wordpress_update_beta1 & !wordpress_wordpress_update_beta4 & wordpress_wordpress_update_beta3 & !wordpress_wordpress_update_rc3) | (!wordpress_wordpress_update_beta2 & !wordpress_wordpress_update_rc2 & !wordpress_wordpress_update_any & !wordpress_wordpress_update_rc4 & !wordpress_wordpress_update_rc1 & !wordpress_wordpress_update_beta1 & !wordpress_wordpress_update_beta4 & !wordpress_wordpress_update_beta3 & wordpress_wordpress_update_rc3))
+        wordpress_wordpress_version_3__0__3 => wordpress_wordpress_update_any
+        wordpress_wordpress_version_4__1__31 => wordpress_wordpress_update_any
+        wordpress_wordpress_version_3__9__25 => wordpress_wordpress_update_any
+        wordpress_wordpress_version_4__0__19 => wordpress_wordpress_update_any
+        wordpress_wordpress_version_4__1__13 => wordpress_wordpress_update_any
+        wordpress_wordpress_version_2__2__1 => ((wordpress_wordpress_update_rc2 & !wordpress_wordpress_update_any & !wordpress_wordpress_update_rc1) | (!wordpress_wordpress_update_rc2 & wordpress_wordpress_update_any & !wordpress_wordpress_update_rc1) | (!wordpress_wordpress_update_rc2 & !wordpress_wordpress_update_any & wordpress_wordpress_update_rc1))
+        wordpress_wordpress_version_3__8__31 => wordpress_wordpress_update_any
+        wordpress_wordpress_version_4__6__6 => wordpress_wordpress_update_any
+        wordpress_wordpress_version_4__1__15 => wordpress_wordpress_update_any
+        wordpress_wordpress_version_4__1__6 => wordpress_wordpress_update_any
+        wordpress_wordpress_version_2__0__6 => ((wordpress_wordpress_update_rc2 & !wordpress_wordpress_update_any & !wordpress_wordpress_update_rc1 & !wordpress_wordpress_update_beta1) | (!wordpress_wordpress_update_rc2 & wordpress_wordpress_update_any & !wordpress_wordpress_update_rc1 & !wordpress_wordpress_update_beta1) | (!wordpress_wordpress_update_rc2 & !wordpress_wordpress_update_any & wordpress_wordpress_update_rc1 & !wordpress_wordpress_update_beta1) | (!wordpress_wordpress_update_rc2 & !wordpress_wordpress_update_any & !wordpress_wordpress_update_rc1 & wordpress_wordpress_update_beta1))
+        wordpress_wordpress_version_4__1__9 => wordpress_wordpress_update_any
+        wordpress_wordpress_version_3__6__1 => wordpress_wordpress_update_any
+        wordpress_wordpress_version_3__8__32 => wordpress_wordpress_update_any
+        wordpress_wordpress_version_3__9__17 => wordpress_wordpress_update_any
+        wordpress_wordpress_version_3__7__19 => wordpress_wordpress_update_any
+        wordpress_wordpress_version_4__6__2 => wordpress_wordpress_update_any
+        wordpress_wordpress_version_3__7__33 => wordpress_wordpress_update_any
+        wordpress_wordpress_version_4__2__18 => wordpress_wordpress_update_any
+        wordpress_wordpress_version_4__2__2 => wordpress_wordpress_update_any
+        wordpress_wordpress_version_4__4__19 => wordpress_wordpress_update_any
+        wordpress_wordpress_version_4__4__20 => wordpress_wordpress_update_any
+        wordpress_wordpress_version_4__5__16 => wordpress_wordpress_update_any
+        wordpress_wordpress_version_3__9__27 => wordpress_wordpress_update_any
+        wordpress_wordpress_version_4__1__5 => wordpress_wordpress_update_any
+        wordpress_wordpress_version_4__4__17 => wordpress_wordpress_update_any
+        wordpress_wordpress_version_4__0__12 => wordpress_wordpress_update_any
+        wordpress_wordpress_version_3__9__12 => wordpress_wordpress_update_any
+        wordpress_wordpress_version_3__7__1 => wordpress_wordpress_update_any
+        wordpress_wordpress_version_4__2__20 => wordpress_wordpress_update_any
+        wordpress_wordpress_version_4__3__18 => wordpress_wordpress_update_any
+        wordpress_wordpress_version_3__8__7 => wordpress_wordpress_update_any
+        wordpress_wordpress_version_3__8__25 => wordpress_wordpress_update_any
+        wordpress_wordpress_version_4__5__19 => wordpress_wordpress_update_any
+        wordpress_wordpress_version_4__2__30 => wordpress_wordpress_update_any
+        wordpress_wordpress_version_1__5__1 => wordpress_wordpress_update_any
+        wordpress_wordpress_version_3__8__14 => wordpress_wordpress_update_any
+        wordpress_wordpress_version_4__3__24 => wordpress_wordpress_update_any
+        wordpress_wordpress_version_3__8__17 => wordpress_wordpress_update_any
+        wordpress_wordpress_version_4__0__17 => wordpress_wordpress_update_any
+        wordpress_wordpress_version_4__3__8 => wordpress_wordpress_update_any
+        wordpress_wordpress_version_3__9__4 => wordpress_wordpress_update_any
+        wordpress_wordpress_version_4__1__14 => wordpress_wordpress_update_any
+        wordpress_wordpress_version_4__0__33 => wordpress_wordpress_update_any
+        wordpress_wordpress_version_4__3__9 => wordpress_wordpress_update_any
+        wordpress_wordpress_version_4__0__30 => wordpress_wordpress_update_any
+        wordpress_wordpress_version_4__0__24 => wordpress_wordpress_update_any
+        wordpress_wordpress_version_3__8__16 => wordpress_wordpress_update_any
+        wordpress_wordpress_version_4__4__10 => wordpress_wordpress_update_any
+        wordpress_wordpress_version_3__9__13 => wordpress_wordpress_update_any
+        wordpress_wordpress_version_3__8__24 => wordpress_wordpress_update_any
+        wordpress_wordpress_version_4__5__1 => ((wordpress_wordpress_update_rc2 & !wordpress_wordpress_update_any & !wordpress_wordpress_update_rc1) | (!wordpress_wordpress_update_rc2 & wordpress_wordpress_update_any & !wordpress_wordpress_update_rc1) | (!wordpress_wordpress_update_rc2 & !wordpress_wordpress_update_any & wordpress_wordpress_update_rc1))
+        wordpress_wordpress_version_1__2 => ((wordpress_wordpress_update_beta & !wordpress_wordpress_update_rc2 & !wordpress_wordpress_update_any & !wordpress_wordpress_update_rc1) | (!wordpress_wordpress_update_beta & wordpress_wordpress_update_rc2 & !wordpress_wordpress_update_any & !wordpress_wordpress_update_rc1) | (!wordpress_wordpress_update_beta & !wordpress_wordpress_update_rc2 & wordpress_wordpress_update_any & !wordpress_wordpress_update_rc1) | (!wordpress_wordpress_update_beta & !wordpress_wordpress_update_rc2 & !wordpress_wordpress_update_any & wordpress_wordpress_update_rc1))
+        wordpress_wordpress_version_3__8__19 => wordpress_wordpress_update_any
+        wordpress_wordpress_version_3__0__2 => wordpress_wordpress_update_any
+        wordpress_wordpress_version_4__6__16 => wordpress_wordpress_update_any
+        wordpress_wordpress_version_4__5__24 => wordpress_wordpress_update_any
+        wordpress_wordpress_version_3__1__2 => wordpress_wordpress_update_any
+        wordpress_wordpress_version_3__5__2 => wordpress_wordpress_update_any
+        wordpress_wordpress_version_2__0__7 => ((wordpress_wordpress_update_rc2 & !wordpress_wordpress_update_any & !wordpress_wordpress_update_rc1) | (!wordpress_wordpress_update_rc2 & wordpress_wordpress_update_any & !wordpress_wordpress_update_rc1) | (!wordpress_wordpress_update_rc2 & !wordpress_wordpress_update_any & wordpress_wordpress_update_rc1))
+        wordpress_wordpress_version_4__0__22 => wordpress_wordpress_update_any
+        wordpress_wordpress_version_3__0 => ((wordpress_wordpress_update_beta2 & !wordpress_wordpress_update_rc2 & !wordpress_wordpress_update_any & !wordpress_wordpress_update_rc1 & !wordpress_wordpress_update_beta1 & !wordpress_wordpress_update_rc3) | (!wordpress_wordpress_update_beta2 & wordpress_wordpress_update_rc2 & !wordpress_wordpress_update_any & !wordpress_wordpress_update_rc1 & !wordpress_wordpress_update_beta1 & !wordpress_wordpress_update_rc3) | (!wordpress_wordpress_update_beta2 & !wordpress_wordpress_update_rc2 & wordpress_wordpress_update_any & !wordpress_wordpress_update_rc1 & !wordpress_wordpress_update_beta1 & !wordpress_wordpress_update_rc3) | (!wordpress_wordpress_update_beta2 & !wordpress_wordpress_update_rc2 & !wordpress_wordpress_update_any & wordpress_wordpress_update_rc1 & !wordpress_wordpress_update_beta1 & !wordpress_wordpress_update_rc3) | (!wordpress_wordpress_update_beta2 & !wordpress_wordpress_update_rc2 & !wordpress_wordpress_update_any & !wordpress_wordpress_update_rc1 & wordpress_wordpress_update_beta1 & !wordpress_wordpress_update_rc3) | (!wordpress_wordpress_update_beta2 & !wordpress_wordpress_update_rc2 & !wordpress_wordpress_update_any & !wordpress_wordpress_update_rc1 & !wordpress_wordpress_update_beta1 & wordpress_wordpress_update_rc3))
+        wordpress_wordpress_version_3__7__14 => wordpress_wordpress_update_any
+        wordpress_wordpress_version_4__2__25 => wordpress_wordpress_update_any
+        wordpress_wordpress_version_2__3__1 => ((wordpress_wordpress_update_any & !wordpress_wordpress_update_rc1 & !wordpress_wordpress_update_beta1) | (!wordpress_wordpress_update_any & wordpress_wordpress_update_rc1 & !wordpress_wordpress_update_beta1) | (!wordpress_wordpress_update_any & !wordpress_wordpress_update_rc1 & wordpress_wordpress_update_beta1))
+        wordpress_wordpress_version_4__6__21 => wordpress_wordpress_update_any
+        wordpress_wordpress_version_4__5__10 => wordpress_wordpress_update_any
+        wordpress_wordpress_version_4__2__11 => wordpress_wordpress_update_any
+        wordpress_wordpress_version_4__0__21 => wordpress_wordpress_update_any
+        wordpress_wordpress_version_3__0__4 => wordpress_wordpress_update_any
+        wordpress_wordpress_version_4__0__3 => wordpress_wordpress_update_any
+        wordpress_wordpress_version_2__0 => ((wordpress_wordpress_update_any & !wordpress_wordpress_update_rc1) | (!wordpress_wordpress_update_any & wordpress_wordpress_update_rc1))
+        wordpress_wordpress_version_1__2__1 => wordpress_wordpress_update_any
+        wordpress_wordpress_version_4__6__17 => wordpress_wordpress_update_any
+        wordpress_wordpress_version_4__0 => ((wordpress_wordpress_update_beta2 & !wordpress_wordpress_update_rc2 & !wordpress_wordpress_update_any & !wordpress_wordpress_update_rc1 & !wordpress_wordpress_update_beta1 & !wordpress_wordpress_update_beta4 & !wordpress_wordpress_update_beta3) | (!wordpress_wordpress_update_beta2 & wordpress_wordpress_update_rc2 & !wordpress_wordpress_update_any & !wordpress_wordpress_update_rc1 & !wordpress_wordpress_update_beta1 & !wordpress_wordpress_update_beta4 & !wordpress_wordpress_update_beta3) | (!wordpress_wordpress_update_beta2 & !wordpress_wordpress_update_rc2 & wordpress_wordpress_update_any & !wordpress_wordpress_update_rc1 & !wordpress_wordpress_update_beta1 & !wordpress_wordpress_update_beta4 & !wordpress_wordpress_update_beta3) | (!wordpress_wordpress_update_beta2 & !wordpress_wordpress_update_rc2 & !wordpress_wordpress_update_any & wordpress_wordpress_update_rc1 & !wordpress_wordpress_update_beta1 & !wordpress_wordpress_update_beta4 & !wordpress_wordpress_update_beta3) | (!wordpress_wordpress_update_beta2 & !wordpress_wordpress_update_rc2 & !wordpress_wordpress_update_any & !wordpress_wordpress_update_rc1 & wordpress_wordpress_update_beta1 & !wordpress_wordpress_update_beta4 & !wordpress_wordpress_update_beta3) | (!wordpress_wordpress_update_beta2 & !wordpress_wordpress_update_rc2 & !wordpress_wordpress_update_any & !wordpress_wordpress_update_rc1 & !wordpress_wordpress_update_beta1 & wordpress_wordpress_update_beta4 & !wordpress_wordpress_update_beta3) | (!wordpress_wordpress_update_beta2 & !wordpress_wordpress_update_rc2 & !wordpress_wordpress_update_any & !wordpress_wordpress_update_rc1 & !wordpress_wordpress_update_beta1 & !wordpress_wordpress_update_beta4 & wordpress_wordpress_update_beta3))
+        wordpress_wordpress_version_4__4__15 => wordpress_wordpress_update_any
+        wordpress_wordpress_version_3__9__2 => wordpress_wordpress_update_any
+        wordpress_wordpress_version_4__6__12 => wordpress_wordpress_update_any
+        wordpress_wordpress_version_2__8__3 => wordpress_wordpress_update_any
+        wordpress_wordpress_version_3__9__6 => wordpress_wordpress_update_any
+        wordpress_wordpress_version_3__2__1 => wordpress_wordpress_update_any
+        wordpress_wordpress_version_2__0__9 => ((wordpress_wordpress_update_any & !wordpress_wordpress_update_rc1 & !wordpress_wordpress_update_beta1) | (!wordpress_wordpress_update_any & wordpress_wordpress_update_rc1 & !wordpress_wordpress_update_beta1) | (!wordpress_wordpress_update_any & !wordpress_wordpress_update_rc1 & wordpress_wordpress_update_beta1))
+        wordpress_wordpress_version_4__0__31 => wordpress_wordpress_update_any
+        wordpress_wordpress_version_3__4__1 => wordpress_wordpress_update_any
+        wordpress_wordpress_version_3__7__13 => wordpress_wordpress_update_any
+        wordpress_wordpress_version_4__2__6 => wordpress_wordpress_update_any
+        wordpress_wordpress_version_3__8__26 => wordpress_wordpress_update_any
+        wordpress_wordpress_version_3__8__21 => wordpress_wordpress_update_any
+        wordpress_wordpress_version_1__5 => wordpress_wordpress_update_any
+        wordpress_wordpress_version_3__9__9 => wordpress_wordpress_update_any
+        wordpress_wordpress_version_4__0__20 => wordpress_wordpress_update_any
+        wordpress_wordpress_version_4__0__27 => wordpress_wordpress_update_any
+        wordpress_wordpress_version_4__4__22 => wordpress_wordpress_update_any
+        wordpress_wordpress_version_4__4__6 => wordpress_wordpress_update_any
+        wordpress_wordpress_version_2__3__2 => ((wordpress_wordpress_update_beta2 & !wordpress_wordpress_update_any & !wordpress_wordpress_update_rc1 & !wordpress_wordpress_update_beta1 & !wordpress_wordpress_update_beta3) | (!wordpress_wordpress_update_beta2 & wordpress_wordpress_update_any & !wordpress_wordpress_update_rc1 & !wordpress_wordpress_update_beta1 & !wordpress_wordpress_update_beta3) | (!wordpress_wordpress_update_beta2 & !wordpress_wordpress_update_any & wordpress_wordpress_update_rc1 & !wordpress_wordpress_update_beta1 & !wordpress_wordpress_update_beta3) | (!wordpress_wordpress_update_beta2 & !wordpress_wordpress_update_any & !wordpress_wordpress_update_rc1 & wordpress_wordpress_update_beta1 & !wordpress_wordpress_update_beta3) | (!wordpress_wordpress_update_beta2 & !wordpress_wordpress_update_any & !wordpress_wordpress_update_rc1 & !wordpress_wordpress_update_beta1 & wordpress_wordpress_update_beta3))
+        wordpress_wordpress_version_4__3__1 => wordpress_wordpress_update_any
+        wordpress_wordpress_version_2__0__10 => ((wordpress_wordpress_update_rc2 & !wordpress_wordpress_update_any & !wordpress_wordpress_update_rc1 & !wordpress_wordpress_update_rc3) | (!wordpress_wordpress_update_rc2 & wordpress_wordpress_update_any & !wordpress_wordpress_update_rc1 & !wordpress_wordpress_update_rc3) | (!wordpress_wordpress_update_rc2 & !wordpress_wordpress_update_any & wordpress_wordpress_update_rc1 & !wordpress_wordpress_update_rc3) | (!wordpress_wordpress_update_rc2 & !wordpress_wordpress_update_any & !wordpress_wordpress_update_rc1 & wordpress_wordpress_update_rc3))
+        wordpress_wordpress_version_4__4__13 => wordpress_wordpress_update_any
+        wordpress_wordpress_version_4__4__11 => wordpress_wordpress_update_any
+        wordpress_wordpress_version_4__5__5 => wordpress_wordpress_update_any
+        wordpress_wordpress_version_2__0__5 => ((wordpress_wordpress_update_any & !wordpress_wordpress_update_rc1 & !wordpress_wordpress_update_beta1) | (!wordpress_wordpress_update_any & wordpress_wordpress_update_rc1 & !wordpress_wordpress_update_beta1) | (!wordpress_wordpress_update_any & !wordpress_wordpress_update_rc1 & wordpress_wordpress_update_beta1))
+        wordpress_wordpress_version_4__0__13 => wordpress_wordpress_update_any
+        wordpress_wordpress_version_2__0__11 => ((wordpress_wordpress_update_rc2 & !wordpress_wordpress_update_any & !wordpress_wordpress_update_rc1 & !wordpress_wordpress_update_rc3) | (!wordpress_wordpress_update_rc2 & wordpress_wordpress_update_any & !wordpress_wordpress_update_rc1 & !wordpress_wordpress_update_rc3) | (!wordpress_wordpress_update_rc2 & !wordpress_wordpress_update_any & wordpress_wordpress_update_rc1 & !wordpress_wordpress_update_rc3) | (!wordpress_wordpress_update_rc2 & !wordpress_wordpress_update_any & !wordpress_wordpress_update_rc1 & wordpress_wordpress_update_rc3))
+        wordpress_wordpress_version_3__8__1 => ((wordpress_wordpress_update_any & !wordpress_wordpress_update_rc1) | (!wordpress_wordpress_update_any & wordpress_wordpress_update_rc1))
+        wordpress_wordpress_version_4__0__28 => wordpress_wordpress_update_any
+        wordpress_wordpress_version_3__1 => ((wordpress_wordpress_update_beta2 & !wordpress_wordpress_update_rc2 & !wordpress_wordpress_update_any & !wordpress_wordpress_update_rc4 & !wordpress_wordpress_update_rc1 & !wordpress_wordpress_update_beta1 & !wordpress_wordpress_update_rc3) | (!wordpress_wordpress_update_beta2 & wordpress_wordpress_update_rc2 & !wordpress_wordpress_update_any & !wordpress_wordpress_update_rc4 & !wordpress_wordpress_update_rc1 & !wordpress_wordpress_update_beta1 & !wordpress_wordpress_update_rc3) | (!wordpress_wordpress_update_beta2 & !wordpress_wordpress_update_rc2 & wordpress_wordpress_update_any & !wordpress_wordpress_update_rc4 & !wordpress_wordpress_update_rc1 & !wordpress_wordpress_update_beta1 & !wordpress_wordpress_update_rc3) | (!wordpress_wordpress_update_beta2 & !wordpress_wordpress_update_rc2 & !wordpress_wordpress_update_any & wordpress_wordpress_update_rc4 & !wordpress_wordpress_update_rc1 & !wordpress_wordpress_update_beta1 & !wordpress_wordpress_update_rc3) | (!wordpress_wordpress_update_beta2 & !wordpress_wordpress_update_rc2 & !wordpress_wordpress_update_any & !wordpress_wordpress_update_rc4 & wordpress_wordpress_update_rc1 & !wordpress_wordpress_update_beta1 & !wordpress_wordpress_update_rc3) | (!wordpress_wordpress_update_beta2 & !wordpress_wordpress_update_rc2 & !wordpress_wordpress_update_any & !wordpress_wordpress_update_rc4 & !wordpress_wordpress_update_rc1 & wordpress_wordpress_update_beta1 & !wordpress_wordpress_update_rc3) | (!wordpress_wordpress_update_beta2 & !wordpress_wordpress_update_rc2 & !wordpress_wordpress_update_any & !wordpress_wordpress_update_rc4 & !wordpress_wordpress_update_rc1 & !wordpress_wordpress_update_beta1 & wordpress_wordpress_update_rc3))
+        wordpress_wordpress_version_4__2__12 => wordpress_wordpress_update_any
+        wordpress_wordpress_version_4__4 => ((wordpress_wordpress_update_beta2 & !wordpress_wordpress_update_any & !wordpress_wordpress_update_rc1 & !wordpress_wordpress_update_beta1 & !wordpress_wordpress_update_beta4 & !wordpress_wordpress_update_beta3) | (!wordpress_wordpress_update_beta2 & wordpress_wordpress_update_any & !wordpress_wordpress_update_rc1 & !wordpress_wordpress_update_beta1 & !wordpress_wordpress_update_beta4 & !wordpress_wordpress_update_beta3) | (!wordpress_wordpress_update_beta2 & !wordpress_wordpress_update_any & wordpress_wordpress_update_rc1 & !wordpress_wordpress_update_beta1 & !wordpress_wordpress_update_beta4 & !wordpress_wordpress_update_beta3) | (!wordpress_wordpress_update_beta2 & !wordpress_wordpress_update_any & !wordpress_wordpress_update_rc1 & wordpress_wordpress_update_beta1 & !wordpress_wordpress_update_beta4 & !wordpress_wordpress_update_beta3) | (!wordpress_wordpress_update_beta2 & !wordpress_wordpress_update_any & !wordpress_wordpress_update_rc1 & !wordpress_wordpress_update_beta1 & wordpress_wordpress_update_beta4 & !wordpress_wordpress_update_beta3) | (!wordpress_wordpress_update_beta2 & !wordpress_wordpress_update_any & !wordpress_wordpress_update_rc1 & !wordpress_wordpress_update_beta1 & !wordpress_wordpress_update_beta4 & wordpress_wordpress_update_beta3))
+        wordpress_wordpress_version_3__8__6 => wordpress_wordpress_update_any
+        wordpress_wordpress_version_4__1__23 => wordpress_wordpress_update_any
+        wordpress_wordpress_version_2__5__1 => wordpress_wordpress_update_any
+        wordpress_wordpress_version_4__6__18 => wordpress_wordpress_update_any
+        wordpress_wordpress_version_1__0__2 => wordpress_wordpress_update_any
+        wordpress_wordpress_version_4__1__8 => wordpress_wordpress_update_any
+        wordpress_wordpress_version_4__6__9 => wordpress_wordpress_update_any
+        wordpress_wordpress_version_4__0__16 => wordpress_wordpress_update_any
+        wordpress_wordpress_version_1__2__5 => ((wordpress_wordpress_update_any & !wordpress_wordpress_update_a) | (!wordpress_wordpress_update_any & wordpress_wordpress_update_a))
+        wordpress_wordpress_version_2__1__3 => ((wordpress_wordpress_update_rc2 & !wordpress_wordpress_update_any & !wordpress_wordpress_update_rc1 & !wordpress_wordpress_update_rc3) | (!wordpress_wordpress_update_rc2 & wordpress_wordpress_update_any & !wordpress_wordpress_update_rc1 & !wordpress_wordpress_update_rc3) | (!wordpress_wordpress_update_rc2 & !wordpress_wordpress_update_any & wordpress_wordpress_update_rc1 & !wordpress_wordpress_update_rc3) | (!wordpress_wordpress_update_rc2 & !wordpress_wordpress_update_any & !wordpress_wordpress_update_rc1 & wordpress_wordpress_update_rc3))
+        wordpress_wordpress_version_4__1__21 => wordpress_wordpress_update_any
+        wordpress_wordpress_version_3__8__2 => wordpress_wordpress_update_any
+        wordpress_wordpress_version_4__1__3 => wordpress_wordpress_update_any
+        wordpress_wordpress_version_4__1__19 => wordpress_wordpress_update_any
+        wordpress_wordpress_version_4__1__17 => wordpress_wordpress_update_any
+        wordpress_wordpress_version_4__1__18 => wordpress_wordpress_update_any
+        wordpress_wordpress_version_3__8 => ((wordpress_wordpress_update_rc2 & !wordpress_wordpress_update_any & !wordpress_wordpress_update_rc1 & !wordpress_wordpress_update_beta1) | (!wordpress_wordpress_update_rc2 & wordpress_wordpress_update_any & !wordpress_wordpress_update_rc1 & !wordpress_wordpress_update_beta1) | (!wordpress_wordpress_update_rc2 & !wordpress_wordpress_update_any & wordpress_wordpress_update_rc1 & !wordpress_wordpress_update_beta1) | (!wordpress_wordpress_update_rc2 & !wordpress_wordpress_update_any & !wordpress_wordpress_update_rc1 & wordpress_wordpress_update_beta1))
+        wordpress_wordpress_version_3__7__26 => wordpress_wordpress_update_any
+        wordpress_wordpress_version_4__5__22 => wordpress_wordpress_update_any
+        wordpress_wordpress_version_2__9__2 => wordpress_wordpress_update_any
+        wordpress_wordpress_version_3__9__3 => wordpress_wordpress_update_any
+        wordpress_wordpress_version_3__8__35 => wordpress_wordpress_update_any
+        wordpress_wordpress_version_3__8__10 => wordpress_wordpress_update_any
+        wordpress_wordpress_version_3__0__6 => wordpress_wordpress_update_any
+        wordpress_wordpress_version_4__2__3 => wordpress_wordpress_update_any
+        wordpress_wordpress_version_3__8__11 => wordpress_wordpress_update_any
+        wordpress_wordpress_version_2__9__1__1 => wordpress_wordpress_update_any
+        wordpress_wordpress_version_4__2__27 => wordpress_wordpress_update_any
+        wordpress_wordpress_version_4__2__29 => wordpress_wordpress_update_any
+        wordpress_wordpress_version_4__3__14 => wordpress_wordpress_update_any
+        wordpress_wordpress_version_3__9__22 => wordpress_wordpress_update_any
+        wordpress_wordpress_version_4__1__4 => wordpress_wordpress_update_any
+        wordpress_wordpress_version_3__9__1 => ((wordpress_wordpress_update_any & !wordpress_wordpress_update_rc1) | (!wordpress_wordpress_update_any & wordpress_wordpress_update_rc1))
+        wordpress_wordpress_version_2__8__5 => ((wordpress_wordpress_update_any & !wordpress_wordpress_update_beta1) | (!wordpress_wordpress_update_any & wordpress_wordpress_update_beta1))
+        wordpress_wordpress_version_3__6 => ((wordpress_wordpress_update_beta2 & !wordpress_wordpress_update_rc2 & !wordpress_wordpress_update_any & !wordpress_wordpress_update_rc1 & !wordpress_wordpress_update_beta1 & !wordpress_wordpress_update_beta4 & !wordpress_wordpress_update_beta3) | (!wordpress_wordpress_update_beta2 & wordpress_wordpress_update_rc2 & !wordpress_wordpress_update_any & !wordpress_wordpress_update_rc1 & !wordpress_wordpress_update_beta1 & !wordpress_wordpress_update_beta4 & !wordpress_wordpress_update_beta3) | (!wordpress_wordpress_update_beta2 & !wordpress_wordpress_update_rc2 & wordpress_wordpress_update_any & !wordpress_wordpress_update_rc1 & !wordpress_wordpress_update_beta1 & !wordpress_wordpress_update_beta4 & !wordpress_wordpress_update_beta3) | (!wordpress_wordpress_update_beta2 & !wordpress_wordpress_update_rc2 & !wordpress_wordpress_update_any & wordpress_wordpress_update_rc1 & !wordpress_wordpress_update_beta1 & !wordpress_wordpress_update_beta4 & !wordpress_wordpress_update_beta3) | (!wordpress_wordpress_update_beta2 & !wordpress_wordpress_update_rc2 & !wordpress_wordpress_update_any & !wordpress_wordpress_update_rc1 & wordpress_wordpress_update_beta1 & !wordpress_wordpress_update_beta4 & !wordpress_wordpress_update_beta3) | (!wordpress_wordpress_update_beta2 & !wordpress_wordpress_update_rc2 & !wordpress_wordpress_update_any & !wordpress_wordpress_update_rc1 & !wordpress_wordpress_update_beta1 & wordpress_wordpress_update_beta4 & !wordpress_wordpress_update_beta3) | (!wordpress_wordpress_update_beta2 & !wordpress_wordpress_update_rc2 & !wordpress_wordpress_update_any & !wordpress_wordpress_update_rc1 & !wordpress_wordpress_update_beta1 & !wordpress_wordpress_update_beta4 & wordpress_wordpress_update_beta3))
+        wordpress_wordpress_version_1__2__4 => wordpress_wordpress_update_any
+        wordpress_wordpress_version_4__2__5 => wordpress_wordpress_update_any
+        wordpress_wordpress_version_4__3__12 => wordpress_wordpress_update_any
+        wordpress_wordpress_version_3__0__5 => wordpress_wordpress_update_any
+        wordpress_wordpress_version_4__7 => ((wordpress_wordpress_update_beta2 & !wordpress_wordpress_update_rc2 & !wordpress_wordpress_update_any & !wordpress_wordpress_update_rc1 & !wordpress_wordpress_update_beta1 & !wordpress_wordpress_update_beta4 & !wordpress_wordpress_update_beta3 & !wordpress_wordpress_update_rc3) | (!wordpress_wordpress_update_beta2 & wordpress_wordpress_update_rc2 & !wordpress_wordpress_update_any & !wordpress_wordpress_update_rc1 & !wordpress_wordpress_update_beta1 & !wordpress_wordpress_update_beta4 & !wordpress_wordpress_update_beta3 & !wordpress_wordpress_update_rc3) | (!wordpress_wordpress_update_beta2 & !wordpress_wordpress_update_rc2 & wordpress_wordpress_update_any & !wordpress_wordpress_update_rc1 & !wordpress_wordpress_update_beta1 & !wordpress_wordpress_update_beta4 & !wordpress_wordpress_update_beta3 & !wordpress_wordpress_update_rc3) | (!wordpress_wordpress_update_beta2 & !wordpress_wordpress_update_rc2 & !wordpress_wordpress_update_any & wordpress_wordpress_update_rc1 & !wordpress_wordpress_update_beta1 & !wordpress_wordpress_update_beta4 & !wordpress_wordpress_update_beta3 & !wordpress_wordpress_update_rc3) | (!wordpress_wordpress_update_beta2 & !wordpress_wordpress_update_rc2 & !wordpress_wordpress_update_any & !wordpress_wordpress_update_rc1 & wordpress_wordpress_update_beta1 & !wordpress_wordpress_update_beta4 & !wordpress_wordpress_update_beta3 & !wordpress_wordpress_update_rc3) | (!wordpress_wordpress_update_beta2 & !wordpress_wordpress_update_rc2 & !wordpress_wordpress_update_any & !wordpress_wordpress_update_rc1 & !wordpress_wordpress_update_beta1 & wordpress_wordpress_update_beta4 & !wordpress_wordpress_update_beta3 & !wordpress_wordpress_update_rc3) | (!wordpress_wordpress_update_beta2 & !wordpress_wordpress_update_rc2 & !wordpress_wordpress_update_any & !wordpress_wordpress_update_rc1 & !wordpress_wordpress_update_beta1 & !wordpress_wordpress_update_beta4 & wordpress_wordpress_update_beta3 & !wordpress_wordpress_update_rc3) | (!wordpress_wordpress_update_beta2 & !wordpress_wordpress_update_rc2 & !wordpress_wordpress_update_any & !wordpress_wordpress_update_rc1 & !wordpress_wordpress_update_beta1 & !wordpress_wordpress_update_beta4 & !wordpress_wordpress_update_beta3 & wordpress_wordpress_update_rc3))
+        wordpress_wordpress_version_4__4__0 => wordpress_wordpress_update_any
+        wordpress_wordpress_version_4__5__7 => wordpress_wordpress_update_any
+        wordpress_wordpress_version_4__0__25 => wordpress_wordpress_update_any
+        wordpress_wordpress_version_2__6__5 => wordpress_wordpress_update_any
+        wordpress_wordpress_version_3__9__21 => wordpress_wordpress_update_any
+        wordpress_wordpress_version_4__0__2 => wordpress_wordpress_update_any
+        wordpress_wordpress_version_3__7__24 => wordpress_wordpress_update_any
+        wordpress_wordpress_version_3__7__21 => wordpress_wordpress_update_any
+        wordpress_wordpress_version_4__6__7 => wordpress_wordpress_update_any
+        wordpress_wordpress_version_2__0__4 => wordpress_wordpress_update_any
+        wordpress_wordpress_version_3__9__0 => wordpress_wordpress_update_any
+        wordpress_wordpress_version_3__7__31 => wordpress_wordpress_update_any
+        wordpress_wordpress_version_4__0__7 => wordpress_wordpress_update_any
+        wordpress_wordpress_version_4__0__10 => wordpress_wordpress_update_any
+        wordpress_wordpress_version_3__9__18 => wordpress_wordpress_update_any
+        wordpress_wordpress_version_2__8__4 => ((wordpress_wordpress_update_any & !wordpress_wordpress_update_a) | (!wordpress_wordpress_update_any & wordpress_wordpress_update_a))
+        wordpress_wordpress_version_4__1__22 => wordpress_wordpress_update_any
+        wordpress_wordpress_version_3__8__27 => wordpress_wordpress_update_any
+        wordpress_wordpress_version_2__0__2 => wordpress_wordpress_update_any
+        wordpress_wordpress_version_2__9 => ((wordpress_wordpress_update_beta2 & !wordpress_wordpress_update_any & !wordpress_wordpress_update_rc1 & !wordpress_wordpress_update_beta1) | (!wordpress_wordpress_update_beta2 & wordpress_wordpress_update_any & !wordpress_wordpress_update_rc1 & !wordpress_wordpress_update_beta1) | (!wordpress_wordpress_update_beta2 & !wordpress_wordpress_update_any & wordpress_wordpress_update_rc1 & !wordpress_wordpress_update_beta1) | (!wordpress_wordpress_update_beta2 & !wordpress_wordpress_update_any & !wordpress_wordpress_update_rc1 & wordpress_wordpress_update_beta1))
+        wordpress_wordpress_version_4__3__6 => wordpress_wordpress_update_any
+        wordpress_wordpress_version_3__9__15 => wordpress_wordpress_update_any
+        wordpress_wordpress_version_3__7__17 => wordpress_wordpress_update_any
+        wordpress_wordpress_version_3__8__23 => wordpress_wordpress_update_any
+        wordpress_wordpress_version_4__5__6 => wordpress_wordpress_update_any
+        wordpress_wordpress_version_4__3__3 => wordpress_wordpress_update_any
+        wordpress_wordpress_version_4__6__3 => wordpress_wordpress_update_any
+        wordpress_wordpress_version_3__7__3 => wordpress_wordpress_update_any
+        wordpress_wordpress_version_3__7__30 => wordpress_wordpress_update_any
+        wordpress_wordpress_version_4__2__1 => wordpress_wordpress_update_any
+        wordpress_wordpress_version_3__9__14 => wordpress_wordpress_update_any
+        wordpress_wordpress_version_4__3__17 => wordpress_wordpress_update_any
+        wordpress_wordpress_version_2__7__1 => wordpress_wordpress_update_any
+        wordpress_wordpress_version_3__3__2 => ((wordpress_wordpress_update_any & !wordpress_wordpress_update_rc1) | (!wordpress_wordpress_update_any & wordpress_wordpress_update_rc1))
+        wordpress_wordpress_version_2__6 => ((wordpress_wordpress_update_beta2 & !wordpress_wordpress_update_any & !wordpress_wordpress_update_rc1 & !wordpress_wordpress_update_beta1 & !wordpress_wordpress_update_beta3) | (!wordpress_wordpress_update_beta2 & wordpress_wordpress_update_any & !wordpress_wordpress_update_rc1 & !wordpress_wordpress_update_beta1 & !wordpress_wordpress_update_beta3) | (!wordpress_wordpress_update_beta2 & !wordpress_wordpress_update_any & wordpress_wordpress_update_rc1 & !wordpress_wordpress_update_beta1 & !wordpress_wordpress_update_beta3) | (!wordpress_wordpress_update_beta2 & !wordpress_wordpress_update_any & !wordpress_wordpress_update_rc1 & wordpress_wordpress_update_beta1 & !wordpress_wordpress_update_beta3) | (!wordpress_wordpress_update_beta2 & !wordpress_wordpress_update_any & !wordpress_wordpress_update_rc1 & !wordpress_wordpress_update_beta1 & wordpress_wordpress_update_beta3))
+        wordpress_wordpress_version_3__7__27 => wordpress_wordpress_update_any
+        wordpress_wordpress_version_2__0__3 => wordpress_wordpress_update_any
+        wordpress_wordpress_version_4__1__26 => wordpress_wordpress_update_any
+        wordpress_wordpress_version_4__5__18 => wordpress_wordpress_update_any
+        wordpress_wordpress_version_4__0__14 => wordpress_wordpress_update_any
+        wordpress_wordpress_version_3__9__24 => wordpress_wordpress_update_any
+        wordpress_wordpress_version_3__9__26 => wordpress_wordpress_update_any
+        wordpress_wordpress_version_4__5__21 => wordpress_wordpress_update_any
+        wordpress_wordpress_version_3__7__12 => wordpress_wordpress_update_any
+        wordpress_wordpress_version_4__3__4 => wordpress_wordpress_update_any
+        wordpress_wordpress_version_4__2__10 => wordpress_wordpress_update_any
+        wordpress_wordpress_version_4__2__24 => wordpress_wordpress_update_any
+        wordpress_wordpress_version_3__9__8 => wordpress_wordpress_update_any
+        wordpress_wordpress_version_4__5__3 => wordpress_wordpress_update_any
+        wordpress_wordpress_version_3__9__20 => wordpress_wordpress_update_any
+        wordpress_wordpress_version_4__4__23 => wordpress_wordpress_update_any
+        wordpress_wordpress_version_3__7__22 => wordpress_wordpress_update_any
+        wordpress_wordpress_version_0__71 => ((wordpress_wordpress_update_beta & !wordpress_wordpress_update_any & !wordpress_wordpress_update_beta3) | (!wordpress_wordpress_update_beta & wordpress_wordpress_update_any & !wordpress_wordpress_update_beta3) | (!wordpress_wordpress_update_beta & !wordpress_wordpress_update_any & wordpress_wordpress_update_beta3))
+        wordpress_wordpress_version_4__3__10 => wordpress_wordpress_update_any
+        wordpress_wordpress_version_4__1__7 => wordpress_wordpress_update_any
+        wordpress_wordpress_version_4__2__13 => wordpress_wordpress_update_any
+        wordpress_wordpress_version_3__7__5 => wordpress_wordpress_update_any
+        wordpress_wordpress_version_4__5__20 => wordpress_wordpress_update_any
+        wordpress_wordpress_version_3__9 => ((wordpress_wordpress_update_beta2 & !wordpress_wordpress_update_rc2 & !wordpress_wordpress_update_any & !wordpress_wordpress_update_rc1 & !wordpress_wordpress_update_beta1 & !wordpress_wordpress_update_beta3) | (!wordpress_wordpress_update_beta2 & wordpress_wordpress_update_rc2 & !wordpress_wordpress_update_any & !wordpress_wordpress_update_rc1 & !wordpress_wordpress_update_beta1 & !wordpress_wordpress_update_beta3) | (!wordpress_wordpress_update_beta2 & !wordpress_wordpress_update_rc2 & wordpress_wordpress_update_any & !wordpress_wordpress_update_rc1 & !wordpress_wordpress_update_beta1 & !wordpress_wordpress_update_beta3) | (!wordpress_wordpress_update_beta2 & !wordpress_wordpress_update_rc2 & !wordpress_wordpress_update_any & wordpress_wordpress_update_rc1 & !wordpress_wordpress_update_beta1 & !wordpress_wordpress_update_beta3) | (!wordpress_wordpress_update_beta2 & !wordpress_wordpress_update_rc2 & !wordpress_wordpress_update_any & !wordpress_wordpress_update_rc1 & wordpress_wordpress_update_beta1 & !wordpress_wordpress_update_beta3) | (!wordpress_wordpress_update_beta2 & !wordpress_wordpress_update_rc2 & !wordpress_wordpress_update_any & !wordpress_wordpress_update_rc1 & !wordpress_wordpress_update_beta1 & wordpress_wordpress_update_beta3))
+        wordpress_wordpress_version_3__0__1 => wordpress_wordpress_update_any
+        wordpress_wordpress_version_2__0__1 => ((wordpress_wordpress_update_any & !wordpress_wordpress_update_rc1) | (!wordpress_wordpress_update_any & wordpress_wordpress_update_rc1))
+        wordpress_wordpress_version_3__9__30 => wordpress_wordpress_update_any
+        wordpress_wordpress_version_2__1__2 => wordpress_wordpress_update_any
+        wordpress_wordpress_version_3__7__18 => wordpress_wordpress_update_any
+        wordpress_wordpress_version_4__1__28 => wordpress_wordpress_update_any
+        wordpress_wordpress_version_4__0__29 => wordpress_wordpress_update_any
+        wordpress_wordpress_version_4__1__12 => wordpress_wordpress_update_any
+        wordpress_wordpress_version_4__3__23 => wordpress_wordpress_update_any
+        wordpress_wordpress_version_4__2__22 => wordpress_wordpress_update_any
+        wordpress_wordpress_version_3__7__2 => wordpress_wordpress_update_any
+        wordpress_wordpress_version_4__0__11 => wordpress_wordpress_update_any
+        wordpress_wordpress_version_2__2 => ((wordpress_wordpress_update_rc2 & !wordpress_wordpress_update_any & !wordpress_wordpress_update_rc1) | (!wordpress_wordpress_update_rc2 & wordpress_wordpress_update_any & !wordpress_wordpress_update_rc1) | (!wordpress_wordpress_update_rc2 & !wordpress_wordpress_update_any & wordpress_wordpress_update_rc1))
+        wordpress_wordpress_version_4__2__17 => wordpress_wordpress_update_any
+        wordpress_wordpress_version_1__5__1__2 => wordpress_wordpress_update_any
+        wordpress_wordpress_version_2__0__8 => ((wordpress_wordpress_update_any & !wordpress_wordpress_update_rc1) | (!wordpress_wordpress_update_any & wordpress_wordpress_update_rc1))
+        wordpress_wordpress_version_4__6__10 => wordpress_wordpress_update_any
+        wordpress_wordpress_version_3__2 => ((wordpress_wordpress_update_beta2 & !wordpress_wordpress_update_rc2 & !wordpress_wordpress_update_any & !wordpress_wordpress_update_rc1 & !wordpress_wordpress_update_beta1 & !wordpress_wordpress_update_rc3) | (!wordpress_wordpress_update_beta2 & wordpress_wordpress_update_rc2 & !wordpress_wordpress_update_any & !wordpress_wordpress_update_rc1 & !wordpress_wordpress_update_beta1 & !wordpress_wordpress_update_rc3) | (!wordpress_wordpress_update_beta2 & !wordpress_wordpress_update_rc2 & wordpress_wordpress_update_any & !wordpress_wordpress_update_rc1 & !wordpress_wordpress_update_beta1 & !wordpress_wordpress_update_rc3) | (!wordpress_wordpress_update_beta2 & !wordpress_wordpress_update_rc2 & !wordpress_wordpress_update_any & wordpress_wordpress_update_rc1 & !wordpress_wordpress_update_beta1 & !wordpress_wordpress_update_rc3) | (!wordpress_wordpress_update_beta2 & !wordpress_wordpress_update_rc2 & !wordpress_wordpress_update_any & !wordpress_wordpress_update_rc1 & wordpress_wordpress_update_beta1 & !wordpress_wordpress_update_rc3) | (!wordpress_wordpress_update_beta2 & !wordpress_wordpress_update_rc2 & !wordpress_wordpress_update_any & !wordpress_wordpress_update_rc1 & !wordpress_wordpress_update_beta1 & wordpress_wordpress_update_rc3))
+        wordpress_wordpress_version_4__2__9 => wordpress_wordpress_update_any
+        wordpress_wordpress_version_4__0__9 => wordpress_wordpress_update_any
+        wordpress_wordpress_version_2__6__3 => wordpress_wordpress_update_any
+        wordpress_wordpress_version_2__2__3 => wordpress_wordpress_update_any
+        wordpress_wordpress_version_4__5__8 => wordpress_wordpress_update_any
+        wordpress_wordpress_version_4__2__23 => wordpress_wordpress_update_any
+        wordpress_wordpress_version_4__5__23 => wordpress_wordpress_update_any
+        wordpress_wordpress_version_3__7__11 => wordpress_wordpress_update_any
+        wordpress_wordpress_version_2__6__1 => ((wordpress_wordpress_update_beta2 & !wordpress_wordpress_update_any & !wordpress_wordpress_update_beta1) | (!wordpress_wordpress_update_beta2 & wordpress_wordpress_update_any & !wordpress_wordpress_update_beta1) | (!wordpress_wordpress_update_beta2 & !wordpress_wordpress_update_any & wordpress_wordpress_update_beta1))
+        wordpress_wordpress_version_4__4__25 => wordpress_wordpress_update_any
+        wordpress_wordpress_version_3__3__3 => wordpress_wordpress_update_any

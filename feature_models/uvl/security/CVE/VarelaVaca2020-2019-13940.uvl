@@ -1,0 +1,226 @@
+features
+        CVE_2019_13940
+                optional
+                        configs
+                                alternative
+                                        rc0
+                                                mandatory
+                                                        rc0_siemens
+                                                                mandatory
+                                                                        rc0_siemens_s7_1200__cpu__1211c
+                                        rc1
+                                                mandatory
+                                                        rc1_siemens
+                                                                mandatory
+                                                                        rc1_siemens_s7_1200__cpu__1212c
+                                        rc2
+                                                mandatory
+                                                        rc2_siemens
+                                                                mandatory
+                                                                        rc2_siemens_s7_1200__cpu__1214c
+                                        rc3
+                                                mandatory
+                                                        rc3_siemens
+                                                                mandatory
+                                                                        rc3_siemens_s7_1200__cpu__1215c
+                                        rc4
+                                                mandatory
+                                                        rc4_siemens
+                                                                mandatory
+                                                                        rc4_siemens_s7_1200__cpu__1217c
+                                        rc5
+                                                mandatory
+                                                        rc5_siemens
+                                                                mandatory
+                                                                        rc5_siemens_s7_1200__cpu__1212fc
+                                        rc6
+                                                mandatory
+                                                        rc6_siemens
+                                                                mandatory
+                                                                        rc6_siemens_s7_1200__cpu__1214fc
+                                        rc7
+                                                mandatory
+                                                        rc7_siemens
+                                                                mandatory
+                                                                        rc7_siemens_s7_1200__cpu__1215fc
+                                        rc8
+                                                mandatory
+                                                        rc8_siemens
+                                                                mandatory
+                                                                        rc8_siemens_siplus__s7_1200
+                                        rc9
+                                                mandatory
+                                                        rc9_siemens
+                                                                mandatory
+                                                                        rc9_siemens_siplus__cpu__1211c
+                                        rc10
+                                                mandatory
+                                                        rc10_siemens
+                                                                mandatory
+                                                                        rc10_siemens_siplus__cpu__1212c
+                                        rc11
+                                                mandatory
+                                                        rc11_siemens
+                                                                mandatory
+                                                                        rc11_siemens_siplus__cpu__1214c
+                                        rc12
+                                                mandatory
+                                                        rc12_siemens
+                                                                mandatory
+                                                                        rc12_siemens_siplus__cpu__1215c
+                                        rc13
+                                                mandatory
+                                                        rc13_siemens
+                                                                mandatory
+                                                                        rc13_siemens_simatic__s7_300__cpu__319_3__pn__dp
+                                        rc14
+                                                mandatory
+                                                        rc14_siemens
+                                                                mandatory
+                                                                        rc14_siemens_simatic__s7_300__cpu__315_2dp
+                                        rc15
+                                                mandatory
+                                                        rc15_siemens
+                                                                mandatory
+                                                                        rc15_siemens_simatic__s7_300__cpu__315_2__pn__dp
+                                        rc16
+                                                mandatory
+                                                        rc16_siemens
+                                                                mandatory
+                                                                        rc16_siemens_simatic__s7_300__cpu__317_2__dp
+                                        rc17
+                                                mandatory
+                                                        rc17_siemens
+                                                                mandatory
+                                                                        rc17_siemens_simatic__s7_300__cpu__317_2__pn__dp
+                                        rc18
+                                                mandatory
+                                                        rc18_siemens
+                                                                mandatory
+                                                                        rc18_siemens_simatic__s7_300__cpu__319_3__pn__dp
+                                        rc19
+                                                mandatory
+                                                        rc19_siemens
+                                                                mandatory
+                                                                        rc19_siemens_siplus__s7_300__cpu__314
+                                        rc20
+                                                mandatory
+                                                        rc20_siemens
+                                                                mandatory
+                                                                        rc20_siemens_siplus__s7_300__cpu__315_2__dp
+                                        rc21
+                                                mandatory
+                                                        rc21_siemens
+                                                                mandatory
+                                                                        rc21_siemens_siplus__s7_300__cpu__315_2__pn__dp
+                                        rc22
+                                                mandatory
+                                                        rc22_siemens
+                                                                mandatory
+                                                                        rc22_siemens_siplus__s7_300__cpu__317_2__pn__dp
+                                                                                mandatory
+                                                                                        rc22_siemens_siplus__s7_300__cpu__317_2__pn__dp_version
+                                                                                                mandatory
+                                                                                                        rc22_siemens_siplus__s7_300__cpu__317_2__pn__dp_version_v6
+                                        rc23
+                                                mandatory
+                                                        rc23_siemens
+                                                                mandatory
+                                                                        rc23_siemens_simatic__s7_400__pn__dp__cpu
+                                                                                mandatory
+                                                                                        rc23_siemens_simatic__s7_400__pn__dp__cpu_version
+                                                                                                mandatory
+                                                                                                        rc23_siemens_simatic__s7_400__pn__dp__cpu_version_v7
+                mandatory
+                        types
+                                mandatory
+                                        operating_system
+                                        application
+                        sources
+                                mandatory
+                                        nvd
+                        exploits
+                                optional
+                                        direct
+                                        indirect
+                        siemens
+                                alternative
+                                        siemens_s7_1200__cpu__1211c__firmware
+                                        siemens_s7_1200__cpu__1212c__firmware
+                                        siemens_s7_1200__cpu__1214c__firmware
+                                        siemens_s7_1200__cpu__1215c__firmware
+                                        siemens_s7_1200__cpu__1217c__firmware
+                                        siemens_s7_1200__cpu__1212fc__firmware
+                                        siemens_s7_1200__cpu__1214fc__firmware
+                                        siemens_s7_1200__cpu__1215fc__firmware
+                                        siemens_siplus__s7_1200__firmware
+                                        siemens_siplus__cpu__1211c__firmware
+                                        siemens_siplus__cpu__1212c__firmware
+                                        siemens_siplus__cpu__1214c__firmware
+                                                mandatory
+                                                        siemens_siplus__cpu__1214c__firmware_version
+                                                                alternative
+                                                                        siemens_siplus__cpu__1214c__firmware_version_4__1
+                                                                        siemens_siplus__cpu__1214c__firmware_version_any
+                                        siemens_siplus__cpu__1215c__firmware
+                                        siemens_simatic__s7_300__cpu__319_3__pn__dp__firmware
+                                        siemens_simatic__s7_300__cpu__315_2dp__firmware
+                                        siemens_simatic__s7_300__cpu__315_2__pn__dp__firmware
+                                        siemens_simatic__s7_300__cpu__317_2__dp__firmware
+                                        siemens_simatic__s7_300__cpu__317_2__pn__dp__firmware
+                                        siemens_siplus__s7_300__cpu__314__firmware
+                                        siemens_siplus__s7_300__cpu__315_2__dp__firmware
+                                        siemens_siplus__s7_300__cpu__315_2__pn__dp__firmware
+                                        siemens_siplus__s7_300__cpu__317_2__pn__dp__firmware
+                                        siemens_simatic__s7_400__pn__dp__cpu__firmware
+                                        siemens_simatic__winac__rtx____f____2010
+
+constraints
+        siemens_s7_1200__cpu__1211c__firmware => operating_system
+        siemens_s7_1200__cpu__1212c__firmware => operating_system
+        siemens_s7_1200__cpu__1214c__firmware => operating_system
+        siemens_s7_1200__cpu__1215c__firmware => operating_system
+        siemens_s7_1200__cpu__1217c__firmware => operating_system
+        siemens_s7_1200__cpu__1212fc__firmware => operating_system
+        siemens_s7_1200__cpu__1214fc__firmware => operating_system
+        siemens_s7_1200__cpu__1215fc__firmware => operating_system
+        siemens_siplus__s7_1200__firmware => operating_system
+        siemens_siplus__cpu__1211c__firmware => operating_system
+        siemens_siplus__cpu__1212c__firmware => operating_system
+        siemens_siplus__cpu__1214c__firmware => operating_system
+        siemens_siplus__cpu__1215c__firmware => operating_system
+        siemens_simatic__s7_300__cpu__319_3__pn__dp__firmware => operating_system
+        siemens_simatic__s7_300__cpu__315_2dp__firmware => operating_system
+        siemens_simatic__s7_300__cpu__315_2__pn__dp__firmware => operating_system
+        siemens_simatic__s7_300__cpu__317_2__dp__firmware => operating_system
+        siemens_simatic__s7_300__cpu__317_2__pn__dp__firmware => operating_system
+        siemens_siplus__s7_300__cpu__314__firmware => operating_system
+        siemens_siplus__s7_300__cpu__315_2__dp__firmware => operating_system
+        siemens_siplus__s7_300__cpu__315_2__pn__dp__firmware => operating_system
+        siemens_siplus__s7_300__cpu__317_2__pn__dp__firmware => operating_system
+        siemens_simatic__s7_400__pn__dp__cpu__firmware => operating_system
+        siemens_simatic__winac__rtx____f____2010 => application
+        siemens_s7_1200__cpu__1211c__firmware => (rc0)
+        siemens_s7_1200__cpu__1212c__firmware => (rc1)
+        siemens_s7_1200__cpu__1214c__firmware => (rc2)
+        siemens_s7_1200__cpu__1215c__firmware => (rc3)
+        siemens_s7_1200__cpu__1217c__firmware => (rc4)
+        siemens_s7_1200__cpu__1212fc__firmware => (rc5)
+        siemens_s7_1200__cpu__1214fc__firmware => (rc6)
+        siemens_s7_1200__cpu__1215fc__firmware => (rc7)
+        siemens_siplus__s7_1200__firmware => (rc8)
+        siemens_siplus__cpu__1211c__firmware => (rc9)
+        siemens_siplus__cpu__1212c__firmware => (rc10)
+        siemens_siplus__cpu__1214c__firmware_version_4__1 => (rc11)
+        siemens_siplus__cpu__1214c__firmware_version_any => (rc11)
+        siemens_siplus__cpu__1215c__firmware => (rc12)
+        siemens_simatic__s7_300__cpu__319_3__pn__dp__firmware => ((rc13 & !rc18) | (!rc13 & rc18))
+        siemens_simatic__s7_300__cpu__315_2dp__firmware => (rc14)
+        siemens_simatic__s7_300__cpu__315_2__pn__dp__firmware => (rc15)
+        siemens_simatic__s7_300__cpu__317_2__dp__firmware => (rc16)
+        siemens_simatic__s7_300__cpu__317_2__pn__dp__firmware => (rc17)
+        siemens_siplus__s7_300__cpu__314__firmware => (rc19)
+        siemens_siplus__s7_300__cpu__315_2__dp__firmware => (rc20)
+        siemens_siplus__s7_300__cpu__315_2__pn__dp__firmware => (rc21)
+        siemens_siplus__s7_300__cpu__317_2__pn__dp__firmware => (rc22)
+        siemens_simatic__s7_400__pn__dp__cpu__firmware => (rc23)

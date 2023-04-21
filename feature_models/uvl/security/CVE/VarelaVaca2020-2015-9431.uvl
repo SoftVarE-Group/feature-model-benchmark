@@ -1,0 +1,199 @@
+features
+        CVE_2015_9431
+                mandatory
+                        types
+                                mandatory
+                                        application
+                        sources
+                                mandatory
+                                        nvd
+                        exploits
+                                optional
+                                        direct
+                                        indirect
+                        qtranslate__x__project
+                                mandatory
+                                        qtranslate__x__project_qtranslate__x
+                                                mandatory
+                                                        qtranslate__x__project_qtranslate__x_version
+                                                                alternative
+                                                                        qtranslate__x__project_qtranslate__x_version_2__9__8__1
+                                                                        qtranslate__x__project_qtranslate__x_version_3__2__9__1
+                                                                        qtranslate__x__project_qtranslate__x_version_3__2__9__9__3
+                                                                        qtranslate__x__project_qtranslate__x_version_3__2__1
+                                                                        qtranslate__x__project_qtranslate__x_version_3__2__4
+                                                                        qtranslate__x__project_qtranslate__x_version_3__3
+                                                                        qtranslate__x__project_qtranslate__x_version_3__2__9__8__5
+                                                                        qtranslate__x__project_qtranslate__x_version_2__9__8__0
+                                                                        qtranslate__x__project_qtranslate__x_version_2__9__8__4
+                                                                        qtranslate__x__project_qtranslate__x_version_3__3__4
+                                                                        qtranslate__x__project_qtranslate__x_version_3__3__7
+                                                                        qtranslate__x__project_qtranslate__x_version_3__2__9__9__7
+                                                                        qtranslate__x__project_qtranslate__x_version_3__2__9__9__5
+                                                                        qtranslate__x__project_qtranslate__x_version_3__2__9__8__9
+                                                                        qtranslate__x__project_qtranslate__x_version_3__2__9__9__0
+                                                                        qtranslate__x__project_qtranslate__x_version_3__2__9__8__3
+                                                                        qtranslate__x__project_qtranslate__x_version_2__9__8__2
+                                                                        qtranslate__x__project_qtranslate__x_version_3__2__9__4
+                                                                        qtranslate__x__project_qtranslate__x_version_3__3__5
+                                                                        qtranslate__x__project_qtranslate__x_version_3__4__3
+                                                                        qtranslate__x__project_qtranslate__x_version_2__9__7__9
+                                                                        qtranslate__x__project_qtranslate__x_version_3__2
+                                                                        qtranslate__x__project_qtranslate__x_version_2__9__8__3
+                                                                        qtranslate__x__project_qtranslate__x_version_3__2__9__7
+                                                                        qtranslate__x__project_qtranslate__x_version_2__9__8__9
+                                                                        qtranslate__x__project_qtranslate__x_version_3__0
+                                                                        qtranslate__x__project_qtranslate__x_version_2__7__5
+                                                                        qtranslate__x__project_qtranslate__x_version_2__7__7
+                                                                        qtranslate__x__project_qtranslate__x_version_3__2__9__9__2
+                                                                        qtranslate__x__project_qtranslate__x_version_2__9__7__8
+                                                                        qtranslate__x__project_qtranslate__x_version_3__2__2
+                                                                        qtranslate__x__project_qtranslate__x_version_2__9__8__5
+                                                                        qtranslate__x__project_qtranslate__x_version_3__2__9__2
+                                                                        qtranslate__x__project_qtranslate__x_version_3__4__2
+                                                                        qtranslate__x__project_qtranslate__x_version_3__2__7
+                                                                        qtranslate__x__project_qtranslate__x_version_3__2__9__9__1
+                                                                        qtranslate__x__project_qtranslate__x_version_3__2__9__6
+                                                                        qtranslate__x__project_qtranslate__x_version_2__7__3
+                                                                        qtranslate__x__project_qtranslate__x_version_3__3__1
+                                                                        qtranslate__x__project_qtranslate__x_version_3__4__1
+                                                                        qtranslate__x__project_qtranslate__x_version_2__7__8
+                                                                        qtranslate__x__project_qtranslate__x_version_2__9__6
+                                                                        qtranslate__x__project_qtranslate__x_version_3__2__3
+                                                                        qtranslate__x__project_qtranslate__x_version_2__9
+                                                                        qtranslate__x__project_qtranslate__x_version_3__3__8
+                                                                        qtranslate__x__project_qtranslate__x_version_2__6__4
+                                                                        qtranslate__x__project_qtranslate__x_version_any
+                                                                        qtranslate__x__project_qtranslate__x_version_2__7__6
+                                                                        qtranslate__x__project_qtranslate__x_version_3__2__9__8__1
+                                                                        qtranslate__x__project_qtranslate__x_version_3__3__9__0
+                                                                        qtranslate__x__project_qtranslate__x_version_2__9__3
+                                                                        qtranslate__x__project_qtranslate__x_version_2__9__4
+                                                                        qtranslate__x__project_qtranslate__x_version_2__7__1
+                                                                        qtranslate__x__project_qtranslate__x_version_3__2__9__8__4
+                                                                        qtranslate__x__project_qtranslate__x_version_3__2__9__8__2
+                                                                        qtranslate__x__project_qtranslate__x_version_3__3__3
+                                                                        qtranslate__x__project_qtranslate__x_version_3__3__8__9
+                                                                        qtranslate__x__project_qtranslate__x_version_2__7__2
+                                                                        qtranslate__x__project_qtranslate__x_version_3__2__9__3
+                                                                        qtranslate__x__project_qtranslate__x_version_3__2__9__9__4
+                                                                        qtranslate__x__project_qtranslate__x_version_2__9__1
+                                                                        qtranslate__x__project_qtranslate__x_version_3__2__5
+                                                                        qtranslate__x__project_qtranslate__x_version_2__9__2
+                                                                        qtranslate__x__project_qtranslate__x_version_3__2__9__8__8
+                                                                        qtranslate__x__project_qtranslate__x_version_2__9__5
+                                                                        qtranslate__x__project_qtranslate__x_version_3__2__6
+                                                                        qtranslate__x__project_qtranslate__x_version_3__4
+                                                                        qtranslate__x__project_qtranslate__x_version_3__1
+                                                                        qtranslate__x__project_qtranslate__x_version_3__3__2
+                                                                        qtranslate__x__project_qtranslate__x_version_2__9__7__7
+                                                                        qtranslate__x__project_qtranslate__x_version_2__9__8__8
+                                                                        qtranslate__x__project_qtranslate__x_version_3__2__9__5
+                                                                        qtranslate__x__project_qtranslate__x_version_2__9__8__7
+                                                                        qtranslate__x__project_qtranslate__x_version_2__7__4
+                                                                        qtranslate__x__project_qtranslate__x_version_2__6__3
+                                                                        qtranslate__x__project_qtranslate__x_version_3__2__9__8
+                                                                        qtranslate__x__project_qtranslate__x_version_2__7
+                                                                        qtranslate__x__project_qtranslate__x_version_3__2__9
+                                                                        qtranslate__x__project_qtranslate__x_version_2__7__9
+                                                                        qtranslate__x__project_qtranslate__x_version_2__8
+                                                                        qtranslate__x__project_qtranslate__x_version_3__2__9__9__6
+                                                                        qtranslate__x__project_qtranslate__x_version_3__2__9__9__8
+                                                        qtranslate__x__project_qtranslate__x_update
+                                                                alternative
+                                                                        qtranslate__x__project_qtranslate__x_update_beta3
+                                                                        qtranslate__x__project_qtranslate__x_update_beta2
+                                                                        qtranslate__x__project_qtranslate__x_update_alpha
+                                                                        qtranslate__x__project_qtranslate__x_update_any
+                                                                        qtranslate__x__project_qtranslate__x_update_beta1
+                                                                        qtranslate__x__project_qtranslate__x_update_alpha1
+                                                                        qtranslate__x__project_qtranslate__x_update_beta4
+                                                                        qtranslate__x__project_qtranslate__x_update_beta
+                                                        qtranslate__x__project_qtranslate__x_target__sw
+                                                                mandatory
+                                                                        qtranslate__x__project_qtranslate__x_target__sw_wordpress
+
+constraints
+        qtranslate__x__project_qtranslate__x => application
+        qtranslate__x__project_qtranslate__x_version_2__9__8__1 => qtranslate__x__project_qtranslate__x_update_alpha
+        qtranslate__x__project_qtranslate__x_version_3__2__9__1 => qtranslate__x__project_qtranslate__x_update_any
+        qtranslate__x__project_qtranslate__x_version_3__2__9__9__3 => qtranslate__x__project_qtranslate__x_update_alpha
+        qtranslate__x__project_qtranslate__x_version_3__2__1 => qtranslate__x__project_qtranslate__x_update_any
+        qtranslate__x__project_qtranslate__x_version_3__2__4 => qtranslate__x__project_qtranslate__x_update_any
+        qtranslate__x__project_qtranslate__x_version_3__3 => qtranslate__x__project_qtranslate__x_update_any
+        qtranslate__x__project_qtranslate__x_version_3__2__9__8__5 => qtranslate__x__project_qtranslate__x_update_alpha
+        qtranslate__x__project_qtranslate__x_version_2__9__8__0 => qtranslate__x__project_qtranslate__x_update_alpha
+        qtranslate__x__project_qtranslate__x_version_2__9__8__4 => qtranslate__x__project_qtranslate__x_update_alpha
+        qtranslate__x__project_qtranslate__x_version_3__3__4 => qtranslate__x__project_qtranslate__x_update_any
+        qtranslate__x__project_qtranslate__x_version_3__3__7 => qtranslate__x__project_qtranslate__x_update_any
+        qtranslate__x__project_qtranslate__x_version_3__2__9__9__7 => qtranslate__x__project_qtranslate__x_update_alpha
+        qtranslate__x__project_qtranslate__x_version_3__2__9__9__5 => qtranslate__x__project_qtranslate__x_update_alpha
+        qtranslate__x__project_qtranslate__x_version_3__2__9__8__9 => qtranslate__x__project_qtranslate__x_update_alpha
+        qtranslate__x__project_qtranslate__x_version_3__2__9__9__0 => qtranslate__x__project_qtranslate__x_update_alpha
+        qtranslate__x__project_qtranslate__x_version_3__2__9__8__3 => qtranslate__x__project_qtranslate__x_update_alpha
+        qtranslate__x__project_qtranslate__x_version_2__9__8__2 => qtranslate__x__project_qtranslate__x_update_alpha
+        qtranslate__x__project_qtranslate__x_version_3__2__9__4 => qtranslate__x__project_qtranslate__x_update_any
+        qtranslate__x__project_qtranslate__x_version_3__3__5 => qtranslate__x__project_qtranslate__x_update_any
+        qtranslate__x__project_qtranslate__x_version_3__4__3 => qtranslate__x__project_qtranslate__x_update_any
+        qtranslate__x__project_qtranslate__x_version_2__9__7__9 => qtranslate__x__project_qtranslate__x_update_beta
+        qtranslate__x__project_qtranslate__x_version_3__2 => ((qtranslate__x__project_qtranslate__x_update_beta3 & !qtranslate__x__project_qtranslate__x_update_beta2 & !qtranslate__x__project_qtranslate__x_update_any & !qtranslate__x__project_qtranslate__x_update_beta1) | (!qtranslate__x__project_qtranslate__x_update_beta3 & qtranslate__x__project_qtranslate__x_update_beta2 & !qtranslate__x__project_qtranslate__x_update_any & !qtranslate__x__project_qtranslate__x_update_beta1) | (!qtranslate__x__project_qtranslate__x_update_beta3 & !qtranslate__x__project_qtranslate__x_update_beta2 & qtranslate__x__project_qtranslate__x_update_any & !qtranslate__x__project_qtranslate__x_update_beta1) | (!qtranslate__x__project_qtranslate__x_update_beta3 & !qtranslate__x__project_qtranslate__x_update_beta2 & !qtranslate__x__project_qtranslate__x_update_any & qtranslate__x__project_qtranslate__x_update_beta1))
+        qtranslate__x__project_qtranslate__x_version_2__9__8__3 => qtranslate__x__project_qtranslate__x_update_alpha
+        qtranslate__x__project_qtranslate__x_version_3__2__9__7 => qtranslate__x__project_qtranslate__x_update_alpha
+        qtranslate__x__project_qtranslate__x_version_2__9__8__9 => qtranslate__x__project_qtranslate__x_update_alpha
+        qtranslate__x__project_qtranslate__x_version_3__0 => qtranslate__x__project_qtranslate__x_update_any
+        qtranslate__x__project_qtranslate__x_version_2__7__5 => qtranslate__x__project_qtranslate__x_update_any
+        qtranslate__x__project_qtranslate__x_version_2__7__7 => qtranslate__x__project_qtranslate__x_update_any
+        qtranslate__x__project_qtranslate__x_version_3__2__9__9__2 => qtranslate__x__project_qtranslate__x_update_alpha
+        qtranslate__x__project_qtranslate__x_version_2__9__7__8 => qtranslate__x__project_qtranslate__x_update_beta
+        qtranslate__x__project_qtranslate__x_version_3__2__2 => qtranslate__x__project_qtranslate__x_update_any
+        qtranslate__x__project_qtranslate__x_version_2__9__8__5 => qtranslate__x__project_qtranslate__x_update_alpha
+        qtranslate__x__project_qtranslate__x_version_3__2__9__2 => qtranslate__x__project_qtranslate__x_update_any
+        qtranslate__x__project_qtranslate__x_version_3__4__2 => qtranslate__x__project_qtranslate__x_update_any
+        qtranslate__x__project_qtranslate__x_version_3__2__7 => qtranslate__x__project_qtranslate__x_update_any
+        qtranslate__x__project_qtranslate__x_version_3__2__9__9__1 => qtranslate__x__project_qtranslate__x_update_alpha
+        qtranslate__x__project_qtranslate__x_version_3__2__9__6 => qtranslate__x__project_qtranslate__x_update_alpha
+        qtranslate__x__project_qtranslate__x_version_2__7__3 => qtranslate__x__project_qtranslate__x_update_any
+        qtranslate__x__project_qtranslate__x_version_3__3__1 => qtranslate__x__project_qtranslate__x_update_any
+        qtranslate__x__project_qtranslate__x_version_3__4__1 => qtranslate__x__project_qtranslate__x_update_any
+        qtranslate__x__project_qtranslate__x_version_2__7__8 => qtranslate__x__project_qtranslate__x_update_any
+        qtranslate__x__project_qtranslate__x_version_2__9__6 => qtranslate__x__project_qtranslate__x_update_any
+        qtranslate__x__project_qtranslate__x_version_3__2__3 => qtranslate__x__project_qtranslate__x_update_any
+        qtranslate__x__project_qtranslate__x_version_2__9 => qtranslate__x__project_qtranslate__x_update_any
+        qtranslate__x__project_qtranslate__x_version_3__3__8 => qtranslate__x__project_qtranslate__x_update_any
+        qtranslate__x__project_qtranslate__x_version_2__6__4 => qtranslate__x__project_qtranslate__x_update_any
+        qtranslate__x__project_qtranslate__x_version_any => qtranslate__x__project_qtranslate__x_update_any
+        qtranslate__x__project_qtranslate__x_version_2__7__6 => qtranslate__x__project_qtranslate__x_update_any
+        qtranslate__x__project_qtranslate__x_version_3__2__9__8__1 => qtranslate__x__project_qtranslate__x_update_alpha
+        qtranslate__x__project_qtranslate__x_version_3__3__9__0 => qtranslate__x__project_qtranslate__x_update_any
+        qtranslate__x__project_qtranslate__x_version_2__9__3 => qtranslate__x__project_qtranslate__x_update_any
+        qtranslate__x__project_qtranslate__x_version_2__9__4 => qtranslate__x__project_qtranslate__x_update_any
+        qtranslate__x__project_qtranslate__x_version_2__7__1 => qtranslate__x__project_qtranslate__x_update_any
+        qtranslate__x__project_qtranslate__x_version_3__2__9__8__4 => qtranslate__x__project_qtranslate__x_update_alpha
+        qtranslate__x__project_qtranslate__x_version_3__2__9__8__2 => qtranslate__x__project_qtranslate__x_update_alpha
+        qtranslate__x__project_qtranslate__x_version_3__3__3 => qtranslate__x__project_qtranslate__x_update_any
+        qtranslate__x__project_qtranslate__x_version_3__3__8__9 => qtranslate__x__project_qtranslate__x_update_any
+        qtranslate__x__project_qtranslate__x_version_2__7__2 => qtranslate__x__project_qtranslate__x_update_any
+        qtranslate__x__project_qtranslate__x_version_3__2__9__3 => qtranslate__x__project_qtranslate__x_update_any
+        qtranslate__x__project_qtranslate__x_version_3__2__9__9__4 => qtranslate__x__project_qtranslate__x_update_alpha
+        qtranslate__x__project_qtranslate__x_version_2__9__1 => qtranslate__x__project_qtranslate__x_update_any
+        qtranslate__x__project_qtranslate__x_version_3__2__5 => qtranslate__x__project_qtranslate__x_update_any
+        qtranslate__x__project_qtranslate__x_version_2__9__2 => qtranslate__x__project_qtranslate__x_update_any
+        qtranslate__x__project_qtranslate__x_version_3__2__9__8__8 => qtranslate__x__project_qtranslate__x_update_alpha
+        qtranslate__x__project_qtranslate__x_version_2__9__5 => qtranslate__x__project_qtranslate__x_update_any
+        qtranslate__x__project_qtranslate__x_version_3__2__6 => qtranslate__x__project_qtranslate__x_update_any
+        qtranslate__x__project_qtranslate__x_version_3__4 => qtranslate__x__project_qtranslate__x_update_any
+        qtranslate__x__project_qtranslate__x_version_3__1 => ((qtranslate__x__project_qtranslate__x_update_beta3 & !qtranslate__x__project_qtranslate__x_update_beta2 & !qtranslate__x__project_qtranslate__x_update_any & !qtranslate__x__project_qtranslate__x_update_beta1 & !qtranslate__x__project_qtranslate__x_update_alpha1 & !qtranslate__x__project_qtranslate__x_update_beta4) | (!qtranslate__x__project_qtranslate__x_update_beta3 & qtranslate__x__project_qtranslate__x_update_beta2 & !qtranslate__x__project_qtranslate__x_update_any & !qtranslate__x__project_qtranslate__x_update_beta1 & !qtranslate__x__project_qtranslate__x_update_alpha1 & !qtranslate__x__project_qtranslate__x_update_beta4) | (!qtranslate__x__project_qtranslate__x_update_beta3 & !qtranslate__x__project_qtranslate__x_update_beta2 & qtranslate__x__project_qtranslate__x_update_any & !qtranslate__x__project_qtranslate__x_update_beta1 & !qtranslate__x__project_qtranslate__x_update_alpha1 & !qtranslate__x__project_qtranslate__x_update_beta4) | (!qtranslate__x__project_qtranslate__x_update_beta3 & !qtranslate__x__project_qtranslate__x_update_beta2 & !qtranslate__x__project_qtranslate__x_update_any & qtranslate__x__project_qtranslate__x_update_beta1 & !qtranslate__x__project_qtranslate__x_update_alpha1 & !qtranslate__x__project_qtranslate__x_update_beta4) | (!qtranslate__x__project_qtranslate__x_update_beta3 & !qtranslate__x__project_qtranslate__x_update_beta2 & !qtranslate__x__project_qtranslate__x_update_any & !qtranslate__x__project_qtranslate__x_update_beta1 & qtranslate__x__project_qtranslate__x_update_alpha1 & !qtranslate__x__project_qtranslate__x_update_beta4) | (!qtranslate__x__project_qtranslate__x_update_beta3 & !qtranslate__x__project_qtranslate__x_update_beta2 & !qtranslate__x__project_qtranslate__x_update_any & !qtranslate__x__project_qtranslate__x_update_beta1 & !qtranslate__x__project_qtranslate__x_update_alpha1 & qtranslate__x__project_qtranslate__x_update_beta4))
+        qtranslate__x__project_qtranslate__x_version_3__3__2 => qtranslate__x__project_qtranslate__x_update_any
+        qtranslate__x__project_qtranslate__x_version_2__9__7__7 => qtranslate__x__project_qtranslate__x_update_beta
+        qtranslate__x__project_qtranslate__x_version_2__9__8__8 => qtranslate__x__project_qtranslate__x_update_alpha
+        qtranslate__x__project_qtranslate__x_version_3__2__9__5 => qtranslate__x__project_qtranslate__x_update_any
+        qtranslate__x__project_qtranslate__x_version_2__9__8__7 => qtranslate__x__project_qtranslate__x_update_alpha
+        qtranslate__x__project_qtranslate__x_version_2__7__4 => qtranslate__x__project_qtranslate__x_update_any
+        qtranslate__x__project_qtranslate__x_version_2__6__3 => qtranslate__x__project_qtranslate__x_update_any
+        qtranslate__x__project_qtranslate__x_version_3__2__9__8 => qtranslate__x__project_qtranslate__x_update_alpha
+        qtranslate__x__project_qtranslate__x_version_2__7 => qtranslate__x__project_qtranslate__x_update_any
+        qtranslate__x__project_qtranslate__x_version_3__2__9 => qtranslate__x__project_qtranslate__x_update_any
+        qtranslate__x__project_qtranslate__x_version_2__7__9 => qtranslate__x__project_qtranslate__x_update_any
+        qtranslate__x__project_qtranslate__x_version_2__8 => qtranslate__x__project_qtranslate__x_update_any
+        qtranslate__x__project_qtranslate__x_version_3__2__9__9__6 => qtranslate__x__project_qtranslate__x_update_alpha
+        qtranslate__x__project_qtranslate__x_version_3__2__9__9__8 => qtranslate__x__project_qtranslate__x_update_any

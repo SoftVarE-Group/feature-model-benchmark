@@ -1,0 +1,1118 @@
+features
+        CVE_2015_4491
+                optional
+                        configs
+                                mandatory
+                                        rc0
+                                                alternative
+                                                        rc0_mozilla
+                                                                alternative
+                                                                        rc0_mozilla_firefox
+                                                                                mandatory
+                                                                                        rc0_mozilla_firefox_version
+                                                                                                alternative
+                                                                                                        rc0_mozilla_firefox_version_37__0
+                                                                                                        rc0_mozilla_firefox_version_29__0__1
+                                                                                                        rc0_mozilla_firefox_version_1__4__1
+                                                                                                        rc0_mozilla_firefox_version_3__5__10
+                                                                                                        rc0_mozilla_firefox_version_2__0__0__8
+                                                                                                        rc0_mozilla_firefox_version_24__4__0
+                                                                                                        rc0_mozilla_firefox_version_3__6__8
+                                                                                                        rc0_mozilla_firefox_version_3__0__10
+                                                                                                        rc0_mozilla_firefox_version_3__5__2
+                                                                                                        rc0_mozilla_firefox_version_3__6__26
+                                                                                                        rc0_mozilla_firefox_version_10__0
+                                                                                                        rc0_mozilla_firefox_version_24__7__0
+                                                                                                        rc0_mozilla_firefox_version_10__0__2
+                                                                                                        rc0_mozilla_firefox_version_15__0__1
+                                                                                                        rc0_mozilla_firefox_version_3__0
+                                                                                                        rc0_mozilla_firefox_version_1__5__0__5
+                                                                                                        rc0_mozilla_firefox_version_3__0__4
+                                                                                                        rc0_mozilla_firefox_version_33__1__1
+                                                                                                        rc0_mozilla_firefox_version_31__8__0
+                                                                                                        rc0_mozilla_firefox_version_1__0__7
+                                                                                                        rc0_mozilla_firefox_version_17__0__9
+                                                                                                        rc0_mozilla_firefox_version_31__1__1
+                                                                                                        rc0_mozilla_firefox_version_38__6__1
+                                                                                                        rc0_mozilla_firefox_version_37__0__2
+                                                                                                        rc0_mozilla_firefox_version_2__0__0__9
+                                                                                                        rc0_mozilla_firefox_version_38__5__2
+                                                                                                        rc0_mozilla_firefox_version_33__1
+                                                                                                        rc0_mozilla_firefox_version_24__6__0
+                                                                                                        rc0_mozilla_firefox_version_3__6__21
+                                                                                                        rc0_mozilla_firefox_version_17__0
+                                                                                                        rc0_mozilla_firefox_version_3__6__3
+                                                                                                        rc0_mozilla_firefox_version_3__0__12
+                                                                                                        rc0_mozilla_firefox_version_18__2
+                                                                                                        rc0_mozilla_firefox_version_1__5__6
+                                                                                                        rc0_mozilla_firefox_version_10__0__1
+                                                                                                        rc0_mozilla_firefox_version_3__6__16
+                                                                                                        rc0_mozilla_firefox_version_36__0__1
+                                                                                                        rc0_mozilla_firefox_version_24__1__0
+                                                                                                        rc0_mozilla_firefox_version_30__0
+                                                                                                        rc0_mozilla_firefox_version_2__0__0__10
+                                                                                                        rc0_mozilla_firefox_version_3__5__4
+                                                                                                        rc0_mozilla_firefox_version_38__5__0
+                                                                                                        rc0_mozilla_firefox_version_3__6__9
+                                                                                                        rc0_mozilla_firefox_version_17__0__2
+                                                                                                        rc0_mozilla_firefox_version_1__5__3
+                                                                                                        rc0_mozilla_firefox_version_2__0__0__13
+                                                                                                        rc0_mozilla_firefox_version_33__0__2
+                                                                                                        rc0_mozilla_firefox_version_3__6__14
+                                                                                                        rc0_mozilla_firefox_version_3__0__19
+                                                                                                        rc0_mozilla_firefox_version_31__4__0
+                                                                                                        rc0_mozilla_firefox_version_2__0__0__5
+                                                                                                        rc0_mozilla_firefox_version_38__0__5
+                                                                                                        rc0_mozilla_firefox_version_1__0
+                                                                                                        rc0_mozilla_firefox_version_27__0__1
+                                                                                                        rc0_mozilla_firefox_version_3__6__13
+                                                                                                        rc0_mozilla_firefox_version_3__0__5
+                                                                                                        rc0_mozilla_firefox_version_19__0__1
+                                                                                                        rc0_mozilla_firefox_version_10__0__4
+                                                                                                        rc0_mozilla_firefox_version_23__0
+                                                                                                        rc0_mozilla_firefox_version_2__0__0__6
+                                                                                                        rc0_mozilla_firefox_version_10__0__8
+                                                                                                        rc0_mozilla_firefox_version_31__6__0
+                                                                                                        rc0_mozilla_firefox_version_17__1
+                                                                                                        rc0_mozilla_firefox_version_18__0__2
+                                                                                                        rc0_mozilla_firefox_version_1__5__0__8
+                                                                                                        rc0_mozilla_firefox_version_31__5__2
+                                                                                                        rc0_mozilla_firefox_version_24__2__0
+                                                                                                        rc0_mozilla_firefox_version_10__0__9
+                                                                                                        rc0_mozilla_firefox_version_2__0__0__20
+                                                                                                        rc0_mozilla_firefox_version_17__0__6
+                                                                                                        rc0_mozilla_firefox_version_28__0
+                                                                                                        rc0_mozilla_firefox_version_3__6__25
+                                                                                                        rc0_mozilla_firefox_version_2__0__0__2
+                                                                                                        rc0_mozilla_firefox_version_13__0__1
+                                                                                                        rc0_mozilla_firefox_version_24__5__0
+                                                                                                        rc0_mozilla_firefox_version_10__0__5
+                                                                                                        rc0_mozilla_firefox_version_6__0__1
+                                                                                                        rc0_mozilla_firefox_version_25__1
+                                                                                                        rc0_mozilla_firefox_version_3__5__3
+                                                                                                        rc0_mozilla_firefox_version_16__1
+                                                                                                        rc0_mozilla_firefox_version_20__0__1
+                                                                                                        rc0_mozilla_firefox_version_31__0
+                                                                                                        rc0_mozilla_firefox_version_3__5__15
+                                                                                                        rc0_mozilla_firefox_version_19__0__2
+                                                                                                        rc0_mozilla_firefox_version_32__0__1
+                                                                                                        rc0_mozilla_firefox_version_3__6__10
+                                                                                                        rc0_mozilla_firefox_version_36__0__4
+                                                                                                        rc0_mozilla_firefox_version_3__6__17
+                                                                                                        rc0_mozilla_firefox_version_3__6__7
+                                                                                                        rc0_mozilla_firefox_version_17__0__5
+                                                                                                        rc0_mozilla_firefox_version_3__6__15
+                                                                                                        rc0_mozilla_firefox_version_3__6__2
+                                                                                                        rc0_mozilla_firefox_version_3__6__18
+                                                                                                        rc0_mozilla_firefox_version_10__0__7
+                                                                                                        rc0_mozilla_firefox_version_3__6__22
+                                                                                                        rc0_mozilla_firefox_version_0__7__1
+                                                                                                        rc0_mozilla_firefox_version_23__0__1
+                                                                                                        rc0_mozilla_firefox_version_1__5__0__3
+                                                                                                        rc0_mozilla_firefox_version_1__0__3
+                                                                                                        rc0_mozilla_firefox_version_3__5__19
+                                                                                                        rc0_mozilla_firefox_version_2__0__0__14
+                                                                                                        rc0_mozilla_firefox_version_38__1__0
+                                                                                                        rc0_mozilla_firefox_version_1__5__0__9
+                                                                                                        rc0_mozilla_firefox_version_0__10
+                                                                                                        rc0_mozilla_firefox_version_5__0__1
+                                                                                                        rc0_mozilla_firefox_version_38__1__1
+                                                                                                        rc0_mozilla_firefox_version_2__0__0__4
+                                                                                                        rc0_mozilla_firefox_version_1__5__0__1
+                                                                                                        rc0_mozilla_firefox_version_3__0__7
+                                                                                                        rc0_mozilla_firefox_version_3__0__3
+                                                                                                        rc0_mozilla_firefox_version_6__0
+                                                                                                        rc0_mozilla_firefox_version_35__0
+                                                                                                        rc0_mozilla_firefox_version_3__6__4
+                                                                                                        rc0_mozilla_firefox_version_7__0__1
+                                                                                                        rc0_mozilla_firefox_version_3__0__8
+                                                                                                        rc0_mozilla_firefox_version_6__0__2
+                                                                                                        rc0_mozilla_firefox_version_16__0
+                                                                                                        rc0_mozilla_firefox_version_38__3__0
+                                                                                                        rc0_mozilla_firefox_version_14__0
+                                                                                                        rc0_mozilla_firefox_version_31__1__0
+                                                                                                        rc0_mozilla_firefox_version_24__0
+                                                                                                        rc0_mozilla_firefox_version_0__9__1
+                                                                                                        rc0_mozilla_firefox_version_4__0__1
+                                                                                                        rc0_mozilla_firefox_version_31__7__0
+                                                                                                        rc0_mozilla_firefox_version_15__0
+                                                                                                        rc0_mozilla_firefox_version_34__0__5
+                                                                                                        rc0_mozilla_firefox_version_2__0__0__3
+                                                                                                        rc0_mozilla_firefox_version_3__0__6
+                                                                                                        rc0_mozilla_firefox_version_2__0__0__7
+                                                                                                        rc0_mozilla_firefox_version_29__0
+                                                                                                        rc0_mozilla_firefox_version_19__0
+                                                                                                        rc0_mozilla_firefox_version_3__5__18
+                                                                                                        rc0_mozilla_firefox_version_38__5__1
+                                                                                                        rc0_mozilla_firefox_version_15__1
+                                                                                                        rc0_mozilla_firefox_version_17__0__10
+                                                                                                        rc0_mozilla_firefox_version_10__0__12
+                                                                                                        rc0_mozilla_firefox_version_17__0__1
+                                                                                                        rc0_mozilla_firefox_version_17__0__7
+                                                                                                        rc0_mozilla_firefox_version_20__1
+                                                                                                        rc0_mozilla_firefox_version_24__8__0
+                                                                                                        rc0_mozilla_firefox_version_19__1
+                                                                                                        rc0_mozilla_firefox_version_31__5__3
+                                                                                                        rc0_mozilla_firefox_version_2__0__0__17
+                                                                                                        rc0_mozilla_firefox_version_1__0__4
+                                                                                                        rc0_mozilla_firefox_version_17__3
+                                                                                                        rc0_mozilla_firefox_version_31__5__0
+                                                                                                        rc0_mozilla_firefox_version_1__5__7
+                                                                                                        rc0_mozilla_firefox_version_16__2
+                                                                                                        rc0_mozilla_firefox_version_2__0
+                                                                                                        rc0_mozilla_firefox_version_7__0
+                                                                                                        rc0_mozilla_firefox_version_3__0__11
+                                                                                                        rc0_mozilla_firefox_version_32__0__2
+                                                                                                        rc0_mozilla_firefox_version_1__5__0__12
+                                                                                                        rc0_mozilla_firefox_version_24__3__0
+                                                                                                        rc0_mozilla_firefox_version_35__0__1
+                                                                                                        rc0_mozilla_firefox_version_1__5__0__6
+                                                                                                        rc0_mozilla_firefox_version_32__0__3
+                                                                                                        rc0_mozilla_firefox_version_1__5__0__10
+                                                                                                        rc0_mozilla_firefox_version_2__0__0__12
+                                                                                                        rc0_mozilla_firefox_version_3__0__1
+                                                                                                        rc0_mozilla_firefox_version_21__0
+                                                                                                        rc0_mozilla_firefox_version_3__6__27
+                                                                                                        rc0_mozilla_firefox_version_24__8__1
+                                                                                                        rc0_mozilla_firefox_version_3__6__24
+                                                                                                        rc0_mozilla_firefox_version_1__5__0__7
+                                                                                                        rc0_mozilla_firefox_version_38__0
+                                                                                                        rc0_mozilla_firefox_version_10__0__3
+                                                                                                        rc0_mozilla_firefox_version_3__5__16
+                                                                                                        rc0_mozilla_firefox_version_24__1
+                                                                                                        rc0_mozilla_firefox_version_10__0__10
+                                                                                                        rc0_mozilla_firefox_version_3__6__11
+                                                                                                        rc0_mozilla_firefox_version_3__0__15
+                                                                                                        rc0_mozilla_firefox_version_10__0__11
+                                                                                                        rc0_mozilla_firefox_version_3__0__17
+                                                                                                        rc0_mozilla_firefox_version_17__0__3
+                                                                                                        rc0_mozilla_firefox_version_3__5__1
+                                                                                                        rc0_mozilla_firefox_version_36__0
+                                                                                                        rc0_mozilla_firefox_version_12__0
+                                                                                                        rc0_mozilla_firefox_version_34__0
+                                                                                                        rc0_mozilla_firefox_version_20__0
+                                                                                                        rc0_mozilla_firefox_version_17__2
+                                                                                                        rc0_mozilla_firefox_version_10__0__6
+                                                                                                        rc0_mozilla_firefox_version_2__0__0__18
+                                                                                                        rc0_mozilla_firefox_version_1__5__4
+                                                                                                        rc0_mozilla_firefox_version_3__6__19
+                                                                                                        rc0_mozilla_firefox_version_2__0__0__11
+                                                                                                        rc0_mozilla_firefox_version_26__0
+                                                                                                        rc0_mozilla_firefox_version_5__0
+                                                                                                        rc0_mozilla_firefox_version_39__0__3
+                                                                                                        rc0_mozilla_firefox_version_1__8
+                                                                                                        rc0_mozilla_firefox_version_any
+                                                                                                        rc0_mozilla_firefox_version_2__0__0__1
+                                                                                                        rc0_mozilla_firefox_version_3__5__8
+                                                                                                        rc0_mozilla_firefox_version_0__9__3
+                                                                                                        rc0_mozilla_firefox_version_33__0__1
+                                                                                                        rc0_mozilla_firefox_version_4__0
+                                                                                                        rc0_mozilla_firefox_version_0__7
+                                                                                                        rc0_mozilla_firefox_version_2__0__0__15
+                                                                                                        rc0_mozilla_firefox_version_16__0__2
+                                                                                                        rc0_mozilla_firefox_version_11__0
+                                                                                                        rc0_mozilla_firefox_version_38__8__0
+                                                                                                        rc0_mozilla_firefox_version_1__5
+                                                                                                        rc0_mozilla_firefox_version_9__0__1
+                                                                                                        rc0_mozilla_firefox_version_1__0__2
+                                                                                                        rc0_mozilla_firefox_version_9__0
+                                                                                                        rc0_mozilla_firefox_version_3__6__28
+                                                                                                        rc0_mozilla_firefox_version_22__0
+                                                                                                        rc0_mozilla_firefox_version_3__5__5
+                                                                                                        rc0_mozilla_firefox_version_3__5__6
+                                                                                                        rc0_mozilla_firefox_version_31__3__0
+                                                                                                        rc0_mozilla_firefox_version_38__0__1
+                                                                                                        rc0_mozilla_firefox_version_3__6__6
+                                                                                                        rc0_mozilla_firefox_version_13__0
+                                                                                                        rc0_mozilla_firefox_version_17__0__11
+                                                                                                        rc0_mozilla_firefox_version_0__2
+                                                                                                        rc0_mozilla_firefox_version_1__5__0__11
+                                                                                                        rc0_mozilla_firefox_version_39__0
+                                                                                                        rc0_mozilla_firefox_version_37__0__1
+                                                                                                        rc0_mozilla_firefox_version_17__0__8
+                                                                                                        rc0_mozilla_firefox_version_3__5__7
+                                                                                                        rc0_mozilla_firefox_version_3__0__2
+                                                                                                        rc0_mozilla_firefox_version_3__5__9
+                                                                                                        rc0_mozilla_firefox_version_38__7__0
+                                                                                                        rc0_mozilla_firefox_version_1__5__5
+                                                                                                        rc0_mozilla_firefox_version_0__9__2
+                                                                                                        rc0_mozilla_firefox_version_25__0
+                                                                                                        rc0_mozilla_firefox_version_3__5__14
+                                                                                                        rc0_mozilla_firefox_version_38__4__0
+                                                                                                        rc0_mozilla_firefox_version_3__5__12
+                                                                                                        rc0_mozilla_firefox_version_38__2__0
+                                                                                                        rc0_mozilla_firefox_version_0__5
+                                                                                                        rc0_mozilla_firefox_version_1__5__1
+                                                                                                        rc0_mozilla_firefox_version_3__0__9
+                                                                                                        rc0_mozilla_firefox_version_1__5__2
+                                                                                                        rc0_mozilla_firefox_version_8__0__1
+                                                                                                        rc0_mozilla_firefox_version_2__0__0__16
+                                                                                                        rc0_mozilla_firefox_version_3__0__18
+                                                                                                        rc0_mozilla_firefox_version_32__0
+                                                                                                        rc0_mozilla_firefox_version_14__0__1
+                                                                                                        rc0_mozilla_firefox_version_0__1
+                                                                                                        rc0_mozilla_firefox_version_33__0
+                                                                                                        rc0_mozilla_firefox_version_17__0__4
+                                                                                                        rc0_mozilla_firefox_version_1__5__0__2
+                                                                                                        rc0_mozilla_firefox_version_1__5__8
+                                                                                                        rc0_mozilla_firefox_version_1__0__5
+                                                                                                        rc0_mozilla_firefox_version_31__2__0
+                                                                                                        rc0_mozilla_firefox_version_38__7__1
+                                                                                                        rc0_mozilla_firefox_version_3__6
+                                                                                                        rc0_mozilla_firefox_version_38__6__0
+                                                                                                        rc0_mozilla_firefox_version_38__2__1
+                                                                                                        rc0_mozilla_firefox_version_24__1__1
+                                                                                                        rc0_mozilla_firefox_version_0__3
+                                                                                                        rc0_mozilla_firefox_version_18__1
+                                                                                                        rc0_mozilla_firefox_version_1__0__6
+                                                                                                        rc0_mozilla_firefox_version_16__0__1
+                                                                                                        rc0_mozilla_firefox_version_3__0__16
+                                                                                                        rc0_mozilla_firefox_version_3__5
+                                                                                                        rc0_mozilla_firefox_version_0__6__1
+                                                                                                        rc0_mozilla_firefox_version_3__0__13
+                                                                                                        rc0_mozilla_firefox_version_3__0__14
+                                                                                                        rc0_mozilla_firefox_version_1__0__8
+                                                                                                        rc0_mozilla_firefox_version_18__0__1
+                                                                                                        rc0_mozilla_firefox_version_0__4
+                                                                                                        rc0_mozilla_firefox_version_1__0__1
+                                                                                                        rc0_mozilla_firefox_version_0__8
+                                                                                                        rc0_mozilla_firefox_version_33__0__3
+                                                                                                        rc0_mozilla_firefox_version_3__6__23
+                                                                                                        rc0_mozilla_firefox_version_27__0
+                                                                                                        rc0_mozilla_firefox_version_3__6__12
+                                                                                                        rc0_mozilla_firefox_version_18__0
+                                                                                                        rc0_mozilla_firefox_version_20__2
+                                                                                                        rc0_mozilla_firefox_version_0__9
+                                                                                                        rc0_mozilla_firefox_version_0__10__1
+                                                                                                        rc0_mozilla_firefox_version_36__0__3
+                                                                                                        rc0_mozilla_firefox_version_0__6
+                                                                                                        rc0_mozilla_firefox_version_3__5__11
+                                                                                                        rc0_mozilla_firefox_version_3__6__20
+                                                                                                        rc0_mozilla_firefox_version_25__0__1
+                                                                                                        rc0_mozilla_firefox_version_2__0__0__19
+                                                                                                        rc0_mozilla_firefox_version_3__5__17
+                                                                                                        rc0_mozilla_firefox_version_1__5__0__4
+                                                                                                        rc0_mozilla_firefox_version_3__5__13
+                                                                                                        rc0_mozilla_firefox_version_8__0
+                                                                                        rc0_mozilla_firefox_update
+                                                                                                alternative
+                                                                                                        rc0_mozilla_firefox_update_beta4
+                                                                                                        rc0_mozilla_firefox_update_beta6
+                                                                                                        rc0_mozilla_firefox_update_rc
+                                                                                                        rc0_mozilla_firefox_update_beta11
+                                                                                                        rc0_mozilla_firefox_update_beta3
+                                                                                                        rc0_mozilla_firefox_update_beta8
+                                                                                                        rc0_mozilla_firefox_update_alpha1
+                                                                                                        rc0_mozilla_firefox_update_preview__release
+                                                                                                        rc0_mozilla_firefox_update_beta5
+                                                                                                        rc0_mozilla_firefox_update_any
+                                                                                                        rc0_mozilla_firefox_update_beta12
+                                                                                                        rc0_mozilla_firefox_update_a1
+                                                                                                        rc0_mozilla_firefox_update_beta2
+                                                                                                        rc0_mozilla_firefox_update_beta7
+                                                                                                        rc0_mozilla_firefox_update_beta1
+                                                                                                        rc0_mozilla_firefox_update_beta10
+                                                                                                        rc0_mozilla_firefox_update_beta9
+                                                                                        rc0_mozilla_firefox_target__sw
+                                                                                                alternative
+                                                                                                        rc0_mozilla_firefox_target__sw_iphone__os
+                                                                                                        rc0_mozilla_firefox_target__sw_any
+                                                                        rc0_mozilla_firefox__esr
+                                                                                mandatory
+                                                                                        rc0_mozilla_firefox__esr_version
+                                                                                                alternative
+                                                                                                        rc0_mozilla_firefox__esr_version_38__0__5
+                                                                                                        rc0_mozilla_firefox__esr_version_38__0
+                                                                                                        rc0_mozilla_firefox__esr_version_38__1__0
+                                                                                                        rc0_mozilla_firefox__esr_version_38__0__1
+                                                        rc0_linux
+                                                                mandatory
+                                                                        rc0_linux_linux__kernel
+                                                        rc0_google
+                                                                mandatory
+                                                                        rc0_google_chrome
+                mandatory
+                        types
+                                mandatory
+                                        application
+                                        operating_system
+                        sources
+                                mandatory
+                                        nvd
+                        exploits
+                                optional
+                                        direct
+                                        indirect
+                alternative
+                        gnome
+                                mandatory
+                                        gnome_gdk_pixbuf
+                                                mandatory
+                                                        gnome_gdk_pixbuf_version
+                                                                alternative
+                                                                        gnome_gdk_pixbuf_version_2__18__8
+                                                                        gnome_gdk_pixbuf_version_2__26__0
+                                                                        gnome_gdk_pixbuf_version_2__17__9
+                                                                        gnome_gdk_pixbuf_version_2__23__2
+                                                                        gnome_gdk_pixbuf_version_2__25__2
+                                                                        gnome_gdk_pixbuf_version_2__20__1
+                                                                        gnome_gdk_pixbuf_version_2__16__2
+                                                                        gnome_gdk_pixbuf_version_2__31__2
+                                                                        gnome_gdk_pixbuf_version_2__16__5
+                                                                        gnome_gdk_pixbuf_version_2__24__0
+                                                                        gnome_gdk_pixbuf_version_2__30__1
+                                                                        gnome_gdk_pixbuf_version_2__30__5
+                                                                        gnome_gdk_pixbuf_version_2__20__0
+                                                                        gnome_gdk_pixbuf_version_2__30__3
+                                                                        gnome_gdk_pixbuf_version_2__31__0
+                                                                        gnome_gdk_pixbuf_version_2__29__2
+                                                                        gnome_gdk_pixbuf_version_2__19__2
+                                                                        gnome_gdk_pixbuf_version_2__16__6
+                                                                        gnome_gdk_pixbuf_version_2__17__5
+                                                                        gnome_gdk_pixbuf_version_2__27__1
+                                                                        gnome_gdk_pixbuf_version_2__17__11
+                                                                        gnome_gdk_pixbuf_version_2__29__0
+                                                                        gnome_gdk_pixbuf_version_2__28__1
+                                                                        gnome_gdk_pixbuf_version_2__21__6
+                                                                        gnome_gdk_pixbuf_version_2__24__1
+                                                                        gnome_gdk_pixbuf_version_2__31__4
+                                                                        gnome_gdk_pixbuf_version_2__26__4
+                                                                        gnome_gdk_pixbuf_version_2__18__1
+                                                                        gnome_gdk_pixbuf_version_2__30__6
+                                                                        gnome_gdk_pixbuf_version_2__21__2
+                                                                        gnome_gdk_pixbuf_version_2__19__0
+                                                                        gnome_gdk_pixbuf_version_2__29__3
+                                                                        gnome_gdk_pixbuf_version_2__31__1
+                                                                        gnome_gdk_pixbuf_version_2__19__4
+                                                                        gnome_gdk_pixbuf_version_2__18__2
+                                                                        gnome_gdk_pixbuf_version_2__23__4
+                                                                        gnome_gdk_pixbuf_version_2__17__10
+                                                                        gnome_gdk_pixbuf_version_2__31__3
+                                                                        gnome_gdk_pixbuf_version_2__27__3
+                                                                        gnome_gdk_pixbuf_version_2__19__1
+                                                                        gnome_gdk_pixbuf_version_2__18__4
+                                                                        gnome_gdk_pixbuf_version_2__17__1
+                                                                        gnome_gdk_pixbuf_version_2__18__3
+                                                                        gnome_gdk_pixbuf_version_2__21__4
+                                                                        gnome_gdk_pixbuf_version_2__19__7
+                                                                        gnome_gdk_pixbuf_version_2__26__5
+                                                                        gnome_gdk_pixbuf_version_2__17__2
+                                                                        gnome_gdk_pixbuf_version_2__18__6
+                                                                        gnome_gdk_pixbuf_version_2__25__0
+                                                                        gnome_gdk_pixbuf_version_2__28__0
+                                                                        gnome_gdk_pixbuf_version_2__22__0
+                                                                        gnome_gdk_pixbuf_version_2__19__5
+                                                                        gnome_gdk_pixbuf_version_2__17__8
+                                                                        gnome_gdk_pixbuf_version_2__17__3
+                                                                        gnome_gdk_pixbuf_version_2__30__7
+                                                                        gnome_gdk_pixbuf_version_2__30__2
+                                                                        gnome_gdk_pixbuf_version_2__21__7
+                                                                        gnome_gdk_pixbuf_version_2__28__2
+                                                                        gnome_gdk_pixbuf_version_2__29__1
+                                                                        gnome_gdk_pixbuf_version_any
+                                                                        gnome_gdk_pixbuf_version_2__26__2
+                                                                        gnome_gdk_pixbuf_version_2__30__8
+                                                                        gnome_gdk_pixbuf_version_2__30__4
+                                                                        gnome_gdk_pixbuf_version_2__17__7
+                                                                        gnome_gdk_pixbuf_version_2__16__4
+                                                                        gnome_gdk_pixbuf_version_2__23__5
+                                                                        gnome_gdk_pixbuf_version_2__17__0
+                                                                        gnome_gdk_pixbuf_version_2__26__3
+                                                                        gnome_gdk_pixbuf_version_2__18__0
+                                                                        gnome_gdk_pixbuf_version_2__19__3
+                                                                        gnome_gdk_pixbuf_version_2__23__0
+                                                                        gnome_gdk_pixbuf_version_2__18__7
+                                                                        gnome_gdk_pixbuf_version_2__17__6
+                                                                        gnome_gdk_pixbuf_version_2__23__1
+                                                                        gnome_gdk_pixbuf_version_2__19__6
+                                                                        gnome_gdk_pixbuf_version_2__18__9
+                                                                        gnome_gdk_pixbuf_version_2__26__1
+                                                                        gnome_gdk_pixbuf_version_2__21__1
+                                                                        gnome_gdk_pixbuf_version_2__23__3
+                                                                        gnome_gdk_pixbuf_version_2__27__2
+                                                                        gnome_gdk_pixbuf_version_2__30__0
+                                                                        gnome_gdk_pixbuf_version_2__16__3
+                                                                        gnome_gdk_pixbuf_version_2__17__4
+                                                                        gnome_gdk_pixbuf_version_2__27__0
+                                                                        gnome_gdk_pixbuf_version_2__18__5
+                                                                        gnome_gdk_pixbuf_version_2__21__0
+                                                                        gnome_gdk_pixbuf_version_2__21__3
+                                                                        gnome_gdk_pixbuf_version_2__22__1
+                        oracle
+                                mandatory
+                                        oracle_solaris
+                                                mandatory
+                                                        oracle_solaris_version
+                                                                alternative
+                                                                        oracle_solaris_version_10
+                                                                        oracle_solaris_version_11__3
+                        opensuse
+                                mandatory
+                                        opensuse_opensuse
+                                                mandatory
+                                                        opensuse_opensuse_version
+                                                                alternative
+                                                                        opensuse_opensuse_version_13__1
+                                                                        opensuse_opensuse_version_13__2
+                        canonical
+                                mandatory
+                                        canonical_ubuntu__linux
+                                                mandatory
+                                                        canonical_ubuntu__linux_version
+                                                                alternative
+                                                                        canonical_ubuntu__linux_version_14__04
+                                                                        canonical_ubuntu__linux_version_15__04
+                                                                        canonical_ubuntu__linux_version_12__04
+                                                        canonical_ubuntu__linux_sw__edition
+                                                                alternative
+                                                                        canonical_ubuntu__linux_sw__edition_any
+                                                                        canonical_ubuntu__linux_sw__edition_lts
+                        fedoraproject
+                                mandatory
+                                        fedoraproject_fedora
+                                                mandatory
+                                                        fedoraproject_fedora_version
+                                                                alternative
+                                                                        fedoraproject_fedora_version_21
+                                                                        fedoraproject_fedora_version_22
+
+constraints
+        gnome_gdk_pixbuf => application
+        oracle_solaris => operating_system
+        opensuse_opensuse => operating_system
+        canonical_ubuntu__linux => operating_system
+        fedoraproject_fedora => operating_system
+        gnome_gdk_pixbuf_version_2__18__8 => (rc0)
+        gnome_gdk_pixbuf_version_2__26__0 => (rc0)
+        gnome_gdk_pixbuf_version_2__17__9 => (rc0)
+        gnome_gdk_pixbuf_version_2__23__2 => (rc0)
+        gnome_gdk_pixbuf_version_2__25__2 => (rc0)
+        gnome_gdk_pixbuf_version_2__20__1 => (rc0)
+        gnome_gdk_pixbuf_version_2__16__2 => (rc0)
+        gnome_gdk_pixbuf_version_2__31__2 => (rc0)
+        gnome_gdk_pixbuf_version_2__16__5 => (rc0)
+        gnome_gdk_pixbuf_version_2__24__0 => (rc0)
+        gnome_gdk_pixbuf_version_2__30__1 => (rc0)
+        gnome_gdk_pixbuf_version_2__30__5 => (rc0)
+        gnome_gdk_pixbuf_version_2__20__0 => (rc0)
+        gnome_gdk_pixbuf_version_2__30__3 => (rc0)
+        gnome_gdk_pixbuf_version_2__31__0 => (rc0)
+        gnome_gdk_pixbuf_version_2__29__2 => (rc0)
+        gnome_gdk_pixbuf_version_2__19__2 => (rc0)
+        gnome_gdk_pixbuf_version_2__16__6 => (rc0)
+        gnome_gdk_pixbuf_version_2__17__5 => (rc0)
+        gnome_gdk_pixbuf_version_2__27__1 => (rc0)
+        gnome_gdk_pixbuf_version_2__17__11 => (rc0)
+        gnome_gdk_pixbuf_version_2__29__0 => (rc0)
+        gnome_gdk_pixbuf_version_2__28__1 => (rc0)
+        gnome_gdk_pixbuf_version_2__21__6 => (rc0)
+        gnome_gdk_pixbuf_version_2__24__1 => (rc0)
+        gnome_gdk_pixbuf_version_2__31__4 => (rc0)
+        gnome_gdk_pixbuf_version_2__26__4 => (rc0)
+        gnome_gdk_pixbuf_version_2__18__1 => (rc0)
+        gnome_gdk_pixbuf_version_2__30__6 => (rc0)
+        gnome_gdk_pixbuf_version_2__21__2 => (rc0)
+        gnome_gdk_pixbuf_version_2__19__0 => (rc0)
+        gnome_gdk_pixbuf_version_2__29__3 => (rc0)
+        gnome_gdk_pixbuf_version_2__31__1 => (rc0)
+        gnome_gdk_pixbuf_version_2__19__4 => (rc0)
+        gnome_gdk_pixbuf_version_2__18__2 => (rc0)
+        gnome_gdk_pixbuf_version_2__23__4 => (rc0)
+        gnome_gdk_pixbuf_version_2__17__10 => (rc0)
+        gnome_gdk_pixbuf_version_2__31__3 => (rc0)
+        gnome_gdk_pixbuf_version_2__27__3 => (rc0)
+        gnome_gdk_pixbuf_version_2__19__1 => (rc0)
+        gnome_gdk_pixbuf_version_2__18__4 => (rc0)
+        gnome_gdk_pixbuf_version_2__17__1 => (rc0)
+        gnome_gdk_pixbuf_version_2__18__3 => (rc0)
+        gnome_gdk_pixbuf_version_2__21__4 => (rc0)
+        gnome_gdk_pixbuf_version_2__19__7 => (rc0)
+        gnome_gdk_pixbuf_version_2__26__5 => (rc0)
+        gnome_gdk_pixbuf_version_2__17__2 => (rc0)
+        gnome_gdk_pixbuf_version_2__18__6 => (rc0)
+        gnome_gdk_pixbuf_version_2__25__0 => (rc0)
+        gnome_gdk_pixbuf_version_2__28__0 => (rc0)
+        gnome_gdk_pixbuf_version_2__22__0 => (rc0)
+        gnome_gdk_pixbuf_version_2__19__5 => (rc0)
+        gnome_gdk_pixbuf_version_2__17__8 => (rc0)
+        gnome_gdk_pixbuf_version_2__17__3 => (rc0)
+        gnome_gdk_pixbuf_version_2__30__7 => (rc0)
+        gnome_gdk_pixbuf_version_2__30__2 => (rc0)
+        gnome_gdk_pixbuf_version_2__21__7 => (rc0)
+        gnome_gdk_pixbuf_version_2__28__2 => (rc0)
+        gnome_gdk_pixbuf_version_2__29__1 => (rc0)
+        gnome_gdk_pixbuf_version_any => (rc0)
+        gnome_gdk_pixbuf_version_2__26__2 => (rc0)
+        gnome_gdk_pixbuf_version_2__30__8 => (rc0)
+        gnome_gdk_pixbuf_version_2__30__4 => (rc0)
+        gnome_gdk_pixbuf_version_2__17__7 => (rc0)
+        gnome_gdk_pixbuf_version_2__16__4 => (rc0)
+        gnome_gdk_pixbuf_version_2__23__5 => (rc0)
+        gnome_gdk_pixbuf_version_2__17__0 => (rc0)
+        gnome_gdk_pixbuf_version_2__26__3 => (rc0)
+        gnome_gdk_pixbuf_version_2__18__0 => (rc0)
+        gnome_gdk_pixbuf_version_2__19__3 => (rc0)
+        gnome_gdk_pixbuf_version_2__23__0 => (rc0)
+        gnome_gdk_pixbuf_version_2__18__7 => (rc0)
+        gnome_gdk_pixbuf_version_2__17__6 => (rc0)
+        gnome_gdk_pixbuf_version_2__23__1 => (rc0)
+        gnome_gdk_pixbuf_version_2__19__6 => (rc0)
+        gnome_gdk_pixbuf_version_2__18__9 => (rc0)
+        gnome_gdk_pixbuf_version_2__26__1 => (rc0)
+        gnome_gdk_pixbuf_version_2__21__1 => (rc0)
+        gnome_gdk_pixbuf_version_2__23__3 => (rc0)
+        gnome_gdk_pixbuf_version_2__27__2 => (rc0)
+        gnome_gdk_pixbuf_version_2__30__0 => (rc0)
+        gnome_gdk_pixbuf_version_2__16__3 => (rc0)
+        gnome_gdk_pixbuf_version_2__17__4 => (rc0)
+        gnome_gdk_pixbuf_version_2__27__0 => (rc0)
+        gnome_gdk_pixbuf_version_2__18__5 => (rc0)
+        gnome_gdk_pixbuf_version_2__21__0 => (rc0)
+        gnome_gdk_pixbuf_version_2__21__3 => (rc0)
+        gnome_gdk_pixbuf_version_2__22__1 => (rc0)
+        canonical_ubuntu__linux_version_14__04 => canonical_ubuntu__linux_sw__edition_lts
+        canonical_ubuntu__linux_version_15__04 => canonical_ubuntu__linux_sw__edition_any
+        canonical_ubuntu__linux_version_12__04 => canonical_ubuntu__linux_sw__edition_lts
+        rc0_mozilla_firefox_version_37__0 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_37__0 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_29__0__1 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_29__0__1 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_1__4__1 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_1__4__1 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_3__5__10 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_3__5__10 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_2__0__0__8 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_2__0__0__8 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_24__4__0 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_24__4__0 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_3__6__8 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_3__6__8 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_3__0__10 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_3__0__10 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_3__5__2 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_3__5__2 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_3__6__26 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_3__6__26 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_10__0 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_10__0 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_24__7__0 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_24__7__0 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_10__0__2 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_10__0__2 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_15__0__1 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_15__0__1 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_3__0 => ((rc0_mozilla_firefox_update_any & rc0_mozilla_firefox_target__sw_any & !rc0_mozilla_firefox_update_beta2 & rc0_mozilla_firefox_target__sw_any) | (!rc0_mozilla_firefox_update_any & rc0_mozilla_firefox_target__sw_any & rc0_mozilla_firefox_update_beta2 & rc0_mozilla_firefox_target__sw_any))
+        rc0_mozilla_firefox_version_1__5__0__5 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_1__5__0__5 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_3__0__4 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_3__0__4 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_33__1__1 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_33__1__1 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_31__8__0 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_31__8__0 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_1__0__7 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_1__0__7 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_17__0__9 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_17__0__9 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_31__1__1 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_31__1__1 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_38__6__1 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_38__6__1 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_37__0__2 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_37__0__2 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_2__0__0__9 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_2__0__0__9 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_38__5__2 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_38__5__2 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_33__1 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_33__1 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_24__6__0 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_24__6__0 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_3__6__21 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_3__6__21 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_17__0 => (rc0_mozilla_firefox_update_any)
+        rc0_mozilla_firefox_version_3__6__3 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_3__6__3 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_3__0__12 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_3__0__12 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_18__2 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_18__2 => rc0_mozilla_firefox_target__sw_iphone__os
+        rc0_mozilla_firefox_version_1__5__6 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_1__5__6 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_10__0__1 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_10__0__1 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_3__6__16 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_3__6__16 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_36__0__1 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_36__0__1 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_24__1__0 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_24__1__0 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_30__0 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_30__0 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_2__0__0__10 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_2__0__0__10 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_3__5__4 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_3__5__4 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_38__5__0 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_38__5__0 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_3__6__9 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_3__6__9 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_17__0__2 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_17__0__2 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_1__5__3 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_1__5__3 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_2__0__0__13 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_2__0__0__13 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_33__0__2 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_33__0__2 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_3__6__14 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_3__6__14 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_3__0__19 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_3__0__19 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_31__4__0 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_31__4__0 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_2__0__0__5 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_2__0__0__5 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_38__0__5 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_38__0__5 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_1__0 => ((rc0_mozilla_firefox_update_preview__release & rc0_mozilla_firefox_target__sw_any & !rc0_mozilla_firefox_update_any & rc0_mozilla_firefox_target__sw_any) | (!rc0_mozilla_firefox_update_preview__release & rc0_mozilla_firefox_target__sw_any & rc0_mozilla_firefox_update_any & rc0_mozilla_firefox_target__sw_any))
+        rc0_mozilla_firefox_version_27__0__1 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_27__0__1 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_3__6__13 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_3__6__13 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_3__0__5 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_3__0__5 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_19__0__1 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_19__0__1 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_10__0__4 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_10__0__4 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_23__0 => (rc0_mozilla_firefox_update_any)
+        rc0_mozilla_firefox_version_2__0__0__6 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_2__0__0__6 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_10__0__8 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_10__0__8 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_31__6__0 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_31__6__0 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_17__1 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_17__1 => rc0_mozilla_firefox_target__sw_iphone__os
+        rc0_mozilla_firefox_version_18__0__2 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_18__0__2 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_1__5__0__8 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_1__5__0__8 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_31__5__2 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_31__5__2 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_24__2__0 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_24__2__0 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_10__0__9 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_10__0__9 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_2__0__0__20 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_2__0__0__20 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_17__0__6 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_17__0__6 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_28__0 => (rc0_mozilla_firefox_update_any)
+        rc0_mozilla_firefox_version_3__6__25 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_3__6__25 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_2__0__0__2 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_2__0__0__2 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_13__0__1 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_13__0__1 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_24__5__0 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_24__5__0 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_10__0__5 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_10__0__5 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_6__0__1 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_6__0__1 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_25__1 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_25__1 => rc0_mozilla_firefox_target__sw_iphone__os
+        rc0_mozilla_firefox_version_3__5__3 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_3__5__3 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_16__1 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_16__1 => rc0_mozilla_firefox_target__sw_iphone__os
+        rc0_mozilla_firefox_version_20__0__1 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_20__0__1 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_31__0 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_31__0 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_3__5__15 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_3__5__15 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_19__0__2 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_19__0__2 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_32__0__1 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_32__0__1 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_3__6__10 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_3__6__10 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_36__0__4 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_36__0__4 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_3__6__17 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_3__6__17 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_3__6__7 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_3__6__7 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_17__0__5 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_17__0__5 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_3__6__15 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_3__6__15 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_3__6__2 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_3__6__2 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_3__6__18 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_3__6__18 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_10__0__7 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_10__0__7 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_3__6__22 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_3__6__22 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_0__7__1 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_0__7__1 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_23__0__1 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_23__0__1 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_1__5__0__3 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_1__5__0__3 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_1__0__3 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_1__0__3 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_3__5__19 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_3__5__19 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_2__0__0__14 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_2__0__0__14 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_38__1__0 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_38__1__0 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_1__5__0__9 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_1__5__0__9 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_0__10 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_0__10 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_5__0__1 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_5__0__1 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_38__1__1 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_38__1__1 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_2__0__0__4 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_2__0__0__4 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_1__5__0__1 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_1__5__0__1 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_3__0__7 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_3__0__7 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_3__0__3 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_3__0__3 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_6__0 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_6__0 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_35__0 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_35__0 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_3__6__4 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_3__6__4 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_7__0__1 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_7__0__1 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_3__0__8 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_3__0__8 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_6__0__2 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_6__0__2 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_16__0 => (rc0_mozilla_firefox_update_any)
+        rc0_mozilla_firefox_version_38__3__0 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_38__3__0 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_14__0 => (rc0_mozilla_firefox_update_any)
+        rc0_mozilla_firefox_version_31__1__0 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_31__1__0 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_24__0 => (rc0_mozilla_firefox_update_any)
+        rc0_mozilla_firefox_version_0__9__1 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_0__9__1 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_4__0__1 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_4__0__1 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_31__7__0 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_31__7__0 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_15__0 => (rc0_mozilla_firefox_update_any)
+        rc0_mozilla_firefox_version_34__0__5 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_34__0__5 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_2__0__0__3 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_2__0__0__3 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_3__0__6 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_3__0__6 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_2__0__0__7 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_2__0__0__7 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_29__0 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_29__0 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_19__0 => (rc0_mozilla_firefox_update_any)
+        rc0_mozilla_firefox_version_3__5__18 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_3__5__18 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_38__5__1 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_38__5__1 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_15__1 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_15__1 => rc0_mozilla_firefox_target__sw_iphone__os
+        rc0_mozilla_firefox_version_17__0__10 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_17__0__10 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_10__0__12 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_10__0__12 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_17__0__1 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_17__0__1 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_17__0__7 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_17__0__7 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_20__1 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_20__1 => rc0_mozilla_firefox_target__sw_iphone__os
+        rc0_mozilla_firefox_version_24__8__0 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_24__8__0 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_19__1 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_19__1 => rc0_mozilla_firefox_target__sw_iphone__os
+        rc0_mozilla_firefox_version_31__5__3 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_31__5__3 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_2__0__0__17 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_2__0__0__17 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_1__0__4 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_1__0__4 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_17__3 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_17__3 => rc0_mozilla_firefox_target__sw_iphone__os
+        rc0_mozilla_firefox_version_31__5__0 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_31__5__0 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_1__5__7 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_1__5__7 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_16__2 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_16__2 => rc0_mozilla_firefox_target__sw_iphone__os
+        rc0_mozilla_firefox_version_2__0 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_2__0 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_7__0 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_7__0 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_3__0__11 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_3__0__11 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_32__0__2 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_32__0__2 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_1__5__0__12 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_1__5__0__12 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_24__3__0 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_24__3__0 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_35__0__1 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_35__0__1 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_1__5__0__6 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_1__5__0__6 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_32__0__3 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_32__0__3 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_1__5__0__10 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_1__5__0__10 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_2__0__0__12 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_2__0__0__12 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_3__0__1 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_3__0__1 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_21__0 => (rc0_mozilla_firefox_update_any)
+        rc0_mozilla_firefox_version_3__6__27 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_3__6__27 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_24__8__1 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_24__8__1 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_3__6__24 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_3__6__24 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_1__5__0__7 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_1__5__0__7 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_38__0 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_38__0 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_10__0__3 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_10__0__3 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_3__5__16 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_3__5__16 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_24__1 => (rc0_mozilla_firefox_update_any)
+        rc0_mozilla_firefox_version_10__0__10 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_10__0__10 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_3__6__11 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_3__6__11 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_3__0__15 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_3__0__15 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_10__0__11 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_10__0__11 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_3__0__17 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_3__0__17 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_17__0__3 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_17__0__3 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_3__5__1 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_3__5__1 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_36__0 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_36__0 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_12__0 => ((rc0_mozilla_firefox_update_beta6 & rc0_mozilla_firefox_target__sw_any & !rc0_mozilla_firefox_update_any & rc0_mozilla_firefox_target__sw_any) | (!rc0_mozilla_firefox_update_beta6 & rc0_mozilla_firefox_target__sw_any & rc0_mozilla_firefox_update_any & rc0_mozilla_firefox_target__sw_any))
+        rc0_mozilla_firefox_version_34__0 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_34__0 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_20__0 => (rc0_mozilla_firefox_update_alpha1 & rc0_mozilla_firefox_target__sw_any)
+        rc0_mozilla_firefox_version_17__2 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_17__2 => rc0_mozilla_firefox_target__sw_iphone__os
+        rc0_mozilla_firefox_version_10__0__6 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_10__0__6 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_2__0__0__18 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_2__0__0__18 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_1__5__4 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_1__5__4 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_3__6__19 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_3__6__19 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_2__0__0__11 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_2__0__0__11 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_26__0 => (rc0_mozilla_firefox_update_any)
+        rc0_mozilla_firefox_version_5__0 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_5__0 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_39__0__3 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_39__0__3 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_1__8 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_1__8 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_any => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_any => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_2__0__0__1 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_2__0__0__1 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_3__5__8 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_3__5__8 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_0__9__3 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_0__9__3 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_33__0__1 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_33__0__1 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_4__0 => ((rc0_mozilla_firefox_update_beta4 & rc0_mozilla_firefox_target__sw_any & !rc0_mozilla_firefox_update_beta6 & rc0_mozilla_firefox_target__sw_any & !rc0_mozilla_firefox_update_beta11 & rc0_mozilla_firefox_target__sw_any & !rc0_mozilla_firefox_update_beta3 & rc0_mozilla_firefox_target__sw_any & !rc0_mozilla_firefox_update_beta8 & rc0_mozilla_firefox_target__sw_any & !rc0_mozilla_firefox_update_beta5 & rc0_mozilla_firefox_target__sw_any & !rc0_mozilla_firefox_update_any & rc0_mozilla_firefox_target__sw_any & !rc0_mozilla_firefox_update_beta12 & rc0_mozilla_firefox_target__sw_any & !rc0_mozilla_firefox_update_beta2 & rc0_mozilla_firefox_target__sw_any & !rc0_mozilla_firefox_update_beta7 & rc0_mozilla_firefox_target__sw_any & !rc0_mozilla_firefox_update_beta1 & rc0_mozilla_firefox_target__sw_any & !rc0_mozilla_firefox_update_beta10 & rc0_mozilla_firefox_target__sw_any & !rc0_mozilla_firefox_update_beta9 & rc0_mozilla_firefox_target__sw_any) | (!rc0_mozilla_firefox_update_beta4 & rc0_mozilla_firefox_target__sw_any & rc0_mozilla_firefox_update_beta6 & rc0_mozilla_firefox_target__sw_any & !rc0_mozilla_firefox_update_beta11 & rc0_mozilla_firefox_target__sw_any & !rc0_mozilla_firefox_update_beta3 & rc0_mozilla_firefox_target__sw_any & !rc0_mozilla_firefox_update_beta8 & rc0_mozilla_firefox_target__sw_any & !rc0_mozilla_firefox_update_beta5 & rc0_mozilla_firefox_target__sw_any & !rc0_mozilla_firefox_update_any & rc0_mozilla_firefox_target__sw_any & !rc0_mozilla_firefox_update_beta12 & rc0_mozilla_firefox_target__sw_any & !rc0_mozilla_firefox_update_beta2 & rc0_mozilla_firefox_target__sw_any & !rc0_mozilla_firefox_update_beta7 & rc0_mozilla_firefox_target__sw_any & !rc0_mozilla_firefox_update_beta1 & rc0_mozilla_firefox_target__sw_any & !rc0_mozilla_firefox_update_beta10 & rc0_mozilla_firefox_target__sw_any & !rc0_mozilla_firefox_update_beta9 & rc0_mozilla_firefox_target__sw_any) | (!rc0_mozilla_firefox_update_beta4 & rc0_mozilla_firefox_target__sw_any & !rc0_mozilla_firefox_update_beta6 & rc0_mozilla_firefox_target__sw_any & rc0_mozilla_firefox_update_beta11 & rc0_mozilla_firefox_target__sw_any & !rc0_mozilla_firefox_update_beta3 & rc0_mozilla_firefox_target__sw_any & !rc0_mozilla_firefox_update_beta8 & rc0_mozilla_firefox_target__sw_any & !rc0_mozilla_firefox_update_beta5 & rc0_mozilla_firefox_target__sw_any & !rc0_mozilla_firefox_update_any & rc0_mozilla_firefox_target__sw_any & !rc0_mozilla_firefox_update_beta12 & rc0_mozilla_firefox_target__sw_any & !rc0_mozilla_firefox_update_beta2 & rc0_mozilla_firefox_target__sw_any & !rc0_mozilla_firefox_update_beta7 & rc0_mozilla_firefox_target__sw_any & !rc0_mozilla_firefox_update_beta1 & rc0_mozilla_firefox_target__sw_any & !rc0_mozilla_firefox_update_beta10 & rc0_mozilla_firefox_target__sw_any & !rc0_mozilla_firefox_update_beta9 & rc0_mozilla_firefox_target__sw_any) | (!rc0_mozilla_firefox_update_beta4 & rc0_mozilla_firefox_target__sw_any & !rc0_mozilla_firefox_update_beta6 & rc0_mozilla_firefox_target__sw_any & !rc0_mozilla_firefox_update_beta11 & rc0_mozilla_firefox_target__sw_any & rc0_mozilla_firefox_update_beta3 & rc0_mozilla_firefox_target__sw_any & !rc0_mozilla_firefox_update_beta8 & rc0_mozilla_firefox_target__sw_any & !rc0_mozilla_firefox_update_beta5 & rc0_mozilla_firefox_target__sw_any & !rc0_mozilla_firefox_update_any & rc0_mozilla_firefox_target__sw_any & !rc0_mozilla_firefox_update_beta12 & rc0_mozilla_firefox_target__sw_any & !rc0_mozilla_firefox_update_beta2 & rc0_mozilla_firefox_target__sw_any & !rc0_mozilla_firefox_update_beta7 & rc0_mozilla_firefox_target__sw_any & !rc0_mozilla_firefox_update_beta1 & rc0_mozilla_firefox_target__sw_any & !rc0_mozilla_firefox_update_beta10 & rc0_mozilla_firefox_target__sw_any & !rc0_mozilla_firefox_update_beta9 & rc0_mozilla_firefox_target__sw_any) | (!rc0_mozilla_firefox_update_beta4 & rc0_mozilla_firefox_target__sw_any & !rc0_mozilla_firefox_update_beta6 & rc0_mozilla_firefox_target__sw_any & !rc0_mozilla_firefox_update_beta11 & rc0_mozilla_firefox_target__sw_any & !rc0_mozilla_firefox_update_beta3 & rc0_mozilla_firefox_target__sw_any & rc0_mozilla_firefox_update_beta8 & rc0_mozilla_firefox_target__sw_any & !rc0_mozilla_firefox_update_beta5 & rc0_mozilla_firefox_target__sw_any & !rc0_mozilla_firefox_update_any & rc0_mozilla_firefox_target__sw_any & !rc0_mozilla_firefox_update_beta12 & rc0_mozilla_firefox_target__sw_any & !rc0_mozilla_firefox_update_beta2 & rc0_mozilla_firefox_target__sw_any & !rc0_mozilla_firefox_update_beta7 & rc0_mozilla_firefox_target__sw_any & !rc0_mozilla_firefox_update_beta1 & rc0_mozilla_firefox_target__sw_any & !rc0_mozilla_firefox_update_beta10 & rc0_mozilla_firefox_target__sw_any & !rc0_mozilla_firefox_update_beta9 & rc0_mozilla_firefox_target__sw_any) | (!rc0_mozilla_firefox_update_beta4 & rc0_mozilla_firefox_target__sw_any & !rc0_mozilla_firefox_update_beta6 & rc0_mozilla_firefox_target__sw_any & !rc0_mozilla_firefox_update_beta11 & rc0_mozilla_firefox_target__sw_any & !rc0_mozilla_firefox_update_beta3 & rc0_mozilla_firefox_target__sw_any & !rc0_mozilla_firefox_update_beta8 & rc0_mozilla_firefox_target__sw_any & rc0_mozilla_firefox_update_beta5 & rc0_mozilla_firefox_target__sw_any & !rc0_mozilla_firefox_update_any & rc0_mozilla_firefox_target__sw_any & !rc0_mozilla_firefox_update_beta12 & rc0_mozilla_firefox_target__sw_any & !rc0_mozilla_firefox_update_beta2 & rc0_mozilla_firefox_target__sw_any & !rc0_mozilla_firefox_update_beta7 & rc0_mozilla_firefox_target__sw_any & !rc0_mozilla_firefox_update_beta1 & rc0_mozilla_firefox_target__sw_any & !rc0_mozilla_firefox_update_beta10 & rc0_mozilla_firefox_target__sw_any & !rc0_mozilla_firefox_update_beta9 & rc0_mozilla_firefox_target__sw_any) | (!rc0_mozilla_firefox_update_beta4 & rc0_mozilla_firefox_target__sw_any & !rc0_mozilla_firefox_update_beta6 & rc0_mozilla_firefox_target__sw_any & !rc0_mozilla_firefox_update_beta11 & rc0_mozilla_firefox_target__sw_any & !rc0_mozilla_firefox_update_beta3 & rc0_mozilla_firefox_target__sw_any & !rc0_mozilla_firefox_update_beta8 & rc0_mozilla_firefox_target__sw_any & !rc0_mozilla_firefox_update_beta5 & rc0_mozilla_firefox_target__sw_any & rc0_mozilla_firefox_update_any & rc0_mozilla_firefox_target__sw_any & !rc0_mozilla_firefox_update_beta12 & rc0_mozilla_firefox_target__sw_any & !rc0_mozilla_firefox_update_beta2 & rc0_mozilla_firefox_target__sw_any & !rc0_mozilla_firefox_update_beta7 & rc0_mozilla_firefox_target__sw_any & !rc0_mozilla_firefox_update_beta1 & rc0_mozilla_firefox_target__sw_any & !rc0_mozilla_firefox_update_beta10 & rc0_mozilla_firefox_target__sw_any & !rc0_mozilla_firefox_update_beta9 & rc0_mozilla_firefox_target__sw_any) | (!rc0_mozilla_firefox_update_beta4 & rc0_mozilla_firefox_target__sw_any & !rc0_mozilla_firefox_update_beta6 & rc0_mozilla_firefox_target__sw_any & !rc0_mozilla_firefox_update_beta11 & rc0_mozilla_firefox_target__sw_any & !rc0_mozilla_firefox_update_beta3 & rc0_mozilla_firefox_target__sw_any & !rc0_mozilla_firefox_update_beta8 & rc0_mozilla_firefox_target__sw_any & !rc0_mozilla_firefox_update_beta5 & rc0_mozilla_firefox_target__sw_any & !rc0_mozilla_firefox_update_any & rc0_mozilla_firefox_target__sw_any & rc0_mozilla_firefox_update_beta12 & rc0_mozilla_firefox_target__sw_any & !rc0_mozilla_firefox_update_beta2 & rc0_mozilla_firefox_target__sw_any & !rc0_mozilla_firefox_update_beta7 & rc0_mozilla_firefox_target__sw_any & !rc0_mozilla_firefox_update_beta1 & rc0_mozilla_firefox_target__sw_any & !rc0_mozilla_firefox_update_beta10 & rc0_mozilla_firefox_target__sw_any & !rc0_mozilla_firefox_update_beta9 & rc0_mozilla_firefox_target__sw_any) | (!rc0_mozilla_firefox_update_beta4 & rc0_mozilla_firefox_target__sw_any & !rc0_mozilla_firefox_update_beta6 & rc0_mozilla_firefox_target__sw_any & !rc0_mozilla_firefox_update_beta11 & rc0_mozilla_firefox_target__sw_any & !rc0_mozilla_firefox_update_beta3 & rc0_mozilla_firefox_target__sw_any & !rc0_mozilla_firefox_update_beta8 & rc0_mozilla_firefox_target__sw_any & !rc0_mozilla_firefox_update_beta5 & rc0_mozilla_firefox_target__sw_any & !rc0_mozilla_firefox_update_any & rc0_mozilla_firefox_target__sw_any & !rc0_mozilla_firefox_update_beta12 & rc0_mozilla_firefox_target__sw_any & rc0_mozilla_firefox_update_beta2 & rc0_mozilla_firefox_target__sw_any & !rc0_mozilla_firefox_update_beta7 & rc0_mozilla_firefox_target__sw_any & !rc0_mozilla_firefox_update_beta1 & rc0_mozilla_firefox_target__sw_any & !rc0_mozilla_firefox_update_beta10 & rc0_mozilla_firefox_target__sw_any & !rc0_mozilla_firefox_update_beta9 & rc0_mozilla_firefox_target__sw_any) | (!rc0_mozilla_firefox_update_beta4 & rc0_mozilla_firefox_target__sw_any & !rc0_mozilla_firefox_update_beta6 & rc0_mozilla_firefox_target__sw_any & !rc0_mozilla_firefox_update_beta11 & rc0_mozilla_firefox_target__sw_any & !rc0_mozilla_firefox_update_beta3 & rc0_mozilla_firefox_target__sw_any & !rc0_mozilla_firefox_update_beta8 & rc0_mozilla_firefox_target__sw_any & !rc0_mozilla_firefox_update_beta5 & rc0_mozilla_firefox_target__sw_any & !rc0_mozilla_firefox_update_any & rc0_mozilla_firefox_target__sw_any & !rc0_mozilla_firefox_update_beta12 & rc0_mozilla_firefox_target__sw_any & !rc0_mozilla_firefox_update_beta2 & rc0_mozilla_firefox_target__sw_any & rc0_mozilla_firefox_update_beta7 & rc0_mozilla_firefox_target__sw_any & !rc0_mozilla_firefox_update_beta1 & rc0_mozilla_firefox_target__sw_any & !rc0_mozilla_firefox_update_beta10 & rc0_mozilla_firefox_target__sw_any & !rc0_mozilla_firefox_update_beta9 & rc0_mozilla_firefox_target__sw_any) | (!rc0_mozilla_firefox_update_beta4 & rc0_mozilla_firefox_target__sw_any & !rc0_mozilla_firefox_update_beta6 & rc0_mozilla_firefox_target__sw_any & !rc0_mozilla_firefox_update_beta11 & rc0_mozilla_firefox_target__sw_any & !rc0_mozilla_firefox_update_beta3 & rc0_mozilla_firefox_target__sw_any & !rc0_mozilla_firefox_update_beta8 & rc0_mozilla_firefox_target__sw_any & !rc0_mozilla_firefox_update_beta5 & rc0_mozilla_firefox_target__sw_any & !rc0_mozilla_firefox_update_any & rc0_mozilla_firefox_target__sw_any & !rc0_mozilla_firefox_update_beta12 & rc0_mozilla_firefox_target__sw_any & !rc0_mozilla_firefox_update_beta2 & rc0_mozilla_firefox_target__sw_any & !rc0_mozilla_firefox_update_beta7 & rc0_mozilla_firefox_target__sw_any & rc0_mozilla_firefox_update_beta1 & rc0_mozilla_firefox_target__sw_any & !rc0_mozilla_firefox_update_beta10 & rc0_mozilla_firefox_target__sw_any & !rc0_mozilla_firefox_update_beta9 & rc0_mozilla_firefox_target__sw_any) | (!rc0_mozilla_firefox_update_beta4 & rc0_mozilla_firefox_target__sw_any & !rc0_mozilla_firefox_update_beta6 & rc0_mozilla_firefox_target__sw_any & !rc0_mozilla_firefox_update_beta11 & rc0_mozilla_firefox_target__sw_any & !rc0_mozilla_firefox_update_beta3 & rc0_mozilla_firefox_target__sw_any & !rc0_mozilla_firefox_update_beta8 & rc0_mozilla_firefox_target__sw_any & !rc0_mozilla_firefox_update_beta5 & rc0_mozilla_firefox_target__sw_any & !rc0_mozilla_firefox_update_any & rc0_mozilla_firefox_target__sw_any & !rc0_mozilla_firefox_update_beta12 & rc0_mozilla_firefox_target__sw_any & !rc0_mozilla_firefox_update_beta2 & rc0_mozilla_firefox_target__sw_any & !rc0_mozilla_firefox_update_beta7 & rc0_mozilla_firefox_target__sw_any & !rc0_mozilla_firefox_update_beta1 & rc0_mozilla_firefox_target__sw_any & rc0_mozilla_firefox_update_beta10 & rc0_mozilla_firefox_target__sw_any & !rc0_mozilla_firefox_update_beta9 & rc0_mozilla_firefox_target__sw_any) | (!rc0_mozilla_firefox_update_beta4 & rc0_mozilla_firefox_target__sw_any & !rc0_mozilla_firefox_update_beta6 & rc0_mozilla_firefox_target__sw_any & !rc0_mozilla_firefox_update_beta11 & rc0_mozilla_firefox_target__sw_any & !rc0_mozilla_firefox_update_beta3 & rc0_mozilla_firefox_target__sw_any & !rc0_mozilla_firefox_update_beta8 & rc0_mozilla_firefox_target__sw_any & !rc0_mozilla_firefox_update_beta5 & rc0_mozilla_firefox_target__sw_any & !rc0_mozilla_firefox_update_any & rc0_mozilla_firefox_target__sw_any & !rc0_mozilla_firefox_update_beta12 & rc0_mozilla_firefox_target__sw_any & !rc0_mozilla_firefox_update_beta2 & rc0_mozilla_firefox_target__sw_any & !rc0_mozilla_firefox_update_beta7 & rc0_mozilla_firefox_target__sw_any & !rc0_mozilla_firefox_update_beta1 & rc0_mozilla_firefox_target__sw_any & !rc0_mozilla_firefox_update_beta10 & rc0_mozilla_firefox_target__sw_any & rc0_mozilla_firefox_update_beta9 & rc0_mozilla_firefox_target__sw_any))
+        rc0_mozilla_firefox_version_0__7 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_0__7 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_2__0__0__15 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_2__0__0__15 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_16__0__2 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_16__0__2 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_11__0 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_11__0 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_38__8__0 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_38__8__0 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_1__5 => ((rc0_mozilla_firefox_update_any & rc0_mozilla_firefox_target__sw_any & !rc0_mozilla_firefox_update_beta2 & rc0_mozilla_firefox_target__sw_any & !rc0_mozilla_firefox_update_beta1 & rc0_mozilla_firefox_target__sw_any) | (!rc0_mozilla_firefox_update_any & rc0_mozilla_firefox_target__sw_any & rc0_mozilla_firefox_update_beta2 & rc0_mozilla_firefox_target__sw_any & !rc0_mozilla_firefox_update_beta1 & rc0_mozilla_firefox_target__sw_any) | (!rc0_mozilla_firefox_update_any & rc0_mozilla_firefox_target__sw_any & !rc0_mozilla_firefox_update_beta2 & rc0_mozilla_firefox_target__sw_any & rc0_mozilla_firefox_update_beta1 & rc0_mozilla_firefox_target__sw_any))
+        rc0_mozilla_firefox_version_9__0__1 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_9__0__1 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_1__0__2 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_1__0__2 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_9__0 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_9__0 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_3__6__28 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_3__6__28 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_22__0 => (rc0_mozilla_firefox_update_any)
+        rc0_mozilla_firefox_version_3__5__5 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_3__5__5 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_3__5__6 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_3__5__6 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_31__3__0 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_31__3__0 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_38__0__1 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_38__0__1 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_3__6__6 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_3__6__6 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_13__0 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_13__0 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_17__0__11 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_17__0__11 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_0__2 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_0__2 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_1__5__0__11 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_1__5__0__11 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_39__0 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_39__0 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_37__0__1 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_37__0__1 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_17__0__8 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_17__0__8 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_3__5__7 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_3__5__7 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_3__0__2 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_3__0__2 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_3__5__9 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_3__5__9 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_38__7__0 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_38__7__0 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_1__5__5 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_1__5__5 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_0__9__2 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_0__9__2 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_25__0 => (rc0_mozilla_firefox_update_any)
+        rc0_mozilla_firefox_version_3__5__14 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_3__5__14 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_38__4__0 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_38__4__0 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_3__5__12 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_3__5__12 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_38__2__0 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_38__2__0 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_0__5 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_0__5 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_1__5__1 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_1__5__1 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_3__0__9 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_3__0__9 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_1__5__2 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_1__5__2 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_8__0__1 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_8__0__1 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_2__0__0__16 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_2__0__0__16 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_3__0__18 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_3__0__18 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_32__0 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_32__0 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_14__0__1 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_14__0__1 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_0__1 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_0__1 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_33__0 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_33__0 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_17__0__4 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_17__0__4 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_1__5__0__2 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_1__5__0__2 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_1__5__8 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_1__5__8 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_1__0__5 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_1__0__5 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_31__2__0 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_31__2__0 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_38__7__1 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_38__7__1 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_3__6 => ((rc0_mozilla_firefox_update_any & rc0_mozilla_firefox_target__sw_any & !rc0_mozilla_firefox_update_a1 & rc0_mozilla_firefox_target__sw_any) | (!rc0_mozilla_firefox_update_any & rc0_mozilla_firefox_target__sw_any & rc0_mozilla_firefox_update_a1 & rc0_mozilla_firefox_target__sw_any))
+        rc0_mozilla_firefox_version_38__6__0 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_38__6__0 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_38__2__1 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_38__2__1 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_24__1__1 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_24__1__1 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_0__3 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_0__3 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_18__1 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_18__1 => rc0_mozilla_firefox_target__sw_iphone__os
+        rc0_mozilla_firefox_version_1__0__6 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_1__0__6 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_16__0__1 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_16__0__1 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_3__0__16 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_3__0__16 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_3__5 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_3__5 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_0__6__1 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_0__6__1 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_3__0__13 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_3__0__13 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_3__0__14 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_3__0__14 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_1__0__8 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_1__0__8 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_18__0__1 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_18__0__1 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_0__4 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_0__4 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_1__0__1 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_1__0__1 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_0__8 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_0__8 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_33__0__3 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_33__0__3 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_3__6__23 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_3__6__23 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_27__0 => (rc0_mozilla_firefox_update_any)
+        rc0_mozilla_firefox_version_3__6__12 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_3__6__12 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_18__0 => (rc0_mozilla_firefox_update_any)
+        rc0_mozilla_firefox_version_20__2 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_20__2 => rc0_mozilla_firefox_target__sw_iphone__os
+        rc0_mozilla_firefox_version_0__9 => ((rc0_mozilla_firefox_update_rc & rc0_mozilla_firefox_target__sw_any & !rc0_mozilla_firefox_update_any & rc0_mozilla_firefox_target__sw_any) | (!rc0_mozilla_firefox_update_rc & rc0_mozilla_firefox_target__sw_any & rc0_mozilla_firefox_update_any & rc0_mozilla_firefox_target__sw_any))
+        rc0_mozilla_firefox_version_0__10__1 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_0__10__1 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_36__0__3 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_36__0__3 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_0__6 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_0__6 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_3__5__11 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_3__5__11 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_3__6__20 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_3__6__20 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_25__0__1 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_25__0__1 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_2__0__0__19 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_2__0__0__19 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_3__5__17 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_3__5__17 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_1__5__0__4 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_1__5__0__4 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_3__5__13 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_3__5__13 => rc0_mozilla_firefox_target__sw_any
+        rc0_mozilla_firefox_version_8__0 => rc0_mozilla_firefox_update_any
+        rc0_mozilla_firefox_version_8__0 => rc0_mozilla_firefox_target__sw_any

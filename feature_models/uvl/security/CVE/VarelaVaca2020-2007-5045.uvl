@@ -1,0 +1,237 @@
+features
+        CVE_2007_5045
+                mandatory
+                        types
+                                mandatory
+                                        application
+                        sources
+                                mandatory
+                                        nvd
+                        exploits
+                                optional
+                                        direct
+                                        indirect
+                alternative
+                        apple
+                                mandatory
+                                        apple_quicktime
+                                                mandatory
+                                                        apple_quicktime_version
+                                                                alternative
+                                                                        apple_quicktime_version_3
+                                                                        apple_quicktime_version_7__0__8
+                                                                        apple_quicktime_version_6__5__0
+                                                                        apple_quicktime_version_7__1__1
+                                                                        apple_quicktime_version_7__0__3
+                                                                        apple_quicktime_version_7__0__0
+                                                                        apple_quicktime_version_6__4__0
+                                                                        apple_quicktime_version_4__1__2
+                                                                        apple_quicktime_version_5__0__1
+                                                                        apple_quicktime_version_7__0
+                                                                        apple_quicktime_version_7__1__4
+                                                                        apple_quicktime_version_7__1
+                                                                        apple_quicktime_version_6__0
+                                                                        apple_quicktime_version_7__0__1
+                                                                        apple_quicktime_version_6__1__0
+                                                                        apple_quicktime_version_6__2__0
+                                                                        apple_quicktime_version_3__0
+                                                                        apple_quicktime_version_any
+                                                                        apple_quicktime_version_7__1__3
+                                                                        apple_quicktime_version_6__5__2
+                                                                        apple_quicktime_version_6__5
+                                                                        apple_quicktime_version_7__1__5
+                                                                        apple_quicktime_version_5__0__2
+                                                                        apple_quicktime_version_6__3__0
+                                                                        apple_quicktime_version_6__0__1
+                                                                        apple_quicktime_version_7__1__0
+                                                                        apple_quicktime_version_7__0__2
+                                                                        apple_quicktime_version_6__1
+                                                                        apple_quicktime_version_6__0__2
+                                                                        apple_quicktime_version_6__0__0
+                                                                        apple_quicktime_version_6__5__1
+                                                                        apple_quicktime_version_7__0__4
+                                                                        apple_quicktime_version_7__1__2
+                                                                        apple_quicktime_version_5__0
+                                                                        apple_quicktime_version_6__1__1
+                                                        apple_quicktime_language
+                                                                alternative
+                                                                        apple_quicktime_language_ja
+                                                                        apple_quicktime_language_any
+                                                        apple_quicktime_target__sw
+                                                                alternative
+                                                                        apple_quicktime_target__sw_any
+                                                                        apple_quicktime_target__sw_windows
+                        mozilla
+                                mandatory
+                                        mozilla_firefox
+                                                mandatory
+                                                        mozilla_firefox_version
+                                                                alternative
+                                                                        mozilla_firefox_version_1__5__0__4
+                                                                        mozilla_firefox_version_1__0__7
+                                                                        mozilla_firefox_version_2__0__0__6
+                                                                        mozilla_firefox_version_2__0__0__1
+                                                                        mozilla_firefox_version_1__0__1
+                                                                        mozilla_firefox_version_1__5__6
+                                                                        mozilla_firefox_version_2__0__0__3
+                                                                        mozilla_firefox_version_1__8
+                                                                        mozilla_firefox_version_1__5__0__11
+                                                                        mozilla_firefox_version_1__0__2
+                                                                        mozilla_firefox_version_1__5__0__5
+                                                                        mozilla_firefox_version_1__5__0__3
+                                                                        mozilla_firefox_version_2__0__0__5
+                                                                        mozilla_firefox_version_1__5__8
+                                                                        mozilla_firefox_version_1__0__8
+                                                                        mozilla_firefox_version_0__7__1
+                                                                        mozilla_firefox_version_0__7
+                                                                        mozilla_firefox_version_0__8
+                                                                        mozilla_firefox_version_0__3
+                                                                        mozilla_firefox_version_0__5
+                                                                        mozilla_firefox_version_1__5__2
+                                                                        mozilla_firefox_version_1__5__0__7
+                                                                        mozilla_firefox_version_0__6
+                                                                        mozilla_firefox_version_1__5__0__10
+                                                                        mozilla_firefox_version_1__5__1
+                                                                        mozilla_firefox_version_0__9__2
+                                                                        mozilla_firefox_version_1__5
+                                                                        mozilla_firefox_version_1__5__5
+                                                                        mozilla_firefox_version_any
+                                                                        mozilla_firefox_version_1__5__0__6
+                                                                        mozilla_firefox_version_1__5__0__9
+                                                                        mozilla_firefox_version_0__9__1
+                                                                        mozilla_firefox_version_0__10
+                                                                        mozilla_firefox_version_1__4__1
+                                                                        mozilla_firefox_version_0__10__1
+                                                                        mozilla_firefox_version_1__5__4
+                                                                        mozilla_firefox_version_1__5__3
+                                                                        mozilla_firefox_version_0__4
+                                                                        mozilla_firefox_version_1__0__5
+                                                                        mozilla_firefox_version_1__5__0__8
+                                                                        mozilla_firefox_version_2__0__0__4
+                                                                        mozilla_firefox_version_1__5__0__2
+                                                                        mozilla_firefox_version_1__0
+                                                                        mozilla_firefox_version_0__2
+                                                                        mozilla_firefox_version_1__0__3
+                                                                        mozilla_firefox_version_1__5__0__1
+                                                                        mozilla_firefox_version_0__1
+                                                                        mozilla_firefox_version_0__9
+                                                                        mozilla_firefox_version_1__0__4
+                                                                        mozilla_firefox_version_1__0__6
+                                                                        mozilla_firefox_version_1__5__0__12
+                                                                        mozilla_firefox_version_1__5__7
+                                                                        mozilla_firefox_version_2__0
+                                                                        mozilla_firefox_version_0__6__1
+                                                                        mozilla_firefox_version_2__0__0__2
+                                                                        mozilla_firefox_version_0__9__3
+                                                        mozilla_firefox_update
+                                                                alternative
+                                                                        mozilla_firefox_update_rc
+                                                                        mozilla_firefox_update_preview__release
+                                                                        mozilla_firefox_update_beta2
+                                                                        mozilla_firefox_update_any
+                                                                        mozilla_firefox_update_beta1
+
+constraints
+        apple_quicktime => application
+        mozilla_firefox => application
+        apple_quicktime_version_3 => apple_quicktime_language_any
+        apple_quicktime_version_3 => apple_quicktime_target__sw_any
+        apple_quicktime_version_7__0__8 => apple_quicktime_language_any
+        apple_quicktime_version_7__0__8 => apple_quicktime_target__sw_any
+        (apple_quicktime_target__sw_any)
+        (apple_quicktime_target__sw_any)
+        (apple_quicktime_target__sw_any)
+        (apple_quicktime_target__sw_any)
+        (apple_quicktime_target__sw_any)
+        apple_quicktime_version_4__1__2 => ((apple_quicktime_language_ja & apple_quicktime_target__sw_windows & !apple_quicktime_language_any & apple_quicktime_target__sw_any) | (!apple_quicktime_language_ja & apple_quicktime_target__sw_windows & apple_quicktime_language_any & apple_quicktime_target__sw_any))
+        apple_quicktime_version_5__0__1 => apple_quicktime_language_any
+        apple_quicktime_version_5__0__1 => apple_quicktime_target__sw_any
+        apple_quicktime_version_7__0 => apple_quicktime_language_any
+        apple_quicktime_version_7__0 => apple_quicktime_target__sw_any
+        (apple_quicktime_target__sw_any)
+        apple_quicktime_version_7__1 => apple_quicktime_language_any
+        apple_quicktime_version_7__1 => apple_quicktime_target__sw_any
+        (apple_quicktime_target__sw_any)
+        (apple_quicktime_target__sw_any)
+        (apple_quicktime_target__sw_any)
+        (apple_quicktime_target__sw_any)
+        apple_quicktime_version_3__0 => apple_quicktime_language_any
+        apple_quicktime_version_3__0 => apple_quicktime_target__sw_any
+        apple_quicktime_version_any => apple_quicktime_language_any
+        apple_quicktime_version_any => apple_quicktime_target__sw_any
+        (apple_quicktime_target__sw_any)
+        (apple_quicktime_target__sw_any)
+        apple_quicktime_version_6__5 => apple_quicktime_language_any
+        apple_quicktime_version_6__5 => apple_quicktime_target__sw_any
+        (apple_quicktime_target__sw_any)
+        (apple_quicktime_target__sw_any)
+        (apple_quicktime_target__sw_any)
+        (apple_quicktime_target__sw_any)
+        (apple_quicktime_target__sw_any)
+        (apple_quicktime_target__sw_any)
+        apple_quicktime_version_6__1 => apple_quicktime_language_any
+        apple_quicktime_version_6__1 => apple_quicktime_target__sw_any
+        (apple_quicktime_target__sw_any)
+        (apple_quicktime_target__sw_any)
+        (apple_quicktime_target__sw_any)
+        (apple_quicktime_target__sw_any)
+        (apple_quicktime_target__sw_any)
+        apple_quicktime_version_5__0 => apple_quicktime_language_any
+        apple_quicktime_version_5__0 => apple_quicktime_target__sw_any
+        (apple_quicktime_target__sw_any)
+        mozilla_firefox_version_1__5__0__4 => mozilla_firefox_update_any
+        mozilla_firefox_version_1__0__7 => mozilla_firefox_update_any
+        mozilla_firefox_version_2__0__0__6 => mozilla_firefox_update_any
+        mozilla_firefox_version_2__0__0__1 => mozilla_firefox_update_any
+        mozilla_firefox_version_1__0__1 => mozilla_firefox_update_any
+        mozilla_firefox_version_1__5__6 => mozilla_firefox_update_any
+        mozilla_firefox_version_2__0__0__3 => mozilla_firefox_update_any
+        mozilla_firefox_version_1__8 => mozilla_firefox_update_any
+        mozilla_firefox_version_1__5__0__11 => mozilla_firefox_update_any
+        mozilla_firefox_version_1__0__2 => mozilla_firefox_update_any
+        mozilla_firefox_version_1__5__0__5 => mozilla_firefox_update_any
+        mozilla_firefox_version_1__5__0__3 => mozilla_firefox_update_any
+        mozilla_firefox_version_2__0__0__5 => mozilla_firefox_update_any
+        mozilla_firefox_version_1__5__8 => mozilla_firefox_update_any
+        mozilla_firefox_version_1__0__8 => mozilla_firefox_update_any
+        mozilla_firefox_version_0__7__1 => mozilla_firefox_update_any
+        mozilla_firefox_version_0__7 => mozilla_firefox_update_any
+        mozilla_firefox_version_0__8 => mozilla_firefox_update_any
+        mozilla_firefox_version_0__3 => mozilla_firefox_update_any
+        mozilla_firefox_version_0__5 => mozilla_firefox_update_any
+        mozilla_firefox_version_1__5__2 => mozilla_firefox_update_any
+        mozilla_firefox_version_1__5__0__7 => mozilla_firefox_update_any
+        mozilla_firefox_version_0__6 => mozilla_firefox_update_any
+        mozilla_firefox_version_1__5__0__10 => mozilla_firefox_update_any
+        mozilla_firefox_version_1__5__1 => mozilla_firefox_update_any
+        mozilla_firefox_version_0__9__2 => mozilla_firefox_update_any
+        mozilla_firefox_version_1__5 => ((mozilla_firefox_update_beta2 & !mozilla_firefox_update_any & !mozilla_firefox_update_beta1) | (!mozilla_firefox_update_beta2 & mozilla_firefox_update_any & !mozilla_firefox_update_beta1) | (!mozilla_firefox_update_beta2 & !mozilla_firefox_update_any & mozilla_firefox_update_beta1))
+        mozilla_firefox_version_1__5__5 => mozilla_firefox_update_any
+        mozilla_firefox_version_any => mozilla_firefox_update_any
+        mozilla_firefox_version_1__5__0__6 => mozilla_firefox_update_any
+        mozilla_firefox_version_1__5__0__9 => mozilla_firefox_update_any
+        mozilla_firefox_version_0__9__1 => mozilla_firefox_update_any
+        mozilla_firefox_version_0__10 => mozilla_firefox_update_any
+        mozilla_firefox_version_1__4__1 => mozilla_firefox_update_any
+        mozilla_firefox_version_0__10__1 => mozilla_firefox_update_any
+        mozilla_firefox_version_1__5__4 => mozilla_firefox_update_any
+        mozilla_firefox_version_1__5__3 => mozilla_firefox_update_any
+        mozilla_firefox_version_0__4 => mozilla_firefox_update_any
+        mozilla_firefox_version_1__0__5 => mozilla_firefox_update_any
+        mozilla_firefox_version_1__5__0__8 => mozilla_firefox_update_any
+        mozilla_firefox_version_2__0__0__4 => mozilla_firefox_update_any
+        mozilla_firefox_version_1__5__0__2 => mozilla_firefox_update_any
+        mozilla_firefox_version_1__0 => ((mozilla_firefox_update_preview__release & !mozilla_firefox_update_any) | (!mozilla_firefox_update_preview__release & mozilla_firefox_update_any))
+        mozilla_firefox_version_0__2 => mozilla_firefox_update_any
+        mozilla_firefox_version_1__0__3 => mozilla_firefox_update_any
+        mozilla_firefox_version_1__5__0__1 => mozilla_firefox_update_any
+        mozilla_firefox_version_0__1 => mozilla_firefox_update_any
+        mozilla_firefox_version_0__9 => ((mozilla_firefox_update_rc & !mozilla_firefox_update_any) | (!mozilla_firefox_update_rc & mozilla_firefox_update_any))
+        mozilla_firefox_version_1__0__4 => mozilla_firefox_update_any
+        mozilla_firefox_version_1__0__6 => mozilla_firefox_update_any
+        mozilla_firefox_version_1__5__0__12 => mozilla_firefox_update_any
+        mozilla_firefox_version_1__5__7 => mozilla_firefox_update_any
+        mozilla_firefox_version_2__0 => mozilla_firefox_update_any
+        mozilla_firefox_version_0__6__1 => mozilla_firefox_update_any
+        mozilla_firefox_version_2__0__0__2 => mozilla_firefox_update_any
+        mozilla_firefox_version_0__9__3 => mozilla_firefox_update_any

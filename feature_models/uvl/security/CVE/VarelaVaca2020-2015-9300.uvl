@@ -1,0 +1,273 @@
+features
+        CVE_2015_9300
+                mandatory
+                        types
+                                mandatory
+                                        application
+                        sources
+                                mandatory
+                                        nvd
+                        exploits
+                                optional
+                                        direct
+                                        indirect
+                        wp_events_plugin
+                                mandatory
+                                        wp_events_plugin_events__manager
+                                                mandatory
+                                                        wp_events_plugin_events__manager_version
+                                                                alternative
+                                                                        wp_events_plugin_events__manager_version_4__0__81
+                                                                        wp_events_plugin_events__manager_version_5__1__3
+                                                                        wp_events_plugin_events__manager_version_5__1__4__1
+                                                                        wp_events_plugin_events__manager_version_3__0__7
+                                                                        wp_events_plugin_events__manager_version_5__3__2__1
+                                                                        wp_events_plugin_events__manager_version_3__0__6
+                                                                        wp_events_plugin_events__manager_version_4__305
+                                                                        wp_events_plugin_events__manager_version_5__1__5
+                                                                        wp_events_plugin_events__manager_version_4__15
+                                                                        wp_events_plugin_events__manager_version_1__0
+                                                                        wp_events_plugin_events__manager_version_5__3__2
+                                                                        wp_events_plugin_events__manager_version_5__0__50
+                                                                        wp_events_plugin_events__manager_version_5__5__5
+                                                                        wp_events_plugin_events__manager_version_4__200
+                                                                        wp_events_plugin_events__manager_version_5__0
+                                                                        wp_events_plugin_events__manager_version_5__0__4
+                                                                        wp_events_plugin_events__manager_version_5__1__8
+                                                                        wp_events_plugin_events__manager_version_5__2__8
+                                                                        wp_events_plugin_events__manager_version_5__0__3
+                                                                        wp_events_plugin_events__manager_version_5__5__1
+                                                                        wp_events_plugin_events__manager_version_5__4__4
+                                                                        wp_events_plugin_events__manager_version_4__0__7
+                                                                        wp_events_plugin_events__manager_version_5__1__8__2
+                                                                        wp_events_plugin_events__manager_version_5__3
+                                                                        wp_events_plugin_events__manager_version_4__0__6
+                                                                        wp_events_plugin_events__manager_version_4__0__5
+                                                                        wp_events_plugin_events__manager_version_5__1__8__5
+                                                                        wp_events_plugin_events__manager_version_4__1
+                                                                        wp_events_plugin_events__manager_version_2__2__1
+                                                                        wp_events_plugin_events__manager_version_3__0__9
+                                                                        wp_events_plugin_events__manager_version_5__5__2
+                                                                        wp_events_plugin_events__manager_version_5__3__6
+                                                                        wp_events_plugin_events__manager_version_3__0__8
+                                                                        wp_events_plugin_events__manager_version_2__1
+                                                                        wp_events_plugin_events__manager_version_5__3__9
+                                                                        wp_events_plugin_events__manager_version_4__0__3
+                                                                        wp_events_plugin_events__manager_version_3__0__94
+                                                                        wp_events_plugin_events__manager_version_3__0__3
+                                                                        wp_events_plugin_events__manager_version_4__18
+                                                                        wp_events_plugin_events__manager_version_5__1__4__3
+                                                                        wp_events_plugin_events__manager_version_5__5
+                                                                        wp_events_plugin_events__manager_version_5__4__1__1
+                                                                        wp_events_plugin_events__manager_version_5__0__2
+                                                                        wp_events_plugin_events__manager_version_5__4__2
+                                                                        wp_events_plugin_events__manager_version_5__2__6
+                                                                        wp_events_plugin_events__manager_version_3__0__97
+                                                                        wp_events_plugin_events__manager_version_4__12
+                                                                        wp_events_plugin_events__manager_version_5__1__7
+                                                                        wp_events_plugin_events__manager_version_4__0__2
+                                                                        wp_events_plugin_events__manager_version_5__3__6__1
+                                                                        wp_events_plugin_events__manager_version_4__211
+                                                                        wp_events_plugin_events__manager_version_3__0
+                                                                        wp_events_plugin_events__manager_version_4__0__82
+                                                                        wp_events_plugin_events__manager_version_5__5__3
+                                                                        wp_events_plugin_events__manager_version_5__3__3
+                                                                        wp_events_plugin_events__manager_version_4__304
+                                                                        wp_events_plugin_events__manager_version_5__2__5
+                                                                        wp_events_plugin_events__manager_version_4__300
+                                                                        wp_events_plugin_events__manager_version_3__0__5
+                                                                        wp_events_plugin_events__manager_version_4__0__9
+                                                                        wp_events_plugin_events__manager_version_5__3__7
+                                                                        wp_events_plugin_events__manager_version_3__0__4
+                                                                        wp_events_plugin_events__manager_version_5__3__5
+                                                                        wp_events_plugin_events__manager_version_4__16
+                                                                        wp_events_plugin_events__manager_version_5__2__7
+                                                                        wp_events_plugin_events__manager_version_4__13
+                                                                        wp_events_plugin_events__manager_version_4__14
+                                                                        wp_events_plugin_events__manager_version_5__2__3
+                                                                        wp_events_plugin_events__manager_version_5__4__3
+                                                                        wp_events_plugin_events__manager_version_5__1__2
+                                                                        wp_events_plugin_events__manager_version_4__0
+                                                                        wp_events_plugin_events__manager_version_2__2
+                                                                        wp_events_plugin_events__manager_version_4__303
+                                                                        wp_events_plugin_events__manager_version_5__2__9
+                                                                        wp_events_plugin_events__manager_version_5__3__8
+                                                                        wp_events_plugin_events__manager_version_4__301
+                                                                        wp_events_plugin_events__manager_version_4__11
+                                                                        wp_events_plugin_events__manager_version_3__0__92
+                                                                        wp_events_plugin_events__manager_version_2__0
+                                                                        wp_events_plugin_events__manager_version_5__0__1
+                                                                        wp_events_plugin_events__manager_version_5__4
+                                                                        wp_events_plugin_events__manager_version_3__0__2
+                                                                        wp_events_plugin_events__manager_version_4__0__83
+                                                                        wp_events_plugin_events__manager_version_4__212
+                                                                        wp_events_plugin_events__manager_version_5__5__6
+                                                                        wp_events_plugin_events__manager_version_5__3__4
+                                                                        wp_events_plugin_events__manager_version_3__0__91
+                                                                        wp_events_plugin_events__manager_version_2__2__2
+                                                                        wp_events_plugin_events__manager_version_4__17
+                                                                        wp_events_plugin_events__manager_version_5__2__4
+                                                                        wp_events_plugin_events__manager_version_4__0__8
+                                                                        wp_events_plugin_events__manager_version_5__2
+                                                                        wp_events_plugin_events__manager_version_5__4__42
+                                                                        wp_events_plugin_events__manager_version_5__1__8__3
+                                                                        wp_events_plugin_events__manager_version_5__1__4
+                                                                        wp_events_plugin_events__manager_version_4__302
+                                                                        wp_events_plugin_events__manager_version_3__0__98
+                                                                        wp_events_plugin_events__manager_version_3__0__1
+                                                                        wp_events_plugin_events__manager_version_5__4__1
+                                                                        wp_events_plugin_events__manager_version_1__0__1
+                                                                        wp_events_plugin_events__manager_version_5__0__51
+                                                                        wp_events_plugin_events__manager_version_4__0__4
+                                                                        wp_events_plugin_events__manager_version_3__0__93
+                                                                        wp_events_plugin_events__manager_version_5__3__1
+                                                                        wp_events_plugin_events__manager_version_5__1__1
+                                                                        wp_events_plugin_events__manager_version_5__1__8__4
+                                                                        wp_events_plugin_events__manager_version_4__171
+                                                                        wp_events_plugin_events__manager_version_5__1__8__1
+                                                                        wp_events_plugin_events__manager_version_5__0__41
+                                                                        wp_events_plugin_events__manager_version_3__0__95
+                                                                        wp_events_plugin_events__manager_version_3__0__81
+                                                                        wp_events_plugin_events__manager_version_4__0__1
+                                                                        wp_events_plugin_events__manager_version_5__5__4
+                                                                        wp_events_plugin_events__manager_version_5__2__2
+                                                                        wp_events_plugin_events__manager_version_4__2
+                                                                        wp_events_plugin_events__manager_version_5__1__6
+                                                                        wp_events_plugin_events__manager_version_5__2__1
+                                                                        wp_events_plugin_events__manager_version_5__1
+                                                                        wp_events_plugin_events__manager_version_3__0__96
+                                                                        wp_events_plugin_events__manager_version_5__5__3__1
+                                                        wp_events_plugin_events__manager_update
+                                                                alternative
+                                                                        wp_events_plugin_events__manager_update_beta4
+                                                                        wp_events_plugin_events__manager_update_rc1
+                                                                        wp_events_plugin_events__manager_update_beta3
+                                                                        wp_events_plugin_events__manager_update_rc2
+                                                                        wp_events_plugin_events__manager_update_beta1
+                                                                        wp_events_plugin_events__manager_update_beta2
+                                                                        wp_events_plugin_events__manager_update_any
+                                                        wp_events_plugin_events__manager_target__sw
+                                                                mandatory
+                                                                        wp_events_plugin_events__manager_target__sw_wordpress
+
+constraints
+        wp_events_plugin_events__manager => application
+        wp_events_plugin_events__manager_version_4__0__81 => wp_events_plugin_events__manager_update_any
+        wp_events_plugin_events__manager_version_5__1__3 => wp_events_plugin_events__manager_update_any
+        wp_events_plugin_events__manager_version_5__1__4__1 => wp_events_plugin_events__manager_update_any
+        wp_events_plugin_events__manager_version_3__0__7 => wp_events_plugin_events__manager_update_any
+        wp_events_plugin_events__manager_version_5__3__2__1 => wp_events_plugin_events__manager_update_any
+        wp_events_plugin_events__manager_version_3__0__6 => wp_events_plugin_events__manager_update_any
+        wp_events_plugin_events__manager_version_4__305 => wp_events_plugin_events__manager_update_any
+        wp_events_plugin_events__manager_version_5__1__5 => wp_events_plugin_events__manager_update_any
+        wp_events_plugin_events__manager_version_4__15 => wp_events_plugin_events__manager_update_any
+        wp_events_plugin_events__manager_version_1__0 => wp_events_plugin_events__manager_update_any
+        wp_events_plugin_events__manager_version_5__3__2 => wp_events_plugin_events__manager_update_any
+        wp_events_plugin_events__manager_version_5__0__50 => wp_events_plugin_events__manager_update_any
+        wp_events_plugin_events__manager_version_5__5__5 => wp_events_plugin_events__manager_update_any
+        wp_events_plugin_events__manager_version_4__200 => wp_events_plugin_events__manager_update_any
+        wp_events_plugin_events__manager_version_5__0 => wp_events_plugin_events__manager_update_any
+        wp_events_plugin_events__manager_version_5__0__4 => wp_events_plugin_events__manager_update_any
+        wp_events_plugin_events__manager_version_5__1__8 => wp_events_plugin_events__manager_update_any
+        wp_events_plugin_events__manager_version_5__2__8 => wp_events_plugin_events__manager_update_any
+        wp_events_plugin_events__manager_version_5__0__3 => wp_events_plugin_events__manager_update_any
+        wp_events_plugin_events__manager_version_5__5__1 => wp_events_plugin_events__manager_update_any
+        wp_events_plugin_events__manager_version_5__4__4 => wp_events_plugin_events__manager_update_any
+        wp_events_plugin_events__manager_version_4__0__7 => wp_events_plugin_events__manager_update_any
+        wp_events_plugin_events__manager_version_5__1__8__2 => wp_events_plugin_events__manager_update_any
+        wp_events_plugin_events__manager_version_5__3 => wp_events_plugin_events__manager_update_any
+        wp_events_plugin_events__manager_version_4__0__6 => wp_events_plugin_events__manager_update_any
+        wp_events_plugin_events__manager_version_4__0__5 => wp_events_plugin_events__manager_update_any
+        wp_events_plugin_events__manager_version_5__1__8__5 => wp_events_plugin_events__manager_update_any
+        wp_events_plugin_events__manager_version_4__1 => wp_events_plugin_events__manager_update_any
+        wp_events_plugin_events__manager_version_2__2__1 => wp_events_plugin_events__manager_update_any
+        wp_events_plugin_events__manager_version_3__0__9 => wp_events_plugin_events__manager_update_any
+        wp_events_plugin_events__manager_version_5__5__2 => wp_events_plugin_events__manager_update_any
+        wp_events_plugin_events__manager_version_5__3__6 => wp_events_plugin_events__manager_update_any
+        wp_events_plugin_events__manager_version_3__0__8 => wp_events_plugin_events__manager_update_any
+        wp_events_plugin_events__manager_version_2__1 => wp_events_plugin_events__manager_update_any
+        wp_events_plugin_events__manager_version_5__3__9 => wp_events_plugin_events__manager_update_any
+        wp_events_plugin_events__manager_version_4__0__3 => wp_events_plugin_events__manager_update_any
+        wp_events_plugin_events__manager_version_3__0__94 => wp_events_plugin_events__manager_update_any
+        wp_events_plugin_events__manager_version_3__0__3 => wp_events_plugin_events__manager_update_any
+        wp_events_plugin_events__manager_version_4__18 => wp_events_plugin_events__manager_update_any
+        wp_events_plugin_events__manager_version_5__1__4__3 => wp_events_plugin_events__manager_update_any
+        wp_events_plugin_events__manager_version_5__5 => wp_events_plugin_events__manager_update_any
+        wp_events_plugin_events__manager_version_5__4__1__1 => wp_events_plugin_events__manager_update_any
+        wp_events_plugin_events__manager_version_5__0__2 => wp_events_plugin_events__manager_update_any
+        wp_events_plugin_events__manager_version_5__4__2 => wp_events_plugin_events__manager_update_any
+        wp_events_plugin_events__manager_version_5__2__6 => wp_events_plugin_events__manager_update_any
+        wp_events_plugin_events__manager_version_3__0__97 => wp_events_plugin_events__manager_update_any
+        wp_events_plugin_events__manager_version_4__12 => wp_events_plugin_events__manager_update_any
+        wp_events_plugin_events__manager_version_5__1__7 => wp_events_plugin_events__manager_update_any
+        wp_events_plugin_events__manager_version_4__0__2 => wp_events_plugin_events__manager_update_any
+        wp_events_plugin_events__manager_version_5__3__6__1 => wp_events_plugin_events__manager_update_any
+        wp_events_plugin_events__manager_version_4__211 => wp_events_plugin_events__manager_update_any
+        wp_events_plugin_events__manager_version_3__0 => wp_events_plugin_events__manager_update_any
+        wp_events_plugin_events__manager_version_4__0__82 => wp_events_plugin_events__manager_update_any
+        wp_events_plugin_events__manager_version_5__5__3 => wp_events_plugin_events__manager_update_any
+        wp_events_plugin_events__manager_version_5__3__3 => wp_events_plugin_events__manager_update_any
+        wp_events_plugin_events__manager_version_4__304 => wp_events_plugin_events__manager_update_any
+        wp_events_plugin_events__manager_version_5__2__5 => wp_events_plugin_events__manager_update_any
+        wp_events_plugin_events__manager_version_4__300 => wp_events_plugin_events__manager_update_any
+        wp_events_plugin_events__manager_version_3__0__5 => wp_events_plugin_events__manager_update_any
+        wp_events_plugin_events__manager_version_4__0__9 => wp_events_plugin_events__manager_update_any
+        wp_events_plugin_events__manager_version_5__3__7 => wp_events_plugin_events__manager_update_any
+        wp_events_plugin_events__manager_version_3__0__4 => wp_events_plugin_events__manager_update_any
+        wp_events_plugin_events__manager_version_5__3__5 => wp_events_plugin_events__manager_update_any
+        wp_events_plugin_events__manager_version_4__16 => wp_events_plugin_events__manager_update_any
+        wp_events_plugin_events__manager_version_5__2__7 => wp_events_plugin_events__manager_update_any
+        wp_events_plugin_events__manager_version_4__13 => wp_events_plugin_events__manager_update_any
+        wp_events_plugin_events__manager_version_4__14 => wp_events_plugin_events__manager_update_any
+        wp_events_plugin_events__manager_version_5__2__3 => wp_events_plugin_events__manager_update_any
+        wp_events_plugin_events__manager_version_5__4__3 => wp_events_plugin_events__manager_update_any
+        wp_events_plugin_events__manager_version_5__1__2 => wp_events_plugin_events__manager_update_any
+        wp_events_plugin_events__manager_version_4__0 => ((wp_events_plugin_events__manager_update_rc1 & !wp_events_plugin_events__manager_update_rc2 & !wp_events_plugin_events__manager_update_any) | (!wp_events_plugin_events__manager_update_rc1 & wp_events_plugin_events__manager_update_rc2 & !wp_events_plugin_events__manager_update_any) | (!wp_events_plugin_events__manager_update_rc1 & !wp_events_plugin_events__manager_update_rc2 & wp_events_plugin_events__manager_update_any))
+        wp_events_plugin_events__manager_version_2__2 => wp_events_plugin_events__manager_update_any
+        wp_events_plugin_events__manager_version_4__303 => wp_events_plugin_events__manager_update_any
+        wp_events_plugin_events__manager_version_5__2__9 => wp_events_plugin_events__manager_update_any
+        wp_events_plugin_events__manager_version_5__3__8 => wp_events_plugin_events__manager_update_any
+        wp_events_plugin_events__manager_version_4__301 => wp_events_plugin_events__manager_update_any
+        wp_events_plugin_events__manager_version_4__11 => wp_events_plugin_events__manager_update_any
+        wp_events_plugin_events__manager_version_3__0__92 => wp_events_plugin_events__manager_update_any
+        wp_events_plugin_events__manager_version_5__0__1 => wp_events_plugin_events__manager_update_any
+        wp_events_plugin_events__manager_version_5__4 => wp_events_plugin_events__manager_update_any
+        wp_events_plugin_events__manager_version_3__0__2 => wp_events_plugin_events__manager_update_any
+        wp_events_plugin_events__manager_version_4__0__83 => wp_events_plugin_events__manager_update_any
+        wp_events_plugin_events__manager_version_4__212 => wp_events_plugin_events__manager_update_any
+        wp_events_plugin_events__manager_version_5__5__6 => wp_events_plugin_events__manager_update_any
+        wp_events_plugin_events__manager_version_5__3__4 => wp_events_plugin_events__manager_update_any
+        wp_events_plugin_events__manager_version_3__0__91 => wp_events_plugin_events__manager_update_any
+        wp_events_plugin_events__manager_version_2__2__2 => wp_events_plugin_events__manager_update_any
+        wp_events_plugin_events__manager_version_4__17 => wp_events_plugin_events__manager_update_any
+        wp_events_plugin_events__manager_version_5__2__4 => wp_events_plugin_events__manager_update_any
+        wp_events_plugin_events__manager_version_4__0__8 => wp_events_plugin_events__manager_update_any
+        wp_events_plugin_events__manager_version_5__2 => wp_events_plugin_events__manager_update_any
+        wp_events_plugin_events__manager_version_5__4__42 => wp_events_plugin_events__manager_update_any
+        wp_events_plugin_events__manager_version_5__1__8__3 => wp_events_plugin_events__manager_update_any
+        wp_events_plugin_events__manager_version_5__1__4 => wp_events_plugin_events__manager_update_any
+        wp_events_plugin_events__manager_version_4__302 => wp_events_plugin_events__manager_update_any
+        wp_events_plugin_events__manager_version_3__0__98 => wp_events_plugin_events__manager_update_any
+        wp_events_plugin_events__manager_version_3__0__1 => wp_events_plugin_events__manager_update_any
+        wp_events_plugin_events__manager_version_5__4__1 => wp_events_plugin_events__manager_update_any
+        wp_events_plugin_events__manager_version_1__0__1 => wp_events_plugin_events__manager_update_any
+        wp_events_plugin_events__manager_version_5__0__51 => wp_events_plugin_events__manager_update_any
+        wp_events_plugin_events__manager_version_4__0__4 => wp_events_plugin_events__manager_update_any
+        wp_events_plugin_events__manager_version_3__0__93 => wp_events_plugin_events__manager_update_any
+        wp_events_plugin_events__manager_version_5__3__1 => wp_events_plugin_events__manager_update_any
+        wp_events_plugin_events__manager_version_5__1__1 => wp_events_plugin_events__manager_update_any
+        wp_events_plugin_events__manager_version_5__1__8__4 => wp_events_plugin_events__manager_update_any
+        wp_events_plugin_events__manager_version_4__171 => wp_events_plugin_events__manager_update_any
+        wp_events_plugin_events__manager_version_5__1__8__1 => wp_events_plugin_events__manager_update_any
+        wp_events_plugin_events__manager_version_5__0__41 => wp_events_plugin_events__manager_update_any
+        wp_events_plugin_events__manager_version_3__0__95 => wp_events_plugin_events__manager_update_any
+        wp_events_plugin_events__manager_version_3__0__81 => wp_events_plugin_events__manager_update_any
+        wp_events_plugin_events__manager_version_4__0__1 => wp_events_plugin_events__manager_update_any
+        wp_events_plugin_events__manager_version_5__5__4 => wp_events_plugin_events__manager_update_any
+        wp_events_plugin_events__manager_version_5__2__2 => wp_events_plugin_events__manager_update_any
+        wp_events_plugin_events__manager_version_4__2 => wp_events_plugin_events__manager_update_any
+        wp_events_plugin_events__manager_version_5__1__6 => wp_events_plugin_events__manager_update_any
+        wp_events_plugin_events__manager_version_5__2__1 => wp_events_plugin_events__manager_update_any
+        wp_events_plugin_events__manager_version_5__1 => wp_events_plugin_events__manager_update_any
+        wp_events_plugin_events__manager_version_3__0__96 => wp_events_plugin_events__manager_update_any
+        wp_events_plugin_events__manager_version_5__5__3__1 => wp_events_plugin_events__manager_update_any

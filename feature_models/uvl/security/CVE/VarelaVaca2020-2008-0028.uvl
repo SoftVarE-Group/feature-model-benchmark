@@ -1,0 +1,409 @@
+features
+        CVE_2008_0028
+                optional
+                        configs
+                                mandatory
+                                        rc0
+                                                mandatory
+                                                        rc0_cisco
+                                                                alternative
+                                                                        rc0_cisco_pix__500
+                                                                        rc0_cisco_5500__series__adaptive__security__appliance
+                mandatory
+                        types
+                                mandatory
+                                        application
+                                        operating_system
+                        sources
+                                mandatory
+                                        nvd
+                        exploits
+                                optional
+                                        direct
+                                        indirect
+                        cisco
+                                alternative
+                                        cisco_pix__firewall__software
+                                                mandatory
+                                                        cisco_pix__firewall__software_version
+                                                                alternative
+                                                                        cisco_pix__firewall__software_version_7__1
+                                                                        cisco_pix__firewall__software_version_4__2__5__
+                                                                        cisco_pix__firewall__software_version_5__1
+                                                                        cisco_pix__firewall__software_version_4__3
+                                                                        cisco_pix__firewall__software_version_6__3__3__109__
+                                                                        cisco_pix__firewall__software_version_4__4__7__202__
+                                                                        cisco_pix__firewall__software_version_7__0
+                                                                        cisco_pix__firewall__software_version_5__3__1__200__
+                                                                        cisco_pix__firewall__software_version_5__2__1__
+                                                                        cisco_pix__firewall__software_version_6__3__3__102__
+                                                                        cisco_pix__firewall__software_version_6__2__3__100__
+                                                                        cisco_pix__firewall__software_version_6__3__3__
+                                                                        cisco_pix__firewall__software_version_6__1__5__104__
+                                                                        cisco_pix__firewall__software_version_2__7
+                                                                        cisco_pix__firewall__software_version_5__3__1__
+                                                                        cisco_pix__firewall__software_version_5__2__3__210__
+                                                                        cisco_pix__firewall__software_version_5__3
+                                                                        cisco_pix__firewall__software_version_6__1
+                                                                        cisco_pix__firewall__software_version_4__4__8__
+                                                                        cisco_pix__firewall__software_version_5__1__4__
+                                                                        cisco_pix__firewall__software_version_5__2__8__
+                                                                        cisco_pix__firewall__software_version_6__0__4__
+                                                                        cisco_pix__firewall__software_version_4__0
+                                                                        cisco_pix__firewall__software_version_5__2__9__
+                                                                        cisco_pix__firewall__software_version_5__1__4__206__
+                                                                        cisco_pix__firewall__software_version_6__1__2__
+                                                                        cisco_pix__firewall__software_version_6__2__1__
+                                                                        cisco_pix__firewall__software_version_4__1__6b__
+                                                                        cisco_pix__firewall__software_version_6__0__2__
+                                                                        cisco_pix__firewall__software_version_4__4__4__
+                                                                        cisco_pix__firewall__software_version_4__1__6__
+                                                                        cisco_pix__firewall__software_version_6__0
+                                                                        cisco_pix__firewall__software_version_5__2__2__
+                                                                        cisco_pix__firewall__software_version_any
+                                                                        cisco_pix__firewall__software_version_5__2__7__
+                                                                        cisco_pix__firewall__software_version_6__0__1__
+                                                                        cisco_pix__firewall__software_version_3__0
+                                                                        cisco_pix__firewall__software_version_6__0__3__
+                                                                        cisco_pix__firewall__software_version_6__2__2__
+                                                                        cisco_pix__firewall__software_version_6__2
+                                                                        cisco_pix__firewall__software_version_4__2
+                                                                        cisco_pix__firewall__software_version_8__0__3__
+                                                                        cisco_pix__firewall__software_version_6__3__5__
+                                                                        cisco_pix__firewall__software_version_7__2
+                                                                        cisco_pix__firewall__software_version_6__1__4__
+                                                                        cisco_pix__firewall__software_version_5__2__5__
+                                                                        cisco_pix__firewall__software_version_6__3__2__
+                                                                        cisco_pix__firewall__software_version_6__0__4__101__
+                                                                        cisco_pix__firewall__software_version_5__2__3__
+                                                                        cisco_pix__firewall__software_version_4__4
+                                                                        cisco_pix__firewall__software_version_4__2__1__
+                                                                        cisco_pix__firewall__software_version_5__3__3__
+                                                                        cisco_pix__firewall__software_version_4__2__2__
+                                                                        cisco_pix__firewall__software_version_3__1
+                                                                        cisco_pix__firewall__software_version_5__2__6__
+                                                                        cisco_pix__firewall__software_version_5__0
+                                                                        cisco_pix__firewall__software_version_6__2__3__
+                                                                        cisco_pix__firewall__software_version_6__1__5__
+                                                                        cisco_pix__firewall__software_version_5__3__2__
+                                                                        cisco_pix__firewall__software_version_5__2__4__
+                                                                        cisco_pix__firewall__software_version_6__1__1__
+                                                                        cisco_pix__firewall__software_version_6__3
+                                                                        cisco_pix__firewall__software_version_6__1__3__
+                                                                        cisco_pix__firewall__software_version_7__2__2__
+                                                                        cisco_pix__firewall__software_version_6__3__1__
+                                                                        cisco_pix__firewall__software_version_5__2
+                                        cisco_adaptive__security__appliance__software
+                                                mandatory
+                                                        cisco_adaptive__security__appliance__software_version
+                                                                alternative
+                                                                        cisco_adaptive__security__appliance__software_version_7__0__6__18
+                                                                        cisco_adaptive__security__appliance__software_version_7__2__2__10__
+                                                                        cisco_adaptive__security__appliance__software_version_7__0__5__2__
+                                                                        cisco_adaptive__security__appliance__software_version_7__1__2__24
+                                                                        cisco_adaptive__security__appliance__software_version_7__1__5__
+                                                                        cisco_adaptive__security__appliance__software_version_7__2
+                                                                        cisco_adaptive__security__appliance__software_version_7__1__1
+                                                                        cisco_adaptive__security__appliance__software_version_7__0__6__
+                                                                        cisco_adaptive__security__appliance__software_version_7__0__5
+                                                                        cisco_adaptive__security__appliance__software_version_7__0__6__22
+                                                                        cisco_adaptive__security__appliance__software_version_7__2__2__7__
+                                                                        cisco_adaptive__security__appliance__software_version_7__0__6__26
+                                                                        cisco_adaptive__security__appliance__software_version_7__0__8
+                                                                        cisco_adaptive__security__appliance__software_version_7__0__5__12
+                                                                        cisco_adaptive__security__appliance__software_version_7__1__2__72
+                                                                        cisco_adaptive__security__appliance__software_version_7__0__1__4
+                                                                        cisco_adaptive__security__appliance__software_version_7__1__2__28
+                                                                        cisco_adaptive__security__appliance__software_version_7__2__2__48__
+                                                                        cisco_adaptive__security__appliance__software_version_7__0__6__7__
+                                                                        cisco_adaptive__security__appliance__software_version_7__0
+                                                                        cisco_adaptive__security__appliance__software_version_6__3__1
+                                                                        cisco_adaptive__security__appliance__software_version_7__0__8__12
+                                                                        cisco_adaptive__security__appliance__software_version_7__1__2__
+                                                                        cisco_adaptive__security__appliance__software_version_7__0__6__4
+                                                                        cisco_adaptive__security__appliance__software_version_7__0__4__
+                                                                        cisco_adaptive__security__appliance__software_version_7__2__2__19__
+                                                                        cisco_adaptive__security__appliance__software_version_7__2__2__8__
+                                                                        cisco_adaptive__security__appliance__software_version_7__0__4
+                                                                        cisco_adaptive__security__appliance__software_version_7__2__2__15__
+                                                                        cisco_adaptive__security__appliance__software_version_7__0__3
+                                                                        cisco_adaptive__security__appliance__software_version_7__1__2__5__
+                                                                        cisco_adaptive__security__appliance__software_version_7__2__3__
+                                                                        cisco_adaptive__security__appliance__software_version_7__0__0__
+                                                                        cisco_adaptive__security__appliance__software_version_7__2__2__16__
+                                                                        cisco_adaptive__security__appliance__software_version_7__1__2__53
+                                                                        cisco_adaptive__security__appliance__software_version_7__0__8__13
+                                                                        cisco_adaptive__security__appliance__software_version_7__0__7__1
+                                                                        cisco_adaptive__security__appliance__software_version_7__0__2
+                                                                        cisco_adaptive__security__appliance__software_version_7__1__2__81
+                                                                        cisco_adaptive__security__appliance__software_version_7__0__1__
+                                                                        cisco_adaptive__security__appliance__software_version_7__1__2__20
+                                                                        cisco_adaptive__security__appliance__software_version_7__1__2__16
+                                                                        cisco_adaptive__security__appliance__software_version_7__1
+                                                                        cisco_adaptive__security__appliance__software_version_7__2__2__18__
+                                                                        cisco_adaptive__security__appliance__software_version_7__0__6__29
+                                                                        cisco_adaptive__security__appliance__software_version_7__1__2__46
+                                                                        cisco_adaptive__security__appliance__software_version_7__0__8__8
+                                                                        cisco_adaptive__security__appliance__software_version_7__0__7__
+                                                                        cisco_adaptive__security__appliance__software_version_7__2__2__14__
+                                                                        cisco_adaptive__security__appliance__software_version_7__1__2__48__
+                                                                        cisco_adaptive__security__appliance__software_version_7__2__2__17__
+                                                                        cisco_adaptive__security__appliance__software_version_7__0__7__4
+                                                                        cisco_adaptive__security__appliance__software_version_7__0__5__
+                                                                        cisco_adaptive__security__appliance__software_version_7__0__8__2
+                                                                        cisco_adaptive__security__appliance__software_version_7__0__1
+                                                                        cisco_adaptive__security__appliance__software_version_7__1__2__27__
+                                                                        cisco_adaptive__security__appliance__software_version_7__0__7
+                                                                        cisco_adaptive__security__appliance__software_version_7__0__6
+                                                                        cisco_adaptive__security__appliance__software_version_7__1__2__49__
+                                                                        cisco_adaptive__security__appliance__software_version_7__0__8__
+                                                                        cisco_adaptive__security__appliance__software_version_7__1__2__64
+                                                                        cisco_adaptive__security__appliance__software_version_7__0__7__9
+                                                                        cisco_adaptive__security__appliance__software_version_7__1__2__49
+                                                                        cisco_adaptive__security__appliance__software_version_7__2__1__
+                                                                        cisco_adaptive__security__appliance__software_version_7__1__2__61
+                                                                        cisco_adaptive__security__appliance__software_version_any
+                                                                        cisco_adaptive__security__appliance__software_version_7__0__2__
+                                                                        cisco_adaptive__security__appliance__software_version_7__1__2
+                                                                        cisco_adaptive__security__appliance__software_version_8__0__3__
+                                                                        cisco_adaptive__security__appliance__software_version_7__2__2__5__
+                                                                        cisco_adaptive__security__appliance__software_version_7__0__7__12
+                                                                        cisco_adaptive__security__appliance__software_version_7__0__6__8
+                                                                        cisco_adaptive__security__appliance__software_version_7__1__2__38
+                                                                        cisco_adaptive__security__appliance__software_version_7__0__4__3
+                                                                        cisco_adaptive__security__appliance__software_version_7__2__1__22__
+                                                                        cisco_adaptive__security__appliance__software_version_7__1__2__42
+                                                                        cisco_adaptive__security__appliance__software_version_7__0__4__2
+                                                                        cisco_adaptive__security__appliance__software_version_7__0__6__32
+                                                                        cisco_adaptive__security__appliance__software_version_7__2__2__
+                                                        cisco_adaptive__security__appliance__software_update
+                                                                alternative
+                                                                        cisco_adaptive__security__appliance__software_update_interim
+                                                                        cisco_adaptive__security__appliance__software_update_any
+
+constraints
+        cisco_pix__firewall__software => operating_system
+        cisco_adaptive__security__appliance__software => application
+        cisco_pix__firewall__software_version_7__1 => (rc0)
+        cisco_pix__firewall__software_version_4__2__5__ => (rc0)
+        cisco_pix__firewall__software_version_5__1 => (rc0)
+        cisco_pix__firewall__software_version_4__3 => (rc0)
+        cisco_pix__firewall__software_version_6__3__3__109__ => (rc0)
+        cisco_pix__firewall__software_version_4__4__7__202__ => (rc0)
+        cisco_pix__firewall__software_version_7__0 => (rc0)
+        cisco_pix__firewall__software_version_5__3__1__200__ => (rc0)
+        cisco_pix__firewall__software_version_5__2__1__ => (rc0)
+        cisco_pix__firewall__software_version_6__3__3__102__ => (rc0)
+        cisco_pix__firewall__software_version_6__2__3__100__ => (rc0)
+        cisco_pix__firewall__software_version_6__3__3__ => (rc0)
+        cisco_pix__firewall__software_version_6__1__5__104__ => (rc0)
+        cisco_pix__firewall__software_version_2__7 => (rc0)
+        cisco_pix__firewall__software_version_5__3__1__ => (rc0)
+        cisco_pix__firewall__software_version_5__2__3__210__ => (rc0)
+        cisco_pix__firewall__software_version_5__3 => (rc0)
+        cisco_pix__firewall__software_version_6__1 => (rc0)
+        cisco_pix__firewall__software_version_4__4__8__ => (rc0)
+        cisco_pix__firewall__software_version_5__1__4__ => (rc0)
+        cisco_pix__firewall__software_version_5__2__8__ => (rc0)
+        cisco_pix__firewall__software_version_6__0__4__ => (rc0)
+        cisco_pix__firewall__software_version_4__0 => (rc0)
+        cisco_pix__firewall__software_version_5__2__9__ => (rc0)
+        cisco_pix__firewall__software_version_5__1__4__206__ => (rc0)
+        cisco_pix__firewall__software_version_6__1__2__ => (rc0)
+        cisco_pix__firewall__software_version_6__2__1__ => (rc0)
+        cisco_pix__firewall__software_version_4__1__6b__ => (rc0)
+        cisco_pix__firewall__software_version_6__0__2__ => (rc0)
+        cisco_pix__firewall__software_version_4__4__4__ => (rc0)
+        cisco_pix__firewall__software_version_4__1__6__ => (rc0)
+        cisco_pix__firewall__software_version_6__0 => (rc0)
+        cisco_pix__firewall__software_version_5__2__2__ => (rc0)
+        cisco_pix__firewall__software_version_any => (rc0)
+        cisco_pix__firewall__software_version_5__2__7__ => (rc0)
+        cisco_pix__firewall__software_version_6__0__1__ => (rc0)
+        cisco_pix__firewall__software_version_3__0 => (rc0)
+        cisco_pix__firewall__software_version_6__0__3__ => (rc0)
+        cisco_pix__firewall__software_version_6__2__2__ => (rc0)
+        cisco_pix__firewall__software_version_6__2 => (rc0)
+        cisco_pix__firewall__software_version_4__2 => (rc0)
+        cisco_pix__firewall__software_version_8__0__3__ => (rc0)
+        cisco_pix__firewall__software_version_6__3__5__ => (rc0)
+        cisco_pix__firewall__software_version_7__2 => (rc0)
+        cisco_pix__firewall__software_version_6__1__4__ => (rc0)
+        cisco_pix__firewall__software_version_5__2__5__ => (rc0)
+        cisco_pix__firewall__software_version_6__3__2__ => (rc0)
+        cisco_pix__firewall__software_version_6__0__4__101__ => (rc0)
+        cisco_pix__firewall__software_version_5__2__3__ => (rc0)
+        cisco_pix__firewall__software_version_4__4 => (rc0)
+        cisco_pix__firewall__software_version_4__2__1__ => (rc0)
+        cisco_pix__firewall__software_version_5__3__3__ => (rc0)
+        cisco_pix__firewall__software_version_4__2__2__ => (rc0)
+        cisco_pix__firewall__software_version_3__1 => (rc0)
+        cisco_pix__firewall__software_version_5__2__6__ => (rc0)
+        cisco_pix__firewall__software_version_5__0 => (rc0)
+        cisco_pix__firewall__software_version_6__2__3__ => (rc0)
+        cisco_pix__firewall__software_version_6__1__5__ => (rc0)
+        cisco_pix__firewall__software_version_5__3__2__ => (rc0)
+        cisco_pix__firewall__software_version_5__2__4__ => (rc0)
+        cisco_pix__firewall__software_version_6__1__1__ => (rc0)
+        cisco_pix__firewall__software_version_6__3 => (rc0)
+        cisco_pix__firewall__software_version_6__1__3__ => (rc0)
+        cisco_pix__firewall__software_version_7__2__2__ => (rc0)
+        cisco_pix__firewall__software_version_6__3__1__ => (rc0)
+        cisco_pix__firewall__software_version_5__2 => (rc0)
+        cisco_adaptive__security__appliance__software_version_7__0__6__18 => cisco_adaptive__security__appliance__software_update_any
+        cisco_adaptive__security__appliance__software_version_7__0__6__18 => (rc0)
+        cisco_adaptive__security__appliance__software_version_7__2__2__10__ => cisco_adaptive__security__appliance__software_update_any
+        cisco_adaptive__security__appliance__software_version_7__2__2__10__ => (rc0)
+        cisco_adaptive__security__appliance__software_version_7__0__5__2__ => cisco_adaptive__security__appliance__software_update_any
+        cisco_adaptive__security__appliance__software_version_7__0__5__2__ => (rc0)
+        cisco_adaptive__security__appliance__software_version_7__1__2__24 => cisco_adaptive__security__appliance__software_update_any
+        cisco_adaptive__security__appliance__software_version_7__1__2__24 => (rc0)
+        cisco_adaptive__security__appliance__software_version_7__1__5__ => cisco_adaptive__security__appliance__software_update_any
+        cisco_adaptive__security__appliance__software_version_7__1__5__ => (rc0)
+        cisco_adaptive__security__appliance__software_version_7__2 => cisco_adaptive__security__appliance__software_update_any
+        cisco_adaptive__security__appliance__software_version_7__2 => (rc0)
+        cisco_adaptive__security__appliance__software_version_7__1__1 => cisco_adaptive__security__appliance__software_update_any
+        cisco_adaptive__security__appliance__software_version_7__1__1 => (rc0)
+        cisco_adaptive__security__appliance__software_version_7__0__6__ => cisco_adaptive__security__appliance__software_update_any
+        cisco_adaptive__security__appliance__software_version_7__0__6__ => (rc0)
+        cisco_adaptive__security__appliance__software_version_7__0__5 => cisco_adaptive__security__appliance__software_update_any
+        cisco_adaptive__security__appliance__software_version_7__0__5 => (rc0)
+        cisco_adaptive__security__appliance__software_version_7__0__6__22 => cisco_adaptive__security__appliance__software_update_any
+        cisco_adaptive__security__appliance__software_version_7__0__6__22 => (rc0)
+        cisco_adaptive__security__appliance__software_version_7__2__2__7__ => cisco_adaptive__security__appliance__software_update_any
+        cisco_adaptive__security__appliance__software_version_7__2__2__7__ => (rc0)
+        cisco_adaptive__security__appliance__software_version_7__0__6__26 => cisco_adaptive__security__appliance__software_update_any
+        cisco_adaptive__security__appliance__software_version_7__0__6__26 => (rc0)
+        cisco_adaptive__security__appliance__software_version_7__0__8 => ((cisco_adaptive__security__appliance__software_update_interim & (rc0) & !cisco_adaptive__security__appliance__software_update_any & (rc0)) | (!cisco_adaptive__security__appliance__software_update_interim & (rc0) & cisco_adaptive__security__appliance__software_update_any & (rc0)))
+        cisco_adaptive__security__appliance__software_version_7__0__5__12 => cisco_adaptive__security__appliance__software_update_any
+        cisco_adaptive__security__appliance__software_version_7__0__5__12 => (rc0)
+        cisco_adaptive__security__appliance__software_version_7__1__2__72 => cisco_adaptive__security__appliance__software_update_any
+        cisco_adaptive__security__appliance__software_version_7__1__2__72 => (rc0)
+        cisco_adaptive__security__appliance__software_version_7__0__1__4 => cisco_adaptive__security__appliance__software_update_any
+        cisco_adaptive__security__appliance__software_version_7__0__1__4 => (rc0)
+        cisco_adaptive__security__appliance__software_version_7__1__2__28 => cisco_adaptive__security__appliance__software_update_any
+        cisco_adaptive__security__appliance__software_version_7__1__2__28 => (rc0)
+        cisco_adaptive__security__appliance__software_version_7__2__2__48__ => cisco_adaptive__security__appliance__software_update_any
+        cisco_adaptive__security__appliance__software_version_7__2__2__48__ => (rc0)
+        cisco_adaptive__security__appliance__software_version_7__0__6__7__ => cisco_adaptive__security__appliance__software_update_any
+        cisco_adaptive__security__appliance__software_version_7__0__6__7__ => (rc0)
+        cisco_adaptive__security__appliance__software_version_7__0 => cisco_adaptive__security__appliance__software_update_any
+        cisco_adaptive__security__appliance__software_version_7__0 => (rc0)
+        cisco_adaptive__security__appliance__software_version_6__3__1 => cisco_adaptive__security__appliance__software_update_any
+        cisco_adaptive__security__appliance__software_version_6__3__1 => (rc0)
+        cisco_adaptive__security__appliance__software_version_7__0__8__12 => cisco_adaptive__security__appliance__software_update_any
+        cisco_adaptive__security__appliance__software_version_7__0__8__12 => (rc0)
+        cisco_adaptive__security__appliance__software_version_7__1__2__ => cisco_adaptive__security__appliance__software_update_any
+        cisco_adaptive__security__appliance__software_version_7__1__2__ => (rc0)
+        cisco_adaptive__security__appliance__software_version_7__0__6__4 => cisco_adaptive__security__appliance__software_update_any
+        cisco_adaptive__security__appliance__software_version_7__0__6__4 => (rc0)
+        cisco_adaptive__security__appliance__software_version_7__0__4__ => cisco_adaptive__security__appliance__software_update_any
+        cisco_adaptive__security__appliance__software_version_7__0__4__ => (rc0)
+        cisco_adaptive__security__appliance__software_version_7__2__2__19__ => cisco_adaptive__security__appliance__software_update_any
+        cisco_adaptive__security__appliance__software_version_7__2__2__19__ => (rc0)
+        cisco_adaptive__security__appliance__software_version_7__2__2__8__ => cisco_adaptive__security__appliance__software_update_any
+        cisco_adaptive__security__appliance__software_version_7__2__2__8__ => (rc0)
+        cisco_adaptive__security__appliance__software_version_7__0__4 => cisco_adaptive__security__appliance__software_update_any
+        cisco_adaptive__security__appliance__software_version_7__0__4 => (rc0)
+        cisco_adaptive__security__appliance__software_version_7__2__2__15__ => cisco_adaptive__security__appliance__software_update_any
+        cisco_adaptive__security__appliance__software_version_7__2__2__15__ => (rc0)
+        cisco_adaptive__security__appliance__software_version_7__0__3 => cisco_adaptive__security__appliance__software_update_any
+        cisco_adaptive__security__appliance__software_version_7__0__3 => (rc0)
+        cisco_adaptive__security__appliance__software_version_7__1__2__5__ => cisco_adaptive__security__appliance__software_update_any
+        cisco_adaptive__security__appliance__software_version_7__1__2__5__ => (rc0)
+        cisco_adaptive__security__appliance__software_version_7__2__3__ => cisco_adaptive__security__appliance__software_update_any
+        cisco_adaptive__security__appliance__software_version_7__2__3__ => (rc0)
+        cisco_adaptive__security__appliance__software_version_7__0__0__ => cisco_adaptive__security__appliance__software_update_any
+        cisco_adaptive__security__appliance__software_version_7__0__0__ => (rc0)
+        cisco_adaptive__security__appliance__software_version_7__2__2__16__ => cisco_adaptive__security__appliance__software_update_any
+        cisco_adaptive__security__appliance__software_version_7__2__2__16__ => (rc0)
+        cisco_adaptive__security__appliance__software_version_7__1__2__53 => cisco_adaptive__security__appliance__software_update_any
+        cisco_adaptive__security__appliance__software_version_7__1__2__53 => (rc0)
+        cisco_adaptive__security__appliance__software_version_7__0__8__13 => cisco_adaptive__security__appliance__software_update_any
+        cisco_adaptive__security__appliance__software_version_7__0__8__13 => (rc0)
+        cisco_adaptive__security__appliance__software_version_7__0__7__1 => cisco_adaptive__security__appliance__software_update_any
+        cisco_adaptive__security__appliance__software_version_7__0__7__1 => (rc0)
+        cisco_adaptive__security__appliance__software_version_7__0__2 => cisco_adaptive__security__appliance__software_update_any
+        cisco_adaptive__security__appliance__software_version_7__0__2 => (rc0)
+        cisco_adaptive__security__appliance__software_version_7__1__2__81 => cisco_adaptive__security__appliance__software_update_any
+        cisco_adaptive__security__appliance__software_version_7__1__2__81 => (rc0)
+        cisco_adaptive__security__appliance__software_version_7__0__1__ => cisco_adaptive__security__appliance__software_update_any
+        cisco_adaptive__security__appliance__software_version_7__0__1__ => (rc0)
+        cisco_adaptive__security__appliance__software_version_7__1__2__20 => cisco_adaptive__security__appliance__software_update_any
+        cisco_adaptive__security__appliance__software_version_7__1__2__20 => (rc0)
+        cisco_adaptive__security__appliance__software_version_7__1__2__16 => cisco_adaptive__security__appliance__software_update_any
+        cisco_adaptive__security__appliance__software_version_7__1__2__16 => (rc0)
+        cisco_adaptive__security__appliance__software_version_7__1 => cisco_adaptive__security__appliance__software_update_any
+        cisco_adaptive__security__appliance__software_version_7__1 => (rc0)
+        cisco_adaptive__security__appliance__software_version_7__2__2__18__ => cisco_adaptive__security__appliance__software_update_any
+        cisco_adaptive__security__appliance__software_version_7__2__2__18__ => (rc0)
+        cisco_adaptive__security__appliance__software_version_7__0__6__29 => cisco_adaptive__security__appliance__software_update_any
+        cisco_adaptive__security__appliance__software_version_7__0__6__29 => (rc0)
+        cisco_adaptive__security__appliance__software_version_7__1__2__46 => cisco_adaptive__security__appliance__software_update_any
+        cisco_adaptive__security__appliance__software_version_7__1__2__46 => (rc0)
+        cisco_adaptive__security__appliance__software_version_7__0__8__8 => cisco_adaptive__security__appliance__software_update_any
+        cisco_adaptive__security__appliance__software_version_7__0__8__8 => (rc0)
+        cisco_adaptive__security__appliance__software_version_7__0__7__ => cisco_adaptive__security__appliance__software_update_any
+        cisco_adaptive__security__appliance__software_version_7__0__7__ => (rc0)
+        cisco_adaptive__security__appliance__software_version_7__2__2__14__ => cisco_adaptive__security__appliance__software_update_any
+        cisco_adaptive__security__appliance__software_version_7__2__2__14__ => (rc0)
+        cisco_adaptive__security__appliance__software_version_7__1__2__48__ => cisco_adaptive__security__appliance__software_update_any
+        cisco_adaptive__security__appliance__software_version_7__1__2__48__ => (rc0)
+        cisco_adaptive__security__appliance__software_version_7__2__2__17__ => cisco_adaptive__security__appliance__software_update_any
+        cisco_adaptive__security__appliance__software_version_7__2__2__17__ => (rc0)
+        cisco_adaptive__security__appliance__software_version_7__0__7__4 => cisco_adaptive__security__appliance__software_update_any
+        cisco_adaptive__security__appliance__software_version_7__0__7__4 => (rc0)
+        cisco_adaptive__security__appliance__software_version_7__0__5__ => cisco_adaptive__security__appliance__software_update_any
+        cisco_adaptive__security__appliance__software_version_7__0__5__ => (rc0)
+        cisco_adaptive__security__appliance__software_version_7__0__8__2 => cisco_adaptive__security__appliance__software_update_any
+        cisco_adaptive__security__appliance__software_version_7__0__8__2 => (rc0)
+        cisco_adaptive__security__appliance__software_version_7__0__1 => cisco_adaptive__security__appliance__software_update_any
+        cisco_adaptive__security__appliance__software_version_7__0__1 => (rc0)
+        cisco_adaptive__security__appliance__software_version_7__1__2__27__ => cisco_adaptive__security__appliance__software_update_any
+        cisco_adaptive__security__appliance__software_version_7__1__2__27__ => (rc0)
+        cisco_adaptive__security__appliance__software_version_7__0__7 => cisco_adaptive__security__appliance__software_update_any
+        cisco_adaptive__security__appliance__software_version_7__0__7 => (rc0)
+        cisco_adaptive__security__appliance__software_version_7__0__6 => cisco_adaptive__security__appliance__software_update_any
+        cisco_adaptive__security__appliance__software_version_7__0__6 => (rc0)
+        cisco_adaptive__security__appliance__software_version_7__1__2__49__ => cisco_adaptive__security__appliance__software_update_any
+        cisco_adaptive__security__appliance__software_version_7__1__2__49__ => (rc0)
+        cisco_adaptive__security__appliance__software_version_7__0__8__ => cisco_adaptive__security__appliance__software_update_any
+        cisco_adaptive__security__appliance__software_version_7__0__8__ => (rc0)
+        cisco_adaptive__security__appliance__software_version_7__1__2__64 => cisco_adaptive__security__appliance__software_update_any
+        cisco_adaptive__security__appliance__software_version_7__1__2__64 => (rc0)
+        cisco_adaptive__security__appliance__software_version_7__0__7__9 => cisco_adaptive__security__appliance__software_update_any
+        cisco_adaptive__security__appliance__software_version_7__0__7__9 => (rc0)
+        cisco_adaptive__security__appliance__software_version_7__1__2__49 => cisco_adaptive__security__appliance__software_update_any
+        cisco_adaptive__security__appliance__software_version_7__1__2__49 => (rc0)
+        cisco_adaptive__security__appliance__software_version_7__2__1__ => cisco_adaptive__security__appliance__software_update_any
+        cisco_adaptive__security__appliance__software_version_7__2__1__ => (rc0)
+        cisco_adaptive__security__appliance__software_version_7__1__2__61 => cisco_adaptive__security__appliance__software_update_any
+        cisco_adaptive__security__appliance__software_version_7__1__2__61 => (rc0)
+        cisco_adaptive__security__appliance__software_version_any => cisco_adaptive__security__appliance__software_update_any
+        cisco_adaptive__security__appliance__software_version_any => (rc0)
+        cisco_adaptive__security__appliance__software_version_7__0__2__ => cisco_adaptive__security__appliance__software_update_any
+        cisco_adaptive__security__appliance__software_version_7__0__2__ => (rc0)
+        cisco_adaptive__security__appliance__software_version_7__1__2 => cisco_adaptive__security__appliance__software_update_any
+        cisco_adaptive__security__appliance__software_version_7__1__2 => (rc0)
+        cisco_adaptive__security__appliance__software_version_8__0__3__ => cisco_adaptive__security__appliance__software_update_any
+        cisco_adaptive__security__appliance__software_version_8__0__3__ => (rc0)
+        cisco_adaptive__security__appliance__software_version_7__2__2__5__ => cisco_adaptive__security__appliance__software_update_any
+        cisco_adaptive__security__appliance__software_version_7__2__2__5__ => (rc0)
+        cisco_adaptive__security__appliance__software_version_7__0__7__12 => cisco_adaptive__security__appliance__software_update_any
+        cisco_adaptive__security__appliance__software_version_7__0__7__12 => (rc0)
+        cisco_adaptive__security__appliance__software_version_7__0__6__8 => cisco_adaptive__security__appliance__software_update_any
+        cisco_adaptive__security__appliance__software_version_7__0__6__8 => (rc0)
+        cisco_adaptive__security__appliance__software_version_7__1__2__38 => cisco_adaptive__security__appliance__software_update_any
+        cisco_adaptive__security__appliance__software_version_7__1__2__38 => (rc0)
+        cisco_adaptive__security__appliance__software_version_7__0__4__3 => cisco_adaptive__security__appliance__software_update_any
+        cisco_adaptive__security__appliance__software_version_7__0__4__3 => (rc0)
+        cisco_adaptive__security__appliance__software_version_7__2__1__22__ => cisco_adaptive__security__appliance__software_update_any
+        cisco_adaptive__security__appliance__software_version_7__2__1__22__ => (rc0)
+        cisco_adaptive__security__appliance__software_version_7__1__2__42 => cisco_adaptive__security__appliance__software_update_any
+        cisco_adaptive__security__appliance__software_version_7__1__2__42 => (rc0)
+        cisco_adaptive__security__appliance__software_version_7__0__4__2 => cisco_adaptive__security__appliance__software_update_any
+        cisco_adaptive__security__appliance__software_version_7__0__4__2 => (rc0)
+        cisco_adaptive__security__appliance__software_version_7__0__6__32 => cisco_adaptive__security__appliance__software_update_any
+        cisco_adaptive__security__appliance__software_version_7__0__6__32 => (rc0)
+        cisco_adaptive__security__appliance__software_version_7__2__2__ => cisco_adaptive__security__appliance__software_update_any
+        cisco_adaptive__security__appliance__software_version_7__2__2__ => (rc0)

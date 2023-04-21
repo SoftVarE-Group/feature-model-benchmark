@@ -1,0 +1,228 @@
+features
+        CVE_2015_9172
+                optional
+                        configs
+                                alternative
+                                        rc0
+                                                mandatory
+                                                        rc0_qualcomm
+                                                                mandatory
+                                                                        rc0_qualcomm_mdm9206
+                                        rc1
+                                                mandatory
+                                                        rc1_qualcomm
+                                                                mandatory
+                                                                        rc1_qualcomm_mdm9650
+                                        rc2
+                                                mandatory
+                                                        rc2_qualcomm
+                                                                mandatory
+                                                                        rc2_qualcomm_sd__210
+                                        rc3
+                                                mandatory
+                                                        rc3_qualcomm
+                                                                mandatory
+                                                                        rc3_qualcomm_sd__212
+                                        rc4
+                                                mandatory
+                                                        rc4_qualcomm
+                                                                mandatory
+                                                                        rc4_qualcomm_sd__205
+                                        rc5
+                                                mandatory
+                                                        rc5_qualcomm
+                                                                mandatory
+                                                                        rc5_qualcomm_sd__400
+                                        rc6
+                                                mandatory
+                                                        rc6_qualcomm
+                                                                mandatory
+                                                                        rc6_qualcomm_sd__410
+                                        rc7
+                                                mandatory
+                                                        rc7_qualcomm
+                                                                mandatory
+                                                                        rc7_qualcomm_sd__412
+                                        rc8
+                                                mandatory
+                                                        rc8_qualcomm
+                                                                mandatory
+                                                                        rc8_qualcomm_sd__425
+                                        rc9
+                                                mandatory
+                                                        rc9_qualcomm
+                                                                mandatory
+                                                                        rc9_qualcomm_sd__430
+                                        rc10
+                                                mandatory
+                                                        rc10_qualcomm
+                                                                mandatory
+                                                                        rc10_qualcomm_sd__450
+                                        rc11
+                                                mandatory
+                                                        rc11_qualcomm
+                                                                mandatory
+                                                                        rc11_qualcomm_sd__615
+                                        rc12
+                                                mandatory
+                                                        rc12_qualcomm
+                                                                mandatory
+                                                                        rc12_qualcomm_sd__616
+                                        rc13
+                                                mandatory
+                                                        rc13_qualcomm
+                                                                mandatory
+                                                                        rc13_qualcomm_sd__415
+                                        rc14
+                                                mandatory
+                                                        rc14_qualcomm
+                                                                mandatory
+                                                                        rc14_qualcomm_sd__617
+                                        rc15
+                                                mandatory
+                                                        rc15_qualcomm
+                                                                mandatory
+                                                                        rc15_qualcomm_sd__625
+                                        rc16
+                                                mandatory
+                                                        rc16_qualcomm
+                                                                mandatory
+                                                                        rc16_qualcomm_sd__650
+                                        rc17
+                                                mandatory
+                                                        rc17_qualcomm
+                                                                mandatory
+                                                                        rc17_qualcomm_sd__652
+                                        rc18
+                                                mandatory
+                                                        rc18_qualcomm
+                                                                mandatory
+                                                                        rc18_qualcomm_sd__800
+                                        rc19
+                                                mandatory
+                                                        rc19_qualcomm
+                                                                mandatory
+                                                                        rc19_qualcomm_sd__808
+                                        rc20
+                                                mandatory
+                                                        rc20_qualcomm
+                                                                mandatory
+                                                                        rc20_qualcomm_sd__810
+                                        rc21
+                                                mandatory
+                                                        rc21_qualcomm
+                                                                mandatory
+                                                                        rc21_qualcomm_sd__820
+                                        rc22
+                                                mandatory
+                                                        rc22_qualcomm
+                                                                mandatory
+                                                                        rc22_qualcomm_sd__835
+                                        rc23
+                                                mandatory
+                                                        rc23_qualcomm
+                                                                mandatory
+                                                                        rc23_qualcomm_sd__845
+                                        rc24
+                                                mandatory
+                                                        rc24_qualcomm
+                                                                mandatory
+                                                                        rc24_qualcomm_sd__820a
+                                        rc25
+                                                mandatory
+                                                        rc25_qualcomm
+                                                                mandatory
+                                                                        rc25_qualcomm_sd__850
+                mandatory
+                        types
+                                mandatory
+                                        operating_system
+                        sources
+                                mandatory
+                                        nvd
+                        exploits
+                                optional
+                                        direct
+                                        indirect
+                        qualcomm
+                                alternative
+                                        qualcomm_mdm9206__firmware
+                                        qualcomm_mdm9650__firmware
+                                        qualcomm_sd__210__firmware
+                                        qualcomm_sd__212__firmware
+                                        qualcomm_sd__205__firmware
+                                        qualcomm_sd__400__firmware
+                                        qualcomm_sd__410__firmware
+                                        qualcomm_sd__412__firmware
+                                        qualcomm_sd__425__firmware
+                                        qualcomm_sd__430__firmware
+                                        qualcomm_sd__450__firmware
+                                        qualcomm_sd__615__firmware
+                                        qualcomm_sd__616__firmware
+                                        qualcomm_sd__415__firmware
+                                        qualcomm_sd__617__firmware
+                                        qualcomm_sd__625__firmware
+                                        qualcomm_sd__650__firmware
+                                        qualcomm_sd__652__firmware
+                                        qualcomm_sd__800__firmware
+                                        qualcomm_sd__808__firmware
+                                        qualcomm_sd__810__firmware
+                                        qualcomm_sd__820__firmware
+                                        qualcomm_sd__835__firmware
+                                        qualcomm_sd__845__firmware
+                                        qualcomm_sd__820a__firmware
+                                        qualcomm_sd__850__firmware
+
+constraints
+        qualcomm_mdm9206__firmware => operating_system
+        qualcomm_mdm9650__firmware => operating_system
+        qualcomm_sd__210__firmware => operating_system
+        qualcomm_sd__212__firmware => operating_system
+        qualcomm_sd__205__firmware => operating_system
+        qualcomm_sd__400__firmware => operating_system
+        qualcomm_sd__410__firmware => operating_system
+        qualcomm_sd__412__firmware => operating_system
+        qualcomm_sd__425__firmware => operating_system
+        qualcomm_sd__430__firmware => operating_system
+        qualcomm_sd__450__firmware => operating_system
+        qualcomm_sd__615__firmware => operating_system
+        qualcomm_sd__616__firmware => operating_system
+        qualcomm_sd__415__firmware => operating_system
+        qualcomm_sd__617__firmware => operating_system
+        qualcomm_sd__625__firmware => operating_system
+        qualcomm_sd__650__firmware => operating_system
+        qualcomm_sd__652__firmware => operating_system
+        qualcomm_sd__800__firmware => operating_system
+        qualcomm_sd__808__firmware => operating_system
+        qualcomm_sd__810__firmware => operating_system
+        qualcomm_sd__820__firmware => operating_system
+        qualcomm_sd__835__firmware => operating_system
+        qualcomm_sd__845__firmware => operating_system
+        qualcomm_sd__820a__firmware => operating_system
+        qualcomm_sd__850__firmware => operating_system
+        qualcomm_mdm9206__firmware => (rc0)
+        qualcomm_mdm9650__firmware => (rc1)
+        qualcomm_sd__210__firmware => (rc2)
+        qualcomm_sd__212__firmware => (rc3)
+        qualcomm_sd__205__firmware => (rc4)
+        qualcomm_sd__400__firmware => (rc5)
+        qualcomm_sd__410__firmware => (rc6)
+        qualcomm_sd__412__firmware => (rc7)
+        qualcomm_sd__425__firmware => (rc8)
+        qualcomm_sd__430__firmware => (rc9)
+        qualcomm_sd__450__firmware => (rc10)
+        qualcomm_sd__615__firmware => (rc11)
+        qualcomm_sd__616__firmware => (rc12)
+        qualcomm_sd__415__firmware => (rc13)
+        qualcomm_sd__617__firmware => (rc14)
+        qualcomm_sd__625__firmware => (rc15)
+        qualcomm_sd__650__firmware => (rc16)
+        qualcomm_sd__652__firmware => (rc17)
+        qualcomm_sd__800__firmware => (rc18)
+        qualcomm_sd__808__firmware => (rc19)
+        qualcomm_sd__810__firmware => (rc20)
+        qualcomm_sd__820__firmware => (rc21)
+        qualcomm_sd__835__firmware => (rc22)
+        qualcomm_sd__845__firmware => (rc23)
+        qualcomm_sd__820a__firmware => (rc24)
+        qualcomm_sd__850__firmware => (rc25)

@@ -1,0 +1,519 @@
+features
+        CVE_2011_1307
+                mandatory
+                        types
+                                mandatory
+                                        application
+                        sources
+                                mandatory
+                                        nvd
+                        exploits
+                                optional
+                                        direct
+                                        indirect
+                        ibm
+                                mandatory
+                                        ibm_websphere__application__server
+                                                mandatory
+                                                        ibm_websphere__application__server_version
+                                                                alternative
+                                                                        ibm_websphere__application__server_version_6__1__0__7
+                                                                        ibm_websphere__application__server_version_5__1__1__5
+                                                                        ibm_websphere__application__server_version_6__1__0__14
+                                                                        ibm_websphere__application__server_version_6__1__0__29
+                                                                        ibm_websphere__application__server_version_5__1__1__3
+                                                                        ibm_websphere__application__server_version_6__0__2__1
+                                                                        ibm_websphere__application__server_version_6__1__14
+                                                                        ibm_websphere__application__server_version_any
+                                                                        ibm_websphere__application__server_version_5__0__2__5
+                                                                        ibm_websphere__application__server_version_6__1__0__25
+                                                                        ibm_websphere__application__server_version_5__0__2__7
+                                                                        ibm_websphere__application__server_version_5__0__2__2
+                                                                        ibm_websphere__application__server_version_6__0__2__30
+                                                                        ibm_websphere__application__server_version_5__1__1__6
+                                                                        ibm_websphere__application__server_version_6__0__2__29
+                                                                        ibm_websphere__application__server_version_6__0__2__5
+                                                                        ibm_websphere__application__server_version_7__0__0__4
+                                                                        ibm_websphere__application__server_version_5__1__1__4
+                                                                        ibm_websphere__application__server_version_6__0__1__5
+                                                                        ibm_websphere__application__server_version_6__0__2
+                                                                        ibm_websphere__application__server_version_6__1__0__12
+                                                                        ibm_websphere__application__server_version_5__1__1__16
+                                                                        ibm_websphere__application__server_version_5__1__1__1
+                                                                        ibm_websphere__application__server_version_5__1__0
+                                                                        ibm_websphere__application__server_version_6__0__0__2
+                                                                        ibm_websphere__application__server_version_7__0__0__2
+                                                                        ibm_websphere__application__server_version_6__1__0__0
+                                                                        ibm_websphere__application__server_version_6__1__0__41
+                                                                        ibm_websphere__application__server_version_5__0__2__9
+                                                                        ibm_websphere__application__server_version_5__0__2__8
+                                                                        ibm_websphere__application__server_version_5__1__1__17
+                                                                        ibm_websphere__application__server_version_5__1__0__3
+                                                                        ibm_websphere__application__server_version_6__0__2__37
+                                                                        ibm_websphere__application__server_version_5__0
+                                                                        ibm_websphere__application__server_version_3__52
+                                                                        ibm_websphere__application__server_version_5__0__2
+                                                                        ibm_websphere__application__server_version_6__0__1__13
+                                                                        ibm_websphere__application__server_version_6__0__2__3
+                                                                        ibm_websphere__application__server_version_6__0__2__24
+                                                                        ibm_websphere__application__server_version_4__0__3
+                                                                        ibm_websphere__application__server_version_7__0__0__5
+                                                                        ibm_websphere__application__server_version_5__1__1
+                                                                        ibm_websphere__application__server_version_6__0__2__11
+                                                                        ibm_websphere__application__server_version_5__0__2__3
+                                                                        ibm_websphere__application__server_version_6__0__2__35
+                                                                        ibm_websphere__application__server_version_3__0__2__3
+                                                                        ibm_websphere__application__server_version_7__0__0__6
+                                                                        ibm_websphere__application__server_version_3__0__2__2
+                                                                        ibm_websphere__application__server_version_6__1__0__37
+                                                                        ibm_websphere__application__server_version_6__1__0__31
+                                                                        ibm_websphere__application__server_version_7__0__0__10
+                                                                        ibm_websphere__application__server_version_6__1__0__2
+                                                                        ibm_websphere__application__server_version_6__1__0__5
+                                                                        ibm_websphere__application__server_version_3__5__3
+                                                                        ibm_websphere__application__server_version_6__0__1__7
+                                                                        ibm_websphere__application__server_version_6__0__2__13
+                                                                        ibm_websphere__application__server_version_6__0__2__39
+                                                                        ibm_websphere__application__server_version_6__1__0__1
+                                                                        ibm_websphere__application__server_version_6__1__0__47
+                                                                        ibm_websphere__application__server_version_6__1__0__45
+                                                                        ibm_websphere__application__server_version_5__0__2__1
+                                                                        ibm_websphere__application__server_version_6__0__1__3
+                                                                        ibm_websphere__application__server_version_6__0__2__33
+                                                                        ibm_websphere__application__server_version_4__0__4
+                                                                        ibm_websphere__application__server_version_6__0__1__9
+                                                                        ibm_websphere__application__server_version_5__1__1__15
+                                                                        ibm_websphere__application__server_version_6__0__2__8
+                                                                        ibm_websphere__application__server_version_3__0__21
+                                                                        ibm_websphere__application__server_version_5__1__1__10
+                                                                        ibm_websphere__application__server_version_5__1__1__8
+                                                                        ibm_websphere__application__server_version_6__1__0__27
+                                                                        ibm_websphere__application__server_version_6__1__0__33
+                                                                        ibm_websphere__application__server_version_5__0__0
+                                                                        ibm_websphere__application__server_version_3__0__2__1
+                                                                        ibm_websphere__application__server_version_7__0__0__13
+                                                                        ibm_websphere__application__server_version_5__0__2__11
+                                                                        ibm_websphere__application__server_version_6__0__2__43
+                                                                        ibm_websphere__application__server_version_5__1__1__14
+                                                                        ibm_websphere__application__server_version_6__1__0__35
+                                                                        ibm_websphere__application__server_version_3__0__2__4
+                                                                        ibm_websphere__application__server_version_6__0__2__15
+                                                                        ibm_websphere__application__server_version_5__1__0__2
+                                                                        ibm_websphere__application__server_version_6__1__5
+                                                                        ibm_websphere__application__server_version_6__1__0__21
+                                                                        ibm_websphere__application__server_version_5__02__15
+                                                                        ibm_websphere__application__server_version_6__0__2__7
+                                                                        ibm_websphere__application__server_version_6__1__0__9
+                                                                        ibm_websphere__application__server_version_6__0__2__2
+                                                                        ibm_websphere__application__server_version_6__0__2__28
+                                                                        ibm_websphere__application__server_version_6__1__13
+                                                                        ibm_websphere__application__server_version_6__1__0__11
+                                                                        ibm_websphere__application__server_version_6__0__1__1
+                                                                        ibm_websphere__application__server_version_6__0__2__6
+                                                                        ibm_websphere__application__server_version_5__1__1__9
+                                                                        ibm_websphere__application__server_version_3__5__2
+                                                                        ibm_websphere__application__server_version_5__0__2__13
+                                                                        ibm_websphere__application__server_version_6__1__0
+                                                                        ibm_websphere__application__server_version_5__1__0__5
+                                                                        ibm_websphere__application__server_version_6__1__0__24
+                                                                        ibm_websphere__application__server_version_6__0__2__4
+                                                                        ibm_websphere__application__server_version_6__0__1__11
+                                                                        ibm_websphere__application__server_version_3__5
+                                                                        ibm_websphere__application__server_version_6__1__3
+                                                                        ibm_websphere__application__server_version_6__0__1
+                                                                        ibm_websphere__application__server_version_3__5__1
+                                                                        ibm_websphere__application__server_version_6__1__0__3
+                                                                        ibm_websphere__application__server_version_5__0__2__6
+                                                                        ibm_websphere__application__server_version_6__1__7
+                                                                        ibm_websphere__application__server_version_7__0__0__1
+                                                                        ibm_websphere__application__server_version_7__0__0__0
+                                                                        ibm_websphere__application__server_version_7__0
+                                                                        ibm_websphere__application__server_version_4__0__1
+                                                                        ibm_websphere__application__server_version_7__0__0__9
+                                                                        ibm_websphere__application__server_version_5__1__1__11
+                                                                        ibm_websphere__application__server_version_5__1__1__12
+                                                                        ibm_websphere__application__server_version_2__0
+                                                                        ibm_websphere__application__server_version_7__0__0__7
+                                                                        ibm_websphere__application__server_version_6__0__0__3
+                                                                        ibm_websphere__application__server_version_6__1__0__43
+                                                                        ibm_websphere__application__server_version_5__1__1__7
+                                                                        ibm_websphere__application__server_version_7__0__0__8
+                                                                        ibm_websphere__application__server_version_6__1__6
+                                                                        ibm_websphere__application__server_version_6__0__2__17
+                                                                        ibm_websphere__application__server_version_6__1__0__19
+                                                                        ibm_websphere__application__server_version_3__0__0__3
+                                                                        ibm_websphere__application__server_version_6__1__0__13
+                                                                        ibm_websphere__application__server_version_5__1__1__2
+                                                                        ibm_websphere__application__server_version_7__0__0__12
+                                                                        ibm_websphere__application__server_version_3__0
+                                                                        ibm_websphere__application__server_version_5__0__2__16
+                                                                        ibm_websphere__application__server_version_6__1__0__17
+                                                                        ibm_websphere__application__server_version_6__0__2__31
+                                                                        ibm_websphere__application__server_version_5__0__2__10
+                                                                        ibm_websphere__application__server_version_3__0__2
+                                                                        ibm_websphere__application__server_version_6__0__2__22
+                                                                        ibm_websphere__application__server_version_6__0__2__27
+                                                                        ibm_websphere__application__server_version_6__0__2__32
+                                                                        ibm_websphere__application__server_version_6__0__2__41
+                                                                        ibm_websphere__application__server_version_6__1__0__23
+                                                                        ibm_websphere__application__server_version_6__0__2__19
+                                                                        ibm_websphere__application__server_version_5__0__1
+                                                                        ibm_websphere__application__server_version_6__0__2__25
+                                                                        ibm_websphere__application__server_version_6__1__0__15
+                                                                        ibm_websphere__application__server_version_7__0__0__3
+                                                                        ibm_websphere__application__server_version_6__0__1__15
+                                                                        ibm_websphere__application__server_version_6__0__2__9
+                                                                        ibm_websphere__application__server_version_5__0__2__15
+                                                                        ibm_websphere__application__server_version_6__0__0__1
+                                                                        ibm_websphere__application__server_version_6__0
+                                                                        ibm_websphere__application__server_version_6__1
+                                                                        ibm_websphere__application__server_version_6__0__2__23
+                                                                        ibm_websphere__application__server_version_4__0__2
+                                                                        ibm_websphere__application__server_version_6__1__1
+                                                                        ibm_websphere__application__server_version_5__1__0__4
+                                                                        ibm_websphere__application__server_version_5__1__1__13
+                                                                        ibm_websphere__application__server_version_5__0__2__4
+                                                                        ibm_websphere__application__server_version_5__0__2__12
+                                                                        ibm_websphere__application__server_version_6__0__1__17
+                                                                        ibm_websphere__application__server_version_6__1__0__39
+                                                                        ibm_websphere__application__server_version_7__0__0__11
+                                                                        ibm_websphere__application__server_version_3__0__9__20
+                                                                        ibm_websphere__application__server_version_5__0__2__14
+                                                                        ibm_websphere__application__server_version_6__0__1__2
+                                                        ibm_websphere__application__server_sw__edition
+                                                                alternative
+                                                                        ibm_websphere__application__server_sw__edition_library
+                                                                        ibm_websphere__application__server_sw__edition_hypervisor
+                                                                        ibm_websphere__application__server_sw__edition_liberty
+                                                                        ibm_websphere__application__server_sw__edition_any
+                                                        ibm_websphere__application__server_target__sw
+                                                                alternative
+                                                                        ibm_websphere__application__server_target__sw_any
+                                                                        ibm_websphere__application__server_target__sw_z__os
+
+constraints
+        ibm_websphere__application__server => application
+        ibm_websphere__application__server_version_6__1__0__7 => ibm_websphere__application__server_sw__edition_any
+        ibm_websphere__application__server_version_6__1__0__7 => ibm_websphere__application__server_target__sw_any
+        ibm_websphere__application__server_version_5__1__1__5 => ibm_websphere__application__server_sw__edition_any
+        ibm_websphere__application__server_version_5__1__1__5 => ibm_websphere__application__server_target__sw_any
+        ibm_websphere__application__server_version_6__1__0__14 => ibm_websphere__application__server_sw__edition_any
+        ibm_websphere__application__server_version_6__1__0__14 => ibm_websphere__application__server_target__sw_any
+        ibm_websphere__application__server_version_6__1__0__29 => ibm_websphere__application__server_sw__edition_any
+        ibm_websphere__application__server_version_6__1__0__29 => ibm_websphere__application__server_target__sw_any
+        ibm_websphere__application__server_version_5__1__1__3 => ibm_websphere__application__server_sw__edition_any
+        ibm_websphere__application__server_version_5__1__1__3 => ibm_websphere__application__server_target__sw_any
+        ibm_websphere__application__server_version_6__0__2__1 => ibm_websphere__application__server_sw__edition_any
+        ibm_websphere__application__server_version_6__0__2__1 => ibm_websphere__application__server_target__sw_any
+        ibm_websphere__application__server_version_6__1__14 => ibm_websphere__application__server_sw__edition_any
+        ibm_websphere__application__server_version_6__1__14 => ibm_websphere__application__server_target__sw_any
+        ibm_websphere__application__server_version_any => ((ibm_websphere__application__server_sw__edition_library & ibm_websphere__application__server_target__sw_any & !ibm_websphere__application__server_sw__edition_liberty & ibm_websphere__application__server_target__sw_any) | (!ibm_websphere__application__server_sw__edition_library & ibm_websphere__application__server_target__sw_any & ibm_websphere__application__server_sw__edition_liberty & ibm_websphere__application__server_target__sw_any))
+        ibm_websphere__application__server_version_5__0__2__5 => ibm_websphere__application__server_sw__edition_any
+        ibm_websphere__application__server_version_5__0__2__5 => ibm_websphere__application__server_target__sw_any
+        ibm_websphere__application__server_version_6__1__0__25 => ibm_websphere__application__server_sw__edition_any
+        ibm_websphere__application__server_version_6__1__0__25 => ibm_websphere__application__server_target__sw_any
+        ibm_websphere__application__server_version_5__0__2__7 => ibm_websphere__application__server_sw__edition_any
+        ibm_websphere__application__server_version_5__0__2__7 => ibm_websphere__application__server_target__sw_any
+        ibm_websphere__application__server_version_5__0__2__2 => ibm_websphere__application__server_sw__edition_any
+        ibm_websphere__application__server_version_5__0__2__2 => ibm_websphere__application__server_target__sw_any
+        ibm_websphere__application__server_version_6__0__2__30 => ibm_websphere__application__server_sw__edition_any
+        ibm_websphere__application__server_version_6__0__2__30 => ibm_websphere__application__server_target__sw_any
+        ibm_websphere__application__server_version_5__1__1__6 => ibm_websphere__application__server_sw__edition_any
+        ibm_websphere__application__server_version_5__1__1__6 => ibm_websphere__application__server_target__sw_any
+        ibm_websphere__application__server_version_6__0__2__29 => ibm_websphere__application__server_sw__edition_any
+        ibm_websphere__application__server_version_6__0__2__29 => ibm_websphere__application__server_target__sw_any
+        ibm_websphere__application__server_version_6__0__2__5 => ibm_websphere__application__server_sw__edition_any
+        ibm_websphere__application__server_version_6__0__2__5 => ibm_websphere__application__server_target__sw_any
+        ibm_websphere__application__server_version_7__0__0__4 => ibm_websphere__application__server_sw__edition_any
+        ibm_websphere__application__server_version_7__0__0__4 => ibm_websphere__application__server_target__sw_any
+        ibm_websphere__application__server_version_5__1__1__4 => ibm_websphere__application__server_sw__edition_any
+        ibm_websphere__application__server_version_5__1__1__4 => ibm_websphere__application__server_target__sw_any
+        ibm_websphere__application__server_version_6__0__1__5 => ibm_websphere__application__server_sw__edition_any
+        ibm_websphere__application__server_version_6__0__1__5 => ibm_websphere__application__server_target__sw_any
+        ibm_websphere__application__server_version_6__0__2 => ibm_websphere__application__server_sw__edition_any
+        ibm_websphere__application__server_version_6__0__2 => ibm_websphere__application__server_target__sw_any
+        ibm_websphere__application__server_version_6__1__0__12 => ibm_websphere__application__server_sw__edition_any
+        ibm_websphere__application__server_version_6__1__0__12 => ibm_websphere__application__server_target__sw_any
+        ibm_websphere__application__server_version_5__1__1__16 => ibm_websphere__application__server_sw__edition_any
+        ibm_websphere__application__server_version_5__1__1__16 => ibm_websphere__application__server_target__sw_any
+        ibm_websphere__application__server_version_5__1__1__1 => ibm_websphere__application__server_sw__edition_any
+        ibm_websphere__application__server_version_5__1__1__1 => ibm_websphere__application__server_target__sw_any
+        ibm_websphere__application__server_version_5__1__0 => ibm_websphere__application__server_sw__edition_any
+        ibm_websphere__application__server_version_5__1__0 => ibm_websphere__application__server_target__sw_any
+        ibm_websphere__application__server_version_6__0__0__2 => ibm_websphere__application__server_sw__edition_any
+        ibm_websphere__application__server_version_6__0__0__2 => ibm_websphere__application__server_target__sw_any
+        ibm_websphere__application__server_version_7__0__0__2 => ibm_websphere__application__server_sw__edition_any
+        ibm_websphere__application__server_version_7__0__0__2 => ibm_websphere__application__server_target__sw_any
+        ibm_websphere__application__server_version_6__1__0__0 => ibm_websphere__application__server_sw__edition_any
+        ibm_websphere__application__server_version_6__1__0__0 => ibm_websphere__application__server_target__sw_any
+        ibm_websphere__application__server_version_6__1__0__41 => ibm_websphere__application__server_sw__edition_any
+        ibm_websphere__application__server_version_6__1__0__41 => ibm_websphere__application__server_target__sw_any
+        ibm_websphere__application__server_version_5__0__2__9 => ibm_websphere__application__server_sw__edition_any
+        ibm_websphere__application__server_version_5__0__2__9 => ibm_websphere__application__server_target__sw_any
+        ibm_websphere__application__server_version_5__0__2__8 => ibm_websphere__application__server_sw__edition_any
+        ibm_websphere__application__server_version_5__0__2__8 => ibm_websphere__application__server_target__sw_any
+        ibm_websphere__application__server_version_5__1__1__17 => ibm_websphere__application__server_sw__edition_any
+        ibm_websphere__application__server_version_5__1__1__17 => ibm_websphere__application__server_target__sw_any
+        ibm_websphere__application__server_version_5__1__0__3 => ibm_websphere__application__server_sw__edition_any
+        ibm_websphere__application__server_version_5__1__0__3 => ibm_websphere__application__server_target__sw_any
+        ibm_websphere__application__server_version_6__0__2__37 => ibm_websphere__application__server_sw__edition_any
+        ibm_websphere__application__server_version_6__0__2__37 => ibm_websphere__application__server_target__sw_any
+        ibm_websphere__application__server_version_5__0 => ibm_websphere__application__server_sw__edition_any
+        ibm_websphere__application__server_version_5__0 => ibm_websphere__application__server_target__sw_any
+        ibm_websphere__application__server_version_3__52 => ibm_websphere__application__server_sw__edition_any
+        ibm_websphere__application__server_version_3__52 => ibm_websphere__application__server_target__sw_any
+        ibm_websphere__application__server_version_5__0__2 => ibm_websphere__application__server_sw__edition_any
+        ibm_websphere__application__server_version_5__0__2 => ibm_websphere__application__server_target__sw_any
+        ibm_websphere__application__server_version_6__0__1__13 => ibm_websphere__application__server_sw__edition_any
+        ibm_websphere__application__server_version_6__0__1__13 => ibm_websphere__application__server_target__sw_any
+        ibm_websphere__application__server_version_6__0__2__3 => ibm_websphere__application__server_sw__edition_any
+        ibm_websphere__application__server_version_6__0__2__3 => ibm_websphere__application__server_target__sw_any
+        ibm_websphere__application__server_version_6__0__2__24 => ibm_websphere__application__server_sw__edition_any
+        ibm_websphere__application__server_version_6__0__2__24 => ibm_websphere__application__server_target__sw_any
+        ibm_websphere__application__server_version_4__0__3 => ibm_websphere__application__server_sw__edition_any
+        ibm_websphere__application__server_version_4__0__3 => ibm_websphere__application__server_target__sw_any
+        ibm_websphere__application__server_version_7__0__0__5 => ibm_websphere__application__server_sw__edition_any
+        ibm_websphere__application__server_version_7__0__0__5 => ibm_websphere__application__server_target__sw_any
+        ibm_websphere__application__server_version_5__1__1 => ibm_websphere__application__server_sw__edition_any
+        ibm_websphere__application__server_version_5__1__1 => ibm_websphere__application__server_target__sw_any
+        ibm_websphere__application__server_version_6__0__2__11 => ibm_websphere__application__server_sw__edition_any
+        ibm_websphere__application__server_version_6__0__2__11 => ibm_websphere__application__server_target__sw_any
+        ibm_websphere__application__server_version_5__0__2__3 => ibm_websphere__application__server_sw__edition_any
+        ibm_websphere__application__server_version_5__0__2__3 => ibm_websphere__application__server_target__sw_any
+        ibm_websphere__application__server_version_6__0__2__35 => ibm_websphere__application__server_sw__edition_any
+        ibm_websphere__application__server_version_6__0__2__35 => ibm_websphere__application__server_target__sw_any
+        ibm_websphere__application__server_version_3__0__2__3 => ibm_websphere__application__server_sw__edition_any
+        ibm_websphere__application__server_version_3__0__2__3 => ibm_websphere__application__server_target__sw_any
+        ibm_websphere__application__server_version_7__0__0__6 => ibm_websphere__application__server_sw__edition_any
+        ibm_websphere__application__server_version_7__0__0__6 => ibm_websphere__application__server_target__sw_any
+        ibm_websphere__application__server_version_3__0__2__2 => ibm_websphere__application__server_sw__edition_any
+        ibm_websphere__application__server_version_3__0__2__2 => ibm_websphere__application__server_target__sw_any
+        ibm_websphere__application__server_version_6__1__0__37 => ibm_websphere__application__server_sw__edition_any
+        ibm_websphere__application__server_version_6__1__0__37 => ibm_websphere__application__server_target__sw_any
+        ibm_websphere__application__server_version_6__1__0__31 => ibm_websphere__application__server_sw__edition_any
+        ibm_websphere__application__server_version_6__1__0__31 => ibm_websphere__application__server_target__sw_any
+        ibm_websphere__application__server_version_7__0__0__10 => ibm_websphere__application__server_sw__edition_any
+        ibm_websphere__application__server_version_7__0__0__10 => ibm_websphere__application__server_target__sw_any
+        ibm_websphere__application__server_version_6__1__0__2 => ibm_websphere__application__server_sw__edition_any
+        ibm_websphere__application__server_version_6__1__0__2 => ibm_websphere__application__server_target__sw_any
+        ibm_websphere__application__server_version_6__1__0__5 => ibm_websphere__application__server_sw__edition_any
+        ibm_websphere__application__server_version_6__1__0__5 => ibm_websphere__application__server_target__sw_any
+        ibm_websphere__application__server_version_3__5__3 => ibm_websphere__application__server_sw__edition_any
+        ibm_websphere__application__server_version_3__5__3 => ibm_websphere__application__server_target__sw_any
+        ibm_websphere__application__server_version_6__0__1__7 => ibm_websphere__application__server_sw__edition_any
+        ibm_websphere__application__server_version_6__0__1__7 => ibm_websphere__application__server_target__sw_any
+        ibm_websphere__application__server_version_6__0__2__13 => ibm_websphere__application__server_sw__edition_any
+        ibm_websphere__application__server_version_6__0__2__13 => ibm_websphere__application__server_target__sw_any
+        ibm_websphere__application__server_version_6__0__2__39 => ibm_websphere__application__server_sw__edition_any
+        ibm_websphere__application__server_version_6__0__2__39 => ibm_websphere__application__server_target__sw_any
+        ibm_websphere__application__server_version_6__1__0__1 => ibm_websphere__application__server_sw__edition_any
+        ibm_websphere__application__server_version_6__1__0__1 => ibm_websphere__application__server_target__sw_any
+        ibm_websphere__application__server_version_6__1__0__47 => ibm_websphere__application__server_sw__edition_any
+        ibm_websphere__application__server_version_6__1__0__47 => ibm_websphere__application__server_target__sw_any
+        ibm_websphere__application__server_version_6__1__0__45 => ibm_websphere__application__server_sw__edition_any
+        ibm_websphere__application__server_version_6__1__0__45 => ibm_websphere__application__server_target__sw_any
+        ibm_websphere__application__server_version_5__0__2__1 => ibm_websphere__application__server_sw__edition_any
+        ibm_websphere__application__server_version_5__0__2__1 => ibm_websphere__application__server_target__sw_any
+        ibm_websphere__application__server_version_6__0__1__3 => ibm_websphere__application__server_sw__edition_any
+        ibm_websphere__application__server_version_6__0__1__3 => ibm_websphere__application__server_target__sw_any
+        ibm_websphere__application__server_version_6__0__2__33 => ibm_websphere__application__server_sw__edition_any
+        ibm_websphere__application__server_version_6__0__2__33 => ibm_websphere__application__server_target__sw_any
+        ibm_websphere__application__server_version_4__0__4 => ibm_websphere__application__server_sw__edition_any
+        ibm_websphere__application__server_version_4__0__4 => ibm_websphere__application__server_target__sw_any
+        ibm_websphere__application__server_version_6__0__1__9 => ibm_websphere__application__server_sw__edition_any
+        ibm_websphere__application__server_version_6__0__1__9 => ibm_websphere__application__server_target__sw_any
+        ibm_websphere__application__server_version_5__1__1__15 => ibm_websphere__application__server_sw__edition_any
+        ibm_websphere__application__server_version_5__1__1__15 => ibm_websphere__application__server_target__sw_any
+        ibm_websphere__application__server_version_6__0__2__8 => ibm_websphere__application__server_sw__edition_any
+        ibm_websphere__application__server_version_6__0__2__8 => ibm_websphere__application__server_target__sw_any
+        ibm_websphere__application__server_version_3__0__21 => ibm_websphere__application__server_sw__edition_any
+        ibm_websphere__application__server_version_3__0__21 => ibm_websphere__application__server_target__sw_any
+        ibm_websphere__application__server_version_5__1__1__10 => ibm_websphere__application__server_sw__edition_any
+        ibm_websphere__application__server_version_5__1__1__10 => ibm_websphere__application__server_target__sw_any
+        ibm_websphere__application__server_version_5__1__1__8 => ibm_websphere__application__server_sw__edition_any
+        ibm_websphere__application__server_version_5__1__1__8 => ibm_websphere__application__server_target__sw_any
+        ibm_websphere__application__server_version_6__1__0__27 => ibm_websphere__application__server_sw__edition_any
+        ibm_websphere__application__server_version_6__1__0__27 => ibm_websphere__application__server_target__sw_any
+        ibm_websphere__application__server_version_6__1__0__33 => ibm_websphere__application__server_sw__edition_any
+        ibm_websphere__application__server_version_6__1__0__33 => ibm_websphere__application__server_target__sw_any
+        ibm_websphere__application__server_version_5__0__0 => ibm_websphere__application__server_sw__edition_any
+        ibm_websphere__application__server_version_5__0__0 => ibm_websphere__application__server_target__sw_any
+        ibm_websphere__application__server_version_3__0__2__1 => ibm_websphere__application__server_sw__edition_any
+        ibm_websphere__application__server_version_3__0__2__1 => ibm_websphere__application__server_target__sw_any
+        ibm_websphere__application__server_version_7__0__0__13 => ibm_websphere__application__server_sw__edition_any
+        ibm_websphere__application__server_version_7__0__0__13 => ibm_websphere__application__server_target__sw_any
+        ibm_websphere__application__server_version_5__0__2__11 => ibm_websphere__application__server_sw__edition_any
+        ibm_websphere__application__server_version_5__0__2__11 => ibm_websphere__application__server_target__sw_any
+        ibm_websphere__application__server_version_6__0__2__43 => ibm_websphere__application__server_sw__edition_any
+        ibm_websphere__application__server_version_6__0__2__43 => ibm_websphere__application__server_target__sw_any
+        ibm_websphere__application__server_version_5__1__1__14 => ibm_websphere__application__server_sw__edition_any
+        ibm_websphere__application__server_version_5__1__1__14 => ibm_websphere__application__server_target__sw_any
+        ibm_websphere__application__server_version_6__1__0__35 => ibm_websphere__application__server_sw__edition_any
+        ibm_websphere__application__server_version_6__1__0__35 => ibm_websphere__application__server_target__sw_any
+        ibm_websphere__application__server_version_3__0__2__4 => ibm_websphere__application__server_sw__edition_any
+        ibm_websphere__application__server_version_3__0__2__4 => ibm_websphere__application__server_target__sw_any
+        ibm_websphere__application__server_version_6__0__2__15 => ibm_websphere__application__server_sw__edition_any
+        ibm_websphere__application__server_version_6__0__2__15 => ibm_websphere__application__server_target__sw_any
+        ibm_websphere__application__server_version_5__1__0__2 => ibm_websphere__application__server_sw__edition_any
+        ibm_websphere__application__server_version_5__1__0__2 => ibm_websphere__application__server_target__sw_any
+        ibm_websphere__application__server_version_6__1__5 => ibm_websphere__application__server_sw__edition_any
+        ibm_websphere__application__server_version_6__1__5 => ibm_websphere__application__server_target__sw_any
+        ibm_websphere__application__server_version_6__1__0__21 => ibm_websphere__application__server_sw__edition_any
+        ibm_websphere__application__server_version_6__1__0__21 => ibm_websphere__application__server_target__sw_any
+        ibm_websphere__application__server_version_5__02__15 => ibm_websphere__application__server_sw__edition_any
+        ibm_websphere__application__server_version_5__02__15 => ibm_websphere__application__server_target__sw_any
+        ibm_websphere__application__server_version_6__0__2__7 => ibm_websphere__application__server_sw__edition_any
+        ibm_websphere__application__server_version_6__0__2__7 => ibm_websphere__application__server_target__sw_any
+        ibm_websphere__application__server_version_6__1__0__9 => ibm_websphere__application__server_sw__edition_any
+        ibm_websphere__application__server_version_6__1__0__9 => ibm_websphere__application__server_target__sw_any
+        ibm_websphere__application__server_version_6__0__2__2 => ibm_websphere__application__server_sw__edition_any
+        ibm_websphere__application__server_version_6__0__2__2 => ibm_websphere__application__server_target__sw_any
+        ibm_websphere__application__server_version_6__0__2__28 => ibm_websphere__application__server_sw__edition_any
+        ibm_websphere__application__server_version_6__0__2__28 => ibm_websphere__application__server_target__sw_any
+        ibm_websphere__application__server_version_6__1__13 => ibm_websphere__application__server_sw__edition_any
+        ibm_websphere__application__server_version_6__1__13 => ibm_websphere__application__server_target__sw_any
+        ibm_websphere__application__server_version_6__1__0__11 => ibm_websphere__application__server_sw__edition_any
+        ibm_websphere__application__server_version_6__1__0__11 => ibm_websphere__application__server_target__sw_any
+        ibm_websphere__application__server_version_6__0__1__1 => ibm_websphere__application__server_sw__edition_any
+        ibm_websphere__application__server_version_6__0__1__1 => ibm_websphere__application__server_target__sw_any
+        ibm_websphere__application__server_version_6__0__2__6 => ibm_websphere__application__server_sw__edition_any
+        ibm_websphere__application__server_version_6__0__2__6 => ibm_websphere__application__server_target__sw_any
+        ibm_websphere__application__server_version_5__1__1__9 => ibm_websphere__application__server_sw__edition_any
+        ibm_websphere__application__server_version_5__1__1__9 => ibm_websphere__application__server_target__sw_any
+        ibm_websphere__application__server_version_3__5__2 => ibm_websphere__application__server_sw__edition_any
+        ibm_websphere__application__server_version_3__5__2 => ibm_websphere__application__server_target__sw_any
+        ibm_websphere__application__server_version_5__0__2__13 => ibm_websphere__application__server_sw__edition_any
+        ibm_websphere__application__server_version_5__0__2__13 => ibm_websphere__application__server_target__sw_any
+        ibm_websphere__application__server_version_6__1__0 => ibm_websphere__application__server_sw__edition_any
+        ibm_websphere__application__server_version_6__1__0 => ibm_websphere__application__server_target__sw_any
+        ibm_websphere__application__server_version_5__1__0__5 => ibm_websphere__application__server_sw__edition_any
+        ibm_websphere__application__server_version_5__1__0__5 => ibm_websphere__application__server_target__sw_any
+        ibm_websphere__application__server_version_6__1__0__24 => ibm_websphere__application__server_sw__edition_any
+        ibm_websphere__application__server_version_6__1__0__24 => ibm_websphere__application__server_target__sw_any
+        ibm_websphere__application__server_version_6__0__2__4 => ibm_websphere__application__server_sw__edition_any
+        ibm_websphere__application__server_version_6__0__2__4 => ibm_websphere__application__server_target__sw_any
+        ibm_websphere__application__server_version_6__0__1__11 => ibm_websphere__application__server_sw__edition_any
+        ibm_websphere__application__server_version_6__0__1__11 => ibm_websphere__application__server_target__sw_any
+        ibm_websphere__application__server_version_3__5 => ibm_websphere__application__server_sw__edition_any
+        ibm_websphere__application__server_version_3__5 => ibm_websphere__application__server_target__sw_any
+        ibm_websphere__application__server_version_6__1__3 => ibm_websphere__application__server_sw__edition_any
+        ibm_websphere__application__server_version_6__1__3 => ibm_websphere__application__server_target__sw_any
+        ibm_websphere__application__server_version_6__0__1 => ibm_websphere__application__server_sw__edition_any
+        ibm_websphere__application__server_version_6__0__1 => ibm_websphere__application__server_target__sw_any
+        ibm_websphere__application__server_version_3__5__1 => ibm_websphere__application__server_sw__edition_any
+        ibm_websphere__application__server_version_3__5__1 => ibm_websphere__application__server_target__sw_any
+        ibm_websphere__application__server_version_6__1__0__3 => ibm_websphere__application__server_sw__edition_any
+        ibm_websphere__application__server_version_6__1__0__3 => ibm_websphere__application__server_target__sw_any
+        ibm_websphere__application__server_version_5__0__2__6 => ibm_websphere__application__server_sw__edition_any
+        ibm_websphere__application__server_version_5__0__2__6 => ibm_websphere__application__server_target__sw_any
+        ibm_websphere__application__server_version_6__1__7 => ibm_websphere__application__server_sw__edition_any
+        ibm_websphere__application__server_version_6__1__7 => ibm_websphere__application__server_target__sw_any
+        ibm_websphere__application__server_version_7__0__0__1 => ibm_websphere__application__server_sw__edition_any
+        ibm_websphere__application__server_version_7__0__0__1 => ibm_websphere__application__server_target__sw_any
+        ibm_websphere__application__server_version_7__0__0__0 => ((ibm_websphere__application__server_sw__edition_hypervisor & ibm_websphere__application__server_target__sw_any & !ibm_websphere__application__server_sw__edition_any & ibm_websphere__application__server_target__sw_any) | (!ibm_websphere__application__server_sw__edition_hypervisor & ibm_websphere__application__server_target__sw_any & ibm_websphere__application__server_sw__edition_any & ibm_websphere__application__server_target__sw_any))
+        ibm_websphere__application__server_version_7__0 => ibm_websphere__application__server_sw__edition_any
+        ibm_websphere__application__server_version_7__0 => ibm_websphere__application__server_target__sw_any
+        ibm_websphere__application__server_version_4__0__1 => ibm_websphere__application__server_sw__edition_any
+        ibm_websphere__application__server_version_4__0__1 => ibm_websphere__application__server_target__sw_any
+        ibm_websphere__application__server_version_7__0__0__9 => ibm_websphere__application__server_sw__edition_any
+        ibm_websphere__application__server_version_7__0__0__9 => ibm_websphere__application__server_target__sw_any
+        ibm_websphere__application__server_version_5__1__1__11 => ibm_websphere__application__server_sw__edition_any
+        ibm_websphere__application__server_version_5__1__1__11 => ibm_websphere__application__server_target__sw_any
+        ibm_websphere__application__server_version_5__1__1__12 => ibm_websphere__application__server_sw__edition_any
+        ibm_websphere__application__server_version_5__1__1__12 => ibm_websphere__application__server_target__sw_any
+        ibm_websphere__application__server_version_2__0 => ibm_websphere__application__server_sw__edition_any
+        ibm_websphere__application__server_version_2__0 => ibm_websphere__application__server_target__sw_any
+        ibm_websphere__application__server_version_7__0__0__7 => ibm_websphere__application__server_sw__edition_any
+        ibm_websphere__application__server_version_7__0__0__7 => ibm_websphere__application__server_target__sw_any
+        ibm_websphere__application__server_version_6__0__0__3 => ibm_websphere__application__server_sw__edition_any
+        ibm_websphere__application__server_version_6__0__0__3 => ibm_websphere__application__server_target__sw_any
+        ibm_websphere__application__server_version_6__1__0__43 => ibm_websphere__application__server_sw__edition_any
+        ibm_websphere__application__server_version_6__1__0__43 => ibm_websphere__application__server_target__sw_any
+        ibm_websphere__application__server_version_5__1__1__7 => ibm_websphere__application__server_sw__edition_any
+        ibm_websphere__application__server_version_5__1__1__7 => ibm_websphere__application__server_target__sw_any
+        ibm_websphere__application__server_version_7__0__0__8 => ibm_websphere__application__server_sw__edition_any
+        ibm_websphere__application__server_version_7__0__0__8 => ibm_websphere__application__server_target__sw_any
+        ibm_websphere__application__server_version_6__1__6 => ibm_websphere__application__server_sw__edition_any
+        ibm_websphere__application__server_version_6__1__6 => ibm_websphere__application__server_target__sw_any
+        ibm_websphere__application__server_version_6__0__2__17 => ibm_websphere__application__server_sw__edition_any
+        ibm_websphere__application__server_version_6__0__2__17 => ibm_websphere__application__server_target__sw_any
+        ibm_websphere__application__server_version_6__1__0__19 => ibm_websphere__application__server_sw__edition_any
+        ibm_websphere__application__server_version_6__1__0__19 => ibm_websphere__application__server_target__sw_any
+        ibm_websphere__application__server_version_3__0__0__3 => ibm_websphere__application__server_sw__edition_any
+        ibm_websphere__application__server_version_3__0__0__3 => ibm_websphere__application__server_target__sw_any
+        ibm_websphere__application__server_version_6__1__0__13 => ibm_websphere__application__server_sw__edition_any
+        ibm_websphere__application__server_version_6__1__0__13 => ibm_websphere__application__server_target__sw_any
+        ibm_websphere__application__server_version_5__1__1__2 => ibm_websphere__application__server_sw__edition_any
+        ibm_websphere__application__server_version_5__1__1__2 => ibm_websphere__application__server_target__sw_any
+        ibm_websphere__application__server_version_7__0__0__12 => ibm_websphere__application__server_sw__edition_any
+        ibm_websphere__application__server_version_7__0__0__12 => ibm_websphere__application__server_target__sw_any
+        ibm_websphere__application__server_version_3__0 => ibm_websphere__application__server_sw__edition_any
+        ibm_websphere__application__server_version_3__0 => ibm_websphere__application__server_target__sw_any
+        ibm_websphere__application__server_version_5__0__2__16 => ibm_websphere__application__server_sw__edition_any
+        ibm_websphere__application__server_version_5__0__2__16 => ibm_websphere__application__server_target__sw_any
+        ibm_websphere__application__server_version_6__1__0__17 => ibm_websphere__application__server_sw__edition_any
+        ibm_websphere__application__server_version_6__1__0__17 => ibm_websphere__application__server_target__sw_any
+        ibm_websphere__application__server_version_6__0__2__31 => ibm_websphere__application__server_sw__edition_any
+        ibm_websphere__application__server_version_6__0__2__31 => ibm_websphere__application__server_target__sw_any
+        ibm_websphere__application__server_version_5__0__2__10 => ibm_websphere__application__server_sw__edition_any
+        ibm_websphere__application__server_version_5__0__2__10 => ibm_websphere__application__server_target__sw_any
+        ibm_websphere__application__server_version_3__0__2 => ibm_websphere__application__server_sw__edition_any
+        ibm_websphere__application__server_version_3__0__2 => ibm_websphere__application__server_target__sw_any
+        ibm_websphere__application__server_version_6__0__2__22 => ibm_websphere__application__server_sw__edition_any
+        ibm_websphere__application__server_version_6__0__2__22 => ibm_websphere__application__server_target__sw_any
+        ibm_websphere__application__server_version_6__0__2__27 => ibm_websphere__application__server_sw__edition_any
+        ibm_websphere__application__server_version_6__0__2__27 => ibm_websphere__application__server_target__sw_any
+        ibm_websphere__application__server_version_6__0__2__32 => ibm_websphere__application__server_sw__edition_any
+        ibm_websphere__application__server_version_6__0__2__32 => ibm_websphere__application__server_target__sw_any
+        ibm_websphere__application__server_version_6__0__2__41 => ibm_websphere__application__server_sw__edition_any
+        ibm_websphere__application__server_version_6__0__2__41 => ibm_websphere__application__server_target__sw_any
+        ibm_websphere__application__server_version_6__1__0__23 => ibm_websphere__application__server_sw__edition_any
+        ibm_websphere__application__server_version_6__1__0__23 => ibm_websphere__application__server_target__sw_any
+        ibm_websphere__application__server_version_6__0__2__19 => ibm_websphere__application__server_sw__edition_any
+        ibm_websphere__application__server_version_6__0__2__19 => ibm_websphere__application__server_target__sw_any
+        ibm_websphere__application__server_version_5__0__1 => ibm_websphere__application__server_sw__edition_any
+        ibm_websphere__application__server_version_5__0__1 => ibm_websphere__application__server_target__sw_any
+        ibm_websphere__application__server_version_6__0__2__25 => ibm_websphere__application__server_sw__edition_any
+        ibm_websphere__application__server_version_6__0__2__25 => ibm_websphere__application__server_target__sw_any
+        ibm_websphere__application__server_version_6__1__0__15 => ibm_websphere__application__server_sw__edition_any
+        ibm_websphere__application__server_version_6__1__0__15 => ibm_websphere__application__server_target__sw_any
+        ibm_websphere__application__server_version_7__0__0__3 => ibm_websphere__application__server_sw__edition_any
+        ibm_websphere__application__server_version_7__0__0__3 => ibm_websphere__application__server_target__sw_any
+        ibm_websphere__application__server_version_6__0__1__15 => ibm_websphere__application__server_sw__edition_any
+        ibm_websphere__application__server_version_6__0__1__15 => ibm_websphere__application__server_target__sw_any
+        ibm_websphere__application__server_version_6__0__2__9 => ibm_websphere__application__server_sw__edition_any
+        ibm_websphere__application__server_version_6__0__2__9 => ibm_websphere__application__server_target__sw_any
+        ibm_websphere__application__server_version_5__0__2__15 => ibm_websphere__application__server_sw__edition_any
+        ibm_websphere__application__server_version_5__0__2__15 => ibm_websphere__application__server_target__sw_any
+        ibm_websphere__application__server_version_6__0__0__1 => ibm_websphere__application__server_sw__edition_any
+        ibm_websphere__application__server_version_6__0__0__1 => ibm_websphere__application__server_target__sw_any
+        ibm_websphere__application__server_version_6__0 => ibm_websphere__application__server_sw__edition_any
+        ibm_websphere__application__server_version_6__0 => ibm_websphere__application__server_target__sw_any
+        ibm_websphere__application__server_version_6__1 => ibm_websphere__application__server_sw__edition_any
+        ibm_websphere__application__server_version_6__1 => ibm_websphere__application__server_target__sw_any
+        ibm_websphere__application__server_version_6__0__2__23 => ibm_websphere__application__server_sw__edition_any
+        ibm_websphere__application__server_version_6__0__2__23 => ibm_websphere__application__server_target__sw_any
+        ibm_websphere__application__server_version_4__0__2 => ibm_websphere__application__server_sw__edition_any
+        ibm_websphere__application__server_version_4__0__2 => ibm_websphere__application__server_target__sw_any
+        ibm_websphere__application__server_version_6__1__1 => ibm_websphere__application__server_sw__edition_any
+        ibm_websphere__application__server_version_6__1__1 => ibm_websphere__application__server_target__sw_any
+        ibm_websphere__application__server_version_5__1__0__4 => ibm_websphere__application__server_sw__edition_any
+        ibm_websphere__application__server_version_5__1__0__4 => ibm_websphere__application__server_target__sw_any
+        ibm_websphere__application__server_version_5__1__1__13 => ibm_websphere__application__server_sw__edition_any
+        ibm_websphere__application__server_version_5__1__1__13 => ibm_websphere__application__server_target__sw_any
+        ibm_websphere__application__server_version_5__0__2__4 => ibm_websphere__application__server_sw__edition_any
+        ibm_websphere__application__server_version_5__0__2__4 => ibm_websphere__application__server_target__sw_any
+        ibm_websphere__application__server_version_5__0__2__12 => ibm_websphere__application__server_sw__edition_any
+        ibm_websphere__application__server_version_5__0__2__12 => ibm_websphere__application__server_target__sw_any
+        ibm_websphere__application__server_version_6__0__1__17 => ibm_websphere__application__server_sw__edition_any
+        ibm_websphere__application__server_version_6__0__1__17 => ibm_websphere__application__server_target__sw_any
+        ibm_websphere__application__server_version_6__1__0__39 => ibm_websphere__application__server_sw__edition_any
+        ibm_websphere__application__server_version_6__1__0__39 => ibm_websphere__application__server_target__sw_any
+        ibm_websphere__application__server_version_7__0__0__11 => ibm_websphere__application__server_sw__edition_any
+        ibm_websphere__application__server_version_7__0__0__11 => ibm_websphere__application__server_target__sw_any
+        ibm_websphere__application__server_version_3__0__9__20 => ibm_websphere__application__server_sw__edition_any
+        ibm_websphere__application__server_version_3__0__9__20 => ibm_websphere__application__server_target__sw_any
+        ibm_websphere__application__server_version_5__0__2__14 => ibm_websphere__application__server_sw__edition_any
+        ibm_websphere__application__server_version_5__0__2__14 => ibm_websphere__application__server_target__sw_any
+        ibm_websphere__application__server_version_6__0__1__2 => ibm_websphere__application__server_sw__edition_any
+        ibm_websphere__application__server_version_6__0__1__2 => ibm_websphere__application__server_target__sw_any

@@ -1,0 +1,325 @@
+features
+        CVE_2020_13617
+                optional
+                        configs
+                                alternative
+                                        rc0
+                                                mandatory
+                                                        rc0_mitel
+                                                                mandatory
+                                                                        rc0_mitel_6863
+                                        rc1
+                                                mandatory
+                                                        rc1_mitel
+                                                                mandatory
+                                                                        rc1_mitel_6865
+                                        rc2
+                                                mandatory
+                                                        rc2_mitel
+                                                                mandatory
+                                                                        rc2_mitel_6867
+                                        rc3
+                                                mandatory
+                                                        rc3_mitel
+                                                                mandatory
+                                                                        rc3_mitel_6869
+                                        rc4
+                                                mandatory
+                                                        rc4_mitel
+                                                                mandatory
+                                                                        rc4_mitel_6873
+                                        rc5
+                                                mandatory
+                                                        rc5_mitel
+                                                                mandatory
+                                                                        rc5_mitel_6940
+                                        rc6
+                                                mandatory
+                                                        rc6_mitel
+                                                                mandatory
+                                                                        rc6_mitel_6970
+                                        rc7
+                                                mandatory
+                                                        rc7_mitel
+                                                                mandatory
+                                                                        rc7_mitel_6930
+                                        rc8
+                                                mandatory
+                                                        rc8_mitel
+                                                                mandatory
+                                                                        rc8_mitel_6920
+                                        rc9
+                                                mandatory
+                                                        rc9_mitel
+                                                                mandatory
+                                                                        rc9_mitel_6905
+                                        rc10
+                                                mandatory
+                                                        rc10_mitel
+                                                                mandatory
+                                                                        rc10_mitel_6910
+                mandatory
+                        types
+                                mandatory
+                                        operating_system
+                        sources
+                                mandatory
+                                        nvd
+                        exploits
+                                optional
+                                        direct
+                                        indirect
+                        mitel
+                                alternative
+                                        mitel_6863__firmware
+                                                mandatory
+                                                        mitel_6863__firmware_version
+                                                                alternative
+                                                                        mitel_6863__firmware_version_4__2
+                                                                        mitel_6863__firmware_version_4__5
+                                                                        mitel_6863__firmware_version_5__1
+                                                                        mitel_6863__firmware_version_4__3
+                                                                        mitel_6863__firmware_version_5__0
+                                                                        mitel_6863__firmware_version_any
+                                                        mitel_6863__firmware_update
+                                                                alternative
+                                                                        mitel_6863__firmware_update_sp4
+                                                                        mitel_6863__firmware_update_sp1
+                                                                        mitel_6863__firmware_update_sp3
+                                                                        mitel_6863__firmware_update_sp2
+                                                                        mitel_6863__firmware_update_any
+                                        mitel_6865__firmware
+                                                mandatory
+                                                        mitel_6865__firmware_version
+                                                                alternative
+                                                                        mitel_6865__firmware_version_4__2
+                                                                        mitel_6865__firmware_version_4__5
+                                                                        mitel_6865__firmware_version_5__1
+                                                                        mitel_6865__firmware_version_4__3
+                                                                        mitel_6865__firmware_version_5__0
+                                                                        mitel_6865__firmware_version_any
+                                                        mitel_6865__firmware_update
+                                                                alternative
+                                                                        mitel_6865__firmware_update_sp4
+                                                                        mitel_6865__firmware_update_sp1
+                                                                        mitel_6865__firmware_update_sp3
+                                                                        mitel_6865__firmware_update_sp2
+                                                                        mitel_6865__firmware_update_any
+                                        mitel_6867__firmware
+                                                mandatory
+                                                        mitel_6867__firmware_version
+                                                                alternative
+                                                                        mitel_6867__firmware_version_4__2
+                                                                        mitel_6867__firmware_version_4__5
+                                                                        mitel_6867__firmware_version_5__1
+                                                                        mitel_6867__firmware_version_4__3
+                                                                        mitel_6867__firmware_version_5__0
+                                                                        mitel_6867__firmware_version_any
+                                                        mitel_6867__firmware_update
+                                                                alternative
+                                                                        mitel_6867__firmware_update_sp4
+                                                                        mitel_6867__firmware_update_sp1
+                                                                        mitel_6867__firmware_update_sp3
+                                                                        mitel_6867__firmware_update_sp2
+                                                                        mitel_6867__firmware_update_any
+                                        mitel_6869__firmware
+                                                mandatory
+                                                        mitel_6869__firmware_version
+                                                                alternative
+                                                                        mitel_6869__firmware_version_4__2
+                                                                        mitel_6869__firmware_version_4__5
+                                                                        mitel_6869__firmware_version_4__3
+                                                                        mitel_6869__firmware_version_5__1
+                                                                        mitel_6869__firmware_version_5__0
+                                                                        mitel_6869__firmware_version_any
+                                                        mitel_6869__firmware_update
+                                                                alternative
+                                                                        mitel_6869__firmware_update_sp4
+                                                                        mitel_6869__firmware_update_sp1
+                                                                        mitel_6869__firmware_update_sp3
+                                                                        mitel_6869__firmware_update_sp2
+                                                                        mitel_6869__firmware_update_any
+                                        mitel_6873__firmware
+                                                mandatory
+                                                        mitel_6873__firmware_version
+                                                                alternative
+                                                                        mitel_6873__firmware_version_4__2
+                                                                        mitel_6873__firmware_version_4__5
+                                                                        mitel_6873__firmware_version_5__1
+                                                                        mitel_6873__firmware_version_4__3
+                                                                        mitel_6873__firmware_version_5__0
+                                                                        mitel_6873__firmware_version_any
+                                                        mitel_6873__firmware_update
+                                                                alternative
+                                                                        mitel_6873__firmware_update_sp4
+                                                                        mitel_6873__firmware_update_sp1
+                                                                        mitel_6873__firmware_update_sp3
+                                                                        mitel_6873__firmware_update_sp2
+                                                                        mitel_6873__firmware_update_any
+                                        mitel_6940__firmware
+                                                mandatory
+                                                        mitel_6940__firmware_version
+                                                                alternative
+                                                                        mitel_6940__firmware_version_5__1
+                                                                        mitel_6940__firmware_version_any
+                                                                        mitel_6940__firmware_version_5__0
+                                                        mitel_6940__firmware_update
+                                                                alternative
+                                                                        mitel_6940__firmware_update_sp4
+                                                                        mitel_6940__firmware_update_sp1
+                                                                        mitel_6940__firmware_update_sp3
+                                                                        mitel_6940__firmware_update_sp2
+                                                                        mitel_6940__firmware_update_any
+                                        mitel_6970__firmware
+                                                mandatory
+                                                        mitel_6970__firmware_version
+                                                                alternative
+                                                                        mitel_6970__firmware_version_5__0
+                                                                        mitel_6970__firmware_version_any
+                                                                        mitel_6970__firmware_version_5__1
+                                                        mitel_6970__firmware_update
+                                                                alternative
+                                                                        mitel_6970__firmware_update_sp4
+                                                                        mitel_6970__firmware_update_sp1
+                                                                        mitel_6970__firmware_update_sp3
+                                                                        mitel_6970__firmware_update_sp2
+                                                                        mitel_6970__firmware_update_any
+                                        mitel_6930__firmware
+                                                mandatory
+                                                        mitel_6930__firmware_version
+                                                                alternative
+                                                                        mitel_6930__firmware_version_5__0
+                                                                        mitel_6930__firmware_version_any
+                                                                        mitel_6930__firmware_version_5__1
+                                                        mitel_6930__firmware_update
+                                                                alternative
+                                                                        mitel_6930__firmware_update_sp4
+                                                                        mitel_6930__firmware_update_sp1
+                                                                        mitel_6930__firmware_update_sp3
+                                                                        mitel_6930__firmware_update_sp2
+                                                                        mitel_6930__firmware_update_any
+                                        mitel_6920__firmware
+                                                mandatory
+                                                        mitel_6920__firmware_version
+                                                                alternative
+                                                                        mitel_6920__firmware_version_5__0
+                                                                        mitel_6920__firmware_version_any
+                                                                        mitel_6920__firmware_version_5__1
+                                                        mitel_6920__firmware_update
+                                                                alternative
+                                                                        mitel_6920__firmware_update_sp4
+                                                                        mitel_6920__firmware_update_sp1
+                                                                        mitel_6920__firmware_update_sp3
+                                                                        mitel_6920__firmware_update_sp2
+                                                                        mitel_6920__firmware_update_any
+                                        mitel_6905__firmware
+                                                mandatory
+                                                        mitel_6905__firmware_version
+                                                                alternative
+                                                                        mitel_6905__firmware_version_5__1
+                                                                        mitel_6905__firmware_version_any
+                                                                        mitel_6905__firmware_version_5__0
+                                                        mitel_6905__firmware_update
+                                                                alternative
+                                                                        mitel_6905__firmware_update_sp4
+                                                                        mitel_6905__firmware_update_sp1
+                                                                        mitel_6905__firmware_update_sp3
+                                                                        mitel_6905__firmware_update_sp2
+                                                                        mitel_6905__firmware_update_any
+                                        mitel_6910__firmware
+                                                mandatory
+                                                        mitel_6910__firmware_version
+                                                                alternative
+                                                                        mitel_6910__firmware_version_5__0
+                                                                        mitel_6910__firmware_version_any
+                                                                        mitel_6910__firmware_version_5__1
+                                                        mitel_6910__firmware_update
+                                                                alternative
+                                                                        mitel_6910__firmware_update_sp4
+                                                                        mitel_6910__firmware_update_sp1
+                                                                        mitel_6910__firmware_update_sp3
+                                                                        mitel_6910__firmware_update_sp2
+                                                                        mitel_6910__firmware_update_any
+
+constraints
+        mitel_6863__firmware => operating_system
+        mitel_6865__firmware => operating_system
+        mitel_6867__firmware => operating_system
+        mitel_6869__firmware => operating_system
+        mitel_6873__firmware => operating_system
+        mitel_6940__firmware => operating_system
+        mitel_6970__firmware => operating_system
+        mitel_6930__firmware => operating_system
+        mitel_6920__firmware => operating_system
+        mitel_6905__firmware => operating_system
+        mitel_6910__firmware => operating_system
+        mitel_6863__firmware_version_4__2 => ((mitel_6863__firmware_update_sp1 & (rc0) & !mitel_6863__firmware_update_sp2 & (rc0) & !mitel_6863__firmware_update_any & (rc0)) | (!mitel_6863__firmware_update_sp1 & (rc0) & mitel_6863__firmware_update_sp2 & (rc0) & !mitel_6863__firmware_update_any & (rc0)) | (!mitel_6863__firmware_update_sp1 & (rc0) & !mitel_6863__firmware_update_sp2 & (rc0) & mitel_6863__firmware_update_any & (rc0)))
+        mitel_6863__firmware_version_4__5 => mitel_6863__firmware_update_any
+        mitel_6863__firmware_version_4__5 => (rc0)
+        mitel_6863__firmware_version_5__1 => ((mitel_6863__firmware_update_sp4 & (rc0) & !mitel_6863__firmware_update_sp1 & (rc0) & !mitel_6863__firmware_update_sp3 & (rc0) & !mitel_6863__firmware_update_sp2 & (rc0) & !mitel_6863__firmware_update_any & (rc0)) | (!mitel_6863__firmware_update_sp4 & (rc0) & mitel_6863__firmware_update_sp1 & (rc0) & !mitel_6863__firmware_update_sp3 & (rc0) & !mitel_6863__firmware_update_sp2 & (rc0) & !mitel_6863__firmware_update_any & (rc0)) | (!mitel_6863__firmware_update_sp4 & (rc0) & !mitel_6863__firmware_update_sp1 & (rc0) & mitel_6863__firmware_update_sp3 & (rc0) & !mitel_6863__firmware_update_sp2 & (rc0) & !mitel_6863__firmware_update_any & (rc0)) | (!mitel_6863__firmware_update_sp4 & (rc0) & !mitel_6863__firmware_update_sp1 & (rc0) & !mitel_6863__firmware_update_sp3 & (rc0) & mitel_6863__firmware_update_sp2 & (rc0) & !mitel_6863__firmware_update_any & (rc0)) | (!mitel_6863__firmware_update_sp4 & (rc0) & !mitel_6863__firmware_update_sp1 & (rc0) & !mitel_6863__firmware_update_sp3 & (rc0) & !mitel_6863__firmware_update_sp2 & (rc0) & mitel_6863__firmware_update_any & (rc0)))
+        mitel_6863__firmware_version_4__3 => ((mitel_6863__firmware_update_sp1 & (rc0) & !mitel_6863__firmware_update_sp2 & (rc0)) | (!mitel_6863__firmware_update_sp1 & (rc0) & mitel_6863__firmware_update_sp2 & (rc0)))
+        mitel_6863__firmware_version_5__0 => ((mitel_6863__firmware_update_sp1 & (rc0) & !mitel_6863__firmware_update_sp2 & (rc0) & !mitel_6863__firmware_update_any & (rc0)) | (!mitel_6863__firmware_update_sp1 & (rc0) & mitel_6863__firmware_update_sp2 & (rc0) & !mitel_6863__firmware_update_any & (rc0)) | (!mitel_6863__firmware_update_sp1 & (rc0) & !mitel_6863__firmware_update_sp2 & (rc0) & mitel_6863__firmware_update_any & (rc0)))
+        mitel_6863__firmware_version_any => mitel_6863__firmware_update_any
+        mitel_6863__firmware_version_any => (rc0)
+        mitel_6865__firmware_version_4__2 => ((mitel_6865__firmware_update_sp1 & (rc1) & !mitel_6865__firmware_update_sp2 & (rc1) & !mitel_6865__firmware_update_any & (rc1)) | (!mitel_6865__firmware_update_sp1 & (rc1) & mitel_6865__firmware_update_sp2 & (rc1) & !mitel_6865__firmware_update_any & (rc1)) | (!mitel_6865__firmware_update_sp1 & (rc1) & !mitel_6865__firmware_update_sp2 & (rc1) & mitel_6865__firmware_update_any & (rc1)))
+        mitel_6865__firmware_version_4__5 => mitel_6865__firmware_update_any
+        mitel_6865__firmware_version_4__5 => (rc1)
+        mitel_6865__firmware_version_5__1 => ((mitel_6865__firmware_update_sp4 & (rc1) & !mitel_6865__firmware_update_sp1 & (rc1) & !mitel_6865__firmware_update_sp3 & (rc1) & !mitel_6865__firmware_update_sp2 & (rc1) & !mitel_6865__firmware_update_any & (rc1)) | (!mitel_6865__firmware_update_sp4 & (rc1) & mitel_6865__firmware_update_sp1 & (rc1) & !mitel_6865__firmware_update_sp3 & (rc1) & !mitel_6865__firmware_update_sp2 & (rc1) & !mitel_6865__firmware_update_any & (rc1)) | (!mitel_6865__firmware_update_sp4 & (rc1) & !mitel_6865__firmware_update_sp1 & (rc1) & mitel_6865__firmware_update_sp3 & (rc1) & !mitel_6865__firmware_update_sp2 & (rc1) & !mitel_6865__firmware_update_any & (rc1)) | (!mitel_6865__firmware_update_sp4 & (rc1) & !mitel_6865__firmware_update_sp1 & (rc1) & !mitel_6865__firmware_update_sp3 & (rc1) & mitel_6865__firmware_update_sp2 & (rc1) & !mitel_6865__firmware_update_any & (rc1)) | (!mitel_6865__firmware_update_sp4 & (rc1) & !mitel_6865__firmware_update_sp1 & (rc1) & !mitel_6865__firmware_update_sp3 & (rc1) & !mitel_6865__firmware_update_sp2 & (rc1) & mitel_6865__firmware_update_any & (rc1)))
+        mitel_6865__firmware_version_4__3 => ((mitel_6865__firmware_update_sp1 & (rc1) & !mitel_6865__firmware_update_sp2 & (rc1)) | (!mitel_6865__firmware_update_sp1 & (rc1) & mitel_6865__firmware_update_sp2 & (rc1)))
+        mitel_6865__firmware_version_5__0 => ((mitel_6865__firmware_update_sp1 & (rc1) & !mitel_6865__firmware_update_sp2 & (rc1) & !mitel_6865__firmware_update_any & (rc1)) | (!mitel_6865__firmware_update_sp1 & (rc1) & mitel_6865__firmware_update_sp2 & (rc1) & !mitel_6865__firmware_update_any & (rc1)) | (!mitel_6865__firmware_update_sp1 & (rc1) & !mitel_6865__firmware_update_sp2 & (rc1) & mitel_6865__firmware_update_any & (rc1)))
+        mitel_6865__firmware_version_any => mitel_6865__firmware_update_any
+        mitel_6865__firmware_version_any => (rc1)
+        mitel_6867__firmware_version_4__2 => ((mitel_6867__firmware_update_sp1 & (rc2) & !mitel_6867__firmware_update_sp2 & (rc2) & !mitel_6867__firmware_update_any & (rc2)) | (!mitel_6867__firmware_update_sp1 & (rc2) & mitel_6867__firmware_update_sp2 & (rc2) & !mitel_6867__firmware_update_any & (rc2)) | (!mitel_6867__firmware_update_sp1 & (rc2) & !mitel_6867__firmware_update_sp2 & (rc2) & mitel_6867__firmware_update_any & (rc2)))
+        mitel_6867__firmware_version_4__5 => mitel_6867__firmware_update_any
+        mitel_6867__firmware_version_4__5 => (rc2)
+        mitel_6867__firmware_version_5__1 => ((mitel_6867__firmware_update_sp4 & (rc2) & !mitel_6867__firmware_update_sp1 & (rc2) & !mitel_6867__firmware_update_sp3 & (rc2) & !mitel_6867__firmware_update_sp2 & (rc2) & !mitel_6867__firmware_update_any & (rc2)) | (!mitel_6867__firmware_update_sp4 & (rc2) & mitel_6867__firmware_update_sp1 & (rc2) & !mitel_6867__firmware_update_sp3 & (rc2) & !mitel_6867__firmware_update_sp2 & (rc2) & !mitel_6867__firmware_update_any & (rc2)) | (!mitel_6867__firmware_update_sp4 & (rc2) & !mitel_6867__firmware_update_sp1 & (rc2) & mitel_6867__firmware_update_sp3 & (rc2) & !mitel_6867__firmware_update_sp2 & (rc2) & !mitel_6867__firmware_update_any & (rc2)) | (!mitel_6867__firmware_update_sp4 & (rc2) & !mitel_6867__firmware_update_sp1 & (rc2) & !mitel_6867__firmware_update_sp3 & (rc2) & mitel_6867__firmware_update_sp2 & (rc2) & !mitel_6867__firmware_update_any & (rc2)) | (!mitel_6867__firmware_update_sp4 & (rc2) & !mitel_6867__firmware_update_sp1 & (rc2) & !mitel_6867__firmware_update_sp3 & (rc2) & !mitel_6867__firmware_update_sp2 & (rc2) & mitel_6867__firmware_update_any & (rc2)))
+        mitel_6867__firmware_version_4__3 => ((mitel_6867__firmware_update_sp1 & (rc2) & !mitel_6867__firmware_update_sp2 & (rc2)) | (!mitel_6867__firmware_update_sp1 & (rc2) & mitel_6867__firmware_update_sp2 & (rc2)))
+        mitel_6867__firmware_version_5__0 => ((mitel_6867__firmware_update_sp1 & (rc2) & !mitel_6867__firmware_update_sp2 & (rc2) & !mitel_6867__firmware_update_any & (rc2)) | (!mitel_6867__firmware_update_sp1 & (rc2) & mitel_6867__firmware_update_sp2 & (rc2) & !mitel_6867__firmware_update_any & (rc2)) | (!mitel_6867__firmware_update_sp1 & (rc2) & !mitel_6867__firmware_update_sp2 & (rc2) & mitel_6867__firmware_update_any & (rc2)))
+        mitel_6867__firmware_version_any => mitel_6867__firmware_update_any
+        mitel_6867__firmware_version_any => (rc2)
+        mitel_6869__firmware_version_4__2 => ((mitel_6869__firmware_update_sp1 & (rc3) & !mitel_6869__firmware_update_sp2 & (rc3) & !mitel_6869__firmware_update_any & (rc3)) | (!mitel_6869__firmware_update_sp1 & (rc3) & mitel_6869__firmware_update_sp2 & (rc3) & !mitel_6869__firmware_update_any & (rc3)) | (!mitel_6869__firmware_update_sp1 & (rc3) & !mitel_6869__firmware_update_sp2 & (rc3) & mitel_6869__firmware_update_any & (rc3)))
+        mitel_6869__firmware_version_4__5 => mitel_6869__firmware_update_any
+        mitel_6869__firmware_version_4__5 => (rc3)
+        mitel_6869__firmware_version_4__3 => ((mitel_6869__firmware_update_sp1 & (rc3) & !mitel_6869__firmware_update_sp2 & (rc3)) | (!mitel_6869__firmware_update_sp1 & (rc3) & mitel_6869__firmware_update_sp2 & (rc3)))
+        mitel_6869__firmware_version_5__1 => ((mitel_6869__firmware_update_sp4 & (rc3) & !mitel_6869__firmware_update_sp1 & (rc3) & !mitel_6869__firmware_update_sp3 & (rc3) & !mitel_6869__firmware_update_sp2 & (rc3) & !mitel_6869__firmware_update_any & (rc3)) | (!mitel_6869__firmware_update_sp4 & (rc3) & mitel_6869__firmware_update_sp1 & (rc3) & !mitel_6869__firmware_update_sp3 & (rc3) & !mitel_6869__firmware_update_sp2 & (rc3) & !mitel_6869__firmware_update_any & (rc3)) | (!mitel_6869__firmware_update_sp4 & (rc3) & !mitel_6869__firmware_update_sp1 & (rc3) & mitel_6869__firmware_update_sp3 & (rc3) & !mitel_6869__firmware_update_sp2 & (rc3) & !mitel_6869__firmware_update_any & (rc3)) | (!mitel_6869__firmware_update_sp4 & (rc3) & !mitel_6869__firmware_update_sp1 & (rc3) & !mitel_6869__firmware_update_sp3 & (rc3) & mitel_6869__firmware_update_sp2 & (rc3) & !mitel_6869__firmware_update_any & (rc3)) | (!mitel_6869__firmware_update_sp4 & (rc3) & !mitel_6869__firmware_update_sp1 & (rc3) & !mitel_6869__firmware_update_sp3 & (rc3) & !mitel_6869__firmware_update_sp2 & (rc3) & mitel_6869__firmware_update_any & (rc3)))
+        mitel_6869__firmware_version_5__0 => ((mitel_6869__firmware_update_sp1 & (rc3) & !mitel_6869__firmware_update_sp2 & (rc3) & !mitel_6869__firmware_update_any & (rc3)) | (!mitel_6869__firmware_update_sp1 & (rc3) & mitel_6869__firmware_update_sp2 & (rc3) & !mitel_6869__firmware_update_any & (rc3)) | (!mitel_6869__firmware_update_sp1 & (rc3) & !mitel_6869__firmware_update_sp2 & (rc3) & mitel_6869__firmware_update_any & (rc3)))
+        mitel_6869__firmware_version_any => mitel_6869__firmware_update_any
+        mitel_6869__firmware_version_any => (rc3)
+        mitel_6873__firmware_version_4__2 => ((mitel_6873__firmware_update_sp1 & (rc4) & !mitel_6873__firmware_update_sp2 & (rc4) & !mitel_6873__firmware_update_any & (rc4)) | (!mitel_6873__firmware_update_sp1 & (rc4) & mitel_6873__firmware_update_sp2 & (rc4) & !mitel_6873__firmware_update_any & (rc4)) | (!mitel_6873__firmware_update_sp1 & (rc4) & !mitel_6873__firmware_update_sp2 & (rc4) & mitel_6873__firmware_update_any & (rc4)))
+        mitel_6873__firmware_version_4__5 => mitel_6873__firmware_update_any
+        mitel_6873__firmware_version_4__5 => (rc4)
+        mitel_6873__firmware_version_5__1 => ((mitel_6873__firmware_update_sp4 & (rc4) & !mitel_6873__firmware_update_sp1 & (rc4) & !mitel_6873__firmware_update_sp3 & (rc4) & !mitel_6873__firmware_update_sp2 & (rc4) & !mitel_6873__firmware_update_any & (rc4)) | (!mitel_6873__firmware_update_sp4 & (rc4) & mitel_6873__firmware_update_sp1 & (rc4) & !mitel_6873__firmware_update_sp3 & (rc4) & !mitel_6873__firmware_update_sp2 & (rc4) & !mitel_6873__firmware_update_any & (rc4)) | (!mitel_6873__firmware_update_sp4 & (rc4) & !mitel_6873__firmware_update_sp1 & (rc4) & mitel_6873__firmware_update_sp3 & (rc4) & !mitel_6873__firmware_update_sp2 & (rc4) & !mitel_6873__firmware_update_any & (rc4)) | (!mitel_6873__firmware_update_sp4 & (rc4) & !mitel_6873__firmware_update_sp1 & (rc4) & !mitel_6873__firmware_update_sp3 & (rc4) & mitel_6873__firmware_update_sp2 & (rc4) & !mitel_6873__firmware_update_any & (rc4)) | (!mitel_6873__firmware_update_sp4 & (rc4) & !mitel_6873__firmware_update_sp1 & (rc4) & !mitel_6873__firmware_update_sp3 & (rc4) & !mitel_6873__firmware_update_sp2 & (rc4) & mitel_6873__firmware_update_any & (rc4)))
+        mitel_6873__firmware_version_4__3 => ((mitel_6873__firmware_update_sp1 & (rc4) & !mitel_6873__firmware_update_sp2 & (rc4)) | (!mitel_6873__firmware_update_sp1 & (rc4) & mitel_6873__firmware_update_sp2 & (rc4)))
+        mitel_6873__firmware_version_5__0 => ((mitel_6873__firmware_update_sp1 & (rc4) & !mitel_6873__firmware_update_sp2 & (rc4) & !mitel_6873__firmware_update_any & (rc4)) | (!mitel_6873__firmware_update_sp1 & (rc4) & mitel_6873__firmware_update_sp2 & (rc4) & !mitel_6873__firmware_update_any & (rc4)) | (!mitel_6873__firmware_update_sp1 & (rc4) & !mitel_6873__firmware_update_sp2 & (rc4) & mitel_6873__firmware_update_any & (rc4)))
+        mitel_6873__firmware_version_any => mitel_6873__firmware_update_any
+        mitel_6873__firmware_version_any => (rc4)
+        mitel_6940__firmware_update_sp4 => (rc5)
+        mitel_6940__firmware_update_sp1 => ((mitel_6940__firmware_version_5__1 & (rc5) & !mitel_6940__firmware_version_5__0 & (rc5)) | (!mitel_6940__firmware_version_5__1 & (rc5) & mitel_6940__firmware_version_5__0 & (rc5)))
+        mitel_6940__firmware_update_sp3 => (rc5)
+        mitel_6940__firmware_update_sp2 => ((mitel_6940__firmware_version_5__1 & (rc5) & !mitel_6940__firmware_version_5__0 & (rc5)) | (!mitel_6940__firmware_version_5__1 & (rc5) & mitel_6940__firmware_version_5__0 & (rc5)))
+        mitel_6940__firmware_update_any => ((mitel_6940__firmware_version_5__1 & (rc5) & !mitel_6940__firmware_version_any & (rc5) & !mitel_6940__firmware_version_5__0 & (rc5)) | (!mitel_6940__firmware_version_5__1 & (rc5) & mitel_6940__firmware_version_any & (rc5) & !mitel_6940__firmware_version_5__0 & (rc5)) | (!mitel_6940__firmware_version_5__1 & (rc5) & !mitel_6940__firmware_version_any & (rc5) & mitel_6940__firmware_version_5__0 & (rc5)))
+        mitel_6970__firmware_update_sp4 => (rc6)
+        mitel_6970__firmware_update_sp1 => ((mitel_6970__firmware_version_5__0 & (rc6) & !mitel_6970__firmware_version_5__1 & (rc6)) | (!mitel_6970__firmware_version_5__0 & (rc6) & mitel_6970__firmware_version_5__1 & (rc6)))
+        mitel_6970__firmware_update_sp3 => (rc6)
+        mitel_6970__firmware_update_sp2 => ((mitel_6970__firmware_version_5__0 & (rc6) & !mitel_6970__firmware_version_5__1 & (rc6)) | (!mitel_6970__firmware_version_5__0 & (rc6) & mitel_6970__firmware_version_5__1 & (rc6)))
+        mitel_6970__firmware_update_any => ((mitel_6970__firmware_version_5__0 & (rc6) & !mitel_6970__firmware_version_any & (rc6) & !mitel_6970__firmware_version_5__1 & (rc6)) | (!mitel_6970__firmware_version_5__0 & (rc6) & mitel_6970__firmware_version_any & (rc6) & !mitel_6970__firmware_version_5__1 & (rc6)) | (!mitel_6970__firmware_version_5__0 & (rc6) & !mitel_6970__firmware_version_any & (rc6) & mitel_6970__firmware_version_5__1 & (rc6)))
+        mitel_6930__firmware_update_sp4 => (rc7)
+        mitel_6930__firmware_update_sp1 => ((mitel_6930__firmware_version_5__0 & (rc7) & !mitel_6930__firmware_version_5__1 & (rc7)) | (!mitel_6930__firmware_version_5__0 & (rc7) & mitel_6930__firmware_version_5__1 & (rc7)))
+        mitel_6930__firmware_update_sp3 => (rc7)
+        mitel_6930__firmware_update_sp2 => ((mitel_6930__firmware_version_5__0 & (rc7) & !mitel_6930__firmware_version_5__1 & (rc7)) | (!mitel_6930__firmware_version_5__0 & (rc7) & mitel_6930__firmware_version_5__1 & (rc7)))
+        mitel_6930__firmware_update_any => ((mitel_6930__firmware_version_5__0 & (rc7) & !mitel_6930__firmware_version_any & (rc7) & !mitel_6930__firmware_version_5__1 & (rc7)) | (!mitel_6930__firmware_version_5__0 & (rc7) & mitel_6930__firmware_version_any & (rc7) & !mitel_6930__firmware_version_5__1 & (rc7)) | (!mitel_6930__firmware_version_5__0 & (rc7) & !mitel_6930__firmware_version_any & (rc7) & mitel_6930__firmware_version_5__1 & (rc7)))
+        mitel_6920__firmware_update_sp4 => (rc8)
+        mitel_6920__firmware_update_sp1 => ((mitel_6920__firmware_version_5__0 & (rc8) & !mitel_6920__firmware_version_5__1 & (rc8)) | (!mitel_6920__firmware_version_5__0 & (rc8) & mitel_6920__firmware_version_5__1 & (rc8)))
+        mitel_6920__firmware_update_sp3 => (rc8)
+        mitel_6920__firmware_update_sp2 => ((mitel_6920__firmware_version_5__0 & (rc8) & !mitel_6920__firmware_version_5__1 & (rc8)) | (!mitel_6920__firmware_version_5__0 & (rc8) & mitel_6920__firmware_version_5__1 & (rc8)))
+        mitel_6920__firmware_update_any => ((mitel_6920__firmware_version_5__0 & (rc8) & !mitel_6920__firmware_version_any & (rc8) & !mitel_6920__firmware_version_5__1 & (rc8)) | (!mitel_6920__firmware_version_5__0 & (rc8) & mitel_6920__firmware_version_any & (rc8) & !mitel_6920__firmware_version_5__1 & (rc8)) | (!mitel_6920__firmware_version_5__0 & (rc8) & !mitel_6920__firmware_version_any & (rc8) & mitel_6920__firmware_version_5__1 & (rc8)))
+        mitel_6905__firmware_update_sp4 => (rc9)
+        mitel_6905__firmware_update_sp1 => ((mitel_6905__firmware_version_5__1 & (rc9) & !mitel_6905__firmware_version_5__0 & (rc9)) | (!mitel_6905__firmware_version_5__1 & (rc9) & mitel_6905__firmware_version_5__0 & (rc9)))
+        mitel_6905__firmware_update_sp3 => (rc9)
+        mitel_6905__firmware_update_sp2 => ((mitel_6905__firmware_version_5__1 & (rc9) & !mitel_6905__firmware_version_5__0 & (rc9)) | (!mitel_6905__firmware_version_5__1 & (rc9) & mitel_6905__firmware_version_5__0 & (rc9)))
+        mitel_6905__firmware_update_any => ((mitel_6905__firmware_version_5__1 & (rc9) & !mitel_6905__firmware_version_any & (rc9) & !mitel_6905__firmware_version_5__0 & (rc9)) | (!mitel_6905__firmware_version_5__1 & (rc9) & mitel_6905__firmware_version_any & (rc9) & !mitel_6905__firmware_version_5__0 & (rc9)) | (!mitel_6905__firmware_version_5__1 & (rc9) & !mitel_6905__firmware_version_any & (rc9) & mitel_6905__firmware_version_5__0 & (rc9)))
+        mitel_6910__firmware_update_sp4 => (rc10)
+        mitel_6910__firmware_update_sp1 => ((mitel_6910__firmware_version_5__0 & (rc10) & !mitel_6910__firmware_version_5__1 & (rc10)) | (!mitel_6910__firmware_version_5__0 & (rc10) & mitel_6910__firmware_version_5__1 & (rc10)))
+        mitel_6910__firmware_update_sp3 => (rc10)
+        mitel_6910__firmware_update_sp2 => ((mitel_6910__firmware_version_5__0 & (rc10) & !mitel_6910__firmware_version_5__1 & (rc10)) | (!mitel_6910__firmware_version_5__0 & (rc10) & mitel_6910__firmware_version_5__1 & (rc10)))
+        mitel_6910__firmware_update_any => ((mitel_6910__firmware_version_5__0 & (rc10) & !mitel_6910__firmware_version_any & (rc10) & !mitel_6910__firmware_version_5__1 & (rc10)) | (!mitel_6910__firmware_version_5__0 & (rc10) & mitel_6910__firmware_version_any & (rc10) & !mitel_6910__firmware_version_5__1 & (rc10)) | (!mitel_6910__firmware_version_5__0 & (rc10) & !mitel_6910__firmware_version_any & (rc10) & mitel_6910__firmware_version_5__1 & (rc10)))

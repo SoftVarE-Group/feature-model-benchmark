@@ -1,0 +1,357 @@
+features
+        CVE_2020_8596
+                mandatory
+                        types
+                                mandatory
+                                        application
+                        sources
+                                mandatory
+                                        nvd
+                        exploits
+                                optional
+                                        direct
+                                        indirect
+                        xnau
+                                mandatory
+                                        xnau_participants__database
+                                                mandatory
+                                                        xnau_participants__database_version
+                                                                alternative
+                                                                        xnau_participants__database_version_1__7__8__4
+                                                                        xnau_participants__database_version_1__5__4__2
+                                                                        xnau_participants__database_version_1__7__9__12
+                                                                        xnau_participants__database_version_1__7__8__6
+                                                                        xnau_participants__database_version_1__5__1
+                                                                        xnau_participants__database_version_1__5__4__9
+                                                                        xnau_participants__database_version_1__9__3__9
+                                                                        xnau_participants__database_version_1__7__5__5
+                                                                        xnau_participants__database_version_1__4__4
+                                                                        xnau_participants__database_version_1__4__9
+                                                                        xnau_participants__database_version_1__9__3__6
+                                                                        xnau_participants__database_version_1__7__9__9
+                                                                        xnau_participants__database_version_1__6__1
+                                                                        xnau_participants__database_version_1__8__4__7
+                                                                        xnau_participants__database_version_1__7__6__6
+                                                                        xnau_participants__database_version_1__7__0__13
+                                                                        xnau_participants__database_version_1__7__5__2
+                                                                        xnau_participants__database_version_1__9__3__7
+                                                                        xnau_participants__database_version_1__7__9__11
+                                                                        xnau_participants__database_version_1__5__4__3
+                                                                        xnau_participants__database_version_1__5__2
+                                                                        xnau_participants__database_version_1__7__0__5
+                                                                        xnau_participants__database_version_1__7__8__3
+                                                                        xnau_participants__database_version_1__7__9__3
+                                                                        xnau_participants__database_version_1__4__8
+                                                                        xnau_participants__database_version_1__7__1
+                                                                        xnau_participants__database_version_1__9__3__5
+                                                                        xnau_participants__database_version_1__7__1__4
+                                                                        xnau_participants__database_version_1__7__5
+                                                                        xnau_participants__database_version_1__8__3
+                                                                        xnau_participants__database_version_1__5__3
+                                                                        xnau_participants__database_version_1__7__6
+                                                                        xnau_participants__database_version_1__7__5__4
+                                                                        xnau_participants__database_version_1__7__1__7
+                                                                        xnau_participants__database_version_1__5__4__7
+                                                                        xnau_participants__database_version_1__7__9__10
+                                                                        xnau_participants__database_version_1__7__7__6
+                                                                        xnau_participants__database_version_1__9__0
+                                                                        xnau_participants__database_version_1__7__5__6
+                                                                        xnau_participants__database_version_1__5
+                                                                        xnau_participants__database_version_1__7__2__2
+                                                                        xnau_participants__database_version_1__7__5__1
+                                                                        xnau_participants__database_version_1__7__8__10
+                                                                        xnau_participants__database_version_1__8__4__5
+                                                                        xnau_participants__database_version_1__7__1__10
+                                                                        xnau_participants__database_version_1__7__3__1
+                                                                        xnau_participants__database_version_1__8__5
+                                                                        xnau_participants__database_version_1__7__7__3
+                                                                        xnau_participants__database_version_1__4__9__3
+                                                                        xnau_participants__database_version_1__7__5__8
+                                                                        xnau_participants__database_version_1__9__3__4
+                                                                        xnau_participants__database_version_1__7__7__1
+                                                                        xnau_participants__database_version_1__7__0__2
+                                                                        xnau_participants__database_version_1__8__4__1
+                                                                        xnau_participants__database_version_1__9__5__5
+                                                                        xnau_participants__database_version_1__7__2
+                                                                        xnau_participants__database_version_1__7__9__6
+                                                                        xnau_participants__database_version_1__7
+                                                                        xnau_participants__database_version_1__5__4__8
+                                                                        xnau_participants__database_version_1__6__2__3
+                                                                        xnau_participants__database_version_1__7__9__1
+                                                                        xnau_participants__database_version_1__8__4__9
+                                                                        xnau_participants__database_version_1__7__1__8
+                                                                        xnau_participants__database_version_1__6__2__8
+                                                                        xnau_participants__database_version_1__7__8
+                                                                        xnau_participants__database_version_1__7__5__11
+                                                                        xnau_participants__database_version_1__4__5__2
+                                                                        xnau_participants__database_version_1__7__6__2
+                                                                        xnau_participants__database_version_1__7__0__9
+                                                                        xnau_participants__database_version_1__7__5__10
+                                                                        xnau_participants__database_version_1__8__2
+                                                                        xnau_participants__database_version_1__9__3
+                                                                        xnau_participants__database_version_1__6__2__2
+                                                                        xnau_participants__database_version_1__7__5__13
+                                                                        xnau_participants__database_version_1__7__3__2
+                                                                        xnau_participants__database_version_1__7__0__16
+                                                                        xnau_participants__database_version_1__7__5__12
+                                                                        xnau_participants__database_version_1__4__2
+                                                                        xnau_participants__database_version_1__7__1__3
+                                                                        xnau_participants__database_version_1__7__8__9
+                                                                        xnau_participants__database_version_1__7__1__11
+                                                                        xnau_participants__database_version_1__6__2__1
+                                                                        xnau_participants__database_version_1__7__6__1
+                                                                        xnau_participants__database_version_1__8__3__1
+                                                                        xnau_participants__database_version_1__6__2__7
+                                                                        xnau_participants__database_version_1__7__0__4
+                                                                        xnau_participants__database_version_1__8__4__4
+                                                                        xnau_participants__database_version_1__7__9__8
+                                                                        xnau_participants__database_version_1__4__5__1
+                                                                        xnau_participants__database_version_1__7__8__7
+                                                                        xnau_participants__database_version_1__9__3__10
+                                                                        xnau_participants__database_version_1__7__1__5
+                                                                        xnau_participants__database_version_1__7__8__1
+                                                                        xnau_participants__database_version_1__7__0__14
+                                                                        xnau_participants__database_version_1__5__4__4
+                                                                        xnau_participants__database_version_1__9__5__4
+                                                                        xnau_participants__database_version_1__8__4__3
+                                                                        xnau_participants__database_version_1__7__5__14
+                                                                        xnau_participants__database_version_1__7__0__12
+                                                                        xnau_participants__database_version_1__7__1__12
+                                                                        xnau_participants__database_version_1__6__2
+                                                                        xnau_participants__database_version_1__7__1__1
+                                                                        xnau_participants__database_version_1__7__0__10
+                                                                        xnau_participants__database_version_1__7__9__2
+                                                                        xnau_participants__database_version_1__7__2__1
+                                                                        xnau_participants__database_version_1__8__3__2
+                                                                        xnau_participants__database_version_1__9__3__2
+                                                                        xnau_participants__database_version_1__7__0__8
+                                                                        xnau_participants__database_version_1__7__0__3
+                                                                        xnau_participants__database_version_1__7__0__15
+                                                                        xnau_participants__database_version_1__9__2
+                                                                        xnau_participants__database_version_1__7__7
+                                                                        xnau_participants__database_version_1__7__0__1
+                                                                        xnau_participants__database_version_1__7__9__4
+                                                                        xnau_participants__database_version_1__6__2__5
+                                                                        xnau_participants__database_version_1__4__9__1
+                                                                        xnau_participants__database_version_1__7__9__5
+                                                                        xnau_participants__database_version_1__7__8__11
+                                                                        xnau_participants__database_version_1__7__0__7
+                                                                        xnau_participants__database_version_1__8__1
+                                                                        xnau_participants__database_version_1__5__4__5
+                                                                        xnau_participants__database_version_1__4__5
+                                                                        xnau_participants__database_version_1__7__6__5
+                                                                        xnau_participants__database_version_1__7__2__3
+                                                                        xnau_participants__database_version_1__7__5__9
+                                                                        xnau_participants__database_version_1__8__4
+                                                                        xnau_participants__database_version_1__5__4__1
+                                                                        xnau_participants__database_version_1__9__3__8
+                                                                        xnau_participants__database_version_1__9__1
+                                                                        xnau_participants__database_version_1__4__6
+                                                                        xnau_participants__database_version_1__7__6__4
+                                                                        xnau_participants__database_version_1__9__3__1
+                                                                        xnau_participants__database_version_1__7__9
+                                                                        xnau_participants__database_version_1__7__7__2
+                                                                        xnau_participants__database_version_1__7__5__16
+                                                                        xnau_participants__database_version_1__7__7__7
+                                                                        xnau_participants__database_version_1__7__6__3
+                                                                        xnau_participants__database_version_1__7__1__6
+                                                                        xnau_participants__database_version_1__7__7__4
+                                                                        xnau_participants__database_version_1__7__8__2
+                                                                        xnau_participants__database_version_1__8__4__6
+                                                                        xnau_participants__database_version_1__8__4__2
+                                                                        xnau_participants__database_version_1__8__4__8
+                                                                        xnau_participants__database_version_1__7__1__9
+                                                                        xnau_participants__database_version_1__5__4
+                                                                        xnau_participants__database_version_1__5__4__6
+                                                                        xnau_participants__database_version_1__7__3
+                                                                        xnau_participants__database_version_1__8
+                                                                        xnau_participants__database_version_1__5__41__5__4__1
+                                                                        xnau_participants__database_version_1__4
+                                                                        xnau_participants__database_version_1__7__8__5
+                                                                        xnau_participants__database_version_1__6__2__7__1
+                                                                        xnau_participants__database_version_1__7__9__7
+                                                                        xnau_participants__database_version_1__4__3
+                                                                        xnau_participants__database_version_1__6
+                                                                        xnau_participants__database_version_1__7__7__5
+                                                                        xnau_participants__database_version_1__4__7
+                                                                        xnau_participants__database_version_1__9__3__3
+                                                                        xnau_participants__database_version_1__7__0__11
+                                                                        xnau_participants__database_version_1__7__5__3
+                                                                        xnau_participants__database_version_1__7__0__6
+                                                                        xnau_participants__database_version_1__7__5__7
+                                                                        xnau_participants__database_version_1__7__1__2
+                                                                        xnau_participants__database_version_1__4__9__2
+                                                        xnau_participants__database_update
+                                                                alternative
+                                                                        xnau_participants__database_update_beta
+                                                                        xnau_participants__database_update_any
+                                                        xnau_participants__database_target__sw
+                                                                mandatory
+                                                                        xnau_participants__database_target__sw_wordpress
+
+constraints
+        xnau_participants__database => application
+        xnau_participants__database_version_1__7__8__4 => xnau_participants__database_update_any
+        xnau_participants__database_version_1__5__4__2 => xnau_participants__database_update_any
+        xnau_participants__database_version_1__7__9__12 => xnau_participants__database_update_any
+        xnau_participants__database_version_1__7__8__6 => xnau_participants__database_update_any
+        xnau_participants__database_version_1__5__1 => xnau_participants__database_update_beta
+        xnau_participants__database_version_1__5__4__9 => xnau_participants__database_update_any
+        xnau_participants__database_version_1__9__3__9 => xnau_participants__database_update_any
+        xnau_participants__database_version_1__7__5__5 => xnau_participants__database_update_any
+        xnau_participants__database_version_1__4__4 => xnau_participants__database_update_any
+        xnau_participants__database_version_1__4__9 => xnau_participants__database_update_any
+        xnau_participants__database_version_1__9__3__6 => xnau_participants__database_update_any
+        xnau_participants__database_version_1__7__9__9 => xnau_participants__database_update_any
+        xnau_participants__database_version_1__6__1 => xnau_participants__database_update_any
+        xnau_participants__database_version_1__8__4__7 => xnau_participants__database_update_any
+        xnau_participants__database_version_1__7__6__6 => xnau_participants__database_update_any
+        xnau_participants__database_version_1__7__0__13 => xnau_participants__database_update_any
+        xnau_participants__database_version_1__7__5__2 => xnau_participants__database_update_any
+        xnau_participants__database_version_1__9__3__7 => xnau_participants__database_update_any
+        xnau_participants__database_version_1__7__9__11 => xnau_participants__database_update_any
+        xnau_participants__database_version_1__5__4__3 => xnau_participants__database_update_any
+        xnau_participants__database_version_1__5__2 => xnau_participants__database_update_beta
+        xnau_participants__database_version_1__7__0__5 => xnau_participants__database_update_any
+        xnau_participants__database_version_1__7__8__3 => xnau_participants__database_update_any
+        xnau_participants__database_version_1__7__9__3 => xnau_participants__database_update_any
+        xnau_participants__database_version_1__4__8 => xnau_participants__database_update_any
+        xnau_participants__database_version_1__7__1 => xnau_participants__database_update_any
+        xnau_participants__database_version_1__9__3__5 => xnau_participants__database_update_any
+        xnau_participants__database_version_1__7__1__4 => xnau_participants__database_update_any
+        xnau_participants__database_version_1__7__5 => xnau_participants__database_update_any
+        xnau_participants__database_version_1__8__3 => xnau_participants__database_update_any
+        xnau_participants__database_version_1__5__3 => xnau_participants__database_update_beta
+        xnau_participants__database_version_1__7__6 => xnau_participants__database_update_any
+        xnau_participants__database_version_1__7__5__4 => xnau_participants__database_update_any
+        xnau_participants__database_version_1__7__1__7 => xnau_participants__database_update_any
+        xnau_participants__database_version_1__5__4__7 => xnau_participants__database_update_any
+        xnau_participants__database_version_1__7__9__10 => xnau_participants__database_update_any
+        xnau_participants__database_version_1__7__7__6 => xnau_participants__database_update_any
+        xnau_participants__database_version_1__9__0 => xnau_participants__database_update_any
+        xnau_participants__database_version_1__7__5__6 => xnau_participants__database_update_any
+        xnau_participants__database_version_1__5 => xnau_participants__database_update_beta
+        xnau_participants__database_version_1__7__2__2 => xnau_participants__database_update_any
+        xnau_participants__database_version_1__7__5__1 => xnau_participants__database_update_any
+        xnau_participants__database_version_1__7__8__10 => xnau_participants__database_update_any
+        xnau_participants__database_version_1__8__4__5 => xnau_participants__database_update_any
+        xnau_participants__database_version_1__7__1__10 => xnau_participants__database_update_any
+        xnau_participants__database_version_1__7__3__1 => xnau_participants__database_update_any
+        xnau_participants__database_version_1__8__5 => xnau_participants__database_update_any
+        xnau_participants__database_version_1__7__7__3 => xnau_participants__database_update_any
+        xnau_participants__database_version_1__4__9__3 => xnau_participants__database_update_any
+        xnau_participants__database_version_1__7__5__8 => xnau_participants__database_update_any
+        xnau_participants__database_version_1__9__3__4 => xnau_participants__database_update_any
+        xnau_participants__database_version_1__7__7__1 => xnau_participants__database_update_any
+        xnau_participants__database_version_1__7__0__2 => xnau_participants__database_update_any
+        xnau_participants__database_version_1__8__4__1 => xnau_participants__database_update_any
+        xnau_participants__database_version_1__9__5__5 => xnau_participants__database_update_any
+        xnau_participants__database_version_1__7__2 => xnau_participants__database_update_any
+        xnau_participants__database_version_1__7__9__6 => xnau_participants__database_update_any
+        xnau_participants__database_version_1__7 => xnau_participants__database_update_any
+        xnau_participants__database_version_1__5__4__8 => xnau_participants__database_update_any
+        xnau_participants__database_version_1__6__2__3 => xnau_participants__database_update_any
+        xnau_participants__database_version_1__7__9__1 => xnau_participants__database_update_any
+        xnau_participants__database_version_1__8__4__9 => xnau_participants__database_update_any
+        xnau_participants__database_version_1__7__1__8 => xnau_participants__database_update_any
+        xnau_participants__database_version_1__6__2__8 => xnau_participants__database_update_any
+        xnau_participants__database_version_1__7__8 => xnau_participants__database_update_any
+        xnau_participants__database_version_1__7__5__11 => xnau_participants__database_update_any
+        xnau_participants__database_version_1__4__5__2 => xnau_participants__database_update_any
+        xnau_participants__database_version_1__7__6__2 => xnau_participants__database_update_any
+        xnau_participants__database_version_1__7__0__9 => xnau_participants__database_update_any
+        xnau_participants__database_version_1__7__5__10 => xnau_participants__database_update_any
+        xnau_participants__database_version_1__8__2 => xnau_participants__database_update_any
+        xnau_participants__database_version_1__9__3 => xnau_participants__database_update_any
+        xnau_participants__database_version_1__6__2__2 => xnau_participants__database_update_any
+        xnau_participants__database_version_1__7__5__13 => xnau_participants__database_update_any
+        xnau_participants__database_version_1__7__3__2 => xnau_participants__database_update_any
+        xnau_participants__database_version_1__7__0__16 => xnau_participants__database_update_any
+        xnau_participants__database_version_1__7__5__12 => xnau_participants__database_update_any
+        xnau_participants__database_version_1__4__2 => xnau_participants__database_update_any
+        xnau_participants__database_version_1__7__1__3 => xnau_participants__database_update_any
+        xnau_participants__database_version_1__7__8__9 => xnau_participants__database_update_any
+        xnau_participants__database_version_1__7__1__11 => xnau_participants__database_update_any
+        xnau_participants__database_version_1__6__2__1 => xnau_participants__database_update_any
+        xnau_participants__database_version_1__7__6__1 => xnau_participants__database_update_any
+        xnau_participants__database_version_1__8__3__1 => xnau_participants__database_update_any
+        xnau_participants__database_version_1__6__2__7 => xnau_participants__database_update_any
+        xnau_participants__database_version_1__7__0__4 => xnau_participants__database_update_any
+        xnau_participants__database_version_1__8__4__4 => xnau_participants__database_update_any
+        xnau_participants__database_version_1__7__9__8 => xnau_participants__database_update_any
+        xnau_participants__database_version_1__4__5__1 => xnau_participants__database_update_any
+        xnau_participants__database_version_1__7__8__7 => xnau_participants__database_update_any
+        xnau_participants__database_version_1__9__3__10 => xnau_participants__database_update_any
+        xnau_participants__database_version_1__7__1__5 => xnau_participants__database_update_any
+        xnau_participants__database_version_1__7__8__1 => xnau_participants__database_update_any
+        xnau_participants__database_version_1__7__0__14 => xnau_participants__database_update_any
+        xnau_participants__database_version_1__5__4__4 => xnau_participants__database_update_any
+        xnau_participants__database_version_1__9__5__4 => xnau_participants__database_update_any
+        xnau_participants__database_version_1__8__4__3 => xnau_participants__database_update_any
+        xnau_participants__database_version_1__7__5__14 => xnau_participants__database_update_any
+        xnau_participants__database_version_1__7__0__12 => xnau_participants__database_update_any
+        xnau_participants__database_version_1__7__1__12 => xnau_participants__database_update_any
+        xnau_participants__database_version_1__6__2 => xnau_participants__database_update_any
+        xnau_participants__database_version_1__7__1__1 => xnau_participants__database_update_any
+        xnau_participants__database_version_1__7__0__10 => xnau_participants__database_update_any
+        xnau_participants__database_version_1__7__9__2 => xnau_participants__database_update_any
+        xnau_participants__database_version_1__7__2__1 => xnau_participants__database_update_any
+        xnau_participants__database_version_1__8__3__2 => xnau_participants__database_update_any
+        xnau_participants__database_version_1__9__3__2 => xnau_participants__database_update_any
+        xnau_participants__database_version_1__7__0__8 => xnau_participants__database_update_any
+        xnau_participants__database_version_1__7__0__3 => xnau_participants__database_update_any
+        xnau_participants__database_version_1__7__0__15 => xnau_participants__database_update_any
+        xnau_participants__database_version_1__9__2 => xnau_participants__database_update_any
+        xnau_participants__database_version_1__7__7 => xnau_participants__database_update_any
+        xnau_participants__database_version_1__7__0__1 => xnau_participants__database_update_any
+        xnau_participants__database_version_1__7__9__4 => xnau_participants__database_update_any
+        xnau_participants__database_version_1__6__2__5 => xnau_participants__database_update_any
+        xnau_participants__database_version_1__4__9__1 => xnau_participants__database_update_any
+        xnau_participants__database_version_1__7__9__5 => xnau_participants__database_update_any
+        xnau_participants__database_version_1__7__8__11 => xnau_participants__database_update_any
+        xnau_participants__database_version_1__7__0__7 => xnau_participants__database_update_any
+        xnau_participants__database_version_1__8__1 => xnau_participants__database_update_any
+        xnau_participants__database_version_1__5__4__5 => xnau_participants__database_update_any
+        xnau_participants__database_version_1__4__5 => xnau_participants__database_update_any
+        xnau_participants__database_version_1__7__6__5 => xnau_participants__database_update_any
+        xnau_participants__database_version_1__7__2__3 => xnau_participants__database_update_any
+        xnau_participants__database_version_1__7__5__9 => xnau_participants__database_update_any
+        xnau_participants__database_version_1__8__4 => xnau_participants__database_update_any
+        xnau_participants__database_version_1__5__4__1 => xnau_participants__database_update_any
+        xnau_participants__database_version_1__9__3__8 => xnau_participants__database_update_any
+        xnau_participants__database_version_1__9__1 => xnau_participants__database_update_any
+        xnau_participants__database_version_1__4__6 => xnau_participants__database_update_any
+        xnau_participants__database_version_1__7__6__4 => xnau_participants__database_update_any
+        xnau_participants__database_version_1__9__3__1 => xnau_participants__database_update_any
+        xnau_participants__database_version_1__7__9 => xnau_participants__database_update_any
+        xnau_participants__database_version_1__7__7__2 => xnau_participants__database_update_any
+        xnau_participants__database_version_1__7__5__16 => xnau_participants__database_update_any
+        xnau_participants__database_version_1__7__7__7 => xnau_participants__database_update_any
+        xnau_participants__database_version_1__7__6__3 => xnau_participants__database_update_any
+        xnau_participants__database_version_1__7__1__6 => xnau_participants__database_update_any
+        xnau_participants__database_version_1__7__7__4 => xnau_participants__database_update_any
+        xnau_participants__database_version_1__7__8__2 => xnau_participants__database_update_any
+        xnau_participants__database_version_1__8__4__6 => xnau_participants__database_update_any
+        xnau_participants__database_version_1__8__4__2 => xnau_participants__database_update_any
+        xnau_participants__database_version_1__8__4__8 => xnau_participants__database_update_any
+        xnau_participants__database_version_1__7__1__9 => xnau_participants__database_update_any
+        xnau_participants__database_version_1__5__4 => xnau_participants__database_update_any
+        xnau_participants__database_version_1__5__4__6 => xnau_participants__database_update_any
+        xnau_participants__database_version_1__7__3 => xnau_participants__database_update_any
+        xnau_participants__database_version_1__8 => xnau_participants__database_update_any
+        xnau_participants__database_version_1__5__41__5__4__1 => xnau_participants__database_update_any
+        xnau_participants__database_version_1__4 => xnau_participants__database_update_any
+        xnau_participants__database_version_1__7__8__5 => xnau_participants__database_update_any
+        xnau_participants__database_version_1__6__2__7__1 => xnau_participants__database_update_any
+        xnau_participants__database_version_1__7__9__7 => xnau_participants__database_update_any
+        xnau_participants__database_version_1__4__3 => xnau_participants__database_update_any
+        xnau_participants__database_version_1__6 => xnau_participants__database_update_any
+        xnau_participants__database_version_1__7__7__5 => xnau_participants__database_update_any
+        xnau_participants__database_version_1__4__7 => xnau_participants__database_update_any
+        xnau_participants__database_version_1__9__3__3 => xnau_participants__database_update_any
+        xnau_participants__database_version_1__7__0__11 => xnau_participants__database_update_any
+        xnau_participants__database_version_1__7__5__3 => xnau_participants__database_update_any
+        xnau_participants__database_version_1__7__0__6 => xnau_participants__database_update_any
+        xnau_participants__database_version_1__7__5__7 => xnau_participants__database_update_any
+        xnau_participants__database_version_1__7__1__2 => xnau_participants__database_update_any
+        xnau_participants__database_version_1__4__9__2 => xnau_participants__database_update_any

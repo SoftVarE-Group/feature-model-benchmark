@@ -1,0 +1,285 @@
+features
+        CVE_2010_1728
+                optional
+                        configs
+                                mandatory
+                                        rc0
+                                                alternative
+                                                        rc0_apple
+                                                                mandatory
+                                                                        rc0_apple_mac__os__x
+                                                        rc0_microsoft
+                                                                mandatory
+                                                                        rc0_microsoft_windows
+                mandatory
+                        types
+                                mandatory
+                                        application
+                        sources
+                                mandatory
+                                        nvd
+                        exploits
+                                optional
+                                        direct
+                                        indirect
+                        opera
+                                mandatory
+                                        opera_opera__browser
+                                                mandatory
+                                                        opera_opera__browser_version
+                                                                alternative
+                                                                        opera_opera__browser_version_9__23
+                                                                        opera_opera__browser_version_9__21
+                                                                        opera_opera__browser_version_7__51
+                                                                        opera_opera__browser_version_7__10
+                                                                        opera_opera__browser_version_5__0
+                                                                        opera_opera__browser_version_7__21
+                                                                        opera_opera__browser_version_10__10
+                                                                        opera_opera__browser_version_6__11
+                                                                        opera_opera__browser_version_3__61
+                                                                        opera_opera__browser_version_7__01
+                                                                        opera_opera__browser_version_9__63
+                                                                        opera_opera__browser_version_7__60
+                                                                        opera_opera__browser_version_8__01
+                                                                        opera_opera__browser_version_5__02
+                                                                        opera_opera__browser_version_9__25
+                                                                        opera_opera__browser_version_9__0
+                                                                        opera_opera__browser_version_4__01
+                                                                        opera_opera__browser_version_9__00
+                                                                        opera_opera__browser_version_9__62
+                                                                        opera_opera__browser_version_10__20
+                                                                        opera_opera__browser_version_2__10
+                                                                        opera_opera__browser_version_8__52
+                                                                        opera_opera__browser_version_6__01
+                                                                        opera_opera__browser_version_9__22
+                                                                        opera_opera__browser_version_10__00
+                                                                        opera_opera__browser_version_9__24
+                                                                        opera_opera__browser_version_3__51
+                                                                        opera_opera__browser_version_6__05
+                                                                        opera_opera__browser_version_3__00
+                                                                        opera_opera__browser_version_9__50
+                                                                        opera_opera__browser_version_1__00
+                                                                        opera_opera__browser_version_6__0
+                                                                        opera_opera__browser_version_9__01
+                                                                        opera_opera__browser_version_5__11
+                                                                        opera_opera__browser_version_7__11
+                                                                        opera_opera__browser_version_10__50
+                                                                        opera_opera__browser_version_10__52
+                                                                        opera_opera__browser_version_8__54
+                                                                        opera_opera__browser_version_8__0
+                                                                        opera_opera__browser_version_7__53
+                                                                        opera_opera__browser_version_7__52
+                                                                        opera_opera__browser_version_4__00
+                                                                        opera_opera__browser_version_9__12
+                                                                        opera_opera__browser_version_10__11
+                                                                        opera_opera__browser_version_6__02
+                                                                        opera_opera__browser_version_6__03
+                                                                        opera_opera__browser_version_9__52
+                                                                        opera_opera__browser_version_7__20
+                                                                        opera_opera__browser_version_6__04
+                                                                        opera_opera__browser_version_9__26
+                                                                        opera_opera__browser_version_9__61
+                                                                        opera_opera__browser_version_7__0
+                                                                        opera_opera__browser_version_7__03
+                                                                        opera_opera__browser_version_3__60
+                                                                        opera_opera__browser_version_6__1
+                                                                        opera_opera__browser_version_7__22
+                                                                        opera_opera__browser_version_3__21
+                                                                        opera_opera__browser_version_5__10
+                                                                        opera_opera__browser_version_8__51
+                                                                        opera_opera__browser_version_9__51
+                                                                        opera_opera__browser_version_8__00
+                                                                        opera_opera__browser_version_4__02
+                                                                        opera_opera__browser_version_9__20
+                                                                        opera_opera__browser_version_10__51
+                                                                        opera_opera__browser_version_7__02
+                                                                        opera_opera__browser_version_7__54
+                                                                        opera_opera__browser_version_2__12
+                                                                        opera_opera__browser_version_9__60
+                                                                        opera_opera__browser_version_7__23
+                                                                        opera_opera__browser_version_9__02
+                                                                        opera_opera__browser_version_9__10
+                                                                        opera_opera__browser_version_5__12
+                                                                        opera_opera__browser_version_6__12
+                                                                        opera_opera__browser_version_9__27
+                                                                        opera_opera__browser_version_8__53
+                                                                        opera_opera__browser_version_8__50
+                                                                        opera_opera__browser_version_2__00
+                                                                        opera_opera__browser_version_6__06
+                                                                        opera_opera__browser_version_3__10
+                                                                        opera_opera__browser_version_7__50
+                                                                        opera_opera__browser_version_9__64
+                                                                        opera_opera__browser_version_8__02
+                                                                        opera_opera__browser_version_3__50
+                                                                        opera_opera__browser_version_3__62
+                                                                        opera_opera__browser_version_10__01
+                                                        opera_opera__browser_update
+                                                                alternative
+                                                                        opera_opera__browser_update_tp1
+                                                                        opera_opera__browser_update_tp3
+                                                                        opera_opera__browser_update_beta2
+                                                                        opera_opera__browser_update_beta5
+                                                                        opera_opera__browser_update_beta3
+                                                                        opera_opera__browser_update_any
+                                                                        opera_opera__browser_update_beta4
+                                                                        opera_opera__browser_update_update2
+                                                                        opera_opera__browser_update_beta8
+                                                                        opera_opera__browser_update_beta
+                                                                        opera_opera__browser_update_beta1
+                                                                        opera_opera__browser_update_tp2
+                                                                        opera_opera__browser_update_beta6
+                                                                        opera_opera__browser_update_beta7
+                                                                        opera_opera__browser_update_update1
+                                                                        opera_opera__browser_update_alpha
+                                                                        opera_opera__browser_update_beta1__v2
+
+constraints
+        opera_opera__browser => application
+        opera_opera__browser_version_9__23 => opera_opera__browser_update_any
+        opera_opera__browser_version_9__23 => (rc0)
+        opera_opera__browser_version_9__21 => opera_opera__browser_update_any
+        opera_opera__browser_version_9__21 => (rc0)
+        opera_opera__browser_version_7__51 => opera_opera__browser_update_any
+        opera_opera__browser_version_7__51 => (rc0)
+        opera_opera__browser_version_7__10 => ((opera_opera__browser_update_any & (rc0) & !opera_opera__browser_update_beta1 & (rc0)) | (!opera_opera__browser_update_any & (rc0) & opera_opera__browser_update_beta1 & (rc0)))
+        opera_opera__browser_version_5__0 => ((opera_opera__browser_update_beta2 & (rc0) & !opera_opera__browser_update_beta5 & (rc0) & !opera_opera__browser_update_beta3 & (rc0) & !opera_opera__browser_update_any & (rc0) & !opera_opera__browser_update_beta4 & (rc0) & !opera_opera__browser_update_beta8 & (rc0) & !opera_opera__browser_update_beta6 & (rc0) & !opera_opera__browser_update_beta7 & (rc0)) | (!opera_opera__browser_update_beta2 & (rc0) & opera_opera__browser_update_beta5 & (rc0) & !opera_opera__browser_update_beta3 & (rc0) & !opera_opera__browser_update_any & (rc0) & !opera_opera__browser_update_beta4 & (rc0) & !opera_opera__browser_update_beta8 & (rc0) & !opera_opera__browser_update_beta6 & (rc0) & !opera_opera__browser_update_beta7 & (rc0)) | (!opera_opera__browser_update_beta2 & (rc0) & !opera_opera__browser_update_beta5 & (rc0) & opera_opera__browser_update_beta3 & (rc0) & !opera_opera__browser_update_any & (rc0) & !opera_opera__browser_update_beta4 & (rc0) & !opera_opera__browser_update_beta8 & (rc0) & !opera_opera__browser_update_beta6 & (rc0) & !opera_opera__browser_update_beta7 & (rc0)) | (!opera_opera__browser_update_beta2 & (rc0) & !opera_opera__browser_update_beta5 & (rc0) & !opera_opera__browser_update_beta3 & (rc0) & opera_opera__browser_update_any & (rc0) & !opera_opera__browser_update_beta4 & (rc0) & !opera_opera__browser_update_beta8 & (rc0) & !opera_opera__browser_update_beta6 & (rc0) & !opera_opera__browser_update_beta7 & (rc0)) | (!opera_opera__browser_update_beta2 & (rc0) & !opera_opera__browser_update_beta5 & (rc0) & !opera_opera__browser_update_beta3 & (rc0) & !opera_opera__browser_update_any & (rc0) & opera_opera__browser_update_beta4 & (rc0) & !opera_opera__browser_update_beta8 & (rc0) & !opera_opera__browser_update_beta6 & (rc0) & !opera_opera__browser_update_beta7 & (rc0)) | (!opera_opera__browser_update_beta2 & (rc0) & !opera_opera__browser_update_beta5 & (rc0) & !opera_opera__browser_update_beta3 & (rc0) & !opera_opera__browser_update_any & (rc0) & !opera_opera__browser_update_beta4 & (rc0) & opera_opera__browser_update_beta8 & (rc0) & !opera_opera__browser_update_beta6 & (rc0) & !opera_opera__browser_update_beta7 & (rc0)) | (!opera_opera__browser_update_beta2 & (rc0) & !opera_opera__browser_update_beta5 & (rc0) & !opera_opera__browser_update_beta3 & (rc0) & !opera_opera__browser_update_any & (rc0) & !opera_opera__browser_update_beta4 & (rc0) & !opera_opera__browser_update_beta8 & (rc0) & opera_opera__browser_update_beta6 & (rc0) & !opera_opera__browser_update_beta7 & (rc0)) | (!opera_opera__browser_update_beta2 & (rc0) & !opera_opera__browser_update_beta5 & (rc0) & !opera_opera__browser_update_beta3 & (rc0) & !opera_opera__browser_update_any & (rc0) & !opera_opera__browser_update_beta4 & (rc0) & !opera_opera__browser_update_beta8 & (rc0) & !opera_opera__browser_update_beta6 & (rc0) & opera_opera__browser_update_beta7 & (rc0)))
+        opera_opera__browser_version_7__21 => opera_opera__browser_update_any
+        opera_opera__browser_version_7__21 => (rc0)
+        opera_opera__browser_version_10__10 => ((opera_opera__browser_update_any & (rc0) & !opera_opera__browser_update_beta1 & (rc0)) | (!opera_opera__browser_update_any & (rc0) & opera_opera__browser_update_beta1 & (rc0)))
+        opera_opera__browser_version_6__11 => opera_opera__browser_update_any
+        opera_opera__browser_version_6__11 => (rc0)
+        opera_opera__browser_version_3__61 => opera_opera__browser_update_any
+        opera_opera__browser_version_3__61 => (rc0)
+        opera_opera__browser_version_7__01 => opera_opera__browser_update_any
+        opera_opera__browser_version_7__01 => (rc0)
+        opera_opera__browser_version_9__63 => opera_opera__browser_update_any
+        opera_opera__browser_version_9__63 => (rc0)
+        opera_opera__browser_version_7__60 => opera_opera__browser_update_any
+        opera_opera__browser_version_7__60 => (rc0)
+        opera_opera__browser_version_8__01 => opera_opera__browser_update_any
+        opera_opera__browser_version_8__01 => (rc0)
+        opera_opera__browser_version_5__02 => opera_opera__browser_update_any
+        opera_opera__browser_version_5__02 => (rc0)
+        opera_opera__browser_version_9__25 => opera_opera__browser_update_any
+        opera_opera__browser_version_9__25 => (rc0)
+        opera_opera__browser_version_9__0 => ((opera_opera__browser_update_beta2 & (rc0) & !opera_opera__browser_update_any & (rc0) & !opera_opera__browser_update_beta1 & (rc0)) | (!opera_opera__browser_update_beta2 & (rc0) & opera_opera__browser_update_any & (rc0) & !opera_opera__browser_update_beta1 & (rc0)) | (!opera_opera__browser_update_beta2 & (rc0) & !opera_opera__browser_update_any & (rc0) & opera_opera__browser_update_beta1 & (rc0)))
+        opera_opera__browser_version_4__01 => opera_opera__browser_update_any
+        opera_opera__browser_version_4__01 => (rc0)
+        opera_opera__browser_version_9__00 => opera_opera__browser_update_any
+        opera_opera__browser_version_9__00 => (rc0)
+        opera_opera__browser_version_9__62 => opera_opera__browser_update_any
+        opera_opera__browser_version_9__62 => (rc0)
+        opera_opera__browser_version_10__20 => opera_opera__browser_update_alpha
+        opera_opera__browser_version_10__20 => (rc0)
+        opera_opera__browser_version_2__10 => ((opera_opera__browser_update_beta2 & (rc0) & !opera_opera__browser_update_beta3 & (rc0) & !opera_opera__browser_update_any & (rc0) & !opera_opera__browser_update_beta1 & (rc0)) | (!opera_opera__browser_update_beta2 & (rc0) & opera_opera__browser_update_beta3 & (rc0) & !opera_opera__browser_update_any & (rc0) & !opera_opera__browser_update_beta1 & (rc0)) | (!opera_opera__browser_update_beta2 & (rc0) & !opera_opera__browser_update_beta3 & (rc0) & opera_opera__browser_update_any & (rc0) & !opera_opera__browser_update_beta1 & (rc0)) | (!opera_opera__browser_update_beta2 & (rc0) & !opera_opera__browser_update_beta3 & (rc0) & !opera_opera__browser_update_any & (rc0) & opera_opera__browser_update_beta1 & (rc0)))
+        opera_opera__browser_version_8__52 => opera_opera__browser_update_any
+        opera_opera__browser_version_8__52 => (rc0)
+        opera_opera__browser_version_6__01 => opera_opera__browser_update_any
+        opera_opera__browser_version_6__01 => (rc0)
+        opera_opera__browser_version_9__22 => opera_opera__browser_update_any
+        opera_opera__browser_version_9__22 => (rc0)
+        opera_opera__browser_version_10__00 => ((opera_opera__browser_update_beta2 & (rc0) & !opera_opera__browser_update_beta3 & (rc0) & !opera_opera__browser_update_any & (rc0) & !opera_opera__browser_update_beta1 & (rc0) & !opera_opera__browser_update_alpha & (rc0)) | (!opera_opera__browser_update_beta2 & (rc0) & opera_opera__browser_update_beta3 & (rc0) & !opera_opera__browser_update_any & (rc0) & !opera_opera__browser_update_beta1 & (rc0) & !opera_opera__browser_update_alpha & (rc0)) | (!opera_opera__browser_update_beta2 & (rc0) & !opera_opera__browser_update_beta3 & (rc0) & opera_opera__browser_update_any & (rc0) & !opera_opera__browser_update_beta1 & (rc0) & !opera_opera__browser_update_alpha & (rc0)) | (!opera_opera__browser_update_beta2 & (rc0) & !opera_opera__browser_update_beta3 & (rc0) & !opera_opera__browser_update_any & (rc0) & opera_opera__browser_update_beta1 & (rc0) & !opera_opera__browser_update_alpha & (rc0)) | (!opera_opera__browser_update_beta2 & (rc0) & !opera_opera__browser_update_beta3 & (rc0) & !opera_opera__browser_update_any & (rc0) & !opera_opera__browser_update_beta1 & (rc0) & opera_opera__browser_update_alpha & (rc0)))
+        opera_opera__browser_version_9__24 => opera_opera__browser_update_any
+        opera_opera__browser_version_9__24 => (rc0)
+        opera_opera__browser_version_3__51 => opera_opera__browser_update_any
+        opera_opera__browser_version_3__51 => (rc0)
+        opera_opera__browser_version_6__05 => opera_opera__browser_update_any
+        opera_opera__browser_version_6__05 => (rc0)
+        opera_opera__browser_version_3__00 => ((opera_opera__browser_update_any & (rc0) & !opera_opera__browser_update_beta & (rc0)) | (!opera_opera__browser_update_any & (rc0) & opera_opera__browser_update_beta & (rc0)))
+        opera_opera__browser_version_9__50 => ((opera_opera__browser_update_beta2 & (rc0) & !opera_opera__browser_update_any & (rc0) & !opera_opera__browser_update_beta1 & (rc0)) | (!opera_opera__browser_update_beta2 & (rc0) & opera_opera__browser_update_any & (rc0) & !opera_opera__browser_update_beta1 & (rc0)) | (!opera_opera__browser_update_beta2 & (rc0) & !opera_opera__browser_update_any & (rc0) & opera_opera__browser_update_beta1 & (rc0)))
+        opera_opera__browser_version_1__00 => opera_opera__browser_update_any
+        opera_opera__browser_version_1__00 => (rc0)
+        opera_opera__browser_version_6__0 => ((opera_opera__browser_update_tp1 & (rc0) & !opera_opera__browser_update_tp3 & (rc0) & !opera_opera__browser_update_beta2 & (rc0) & !opera_opera__browser_update_beta3 & (rc0) & !opera_opera__browser_update_any & (rc0) & !opera_opera__browser_update_beta1 & (rc0) & !opera_opera__browser_update_tp2 & (rc0)) | (!opera_opera__browser_update_tp1 & (rc0) & opera_opera__browser_update_tp3 & (rc0) & !opera_opera__browser_update_beta2 & (rc0) & !opera_opera__browser_update_beta3 & (rc0) & !opera_opera__browser_update_any & (rc0) & !opera_opera__browser_update_beta1 & (rc0) & !opera_opera__browser_update_tp2 & (rc0)) | (!opera_opera__browser_update_tp1 & (rc0) & !opera_opera__browser_update_tp3 & (rc0) & opera_opera__browser_update_beta2 & (rc0) & !opera_opera__browser_update_beta3 & (rc0) & !opera_opera__browser_update_any & (rc0) & !opera_opera__browser_update_beta1 & (rc0) & !opera_opera__browser_update_tp2 & (rc0)) | (!opera_opera__browser_update_tp1 & (rc0) & !opera_opera__browser_update_tp3 & (rc0) & !opera_opera__browser_update_beta2 & (rc0) & opera_opera__browser_update_beta3 & (rc0) & !opera_opera__browser_update_any & (rc0) & !opera_opera__browser_update_beta1 & (rc0) & !opera_opera__browser_update_tp2 & (rc0)) | (!opera_opera__browser_update_tp1 & (rc0) & !opera_opera__browser_update_tp3 & (rc0) & !opera_opera__browser_update_beta2 & (rc0) & !opera_opera__browser_update_beta3 & (rc0) & opera_opera__browser_update_any & (rc0) & !opera_opera__browser_update_beta1 & (rc0) & !opera_opera__browser_update_tp2 & (rc0)) | (!opera_opera__browser_update_tp1 & (rc0) & !opera_opera__browser_update_tp3 & (rc0) & !opera_opera__browser_update_beta2 & (rc0) & !opera_opera__browser_update_beta3 & (rc0) & !opera_opera__browser_update_any & (rc0) & opera_opera__browser_update_beta1 & (rc0) & !opera_opera__browser_update_tp2 & (rc0)) | (!opera_opera__browser_update_tp1 & (rc0) & !opera_opera__browser_update_tp3 & (rc0) & !opera_opera__browser_update_beta2 & (rc0) & !opera_opera__browser_update_beta3 & (rc0) & !opera_opera__browser_update_any & (rc0) & !opera_opera__browser_update_beta1 & (rc0) & opera_opera__browser_update_tp2 & (rc0)))
+        opera_opera__browser_version_9__01 => opera_opera__browser_update_any
+        opera_opera__browser_version_9__01 => (rc0)
+        opera_opera__browser_version_5__11 => opera_opera__browser_update_any
+        opera_opera__browser_version_5__11 => (rc0)
+        opera_opera__browser_version_7__11 => ((opera_opera__browser_update_beta2 & (rc0) & !opera_opera__browser_update_any & (rc0)) | (!opera_opera__browser_update_beta2 & (rc0) & opera_opera__browser_update_any & (rc0)))
+        opera_opera__browser_version_10__50 => ((opera_opera__browser_update_beta2 & (rc0) & !opera_opera__browser_update_any & (rc0) & !opera_opera__browser_update_beta1 & (rc0)) | (!opera_opera__browser_update_beta2 & (rc0) & opera_opera__browser_update_any & (rc0) & !opera_opera__browser_update_beta1 & (rc0)) | (!opera_opera__browser_update_beta2 & (rc0) & !opera_opera__browser_update_any & (rc0) & opera_opera__browser_update_beta1 & (rc0)))
+        opera_opera__browser_version_10__52 => ((opera_opera__browser_update_beta2 & (rc0) & !opera_opera__browser_update_any & (rc0) & !opera_opera__browser_update_beta1 & (rc0)) | (!opera_opera__browser_update_beta2 & (rc0) & opera_opera__browser_update_any & (rc0) & !opera_opera__browser_update_beta1 & (rc0)) | (!opera_opera__browser_update_beta2 & (rc0) & !opera_opera__browser_update_any & (rc0) & opera_opera__browser_update_beta1 & (rc0)))
+        opera_opera__browser_version_8__54 => opera_opera__browser_update_any
+        opera_opera__browser_version_8__54 => (rc0)
+        opera_opera__browser_version_8__0 => ((opera_opera__browser_update_beta2 & (rc0) & !opera_opera__browser_update_beta3 & (rc0) & !opera_opera__browser_update_any & (rc0) & !opera_opera__browser_update_beta1 & (rc0)) | (!opera_opera__browser_update_beta2 & (rc0) & opera_opera__browser_update_beta3 & (rc0) & !opera_opera__browser_update_any & (rc0) & !opera_opera__browser_update_beta1 & (rc0)) | (!opera_opera__browser_update_beta2 & (rc0) & !opera_opera__browser_update_beta3 & (rc0) & opera_opera__browser_update_any & (rc0) & !opera_opera__browser_update_beta1 & (rc0)) | (!opera_opera__browser_update_beta2 & (rc0) & !opera_opera__browser_update_beta3 & (rc0) & !opera_opera__browser_update_any & (rc0) & opera_opera__browser_update_beta1 & (rc0)))
+        opera_opera__browser_version_7__53 => opera_opera__browser_update_any
+        opera_opera__browser_version_7__53 => (rc0)
+        opera_opera__browser_version_7__52 => opera_opera__browser_update_any
+        opera_opera__browser_version_7__52 => (rc0)
+        opera_opera__browser_version_4__00 => ((opera_opera__browser_update_beta2 & (rc0) & !opera_opera__browser_update_beta5 & (rc0) & !opera_opera__browser_update_beta3 & (rc0) & !opera_opera__browser_update_any & (rc0) & !opera_opera__browser_update_beta4 & (rc0) & !opera_opera__browser_update_beta6 & (rc0)) | (!opera_opera__browser_update_beta2 & (rc0) & opera_opera__browser_update_beta5 & (rc0) & !opera_opera__browser_update_beta3 & (rc0) & !opera_opera__browser_update_any & (rc0) & !opera_opera__browser_update_beta4 & (rc0) & !opera_opera__browser_update_beta6 & (rc0)) | (!opera_opera__browser_update_beta2 & (rc0) & !opera_opera__browser_update_beta5 & (rc0) & opera_opera__browser_update_beta3 & (rc0) & !opera_opera__browser_update_any & (rc0) & !opera_opera__browser_update_beta4 & (rc0) & !opera_opera__browser_update_beta6 & (rc0)) | (!opera_opera__browser_update_beta2 & (rc0) & !opera_opera__browser_update_beta5 & (rc0) & !opera_opera__browser_update_beta3 & (rc0) & opera_opera__browser_update_any & (rc0) & !opera_opera__browser_update_beta4 & (rc0) & !opera_opera__browser_update_beta6 & (rc0)) | (!opera_opera__browser_update_beta2 & (rc0) & !opera_opera__browser_update_beta5 & (rc0) & !opera_opera__browser_update_beta3 & (rc0) & !opera_opera__browser_update_any & (rc0) & opera_opera__browser_update_beta4 & (rc0) & !opera_opera__browser_update_beta6 & (rc0)) | (!opera_opera__browser_update_beta2 & (rc0) & !opera_opera__browser_update_beta5 & (rc0) & !opera_opera__browser_update_beta3 & (rc0) & !opera_opera__browser_update_any & (rc0) & !opera_opera__browser_update_beta4 & (rc0) & opera_opera__browser_update_beta6 & (rc0)))
+        opera_opera__browser_version_9__12 => opera_opera__browser_update_any
+        opera_opera__browser_version_9__12 => (rc0)
+        opera_opera__browser_version_10__11 => opera_opera__browser_update_any
+        opera_opera__browser_version_10__11 => (rc0)
+        opera_opera__browser_version_6__02 => opera_opera__browser_update_any
+        opera_opera__browser_version_6__02 => (rc0)
+        opera_opera__browser_version_6__03 => opera_opera__browser_update_any
+        opera_opera__browser_version_6__03 => (rc0)
+        opera_opera__browser_version_9__52 => opera_opera__browser_update_any
+        opera_opera__browser_version_9__52 => (rc0)
+        opera_opera__browser_version_7__20 => ((opera_opera__browser_update_any & (rc0) & !opera_opera__browser_update_beta7 & (rc0)) | (!opera_opera__browser_update_any & (rc0) & opera_opera__browser_update_beta7 & (rc0)))
+        opera_opera__browser_version_6__04 => opera_opera__browser_update_any
+        opera_opera__browser_version_6__04 => (rc0)
+        opera_opera__browser_version_9__26 => opera_opera__browser_update_any
+        opera_opera__browser_version_9__26 => (rc0)
+        opera_opera__browser_version_9__61 => opera_opera__browser_update_any
+        opera_opera__browser_version_9__61 => (rc0)
+        opera_opera__browser_version_7__0 => ((opera_opera__browser_update_beta2 & (rc0) & !opera_opera__browser_update_any & (rc0) & !opera_opera__browser_update_beta1 & (rc0) & !opera_opera__browser_update_beta1__v2 & (rc0)) | (!opera_opera__browser_update_beta2 & (rc0) & opera_opera__browser_update_any & (rc0) & !opera_opera__browser_update_beta1 & (rc0) & !opera_opera__browser_update_beta1__v2 & (rc0)) | (!opera_opera__browser_update_beta2 & (rc0) & !opera_opera__browser_update_any & (rc0) & opera_opera__browser_update_beta1 & (rc0) & !opera_opera__browser_update_beta1__v2 & (rc0)) | (!opera_opera__browser_update_beta2 & (rc0) & !opera_opera__browser_update_any & (rc0) & !opera_opera__browser_update_beta1 & (rc0) & opera_opera__browser_update_beta1__v2 & (rc0)))
+        opera_opera__browser_version_7__03 => opera_opera__browser_update_any
+        opera_opera__browser_version_7__03 => (rc0)
+        opera_opera__browser_version_3__60 => opera_opera__browser_update_any
+        opera_opera__browser_version_3__60 => (rc0)
+        opera_opera__browser_version_6__1 => ((opera_opera__browser_update_any & (rc0) & !opera_opera__browser_update_beta1 & (rc0)) | (!opera_opera__browser_update_any & (rc0) & opera_opera__browser_update_beta1 & (rc0)))
+        opera_opera__browser_version_7__22 => opera_opera__browser_update_any
+        opera_opera__browser_version_7__22 => (rc0)
+        opera_opera__browser_version_3__21 => opera_opera__browser_update_any
+        opera_opera__browser_version_3__21 => (rc0)
+        opera_opera__browser_version_5__10 => opera_opera__browser_update_any
+        opera_opera__browser_version_5__10 => (rc0)
+        opera_opera__browser_version_8__51 => opera_opera__browser_update_any
+        opera_opera__browser_version_8__51 => (rc0)
+        opera_opera__browser_version_9__51 => opera_opera__browser_update_any
+        opera_opera__browser_version_9__51 => (rc0)
+        opera_opera__browser_version_8__00 => opera_opera__browser_update_any
+        opera_opera__browser_version_8__00 => (rc0)
+        opera_opera__browser_version_4__02 => opera_opera__browser_update_any
+        opera_opera__browser_version_4__02 => (rc0)
+        opera_opera__browser_version_9__20 => ((opera_opera__browser_update_any & (rc0) & !opera_opera__browser_update_beta1 & (rc0)) | (!opera_opera__browser_update_any & (rc0) & opera_opera__browser_update_beta1 & (rc0)))
+        opera_opera__browser_version_10__51 => opera_opera__browser_update_any
+        opera_opera__browser_version_10__51 => (rc0)
+        opera_opera__browser_version_7__02 => opera_opera__browser_update_any
+        opera_opera__browser_version_7__02 => (rc0)
+        opera_opera__browser_version_7__54 => ((opera_opera__browser_update_any & (rc0) & !opera_opera__browser_update_update2 & (rc0) & !opera_opera__browser_update_update1 & (rc0)) | (!opera_opera__browser_update_any & (rc0) & opera_opera__browser_update_update2 & (rc0) & !opera_opera__browser_update_update1 & (rc0)) | (!opera_opera__browser_update_any & (rc0) & !opera_opera__browser_update_update2 & (rc0) & opera_opera__browser_update_update1 & (rc0)))
+        opera_opera__browser_version_2__12 => opera_opera__browser_update_any
+        opera_opera__browser_version_2__12 => (rc0)
+        opera_opera__browser_version_9__60 => ((opera_opera__browser_update_any & (rc0) & !opera_opera__browser_update_beta1 & (rc0)) | (!opera_opera__browser_update_any & (rc0) & opera_opera__browser_update_beta1 & (rc0)))
+        opera_opera__browser_version_7__23 => opera_opera__browser_update_any
+        opera_opera__browser_version_7__23 => (rc0)
+        opera_opera__browser_version_9__02 => opera_opera__browser_update_any
+        opera_opera__browser_version_9__02 => (rc0)
+        opera_opera__browser_version_9__10 => opera_opera__browser_update_any
+        opera_opera__browser_version_9__10 => (rc0)
+        opera_opera__browser_version_5__12 => opera_opera__browser_update_any
+        opera_opera__browser_version_5__12 => (rc0)
+        opera_opera__browser_version_6__12 => opera_opera__browser_update_any
+        opera_opera__browser_version_6__12 => (rc0)
+        opera_opera__browser_version_9__27 => opera_opera__browser_update_any
+        opera_opera__browser_version_9__27 => (rc0)
+        opera_opera__browser_version_8__53 => opera_opera__browser_update_any
+        opera_opera__browser_version_8__53 => (rc0)
+        opera_opera__browser_version_8__50 => opera_opera__browser_update_any
+        opera_opera__browser_version_8__50 => (rc0)
+        opera_opera__browser_version_2__00 => opera_opera__browser_update_any
+        opera_opera__browser_version_2__00 => (rc0)
+        opera_opera__browser_version_6__06 => opera_opera__browser_update_any
+        opera_opera__browser_version_6__06 => (rc0)
+        opera_opera__browser_version_3__10 => opera_opera__browser_update_any
+        opera_opera__browser_version_3__10 => (rc0)
+        opera_opera__browser_version_7__50 => ((opera_opera__browser_update_any & (rc0) & !opera_opera__browser_update_beta1 & (rc0)) | (!opera_opera__browser_update_any & (rc0) & opera_opera__browser_update_beta1 & (rc0)))
+        opera_opera__browser_version_9__64 => opera_opera__browser_update_any
+        opera_opera__browser_version_9__64 => (rc0)
+        opera_opera__browser_version_8__02 => opera_opera__browser_update_any
+        opera_opera__browser_version_8__02 => (rc0)
+        opera_opera__browser_version_3__50 => opera_opera__browser_update_any
+        opera_opera__browser_version_3__50 => (rc0)
+        opera_opera__browser_version_3__62 => ((opera_opera__browser_update_any & (rc0) & !opera_opera__browser_update_beta & (rc0)) | (!opera_opera__browser_update_any & (rc0) & opera_opera__browser_update_beta & (rc0)))
+        opera_opera__browser_version_10__01 => opera_opera__browser_update_any
+        opera_opera__browser_version_10__01 => (rc0)

@@ -1,0 +1,244 @@
+features
+        CVE_2009_2462
+                mandatory
+                        types
+                                mandatory
+                                        application
+                        sources
+                                mandatory
+                                        nvd
+                        exploits
+                                optional
+                                        direct
+                                        indirect
+                        mozilla
+                                alternative
+                                        mozilla_firefox
+                                                mandatory
+                                                        mozilla_firefox_version
+                                                                alternative
+                                                                        mozilla_firefox_version_3__0__9
+                                                                        mozilla_firefox_version_3__0__3
+                                                                        mozilla_firefox_version_1__5__0__3
+                                                                        mozilla_firefox_version_2__0__0__17
+                                                                        mozilla_firefox_version_1__0__2
+                                                                        mozilla_firefox_version_0__7__1
+                                                                        mozilla_firefox_version_0__10
+                                                                        mozilla_firefox_version_2__0__0__16
+                                                                        mozilla_firefox_version_1__5
+                                                                        mozilla_firefox_version_2__0__0__1
+                                                                        mozilla_firefox_version_2__0__0__10
+                                                                        mozilla_firefox_version_1__5__0__8
+                                                                        mozilla_firefox_version_2__0____5
+                                                                        mozilla_firefox_version_2__0__0__19
+                                                                        mozilla_firefox_version_2__0____7
+                                                                        mozilla_firefox_version_1__5__8
+                                                                        mozilla_firefox_version_3__0__4
+                                                                        mozilla_firefox_version_1__5__0__7
+                                                                        mozilla_firefox_version_1__5__0__5
+                                                                        mozilla_firefox_version_0__1
+                                                                        mozilla_firefox_version_2__0__0__4
+                                                                        mozilla_firefox_version_2__0__0__12
+                                                                        mozilla_firefox_version_2__0__0__5
+                                                                        mozilla_firefox_version_1__0__8
+                                                                        mozilla_firefox_version_3__0
+                                                                        mozilla_firefox_version_1__5__0__4
+                                                                        mozilla_firefox_version_1__5__0__11
+                                                                        mozilla_firefox_version_1__5__0__6
+                                                                        mozilla_firefox_version_2__0__8
+                                                                        mozilla_firefox_version_3__0__8
+                                                                        mozilla_firefox_version_1__5__5
+                                                                        mozilla_firefox_version_0__10__1
+                                                                        mozilla_firefox_version_0__2
+                                                                        mozilla_firefox_version_1__8
+                                                                        mozilla_firefox_version_0__7
+                                                                        mozilla_firefox_version_2__0__0__21
+                                                                        mozilla_firefox_version_any
+                                                                        mozilla_firefox_version_1__4__1
+                                                                        mozilla_firefox_version_1__5__0__12
+                                                                        mozilla_firefox_version_1__5__6
+                                                                        mozilla_firefox_version_3__0__2
+                                                                        mozilla_firefox_version_2__0____10
+                                                                        mozilla_firefox_version_1__5__1
+                                                                        mozilla_firefox_version_1__0__6
+                                                                        mozilla_firefox_version_3__0__6
+                                                                        mozilla_firefox_version_2__0____1
+                                                                        mozilla_firefox_version_0__9
+                                                                        mozilla_firefox_version_2__0
+                                                                        mozilla_firefox_version_1__5__4
+                                                                        mozilla_firefox_version_1__0__3
+                                                                        mozilla_firefox_version_0__9__3
+                                                                        mozilla_firefox_version_0__6
+                                                                        mozilla_firefox_version_2__0__0__3
+                                                                        mozilla_firefox_version_1__5__2
+                                                                        mozilla_firefox_version_0__9__rc
+                                                                        mozilla_firefox_version_2__0____4
+                                                                        mozilla_firefox_version_1__0__1
+                                                                        mozilla_firefox_version_1__5__0__2
+                                                                        mozilla_firefox_version_2__0__0__14
+                                                                        mozilla_firefox_version_0__5
+                                                                        mozilla_firefox_version_1__5__0__10
+                                                                        mozilla_firefox_version_1__0__4
+                                                                        mozilla_firefox_version_0__8
+                                                                        mozilla_firefox_version_1__5__3
+                                                                        mozilla_firefox_version_0__4
+                                                                        mozilla_firefox_version_3__0__1
+                                                                        mozilla_firefox_version_0__3
+                                                                        mozilla_firefox_version_0__6__1
+                                                                        mozilla_firefox_version_2__0____6
+                                                                        mozilla_firefox_version_0__9__1
+                                                                        mozilla_firefox_version_2__0__0__20
+                                                                        mozilla_firefox_version_3__0__7
+                                                                        mozilla_firefox_version_2__0__0__7
+                                                                        mozilla_firefox_version_2__0__0__8
+                                                                        mozilla_firefox_version_0__9__2
+                                                                        mozilla_firefox_version_2__0__0__13
+                                                                        mozilla_firefox_version_3__0__10
+                                                                        mozilla_firefox_version_2__0____9
+                                                                        mozilla_firefox_version_1__0__7
+                                                                        mozilla_firefox_version_1__0
+                                                                        mozilla_firefox_version_2__0__0__6
+                                                                        mozilla_firefox_version_2__0__0__18
+                                                                        mozilla_firefox_version_2__0__0__11
+                                                                        mozilla_firefox_version_1__0__5
+                                                                        mozilla_firefox_version_3__0__5
+                                                                        mozilla_firefox_version_1__5__0__1
+                                                                        mozilla_firefox_version_1__5__7
+                                                                        mozilla_firefox_version_1__5__0__9
+                                                                        mozilla_firefox_version_3__0__11
+                                                                        mozilla_firefox_version_2__0__0__2
+                                                                        mozilla_firefox_version_2__0__0__9
+                                                                        mozilla_firefox_version_2__0__0__15
+                                                        mozilla_firefox_update
+                                                                alternative
+                                                                        mozilla_firefox_update_rc2
+                                                                        mozilla_firefox_update_alpha
+                                                                        mozilla_firefox_update_beta1
+                                                                        mozilla_firefox_update_beta5
+                                                                        mozilla_firefox_update_rc3
+                                                                        mozilla_firefox_update_beta__1
+                                                                        mozilla_firefox_update_any
+                                                                        mozilla_firefox_update_rc
+                                                                        mozilla_firefox_update_preview__release
+                                                                        mozilla_firefox_update_beta2
+                                        mozilla_thunderbird
+                                                mandatory
+                                                        mozilla_thunderbird_version
+                                                                alternative
+                                                                        mozilla_thunderbird_version_2__0__0__3
+                                                                        mozilla_thunderbird_version_2__0__0__7
+                                                                        mozilla_thunderbird_version_2__0__0__21
+                                                                        mozilla_thunderbird_version_2__0__0__0
+                                                                        mozilla_thunderbird_version_2__0__0__8
+                                                                        mozilla_thunderbird_version_2__0__0__17
+                                                                        mozilla_thunderbird_version_2__0__0__14
+                                                                        mozilla_thunderbird_version_2__0__0__16
+                                                                        mozilla_thunderbird_version_2__0__0__13
+                                                                        mozilla_thunderbird_version_2__0__0__1
+                                                                        mozilla_thunderbird_version_2__0__0__19
+                                                                        mozilla_thunderbird_version_2__0__0__6
+                                                                        mozilla_thunderbird_version_2__0__0__18
+                                                                        mozilla_thunderbird_version_2__0__0__11
+                                                                        mozilla_thunderbird_version_2__0__0__4
+                                                                        mozilla_thunderbird_version_2__0__0__5
+                                                                        mozilla_thunderbird_version_2__0__0__12
+                                                                        mozilla_thunderbird_version_2__0__0__2
+                                                                        mozilla_thunderbird_version_2__0__0__20
+                                                                        mozilla_thunderbird_version_2__0__0__9
+                                                                        mozilla_thunderbird_version_2__0__0__15
+
+constraints
+        mozilla_firefox => application
+        mozilla_thunderbird => application
+        mozilla_firefox_version_3__0__9 => mozilla_firefox_update_any
+        mozilla_firefox_version_3__0__3 => mozilla_firefox_update_any
+        mozilla_firefox_version_1__5__0__3 => mozilla_firefox_update_any
+        mozilla_firefox_version_2__0__0__17 => mozilla_firefox_update_any
+        mozilla_firefox_version_1__0__2 => mozilla_firefox_update_any
+        mozilla_firefox_version_0__7__1 => mozilla_firefox_update_any
+        mozilla_firefox_version_0__10 => mozilla_firefox_update_any
+        mozilla_firefox_version_2__0__0__16 => mozilla_firefox_update_any
+        mozilla_firefox_version_1__5 => ((mozilla_firefox_update_beta1 & !mozilla_firefox_update_any & !mozilla_firefox_update_beta2) | (!mozilla_firefox_update_beta1 & mozilla_firefox_update_any & !mozilla_firefox_update_beta2) | (!mozilla_firefox_update_beta1 & !mozilla_firefox_update_any & mozilla_firefox_update_beta2))
+        mozilla_firefox_version_2__0__0__1 => mozilla_firefox_update_any
+        mozilla_firefox_version_2__0__0__10 => mozilla_firefox_update_any
+        mozilla_firefox_version_1__5__0__8 => mozilla_firefox_update_any
+        mozilla_firefox_version_2__0____5 => mozilla_firefox_update_any
+        mozilla_firefox_version_2__0__0__19 => mozilla_firefox_update_any
+        mozilla_firefox_version_2__0____7 => mozilla_firefox_update_any
+        mozilla_firefox_version_1__5__8 => mozilla_firefox_update_any
+        mozilla_firefox_version_3__0__4 => mozilla_firefox_update_any
+        mozilla_firefox_version_1__5__0__7 => mozilla_firefox_update_any
+        mozilla_firefox_version_1__5__0__5 => mozilla_firefox_update_any
+        mozilla_firefox_version_0__1 => mozilla_firefox_update_any
+        mozilla_firefox_version_2__0__0__4 => mozilla_firefox_update_any
+        mozilla_firefox_version_2__0__0__12 => mozilla_firefox_update_any
+        mozilla_firefox_version_2__0__0__5 => mozilla_firefox_update_any
+        mozilla_firefox_version_1__0__8 => mozilla_firefox_update_any
+        mozilla_firefox_version_3__0 => ((mozilla_firefox_update_alpha & !mozilla_firefox_update_beta5 & !mozilla_firefox_update_any & !mozilla_firefox_update_beta2) | (!mozilla_firefox_update_alpha & mozilla_firefox_update_beta5 & !mozilla_firefox_update_any & !mozilla_firefox_update_beta2) | (!mozilla_firefox_update_alpha & !mozilla_firefox_update_beta5 & mozilla_firefox_update_any & !mozilla_firefox_update_beta2) | (!mozilla_firefox_update_alpha & !mozilla_firefox_update_beta5 & !mozilla_firefox_update_any & mozilla_firefox_update_beta2))
+        mozilla_firefox_version_1__5__0__4 => mozilla_firefox_update_any
+        mozilla_firefox_version_1__5__0__11 => mozilla_firefox_update_any
+        mozilla_firefox_version_1__5__0__6 => mozilla_firefox_update_any
+        mozilla_firefox_version_2__0__8 => mozilla_firefox_update_any
+        mozilla_firefox_version_3__0__8 => mozilla_firefox_update_any
+        mozilla_firefox_version_1__5__5 => mozilla_firefox_update_any
+        mozilla_firefox_version_0__10__1 => mozilla_firefox_update_any
+        mozilla_firefox_version_0__2 => mozilla_firefox_update_any
+        mozilla_firefox_version_1__8 => mozilla_firefox_update_any
+        mozilla_firefox_version_0__7 => mozilla_firefox_update_any
+        mozilla_firefox_version_2__0__0__21 => mozilla_firefox_update_any
+        mozilla_firefox_version_any => mozilla_firefox_update_any
+        mozilla_firefox_version_1__4__1 => mozilla_firefox_update_any
+        mozilla_firefox_version_1__5__0__12 => mozilla_firefox_update_any
+        mozilla_firefox_version_1__5__6 => mozilla_firefox_update_any
+        mozilla_firefox_version_3__0__2 => mozilla_firefox_update_any
+        mozilla_firefox_version_2__0____10 => mozilla_firefox_update_any
+        mozilla_firefox_version_1__5__1 => mozilla_firefox_update_any
+        mozilla_firefox_version_1__0__6 => (mozilla_firefox_update_any)
+        mozilla_firefox_version_3__0__6 => mozilla_firefox_update_any
+        mozilla_firefox_version_2__0____1 => mozilla_firefox_update_any
+        mozilla_firefox_version_0__9 => ((mozilla_firefox_update_any & !mozilla_firefox_update_rc) | (!mozilla_firefox_update_any & mozilla_firefox_update_rc))
+        mozilla_firefox_version_2__0 => ((mozilla_firefox_update_rc2 & !mozilla_firefox_update_beta1 & !mozilla_firefox_update_rc3 & !mozilla_firefox_update_beta__1 & !mozilla_firefox_update_any) | (!mozilla_firefox_update_rc2 & mozilla_firefox_update_beta1 & !mozilla_firefox_update_rc3 & !mozilla_firefox_update_beta__1 & !mozilla_firefox_update_any) | (!mozilla_firefox_update_rc2 & !mozilla_firefox_update_beta1 & mozilla_firefox_update_rc3 & !mozilla_firefox_update_beta__1 & !mozilla_firefox_update_any) | (!mozilla_firefox_update_rc2 & !mozilla_firefox_update_beta1 & !mozilla_firefox_update_rc3 & mozilla_firefox_update_beta__1 & !mozilla_firefox_update_any) | (!mozilla_firefox_update_rc2 & !mozilla_firefox_update_beta1 & !mozilla_firefox_update_rc3 & !mozilla_firefox_update_beta__1 & mozilla_firefox_update_any))
+        mozilla_firefox_version_1__5__4 => mozilla_firefox_update_any
+        mozilla_firefox_version_1__0__3 => mozilla_firefox_update_any
+        mozilla_firefox_version_0__9__3 => mozilla_firefox_update_any
+        mozilla_firefox_version_0__6 => mozilla_firefox_update_any
+        mozilla_firefox_version_2__0__0__3 => mozilla_firefox_update_any
+        mozilla_firefox_version_1__5__2 => mozilla_firefox_update_any
+        mozilla_firefox_version_0__9__rc => mozilla_firefox_update_any
+        mozilla_firefox_version_2__0____4 => mozilla_firefox_update_any
+        mozilla_firefox_version_1__0__1 => mozilla_firefox_update_any
+        mozilla_firefox_version_1__5__0__2 => mozilla_firefox_update_any
+        mozilla_firefox_version_2__0__0__14 => mozilla_firefox_update_any
+        mozilla_firefox_version_0__5 => mozilla_firefox_update_any
+        mozilla_firefox_version_1__5__0__10 => mozilla_firefox_update_any
+        mozilla_firefox_version_1__0__4 => mozilla_firefox_update_any
+        mozilla_firefox_version_0__8 => mozilla_firefox_update_any
+        mozilla_firefox_version_1__5__3 => mozilla_firefox_update_any
+        mozilla_firefox_version_0__4 => mozilla_firefox_update_any
+        mozilla_firefox_version_3__0__1 => mozilla_firefox_update_any
+        mozilla_firefox_version_0__3 => mozilla_firefox_update_any
+        mozilla_firefox_version_0__6__1 => mozilla_firefox_update_any
+        mozilla_firefox_version_2__0____6 => mozilla_firefox_update_any
+        mozilla_firefox_version_0__9__1 => mozilla_firefox_update_any
+        mozilla_firefox_version_2__0__0__20 => mozilla_firefox_update_any
+        mozilla_firefox_version_3__0__7 => mozilla_firefox_update_any
+        mozilla_firefox_version_2__0__0__7 => mozilla_firefox_update_any
+        mozilla_firefox_version_2__0__0__8 => mozilla_firefox_update_any
+        mozilla_firefox_version_0__9__2 => mozilla_firefox_update_any
+        mozilla_firefox_version_2__0__0__13 => mozilla_firefox_update_any
+        mozilla_firefox_version_3__0__10 => mozilla_firefox_update_any
+        mozilla_firefox_version_2__0____9 => mozilla_firefox_update_any
+        mozilla_firefox_version_1__0__7 => mozilla_firefox_update_any
+        mozilla_firefox_version_1__0 => ((mozilla_firefox_update_any & !mozilla_firefox_update_preview__release) | (!mozilla_firefox_update_any & mozilla_firefox_update_preview__release))
+        mozilla_firefox_version_2__0__0__6 => mozilla_firefox_update_any
+        mozilla_firefox_version_2__0__0__18 => mozilla_firefox_update_any
+        mozilla_firefox_version_2__0__0__11 => mozilla_firefox_update_any
+        mozilla_firefox_version_1__0__5 => mozilla_firefox_update_any
+        mozilla_firefox_version_3__0__5 => mozilla_firefox_update_any
+        mozilla_firefox_version_1__5__0__1 => mozilla_firefox_update_any
+        mozilla_firefox_version_1__5__7 => mozilla_firefox_update_any
+        mozilla_firefox_version_1__5__0__9 => mozilla_firefox_update_any
+        mozilla_firefox_version_3__0__11 => mozilla_firefox_update_any
+        mozilla_firefox_version_2__0__0__2 => mozilla_firefox_update_any
+        mozilla_firefox_version_2__0__0__9 => mozilla_firefox_update_any
+        mozilla_firefox_version_2__0__0__15 => mozilla_firefox_update_any

@@ -1,0 +1,271 @@
+features
+        CVE_2013_1813
+                mandatory
+                        types
+                                mandatory
+                                        operating_system
+                                        application
+                        sources
+                                mandatory
+                                        nvd
+                        exploits
+                                optional
+                                        direct
+                                        indirect
+                alternative
+                        redhat
+                                mandatory
+                                        redhat_enterprise__linux
+                                                mandatory
+                                                        redhat_enterprise__linux_version
+                                                                mandatory
+                                                                        redhat_enterprise__linux_version_6__0
+                        t_mobile
+                                mandatory
+                                        t_mobile_tm_ac1900
+                                                mandatory
+                                                        t_mobile_tm_ac1900_version
+                                                                mandatory
+                                                                        t_mobile_tm_ac1900_version_3__0__0__4__376__3169
+                        busybox
+                                mandatory
+                                        busybox_busybox
+                                                mandatory
+                                                        busybox_busybox_version
+                                                                alternative
+                                                                        busybox_busybox_version_0__47
+                                                                        busybox_busybox_version_1__8__0
+                                                                        busybox_busybox_version_1__18__4
+                                                                        busybox_busybox_version_1__5__1
+                                                                        busybox_busybox_version_1__13__0
+                                                                        busybox_busybox_version_0__60__4
+                                                                        busybox_busybox_version_1__2__0
+                                                                        busybox_busybox_version_0__45
+                                                                        busybox_busybox_version_1__19__1
+                                                                        busybox_busybox_version_1__11__2
+                                                                        busybox_busybox_version_1__2__1
+                                                                        busybox_busybox_version_1__10__4
+                                                                        busybox_busybox_version_1__9__1
+                                                                        busybox_busybox_version_0__60__0
+                                                                        busybox_busybox_version_1__5__0
+                                                                        busybox_busybox_version_1__12__4
+                                                                        busybox_busybox_version_1__20__1
+                                                                        busybox_busybox_version_1__4__1
+                                                                        busybox_busybox_version_1__12__0
+                                                                        busybox_busybox_version_0__46
+                                                                        busybox_busybox_version_1__14__1
+                                                                        busybox_busybox_version_1__11__1
+                                                                        busybox_busybox_version_1__13__1
+                                                                        busybox_busybox_version_1__12__1
+                                                                        busybox_busybox_version_0__49
+                                                                        busybox_busybox_version_1__19__4
+                                                                        busybox_busybox_version_1__3__2
+                                                                        busybox_busybox_version_1__9__0
+                                                                        busybox_busybox_version_1__16__2
+                                                                        busybox_busybox_version_1__4__0
+                                                                        busybox_busybox_version_1__4__2
+                                                                        busybox_busybox_version_1__7__1
+                                                                        busybox_busybox_version_1__13__2
+                                                                        busybox_busybox_version_1__14__4
+                                                                        busybox_busybox_version_1__7__0
+                                                                        busybox_busybox_version_1__15__2
+                                                                        busybox_busybox_version_1__20__2
+                                                                        busybox_busybox_version_1__1__1
+                                                                        busybox_busybox_version_1__17__4
+                                                                        busybox_busybox_version_0__48
+                                                                        busybox_busybox_version_1__1__2
+                                                                        busybox_busybox_version_1__5__2
+                                                                        busybox_busybox_version_1__11__3
+                                                                        busybox_busybox_version_1__7__3
+                                                                        busybox_busybox_version_1__18__2
+                                                                        busybox_busybox_version_0__50
+                                                                        busybox_busybox_version_1__10__1
+                                                                        busybox_busybox_version_1__14__0
+                                                                        busybox_busybox_version_0__38
+                                                                        busybox_busybox_version_0__51
+                                                                        busybox_busybox_version_1__19__3
+                                                                        busybox_busybox_version_1__7__4
+                                                                        busybox_busybox_version_1__19__2
+                                                                        busybox_busybox_version_1__8__1
+                                                                        busybox_busybox_version_1__17__0
+                                                                        busybox_busybox_version_1__15__3
+                                                                        busybox_busybox_version_1__2__2__1
+                                                                        busybox_busybox_version_1__16__1
+                                                                        busybox_busybox_version_1__13__4
+                                                                        busybox_busybox_version_1__20__0
+                                                                        busybox_busybox_version_0__42
+                                                                        busybox_busybox_version_1__16__0
+                                                                        busybox_busybox_version_1__17__1
+                                                                        busybox_busybox_version_1__14__2
+                                                                        busybox_busybox_version_1__6__0
+                                                                        busybox_busybox_version_1__17__2
+                                                                        busybox_busybox_version_1__10__0
+                                                                        busybox_busybox_version_1__1__0
+                                                                        busybox_busybox_version_1__0__0
+                                                                        busybox_busybox_version_0__60__1
+                                                                        busybox_busybox_version_1__3__0
+                                                                        busybox_busybox_version_1__3__1
+                                                                        busybox_busybox_version_0__60__3
+                                                                        busybox_busybox_version_1__2__2
+                                                                        busybox_busybox_version_1__00
+                                                                        busybox_busybox_version_0__41
+                                                                        busybox_busybox_version_1__11__0
+                                                                        busybox_busybox_version_1__7__2
+                                                                        busybox_busybox_version_0__52
+                                                                        busybox_busybox_version_1__7__5
+                                                                        busybox_busybox_version_1__19__0
+                                                                        busybox_busybox_version_1__10__3
+                                                                        busybox_busybox_version_0__40
+                                                                        busybox_busybox_version_1__01
+                                                                        busybox_busybox_version_1__10__2
+                                                                        busybox_busybox_version_1__18__0
+                                                                        busybox_busybox_version_1__12__3
+                                                                        busybox_busybox_version_0__43
+                                                                        busybox_busybox_version_1__8__2
+                                                                        busybox_busybox_version_0__60__5
+                                                                        busybox_busybox_version_0__39
+                                                                        busybox_busybox_version_1__18__5
+                                                                        busybox_busybox_version_1__13__3
+                                                                        busybox_busybox_version_1__12__2
+                                                                        busybox_busybox_version_1__15__0
+                                                                        busybox_busybox_version_1__17__3
+                                                                        busybox_busybox_version_any
+                                                                        busybox_busybox_version_1__18__3
+                                                                        busybox_busybox_version_1__1__3
+                                                                        busybox_busybox_version_1__14__3
+                                                                        busybox_busybox_version_1__18__1
+                                                                        busybox_busybox_version_0__60__2
+                                                                        busybox_busybox_version_1__6__1
+                                                                        busybox_busybox_version_1__6__2
+                                                                        busybox_busybox_version_1__9__2
+                                                                        busybox_busybox_version_1__15__1
+                                                                        busybox_busybox_version_1__8__3
+                                                        busybox_busybox_update
+                                                                alternative
+                                                                        busybox_busybox_update_pre1
+                                                                        busybox_busybox_update_any
+                                                                        busybox_busybox_update_pre6
+                                                                        busybox_busybox_update_pre9
+                                                                        busybox_busybox_update_pre2
+                                                                        busybox_busybox_update_pre7
+                                                                        busybox_busybox_update_pre3
+                                                                        busybox_busybox_update_pre10
+                                                                        busybox_busybox_update_pre5
+                                                                        busybox_busybox_update_pre
+                                                                        busybox_busybox_update_rc1
+                                                                        busybox_busybox_update_rc3
+                                                                        busybox_busybox_update_rc2
+                                                                        busybox_busybox_update_pre4
+                                                                        busybox_busybox_update_pre8
+
+constraints
+        redhat_enterprise__linux => operating_system
+        t_mobile_tm_ac1900 => operating_system
+        busybox_busybox => application
+        busybox_busybox_version_0__47 => busybox_busybox_update_any
+        busybox_busybox_version_1__8__0 => busybox_busybox_update_any
+        busybox_busybox_version_1__18__4 => busybox_busybox_update_any
+        busybox_busybox_version_1__5__1 => busybox_busybox_update_any
+        busybox_busybox_version_1__13__0 => busybox_busybox_update_any
+        busybox_busybox_version_0__60__4 => busybox_busybox_update_any
+        busybox_busybox_version_1__2__0 => busybox_busybox_update_any
+        busybox_busybox_version_0__45 => busybox_busybox_update_any
+        busybox_busybox_version_1__19__1 => busybox_busybox_update_any
+        busybox_busybox_version_1__11__2 => busybox_busybox_update_any
+        busybox_busybox_version_1__2__1 => busybox_busybox_update_any
+        busybox_busybox_version_1__10__4 => busybox_busybox_update_any
+        busybox_busybox_version_1__9__1 => busybox_busybox_update_any
+        busybox_busybox_version_0__60__0 => busybox_busybox_update_any
+        busybox_busybox_version_1__5__0 => busybox_busybox_update_any
+        busybox_busybox_version_1__12__4 => busybox_busybox_update_any
+        busybox_busybox_version_1__20__1 => busybox_busybox_update_any
+        busybox_busybox_version_1__4__1 => busybox_busybox_update_any
+        busybox_busybox_version_1__12__0 => busybox_busybox_update_any
+        busybox_busybox_version_0__46 => busybox_busybox_update_any
+        busybox_busybox_version_1__14__1 => busybox_busybox_update_any
+        busybox_busybox_version_1__11__1 => busybox_busybox_update_any
+        busybox_busybox_version_1__13__1 => busybox_busybox_update_any
+        busybox_busybox_version_1__12__1 => busybox_busybox_update_any
+        busybox_busybox_version_0__49 => busybox_busybox_update_any
+        busybox_busybox_version_1__19__4 => busybox_busybox_update_any
+        busybox_busybox_version_1__3__2 => busybox_busybox_update_any
+        busybox_busybox_version_1__9__0 => busybox_busybox_update_any
+        busybox_busybox_version_1__16__2 => busybox_busybox_update_any
+        busybox_busybox_version_1__4__0 => busybox_busybox_update_any
+        busybox_busybox_version_1__4__2 => busybox_busybox_update_any
+        busybox_busybox_version_1__7__1 => busybox_busybox_update_any
+        busybox_busybox_version_1__13__2 => busybox_busybox_update_any
+        busybox_busybox_version_1__14__4 => busybox_busybox_update_any
+        busybox_busybox_version_1__7__0 => busybox_busybox_update_any
+        busybox_busybox_version_1__15__2 => busybox_busybox_update_any
+        busybox_busybox_version_1__20__2 => busybox_busybox_update_any
+        busybox_busybox_version_1__1__1 => busybox_busybox_update_any
+        busybox_busybox_version_1__17__4 => busybox_busybox_update_any
+        busybox_busybox_version_0__48 => busybox_busybox_update_any
+        busybox_busybox_version_1__1__2 => busybox_busybox_update_any
+        busybox_busybox_version_1__5__2 => busybox_busybox_update_any
+        busybox_busybox_version_1__11__3 => busybox_busybox_update_any
+        busybox_busybox_version_1__7__3 => busybox_busybox_update_any
+        busybox_busybox_version_1__18__2 => busybox_busybox_update_any
+        busybox_busybox_version_0__50 => busybox_busybox_update_any
+        busybox_busybox_version_1__10__1 => busybox_busybox_update_any
+        busybox_busybox_version_1__14__0 => busybox_busybox_update_any
+        busybox_busybox_version_0__38 => busybox_busybox_update_any
+        busybox_busybox_version_0__51 => busybox_busybox_update_any
+        busybox_busybox_version_1__19__3 => busybox_busybox_update_any
+        busybox_busybox_version_1__7__4 => busybox_busybox_update_any
+        busybox_busybox_version_1__19__2 => busybox_busybox_update_any
+        busybox_busybox_version_1__8__1 => busybox_busybox_update_any
+        busybox_busybox_version_1__17__0 => busybox_busybox_update_any
+        busybox_busybox_version_1__15__3 => busybox_busybox_update_any
+        busybox_busybox_version_1__2__2__1 => busybox_busybox_update_any
+        busybox_busybox_version_1__16__1 => busybox_busybox_update_any
+        busybox_busybox_version_1__13__4 => busybox_busybox_update_any
+        busybox_busybox_version_1__20__0 => busybox_busybox_update_any
+        busybox_busybox_version_0__42 => busybox_busybox_update_any
+        busybox_busybox_version_1__16__0 => busybox_busybox_update_any
+        busybox_busybox_version_1__17__1 => busybox_busybox_update_any
+        busybox_busybox_version_1__14__2 => busybox_busybox_update_any
+        busybox_busybox_version_1__6__0 => busybox_busybox_update_any
+        busybox_busybox_version_1__17__2 => busybox_busybox_update_any
+        busybox_busybox_version_1__10__0 => busybox_busybox_update_any
+        busybox_busybox_version_1__1__0 => ((busybox_busybox_update_pre1 & !busybox_busybox_update_any) | (!busybox_busybox_update_pre1 & busybox_busybox_update_any))
+        busybox_busybox_version_1__0__0 => ((busybox_busybox_update_pre1 & !busybox_busybox_update_pre6 & !busybox_busybox_update_pre9 & !busybox_busybox_update_pre2 & !busybox_busybox_update_pre7 & !busybox_busybox_update_pre3 & !busybox_busybox_update_pre10 & !busybox_busybox_update_pre5 & !busybox_busybox_update_rc1 & !busybox_busybox_update_rc3 & !busybox_busybox_update_rc2 & !busybox_busybox_update_pre4 & !busybox_busybox_update_pre8) | (!busybox_busybox_update_pre1 & busybox_busybox_update_pre6 & !busybox_busybox_update_pre9 & !busybox_busybox_update_pre2 & !busybox_busybox_update_pre7 & !busybox_busybox_update_pre3 & !busybox_busybox_update_pre10 & !busybox_busybox_update_pre5 & !busybox_busybox_update_rc1 & !busybox_busybox_update_rc3 & !busybox_busybox_update_rc2 & !busybox_busybox_update_pre4 & !busybox_busybox_update_pre8) | (!busybox_busybox_update_pre1 & !busybox_busybox_update_pre6 & busybox_busybox_update_pre9 & !busybox_busybox_update_pre2 & !busybox_busybox_update_pre7 & !busybox_busybox_update_pre3 & !busybox_busybox_update_pre10 & !busybox_busybox_update_pre5 & !busybox_busybox_update_rc1 & !busybox_busybox_update_rc3 & !busybox_busybox_update_rc2 & !busybox_busybox_update_pre4 & !busybox_busybox_update_pre8) | (!busybox_busybox_update_pre1 & !busybox_busybox_update_pre6 & !busybox_busybox_update_pre9 & busybox_busybox_update_pre2 & !busybox_busybox_update_pre7 & !busybox_busybox_update_pre3 & !busybox_busybox_update_pre10 & !busybox_busybox_update_pre5 & !busybox_busybox_update_rc1 & !busybox_busybox_update_rc3 & !busybox_busybox_update_rc2 & !busybox_busybox_update_pre4 & !busybox_busybox_update_pre8) | (!busybox_busybox_update_pre1 & !busybox_busybox_update_pre6 & !busybox_busybox_update_pre9 & !busybox_busybox_update_pre2 & busybox_busybox_update_pre7 & !busybox_busybox_update_pre3 & !busybox_busybox_update_pre10 & !busybox_busybox_update_pre5 & !busybox_busybox_update_rc1 & !busybox_busybox_update_rc3 & !busybox_busybox_update_rc2 & !busybox_busybox_update_pre4 & !busybox_busybox_update_pre8) | (!busybox_busybox_update_pre1 & !busybox_busybox_update_pre6 & !busybox_busybox_update_pre9 & !busybox_busybox_update_pre2 & !busybox_busybox_update_pre7 & busybox_busybox_update_pre3 & !busybox_busybox_update_pre10 & !busybox_busybox_update_pre5 & !busybox_busybox_update_rc1 & !busybox_busybox_update_rc3 & !busybox_busybox_update_rc2 & !busybox_busybox_update_pre4 & !busybox_busybox_update_pre8) | (!busybox_busybox_update_pre1 & !busybox_busybox_update_pre6 & !busybox_busybox_update_pre9 & !busybox_busybox_update_pre2 & !busybox_busybox_update_pre7 & !busybox_busybox_update_pre3 & busybox_busybox_update_pre10 & !busybox_busybox_update_pre5 & !busybox_busybox_update_rc1 & !busybox_busybox_update_rc3 & !busybox_busybox_update_rc2 & !busybox_busybox_update_pre4 & !busybox_busybox_update_pre8) | (!busybox_busybox_update_pre1 & !busybox_busybox_update_pre6 & !busybox_busybox_update_pre9 & !busybox_busybox_update_pre2 & !busybox_busybox_update_pre7 & !busybox_busybox_update_pre3 & !busybox_busybox_update_pre10 & busybox_busybox_update_pre5 & !busybox_busybox_update_rc1 & !busybox_busybox_update_rc3 & !busybox_busybox_update_rc2 & !busybox_busybox_update_pre4 & !busybox_busybox_update_pre8) | (!busybox_busybox_update_pre1 & !busybox_busybox_update_pre6 & !busybox_busybox_update_pre9 & !busybox_busybox_update_pre2 & !busybox_busybox_update_pre7 & !busybox_busybox_update_pre3 & !busybox_busybox_update_pre10 & !busybox_busybox_update_pre5 & busybox_busybox_update_rc1 & !busybox_busybox_update_rc3 & !busybox_busybox_update_rc2 & !busybox_busybox_update_pre4 & !busybox_busybox_update_pre8) | (!busybox_busybox_update_pre1 & !busybox_busybox_update_pre6 & !busybox_busybox_update_pre9 & !busybox_busybox_update_pre2 & !busybox_busybox_update_pre7 & !busybox_busybox_update_pre3 & !busybox_busybox_update_pre10 & !busybox_busybox_update_pre5 & !busybox_busybox_update_rc1 & busybox_busybox_update_rc3 & !busybox_busybox_update_rc2 & !busybox_busybox_update_pre4 & !busybox_busybox_update_pre8) | (!busybox_busybox_update_pre1 & !busybox_busybox_update_pre6 & !busybox_busybox_update_pre9 & !busybox_busybox_update_pre2 & !busybox_busybox_update_pre7 & !busybox_busybox_update_pre3 & !busybox_busybox_update_pre10 & !busybox_busybox_update_pre5 & !busybox_busybox_update_rc1 & !busybox_busybox_update_rc3 & busybox_busybox_update_rc2 & !busybox_busybox_update_pre4 & !busybox_busybox_update_pre8) | (!busybox_busybox_update_pre1 & !busybox_busybox_update_pre6 & !busybox_busybox_update_pre9 & !busybox_busybox_update_pre2 & !busybox_busybox_update_pre7 & !busybox_busybox_update_pre3 & !busybox_busybox_update_pre10 & !busybox_busybox_update_pre5 & !busybox_busybox_update_rc1 & !busybox_busybox_update_rc3 & !busybox_busybox_update_rc2 & busybox_busybox_update_pre4 & !busybox_busybox_update_pre8) | (!busybox_busybox_update_pre1 & !busybox_busybox_update_pre6 & !busybox_busybox_update_pre9 & !busybox_busybox_update_pre2 & !busybox_busybox_update_pre7 & !busybox_busybox_update_pre3 & !busybox_busybox_update_pre10 & !busybox_busybox_update_pre5 & !busybox_busybox_update_rc1 & !busybox_busybox_update_rc3 & !busybox_busybox_update_rc2 & !busybox_busybox_update_pre4 & busybox_busybox_update_pre8))
+        busybox_busybox_version_0__60__1 => busybox_busybox_update_any
+        busybox_busybox_version_1__3__0 => busybox_busybox_update_any
+        busybox_busybox_version_1__3__1 => busybox_busybox_update_any
+        busybox_busybox_version_0__60__3 => busybox_busybox_update_any
+        busybox_busybox_version_1__2__2 => busybox_busybox_update_any
+        busybox_busybox_version_1__00 => busybox_busybox_update_any
+        busybox_busybox_version_0__41 => busybox_busybox_update_any
+        busybox_busybox_version_1__11__0 => busybox_busybox_update_any
+        busybox_busybox_version_1__7__2 => busybox_busybox_update_any
+        busybox_busybox_version_0__52 => busybox_busybox_update_any
+        busybox_busybox_version_1__7__5 => busybox_busybox_update_any
+        busybox_busybox_version_1__19__0 => busybox_busybox_update_any
+        busybox_busybox_version_1__10__3 => busybox_busybox_update_any
+        busybox_busybox_version_0__40 => busybox_busybox_update_any
+        busybox_busybox_version_1__01 => busybox_busybox_update_any
+        busybox_busybox_version_1__10__2 => busybox_busybox_update_any
+        busybox_busybox_version_1__18__0 => busybox_busybox_update_any
+        busybox_busybox_version_1__12__3 => busybox_busybox_update_any
+        busybox_busybox_version_0__43 => ((busybox_busybox_update_any & !busybox_busybox_update_pre) | (!busybox_busybox_update_any & busybox_busybox_update_pre))
+        busybox_busybox_version_1__8__2 => busybox_busybox_update_any
+        busybox_busybox_version_0__60__5 => busybox_busybox_update_any
+        busybox_busybox_version_0__39 => busybox_busybox_update_any
+        busybox_busybox_version_1__18__5 => busybox_busybox_update_any
+        busybox_busybox_version_1__13__3 => busybox_busybox_update_any
+        busybox_busybox_version_1__12__2 => busybox_busybox_update_any
+        busybox_busybox_version_1__15__0 => busybox_busybox_update_any
+        busybox_busybox_version_1__17__3 => busybox_busybox_update_any
+        busybox_busybox_version_any => busybox_busybox_update_any
+        busybox_busybox_version_1__18__3 => busybox_busybox_update_any
+        busybox_busybox_version_1__1__3 => busybox_busybox_update_any
+        busybox_busybox_version_1__14__3 => busybox_busybox_update_any
+        busybox_busybox_version_1__18__1 => busybox_busybox_update_any
+        busybox_busybox_version_0__60__2 => busybox_busybox_update_any
+        busybox_busybox_version_1__6__1 => busybox_busybox_update_any
+        busybox_busybox_version_1__6__2 => busybox_busybox_update_any
+        busybox_busybox_version_1__9__2 => busybox_busybox_update_any
+        busybox_busybox_version_1__15__1 => busybox_busybox_update_any
+        busybox_busybox_version_1__8__3 => busybox_busybox_update_any

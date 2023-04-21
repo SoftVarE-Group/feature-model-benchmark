@@ -1,0 +1,774 @@
+features
+        CVE_2018_12389
+                mandatory
+                        types
+                                mandatory
+                                        application
+                                        operating_system
+                        sources
+                                mandatory
+                                        nvd
+                        exploits
+                                optional
+                                        direct
+                                        indirect
+                alternative
+                        mozilla
+                                alternative
+                                        mozilla_firefox__esr
+                                                mandatory
+                                                        mozilla_firefox__esr_version
+                                                                alternative
+                                                                        mozilla_firefox__esr_version_60__0
+                                                                        mozilla_firefox__esr_version_24__1__0
+                                                                        mozilla_firefox__esr_version_24__2
+                                                                        mozilla_firefox__esr_version_60__1__0
+                                                                        mozilla_firefox__esr_version_45__3__0
+                                                                        mozilla_firefox__esr_version_31__0
+                                                                        mozilla_firefox__esr_version_10__0
+                                                                        mozilla_firefox__esr_version_17__0__11
+                                                                        mozilla_firefox__esr_version_38__7__0
+                                                                        mozilla_firefox__esr_version_52__2__1
+                                                                        mozilla_firefox__esr_version_38__2__1
+                                                                        mozilla_firefox__esr_version_31__3
+                                                                        mozilla_firefox__esr_version_31__1
+                                                                        mozilla_firefox__esr_version_52__8__0
+                                                                        mozilla_firefox__esr_version_24__0
+                                                                        mozilla_firefox__esr_version_38__5__1
+                                                                        mozilla_firefox__esr_version_38__2__0
+                                                                        mozilla_firefox__esr_version_10__0__4
+                                                                        mozilla_firefox__esr_version_52__9__0
+                                                                        mozilla_firefox__esr_version_31__1__1
+                                                                        mozilla_firefox__esr_version_45__1__1
+                                                                        mozilla_firefox__esr_version_45__2__0
+                                                                        mozilla_firefox__esr_version_31__5__2
+                                                                        mozilla_firefox__esr_version_17__0__6
+                                                                        mozilla_firefox__esr_version_52__7__3
+                                                                        mozilla_firefox__esr_version_52__5__0
+                                                                        mozilla_firefox__esr_version_38__1__1
+                                                                        mozilla_firefox__esr_version_60__2__2
+                                                                        mozilla_firefox__esr_version_52__7__1
+                                                                        mozilla_firefox__esr_version_24__3
+                                                                        mozilla_firefox__esr_version_52__3__0
+                                                                        mozilla_firefox__esr_version_17__0__10
+                                                                        mozilla_firefox__esr_version_45__8__0
+                                                                        mozilla_firefox__esr_version_24__7
+                                                                        mozilla_firefox__esr_version_10__0__1
+                                                                        mozilla_firefox__esr_version_31__4
+                                                                        mozilla_firefox__esr_version_60__0__2
+                                                                        mozilla_firefox__esr_version_31__5
+                                                                        mozilla_firefox__esr_version_52__0
+                                                                        mozilla_firefox__esr_version_31__7
+                                                                        mozilla_firefox__esr_version_52__8__1
+                                                                        mozilla_firefox__esr_version_24__0__1
+                                                                        mozilla_firefox__esr_version_38__4__0
+                                                                        mozilla_firefox__esr_version_31__2
+                                                                        mozilla_firefox__esr_version_17__0__2
+                                                                        mozilla_firefox__esr_version_45__0__2
+                                                                        mozilla_firefox__esr_version_38__0__5
+                                                                        mozilla_firefox__esr_version_52__2__0
+                                                                        mozilla_firefox__esr_version_52__4__0
+                                                                        mozilla_firefox__esr_version_17__0__7
+                                                                        mozilla_firefox__esr_version_38__0__1
+                                                                        mozilla_firefox__esr_version_45__0__1
+                                                                        mozilla_firefox__esr_version_31__5__1
+                                                                        mozilla_firefox__esr_version_52__1__2
+                                                                        mozilla_firefox__esr_version_52__6__0
+                                                                        mozilla_firefox__esr_version_24__8
+                                                                        mozilla_firefox__esr_version_45__5__0
+                                                                        mozilla_firefox__esr_version_31__3__0
+                                                                        mozilla_firefox__esr_version_60__2__0
+                                                                        mozilla_firefox__esr_version_10__0__12
+                                                                        mozilla_firefox__esr_version_17__0__9
+                                                                        mozilla_firefox__esr_version_24__4
+                                                                        mozilla_firefox__esr_version_10__0__10
+                                                                        mozilla_firefox__esr_version_38__0
+                                                                        mozilla_firefox__esr_version_52__5__3
+                                                                        mozilla_firefox__esr_version_17__0__1
+                                                                        mozilla_firefox__esr_version_10__0__9
+                                                                        mozilla_firefox__esr_version_31__1__0
+                                                                        mozilla_firefox__esr_version_24__5
+                                                                        mozilla_firefox__esr_version_17__0__3
+                                                                        mozilla_firefox__esr_version_38__3__0
+                                                                        mozilla_firefox__esr_version_52__1__1
+                                                                        mozilla_firefox__esr_version_60__0__1
+                                                                        mozilla_firefox__esr_version_24__1__1
+                                                                        mozilla_firefox__esr_version_10__0__8
+                                                                        mozilla_firefox__esr_version_17__0__5
+                                                                        mozilla_firefox__esr_version_38__5__2
+                                                                        mozilla_firefox__esr_version_45__9__0
+                                                                        mozilla_firefox__esr_version_31__5__3
+                                                                        mozilla_firefox__esr_version_52__7__4
+                                                                        mozilla_firefox__esr_version_17__0__8
+                                                                        mozilla_firefox__esr_version_17__0__4
+                                                                        mozilla_firefox__esr_version_10__0__11
+                                                                        mozilla_firefox__esr_version_31__8
+                                                                        mozilla_firefox__esr_version_10__0__2
+                                                                        mozilla_firefox__esr_version_52__5__2
+                                                                        mozilla_firefox__esr_version_24__6
+                                                                        mozilla_firefox__esr_version_38__8__0
+                                                                        mozilla_firefox__esr_version_10__0__7
+                                                                        mozilla_firefox__esr_version_38__1__0
+                                                                        mozilla_firefox__esr_version_52__7__0
+                                                                        mozilla_firefox__esr_version_38__5__0
+                                                                        mozilla_firefox__esr_version_52__7__2
+                                                                        mozilla_firefox__esr_version_10__0__3
+                                                                        mozilla_firefox__esr_version_38__7__1
+                                                                        mozilla_firefox__esr_version_45__0
+                                                                        mozilla_firefox__esr_version_53__0__0
+                                                                        mozilla_firefox__esr_version_38__6__0
+                                                                        mozilla_firefox__esr_version_10__0__6
+                                                                        mozilla_firefox__esr_version_45__6__0
+                                                                        mozilla_firefox__esr_version_52__4__1
+                                                                        mozilla_firefox__esr_version_38__6__1
+                                                                        mozilla_firefox__esr_version_45__4__0
+                                                                        mozilla_firefox__esr_version_45__7__0
+                                                                        mozilla_firefox__esr_version_45__1__0
+                                                                        mozilla_firefox__esr_version_10__0__5
+                                                                        mozilla_firefox__esr_version_52__1__0
+                                                                        mozilla_firefox__esr_version_17__0
+                                                                        mozilla_firefox__esr_version_24__0__2
+                                                                        mozilla_firefox__esr_version_45__5__1
+                                                                        mozilla_firefox__esr_version_31__6
+                                                        mozilla_firefox__esr_target__hw
+                                                                alternative
+                                                                        mozilla_firefox__esr_target__hw_any
+                                                                        mozilla_firefox__esr_target__hw_x64
+                                        mozilla_thunderbird
+                                                mandatory
+                                                        mozilla_thunderbird_version
+                                                                alternative
+                                                                        mozilla_thunderbird_version_11__0__1
+                                                                        mozilla_thunderbird_version_3__1__12
+                                                                        mozilla_thunderbird_version_60__0
+                                                                        mozilla_thunderbird_version_24__1__0
+                                                                        mozilla_thunderbird_version_12__0
+                                                                        mozilla_thunderbird_version_52__9__1
+                                                                        mozilla_thunderbird_version_45__3__0
+                                                                        mozilla_thunderbird_version_22__0
+                                                                        mozilla_thunderbird_version_31__0
+                                                                        mozilla_thunderbird_version_25__0
+                                                                        mozilla_thunderbird_version_56__0
+                                                                        mozilla_thunderbird_version_10__0
+                                                                        mozilla_thunderbird_version_2__0__0__16
+                                                                        mozilla_thunderbird_version_13__0__1
+                                                                        mozilla_thunderbird_version_53__0
+                                                                        mozilla_thunderbird_version_1__5__0__4
+                                                                        mozilla_thunderbird_version_3__0__11
+                                                                        mozilla_thunderbird_version_3__0__5
+                                                                        mozilla_thunderbird_version_1__5__0__2
+                                                                        mozilla_thunderbird_version_3__1__14
+                                                                        mozilla_thunderbird_version_2__0__0__14
+                                                                        mozilla_thunderbird_version_1__5__0__10
+                                                                        mozilla_thunderbird_version_38__7__0
+                                                                        mozilla_thunderbird_version_0__1
+                                                                        mozilla_thunderbird_version_52__2__1
+                                                                        mozilla_thunderbird_version_1__5__0__5
+                                                                        mozilla_thunderbird_version_24__5__0
+                                                                        mozilla_thunderbird_version_2__0__0__6
+                                                                        mozilla_thunderbird_version_31__2__0
+                                                                        mozilla_thunderbird_version_2__0__0__9
+                                                                        mozilla_thunderbird_version_31__5__0
+                                                                        mozilla_thunderbird_version_52__8__0
+                                                                        mozilla_thunderbird_version_55__0
+                                                                        mozilla_thunderbird_version_24__0
+                                                                        mozilla_thunderbird_version_5__0
+                                                                        mozilla_thunderbird_version_2__0__0__17
+                                                                        mozilla_thunderbird_version_1__5__0__9
+                                                                        mozilla_thunderbird_version_38__5__1
+                                                                        mozilla_thunderbird_version_38__2__0
+                                                                        mozilla_thunderbird_version_50__0
+                                                                        mozilla_thunderbird_version_0__5
+                                                                        mozilla_thunderbird_version_15__0__1
+                                                                        mozilla_thunderbird_version_31__4__0
+                                                                        mozilla_thunderbird_version_52__9__0
+                                                                        mozilla_thunderbird_version_1__0
+                                                                        mozilla_thunderbird_version_60__2__1
+                                                                        mozilla_thunderbird_version_31__1__1
+                                                                        mozilla_thunderbird_version_45__1__1
+                                                                        mozilla_thunderbird_version_45__2__0
+                                                                        mozilla_thunderbird_version_0__7__2
+                                                                        mozilla_thunderbird_version_3__1__8
+                                                                        mozilla_thunderbird_version_6__0__2
+                                                                        mozilla_thunderbird_version_2__0__0__4
+                                                                        mozilla_thunderbird_version_24__3__0
+                                                                        mozilla_thunderbird_version_45__1
+                                                                        mozilla_thunderbird_version_17__0__6
+                                                                        mozilla_thunderbird_version_3__1__15
+                                                                        mozilla_thunderbird_version_3__1__20
+                                                                        mozilla_thunderbird_version_52__5__0
+                                                                        mozilla_thunderbird_version_1__0__5
+                                                                        mozilla_thunderbird_version_40__0
+                                                                        mozilla_thunderbird_version_3__0__4
+                                                                        mozilla_thunderbird_version_24__8__0
+                                                                        mozilla_thunderbird_version_49__0
+                                                                        mozilla_thunderbird_version_1__0__2
+                                                                        mozilla_thunderbird_version_2__0__0__23
+                                                                        mozilla_thunderbird_version_24__3
+                                                                        mozilla_thunderbird_version_1__5__0__7
+                                                                        mozilla_thunderbird_version_3__0__10
+                                                                        mozilla_thunderbird_version_52__3__0
+                                                                        mozilla_thunderbird_version_15__0
+                                                                        mozilla_thunderbird_version_33__0
+                                                                        mozilla_thunderbird_version_24__6__0
+                                                                        mozilla_thunderbird_version_17__0__10
+                                                                        mozilla_thunderbird_version_3__1__4
+                                                                        mozilla_thunderbird_version_45__8__0
+                                                                        mozilla_thunderbird_version_10__0__1
+                                                                        mozilla_thunderbird_version_2__0__0__19
+                                                                        mozilla_thunderbird_version_1__0__6
+                                                                        mozilla_thunderbird_version_0__9
+                                                                        mozilla_thunderbird_version_52__0
+                                                                        mozilla_thunderbird_version_1__5__0__12
+                                                                        mozilla_thunderbird_version_31__7
+                                                                        mozilla_thunderbird_version_1__0__7
+                                                                        mozilla_thunderbird_version_0__2
+                                                                        mozilla_thunderbird_version_57__0
+                                                                        mozilla_thunderbird_version_24__0__1
+                                                                        mozilla_thunderbird_version_38__4__0
+                                                                        mozilla_thunderbird_version_3__0__7
+                                                                        mozilla_thunderbird_version_7__0
+                                                                        mozilla_thunderbird_version_17__0__2
+                                                                        mozilla_thunderbird_version_3__1__10
+                                                                        mozilla_thunderbird_version_24__4__0
+                                                                        mozilla_thunderbird_version_0__4
+                                                                        mozilla_thunderbird_version_31__1__2
+                                                                        mozilla_thunderbird_version_18__0
+                                                                        mozilla_thunderbird_version_any
+                                                                        mozilla_thunderbird_version_36__0
+                                                                        mozilla_thunderbird_version_3__0__9
+                                                                        mozilla_thunderbird_version_21__0
+                                                                        mozilla_thunderbird_version_52__2__0
+                                                                        mozilla_thunderbird_version_17__0__7
+                                                                        mozilla_thunderbird_version_52__4__0
+                                                                        mozilla_thunderbird_version_38__0__1
+                                                                        mozilla_thunderbird_version_44__0
+                                                                        mozilla_thunderbird_version_47__0
+                                                                        mozilla_thunderbird_version_3__0__3
+                                                                        mozilla_thunderbird_version_3__1__3
+                                                                        mozilla_thunderbird_version_52__6__0
+                                                                        mozilla_thunderbird_version_45__5__0
+                                                                        mozilla_thunderbird_version_3__0__6
+                                                                        mozilla_thunderbird_version_31__3__0
+                                                                        mozilla_thunderbird_version_2__0
+                                                                        mozilla_thunderbird_version_0__7__1
+                                                                        mozilla_thunderbird_version_8__0
+                                                                        mozilla_thunderbird_version_6__0__1
+                                                                        mozilla_thunderbird_version_43__0
+                                                                        mozilla_thunderbird_version_3__1__19
+                                                                        mozilla_thunderbird_version_3__3
+                                                                        mozilla_thunderbird_version_17__0__9
+                                                                        mozilla_thunderbird_version_24__4
+                                                                        mozilla_thunderbird_version_37__0
+                                                                        mozilla_thunderbird_version_38__0
+                                                                        mozilla_thunderbird_version_3__1__11
+                                                                        mozilla_thunderbird_version_20__0
+                                                                        mozilla_thunderbird_version_26__0
+                                                                        mozilla_thunderbird_version_13__0
+                                                                        mozilla_thunderbird_version_12__0__1
+                                                                        mozilla_thunderbird_version_3__1__13
+                                                                        mozilla_thunderbird_version_31__1__0
+                                                                        mozilla_thunderbird_version_17__0__3
+                                                                        mozilla_thunderbird_version_38__3__0
+                                                                        mozilla_thunderbird_version_3__1__6
+                                                                        mozilla_thunderbird_version_3__1__16
+                                                                        mozilla_thunderbird_version_52__1__1
+                                                                        mozilla_thunderbird_version_0__7__3
+                                                                        mozilla_thunderbird_version_23__0
+                                                                        mozilla_thunderbird_version_0__6
+                                                                        mozilla_thunderbird_version_58__0
+                                                                        mozilla_thunderbird_version_2__0__0__12
+                                                                        mozilla_thunderbird_version_24__1__1
+                                                                        mozilla_thunderbird_version_24__7__0
+                                                                        mozilla_thunderbird_version_16__0
+                                                                        mozilla_thunderbird_version_3__1__9
+                                                                        mozilla_thunderbird_version_3__1__5
+                                                                        mozilla_thunderbird_version_1__5__0__8
+                                                                        mozilla_thunderbird_version_0__8
+                                                                        mozilla_thunderbird_version_17__0__5
+                                                                        mozilla_thunderbird_version_32__0
+                                                                        mozilla_thunderbird_version_1__5__0__14
+                                                                        mozilla_thunderbird_version_0__7
+                                                                        mozilla_thunderbird_version_34__0
+                                                                        mozilla_thunderbird_version_0__3
+                                                                        mozilla_thunderbird_version_54__0
+                                                                        mozilla_thunderbird_version_3__1__1
+                                                                        mozilla_thunderbird_version_3__0__8
+                                                                        mozilla_thunderbird_version_16__0__2
+                                                                        mozilla_thunderbird_version_51__0
+                                                                        mozilla_thunderbird_version_1__1
+                                                                        mozilla_thunderbird_version_24__8__1
+                                                                        mozilla_thunderbird_version_17__0__8
+                                                                        mozilla_thunderbird_version_7__0__1
+                                                                        mozilla_thunderbird_version_17__0__4
+                                                                        mozilla_thunderbird_version_1__0__8
+                                                                        mozilla_thunderbird_version_52__5__2
+                                                                        mozilla_thunderbird_version_10__0__2
+                                                                        mozilla_thunderbird_version_11__0
+                                                                        mozilla_thunderbird_version_14__0
+                                                                        mozilla_thunderbird_version_31__7__0
+                                                                        mozilla_thunderbird_version_38__8__0
+                                                                        mozilla_thunderbird_version_3__1__2
+                                                                        mozilla_thunderbird_version_3__1__17
+                                                                        mozilla_thunderbird_version_24__2__0
+                                                                        mozilla_thunderbird_version_38__1__0
+                                                                        mozilla_thunderbird_version_45__2
+                                                                        mozilla_thunderbird_version_2__0__0__18
+                                                                        mozilla_thunderbird_version_30__0
+                                                                        mozilla_thunderbird_version_52__7__0
+                                                                        mozilla_thunderbird_version_16__0__1
+                                                                        mozilla_thunderbird_version_19__0
+                                                                        mozilla_thunderbird_version_3__1__7
+                                                                        mozilla_thunderbird_version_38__5__0
+                                                                        mozilla_thunderbird_version_9__0
+                                                                        mozilla_thunderbird_version_27__0
+                                                                        mozilla_thunderbird_version_1__5
+                                                                        mozilla_thunderbird_version_6__0
+                                                                        mozilla_thunderbird_version_45__7__1
+                                                                        mozilla_thunderbird_version_2__0__0__5
+                                                                        mozilla_thunderbird_version_31__8__0
+                                                                        mozilla_thunderbird_version_3__1
+                                                                        mozilla_thunderbird_version_2__0__0__21
+                                                                        mozilla_thunderbird_version_59__0
+                                                                        mozilla_thunderbird_version_2__0__14
+                                                                        mozilla_thunderbird_version_1__5__0__13
+                                                                        mozilla_thunderbird_version_45__0
+                                                                        mozilla_thunderbird_version_9__0__1
+                                                                        mozilla_thunderbird_version_38__7__1
+                                                                        mozilla_thunderbird_version_38__6__0
+                                                                        mozilla_thunderbird_version_45__6__0
+                                                                        mozilla_thunderbird_version_45__4__0
+                                                                        mozilla_thunderbird_version_2__0__0__22
+                                                                        mozilla_thunderbird_version_2__0__0__24
+                                                                        mozilla_thunderbird_version_28__0
+                                                                        mozilla_thunderbird_version_45__1__0
+                                                                        mozilla_thunderbird_version_31__6__0
+                                                                        mozilla_thunderbird_version_52__1__0
+                                                                        mozilla_thunderbird_version_45__7__0
+                                                                        mozilla_thunderbird_version_3__1__18
+                                                                        mozilla_thunderbird_version_52__0__1
+                                                                        mozilla_thunderbird_version_17__0
+                                                                        mozilla_thunderbird_version_2__0__0__0
+                                                                        mozilla_thunderbird_version_3__0
+                                                                        mozilla_thunderbird_version_38__7__2
+                                                                        mozilla_thunderbird_version_3__0__1
+                                                                        mozilla_thunderbird_version_42__0
+                                                                        mozilla_thunderbird_version_41__0
+                                                                        mozilla_thunderbird_version_45__5__1
+                                                                        mozilla_thunderbird_version_29__0
+                                                                        mozilla_thunderbird_version_3__0__2
+                                                        mozilla_thunderbird_update
+                                                                alternative
+                                                                        mozilla_thunderbird_update_beta7
+                                                                        mozilla_thunderbird_update_alpha1
+                                                                        mozilla_thunderbird_update_alpha2
+                                                                        mozilla_thunderbird_update_rc1
+                                                                        mozilla_thunderbird_update_beta5
+                                                                        mozilla_thunderbird_update_beta2
+                                                                        mozilla_thunderbird_update_alpha3
+                                                                        mozilla_thunderbird_update_beta4
+                                                                        mozilla_thunderbird_update_any
+                                                                        mozilla_thunderbird_update_beta3
+                                                                        mozilla_thunderbird_update_rc
+                                                                        mozilla_thunderbird_update_beta10
+                                                                        mozilla_thunderbird_update_beta9
+                                                                        mozilla_thunderbird_update_beta8
+                                                                        mozilla_thunderbird_update_beta11
+                                                                        mozilla_thunderbird_update_rc2
+                                                                        mozilla_thunderbird_update_beta6
+                                                                        mozilla_thunderbird_update_beta1
+                        debian
+                                mandatory
+                                        debian_debian__linux
+                                                mandatory
+                                                        debian_debian__linux_version
+                                                                alternative
+                                                                        debian_debian__linux_version_8__0
+                                                                        debian_debian__linux_version_9__0
+                        canonical
+                                mandatory
+                                        canonical_ubuntu__linux
+                                                mandatory
+                                                        canonical_ubuntu__linux_version
+                                                                alternative
+                                                                        canonical_ubuntu__linux_version_16__04
+                                                                        canonical_ubuntu__linux_version_18__10
+                                                                        canonical_ubuntu__linux_version_14__04
+                                                                        canonical_ubuntu__linux_version_18__04
+                                                        canonical_ubuntu__linux_sw__edition
+                                                                alternative
+                                                                        canonical_ubuntu__linux_sw__edition_any
+                                                                        canonical_ubuntu__linux_sw__edition_lts
+                        redhat
+                                alternative
+                                        redhat_enterprise__linux__desktop
+                                                mandatory
+                                                        redhat_enterprise__linux__desktop_version
+                                                                alternative
+                                                                        redhat_enterprise__linux__desktop_version_6__0
+                                                                        redhat_enterprise__linux__desktop_version_7__0
+                                        redhat_enterprise__linux__workstation
+                                                mandatory
+                                                        redhat_enterprise__linux__workstation_version
+                                                                alternative
+                                                                        redhat_enterprise__linux__workstation_version_6__0
+                                                                        redhat_enterprise__linux__workstation_version_7__0
+                                        redhat_enterprise__linux__server__eus
+                                                mandatory
+                                                        redhat_enterprise__linux__server__eus_version
+                                                                alternative
+                                                                        redhat_enterprise__linux__server__eus_version_7__5
+                                                                        redhat_enterprise__linux__server__eus_version_7__6
+                                        redhat_enterprise__linux__server__aus
+                                                mandatory
+                                                        redhat_enterprise__linux__server__aus_version
+                                                                mandatory
+                                                                        redhat_enterprise__linux__server__aus_version_7__6
+                                        redhat_enterprise__linux__server
+                                                mandatory
+                                                        redhat_enterprise__linux__server_version
+                                                                alternative
+                                                                        redhat_enterprise__linux__server_version_6__0
+                                                                        redhat_enterprise__linux__server_version_7__0
+                                        redhat_enterprise__linux__server__tus
+                                                mandatory
+                                                        redhat_enterprise__linux__server__tus_version
+                                                                mandatory
+                                                                        redhat_enterprise__linux__server__tus_version_7__6
+
+constraints
+        mozilla_firefox__esr => application
+        mozilla_thunderbird => application
+        debian_debian__linux => operating_system
+        canonical_ubuntu__linux => operating_system
+        redhat_enterprise__linux__desktop => operating_system
+        redhat_enterprise__linux__workstation => operating_system
+        redhat_enterprise__linux__server__eus => operating_system
+        redhat_enterprise__linux__server__aus => operating_system
+        redhat_enterprise__linux__server => operating_system
+        redhat_enterprise__linux__server__tus => operating_system
+        mozilla_firefox__esr_version_60__0 => mozilla_firefox__esr_target__hw_any
+        mozilla_firefox__esr_version_24__1__0 => mozilla_firefox__esr_target__hw_any
+        mozilla_firefox__esr_version_24__2 => mozilla_firefox__esr_target__hw_any
+        mozilla_firefox__esr_version_60__1__0 => mozilla_firefox__esr_target__hw_any
+        mozilla_firefox__esr_version_45__3__0 => mozilla_firefox__esr_target__hw_any
+        mozilla_firefox__esr_version_31__0 => mozilla_firefox__esr_target__hw_any
+        mozilla_firefox__esr_version_10__0 => mozilla_firefox__esr_target__hw_any
+        mozilla_firefox__esr_version_17__0__11 => mozilla_firefox__esr_target__hw_any
+        mozilla_firefox__esr_version_38__7__0 => mozilla_firefox__esr_target__hw_any
+        mozilla_firefox__esr_version_52__2__1 => mozilla_firefox__esr_target__hw_any
+        mozilla_firefox__esr_version_31__3 => mozilla_firefox__esr_target__hw_any
+        mozilla_firefox__esr_version_31__1 => mozilla_firefox__esr_target__hw_any
+        mozilla_firefox__esr_version_52__8__0 => mozilla_firefox__esr_target__hw_any
+        mozilla_firefox__esr_version_24__0 => mozilla_firefox__esr_target__hw_any
+        mozilla_firefox__esr_version_38__5__1 => mozilla_firefox__esr_target__hw_any
+        mozilla_firefox__esr_version_10__0__4 => mozilla_firefox__esr_target__hw_any
+        mozilla_firefox__esr_version_52__9__0 => mozilla_firefox__esr_target__hw_any
+        mozilla_firefox__esr_version_31__1__1 => mozilla_firefox__esr_target__hw_any
+        mozilla_firefox__esr_version_45__1__1 => mozilla_firefox__esr_target__hw_any
+        mozilla_firefox__esr_version_45__2__0 => mozilla_firefox__esr_target__hw_any
+        mozilla_firefox__esr_version_31__5__2 => mozilla_firefox__esr_target__hw_any
+        mozilla_firefox__esr_version_17__0__6 => mozilla_firefox__esr_target__hw_any
+        mozilla_firefox__esr_version_52__7__3 => mozilla_firefox__esr_target__hw_any
+        mozilla_firefox__esr_version_52__5__0 => mozilla_firefox__esr_target__hw_any
+        mozilla_firefox__esr_version_60__2__2 => mozilla_firefox__esr_target__hw_any
+        mozilla_firefox__esr_version_52__7__1 => mozilla_firefox__esr_target__hw_any
+        mozilla_firefox__esr_version_24__3 => mozilla_firefox__esr_target__hw_any
+        mozilla_firefox__esr_version_52__3__0 => mozilla_firefox__esr_target__hw_any
+        mozilla_firefox__esr_version_17__0__10 => mozilla_firefox__esr_target__hw_any
+        mozilla_firefox__esr_version_45__8__0 => mozilla_firefox__esr_target__hw_any
+        mozilla_firefox__esr_version_24__7 => mozilla_firefox__esr_target__hw_any
+        mozilla_firefox__esr_version_10__0__1 => mozilla_firefox__esr_target__hw_any
+        mozilla_firefox__esr_version_31__4 => mozilla_firefox__esr_target__hw_any
+        mozilla_firefox__esr_version_60__0__2 => mozilla_firefox__esr_target__hw_any
+        mozilla_firefox__esr_version_31__5 => mozilla_firefox__esr_target__hw_any
+        mozilla_firefox__esr_version_52__0 => mozilla_firefox__esr_target__hw_any
+        mozilla_firefox__esr_version_31__7 => mozilla_firefox__esr_target__hw_any
+        mozilla_firefox__esr_version_52__8__1 => mozilla_firefox__esr_target__hw_any
+        mozilla_firefox__esr_version_24__0__1 => mozilla_firefox__esr_target__hw_any
+        mozilla_firefox__esr_version_31__2 => mozilla_firefox__esr_target__hw_any
+        mozilla_firefox__esr_version_17__0__2 => mozilla_firefox__esr_target__hw_any
+        mozilla_firefox__esr_version_45__0__2 => mozilla_firefox__esr_target__hw_any
+        mozilla_firefox__esr_version_52__2__0 => mozilla_firefox__esr_target__hw_any
+        mozilla_firefox__esr_version_52__4__0 => mozilla_firefox__esr_target__hw_any
+        mozilla_firefox__esr_version_17__0__7 => mozilla_firefox__esr_target__hw_any
+        mozilla_firefox__esr_version_45__0__1 => mozilla_firefox__esr_target__hw_any
+        mozilla_firefox__esr_version_31__5__1 => mozilla_firefox__esr_target__hw_any
+        mozilla_firefox__esr_version_52__1__2 => mozilla_firefox__esr_target__hw_any
+        mozilla_firefox__esr_version_52__6__0 => mozilla_firefox__esr_target__hw_any
+        mozilla_firefox__esr_version_24__8 => mozilla_firefox__esr_target__hw_any
+        mozilla_firefox__esr_version_45__5__0 => mozilla_firefox__esr_target__hw_any
+        mozilla_firefox__esr_version_31__3__0 => mozilla_firefox__esr_target__hw_any
+        mozilla_firefox__esr_version_60__2__0 => mozilla_firefox__esr_target__hw_any
+        mozilla_firefox__esr_version_10__0__12 => mozilla_firefox__esr_target__hw_any
+        mozilla_firefox__esr_version_17__0__9 => mozilla_firefox__esr_target__hw_any
+        mozilla_firefox__esr_version_24__4 => mozilla_firefox__esr_target__hw_any
+        mozilla_firefox__esr_version_10__0__10 => mozilla_firefox__esr_target__hw_any
+        mozilla_firefox__esr_version_52__5__3 => mozilla_firefox__esr_target__hw_any
+        mozilla_firefox__esr_version_17__0__1 => mozilla_firefox__esr_target__hw_any
+        mozilla_firefox__esr_version_10__0__9 => mozilla_firefox__esr_target__hw_any
+        mozilla_firefox__esr_version_31__1__0 => mozilla_firefox__esr_target__hw_any
+        mozilla_firefox__esr_version_24__5 => mozilla_firefox__esr_target__hw_any
+        mozilla_firefox__esr_version_17__0__3 => mozilla_firefox__esr_target__hw_any
+        mozilla_firefox__esr_version_52__1__1 => mozilla_firefox__esr_target__hw_any
+        mozilla_firefox__esr_version_60__0__1 => mozilla_firefox__esr_target__hw_any
+        mozilla_firefox__esr_version_24__1__1 => mozilla_firefox__esr_target__hw_any
+        mozilla_firefox__esr_version_10__0__8 => mozilla_firefox__esr_target__hw_any
+        mozilla_firefox__esr_version_17__0__5 => mozilla_firefox__esr_target__hw_any
+        mozilla_firefox__esr_version_38__5__2 => mozilla_firefox__esr_target__hw_any
+        mozilla_firefox__esr_version_45__9__0 => mozilla_firefox__esr_target__hw_any
+        mozilla_firefox__esr_version_31__5__3 => mozilla_firefox__esr_target__hw_any
+        mozilla_firefox__esr_version_52__7__4 => mozilla_firefox__esr_target__hw_any
+        mozilla_firefox__esr_version_17__0__8 => mozilla_firefox__esr_target__hw_any
+        mozilla_firefox__esr_version_17__0__4 => mozilla_firefox__esr_target__hw_any
+        mozilla_firefox__esr_version_10__0__11 => mozilla_firefox__esr_target__hw_any
+        mozilla_firefox__esr_version_31__8 => mozilla_firefox__esr_target__hw_any
+        mozilla_firefox__esr_version_10__0__2 => mozilla_firefox__esr_target__hw_any
+        mozilla_firefox__esr_version_52__5__2 => mozilla_firefox__esr_target__hw_any
+        mozilla_firefox__esr_version_24__6 => mozilla_firefox__esr_target__hw_any
+        mozilla_firefox__esr_version_38__8__0 => mozilla_firefox__esr_target__hw_any
+        mozilla_firefox__esr_version_10__0__7 => mozilla_firefox__esr_target__hw_any
+        mozilla_firefox__esr_version_52__7__0 => mozilla_firefox__esr_target__hw_any
+        mozilla_firefox__esr_version_38__5__0 => mozilla_firefox__esr_target__hw_any
+        mozilla_firefox__esr_version_52__7__2 => mozilla_firefox__esr_target__hw_any
+        mozilla_firefox__esr_version_10__0__3 => mozilla_firefox__esr_target__hw_any
+        mozilla_firefox__esr_version_38__7__1 => mozilla_firefox__esr_target__hw_any
+        mozilla_firefox__esr_version_45__0 => mozilla_firefox__esr_target__hw_any
+        mozilla_firefox__esr_version_53__0__0 => mozilla_firefox__esr_target__hw_any
+        mozilla_firefox__esr_version_38__6__0 => mozilla_firefox__esr_target__hw_any
+        mozilla_firefox__esr_version_10__0__6 => mozilla_firefox__esr_target__hw_any
+        mozilla_firefox__esr_version_45__6__0 => mozilla_firefox__esr_target__hw_any
+        mozilla_firefox__esr_version_52__4__1 => mozilla_firefox__esr_target__hw_any
+        mozilla_firefox__esr_version_38__6__1 => mozilla_firefox__esr_target__hw_any
+        mozilla_firefox__esr_version_45__4__0 => mozilla_firefox__esr_target__hw_any
+        mozilla_firefox__esr_version_45__7__0 => mozilla_firefox__esr_target__hw_any
+        mozilla_firefox__esr_version_45__1__0 => mozilla_firefox__esr_target__hw_any
+        mozilla_firefox__esr_version_10__0__5 => mozilla_firefox__esr_target__hw_any
+        mozilla_firefox__esr_version_52__1__0 => mozilla_firefox__esr_target__hw_any
+        mozilla_firefox__esr_version_17__0 => mozilla_firefox__esr_target__hw_any
+        mozilla_firefox__esr_version_24__0__2 => mozilla_firefox__esr_target__hw_any
+        mozilla_firefox__esr_version_45__5__1 => mozilla_firefox__esr_target__hw_any
+        mozilla_firefox__esr_version_31__6 => mozilla_firefox__esr_target__hw_any
+        mozilla_thunderbird_version_11__0__1 => mozilla_thunderbird_update_any
+        mozilla_thunderbird_version_3__1__12 => mozilla_thunderbird_update_any
+        mozilla_thunderbird_version_60__0 => ((mozilla_thunderbird_update_beta7 & !mozilla_thunderbird_update_beta5 & !mozilla_thunderbird_update_beta2 & !mozilla_thunderbird_update_beta4 & !mozilla_thunderbird_update_any & !mozilla_thunderbird_update_beta3 & !mozilla_thunderbird_update_beta10 & !mozilla_thunderbird_update_beta9 & !mozilla_thunderbird_update_beta8 & !mozilla_thunderbird_update_beta11 & !mozilla_thunderbird_update_beta6 & !mozilla_thunderbird_update_beta1) | (!mozilla_thunderbird_update_beta7 & mozilla_thunderbird_update_beta5 & !mozilla_thunderbird_update_beta2 & !mozilla_thunderbird_update_beta4 & !mozilla_thunderbird_update_any & !mozilla_thunderbird_update_beta3 & !mozilla_thunderbird_update_beta10 & !mozilla_thunderbird_update_beta9 & !mozilla_thunderbird_update_beta8 & !mozilla_thunderbird_update_beta11 & !mozilla_thunderbird_update_beta6 & !mozilla_thunderbird_update_beta1) | (!mozilla_thunderbird_update_beta7 & !mozilla_thunderbird_update_beta5 & mozilla_thunderbird_update_beta2 & !mozilla_thunderbird_update_beta4 & !mozilla_thunderbird_update_any & !mozilla_thunderbird_update_beta3 & !mozilla_thunderbird_update_beta10 & !mozilla_thunderbird_update_beta9 & !mozilla_thunderbird_update_beta8 & !mozilla_thunderbird_update_beta11 & !mozilla_thunderbird_update_beta6 & !mozilla_thunderbird_update_beta1) | (!mozilla_thunderbird_update_beta7 & !mozilla_thunderbird_update_beta5 & !mozilla_thunderbird_update_beta2 & mozilla_thunderbird_update_beta4 & !mozilla_thunderbird_update_any & !mozilla_thunderbird_update_beta3 & !mozilla_thunderbird_update_beta10 & !mozilla_thunderbird_update_beta9 & !mozilla_thunderbird_update_beta8 & !mozilla_thunderbird_update_beta11 & !mozilla_thunderbird_update_beta6 & !mozilla_thunderbird_update_beta1) | (!mozilla_thunderbird_update_beta7 & !mozilla_thunderbird_update_beta5 & !mozilla_thunderbird_update_beta2 & !mozilla_thunderbird_update_beta4 & mozilla_thunderbird_update_any & !mozilla_thunderbird_update_beta3 & !mozilla_thunderbird_update_beta10 & !mozilla_thunderbird_update_beta9 & !mozilla_thunderbird_update_beta8 & !mozilla_thunderbird_update_beta11 & !mozilla_thunderbird_update_beta6 & !mozilla_thunderbird_update_beta1) | (!mozilla_thunderbird_update_beta7 & !mozilla_thunderbird_update_beta5 & !mozilla_thunderbird_update_beta2 & !mozilla_thunderbird_update_beta4 & !mozilla_thunderbird_update_any & mozilla_thunderbird_update_beta3 & !mozilla_thunderbird_update_beta10 & !mozilla_thunderbird_update_beta9 & !mozilla_thunderbird_update_beta8 & !mozilla_thunderbird_update_beta11 & !mozilla_thunderbird_update_beta6 & !mozilla_thunderbird_update_beta1) | (!mozilla_thunderbird_update_beta7 & !mozilla_thunderbird_update_beta5 & !mozilla_thunderbird_update_beta2 & !mozilla_thunderbird_update_beta4 & !mozilla_thunderbird_update_any & !mozilla_thunderbird_update_beta3 & mozilla_thunderbird_update_beta10 & !mozilla_thunderbird_update_beta9 & !mozilla_thunderbird_update_beta8 & !mozilla_thunderbird_update_beta11 & !mozilla_thunderbird_update_beta6 & !mozilla_thunderbird_update_beta1) | (!mozilla_thunderbird_update_beta7 & !mozilla_thunderbird_update_beta5 & !mozilla_thunderbird_update_beta2 & !mozilla_thunderbird_update_beta4 & !mozilla_thunderbird_update_any & !mozilla_thunderbird_update_beta3 & !mozilla_thunderbird_update_beta10 & mozilla_thunderbird_update_beta9 & !mozilla_thunderbird_update_beta8 & !mozilla_thunderbird_update_beta11 & !mozilla_thunderbird_update_beta6 & !mozilla_thunderbird_update_beta1) | (!mozilla_thunderbird_update_beta7 & !mozilla_thunderbird_update_beta5 & !mozilla_thunderbird_update_beta2 & !mozilla_thunderbird_update_beta4 & !mozilla_thunderbird_update_any & !mozilla_thunderbird_update_beta3 & !mozilla_thunderbird_update_beta10 & !mozilla_thunderbird_update_beta9 & mozilla_thunderbird_update_beta8 & !mozilla_thunderbird_update_beta11 & !mozilla_thunderbird_update_beta6 & !mozilla_thunderbird_update_beta1) | (!mozilla_thunderbird_update_beta7 & !mozilla_thunderbird_update_beta5 & !mozilla_thunderbird_update_beta2 & !mozilla_thunderbird_update_beta4 & !mozilla_thunderbird_update_any & !mozilla_thunderbird_update_beta3 & !mozilla_thunderbird_update_beta10 & !mozilla_thunderbird_update_beta9 & !mozilla_thunderbird_update_beta8 & mozilla_thunderbird_update_beta11 & !mozilla_thunderbird_update_beta6 & !mozilla_thunderbird_update_beta1) | (!mozilla_thunderbird_update_beta7 & !mozilla_thunderbird_update_beta5 & !mozilla_thunderbird_update_beta2 & !mozilla_thunderbird_update_beta4 & !mozilla_thunderbird_update_any & !mozilla_thunderbird_update_beta3 & !mozilla_thunderbird_update_beta10 & !mozilla_thunderbird_update_beta9 & !mozilla_thunderbird_update_beta8 & !mozilla_thunderbird_update_beta11 & mozilla_thunderbird_update_beta6 & !mozilla_thunderbird_update_beta1) | (!mozilla_thunderbird_update_beta7 & !mozilla_thunderbird_update_beta5 & !mozilla_thunderbird_update_beta2 & !mozilla_thunderbird_update_beta4 & !mozilla_thunderbird_update_any & !mozilla_thunderbird_update_beta3 & !mozilla_thunderbird_update_beta10 & !mozilla_thunderbird_update_beta9 & !mozilla_thunderbird_update_beta8 & !mozilla_thunderbird_update_beta11 & !mozilla_thunderbird_update_beta6 & mozilla_thunderbird_update_beta1))
+        mozilla_thunderbird_version_24__1__0 => mozilla_thunderbird_update_any
+        mozilla_thunderbird_version_12__0 => ((mozilla_thunderbird_update_beta5 & !mozilla_thunderbird_update_beta2 & !mozilla_thunderbird_update_beta4 & !mozilla_thunderbird_update_any & !mozilla_thunderbird_update_beta3 & !mozilla_thunderbird_update_beta1) | (!mozilla_thunderbird_update_beta5 & mozilla_thunderbird_update_beta2 & !mozilla_thunderbird_update_beta4 & !mozilla_thunderbird_update_any & !mozilla_thunderbird_update_beta3 & !mozilla_thunderbird_update_beta1) | (!mozilla_thunderbird_update_beta5 & !mozilla_thunderbird_update_beta2 & mozilla_thunderbird_update_beta4 & !mozilla_thunderbird_update_any & !mozilla_thunderbird_update_beta3 & !mozilla_thunderbird_update_beta1) | (!mozilla_thunderbird_update_beta5 & !mozilla_thunderbird_update_beta2 & !mozilla_thunderbird_update_beta4 & mozilla_thunderbird_update_any & !mozilla_thunderbird_update_beta3 & !mozilla_thunderbird_update_beta1) | (!mozilla_thunderbird_update_beta5 & !mozilla_thunderbird_update_beta2 & !mozilla_thunderbird_update_beta4 & !mozilla_thunderbird_update_any & mozilla_thunderbird_update_beta3 & !mozilla_thunderbird_update_beta1) | (!mozilla_thunderbird_update_beta5 & !mozilla_thunderbird_update_beta2 & !mozilla_thunderbird_update_beta4 & !mozilla_thunderbird_update_any & !mozilla_thunderbird_update_beta3 & mozilla_thunderbird_update_beta1))
+        mozilla_thunderbird_version_52__9__1 => mozilla_thunderbird_update_any
+        mozilla_thunderbird_version_45__3__0 => mozilla_thunderbird_update_any
+        mozilla_thunderbird_version_22__0 => mozilla_thunderbird_update_beta1
+        mozilla_thunderbird_version_31__0 => ((mozilla_thunderbird_update_beta2 & !mozilla_thunderbird_update_any & !mozilla_thunderbird_update_beta3 & !mozilla_thunderbird_update_beta1) | (!mozilla_thunderbird_update_beta2 & mozilla_thunderbird_update_any & !mozilla_thunderbird_update_beta3 & !mozilla_thunderbird_update_beta1) | (!mozilla_thunderbird_update_beta2 & !mozilla_thunderbird_update_any & mozilla_thunderbird_update_beta3 & !mozilla_thunderbird_update_beta1) | (!mozilla_thunderbird_update_beta2 & !mozilla_thunderbird_update_any & !mozilla_thunderbird_update_beta3 & mozilla_thunderbird_update_beta1))
+        mozilla_thunderbird_version_25__0 => mozilla_thunderbird_update_beta1
+        mozilla_thunderbird_version_56__0 => ((mozilla_thunderbird_update_beta2 & !mozilla_thunderbird_update_beta4 & !mozilla_thunderbird_update_beta3 & !mozilla_thunderbird_update_beta1) | (!mozilla_thunderbird_update_beta2 & mozilla_thunderbird_update_beta4 & !mozilla_thunderbird_update_beta3 & !mozilla_thunderbird_update_beta1) | (!mozilla_thunderbird_update_beta2 & !mozilla_thunderbird_update_beta4 & mozilla_thunderbird_update_beta3 & !mozilla_thunderbird_update_beta1) | (!mozilla_thunderbird_update_beta2 & !mozilla_thunderbird_update_beta4 & !mozilla_thunderbird_update_beta3 & mozilla_thunderbird_update_beta1))
+        mozilla_thunderbird_version_10__0 => ((mozilla_thunderbird_update_beta5 & !mozilla_thunderbird_update_beta2 & !mozilla_thunderbird_update_beta4 & !mozilla_thunderbird_update_any & !mozilla_thunderbird_update_beta3 & !mozilla_thunderbird_update_beta1) | (!mozilla_thunderbird_update_beta5 & mozilla_thunderbird_update_beta2 & !mozilla_thunderbird_update_beta4 & !mozilla_thunderbird_update_any & !mozilla_thunderbird_update_beta3 & !mozilla_thunderbird_update_beta1) | (!mozilla_thunderbird_update_beta5 & !mozilla_thunderbird_update_beta2 & mozilla_thunderbird_update_beta4 & !mozilla_thunderbird_update_any & !mozilla_thunderbird_update_beta3 & !mozilla_thunderbird_update_beta1) | (!mozilla_thunderbird_update_beta5 & !mozilla_thunderbird_update_beta2 & !mozilla_thunderbird_update_beta4 & mozilla_thunderbird_update_any & !mozilla_thunderbird_update_beta3 & !mozilla_thunderbird_update_beta1) | (!mozilla_thunderbird_update_beta5 & !mozilla_thunderbird_update_beta2 & !mozilla_thunderbird_update_beta4 & !mozilla_thunderbird_update_any & mozilla_thunderbird_update_beta3 & !mozilla_thunderbird_update_beta1) | (!mozilla_thunderbird_update_beta5 & !mozilla_thunderbird_update_beta2 & !mozilla_thunderbird_update_beta4 & !mozilla_thunderbird_update_any & !mozilla_thunderbird_update_beta3 & mozilla_thunderbird_update_beta1))
+        mozilla_thunderbird_version_2__0__0__16 => mozilla_thunderbird_update_any
+        mozilla_thunderbird_version_13__0__1 => mozilla_thunderbird_update_any
+        mozilla_thunderbird_version_53__0 => ((mozilla_thunderbird_update_beta2 & !mozilla_thunderbird_update_beta1) | (!mozilla_thunderbird_update_beta2 & mozilla_thunderbird_update_beta1))
+        mozilla_thunderbird_version_1__5__0__4 => mozilla_thunderbird_update_any
+        mozilla_thunderbird_version_3__0__11 => mozilla_thunderbird_update_any
+        mozilla_thunderbird_version_3__0__5 => mozilla_thunderbird_update_any
+        mozilla_thunderbird_version_1__5__0__2 => mozilla_thunderbird_update_any
+        mozilla_thunderbird_version_3__1__14 => mozilla_thunderbird_update_any
+        mozilla_thunderbird_version_2__0__0__14 => mozilla_thunderbird_update_any
+        mozilla_thunderbird_version_1__5__0__10 => mozilla_thunderbird_update_any
+        mozilla_thunderbird_version_38__7__0 => mozilla_thunderbird_update_any
+        mozilla_thunderbird_version_0__1 => mozilla_thunderbird_update_any
+        mozilla_thunderbird_version_52__2__1 => mozilla_thunderbird_update_any
+        mozilla_thunderbird_version_1__5__0__5 => mozilla_thunderbird_update_any
+        mozilla_thunderbird_version_24__5__0 => mozilla_thunderbird_update_any
+        mozilla_thunderbird_version_2__0__0__6 => mozilla_thunderbird_update_any
+        mozilla_thunderbird_version_31__2__0 => mozilla_thunderbird_update_any
+        mozilla_thunderbird_version_2__0__0__9 => mozilla_thunderbird_update_any
+        mozilla_thunderbird_version_31__5__0 => mozilla_thunderbird_update_any
+        mozilla_thunderbird_version_52__8__0 => mozilla_thunderbird_update_any
+        mozilla_thunderbird_version_55__0 => mozilla_thunderbird_update_beta2
+        mozilla_thunderbird_version_24__0 => ((mozilla_thunderbird_update_beta2 & !mozilla_thunderbird_update_any & !mozilla_thunderbird_update_beta3 & !mozilla_thunderbird_update_beta1) | (!mozilla_thunderbird_update_beta2 & mozilla_thunderbird_update_any & !mozilla_thunderbird_update_beta3 & !mozilla_thunderbird_update_beta1) | (!mozilla_thunderbird_update_beta2 & !mozilla_thunderbird_update_any & mozilla_thunderbird_update_beta3 & !mozilla_thunderbird_update_beta1) | (!mozilla_thunderbird_update_beta2 & !mozilla_thunderbird_update_any & !mozilla_thunderbird_update_beta3 & mozilla_thunderbird_update_beta1))
+        mozilla_thunderbird_version_5__0 => ((mozilla_thunderbird_update_beta2 & !mozilla_thunderbird_update_any & !mozilla_thunderbird_update_beta1) | (!mozilla_thunderbird_update_beta2 & mozilla_thunderbird_update_any & !mozilla_thunderbird_update_beta1) | (!mozilla_thunderbird_update_beta2 & !mozilla_thunderbird_update_any & mozilla_thunderbird_update_beta1))
+        mozilla_thunderbird_version_2__0__0__17 => mozilla_thunderbird_update_any
+        mozilla_thunderbird_version_1__5__0__9 => mozilla_thunderbird_update_any
+        mozilla_thunderbird_version_38__5__1 => mozilla_thunderbird_update_any
+        mozilla_thunderbird_version_38__2__0 => mozilla_thunderbird_update_any
+        mozilla_thunderbird_version_50__0 => ((mozilla_thunderbird_update_beta2 & !mozilla_thunderbird_update_beta3 & !mozilla_thunderbird_update_beta1) | (!mozilla_thunderbird_update_beta2 & mozilla_thunderbird_update_beta3 & !mozilla_thunderbird_update_beta1) | (!mozilla_thunderbird_update_beta2 & !mozilla_thunderbird_update_beta3 & mozilla_thunderbird_update_beta1))
+        mozilla_thunderbird_version_0__5 => mozilla_thunderbird_update_any
+        mozilla_thunderbird_version_15__0__1 => mozilla_thunderbird_update_any
+        mozilla_thunderbird_version_31__4__0 => mozilla_thunderbird_update_any
+        mozilla_thunderbird_version_52__9__0 => mozilla_thunderbird_update_any
+        mozilla_thunderbird_version_1__0 => ((mozilla_thunderbird_update_any & !mozilla_thunderbird_update_rc) | (!mozilla_thunderbird_update_any & mozilla_thunderbird_update_rc))
+        mozilla_thunderbird_version_60__2__1 => mozilla_thunderbird_update_any
+        mozilla_thunderbird_version_31__1__1 => mozilla_thunderbird_update_any
+        mozilla_thunderbird_version_45__1__1 => mozilla_thunderbird_update_any
+        mozilla_thunderbird_version_45__2__0 => mozilla_thunderbird_update_any
+        mozilla_thunderbird_version_0__7__2 => mozilla_thunderbird_update_any
+        mozilla_thunderbird_version_3__1__8 => mozilla_thunderbird_update_any
+        mozilla_thunderbird_version_6__0__2 => mozilla_thunderbird_update_any
+        mozilla_thunderbird_version_2__0__0__4 => mozilla_thunderbird_update_any
+        mozilla_thunderbird_version_24__3__0 => mozilla_thunderbird_update_any
+        mozilla_thunderbird_version_45__1 => mozilla_thunderbird_update_beta1
+        mozilla_thunderbird_version_17__0__6 => mozilla_thunderbird_update_any
+        mozilla_thunderbird_version_3__1__15 => mozilla_thunderbird_update_any
+        mozilla_thunderbird_version_3__1__20 => mozilla_thunderbird_update_any
+        mozilla_thunderbird_version_52__5__0 => mozilla_thunderbird_update_any
+        mozilla_thunderbird_version_1__0__5 => mozilla_thunderbird_update_any
+        mozilla_thunderbird_version_40__0 => mozilla_thunderbird_update_beta1
+        mozilla_thunderbird_version_3__0__4 => mozilla_thunderbird_update_any
+        mozilla_thunderbird_version_24__8__0 => mozilla_thunderbird_update_any
+        mozilla_thunderbird_version_49__0 => mozilla_thunderbird_update_beta1
+        mozilla_thunderbird_version_1__0__2 => mozilla_thunderbird_update_any
+        mozilla_thunderbird_version_2__0__0__23 => mozilla_thunderbird_update_any
+        mozilla_thunderbird_version_24__3 => mozilla_thunderbird_update_any
+        mozilla_thunderbird_version_1__5__0__7 => mozilla_thunderbird_update_any
+        mozilla_thunderbird_version_3__0__10 => mozilla_thunderbird_update_any
+        mozilla_thunderbird_version_52__3__0 => mozilla_thunderbird_update_any
+        mozilla_thunderbird_version_15__0 => ((mozilla_thunderbird_update_beta5 & !mozilla_thunderbird_update_beta2 & !mozilla_thunderbird_update_beta4 & !mozilla_thunderbird_update_any & !mozilla_thunderbird_update_beta3 & !mozilla_thunderbird_update_beta1) | (!mozilla_thunderbird_update_beta5 & mozilla_thunderbird_update_beta2 & !mozilla_thunderbird_update_beta4 & !mozilla_thunderbird_update_any & !mozilla_thunderbird_update_beta3 & !mozilla_thunderbird_update_beta1) | (!mozilla_thunderbird_update_beta5 & !mozilla_thunderbird_update_beta2 & mozilla_thunderbird_update_beta4 & !mozilla_thunderbird_update_any & !mozilla_thunderbird_update_beta3 & !mozilla_thunderbird_update_beta1) | (!mozilla_thunderbird_update_beta5 & !mozilla_thunderbird_update_beta2 & !mozilla_thunderbird_update_beta4 & mozilla_thunderbird_update_any & !mozilla_thunderbird_update_beta3 & !mozilla_thunderbird_update_beta1) | (!mozilla_thunderbird_update_beta5 & !mozilla_thunderbird_update_beta2 & !mozilla_thunderbird_update_beta4 & !mozilla_thunderbird_update_any & mozilla_thunderbird_update_beta3 & !mozilla_thunderbird_update_beta1) | (!mozilla_thunderbird_update_beta5 & !mozilla_thunderbird_update_beta2 & !mozilla_thunderbird_update_beta4 & !mozilla_thunderbird_update_any & !mozilla_thunderbird_update_beta3 & mozilla_thunderbird_update_beta1))
+        mozilla_thunderbird_version_33__0 => mozilla_thunderbird_update_beta1
+        mozilla_thunderbird_version_24__6__0 => mozilla_thunderbird_update_any
+        mozilla_thunderbird_version_17__0__10 => mozilla_thunderbird_update_any
+        mozilla_thunderbird_version_3__1__4 => mozilla_thunderbird_update_any
+        mozilla_thunderbird_version_45__8__0 => mozilla_thunderbird_update_any
+        mozilla_thunderbird_version_10__0__1 => mozilla_thunderbird_update_any
+        mozilla_thunderbird_version_2__0__0__19 => mozilla_thunderbird_update_any
+        mozilla_thunderbird_version_1__0__6 => mozilla_thunderbird_update_any
+        mozilla_thunderbird_version_0__9 => mozilla_thunderbird_update_any
+        mozilla_thunderbird_version_52__0 => ((mozilla_thunderbird_update_beta2 & !mozilla_thunderbird_update_beta4 & !mozilla_thunderbird_update_any & !mozilla_thunderbird_update_beta3 & !mozilla_thunderbird_update_beta1) | (!mozilla_thunderbird_update_beta2 & mozilla_thunderbird_update_beta4 & !mozilla_thunderbird_update_any & !mozilla_thunderbird_update_beta3 & !mozilla_thunderbird_update_beta1) | (!mozilla_thunderbird_update_beta2 & !mozilla_thunderbird_update_beta4 & mozilla_thunderbird_update_any & !mozilla_thunderbird_update_beta3 & !mozilla_thunderbird_update_beta1) | (!mozilla_thunderbird_update_beta2 & !mozilla_thunderbird_update_beta4 & !mozilla_thunderbird_update_any & mozilla_thunderbird_update_beta3 & !mozilla_thunderbird_update_beta1) | (!mozilla_thunderbird_update_beta2 & !mozilla_thunderbird_update_beta4 & !mozilla_thunderbird_update_any & !mozilla_thunderbird_update_beta3 & mozilla_thunderbird_update_beta1))
+        mozilla_thunderbird_version_1__5__0__12 => mozilla_thunderbird_update_any
+        mozilla_thunderbird_version_31__7 => mozilla_thunderbird_update_any
+        mozilla_thunderbird_version_1__0__7 => mozilla_thunderbird_update_any
+        mozilla_thunderbird_version_0__2 => mozilla_thunderbird_update_any
+        mozilla_thunderbird_version_57__0 => ((mozilla_thunderbird_update_beta2 & !mozilla_thunderbird_update_beta1) | (!mozilla_thunderbird_update_beta2 & mozilla_thunderbird_update_beta1))
+        mozilla_thunderbird_version_24__0__1 => mozilla_thunderbird_update_any
+        mozilla_thunderbird_version_38__4__0 => mozilla_thunderbird_update_any
+        mozilla_thunderbird_version_3__0__7 => mozilla_thunderbird_update_any
+        mozilla_thunderbird_version_7__0 => ((mozilla_thunderbird_update_beta2 & !mozilla_thunderbird_update_any & !mozilla_thunderbird_update_beta3 & !mozilla_thunderbird_update_beta1) | (!mozilla_thunderbird_update_beta2 & mozilla_thunderbird_update_any & !mozilla_thunderbird_update_beta3 & !mozilla_thunderbird_update_beta1) | (!mozilla_thunderbird_update_beta2 & !mozilla_thunderbird_update_any & mozilla_thunderbird_update_beta3 & !mozilla_thunderbird_update_beta1) | (!mozilla_thunderbird_update_beta2 & !mozilla_thunderbird_update_any & !mozilla_thunderbird_update_beta3 & mozilla_thunderbird_update_beta1))
+        mozilla_thunderbird_version_17__0__2 => mozilla_thunderbird_update_any
+        mozilla_thunderbird_version_3__1__10 => mozilla_thunderbird_update_any
+        mozilla_thunderbird_version_24__4__0 => mozilla_thunderbird_update_any
+        mozilla_thunderbird_version_0__4 => mozilla_thunderbird_update_any
+        mozilla_thunderbird_version_31__1__2 => mozilla_thunderbird_update_any
+        mozilla_thunderbird_version_18__0 => mozilla_thunderbird_update_beta1
+        mozilla_thunderbird_version_any => mozilla_thunderbird_update_any
+        mozilla_thunderbird_version_36__0 => mozilla_thunderbird_update_beta1
+        mozilla_thunderbird_version_3__0__9 => mozilla_thunderbird_update_any
+        mozilla_thunderbird_version_21__0 => mozilla_thunderbird_update_beta1
+        mozilla_thunderbird_version_52__2__0 => mozilla_thunderbird_update_any
+        mozilla_thunderbird_version_17__0__7 => mozilla_thunderbird_update_any
+        mozilla_thunderbird_version_52__4__0 => mozilla_thunderbird_update_any
+        mozilla_thunderbird_version_38__0__1 => mozilla_thunderbird_update_any
+        mozilla_thunderbird_version_44__0 => mozilla_thunderbird_update_beta1
+        mozilla_thunderbird_version_47__0 => ((mozilla_thunderbird_update_beta2 & !mozilla_thunderbird_update_beta1) | (!mozilla_thunderbird_update_beta2 & mozilla_thunderbird_update_beta1))
+        mozilla_thunderbird_version_3__0__3 => mozilla_thunderbird_update_any
+        mozilla_thunderbird_version_3__1__3 => mozilla_thunderbird_update_any
+        mozilla_thunderbird_version_52__6__0 => mozilla_thunderbird_update_any
+        mozilla_thunderbird_version_45__5__0 => mozilla_thunderbird_update_any
+        mozilla_thunderbird_version_3__0__6 => mozilla_thunderbird_update_any
+        mozilla_thunderbird_version_31__3__0 => mozilla_thunderbird_update_any
+        mozilla_thunderbird_version_2__0 => ((mozilla_thunderbird_update_alpha1 & !mozilla_thunderbird_update_beta2 & !mozilla_thunderbird_update_any & !mozilla_thunderbird_update_beta1) | (!mozilla_thunderbird_update_alpha1 & mozilla_thunderbird_update_beta2 & !mozilla_thunderbird_update_any & !mozilla_thunderbird_update_beta1) | (!mozilla_thunderbird_update_alpha1 & !mozilla_thunderbird_update_beta2 & mozilla_thunderbird_update_any & !mozilla_thunderbird_update_beta1) | (!mozilla_thunderbird_update_alpha1 & !mozilla_thunderbird_update_beta2 & !mozilla_thunderbird_update_any & mozilla_thunderbird_update_beta1))
+        mozilla_thunderbird_version_0__7__1 => mozilla_thunderbird_update_any
+        mozilla_thunderbird_version_8__0 => ((mozilla_thunderbird_update_beta5 & !mozilla_thunderbird_update_beta2 & !mozilla_thunderbird_update_beta4 & !mozilla_thunderbird_update_any & !mozilla_thunderbird_update_beta3 & !mozilla_thunderbird_update_beta1) | (!mozilla_thunderbird_update_beta5 & mozilla_thunderbird_update_beta2 & !mozilla_thunderbird_update_beta4 & !mozilla_thunderbird_update_any & !mozilla_thunderbird_update_beta3 & !mozilla_thunderbird_update_beta1) | (!mozilla_thunderbird_update_beta5 & !mozilla_thunderbird_update_beta2 & mozilla_thunderbird_update_beta4 & !mozilla_thunderbird_update_any & !mozilla_thunderbird_update_beta3 & !mozilla_thunderbird_update_beta1) | (!mozilla_thunderbird_update_beta5 & !mozilla_thunderbird_update_beta2 & !mozilla_thunderbird_update_beta4 & mozilla_thunderbird_update_any & !mozilla_thunderbird_update_beta3 & !mozilla_thunderbird_update_beta1) | (!mozilla_thunderbird_update_beta5 & !mozilla_thunderbird_update_beta2 & !mozilla_thunderbird_update_beta4 & !mozilla_thunderbird_update_any & mozilla_thunderbird_update_beta3 & !mozilla_thunderbird_update_beta1) | (!mozilla_thunderbird_update_beta5 & !mozilla_thunderbird_update_beta2 & !mozilla_thunderbird_update_beta4 & !mozilla_thunderbird_update_any & !mozilla_thunderbird_update_beta3 & mozilla_thunderbird_update_beta1))
+        mozilla_thunderbird_version_6__0__1 => mozilla_thunderbird_update_any
+        mozilla_thunderbird_version_43__0 => mozilla_thunderbird_update_beta1
+        mozilla_thunderbird_version_3__1__19 => mozilla_thunderbird_update_any
+        mozilla_thunderbird_version_3__3 => ((mozilla_thunderbird_update_alpha1 & !mozilla_thunderbird_update_alpha2 & !mozilla_thunderbird_update_alpha3) | (!mozilla_thunderbird_update_alpha1 & mozilla_thunderbird_update_alpha2 & !mozilla_thunderbird_update_alpha3) | (!mozilla_thunderbird_update_alpha1 & !mozilla_thunderbird_update_alpha2 & mozilla_thunderbird_update_alpha3))
+        mozilla_thunderbird_version_17__0__9 => mozilla_thunderbird_update_any
+        mozilla_thunderbird_version_24__4 => mozilla_thunderbird_update_any
+        mozilla_thunderbird_version_37__0 => mozilla_thunderbird_update_beta1
+        mozilla_thunderbird_version_38__0 => ((mozilla_thunderbird_update_beta5 & !mozilla_thunderbird_update_beta2 & !mozilla_thunderbird_update_beta4 & !mozilla_thunderbird_update_any & !mozilla_thunderbird_update_beta3 & !mozilla_thunderbird_update_beta6 & !mozilla_thunderbird_update_beta1) | (!mozilla_thunderbird_update_beta5 & mozilla_thunderbird_update_beta2 & !mozilla_thunderbird_update_beta4 & !mozilla_thunderbird_update_any & !mozilla_thunderbird_update_beta3 & !mozilla_thunderbird_update_beta6 & !mozilla_thunderbird_update_beta1) | (!mozilla_thunderbird_update_beta5 & !mozilla_thunderbird_update_beta2 & mozilla_thunderbird_update_beta4 & !mozilla_thunderbird_update_any & !mozilla_thunderbird_update_beta3 & !mozilla_thunderbird_update_beta6 & !mozilla_thunderbird_update_beta1) | (!mozilla_thunderbird_update_beta5 & !mozilla_thunderbird_update_beta2 & !mozilla_thunderbird_update_beta4 & mozilla_thunderbird_update_any & !mozilla_thunderbird_update_beta3 & !mozilla_thunderbird_update_beta6 & !mozilla_thunderbird_update_beta1) | (!mozilla_thunderbird_update_beta5 & !mozilla_thunderbird_update_beta2 & !mozilla_thunderbird_update_beta4 & !mozilla_thunderbird_update_any & mozilla_thunderbird_update_beta3 & !mozilla_thunderbird_update_beta6 & !mozilla_thunderbird_update_beta1) | (!mozilla_thunderbird_update_beta5 & !mozilla_thunderbird_update_beta2 & !mozilla_thunderbird_update_beta4 & !mozilla_thunderbird_update_any & !mozilla_thunderbird_update_beta3 & mozilla_thunderbird_update_beta6 & !mozilla_thunderbird_update_beta1) | (!mozilla_thunderbird_update_beta5 & !mozilla_thunderbird_update_beta2 & !mozilla_thunderbird_update_beta4 & !mozilla_thunderbird_update_any & !mozilla_thunderbird_update_beta3 & !mozilla_thunderbird_update_beta6 & mozilla_thunderbird_update_beta1))
+        mozilla_thunderbird_version_3__1__11 => mozilla_thunderbird_update_any
+        mozilla_thunderbird_version_20__0 => mozilla_thunderbird_update_beta1
+        mozilla_thunderbird_version_26__0 => mozilla_thunderbird_update_beta1
+        mozilla_thunderbird_version_13__0 => ((mozilla_thunderbird_update_beta2 & !mozilla_thunderbird_update_beta4 & !mozilla_thunderbird_update_any & !mozilla_thunderbird_update_beta3 & !mozilla_thunderbird_update_beta1) | (!mozilla_thunderbird_update_beta2 & mozilla_thunderbird_update_beta4 & !mozilla_thunderbird_update_any & !mozilla_thunderbird_update_beta3 & !mozilla_thunderbird_update_beta1) | (!mozilla_thunderbird_update_beta2 & !mozilla_thunderbird_update_beta4 & mozilla_thunderbird_update_any & !mozilla_thunderbird_update_beta3 & !mozilla_thunderbird_update_beta1) | (!mozilla_thunderbird_update_beta2 & !mozilla_thunderbird_update_beta4 & !mozilla_thunderbird_update_any & mozilla_thunderbird_update_beta3 & !mozilla_thunderbird_update_beta1) | (!mozilla_thunderbird_update_beta2 & !mozilla_thunderbird_update_beta4 & !mozilla_thunderbird_update_any & !mozilla_thunderbird_update_beta3 & mozilla_thunderbird_update_beta1))
+        mozilla_thunderbird_version_12__0__1 => mozilla_thunderbird_update_any
+        mozilla_thunderbird_version_3__1__13 => mozilla_thunderbird_update_any
+        mozilla_thunderbird_version_31__1__0 => mozilla_thunderbird_update_any
+        mozilla_thunderbird_version_17__0__3 => mozilla_thunderbird_update_any
+        mozilla_thunderbird_version_38__3__0 => mozilla_thunderbird_update_any
+        mozilla_thunderbird_version_3__1__6 => mozilla_thunderbird_update_any
+        mozilla_thunderbird_version_3__1__16 => mozilla_thunderbird_update_any
+        mozilla_thunderbird_version_52__1__1 => mozilla_thunderbird_update_any
+        mozilla_thunderbird_version_0__7__3 => mozilla_thunderbird_update_any
+        mozilla_thunderbird_version_23__0 => mozilla_thunderbird_update_beta1
+        mozilla_thunderbird_version_0__6 => mozilla_thunderbird_update_any
+        mozilla_thunderbird_version_58__0 => ((mozilla_thunderbird_update_beta2 & !mozilla_thunderbird_update_beta3 & !mozilla_thunderbird_update_beta1) | (!mozilla_thunderbird_update_beta2 & mozilla_thunderbird_update_beta3 & !mozilla_thunderbird_update_beta1) | (!mozilla_thunderbird_update_beta2 & !mozilla_thunderbird_update_beta3 & mozilla_thunderbird_update_beta1))
+        mozilla_thunderbird_version_2__0__0__12 => mozilla_thunderbird_update_any
+        mozilla_thunderbird_version_24__1__1 => mozilla_thunderbird_update_any
+        mozilla_thunderbird_version_24__7__0 => mozilla_thunderbird_update_any
+        mozilla_thunderbird_version_16__0 => ((mozilla_thunderbird_update_beta2 & !mozilla_thunderbird_update_beta4 & !mozilla_thunderbird_update_any & !mozilla_thunderbird_update_beta3 & !mozilla_thunderbird_update_beta1) | (!mozilla_thunderbird_update_beta2 & mozilla_thunderbird_update_beta4 & !mozilla_thunderbird_update_any & !mozilla_thunderbird_update_beta3 & !mozilla_thunderbird_update_beta1) | (!mozilla_thunderbird_update_beta2 & !mozilla_thunderbird_update_beta4 & mozilla_thunderbird_update_any & !mozilla_thunderbird_update_beta3 & !mozilla_thunderbird_update_beta1) | (!mozilla_thunderbird_update_beta2 & !mozilla_thunderbird_update_beta4 & !mozilla_thunderbird_update_any & mozilla_thunderbird_update_beta3 & !mozilla_thunderbird_update_beta1) | (!mozilla_thunderbird_update_beta2 & !mozilla_thunderbird_update_beta4 & !mozilla_thunderbird_update_any & !mozilla_thunderbird_update_beta3 & mozilla_thunderbird_update_beta1))
+        mozilla_thunderbird_version_3__1__9 => mozilla_thunderbird_update_any
+        mozilla_thunderbird_version_3__1__5 => mozilla_thunderbird_update_any
+        mozilla_thunderbird_version_1__5__0__8 => mozilla_thunderbird_update_any
+        mozilla_thunderbird_version_0__8 => mozilla_thunderbird_update_any
+        mozilla_thunderbird_version_17__0__5 => mozilla_thunderbird_update_any
+        mozilla_thunderbird_version_32__0 => mozilla_thunderbird_update_beta1
+        mozilla_thunderbird_version_1__5__0__14 => mozilla_thunderbird_update_any
+        mozilla_thunderbird_version_0__7 => ((mozilla_thunderbird_update_any & !mozilla_thunderbird_update_rc) | (!mozilla_thunderbird_update_any & mozilla_thunderbird_update_rc))
+        mozilla_thunderbird_version_34__0 => mozilla_thunderbird_update_beta1
+        mozilla_thunderbird_version_0__3 => mozilla_thunderbird_update_any
+        mozilla_thunderbird_version_54__0 => ((mozilla_thunderbird_update_beta2 & !mozilla_thunderbird_update_beta3 & !mozilla_thunderbird_update_beta1) | (!mozilla_thunderbird_update_beta2 & mozilla_thunderbird_update_beta3 & !mozilla_thunderbird_update_beta1) | (!mozilla_thunderbird_update_beta2 & !mozilla_thunderbird_update_beta3 & mozilla_thunderbird_update_beta1))
+        mozilla_thunderbird_version_3__1__1 => mozilla_thunderbird_update_any
+        mozilla_thunderbird_version_3__0__8 => mozilla_thunderbird_update_any
+        mozilla_thunderbird_version_16__0__2 => mozilla_thunderbird_update_any
+        mozilla_thunderbird_version_51__0 => ((mozilla_thunderbird_update_beta2 & !mozilla_thunderbird_update_beta1) | (!mozilla_thunderbird_update_beta2 & mozilla_thunderbird_update_beta1))
+        mozilla_thunderbird_version_1__1 => ((mozilla_thunderbird_update_alpha1 & !mozilla_thunderbird_update_alpha2) | (!mozilla_thunderbird_update_alpha1 & mozilla_thunderbird_update_alpha2))
+        mozilla_thunderbird_version_24__8__1 => mozilla_thunderbird_update_any
+        mozilla_thunderbird_version_17__0__8 => mozilla_thunderbird_update_any
+        mozilla_thunderbird_version_7__0__1 => mozilla_thunderbird_update_any
+        mozilla_thunderbird_version_17__0__4 => mozilla_thunderbird_update_any
+        mozilla_thunderbird_version_1__0__8 => mozilla_thunderbird_update_any
+        mozilla_thunderbird_version_52__5__2 => mozilla_thunderbird_update_any
+        mozilla_thunderbird_version_10__0__2 => mozilla_thunderbird_update_any
+        mozilla_thunderbird_version_11__0 => ((mozilla_thunderbird_update_beta5 & !mozilla_thunderbird_update_beta2 & !mozilla_thunderbird_update_beta4 & !mozilla_thunderbird_update_any & !mozilla_thunderbird_update_beta3 & !mozilla_thunderbird_update_beta1) | (!mozilla_thunderbird_update_beta5 & mozilla_thunderbird_update_beta2 & !mozilla_thunderbird_update_beta4 & !mozilla_thunderbird_update_any & !mozilla_thunderbird_update_beta3 & !mozilla_thunderbird_update_beta1) | (!mozilla_thunderbird_update_beta5 & !mozilla_thunderbird_update_beta2 & mozilla_thunderbird_update_beta4 & !mozilla_thunderbird_update_any & !mozilla_thunderbird_update_beta3 & !mozilla_thunderbird_update_beta1) | (!mozilla_thunderbird_update_beta5 & !mozilla_thunderbird_update_beta2 & !mozilla_thunderbird_update_beta4 & mozilla_thunderbird_update_any & !mozilla_thunderbird_update_beta3 & !mozilla_thunderbird_update_beta1) | (!mozilla_thunderbird_update_beta5 & !mozilla_thunderbird_update_beta2 & !mozilla_thunderbird_update_beta4 & !mozilla_thunderbird_update_any & mozilla_thunderbird_update_beta3 & !mozilla_thunderbird_update_beta1) | (!mozilla_thunderbird_update_beta5 & !mozilla_thunderbird_update_beta2 & !mozilla_thunderbird_update_beta4 & !mozilla_thunderbird_update_any & !mozilla_thunderbird_update_beta3 & mozilla_thunderbird_update_beta1))
+        mozilla_thunderbird_version_14__0 => ((mozilla_thunderbird_update_beta5 & !mozilla_thunderbird_update_beta2 & !mozilla_thunderbird_update_beta4 & !mozilla_thunderbird_update_any & !mozilla_thunderbird_update_beta3 & !mozilla_thunderbird_update_beta1) | (!mozilla_thunderbird_update_beta5 & mozilla_thunderbird_update_beta2 & !mozilla_thunderbird_update_beta4 & !mozilla_thunderbird_update_any & !mozilla_thunderbird_update_beta3 & !mozilla_thunderbird_update_beta1) | (!mozilla_thunderbird_update_beta5 & !mozilla_thunderbird_update_beta2 & mozilla_thunderbird_update_beta4 & !mozilla_thunderbird_update_any & !mozilla_thunderbird_update_beta3 & !mozilla_thunderbird_update_beta1) | (!mozilla_thunderbird_update_beta5 & !mozilla_thunderbird_update_beta2 & !mozilla_thunderbird_update_beta4 & mozilla_thunderbird_update_any & !mozilla_thunderbird_update_beta3 & !mozilla_thunderbird_update_beta1) | (!mozilla_thunderbird_update_beta5 & !mozilla_thunderbird_update_beta2 & !mozilla_thunderbird_update_beta4 & !mozilla_thunderbird_update_any & mozilla_thunderbird_update_beta3 & !mozilla_thunderbird_update_beta1) | (!mozilla_thunderbird_update_beta5 & !mozilla_thunderbird_update_beta2 & !mozilla_thunderbird_update_beta4 & !mozilla_thunderbird_update_any & !mozilla_thunderbird_update_beta3 & mozilla_thunderbird_update_beta1))
+        mozilla_thunderbird_version_31__7__0 => mozilla_thunderbird_update_any
+        mozilla_thunderbird_version_38__8__0 => mozilla_thunderbird_update_any
+        mozilla_thunderbird_version_3__1__2 => mozilla_thunderbird_update_any
+        mozilla_thunderbird_version_3__1__17 => mozilla_thunderbird_update_any
+        mozilla_thunderbird_version_24__2__0 => mozilla_thunderbird_update_any
+        mozilla_thunderbird_version_38__1__0 => mozilla_thunderbird_update_any
+        mozilla_thunderbird_version_45__2 => mozilla_thunderbird_update_beta1
+        mozilla_thunderbird_version_2__0__0__18 => mozilla_thunderbird_update_any
+        mozilla_thunderbird_version_30__0 => mozilla_thunderbird_update_beta1
+        mozilla_thunderbird_version_52__7__0 => mozilla_thunderbird_update_any
+        mozilla_thunderbird_version_16__0__1 => mozilla_thunderbird_update_any
+        mozilla_thunderbird_version_19__0 => mozilla_thunderbird_update_beta1
+        mozilla_thunderbird_version_3__1__7 => mozilla_thunderbird_update_any
+        mozilla_thunderbird_version_38__5__0 => mozilla_thunderbird_update_any
+        mozilla_thunderbird_version_9__0 => ((mozilla_thunderbird_update_beta5 & !mozilla_thunderbird_update_beta2 & !mozilla_thunderbird_update_beta4 & !mozilla_thunderbird_update_any & !mozilla_thunderbird_update_beta3 & !mozilla_thunderbird_update_beta1) | (!mozilla_thunderbird_update_beta5 & mozilla_thunderbird_update_beta2 & !mozilla_thunderbird_update_beta4 & !mozilla_thunderbird_update_any & !mozilla_thunderbird_update_beta3 & !mozilla_thunderbird_update_beta1) | (!mozilla_thunderbird_update_beta5 & !mozilla_thunderbird_update_beta2 & mozilla_thunderbird_update_beta4 & !mozilla_thunderbird_update_any & !mozilla_thunderbird_update_beta3 & !mozilla_thunderbird_update_beta1) | (!mozilla_thunderbird_update_beta5 & !mozilla_thunderbird_update_beta2 & !mozilla_thunderbird_update_beta4 & mozilla_thunderbird_update_any & !mozilla_thunderbird_update_beta3 & !mozilla_thunderbird_update_beta1) | (!mozilla_thunderbird_update_beta5 & !mozilla_thunderbird_update_beta2 & !mozilla_thunderbird_update_beta4 & !mozilla_thunderbird_update_any & mozilla_thunderbird_update_beta3 & !mozilla_thunderbird_update_beta1) | (!mozilla_thunderbird_update_beta5 & !mozilla_thunderbird_update_beta2 & !mozilla_thunderbird_update_beta4 & !mozilla_thunderbird_update_any & !mozilla_thunderbird_update_beta3 & mozilla_thunderbird_update_beta1))
+        mozilla_thunderbird_version_27__0 => mozilla_thunderbird_update_beta1
+        mozilla_thunderbird_version_1__5 => ((mozilla_thunderbird_update_rc1 & !mozilla_thunderbird_update_beta2 & !mozilla_thunderbird_update_any & !mozilla_thunderbird_update_rc2 & !mozilla_thunderbird_update_beta1) | (!mozilla_thunderbird_update_rc1 & mozilla_thunderbird_update_beta2 & !mozilla_thunderbird_update_any & !mozilla_thunderbird_update_rc2 & !mozilla_thunderbird_update_beta1) | (!mozilla_thunderbird_update_rc1 & !mozilla_thunderbird_update_beta2 & mozilla_thunderbird_update_any & !mozilla_thunderbird_update_rc2 & !mozilla_thunderbird_update_beta1) | (!mozilla_thunderbird_update_rc1 & !mozilla_thunderbird_update_beta2 & !mozilla_thunderbird_update_any & mozilla_thunderbird_update_rc2 & !mozilla_thunderbird_update_beta1) | (!mozilla_thunderbird_update_rc1 & !mozilla_thunderbird_update_beta2 & !mozilla_thunderbird_update_any & !mozilla_thunderbird_update_rc2 & mozilla_thunderbird_update_beta1))
+        mozilla_thunderbird_version_6__0 => ((mozilla_thunderbird_update_beta2 & !mozilla_thunderbird_update_any & !mozilla_thunderbird_update_beta3 & !mozilla_thunderbird_update_beta1) | (!mozilla_thunderbird_update_beta2 & mozilla_thunderbird_update_any & !mozilla_thunderbird_update_beta3 & !mozilla_thunderbird_update_beta1) | (!mozilla_thunderbird_update_beta2 & !mozilla_thunderbird_update_any & mozilla_thunderbird_update_beta3 & !mozilla_thunderbird_update_beta1) | (!mozilla_thunderbird_update_beta2 & !mozilla_thunderbird_update_any & !mozilla_thunderbird_update_beta3 & mozilla_thunderbird_update_beta1))
+        mozilla_thunderbird_version_45__7__1 => mozilla_thunderbird_update_any
+        mozilla_thunderbird_version_2__0__0__5 => mozilla_thunderbird_update_any
+        mozilla_thunderbird_version_31__8__0 => mozilla_thunderbird_update_any
+        mozilla_thunderbird_version_3__1 => ((mozilla_thunderbird_update_alpha1 & !mozilla_thunderbird_update_rc1 & !mozilla_thunderbird_update_beta2 & !mozilla_thunderbird_update_any & !mozilla_thunderbird_update_rc2 & !mozilla_thunderbird_update_beta1) | (!mozilla_thunderbird_update_alpha1 & mozilla_thunderbird_update_rc1 & !mozilla_thunderbird_update_beta2 & !mozilla_thunderbird_update_any & !mozilla_thunderbird_update_rc2 & !mozilla_thunderbird_update_beta1) | (!mozilla_thunderbird_update_alpha1 & !mozilla_thunderbird_update_rc1 & mozilla_thunderbird_update_beta2 & !mozilla_thunderbird_update_any & !mozilla_thunderbird_update_rc2 & !mozilla_thunderbird_update_beta1) | (!mozilla_thunderbird_update_alpha1 & !mozilla_thunderbird_update_rc1 & !mozilla_thunderbird_update_beta2 & mozilla_thunderbird_update_any & !mozilla_thunderbird_update_rc2 & !mozilla_thunderbird_update_beta1) | (!mozilla_thunderbird_update_alpha1 & !mozilla_thunderbird_update_rc1 & !mozilla_thunderbird_update_beta2 & !mozilla_thunderbird_update_any & mozilla_thunderbird_update_rc2 & !mozilla_thunderbird_update_beta1) | (!mozilla_thunderbird_update_alpha1 & !mozilla_thunderbird_update_rc1 & !mozilla_thunderbird_update_beta2 & !mozilla_thunderbird_update_any & !mozilla_thunderbird_update_rc2 & mozilla_thunderbird_update_beta1))
+        mozilla_thunderbird_version_2__0__0__21 => mozilla_thunderbird_update_any
+        mozilla_thunderbird_version_59__0 => ((mozilla_thunderbird_update_beta2 & !mozilla_thunderbird_update_beta1) | (!mozilla_thunderbird_update_beta2 & mozilla_thunderbird_update_beta1))
+        mozilla_thunderbird_version_2__0__14 => mozilla_thunderbird_update_any
+        mozilla_thunderbird_version_1__5__0__13 => mozilla_thunderbird_update_any
+        mozilla_thunderbird_version_45__0 => ((mozilla_thunderbird_update_beta2 & !mozilla_thunderbird_update_beta4 & !mozilla_thunderbird_update_any & !mozilla_thunderbird_update_beta3 & !mozilla_thunderbird_update_beta1) | (!mozilla_thunderbird_update_beta2 & mozilla_thunderbird_update_beta4 & !mozilla_thunderbird_update_any & !mozilla_thunderbird_update_beta3 & !mozilla_thunderbird_update_beta1) | (!mozilla_thunderbird_update_beta2 & !mozilla_thunderbird_update_beta4 & mozilla_thunderbird_update_any & !mozilla_thunderbird_update_beta3 & !mozilla_thunderbird_update_beta1) | (!mozilla_thunderbird_update_beta2 & !mozilla_thunderbird_update_beta4 & !mozilla_thunderbird_update_any & mozilla_thunderbird_update_beta3 & !mozilla_thunderbird_update_beta1) | (!mozilla_thunderbird_update_beta2 & !mozilla_thunderbird_update_beta4 & !mozilla_thunderbird_update_any & !mozilla_thunderbird_update_beta3 & mozilla_thunderbird_update_beta1))
+        mozilla_thunderbird_version_9__0__1 => mozilla_thunderbird_update_any
+        mozilla_thunderbird_version_38__7__1 => mozilla_thunderbird_update_any
+        mozilla_thunderbird_version_38__6__0 => mozilla_thunderbird_update_any
+        mozilla_thunderbird_version_45__6__0 => mozilla_thunderbird_update_any
+        mozilla_thunderbird_version_45__4__0 => mozilla_thunderbird_update_any
+        mozilla_thunderbird_version_2__0__0__22 => mozilla_thunderbird_update_any
+        mozilla_thunderbird_version_2__0__0__24 => mozilla_thunderbird_update_any
+        mozilla_thunderbird_version_28__0 => mozilla_thunderbird_update_beta1
+        mozilla_thunderbird_version_45__1__0 => mozilla_thunderbird_update_any
+        mozilla_thunderbird_version_31__6__0 => mozilla_thunderbird_update_any
+        mozilla_thunderbird_version_52__1__0 => mozilla_thunderbird_update_any
+        mozilla_thunderbird_version_45__7__0 => mozilla_thunderbird_update_any
+        mozilla_thunderbird_version_3__1__18 => mozilla_thunderbird_update_any
+        mozilla_thunderbird_version_52__0__1 => mozilla_thunderbird_update_any
+        mozilla_thunderbird_version_17__0 => ((mozilla_thunderbird_update_beta2 & !mozilla_thunderbird_update_any & !mozilla_thunderbird_update_beta3 & !mozilla_thunderbird_update_beta1) | (!mozilla_thunderbird_update_beta2 & mozilla_thunderbird_update_any & !mozilla_thunderbird_update_beta3 & !mozilla_thunderbird_update_beta1) | (!mozilla_thunderbird_update_beta2 & !mozilla_thunderbird_update_any & mozilla_thunderbird_update_beta3 & !mozilla_thunderbird_update_beta1) | (!mozilla_thunderbird_update_beta2 & !mozilla_thunderbird_update_any & !mozilla_thunderbird_update_beta3 & mozilla_thunderbird_update_beta1))
+        mozilla_thunderbird_version_2__0__0__0 => ((mozilla_thunderbird_update_rc1 & !mozilla_thunderbird_update_any) | (!mozilla_thunderbird_update_rc1 & mozilla_thunderbird_update_any))
+        mozilla_thunderbird_version_3__0 => ((mozilla_thunderbird_update_alpha1 & !mozilla_thunderbird_update_alpha2 & !mozilla_thunderbird_update_rc1 & !mozilla_thunderbird_update_beta2 & !mozilla_thunderbird_update_alpha3 & !mozilla_thunderbird_update_beta4 & !mozilla_thunderbird_update_any & !mozilla_thunderbird_update_beta3 & !mozilla_thunderbird_update_rc2 & !mozilla_thunderbird_update_beta1) | (!mozilla_thunderbird_update_alpha1 & mozilla_thunderbird_update_alpha2 & !mozilla_thunderbird_update_rc1 & !mozilla_thunderbird_update_beta2 & !mozilla_thunderbird_update_alpha3 & !mozilla_thunderbird_update_beta4 & !mozilla_thunderbird_update_any & !mozilla_thunderbird_update_beta3 & !mozilla_thunderbird_update_rc2 & !mozilla_thunderbird_update_beta1) | (!mozilla_thunderbird_update_alpha1 & !mozilla_thunderbird_update_alpha2 & mozilla_thunderbird_update_rc1 & !mozilla_thunderbird_update_beta2 & !mozilla_thunderbird_update_alpha3 & !mozilla_thunderbird_update_beta4 & !mozilla_thunderbird_update_any & !mozilla_thunderbird_update_beta3 & !mozilla_thunderbird_update_rc2 & !mozilla_thunderbird_update_beta1) | (!mozilla_thunderbird_update_alpha1 & !mozilla_thunderbird_update_alpha2 & !mozilla_thunderbird_update_rc1 & mozilla_thunderbird_update_beta2 & !mozilla_thunderbird_update_alpha3 & !mozilla_thunderbird_update_beta4 & !mozilla_thunderbird_update_any & !mozilla_thunderbird_update_beta3 & !mozilla_thunderbird_update_rc2 & !mozilla_thunderbird_update_beta1) | (!mozilla_thunderbird_update_alpha1 & !mozilla_thunderbird_update_alpha2 & !mozilla_thunderbird_update_rc1 & !mozilla_thunderbird_update_beta2 & mozilla_thunderbird_update_alpha3 & !mozilla_thunderbird_update_beta4 & !mozilla_thunderbird_update_any & !mozilla_thunderbird_update_beta3 & !mozilla_thunderbird_update_rc2 & !mozilla_thunderbird_update_beta1) | (!mozilla_thunderbird_update_alpha1 & !mozilla_thunderbird_update_alpha2 & !mozilla_thunderbird_update_rc1 & !mozilla_thunderbird_update_beta2 & !mozilla_thunderbird_update_alpha3 & mozilla_thunderbird_update_beta4 & !mozilla_thunderbird_update_any & !mozilla_thunderbird_update_beta3 & !mozilla_thunderbird_update_rc2 & !mozilla_thunderbird_update_beta1) | (!mozilla_thunderbird_update_alpha1 & !mozilla_thunderbird_update_alpha2 & !mozilla_thunderbird_update_rc1 & !mozilla_thunderbird_update_beta2 & !mozilla_thunderbird_update_alpha3 & !mozilla_thunderbird_update_beta4 & mozilla_thunderbird_update_any & !mozilla_thunderbird_update_beta3 & !mozilla_thunderbird_update_rc2 & !mozilla_thunderbird_update_beta1) | (!mozilla_thunderbird_update_alpha1 & !mozilla_thunderbird_update_alpha2 & !mozilla_thunderbird_update_rc1 & !mozilla_thunderbird_update_beta2 & !mozilla_thunderbird_update_alpha3 & !mozilla_thunderbird_update_beta4 & !mozilla_thunderbird_update_any & mozilla_thunderbird_update_beta3 & !mozilla_thunderbird_update_rc2 & !mozilla_thunderbird_update_beta1) | (!mozilla_thunderbird_update_alpha1 & !mozilla_thunderbird_update_alpha2 & !mozilla_thunderbird_update_rc1 & !mozilla_thunderbird_update_beta2 & !mozilla_thunderbird_update_alpha3 & !mozilla_thunderbird_update_beta4 & !mozilla_thunderbird_update_any & !mozilla_thunderbird_update_beta3 & mozilla_thunderbird_update_rc2 & !mozilla_thunderbird_update_beta1) | (!mozilla_thunderbird_update_alpha1 & !mozilla_thunderbird_update_alpha2 & !mozilla_thunderbird_update_rc1 & !mozilla_thunderbird_update_beta2 & !mozilla_thunderbird_update_alpha3 & !mozilla_thunderbird_update_beta4 & !mozilla_thunderbird_update_any & !mozilla_thunderbird_update_beta3 & !mozilla_thunderbird_update_rc2 & mozilla_thunderbird_update_beta1))
+        mozilla_thunderbird_version_38__7__2 => mozilla_thunderbird_update_any
+        mozilla_thunderbird_version_3__0__1 => mozilla_thunderbird_update_any
+        mozilla_thunderbird_version_42__0 => ((mozilla_thunderbird_update_beta2 & !mozilla_thunderbird_update_beta1) | (!mozilla_thunderbird_update_beta2 & mozilla_thunderbird_update_beta1))
+        mozilla_thunderbird_version_41__0 => ((mozilla_thunderbird_update_beta2 & !mozilla_thunderbird_update_beta1) | (!mozilla_thunderbird_update_beta2 & mozilla_thunderbird_update_beta1))
+        mozilla_thunderbird_version_45__5__1 => mozilla_thunderbird_update_any
+        mozilla_thunderbird_version_29__0 => mozilla_thunderbird_update_beta1
+        mozilla_thunderbird_version_3__0__2 => mozilla_thunderbird_update_any
+        canonical_ubuntu__linux_version_16__04 => canonical_ubuntu__linux_sw__edition_lts
+        canonical_ubuntu__linux_version_18__10 => canonical_ubuntu__linux_sw__edition_any
+        canonical_ubuntu__linux_version_14__04 => canonical_ubuntu__linux_sw__edition_lts
+        canonical_ubuntu__linux_version_18__04 => canonical_ubuntu__linux_sw__edition_lts

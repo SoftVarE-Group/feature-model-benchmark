@@ -1,0 +1,48 @@
+features
+        microsoft___net__framework_update
+                alternative
+                        microsoft__net__framework_update_sp2
+                        microsoft__net__framework_update_any
+
+constraints
+        microsoft_office => application
+        microsoft_live__meeting => application
+        microsoft_lync => application
+        microsoft_skype__for__business => application
+        microsoft_silverlight => application
+        microsoft_word__viewer => application
+        microsoft_windows__rt => operating_system
+        microsoft_windows__rt__8__1 => operating_system
+        microsoft_windows__server__2012 => operating_system
+        microsoft_windows__8 => operating_system
+        microsoft_windows__server__2008 => operating_system
+        microsoft_windows__7 => operating_system
+        microsoft_windows__vista => operating_system
+        microsoft_windows__8__1 => operating_system
+        microsoft__net__framework => application
+        microsoft_office_version_2010 => microsoft_office_update_sp2
+        microsoft_office_version_2007 => microsoft_office_update_sp3
+        microsoft_lync_version_2013 => microsoft_lync_update_sp1
+        microsoft_lync_version_2010 => microsoft_lync_update_any
+        microsoft_windows__server__2008_target__hw_itanium => microsoft_windows__server__2008_version_r2
+        microsoft_windows__server__2008_target__hw_itanium => microsoft_windows__server__2008_update_sp1
+        microsoft_windows__server__2008_target__hw_any => microsoft_windows__server__2008_version_any
+        microsoft_windows__server__2008_target__hw_any => microsoft_windows__server__2008_update_sp2
+        microsoft_windows__server__2008_target__hw_x64 => microsoft_windows__server__2008_version_r2
+        microsoft_windows__server__2008_target__hw_x64 => microsoft_windows__server__2008_update_sp1
+        microsoft__net__framework_version_4__5__2 => microsoft__net__framework_update_any
+        microsoft__net__framework_version_4__5__2 => (rc0)
+        microsoft__net__framework_version_3__5__1 => microsoft__net__framework_update_any
+        microsoft__net__framework_version_3__5__1 => (rc1)
+        microsoft__net__framework_version_4__6 => microsoft__net__framework_update_any
+        microsoft__net__framework_version_4__6 => (rc0)
+        microsoft__net__framework_version_4__0 => microsoft__net__framework_update_any
+        microsoft__net__framework_version_4__0 => (rc0)
+        microsoft__net__framework_version_3__5 => microsoft__net__framework_update_any
+        microsoft__net__framework_version_3__5 => (rc2)
+        microsoft__net__framework_version_4__5 => microsoft__net__framework_update_any
+        microsoft__net__framework_version_4__5 => (rc0)
+        microsoft__net__framework_version_4__5__1 => microsoft__net__framework_update_any
+        microsoft__net__framework_version_4__5__1 => (rc0)
+        microsoft__net__framework_version_3__0 => microsoft__net__framework_update_sp2
+        microsoft__net__framework_version_3__0 => (rc0)

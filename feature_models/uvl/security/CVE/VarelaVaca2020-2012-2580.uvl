@@ -1,0 +1,260 @@
+features
+        CVE_2012_2580
+                mandatory
+                        types
+                                mandatory
+                                        application
+                        sources
+                                mandatory
+                                        nvd
+                        exploits
+                                optional
+                                        direct
+                                                mandatory
+                                                        exploit_20360
+                                        indirect
+                        postieplugin
+                                mandatory
+                                        postieplugin_postie
+                                                mandatory
+                                                        postieplugin_postie_version
+                                                                alternative
+                                                                        postieplugin_postie_version_0__9__9__1
+                                                                        postieplugin_postie_version_1__4__33
+                                                                        postieplugin_postie_version_1__4__17
+                                                                        postieplugin_postie_version_1__4__8
+                                                                        postieplugin_postie_version_0__9__1
+                                                                        postieplugin_postie_version_1__4__18
+                                                                        postieplugin_postie_version_1__3__1
+                                                                        postieplugin_postie_version_0__312__1
+                                                                        postieplugin_postie_version_0__312__5
+                                                                        postieplugin_postie_version_0__9__8__5
+                                                                        postieplugin_postie_version_0__9__8__1
+                                                                        postieplugin_postie_version_1__4__20
+                                                                        postieplugin_postie_version_0__2
+                                                                        postieplugin_postie_version_1__5__9
+                                                                        postieplugin_postie_version_0__9__4
+                                                                        postieplugin_postie_version_0__312__12
+                                                                        postieplugin_postie_version_1__4
+                                                                        postieplugin_postie_version_1__1__4
+                                                                        postieplugin_postie_version_1__4__29
+                                                                        postieplugin_postie_version_1__1__1
+                                                                        postieplugin_postie_version_0__9__9
+                                                                        postieplugin_postie_version_1__4__2
+                                                                        postieplugin_postie_version_0__9__5
+                                                                        postieplugin_postie_version_1__4__15
+                                                                        postieplugin_postie_version_1__4__16
+                                                                        postieplugin_postie_version_0__312__4
+                                                                        postieplugin_postie_version_0__9__8__3
+                                                                        postieplugin_postie_version_0__9__2
+                                                                        postieplugin_postie_version_1__2
+                                                                        postieplugin_postie_version_0__9__8__4
+                                                                        postieplugin_postie_version_1__4__1
+                                                                        postieplugin_postie_version_1__4__21
+                                                                        postieplugin_postie_version_1__5__0
+                                                                        postieplugin_postie_version_1__2__1
+                                                                        postieplugin_postie_version_0__31
+                                                                        postieplugin_postie_version_0__312__6
+                                                                        postieplugin_postie_version_1__3__3
+                                                                        postieplugin_postie_version_1__4__34
+                                                                        postieplugin_postie_version_0__312__2
+                                                                        postieplugin_postie_version_1__1__3
+                                                                        postieplugin_postie_version_0__9__9__3__1
+                                                                        postieplugin_postie_version_1__5__11
+                                                                        postieplugin_postie_version_1__4__35
+                                                                        postieplugin_postie_version_0__312__10
+                                                                        postieplugin_postie_version_0__9__8__2
+                                                                        postieplugin_postie_version_1__4__36
+                                                                        postieplugin_postie_version_1__5__1
+                                                                        postieplugin_postie_version_1__4__27
+                                                                        postieplugin_postie_version_1__5__7
+                                                                        postieplugin_postie_version_1__4__7
+                                                                        postieplugin_postie_version_1__5__2
+                                                                        postieplugin_postie_version_0__9__7
+                                                                        postieplugin_postie_version_0__312
+                                                                        postieplugin_postie_version_0__9__9__3__2
+                                                                        postieplugin_postie_version_1__5__8
+                                                                        postieplugin_postie_version_1__4__28
+                                                                        postieplugin_postie_version_0__1
+                                                                        postieplugin_postie_version_1__4__39
+                                                                        postieplugin_postie_version_1__4__11
+                                                                        postieplugin_postie_version_1__5__13
+                                                                        postieplugin_postie_version_1__4__9
+                                                                        postieplugin_postie_version_1__1
+                                                                        postieplugin_postie_version_1__1__2
+                                                                        postieplugin_postie_version_1__4__32
+                                                                        postieplugin_postie_version_1__4__30
+                                                                        postieplugin_postie_version_1__3__2
+                                                                        postieplugin_postie_version_1__5__5
+                                                                        postieplugin_postie_version_1__4__31
+                                                                        postieplugin_postie_version_1__3
+                                                                        postieplugin_postie_version_1__4__3
+                                                                        postieplugin_postie_version_1__4__19
+                                                                        postieplugin_postie_version_1__4__40
+                                                                        postieplugin_postie_version_1__4__38
+                                                                        postieplugin_postie_version_0__9
+                                                                        postieplugin_postie_version_1__2__3
+                                                                        postieplugin_postie_version_1__3__4
+                                                                        postieplugin_postie_version_0__9__6
+                                                                        postieplugin_postie_version_0__9__8__6
+                                                                        postieplugin_postie_version_1__4__23
+                                                                        postieplugin_postie_version_1__5__6
+                                                                        postieplugin_postie_version_1__4__10
+                                                                        postieplugin_postie_version_1__4__6
+                                                                        postieplugin_postie_version_1__4__12
+                                                                        postieplugin_postie_version_1__4__5
+                                                                        postieplugin_postie_version_0__3
+                                                                        postieplugin_postie_version_0__9__5__2
+                                                                        postieplugin_postie_version_0__312__11
+                                                                        postieplugin_postie_version_1__4__13
+                                                                        postieplugin_postie_version_0__312__9
+                                                                        postieplugin_postie_version_0__9__9__2
+                                                                        postieplugin_postie_version_1__1__5
+                                                                        postieplugin_postie_version_0__9__5__1
+                                                                        postieplugin_postie_version_1__5__12
+                                                                        postieplugin_postie_version_0__9__8
+                                                                        postieplugin_postie_version_0__312__3
+                                                                        postieplugin_postie_version_1__4__14
+                                                                        postieplugin_postie_version_1__5__4
+                                                                        postieplugin_postie_version_1__5__14
+                                                                        postieplugin_postie_version_1__5__3
+                                                                        postieplugin_postie_version_0__9__3
+                                                                        postieplugin_postie_version_0__312__7
+                                                                        postieplugin_postie_version_1__4__25
+                                                                        postieplugin_postie_version_0__312__8
+                                                                        postieplugin_postie_version_0__312__13
+                                                                        postieplugin_postie_version_1__4__24
+                                                                        postieplugin_postie_version_1__2__2
+                                                                        postieplugin_postie_version_0__311
+                                                                        postieplugin_postie_version_1__4__22
+                                                                        postieplugin_postie_version_1__4__37
+                                                                        postieplugin_postie_version_1__5__10
+                                                                        postieplugin_postie_version_1__4__4
+                                                                        postieplugin_postie_version_1__4__26
+                                                                        postieplugin_postie_version_1__3__0
+                                                                        postieplugin_postie_version_0__9__9__3
+                                                        postieplugin_postie_update
+                                                                alternative
+                                                                        postieplugin_postie_update_alpha
+                                                                        postieplugin_postie_update_beta
+                                                                        postieplugin_postie_update_any
+                                                        postieplugin_postie_target__sw
+                                                                mandatory
+                                                                        postieplugin_postie_target__sw_wordpress
+
+constraints
+        postieplugin_postie => application
+        postieplugin_postie_version_0__9__9__1 => postieplugin_postie_update_any
+        postieplugin_postie_version_1__4__33 => postieplugin_postie_update_any
+        postieplugin_postie_version_1__4__17 => postieplugin_postie_update_any
+        postieplugin_postie_version_1__4__8 => postieplugin_postie_update_any
+        postieplugin_postie_version_0__9__1 => postieplugin_postie_update_any
+        postieplugin_postie_version_1__4__18 => postieplugin_postie_update_any
+        postieplugin_postie_version_1__3__1 => postieplugin_postie_update_any
+        postieplugin_postie_version_0__312__1 => postieplugin_postie_update_any
+        postieplugin_postie_version_0__312__5 => postieplugin_postie_update_any
+        postieplugin_postie_version_0__9__8__5 => postieplugin_postie_update_any
+        postieplugin_postie_version_0__9__8__1 => postieplugin_postie_update_any
+        postieplugin_postie_version_1__4__20 => postieplugin_postie_update_any
+        postieplugin_postie_version_0__2 => postieplugin_postie_update_any
+        postieplugin_postie_version_1__5__9 => postieplugin_postie_update_any
+        postieplugin_postie_version_0__9__4 => postieplugin_postie_update_any
+        postieplugin_postie_version_0__312__12 => postieplugin_postie_update_any
+        postieplugin_postie_version_1__4 => postieplugin_postie_update_any
+        postieplugin_postie_version_1__1__4 => postieplugin_postie_update_any
+        postieplugin_postie_version_1__4__29 => postieplugin_postie_update_any
+        postieplugin_postie_version_1__1__1 => postieplugin_postie_update_any
+        postieplugin_postie_version_0__9__9 => postieplugin_postie_update_any
+        postieplugin_postie_version_1__4__2 => postieplugin_postie_update_any
+        postieplugin_postie_version_0__9__5 => postieplugin_postie_update_any
+        postieplugin_postie_version_1__4__15 => postieplugin_postie_update_any
+        postieplugin_postie_version_1__4__16 => postieplugin_postie_update_any
+        postieplugin_postie_version_0__312__4 => postieplugin_postie_update_any
+        postieplugin_postie_version_0__9__8__3 => postieplugin_postie_update_any
+        postieplugin_postie_version_0__9__2 => postieplugin_postie_update_any
+        postieplugin_postie_version_1__2 => postieplugin_postie_update_any
+        postieplugin_postie_version_0__9__8__4 => postieplugin_postie_update_any
+        postieplugin_postie_version_1__4__1 => postieplugin_postie_update_any
+        postieplugin_postie_version_1__4__21 => postieplugin_postie_update_any
+        postieplugin_postie_version_1__5__0 => postieplugin_postie_update_any
+        postieplugin_postie_version_1__2__1 => postieplugin_postie_update_any
+        postieplugin_postie_version_0__31 => postieplugin_postie_update_any
+        postieplugin_postie_version_0__312__6 => postieplugin_postie_update_any
+        postieplugin_postie_version_1__3__3 => postieplugin_postie_update_any
+        postieplugin_postie_version_1__4__34 => postieplugin_postie_update_any
+        postieplugin_postie_version_0__312__2 => postieplugin_postie_update_any
+        postieplugin_postie_version_1__1__3 => postieplugin_postie_update_any
+        postieplugin_postie_version_0__9__9__3__1 => postieplugin_postie_update_any
+        postieplugin_postie_version_1__5__11 => postieplugin_postie_update_any
+        postieplugin_postie_version_1__4__35 => postieplugin_postie_update_any
+        postieplugin_postie_version_0__312__10 => postieplugin_postie_update_any
+        postieplugin_postie_version_0__9__8__2 => postieplugin_postie_update_any
+        postieplugin_postie_version_1__4__36 => postieplugin_postie_update_any
+        postieplugin_postie_version_1__5__1 => postieplugin_postie_update_any
+        postieplugin_postie_version_1__4__27 => postieplugin_postie_update_any
+        postieplugin_postie_version_1__5__7 => postieplugin_postie_update_any
+        postieplugin_postie_version_1__4__7 => postieplugin_postie_update_any
+        postieplugin_postie_version_1__5__2 => postieplugin_postie_update_any
+        postieplugin_postie_version_0__9__7 => postieplugin_postie_update_any
+        postieplugin_postie_version_0__312 => postieplugin_postie_update_any
+        postieplugin_postie_version_0__9__9__3__2 => postieplugin_postie_update_any
+        postieplugin_postie_version_1__5__8 => postieplugin_postie_update_any
+        postieplugin_postie_version_1__4__28 => postieplugin_postie_update_any
+        postieplugin_postie_version_0__1 => postieplugin_postie_update_any
+        postieplugin_postie_version_1__4__39 => postieplugin_postie_update_any
+        postieplugin_postie_version_1__4__11 => postieplugin_postie_update_any
+        postieplugin_postie_version_1__5__13 => postieplugin_postie_update_any
+        postieplugin_postie_version_1__4__9 => postieplugin_postie_update_any
+        postieplugin_postie_version_1__1 => postieplugin_postie_update_any
+        postieplugin_postie_version_1__1__2 => postieplugin_postie_update_any
+        postieplugin_postie_version_1__4__32 => postieplugin_postie_update_any
+        postieplugin_postie_version_1__4__30 => postieplugin_postie_update_any
+        postieplugin_postie_version_1__3__2 => postieplugin_postie_update_any
+        postieplugin_postie_version_1__5__5 => postieplugin_postie_update_any
+        postieplugin_postie_version_1__4__31 => postieplugin_postie_update_any
+        postieplugin_postie_version_1__3 => ((postieplugin_postie_update_alpha & !postieplugin_postie_update_beta) | (!postieplugin_postie_update_alpha & postieplugin_postie_update_beta))
+        postieplugin_postie_version_1__4__3 => postieplugin_postie_update_any
+        postieplugin_postie_version_1__4__19 => postieplugin_postie_update_any
+        postieplugin_postie_version_1__4__40 => postieplugin_postie_update_any
+        postieplugin_postie_version_1__4__38 => postieplugin_postie_update_any
+        postieplugin_postie_version_0__9 => postieplugin_postie_update_any
+        postieplugin_postie_version_1__2__3 => postieplugin_postie_update_any
+        postieplugin_postie_version_1__3__4 => postieplugin_postie_update_any
+        postieplugin_postie_version_0__9__6 => postieplugin_postie_update_any
+        postieplugin_postie_version_0__9__8__6 => postieplugin_postie_update_any
+        postieplugin_postie_version_1__4__23 => postieplugin_postie_update_any
+        postieplugin_postie_version_1__5__6 => postieplugin_postie_update_any
+        postieplugin_postie_version_1__4__10 => postieplugin_postie_update_any
+        postieplugin_postie_version_1__4__6 => postieplugin_postie_update_any
+        postieplugin_postie_version_1__4__12 => postieplugin_postie_update_any
+        postieplugin_postie_version_1__4__5 => postieplugin_postie_update_any
+        postieplugin_postie_version_0__3 => postieplugin_postie_update_any
+        postieplugin_postie_version_0__9__5__2 => postieplugin_postie_update_any
+        postieplugin_postie_version_0__312__11 => postieplugin_postie_update_any
+        postieplugin_postie_version_1__4__13 => postieplugin_postie_update_any
+        postieplugin_postie_version_0__312__9 => postieplugin_postie_update_any
+        postieplugin_postie_version_0__9__9__2 => postieplugin_postie_update_any
+        postieplugin_postie_version_1__1__5 => postieplugin_postie_update_any
+        postieplugin_postie_version_0__9__5__1 => postieplugin_postie_update_any
+        postieplugin_postie_version_1__5__12 => postieplugin_postie_update_any
+        postieplugin_postie_version_0__9__8 => postieplugin_postie_update_any
+        postieplugin_postie_version_0__312__3 => postieplugin_postie_update_any
+        postieplugin_postie_version_1__4__14 => postieplugin_postie_update_any
+        postieplugin_postie_version_1__5__4 => postieplugin_postie_update_any
+        postieplugin_postie_version_1__5__14 => postieplugin_postie_update_any
+        postieplugin_postie_version_1__5__3 => postieplugin_postie_update_any
+        postieplugin_postie_version_0__9__3 => postieplugin_postie_update_any
+        postieplugin_postie_version_0__312__7 => postieplugin_postie_update_any
+        postieplugin_postie_version_1__4__25 => postieplugin_postie_update_any
+        postieplugin_postie_version_0__312__8 => postieplugin_postie_update_any
+        postieplugin_postie_version_0__312__13 => postieplugin_postie_update_any
+        postieplugin_postie_version_1__4__24 => postieplugin_postie_update_any
+        postieplugin_postie_version_1__2__2 => postieplugin_postie_update_any
+        postieplugin_postie_version_0__311 => postieplugin_postie_update_any
+        postieplugin_postie_version_1__4__22 => postieplugin_postie_update_any
+        postieplugin_postie_version_1__4__37 => postieplugin_postie_update_any
+        postieplugin_postie_version_1__5__10 => postieplugin_postie_update_any
+        postieplugin_postie_version_1__4__4 => postieplugin_postie_update_any
+        postieplugin_postie_version_1__4__26 => postieplugin_postie_update_any
+        postieplugin_postie_version_1__3__0 => postieplugin_postie_update_any
+        postieplugin_postie_version_0__9__9__3 => postieplugin_postie_update_any

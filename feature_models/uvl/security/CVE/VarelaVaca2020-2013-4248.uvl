@@ -1,0 +1,458 @@
+features
+        CVE_2013_4248
+                mandatory
+                        types
+                                mandatory
+                                        application
+                                        operating_system
+                        sources
+                                mandatory
+                                        nvd
+                        exploits
+                                optional
+                                        direct
+                                        indirect
+                alternative
+                        canonical
+                                mandatory
+                                        canonical_ubuntu__linux
+                                                mandatory
+                                                        canonical_ubuntu__linux_version
+                                                                alternative
+                                                                        canonical_ubuntu__linux_version_12__04
+                                                                        canonical_ubuntu__linux_version_12__10
+                                                                        canonical_ubuntu__linux_version_13__04
+                                                                        canonical_ubuntu__linux_version_10__04
+                        php
+                                mandatory
+                                        php_php
+                                                mandatory
+                                                        php_php_version
+                                                                alternative
+                                                                        php_php_version_1__0__2
+                                                                        php_php_version_0__1__1
+                                                                        php_php_version_5__3__12
+                                                                        php_php_version_3__0__1
+                                                                        php_php_version_0__9
+                                                                        php_php_version_0__6
+                                                                        php_php_version_5__2__2
+                                                                        php_php_version_0__5
+                                                                        php_php_version_5__3__17
+                                                                        php_php_version_1__0
+                                                                        php_php_version_0__2__2
+                                                                        php_php_version_1__1__0
+                                                                        php_php_version_5__3__25
+                                                                        php_php_version_4__2
+                                                                        php_php_version_5__4__13
+                                                                        php_php_version_5__3__11
+                                                                        php_php_version_4__0__2
+                                                                        php_php_version_0__90
+                                                                        php_php_version_1__0__4
+                                                                        php_php_version_5__3__20
+                                                                        php_php_version_5__2__13
+                                                                        php_php_version_5__1__5
+                                                                        php_php_version_5__3__10
+                                                                        php_php_version_3__0__18
+                                                                        php_php_version_3__0__17
+                                                                        php_php_version_5__2__7
+                                                                        php_php_version_5__4__17
+                                                                        php_php_version_4__3__8
+                                                                        php_php_version_5__3__29
+                                                                        php_php_version_4__2__1
+                                                                        php_php_version_3__0__13
+                                                                        php_php_version_5__2__1
+                                                                        php_php_version_any
+                                                                        php_php_version_5__2__3
+                                                                        php_php_version_5__2__17
+                                                                        php_php_version_4__3__3
+                                                                        php_php_version_5__2__12
+                                                                        php_php_version_5__2__10
+                                                                        php_php_version_5__3__13
+                                                                        php_php_version_4__2__4
+                                                                        php_php_version_0__9__1
+                                                                        php_php_version_5__1__3
+                                                                        php_php_version_2__0__1
+                                                                        php_php_version_0__91
+                                                                        php_php_version_5__4__5
+                                                                        php_php_version_0__9__2
+                                                                        php_php_version_4__3__2
+                                                                        php_php_version_3__0__14
+                                                                        php_php_version_1__2__5
+                                                                        php_php_version_4__3__9
+                                                                        php_php_version_5__1__0
+                                                                        php_php_version_4__4__8
+                                                                        php_php_version_4__3__4
+                                                                        php_php_version_1__1
+                                                                        php_php_version_5__3__27
+                                                                        php_php_version_5__2__4
+                                                                        php_php_version_4__4__2
+                                                                        php_php_version_5__3__4
+                                                                        php_php_version_5__2__11
+                                                                        php_php_version_5__3__21
+                                                                        php_php_version_3__0
+                                                                        php_php_version_3__0__5
+                                                                        php_php_version_5__2__9
+                                                                        php_php_version_4__3__10
+                                                                        php_php_version_3__0__3
+                                                                        php_php_version_5__3__2
+                                                                        php_php_version_4__4__7
+                                                                        php_php_version_2__0
+                                                                        php_php_version_3__0__16
+                                                                        php_php_version_5__0__3
+                                                                        php_php_version_5__3__18
+                                                                        php_php_version_4__1__0
+                                                                        php_php_version_1__0__3
+                                                                        php_php_version_5__4__4
+                                                                        php_php_version_5__3__14
+                                                                        php_php_version_5__0__5
+                                                                        php_php_version_0__3
+                                                                        php_php_version_5__4__0
+                                                                        php_php_version_4__4__9
+                                                                        php_php_version_4__2__3
+                                                                        php_php_version_0__2__0
+                                                                        php_php_version_5__3__26
+                                                                        php_php_version_1__3__5
+                                                                        php_php_version_5__3__5
+                                                                        php_php_version_5__5__1
+                                                                        php_php_version_3__0__15
+                                                                        php_php_version_5__2__0
+                                                                        php_php_version_4__3
+                                                                        php_php_version_1__4
+                                                                        php_php_version_0__5__3
+                                                                        php_php_version_4__3__6
+                                                                        php_php_version_5__3__3
+                                                                        php_php_version_5__3__15
+                                                                        php_php_version_0__9__4
+                                                                        php_php_version_5__3__7
+                                                                        php_php_version_2__0b10
+                                                                        php_php_version_4__0__5
+                                                                        php_php_version_5__3__19
+                                                                        php_php_version_5__3__1
+                                                                        php_php_version_5__4__7
+                                                                        php_php_version_1__0__0
+                                                                        php_php_version_4__1__3
+                                                                        php_php_version_5__1__1
+                                                                        php_php_version_5__3__22
+                                                                        php_php_version_5__2__5
+                                                                        php_php_version_5__4__9
+                                                                        php_php_version_0__1
+                                                                        php_php_version_1__2__2
+                                                                        php_php_version_1__2__4
+                                                                        php_php_version_5__4__8
+                                                                        php_php_version_0__2__4
+                                                                        php_php_version_5__2__16
+                                                                        php_php_version_5__4__1
+                                                                        php_php_version_0__2__3
+                                                                        php_php_version_5__1__4
+                                                                        php_php_version_0__9__3
+                                                                        php_php_version_3__0__10
+                                                                        php_php_version_5__1
+                                                                        php_php_version_5__0__4
+                                                                        php_php_version_1__3
+                                                                        php_php_version_5__4__14
+                                                                        php_php_version_4__0__6
+                                                                        php_php_version_5__4__11
+                                                                        php_php_version_5__0__0
+                                                                        php_php_version_4__3__1
+                                                                        php_php_version_4__4__1
+                                                                        php_php_version_3__0__6
+                                                                        php_php_version_1__5
+                                                                        php_php_version_5__1__2
+                                                                        php_php_version_5__0__1
+                                                                        php_php_version_5__2__14
+                                                                        php_php_version_4__0__0
+                                                                        php_php_version_1__0__1
+                                                                        php_php_version_5__5__0
+                                                                        php_php_version_1__2__1
+                                                                        php_php_version_4__1__1
+                                                                        php_php_version_4__0__7
+                                                                        php_php_version_5__0__2
+                                                                        php_php_version_5__3__24
+                                                                        php_php_version_3__0__2
+                                                                        php_php_version_0__2
+                                                                        php_php_version_3__0__8
+                                                                        php_php_version_5__4__3
+                                                                        php_php_version_4__3__0
+                                                                        php_php_version_4__4__0
+                                                                        php_php_version_4__3__5
+                                                                        php_php_version_5__3__6
+                                                                        php_php_version_4__0__1
+                                                                        php_php_version_4__0__4
+                                                                        php_php_version_5__3__8
+                                                                        php_php_version_5__2__6
+                                                                        php_php_version_5__2__15
+                                                                        php_php_version_3__0__7
+                                                                        php_php_version_5__3__9
+                                                                        php_php_version_0__9__0
+                                                                        php_php_version_1__2__3
+                                                                        php_php_version_4__4__5
+                                                                        php_php_version_5__4__2
+                                                                        php_php_version_5__3__23
+                                                                        php_php_version_0__10
+                                                                        php_php_version_0__7
+                                                                        php_php_version_5__4__15
+                                                                        php_php_version_5__4__6
+                                                                        php_php_version_5__3__28
+                                                                        php_php_version_5__4__16
+                                                                        php_php_version_1__3__1
+                                                                        php_php_version_2__0__2
+                                                                        php_php_version_4__0
+                                                                        php_php_version_1__1__1
+                                                                        php_php_version_4__1__2
+                                                                        php_php_version_4__2__0
+                                                                        php_php_version_4__3__11
+                                                                        php_php_version_1__2
+                                                                        php_php_version_3__0__4
+                                                                        php_php_version_5__3__0
+                                                                        php_php_version_3__0__12
+                                                                        php_php_version_0__5__2
+                                                                        php_php_version_3__0__9
+                                                                        php_php_version_4__0__3
+                                                                        php_php_version_4__4__6
+                                                                        php_php_version_5__4__10
+                                                                        php_php_version_1__2__0
+                                                                        php_php_version_4__2__2
+                                                                        php_php_version_5__1__6
+                                                                        php_php_version_0__2__1
+                                                                        php_php_version_0__4
+                                                                        php_php_version_4__3__7
+                                                                        php_php_version_2__0__0
+                                                                        php_php_version_5__4__12
+                                                                        php_php_version_5__2__8
+                                                                        php_php_version_0__11
+                                                                        php_php_version_3__0__11
+                                                                        php_php_version_4__4__3
+                                                                        php_php_version_5__3__16
+                                                                        php_php_version_4__4__4
+                                                        php_php_update
+                                                                alternative
+                                                                        php_php_update_rc3
+                                                                        php_php_update_rc
+                                                                        php_php_update_rc2
+                                                                        php_php_update_rc4
+                                                                        php_php_update_rc1
+                                                                        php_php_update_pre2
+                                                                        php_php_update_beta__4__patch1
+                                                                        php_php_update_rc7
+                                                                        php_php_update_rc6
+                                                                        php_php_update_beta6
+                                                                        php_php_update_pre1
+                                                                        php_php_update_beta1
+                                                                        php_php_update_beta4
+                                                                        php_php_update_rc2_pre
+                                                                        php_php_update_any
+                                                                        php_php_update_beta3
+                                                                        php_php_update_rc8
+                                                                        php_php_update_beta2
+                                                                        php_php_update_alpha2
+                                                                        php_php_update_alpha3
+                                                                        php_php_update_dev
+                                                                        php_php_update_rc5
+                                                                        php_php_update_alpha1
+                        redhat
+                                mandatory
+                                        redhat_enterprise__linux
+                                                mandatory
+                                                        redhat_enterprise__linux_version
+                                                                mandatory
+                                                                        redhat_enterprise__linux_version_5
+
+constraints
+        canonical_ubuntu__linux => operating_system
+        php_php => application
+        redhat_enterprise__linux => operating_system
+        php_php_version_1__0__2 => php_php_update_any
+        php_php_version_0__1__1 => php_php_update_any
+        php_php_version_5__3__12 => php_php_update_any
+        php_php_version_3__0__1 => php_php_update_any
+        php_php_version_0__9 => php_php_update_any
+        php_php_version_0__6 => php_php_update_any
+        php_php_version_5__2__2 => ((php_php_update_rc2 & !php_php_update_rc1 & !php_php_update_any) | (!php_php_update_rc2 & php_php_update_rc1 & !php_php_update_any) | (!php_php_update_rc2 & !php_php_update_rc1 & php_php_update_any))
+        php_php_version_0__5 => php_php_update_any
+        php_php_version_5__3__17 => php_php_update_any
+        php_php_version_1__0 => ((php_php_update_rc2 & !php_php_update_rc1 & !php_php_update_beta1 & !php_php_update_any & !php_php_update_beta3 & !php_php_update_beta2) | (!php_php_update_rc2 & php_php_update_rc1 & !php_php_update_beta1 & !php_php_update_any & !php_php_update_beta3 & !php_php_update_beta2) | (!php_php_update_rc2 & !php_php_update_rc1 & php_php_update_beta1 & !php_php_update_any & !php_php_update_beta3 & !php_php_update_beta2) | (!php_php_update_rc2 & !php_php_update_rc1 & !php_php_update_beta1 & php_php_update_any & !php_php_update_beta3 & !php_php_update_beta2) | (!php_php_update_rc2 & !php_php_update_rc1 & !php_php_update_beta1 & !php_php_update_any & php_php_update_beta3 & !php_php_update_beta2) | (!php_php_update_rc2 & !php_php_update_rc1 & !php_php_update_beta1 & !php_php_update_any & !php_php_update_beta3 & php_php_update_beta2))
+        php_php_version_0__2__2 => php_php_update_any
+        php_php_version_1__1__0 => php_php_update_any
+        php_php_version_5__3__25 => ((php_php_update_rc1 & !php_php_update_any) | (!php_php_update_rc1 & php_php_update_any))
+        php_php_version_4__2 => php_php_update_any
+        php_php_version_5__4__13 => ((php_php_update_rc1 & !php_php_update_any) | (!php_php_update_rc1 & php_php_update_any))
+        php_php_version_5__3__11 => ((php_php_update_rc2 & !php_php_update_rc1 & !php_php_update_any) | (!php_php_update_rc2 & php_php_update_rc1 & !php_php_update_any) | (!php_php_update_rc2 & !php_php_update_rc1 & php_php_update_any))
+        php_php_version_4__0__2 => ((php_php_update_rc1 & !php_php_update_any) | (!php_php_update_rc1 & php_php_update_any))
+        php_php_version_0__90 => php_php_update_any
+        php_php_version_1__0__4 => php_php_update_any
+        php_php_version_5__3__20 => ((php_php_update_rc1 & !php_php_update_any) | (!php_php_update_rc1 & php_php_update_any))
+        php_php_version_5__2__13 => ((php_php_update_rc2 & !php_php_update_rc1 & !php_php_update_any) | (!php_php_update_rc2 & php_php_update_rc1 & !php_php_update_any) | (!php_php_update_rc2 & !php_php_update_rc1 & php_php_update_any))
+        php_php_version_5__1__5 => ((php_php_update_rc1 & !php_php_update_any) | (!php_php_update_rc1 & php_php_update_any))
+        php_php_version_5__3__10 => php_php_update_any
+        php_php_version_3__0__18 => php_php_update_any
+        php_php_version_3__0__17 => php_php_update_any
+        php_php_version_5__2__7 => ((php_php_update_rc3 & !php_php_update_rc2 & !php_php_update_rc4 & !php_php_update_rc1 & !php_php_update_any & !php_php_update_rc5) | (!php_php_update_rc3 & php_php_update_rc2 & !php_php_update_rc4 & !php_php_update_rc1 & !php_php_update_any & !php_php_update_rc5) | (!php_php_update_rc3 & !php_php_update_rc2 & php_php_update_rc4 & !php_php_update_rc1 & !php_php_update_any & !php_php_update_rc5) | (!php_php_update_rc3 & !php_php_update_rc2 & !php_php_update_rc4 & php_php_update_rc1 & !php_php_update_any & !php_php_update_rc5) | (!php_php_update_rc3 & !php_php_update_rc2 & !php_php_update_rc4 & !php_php_update_rc1 & php_php_update_any & !php_php_update_rc5) | (!php_php_update_rc3 & !php_php_update_rc2 & !php_php_update_rc4 & !php_php_update_rc1 & !php_php_update_any & php_php_update_rc5))
+        php_php_version_5__4__17 => ((php_php_update_rc1 & !php_php_update_any) | (!php_php_update_rc1 & php_php_update_any))
+        php_php_version_4__3__8 => php_php_update_any
+        php_php_version_5__3__29 => ((php_php_update_rc1 & !php_php_update_any) | (!php_php_update_rc1 & php_php_update_any))
+        php_php_version_4__2__1 => ((php_php_update_rc2 & !php_php_update_rc1 & !php_php_update_any) | (!php_php_update_rc2 & php_php_update_rc1 & !php_php_update_any) | (!php_php_update_rc2 & !php_php_update_rc1 & php_php_update_any))
+        php_php_version_3__0__13 => php_php_update_any
+        php_php_version_5__2__1 => ((php_php_update_rc3 & !php_php_update_rc2 & !php_php_update_rc4 & !php_php_update_rc1 & !php_php_update_any) | (!php_php_update_rc3 & php_php_update_rc2 & !php_php_update_rc4 & !php_php_update_rc1 & !php_php_update_any) | (!php_php_update_rc3 & !php_php_update_rc2 & php_php_update_rc4 & !php_php_update_rc1 & !php_php_update_any) | (!php_php_update_rc3 & !php_php_update_rc2 & !php_php_update_rc4 & php_php_update_rc1 & !php_php_update_any) | (!php_php_update_rc3 & !php_php_update_rc2 & !php_php_update_rc4 & !php_php_update_rc1 & php_php_update_any))
+        php_php_version_any => php_php_update_any
+        php_php_version_5__2__3 => ((php_php_update_rc1 & !php_php_update_any) | (!php_php_update_rc1 & php_php_update_any))
+        php_php_version_5__2__17 => php_php_update_any
+        php_php_version_4__3__3 => ((php_php_update_rc3 & !php_php_update_rc2 & !php_php_update_rc4 & !php_php_update_rc1 & !php_php_update_any) | (!php_php_update_rc3 & php_php_update_rc2 & !php_php_update_rc4 & !php_php_update_rc1 & !php_php_update_any) | (!php_php_update_rc3 & !php_php_update_rc2 & php_php_update_rc4 & !php_php_update_rc1 & !php_php_update_any) | (!php_php_update_rc3 & !php_php_update_rc2 & !php_php_update_rc4 & php_php_update_rc1 & !php_php_update_any) | (!php_php_update_rc3 & !php_php_update_rc2 & !php_php_update_rc4 & !php_php_update_rc1 & php_php_update_any))
+        php_php_version_5__2__12 => ((php_php_update_rc3 & !php_php_update_rc2 & !php_php_update_rc4 & !php_php_update_rc1 & !php_php_update_any) | (!php_php_update_rc3 & php_php_update_rc2 & !php_php_update_rc4 & !php_php_update_rc1 & !php_php_update_any) | (!php_php_update_rc3 & !php_php_update_rc2 & php_php_update_rc4 & !php_php_update_rc1 & !php_php_update_any) | (!php_php_update_rc3 & !php_php_update_rc2 & !php_php_update_rc4 & php_php_update_rc1 & !php_php_update_any) | (!php_php_update_rc3 & !php_php_update_rc2 & !php_php_update_rc4 & !php_php_update_rc1 & php_php_update_any))
+        php_php_version_5__2__10 => ((php_php_update_rc2 & !php_php_update_rc1 & !php_php_update_any) | (!php_php_update_rc2 & php_php_update_rc1 & !php_php_update_any) | (!php_php_update_rc2 & !php_php_update_rc1 & php_php_update_any))
+        php_php_version_5__3__13 => php_php_update_any
+        php_php_version_4__2__4 => php_php_update_any
+        php_php_version_0__9__1 => php_php_update_any
+        php_php_version_5__1__3 => ((php_php_update_rc3 & !php_php_update_rc2 & !php_php_update_rc1 & !php_php_update_any) | (!php_php_update_rc3 & php_php_update_rc2 & !php_php_update_rc1 & !php_php_update_any) | (!php_php_update_rc3 & !php_php_update_rc2 & php_php_update_rc1 & !php_php_update_any) | (!php_php_update_rc3 & !php_php_update_rc2 & !php_php_update_rc1 & php_php_update_any))
+        php_php_version_2__0__1 => php_php_update_any
+        php_php_version_0__91 => php_php_update_any
+        php_php_version_5__4__5 => ((php_php_update_rc1 & !php_php_update_any) | (!php_php_update_rc1 & php_php_update_any))
+        php_php_version_0__9__2 => php_php_update_any
+        php_php_version_4__3__2 => ((php_php_update_rc3 & !php_php_update_rc2 & !php_php_update_rc4 & !php_php_update_rc1 & !php_php_update_any) | (!php_php_update_rc3 & php_php_update_rc2 & !php_php_update_rc4 & !php_php_update_rc1 & !php_php_update_any) | (!php_php_update_rc3 & !php_php_update_rc2 & php_php_update_rc4 & !php_php_update_rc1 & !php_php_update_any) | (!php_php_update_rc3 & !php_php_update_rc2 & !php_php_update_rc4 & php_php_update_rc1 & !php_php_update_any) | (!php_php_update_rc3 & !php_php_update_rc2 & !php_php_update_rc4 & !php_php_update_rc1 & php_php_update_any))
+        php_php_version_3__0__14 => php_php_update_any
+        php_php_version_1__2__5 => php_php_update_any
+        php_php_version_4__3__9 => ((php_php_update_rc3 & !php_php_update_rc2 & !php_php_update_rc1 & !php_php_update_any) | (!php_php_update_rc3 & php_php_update_rc2 & !php_php_update_rc1 & !php_php_update_any) | (!php_php_update_rc3 & !php_php_update_rc2 & php_php_update_rc1 & !php_php_update_any) | (!php_php_update_rc3 & !php_php_update_rc2 & !php_php_update_rc1 & php_php_update_any))
+        php_php_version_5__1__0 => ((php_php_update_rc3 & !php_php_update_rc2 & !php_php_update_rc4 & !php_php_update_rc1 & !php_php_update_rc6 & !php_php_update_beta1 & !php_php_update_rc2_pre & !php_php_update_any & !php_php_update_beta3 & !php_php_update_beta2 & !php_php_update_rc5) | (!php_php_update_rc3 & php_php_update_rc2 & !php_php_update_rc4 & !php_php_update_rc1 & !php_php_update_rc6 & !php_php_update_beta1 & !php_php_update_rc2_pre & !php_php_update_any & !php_php_update_beta3 & !php_php_update_beta2 & !php_php_update_rc5) | (!php_php_update_rc3 & !php_php_update_rc2 & php_php_update_rc4 & !php_php_update_rc1 & !php_php_update_rc6 & !php_php_update_beta1 & !php_php_update_rc2_pre & !php_php_update_any & !php_php_update_beta3 & !php_php_update_beta2 & !php_php_update_rc5) | (!php_php_update_rc3 & !php_php_update_rc2 & !php_php_update_rc4 & php_php_update_rc1 & !php_php_update_rc6 & !php_php_update_beta1 & !php_php_update_rc2_pre & !php_php_update_any & !php_php_update_beta3 & !php_php_update_beta2 & !php_php_update_rc5) | (!php_php_update_rc3 & !php_php_update_rc2 & !php_php_update_rc4 & !php_php_update_rc1 & php_php_update_rc6 & !php_php_update_beta1 & !php_php_update_rc2_pre & !php_php_update_any & !php_php_update_beta3 & !php_php_update_beta2 & !php_php_update_rc5) | (!php_php_update_rc3 & !php_php_update_rc2 & !php_php_update_rc4 & !php_php_update_rc1 & !php_php_update_rc6 & php_php_update_beta1 & !php_php_update_rc2_pre & !php_php_update_any & !php_php_update_beta3 & !php_php_update_beta2 & !php_php_update_rc5) | (!php_php_update_rc3 & !php_php_update_rc2 & !php_php_update_rc4 & !php_php_update_rc1 & !php_php_update_rc6 & !php_php_update_beta1 & php_php_update_rc2_pre & !php_php_update_any & !php_php_update_beta3 & !php_php_update_beta2 & !php_php_update_rc5) | (!php_php_update_rc3 & !php_php_update_rc2 & !php_php_update_rc4 & !php_php_update_rc1 & !php_php_update_rc6 & !php_php_update_beta1 & !php_php_update_rc2_pre & php_php_update_any & !php_php_update_beta3 & !php_php_update_beta2 & !php_php_update_rc5) | (!php_php_update_rc3 & !php_php_update_rc2 & !php_php_update_rc4 & !php_php_update_rc1 & !php_php_update_rc6 & !php_php_update_beta1 & !php_php_update_rc2_pre & !php_php_update_any & php_php_update_beta3 & !php_php_update_beta2 & !php_php_update_rc5) | (!php_php_update_rc3 & !php_php_update_rc2 & !php_php_update_rc4 & !php_php_update_rc1 & !php_php_update_rc6 & !php_php_update_beta1 & !php_php_update_rc2_pre & !php_php_update_any & !php_php_update_beta3 & php_php_update_beta2 & !php_php_update_rc5) | (!php_php_update_rc3 & !php_php_update_rc2 & !php_php_update_rc4 & !php_php_update_rc1 & !php_php_update_rc6 & !php_php_update_beta1 & !php_php_update_rc2_pre & !php_php_update_any & !php_php_update_beta3 & !php_php_update_beta2 & php_php_update_rc5))
+        php_php_version_4__4__8 => ((php_php_update_rc1 & !php_php_update_any) | (!php_php_update_rc1 & php_php_update_any))
+        php_php_version_4__3__4 => ((php_php_update_rc3 & !php_php_update_rc2 & !php_php_update_rc1 & !php_php_update_any) | (!php_php_update_rc3 & php_php_update_rc2 & !php_php_update_rc1 & !php_php_update_any) | (!php_php_update_rc3 & !php_php_update_rc2 & php_php_update_rc1 & !php_php_update_any) | (!php_php_update_rc3 & !php_php_update_rc2 & !php_php_update_rc1 & php_php_update_any))
+        php_php_version_1__1 => php_php_update_any
+        php_php_version_5__3__27 => ((php_php_update_rc1 & !php_php_update_any) | (!php_php_update_rc1 & php_php_update_any))
+        php_php_version_5__2__4 => ((php_php_update_rc3 & !php_php_update_rc2 & !php_php_update_rc1 & !php_php_update_any) | (!php_php_update_rc3 & php_php_update_rc2 & !php_php_update_rc1 & !php_php_update_any) | (!php_php_update_rc3 & !php_php_update_rc2 & php_php_update_rc1 & !php_php_update_any) | (!php_php_update_rc3 & !php_php_update_rc2 & !php_php_update_rc1 & php_php_update_any))
+        php_php_version_4__4__2 => ((php_php_update_rc2 & !php_php_update_rc1 & !php_php_update_any) | (!php_php_update_rc2 & php_php_update_rc1 & !php_php_update_any) | (!php_php_update_rc2 & !php_php_update_rc1 & php_php_update_any))
+        php_php_version_5__3__4 => ((php_php_update_rc2 & !php_php_update_rc1 & !php_php_update_any) | (!php_php_update_rc2 & php_php_update_rc1 & !php_php_update_any) | (!php_php_update_rc2 & !php_php_update_rc1 & php_php_update_any))
+        php_php_version_5__2__11 => ((php_php_update_rc3 & !php_php_update_rc2 & !php_php_update_rc1 & !php_php_update_any) | (!php_php_update_rc3 & php_php_update_rc2 & !php_php_update_rc1 & !php_php_update_any) | (!php_php_update_rc3 & !php_php_update_rc2 & php_php_update_rc1 & !php_php_update_any) | (!php_php_update_rc3 & !php_php_update_rc2 & !php_php_update_rc1 & php_php_update_any))
+        php_php_version_5__3__21 => ((php_php_update_rc1 & !php_php_update_any) | (!php_php_update_rc1 & php_php_update_any))
+        php_php_version_3__0 => php_php_update_any
+        php_php_version_3__0__5 => php_php_update_any
+        php_php_version_5__2__9 => ((php_php_update_rc3 & !php_php_update_rc2 & !php_php_update_rc1 & !php_php_update_any) | (!php_php_update_rc3 & php_php_update_rc2 & !php_php_update_rc1 & !php_php_update_any) | (!php_php_update_rc3 & !php_php_update_rc2 & php_php_update_rc1 & !php_php_update_any) | (!php_php_update_rc3 & !php_php_update_rc2 & !php_php_update_rc1 & php_php_update_any))
+        php_php_version_4__3__10 => ((php_php_update_rc2 & !php_php_update_rc1 & !php_php_update_any) | (!php_php_update_rc2 & php_php_update_rc1 & !php_php_update_any) | (!php_php_update_rc2 & !php_php_update_rc1 & php_php_update_any))
+        php_php_version_3__0__3 => php_php_update_any
+        php_php_version_5__3__2 => ((php_php_update_rc3 & !php_php_update_rc2 & !php_php_update_rc1 & !php_php_update_any) | (!php_php_update_rc3 & php_php_update_rc2 & !php_php_update_rc1 & !php_php_update_any) | (!php_php_update_rc3 & !php_php_update_rc2 & php_php_update_rc1 & !php_php_update_any) | (!php_php_update_rc3 & !php_php_update_rc2 & !php_php_update_rc1 & php_php_update_any))
+        php_php_version_4__4__7 => ((php_php_update_rc1 & !php_php_update_any) | (!php_php_update_rc1 & php_php_update_any))
+        php_php_version_2__0 => php_php_update_any
+        php_php_version_3__0__16 => php_php_update_any
+        php_php_version_5__0__3 => ((php_php_update_rc2 & !php_php_update_rc1 & !php_php_update_any) | (!php_php_update_rc2 & php_php_update_rc1 & !php_php_update_any) | (!php_php_update_rc2 & !php_php_update_rc1 & php_php_update_any))
+        php_php_version_5__3__18 => ((php_php_update_rc1 & !php_php_update_any) | (!php_php_update_rc1 & php_php_update_any))
+        php_php_version_4__1__0 => ((php_php_update_rc3 & !php_php_update_rc2 & !php_php_update_rc4 & !php_php_update_rc1 & !php_php_update_any & !php_php_update_rc5) | (!php_php_update_rc3 & php_php_update_rc2 & !php_php_update_rc4 & !php_php_update_rc1 & !php_php_update_any & !php_php_update_rc5) | (!php_php_update_rc3 & !php_php_update_rc2 & php_php_update_rc4 & !php_php_update_rc1 & !php_php_update_any & !php_php_update_rc5) | (!php_php_update_rc3 & !php_php_update_rc2 & !php_php_update_rc4 & php_php_update_rc1 & !php_php_update_any & !php_php_update_rc5) | (!php_php_update_rc3 & !php_php_update_rc2 & !php_php_update_rc4 & !php_php_update_rc1 & php_php_update_any & !php_php_update_rc5) | (!php_php_update_rc3 & !php_php_update_rc2 & !php_php_update_rc4 & !php_php_update_rc1 & !php_php_update_any & php_php_update_rc5))
+        php_php_version_1__0__3 => php_php_update_any
+        php_php_version_5__4__4 => ((php_php_update_rc2 & !php_php_update_rc1 & !php_php_update_any) | (!php_php_update_rc2 & php_php_update_rc1 & !php_php_update_any) | (!php_php_update_rc2 & !php_php_update_rc1 & php_php_update_any))
+        php_php_version_5__3__14 => ((php_php_update_rc2 & !php_php_update_rc1 & !php_php_update_any) | (!php_php_update_rc2 & php_php_update_rc1 & !php_php_update_any) | (!php_php_update_rc2 & !php_php_update_rc1 & php_php_update_any))
+        php_php_version_5__0__5 => ((php_php_update_rc2 & !php_php_update_rc1 & !php_php_update_any) | (!php_php_update_rc2 & php_php_update_rc1 & !php_php_update_any) | (!php_php_update_rc2 & !php_php_update_rc1 & php_php_update_any))
+        php_php_version_0__3 => php_php_update_any
+        php_php_version_5__4__0 => ((php_php_update_rc3 & !php_php_update_rc2 & !php_php_update_rc4 & !php_php_update_rc1 & !php_php_update_rc7 & !php_php_update_rc6 & !php_php_update_beta1 & !php_php_update_any & !php_php_update_rc8 & !php_php_update_beta2 & !php_php_update_alpha2 & !php_php_update_alpha3 & !php_php_update_rc5 & !php_php_update_alpha1) | (!php_php_update_rc3 & php_php_update_rc2 & !php_php_update_rc4 & !php_php_update_rc1 & !php_php_update_rc7 & !php_php_update_rc6 & !php_php_update_beta1 & !php_php_update_any & !php_php_update_rc8 & !php_php_update_beta2 & !php_php_update_alpha2 & !php_php_update_alpha3 & !php_php_update_rc5 & !php_php_update_alpha1) | (!php_php_update_rc3 & !php_php_update_rc2 & php_php_update_rc4 & !php_php_update_rc1 & !php_php_update_rc7 & !php_php_update_rc6 & !php_php_update_beta1 & !php_php_update_any & !php_php_update_rc8 & !php_php_update_beta2 & !php_php_update_alpha2 & !php_php_update_alpha3 & !php_php_update_rc5 & !php_php_update_alpha1) | (!php_php_update_rc3 & !php_php_update_rc2 & !php_php_update_rc4 & php_php_update_rc1 & !php_php_update_rc7 & !php_php_update_rc6 & !php_php_update_beta1 & !php_php_update_any & !php_php_update_rc8 & !php_php_update_beta2 & !php_php_update_alpha2 & !php_php_update_alpha3 & !php_php_update_rc5 & !php_php_update_alpha1) | (!php_php_update_rc3 & !php_php_update_rc2 & !php_php_update_rc4 & !php_php_update_rc1 & php_php_update_rc7 & !php_php_update_rc6 & !php_php_update_beta1 & !php_php_update_any & !php_php_update_rc8 & !php_php_update_beta2 & !php_php_update_alpha2 & !php_php_update_alpha3 & !php_php_update_rc5 & !php_php_update_alpha1) | (!php_php_update_rc3 & !php_php_update_rc2 & !php_php_update_rc4 & !php_php_update_rc1 & !php_php_update_rc7 & php_php_update_rc6 & !php_php_update_beta1 & !php_php_update_any & !php_php_update_rc8 & !php_php_update_beta2 & !php_php_update_alpha2 & !php_php_update_alpha3 & !php_php_update_rc5 & !php_php_update_alpha1) | (!php_php_update_rc3 & !php_php_update_rc2 & !php_php_update_rc4 & !php_php_update_rc1 & !php_php_update_rc7 & !php_php_update_rc6 & php_php_update_beta1 & !php_php_update_any & !php_php_update_rc8 & !php_php_update_beta2 & !php_php_update_alpha2 & !php_php_update_alpha3 & !php_php_update_rc5 & !php_php_update_alpha1) | (!php_php_update_rc3 & !php_php_update_rc2 & !php_php_update_rc4 & !php_php_update_rc1 & !php_php_update_rc7 & !php_php_update_rc6 & !php_php_update_beta1 & php_php_update_any & !php_php_update_rc8 & !php_php_update_beta2 & !php_php_update_alpha2 & !php_php_update_alpha3 & !php_php_update_rc5 & !php_php_update_alpha1) | (!php_php_update_rc3 & !php_php_update_rc2 & !php_php_update_rc4 & !php_php_update_rc1 & !php_php_update_rc7 & !php_php_update_rc6 & !php_php_update_beta1 & !php_php_update_any & php_php_update_rc8 & !php_php_update_beta2 & !php_php_update_alpha2 & !php_php_update_alpha3 & !php_php_update_rc5 & !php_php_update_alpha1) | (!php_php_update_rc3 & !php_php_update_rc2 & !php_php_update_rc4 & !php_php_update_rc1 & !php_php_update_rc7 & !php_php_update_rc6 & !php_php_update_beta1 & !php_php_update_any & !php_php_update_rc8 & php_php_update_beta2 & !php_php_update_alpha2 & !php_php_update_alpha3 & !php_php_update_rc5 & !php_php_update_alpha1) | (!php_php_update_rc3 & !php_php_update_rc2 & !php_php_update_rc4 & !php_php_update_rc1 & !php_php_update_rc7 & !php_php_update_rc6 & !php_php_update_beta1 & !php_php_update_any & !php_php_update_rc8 & !php_php_update_beta2 & php_php_update_alpha2 & !php_php_update_alpha3 & !php_php_update_rc5 & !php_php_update_alpha1) | (!php_php_update_rc3 & !php_php_update_rc2 & !php_php_update_rc4 & !php_php_update_rc1 & !php_php_update_rc7 & !php_php_update_rc6 & !php_php_update_beta1 & !php_php_update_any & !php_php_update_rc8 & !php_php_update_beta2 & !php_php_update_alpha2 & php_php_update_alpha3 & !php_php_update_rc5 & !php_php_update_alpha1) | (!php_php_update_rc3 & !php_php_update_rc2 & !php_php_update_rc4 & !php_php_update_rc1 & !php_php_update_rc7 & !php_php_update_rc6 & !php_php_update_beta1 & !php_php_update_any & !php_php_update_rc8 & !php_php_update_beta2 & !php_php_update_alpha2 & !php_php_update_alpha3 & php_php_update_rc5 & !php_php_update_alpha1) | (!php_php_update_rc3 & !php_php_update_rc2 & !php_php_update_rc4 & !php_php_update_rc1 & !php_php_update_rc7 & !php_php_update_rc6 & !php_php_update_beta1 & !php_php_update_any & !php_php_update_rc8 & !php_php_update_beta2 & !php_php_update_alpha2 & !php_php_update_alpha3 & !php_php_update_rc5 & php_php_update_alpha1))
+        php_php_version_4__4__9 => ((php_php_update_rc1 & !php_php_update_any) | (!php_php_update_rc1 & php_php_update_any))
+        php_php_version_4__2__3 => ((php_php_update_rc2 & !php_php_update_rc1 & !php_php_update_any) | (!php_php_update_rc2 & php_php_update_rc1 & !php_php_update_any) | (!php_php_update_rc2 & !php_php_update_rc1 & php_php_update_any))
+        php_php_version_0__2__0 => php_php_update_any
+        php_php_version_5__3__26 => ((php_php_update_rc1 & !php_php_update_any) | (!php_php_update_rc1 & php_php_update_any))
+        php_php_version_1__3__5 => php_php_update_any
+        php_php_version_5__3__5 => php_php_update_any
+        php_php_version_5__5__1 => php_php_update_any
+        php_php_version_3__0__15 => php_php_update_any
+        php_php_version_5__2__0 => ((php_php_update_rc3 & !php_php_update_rc2 & !php_php_update_rc4 & !php_php_update_rc1 & !php_php_update_rc6 & !php_php_update_any & !php_php_update_rc5) | (!php_php_update_rc3 & php_php_update_rc2 & !php_php_update_rc4 & !php_php_update_rc1 & !php_php_update_rc6 & !php_php_update_any & !php_php_update_rc5) | (!php_php_update_rc3 & !php_php_update_rc2 & php_php_update_rc4 & !php_php_update_rc1 & !php_php_update_rc6 & !php_php_update_any & !php_php_update_rc5) | (!php_php_update_rc3 & !php_php_update_rc2 & !php_php_update_rc4 & php_php_update_rc1 & !php_php_update_rc6 & !php_php_update_any & !php_php_update_rc5) | (!php_php_update_rc3 & !php_php_update_rc2 & !php_php_update_rc4 & !php_php_update_rc1 & php_php_update_rc6 & !php_php_update_any & !php_php_update_rc5) | (!php_php_update_rc3 & !php_php_update_rc2 & !php_php_update_rc4 & !php_php_update_rc1 & !php_php_update_rc6 & php_php_update_any & !php_php_update_rc5) | (!php_php_update_rc3 & !php_php_update_rc2 & !php_php_update_rc4 & !php_php_update_rc1 & !php_php_update_rc6 & !php_php_update_any & php_php_update_rc5))
+        php_php_version_4__3 => php_php_update_any
+        php_php_version_1__4 => php_php_update_any
+        php_php_version_0__5__3 => php_php_update_any
+        php_php_version_4__3__6 => ((php_php_update_rc3 & !php_php_update_rc2 & !php_php_update_rc1 & !php_php_update_any) | (!php_php_update_rc3 & php_php_update_rc2 & !php_php_update_rc1 & !php_php_update_any) | (!php_php_update_rc3 & !php_php_update_rc2 & php_php_update_rc1 & !php_php_update_any) | (!php_php_update_rc3 & !php_php_update_rc2 & !php_php_update_rc1 & php_php_update_any))
+        php_php_version_5__3__3 => ((php_php_update_rc3 & !php_php_update_rc2 & !php_php_update_rc1 & !php_php_update_any) | (!php_php_update_rc3 & php_php_update_rc2 & !php_php_update_rc1 & !php_php_update_any) | (!php_php_update_rc3 & !php_php_update_rc2 & php_php_update_rc1 & !php_php_update_any) | (!php_php_update_rc3 & !php_php_update_rc2 & !php_php_update_rc1 & php_php_update_any))
+        php_php_version_5__3__15 => ((php_php_update_rc1 & !php_php_update_any) | (!php_php_update_rc1 & php_php_update_any))
+        php_php_version_0__9__4 => php_php_update_any
+        php_php_version_5__3__7 => ((php_php_update_rc3 & !php_php_update_rc2 & !php_php_update_rc4 & !php_php_update_rc1 & !php_php_update_any & !php_php_update_rc5) | (!php_php_update_rc3 & php_php_update_rc2 & !php_php_update_rc4 & !php_php_update_rc1 & !php_php_update_any & !php_php_update_rc5) | (!php_php_update_rc3 & !php_php_update_rc2 & php_php_update_rc4 & !php_php_update_rc1 & !php_php_update_any & !php_php_update_rc5) | (!php_php_update_rc3 & !php_php_update_rc2 & !php_php_update_rc4 & php_php_update_rc1 & !php_php_update_any & !php_php_update_rc5) | (!php_php_update_rc3 & !php_php_update_rc2 & !php_php_update_rc4 & !php_php_update_rc1 & php_php_update_any & !php_php_update_rc5) | (!php_php_update_rc3 & !php_php_update_rc2 & !php_php_update_rc4 & !php_php_update_rc1 & !php_php_update_any & php_php_update_rc5))
+        php_php_version_2__0b10 => php_php_update_any
+        php_php_version_4__0__5 => ((php_php_update_rc3 & !php_php_update_rc2 & !php_php_update_rc4 & !php_php_update_rc1 & !php_php_update_rc7 & !php_php_update_rc6 & !php_php_update_any & !php_php_update_rc8 & !php_php_update_rc5) | (!php_php_update_rc3 & php_php_update_rc2 & !php_php_update_rc4 & !php_php_update_rc1 & !php_php_update_rc7 & !php_php_update_rc6 & !php_php_update_any & !php_php_update_rc8 & !php_php_update_rc5) | (!php_php_update_rc3 & !php_php_update_rc2 & php_php_update_rc4 & !php_php_update_rc1 & !php_php_update_rc7 & !php_php_update_rc6 & !php_php_update_any & !php_php_update_rc8 & !php_php_update_rc5) | (!php_php_update_rc3 & !php_php_update_rc2 & !php_php_update_rc4 & php_php_update_rc1 & !php_php_update_rc7 & !php_php_update_rc6 & !php_php_update_any & !php_php_update_rc8 & !php_php_update_rc5) | (!php_php_update_rc3 & !php_php_update_rc2 & !php_php_update_rc4 & !php_php_update_rc1 & php_php_update_rc7 & !php_php_update_rc6 & !php_php_update_any & !php_php_update_rc8 & !php_php_update_rc5) | (!php_php_update_rc3 & !php_php_update_rc2 & !php_php_update_rc4 & !php_php_update_rc1 & !php_php_update_rc7 & php_php_update_rc6 & !php_php_update_any & !php_php_update_rc8 & !php_php_update_rc5) | (!php_php_update_rc3 & !php_php_update_rc2 & !php_php_update_rc4 & !php_php_update_rc1 & !php_php_update_rc7 & !php_php_update_rc6 & php_php_update_any & !php_php_update_rc8 & !php_php_update_rc5) | (!php_php_update_rc3 & !php_php_update_rc2 & !php_php_update_rc4 & !php_php_update_rc1 & !php_php_update_rc7 & !php_php_update_rc6 & !php_php_update_any & php_php_update_rc8 & !php_php_update_rc5) | (!php_php_update_rc3 & !php_php_update_rc2 & !php_php_update_rc4 & !php_php_update_rc1 & !php_php_update_rc7 & !php_php_update_rc6 & !php_php_update_any & !php_php_update_rc8 & php_php_update_rc5))
+        php_php_version_5__3__19 => ((php_php_update_rc1 & !php_php_update_any) | (!php_php_update_rc1 & php_php_update_any))
+        php_php_version_5__3__1 => ((php_php_update_rc3 & !php_php_update_rc2 & !php_php_update_rc4 & !php_php_update_rc1 & !php_php_update_any) | (!php_php_update_rc3 & php_php_update_rc2 & !php_php_update_rc4 & !php_php_update_rc1 & !php_php_update_any) | (!php_php_update_rc3 & !php_php_update_rc2 & php_php_update_rc4 & !php_php_update_rc1 & !php_php_update_any) | (!php_php_update_rc3 & !php_php_update_rc2 & !php_php_update_rc4 & php_php_update_rc1 & !php_php_update_any) | (!php_php_update_rc3 & !php_php_update_rc2 & !php_php_update_rc4 & !php_php_update_rc1 & php_php_update_any))
+        php_php_version_5__4__7 => ((php_php_update_rc1 & !php_php_update_any) | (!php_php_update_rc1 & php_php_update_any))
+        php_php_version_1__0__0 => ((php_php_update_rc1 & !php_php_update_any) | (!php_php_update_rc1 & php_php_update_any))
+        php_php_version_4__1__3 => php_php_update_any
+        php_php_version_5__1__1 => php_php_update_any
+        php_php_version_5__3__22 => ((php_php_update_rc2 & !php_php_update_rc1 & !php_php_update_any) | (!php_php_update_rc2 & php_php_update_rc1 & !php_php_update_any) | (!php_php_update_rc2 & !php_php_update_rc1 & php_php_update_any))
+        php_php_version_5__2__5 => ((php_php_update_rc2 & !php_php_update_rc1 & !php_php_update_any) | (!php_php_update_rc2 & php_php_update_rc1 & !php_php_update_any) | (!php_php_update_rc2 & !php_php_update_rc1 & php_php_update_any))
+        php_php_version_5__4__9 => ((php_php_update_rc1 & !php_php_update_any) | (!php_php_update_rc1 & php_php_update_any))
+        php_php_version_0__1 => php_php_update_any
+        php_php_version_1__2__2 => php_php_update_any
+        php_php_version_1__2__4 => php_php_update_any
+        php_php_version_5__4__8 => ((php_php_update_rc1 & !php_php_update_any) | (!php_php_update_rc1 & php_php_update_any))
+        php_php_version_0__2__4 => php_php_update_any
+        php_php_version_5__2__16 => php_php_update_any
+        php_php_version_5__4__1 => ((php_php_update_rc2 & !php_php_update_rc1 & !php_php_update_any) | (!php_php_update_rc2 & php_php_update_rc1 & !php_php_update_any) | (!php_php_update_rc2 & !php_php_update_rc1 & php_php_update_any))
+        php_php_version_0__2__3 => php_php_update_any
+        php_php_version_5__1__4 => php_php_update_any
+        php_php_version_0__9__3 => php_php_update_any
+        php_php_version_3__0__10 => php_php_update_any
+        php_php_version_5__1 => php_php_update_any
+        php_php_version_5__0__4 => ((php_php_update_rc2 & !php_php_update_rc1 & !php_php_update_any) | (!php_php_update_rc2 & php_php_update_rc1 & !php_php_update_any) | (!php_php_update_rc2 & !php_php_update_rc1 & php_php_update_any))
+        php_php_version_1__3 => ((php_php_update_beta6 & !php_php_update_any & !php_php_update_beta3 & !php_php_update_beta2) | (!php_php_update_beta6 & php_php_update_any & !php_php_update_beta3 & !php_php_update_beta2) | (!php_php_update_beta6 & !php_php_update_any & php_php_update_beta3 & !php_php_update_beta2) | (!php_php_update_beta6 & !php_php_update_any & !php_php_update_beta3 & php_php_update_beta2))
+        php_php_version_5__4__14 => ((php_php_update_rc1 & !php_php_update_any) | (!php_php_update_rc1 & php_php_update_any))
+        php_php_version_4__0__6 => ((php_php_update_rc3 & !php_php_update_rc2 & !php_php_update_rc4 & !php_php_update_rc1 & !php_php_update_any) | (!php_php_update_rc3 & php_php_update_rc2 & !php_php_update_rc4 & !php_php_update_rc1 & !php_php_update_any) | (!php_php_update_rc3 & !php_php_update_rc2 & php_php_update_rc4 & !php_php_update_rc1 & !php_php_update_any) | (!php_php_update_rc3 & !php_php_update_rc2 & !php_php_update_rc4 & php_php_update_rc1 & !php_php_update_any) | (!php_php_update_rc3 & !php_php_update_rc2 & !php_php_update_rc4 & !php_php_update_rc1 & php_php_update_any))
+        php_php_version_5__4__11 => ((php_php_update_rc1 & !php_php_update_any) | (!php_php_update_rc1 & php_php_update_any))
+        php_php_version_5__0__0 => ((php_php_update_rc3 & !php_php_update_rc2 & !php_php_update_rc1 & !php_php_update_beta1 & !php_php_update_beta4 & !php_php_update_any & !php_php_update_beta3 & !php_php_update_beta2) | (!php_php_update_rc3 & php_php_update_rc2 & !php_php_update_rc1 & !php_php_update_beta1 & !php_php_update_beta4 & !php_php_update_any & !php_php_update_beta3 & !php_php_update_beta2) | (!php_php_update_rc3 & !php_php_update_rc2 & php_php_update_rc1 & !php_php_update_beta1 & !php_php_update_beta4 & !php_php_update_any & !php_php_update_beta3 & !php_php_update_beta2) | (!php_php_update_rc3 & !php_php_update_rc2 & !php_php_update_rc1 & php_php_update_beta1 & !php_php_update_beta4 & !php_php_update_any & !php_php_update_beta3 & !php_php_update_beta2) | (!php_php_update_rc3 & !php_php_update_rc2 & !php_php_update_rc1 & !php_php_update_beta1 & php_php_update_beta4 & !php_php_update_any & !php_php_update_beta3 & !php_php_update_beta2) | (!php_php_update_rc3 & !php_php_update_rc2 & !php_php_update_rc1 & !php_php_update_beta1 & !php_php_update_beta4 & php_php_update_any & !php_php_update_beta3 & !php_php_update_beta2) | (!php_php_update_rc3 & !php_php_update_rc2 & !php_php_update_rc1 & !php_php_update_beta1 & !php_php_update_beta4 & !php_php_update_any & php_php_update_beta3 & !php_php_update_beta2) | (!php_php_update_rc3 & !php_php_update_rc2 & !php_php_update_rc1 & !php_php_update_beta1 & !php_php_update_beta4 & !php_php_update_any & !php_php_update_beta3 & php_php_update_beta2))
+        php_php_version_4__3__1 => php_php_update_any
+        php_php_version_4__4__1 => ((php_php_update_rc1 & !php_php_update_any) | (!php_php_update_rc1 & php_php_update_any))
+        php_php_version_3__0__6 => php_php_update_any
+        php_php_version_1__5 => php_php_update_any
+        php_php_version_5__1__2 => ((php_php_update_rc2 & !php_php_update_rc1 & !php_php_update_any) | (!php_php_update_rc2 & php_php_update_rc1 & !php_php_update_any) | (!php_php_update_rc2 & !php_php_update_rc1 & php_php_update_any))
+        php_php_version_5__0__1 => ((php_php_update_rc2 & !php_php_update_rc1 & !php_php_update_beta1 & !php_php_update_any) | (!php_php_update_rc2 & php_php_update_rc1 & !php_php_update_beta1 & !php_php_update_any) | (!php_php_update_rc2 & !php_php_update_rc1 & php_php_update_beta1 & !php_php_update_any) | (!php_php_update_rc2 & !php_php_update_rc1 & !php_php_update_beta1 & php_php_update_any))
+        php_php_version_5__2__14 => ((php_php_update_rc3 & !php_php_update_rc2 & !php_php_update_rc1 & !php_php_update_any) | (!php_php_update_rc3 & php_php_update_rc2 & !php_php_update_rc1 & !php_php_update_any) | (!php_php_update_rc3 & !php_php_update_rc2 & php_php_update_rc1 & !php_php_update_any) | (!php_php_update_rc3 & !php_php_update_rc2 & !php_php_update_rc1 & php_php_update_any))
+        php_php_version_4__0__0 => php_php_update_any
+        php_php_version_1__0__1 => php_php_update_any
+        php_php_version_5__5__0 => php_php_update_any
+        php_php_version_1__2__1 => php_php_update_any
+        php_php_version_4__1__1 => php_php_update_any
+        php_php_version_4__0__7 => ((php_php_update_rc3 & !php_php_update_rc2 & !php_php_update_rc1 & !php_php_update_any) | (!php_php_update_rc3 & php_php_update_rc2 & !php_php_update_rc1 & !php_php_update_any) | (!php_php_update_rc3 & !php_php_update_rc2 & php_php_update_rc1 & !php_php_update_any) | (!php_php_update_rc3 & !php_php_update_rc2 & !php_php_update_rc1 & php_php_update_any))
+        php_php_version_5__0__2 => ((php_php_update_rc1 & !php_php_update_any) | (!php_php_update_rc1 & php_php_update_any))
+        php_php_version_5__3__24 => ((php_php_update_rc1 & !php_php_update_any) | (!php_php_update_rc1 & php_php_update_any))
+        php_php_version_3__0__2 => php_php_update_any
+        php_php_version_0__2 => php_php_update_any
+        php_php_version_3__0__8 => php_php_update_any
+        php_php_version_5__4__3 => php_php_update_any
+        php_php_version_4__3__0 => ((php_php_update_rc3 & !php_php_update_rc2 & !php_php_update_rc4 & !php_php_update_rc1 & !php_php_update_pre2 & !php_php_update_pre1 & !php_php_update_any & !php_php_update_alpha2 & !php_php_update_alpha3 & !php_php_update_dev & !php_php_update_alpha1) | (!php_php_update_rc3 & php_php_update_rc2 & !php_php_update_rc4 & !php_php_update_rc1 & !php_php_update_pre2 & !php_php_update_pre1 & !php_php_update_any & !php_php_update_alpha2 & !php_php_update_alpha3 & !php_php_update_dev & !php_php_update_alpha1) | (!php_php_update_rc3 & !php_php_update_rc2 & php_php_update_rc4 & !php_php_update_rc1 & !php_php_update_pre2 & !php_php_update_pre1 & !php_php_update_any & !php_php_update_alpha2 & !php_php_update_alpha3 & !php_php_update_dev & !php_php_update_alpha1) | (!php_php_update_rc3 & !php_php_update_rc2 & !php_php_update_rc4 & php_php_update_rc1 & !php_php_update_pre2 & !php_php_update_pre1 & !php_php_update_any & !php_php_update_alpha2 & !php_php_update_alpha3 & !php_php_update_dev & !php_php_update_alpha1) | (!php_php_update_rc3 & !php_php_update_rc2 & !php_php_update_rc4 & !php_php_update_rc1 & php_php_update_pre2 & !php_php_update_pre1 & !php_php_update_any & !php_php_update_alpha2 & !php_php_update_alpha3 & !php_php_update_dev & !php_php_update_alpha1) | (!php_php_update_rc3 & !php_php_update_rc2 & !php_php_update_rc4 & !php_php_update_rc1 & !php_php_update_pre2 & php_php_update_pre1 & !php_php_update_any & !php_php_update_alpha2 & !php_php_update_alpha3 & !php_php_update_dev & !php_php_update_alpha1) | (!php_php_update_rc3 & !php_php_update_rc2 & !php_php_update_rc4 & !php_php_update_rc1 & !php_php_update_pre2 & !php_php_update_pre1 & php_php_update_any & !php_php_update_alpha2 & !php_php_update_alpha3 & !php_php_update_dev & !php_php_update_alpha1) | (!php_php_update_rc3 & !php_php_update_rc2 & !php_php_update_rc4 & !php_php_update_rc1 & !php_php_update_pre2 & !php_php_update_pre1 & !php_php_update_any & php_php_update_alpha2 & !php_php_update_alpha3 & !php_php_update_dev & !php_php_update_alpha1) | (!php_php_update_rc3 & !php_php_update_rc2 & !php_php_update_rc4 & !php_php_update_rc1 & !php_php_update_pre2 & !php_php_update_pre1 & !php_php_update_any & !php_php_update_alpha2 & php_php_update_alpha3 & !php_php_update_dev & !php_php_update_alpha1) | (!php_php_update_rc3 & !php_php_update_rc2 & !php_php_update_rc4 & !php_php_update_rc1 & !php_php_update_pre2 & !php_php_update_pre1 & !php_php_update_any & !php_php_update_alpha2 & !php_php_update_alpha3 & php_php_update_dev & !php_php_update_alpha1) | (!php_php_update_rc3 & !php_php_update_rc2 & !php_php_update_rc4 & !php_php_update_rc1 & !php_php_update_pre2 & !php_php_update_pre1 & !php_php_update_any & !php_php_update_alpha2 & !php_php_update_alpha3 & !php_php_update_dev & php_php_update_alpha1))
+        php_php_version_4__4__0 => ((php_php_update_rc2 & !php_php_update_rc1 & !php_php_update_any) | (!php_php_update_rc2 & php_php_update_rc1 & !php_php_update_any) | (!php_php_update_rc2 & !php_php_update_rc1 & php_php_update_any))
+        php_php_version_4__3__5 => ((php_php_update_rc3 & !php_php_update_rc2 & !php_php_update_rc4 & !php_php_update_rc1 & !php_php_update_any) | (!php_php_update_rc3 & php_php_update_rc2 & !php_php_update_rc4 & !php_php_update_rc1 & !php_php_update_any) | (!php_php_update_rc3 & !php_php_update_rc2 & php_php_update_rc4 & !php_php_update_rc1 & !php_php_update_any) | (!php_php_update_rc3 & !php_php_update_rc2 & !php_php_update_rc4 & php_php_update_rc1 & !php_php_update_any) | (!php_php_update_rc3 & !php_php_update_rc2 & !php_php_update_rc4 & !php_php_update_rc1 & php_php_update_any))
+        php_php_version_5__3__6 => ((php_php_update_rc3 & !php_php_update_rc2 & !php_php_update_rc1 & !php_php_update_any) | (!php_php_update_rc3 & php_php_update_rc2 & !php_php_update_rc1 & !php_php_update_any) | (!php_php_update_rc3 & !php_php_update_rc2 & php_php_update_rc1 & !php_php_update_any) | (!php_php_update_rc3 & !php_php_update_rc2 & !php_php_update_rc1 & php_php_update_any))
+        php_php_version_4__0__1 => ((php_php_update_rc & !php_php_update_rc2 & !php_php_update_any) | (!php_php_update_rc & php_php_update_rc2 & !php_php_update_any) | (!php_php_update_rc & !php_php_update_rc2 & php_php_update_any))
+        php_php_version_4__0__4 => ((php_php_update_rc3 & !php_php_update_rc2 & !php_php_update_rc4 & !php_php_update_rc1 & !php_php_update_rc6 & !php_php_update_any & !php_php_update_rc5) | (!php_php_update_rc3 & php_php_update_rc2 & !php_php_update_rc4 & !php_php_update_rc1 & !php_php_update_rc6 & !php_php_update_any & !php_php_update_rc5) | (!php_php_update_rc3 & !php_php_update_rc2 & php_php_update_rc4 & !php_php_update_rc1 & !php_php_update_rc6 & !php_php_update_any & !php_php_update_rc5) | (!php_php_update_rc3 & !php_php_update_rc2 & !php_php_update_rc4 & php_php_update_rc1 & !php_php_update_rc6 & !php_php_update_any & !php_php_update_rc5) | (!php_php_update_rc3 & !php_php_update_rc2 & !php_php_update_rc4 & !php_php_update_rc1 & php_php_update_rc6 & !php_php_update_any & !php_php_update_rc5) | (!php_php_update_rc3 & !php_php_update_rc2 & !php_php_update_rc4 & !php_php_update_rc1 & !php_php_update_rc6 & php_php_update_any & !php_php_update_rc5) | (!php_php_update_rc3 & !php_php_update_rc2 & !php_php_update_rc4 & !php_php_update_rc1 & !php_php_update_rc6 & !php_php_update_any & php_php_update_rc5))
+        php_php_version_5__3__8 => php_php_update_any
+        php_php_version_5__2__6 => ((php_php_update_rc3 & !php_php_update_rc2 & !php_php_update_rc4 & !php_php_update_rc1 & !php_php_update_any & !php_php_update_rc5) | (!php_php_update_rc3 & php_php_update_rc2 & !php_php_update_rc4 & !php_php_update_rc1 & !php_php_update_any & !php_php_update_rc5) | (!php_php_update_rc3 & !php_php_update_rc2 & php_php_update_rc4 & !php_php_update_rc1 & !php_php_update_any & !php_php_update_rc5) | (!php_php_update_rc3 & !php_php_update_rc2 & !php_php_update_rc4 & php_php_update_rc1 & !php_php_update_any & !php_php_update_rc5) | (!php_php_update_rc3 & !php_php_update_rc2 & !php_php_update_rc4 & !php_php_update_rc1 & php_php_update_any & !php_php_update_rc5) | (!php_php_update_rc3 & !php_php_update_rc2 & !php_php_update_rc4 & !php_php_update_rc1 & !php_php_update_any & php_php_update_rc5))
+        php_php_version_5__2__15 => ((php_php_update_rc2 & !php_php_update_rc1 & !php_php_update_any) | (!php_php_update_rc2 & php_php_update_rc1 & !php_php_update_any) | (!php_php_update_rc2 & !php_php_update_rc1 & php_php_update_any))
+        php_php_version_3__0__7 => php_php_update_any
+        php_php_version_5__3__9 => ((php_php_update_rc3 & !php_php_update_rc2 & !php_php_update_rc4 & !php_php_update_rc1 & !php_php_update_any) | (!php_php_update_rc3 & php_php_update_rc2 & !php_php_update_rc4 & !php_php_update_rc1 & !php_php_update_any) | (!php_php_update_rc3 & !php_php_update_rc2 & php_php_update_rc4 & !php_php_update_rc1 & !php_php_update_any) | (!php_php_update_rc3 & !php_php_update_rc2 & !php_php_update_rc4 & php_php_update_rc1 & !php_php_update_any) | (!php_php_update_rc3 & !php_php_update_rc2 & !php_php_update_rc4 & !php_php_update_rc1 & php_php_update_any))
+        php_php_version_0__9__0 => php_php_update_any
+        php_php_version_1__2__3 => php_php_update_any
+        php_php_version_4__4__5 => ((php_php_update_rc2 & !php_php_update_rc1 & !php_php_update_any) | (!php_php_update_rc2 & php_php_update_rc1 & !php_php_update_any) | (!php_php_update_rc2 & !php_php_update_rc1 & php_php_update_any))
+        php_php_version_5__4__2 => php_php_update_any
+        php_php_version_5__3__23 => ((php_php_update_rc1 & !php_php_update_any) | (!php_php_update_rc1 & php_php_update_any))
+        php_php_version_0__10 => php_php_update_any
+        php_php_version_0__7 => php_php_update_any
+        php_php_version_5__4__15 => ((php_php_update_rc1 & !php_php_update_any) | (!php_php_update_rc1 & php_php_update_any))
+        php_php_version_5__4__6 => ((php_php_update_rc1 & !php_php_update_any) | (!php_php_update_rc1 & php_php_update_any))
+        php_php_version_5__3__28 => php_php_update_any
+        php_php_version_5__4__16 => ((php_php_update_rc1 & !php_php_update_any) | (!php_php_update_rc1 & php_php_update_any))
+        php_php_version_1__3__1 => php_php_update_any
+        php_php_version_2__0__2 => php_php_update_any
+        php_php_version_4__0 => ((php_php_update_rc2 & !php_php_update_rc1 & !php_php_update_beta__4__patch1 & !php_php_update_beta1 & !php_php_update_beta4 & !php_php_update_any & !php_php_update_beta3 & !php_php_update_beta2) | (!php_php_update_rc2 & php_php_update_rc1 & !php_php_update_beta__4__patch1 & !php_php_update_beta1 & !php_php_update_beta4 & !php_php_update_any & !php_php_update_beta3 & !php_php_update_beta2) | (!php_php_update_rc2 & !php_php_update_rc1 & php_php_update_beta__4__patch1 & !php_php_update_beta1 & !php_php_update_beta4 & !php_php_update_any & !php_php_update_beta3 & !php_php_update_beta2) | (!php_php_update_rc2 & !php_php_update_rc1 & !php_php_update_beta__4__patch1 & php_php_update_beta1 & !php_php_update_beta4 & !php_php_update_any & !php_php_update_beta3 & !php_php_update_beta2) | (!php_php_update_rc2 & !php_php_update_rc1 & !php_php_update_beta__4__patch1 & !php_php_update_beta1 & php_php_update_beta4 & !php_php_update_any & !php_php_update_beta3 & !php_php_update_beta2) | (!php_php_update_rc2 & !php_php_update_rc1 & !php_php_update_beta__4__patch1 & !php_php_update_beta1 & !php_php_update_beta4 & php_php_update_any & !php_php_update_beta3 & !php_php_update_beta2) | (!php_php_update_rc2 & !php_php_update_rc1 & !php_php_update_beta__4__patch1 & !php_php_update_beta1 & !php_php_update_beta4 & !php_php_update_any & php_php_update_beta3 & !php_php_update_beta2) | (!php_php_update_rc2 & !php_php_update_rc1 & !php_php_update_beta__4__patch1 & !php_php_update_beta1 & !php_php_update_beta4 & !php_php_update_any & !php_php_update_beta3 & php_php_update_beta2))
+        php_php_version_1__1__1 => php_php_update_any
+        php_php_version_4__1__2 => php_php_update_any
+        php_php_version_4__2__0 => ((php_php_update_rc3 & !php_php_update_rc2 & !php_php_update_rc4 & !php_php_update_rc1 & !php_php_update_any) | (!php_php_update_rc3 & php_php_update_rc2 & !php_php_update_rc4 & !php_php_update_rc1 & !php_php_update_any) | (!php_php_update_rc3 & !php_php_update_rc2 & php_php_update_rc4 & !php_php_update_rc1 & !php_php_update_any) | (!php_php_update_rc3 & !php_php_update_rc2 & !php_php_update_rc4 & php_php_update_rc1 & !php_php_update_any) | (!php_php_update_rc3 & !php_php_update_rc2 & !php_php_update_rc4 & !php_php_update_rc1 & php_php_update_any))
+        php_php_version_4__3__11 => ((php_php_update_rc2 & !php_php_update_rc1 & !php_php_update_any) | (!php_php_update_rc2 & php_php_update_rc1 & !php_php_update_any) | (!php_php_update_rc2 & !php_php_update_rc1 & php_php_update_any))
+        php_php_version_1__2 => php_php_update_any
+        php_php_version_3__0__4 => php_php_update_any
+        php_php_version_5__3__0 => ((php_php_update_rc3 & !php_php_update_rc2 & !php_php_update_rc4 & !php_php_update_rc1 & !php_php_update_beta1 & !php_php_update_any & !php_php_update_alpha2 & !php_php_update_alpha3 & !php_php_update_alpha1) | (!php_php_update_rc3 & php_php_update_rc2 & !php_php_update_rc4 & !php_php_update_rc1 & !php_php_update_beta1 & !php_php_update_any & !php_php_update_alpha2 & !php_php_update_alpha3 & !php_php_update_alpha1) | (!php_php_update_rc3 & !php_php_update_rc2 & php_php_update_rc4 & !php_php_update_rc1 & !php_php_update_beta1 & !php_php_update_any & !php_php_update_alpha2 & !php_php_update_alpha3 & !php_php_update_alpha1) | (!php_php_update_rc3 & !php_php_update_rc2 & !php_php_update_rc4 & php_php_update_rc1 & !php_php_update_beta1 & !php_php_update_any & !php_php_update_alpha2 & !php_php_update_alpha3 & !php_php_update_alpha1) | (!php_php_update_rc3 & !php_php_update_rc2 & !php_php_update_rc4 & !php_php_update_rc1 & php_php_update_beta1 & !php_php_update_any & !php_php_update_alpha2 & !php_php_update_alpha3 & !php_php_update_alpha1) | (!php_php_update_rc3 & !php_php_update_rc2 & !php_php_update_rc4 & !php_php_update_rc1 & !php_php_update_beta1 & php_php_update_any & !php_php_update_alpha2 & !php_php_update_alpha3 & !php_php_update_alpha1) | (!php_php_update_rc3 & !php_php_update_rc2 & !php_php_update_rc4 & !php_php_update_rc1 & !php_php_update_beta1 & !php_php_update_any & php_php_update_alpha2 & !php_php_update_alpha3 & !php_php_update_alpha1) | (!php_php_update_rc3 & !php_php_update_rc2 & !php_php_update_rc4 & !php_php_update_rc1 & !php_php_update_beta1 & !php_php_update_any & !php_php_update_alpha2 & php_php_update_alpha3 & !php_php_update_alpha1) | (!php_php_update_rc3 & !php_php_update_rc2 & !php_php_update_rc4 & !php_php_update_rc1 & !php_php_update_beta1 & !php_php_update_any & !php_php_update_alpha2 & !php_php_update_alpha3 & php_php_update_alpha1))
+        php_php_version_3__0__12 => php_php_update_any
+        php_php_version_0__5__2 => php_php_update_any
+        php_php_version_3__0__9 => php_php_update_any
+        php_php_version_4__0__3 => ((php_php_update_rc2 & !php_php_update_rc1 & !php_php_update_any) | (!php_php_update_rc2 & php_php_update_rc1 & !php_php_update_any) | (!php_php_update_rc2 & !php_php_update_rc1 & php_php_update_any))
+        php_php_version_4__4__6 => ((php_php_update_rc1 & !php_php_update_any) | (!php_php_update_rc1 & php_php_update_any))
+        php_php_version_5__4__10 => ((php_php_update_rc1 & !php_php_update_any) | (!php_php_update_rc1 & php_php_update_any))
+        php_php_version_1__2__0 => php_php_update_any
+        php_php_version_4__2__2 => php_php_update_any
+        php_php_version_5__1__6 => php_php_update_any
+        php_php_version_0__2__1 => php_php_update_any
+        php_php_version_0__4 => php_php_update_any
+        php_php_version_4__3__7 => ((php_php_update_rc1 & !php_php_update_any) | (!php_php_update_rc1 & php_php_update_any))
+        php_php_version_2__0__0 => ((php_php_update_rc1 & !php_php_update_beta1 & !php_php_update_any & !php_php_update_alpha2 & !php_php_update_alpha1) | (!php_php_update_rc1 & php_php_update_beta1 & !php_php_update_any & !php_php_update_alpha2 & !php_php_update_alpha1) | (!php_php_update_rc1 & !php_php_update_beta1 & php_php_update_any & !php_php_update_alpha2 & !php_php_update_alpha1) | (!php_php_update_rc1 & !php_php_update_beta1 & !php_php_update_any & php_php_update_alpha2 & !php_php_update_alpha1) | (!php_php_update_rc1 & !php_php_update_beta1 & !php_php_update_any & !php_php_update_alpha2 & php_php_update_alpha1))
+        php_php_version_5__4__12 => ((php_php_update_rc2 & !php_php_update_rc1 & !php_php_update_any) | (!php_php_update_rc2 & php_php_update_rc1 & !php_php_update_any) | (!php_php_update_rc2 & !php_php_update_rc1 & php_php_update_any))
+        php_php_version_5__2__8 => php_php_update_any
+        php_php_version_0__11 => php_php_update_any
+        php_php_version_3__0__11 => php_php_update_any
+        php_php_version_4__4__3 => ((php_php_update_rc2 & !php_php_update_rc1 & !php_php_update_any) | (!php_php_update_rc2 & php_php_update_rc1 & !php_php_update_any) | (!php_php_update_rc2 & !php_php_update_rc1 & php_php_update_any))
+        php_php_version_5__3__16 => php_php_update_any
+        php_php_version_4__4__4 => ((php_php_update_rc1 & !php_php_update_any) | (!php_php_update_rc1 & php_php_update_any))

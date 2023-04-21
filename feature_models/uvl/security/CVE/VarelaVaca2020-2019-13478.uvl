@@ -1,0 +1,405 @@
+features
+        CVE_2019_13478
+                mandatory
+                        types
+                                mandatory
+                                        application
+                        sources
+                                mandatory
+                                        nvd
+                        exploits
+                                optional
+                                        direct
+                                        indirect
+                        yoast
+                                mandatory
+                                        yoast_yoast__seo
+                                                mandatory
+                                                        yoast_yoast__seo_version
+                                                                alternative
+                                                                        yoast_yoast__seo_version_1__5__2__2
+                                                                        yoast_yoast__seo_version_5__1
+                                                                        yoast_yoast__seo_version_3__9
+                                                                        yoast_yoast__seo_version_8__4
+                                                                        yoast_yoast__seo_version_1__6__3
+                                                                        yoast_yoast__seo_version_1__6__1
+                                                                        yoast_yoast__seo_version_2__3__1
+                                                                        yoast_yoast__seo_version_11__1__1
+                                                                        yoast_yoast__seo_version_7__6
+                                                                        yoast_yoast__seo_version_2__0
+                                                                        yoast_yoast__seo_version_9__5
+                                                                        yoast_yoast__seo_version_9__4
+                                                                        yoast_yoast__seo_version_1__4__24
+                                                                        yoast_yoast__seo_version_11__2__1
+                                                                        yoast_yoast__seo_version_8__1
+                                                                        yoast_yoast__seo_version_9__2
+                                                                        yoast_yoast__seo_version_5__4__2
+                                                                        yoast_yoast__seo_version_3__6
+                                                                        yoast_yoast__seo_version_1__5__2
+                                                                        yoast_yoast__seo_version_2__2__1
+                                                                        yoast_yoast__seo_version_11__3
+                                                                        yoast_yoast__seo_version_2__2
+                                                                        yoast_yoast__seo_version_1__5__2__7
+                                                                        yoast_yoast__seo_version_6__0
+                                                                        yoast_yoast__seo_version_3__0__7
+                                                                        yoast_yoast__seo_version_5__7
+                                                                        yoast_yoast__seo_version_1__5__2__6
+                                                                        yoast_yoast__seo_version_10__1__2
+                                                                        yoast_yoast__seo_version_1__4__22
+                                                                        yoast_yoast__seo_version_7__5__1
+                                                                        yoast_yoast__seo_version_3__0__2
+                                                                        yoast_yoast__seo_version_7__4__1
+                                                                        yoast_yoast__seo_version_9__0__2
+                                                                        yoast_yoast__seo_version_1__5__4__2
+                                                                        yoast_yoast__seo_version_3__1__1
+                                                                        yoast_yoast__seo_version_7__7__2
+                                                                        yoast_yoast__seo_version_3__0__5
+                                                                        yoast_yoast__seo_version_2__0__1
+                                                                        yoast_yoast__seo_version_9__0__1
+                                                                        yoast_yoast__seo_version_9__1
+                                                                        yoast_yoast__seo_version_11__6
+                                                                        yoast_yoast__seo_version_4__7
+                                                                        yoast_yoast__seo_version_5__5__1
+                                                                        yoast_yoast__seo_version_3__2__4
+                                                                        yoast_yoast__seo_version_3__5
+                                                                        yoast_yoast__seo_version_1__7
+                                                                        yoast_yoast__seo_version_3__0__6
+                                                                        yoast_yoast__seo_version_3__2__3
+                                                                        yoast_yoast__seo_version_5__6
+                                                                        yoast_yoast__seo_version_1__8
+                                                                        yoast_yoast__seo_version_1__5__2__3
+                                                                        yoast_yoast__seo_version_5__3__2
+                                                                        yoast_yoast__seo_version_10__1
+                                                                        yoast_yoast__seo_version_8__2__1
+                                                                        yoast_yoast__seo_version_11__1
+                                                                        yoast_yoast__seo_version_5__9
+                                                                        yoast_yoast__seo_version_6__3__1
+                                                                        yoast_yoast__seo_version_4__5
+                                                                        yoast_yoast__seo_version_2__3__3
+                                                                        yoast_yoast__seo_version_3__1
+                                                                        yoast_yoast__seo_version_5__2
+                                                                        yoast_yoast__seo_version_3__3__1
+                                                                        yoast_yoast__seo_version_5__3
+                                                                        yoast_yoast__seo_version_3__4__1
+                                                                        yoast_yoast__seo_version_9__7
+                                                                        yoast_yoast__seo_version_7__8
+                                                                        yoast_yoast__seo_version_7__6__1
+                                                                        yoast_yoast__seo_version_10__0__1
+                                                                        yoast_yoast__seo_version_3__3__0
+                                                                        yoast_yoast__seo_version_1__5__2__4
+                                                                        yoast_yoast__seo_version_9__6
+                                                                        yoast_yoast__seo_version_7__3
+                                                                        yoast_yoast__seo_version_3__0__1
+                                                                        yoast_yoast__seo_version_9__3
+                                                                        yoast_yoast__seo_version_1__5__4__1
+                                                                        yoast_yoast__seo_version_10__1__3
+                                                                        yoast_yoast__seo_version_7__0__1
+                                                                        yoast_yoast__seo_version_5__3__1
+                                                                        yoast_yoast__seo_version_3__3__3
+                                                                        yoast_yoast__seo_version_9__0__3
+                                                                        yoast_yoast__seo_version_3__0__3
+                                                                        yoast_yoast__seo_version_7__0
+                                                                        yoast_yoast__seo_version_7__1
+                                                                        yoast_yoast__seo_version_8__0
+                                                                        yoast_yoast__seo_version_11__5
+                                                                        yoast_yoast__seo_version_3__2
+                                                                        yoast_yoast__seo_version_3__3__2
+                                                                        yoast_yoast__seo_version_11__0
+                                                                        yoast_yoast__seo_version_5__9__2
+                                                                        yoast_yoast__seo_version_2__3__4
+                                                                        yoast_yoast__seo_version_1__5__3__2
+                                                                        yoast_yoast__seo_version_5__5
+                                                                        yoast_yoast__seo_version_3__6__1
+                                                                        yoast_yoast__seo_version_1__4__20
+                                                                        yoast_yoast__seo_version_3__0
+                                                                        yoast_yoast__seo_version_6__1
+                                                                        yoast_yoast__seo_version_7__4__2
+                                                                        yoast_yoast__seo_version_3__4
+                                                                        yoast_yoast__seo_version_10__0
+                                                                        yoast_yoast__seo_version_3__4__2
+                                                                        yoast_yoast__seo_version_7__7__1
+                                                                        yoast_yoast__seo_version_4__1
+                                                                        yoast_yoast__seo_version_2__3__5
+                                                                        yoast_yoast__seo_version_7__2
+                                                                        yoast_yoast__seo_version_2__3
+                                                                        yoast_yoast__seo_version_4__2
+                                                                        yoast_yoast__seo_version_7__0__3
+                                                                        yoast_yoast__seo_version_4__7__1
+                                                                        yoast_yoast__seo_version_1__5__5__1
+                                                                        yoast_yoast__seo_version_1__5__4
+                                                                        yoast_yoast__seo_version_1__5__3__1
+                                                                        yoast_yoast__seo_version_8__1__1
+                                                                        yoast_yoast__seo_version_7__9
+                                                                        yoast_yoast__seo_version_1__5__2__1
+                                                                        yoast_yoast__seo_version_1__5__2__8
+                                                                        yoast_yoast__seo_version_5__6__1
+                                                                        yoast_yoast__seo_version_1__5__0
+                                                                        yoast_yoast__seo_version_10__1__1
+                                                                        yoast_yoast__seo_version_3__0__4
+                                                                        yoast_yoast__seo_version_7__7__3
+                                                                        yoast_yoast__seo_version_8__2
+                                                                        yoast_yoast__seo_version_4__6
+                                                                        yoast_yoast__seo_version_5__4__1
+                                                                        yoast_yoast__seo_version_7__5
+                                                                        yoast_yoast__seo_version_9__8
+                                                                        yoast_yoast__seo_version_1__4__15
+                                                                        yoast_yoast__seo_version_1__5__1
+                                                                        yoast_yoast__seo_version_4__9
+                                                                        yoast_yoast__seo_version_11__2
+                                                                        yoast_yoast__seo_version_1__6__2
+                                                                        yoast_yoast__seo_version_8__3
+                                                                        yoast_yoast__seo_version_6__2
+                                                                        yoast_yoast__seo_version_3__3__4
+                                                                        yoast_yoast__seo_version_1__4__25
+                                                                        yoast_yoast__seo_version_5__7__1
+                                                                        yoast_yoast__seo_version_7__5__3
+                                                                        yoast_yoast__seo_version_1__7__1
+                                                                        yoast_yoast__seo_version_5__3__3
+                                                                        yoast_yoast__seo_version_5__0
+                                                                        yoast_yoast__seo_version_2__3__2
+                                                                        yoast_yoast__seo_version_4__2__1
+                                                                        yoast_yoast__seo_version_9__0
+                                                                        yoast_yoast__seo_version_2__1
+                                                                        yoast_yoast__seo_version_4__0__2
+                                                                        yoast_yoast__seo_version_5__8
+                                                                        yoast_yoast__seo_version_8__1__2
+                                                                        yoast_yoast__seo_version_7__4
+                                                                        yoast_yoast__seo_version_3__2__2
+                                                                        yoast_yoast__seo_version_4__8
+                                                                        yoast_yoast__seo_version_1__5__2__5
+                                                                        yoast_yoast__seo_version_1__4__18
+                                                                        yoast_yoast__seo_version_3__2__5
+                                                                        yoast_yoast__seo_version_1__5__3
+                                                                        yoast_yoast__seo_version_1__5__6
+                                                                        yoast_yoast__seo_version_7__0__2
+                                                                        yoast_yoast__seo_version_5__4__0
+                                                                        yoast_yoast__seo_version_3__1__2
+                                                                        yoast_yoast__seo_version_3__7__1
+                                                                        yoast_yoast__seo_version_4__0
+                                                                        yoast_yoast__seo_version_1__4__23
+                                                                        yoast_yoast__seo_version_11__4
+                                                                        yoast_yoast__seo_version_6__1__1
+                                                                        yoast_yoast__seo_version_1__5__5__2
+                                                                        yoast_yoast__seo_version_6__3
+                                                                        yoast_yoast__seo_version_1__6
+                                                                        yoast_yoast__seo_version_9__2__1
+                                                                        yoast_yoast__seo_version_2__1__1
+                                                                        yoast_yoast__seo_version_1__5__3__3
+                                                                        yoast_yoast__seo_version_3__7__0
+                                                                        yoast_yoast__seo_version_3__2__1
+                                                                        yoast_yoast__seo_version_9__1__1
+                                                                        yoast_yoast__seo_version_5__9__3
+                                                                        yoast_yoast__seo_version_5__0__1
+                                                                        yoast_yoast__seo_version_1__4__21
+                                                                        yoast_yoast__seo_version_7__7
+                                                                        yoast_yoast__seo_version_1__5__5__3
+                                                                        yoast_yoast__seo_version_4__3
+                                                                        yoast_yoast__seo_version_4__4
+                                                                        yoast_yoast__seo_version_5__9__1
+                                                                        yoast_yoast__seo_version_5__0__2
+                                                                        yoast_yoast__seo_version_7__9__1
+                                                                        yoast_yoast__seo_version_3__8
+                                                                        yoast_yoast__seo_version_1__5__5
+                                                        yoast_yoast__seo_update
+                                                                alternative
+                                                                        yoast_yoast__seo_update_beta1
+                                                                        yoast_yoast__seo_update_rc2
+                                                                        yoast_yoast__seo_update_beta
+                                                                        yoast_yoast__seo_update_beta2
+                                                                        yoast_yoast__seo_update_rc4
+                                                                        yoast_yoast__seo_update_beta4
+                                                                        yoast_yoast__seo_update_rc8
+                                                                        yoast_yoast__seo_update_rc1
+                                                                        yoast_yoast__seo_update_rc3
+                                                                        yoast_yoast__seo_update_rc5
+                                                                        yoast_yoast__seo_update_any
+                                                                        yoast_yoast__seo_update_beta3
+                                                        yoast_yoast__seo_target__sw
+                                                                mandatory
+                                                                        yoast_yoast__seo_target__sw_wordpress
+
+constraints
+        yoast_yoast__seo => application
+        yoast_yoast__seo_version_1__5__2__2 => yoast_yoast__seo_update_any
+        yoast_yoast__seo_version_5__1 => yoast_yoast__seo_update_any
+        yoast_yoast__seo_version_3__9 => yoast_yoast__seo_update_any
+        yoast_yoast__seo_version_8__4 => ((yoast_yoast__seo_update_rc2 & !yoast_yoast__seo_update_rc1 & !yoast_yoast__seo_update_any) | (!yoast_yoast__seo_update_rc2 & yoast_yoast__seo_update_rc1 & !yoast_yoast__seo_update_any) | (!yoast_yoast__seo_update_rc2 & !yoast_yoast__seo_update_rc1 & yoast_yoast__seo_update_any))
+        yoast_yoast__seo_version_1__6__3 => yoast_yoast__seo_update_any
+        yoast_yoast__seo_version_1__6__1 => yoast_yoast__seo_update_any
+        yoast_yoast__seo_version_2__3__1 => yoast_yoast__seo_update_any
+        yoast_yoast__seo_version_11__1__1 => ((yoast_yoast__seo_update_rc1 & !yoast_yoast__seo_update_any) | (!yoast_yoast__seo_update_rc1 & yoast_yoast__seo_update_any))
+        yoast_yoast__seo_version_7__6 => yoast_yoast__seo_update_any
+        yoast_yoast__seo_version_2__0 => yoast_yoast__seo_update_any
+        yoast_yoast__seo_version_9__5 => ((yoast_yoast__seo_update_beta1 & !yoast_yoast__seo_update_rc2 & !yoast_yoast__seo_update_beta2 & !yoast_yoast__seo_update_rc1 & !yoast_yoast__seo_update_rc3 & !yoast_yoast__seo_update_any) | (!yoast_yoast__seo_update_beta1 & yoast_yoast__seo_update_rc2 & !yoast_yoast__seo_update_beta2 & !yoast_yoast__seo_update_rc1 & !yoast_yoast__seo_update_rc3 & !yoast_yoast__seo_update_any) | (!yoast_yoast__seo_update_beta1 & !yoast_yoast__seo_update_rc2 & yoast_yoast__seo_update_beta2 & !yoast_yoast__seo_update_rc1 & !yoast_yoast__seo_update_rc3 & !yoast_yoast__seo_update_any) | (!yoast_yoast__seo_update_beta1 & !yoast_yoast__seo_update_rc2 & !yoast_yoast__seo_update_beta2 & yoast_yoast__seo_update_rc1 & !yoast_yoast__seo_update_rc3 & !yoast_yoast__seo_update_any) | (!yoast_yoast__seo_update_beta1 & !yoast_yoast__seo_update_rc2 & !yoast_yoast__seo_update_beta2 & !yoast_yoast__seo_update_rc1 & yoast_yoast__seo_update_rc3 & !yoast_yoast__seo_update_any) | (!yoast_yoast__seo_update_beta1 & !yoast_yoast__seo_update_rc2 & !yoast_yoast__seo_update_beta2 & !yoast_yoast__seo_update_rc1 & !yoast_yoast__seo_update_rc3 & yoast_yoast__seo_update_any))
+        yoast_yoast__seo_version_9__4 => ((yoast_yoast__seo_update_rc4 & !yoast_yoast__seo_update_rc1 & !yoast_yoast__seo_update_rc3 & !yoast_yoast__seo_update_rc5 & !yoast_yoast__seo_update_any) | (!yoast_yoast__seo_update_rc4 & yoast_yoast__seo_update_rc1 & !yoast_yoast__seo_update_rc3 & !yoast_yoast__seo_update_rc5 & !yoast_yoast__seo_update_any) | (!yoast_yoast__seo_update_rc4 & !yoast_yoast__seo_update_rc1 & yoast_yoast__seo_update_rc3 & !yoast_yoast__seo_update_rc5 & !yoast_yoast__seo_update_any) | (!yoast_yoast__seo_update_rc4 & !yoast_yoast__seo_update_rc1 & !yoast_yoast__seo_update_rc3 & yoast_yoast__seo_update_rc5 & !yoast_yoast__seo_update_any) | (!yoast_yoast__seo_update_rc4 & !yoast_yoast__seo_update_rc1 & !yoast_yoast__seo_update_rc3 & !yoast_yoast__seo_update_rc5 & yoast_yoast__seo_update_any))
+        yoast_yoast__seo_version_1__4__24 => yoast_yoast__seo_update_any
+        yoast_yoast__seo_version_11__2__1 => yoast_yoast__seo_update_any
+        yoast_yoast__seo_version_8__1 => yoast_yoast__seo_update_any
+        yoast_yoast__seo_version_9__2 => ((yoast_yoast__seo_update_rc2 & !yoast_yoast__seo_update_rc4 & !yoast_yoast__seo_update_rc1 & !yoast_yoast__seo_update_rc3 & !yoast_yoast__seo_update_any) | (!yoast_yoast__seo_update_rc2 & yoast_yoast__seo_update_rc4 & !yoast_yoast__seo_update_rc1 & !yoast_yoast__seo_update_rc3 & !yoast_yoast__seo_update_any) | (!yoast_yoast__seo_update_rc2 & !yoast_yoast__seo_update_rc4 & yoast_yoast__seo_update_rc1 & !yoast_yoast__seo_update_rc3 & !yoast_yoast__seo_update_any) | (!yoast_yoast__seo_update_rc2 & !yoast_yoast__seo_update_rc4 & !yoast_yoast__seo_update_rc1 & yoast_yoast__seo_update_rc3 & !yoast_yoast__seo_update_any) | (!yoast_yoast__seo_update_rc2 & !yoast_yoast__seo_update_rc4 & !yoast_yoast__seo_update_rc1 & !yoast_yoast__seo_update_rc3 & yoast_yoast__seo_update_any))
+        yoast_yoast__seo_version_5__4__2 => yoast_yoast__seo_update_any
+        yoast_yoast__seo_version_3__6 => yoast_yoast__seo_update_any
+        yoast_yoast__seo_version_1__5__2 => yoast_yoast__seo_update_any
+        yoast_yoast__seo_version_2__2__1 => yoast_yoast__seo_update_any
+        yoast_yoast__seo_version_11__3 => ((yoast_yoast__seo_update_rc2 & !yoast_yoast__seo_update_rc1 & !yoast_yoast__seo_update_rc3 & !yoast_yoast__seo_update_any) | (!yoast_yoast__seo_update_rc2 & yoast_yoast__seo_update_rc1 & !yoast_yoast__seo_update_rc3 & !yoast_yoast__seo_update_any) | (!yoast_yoast__seo_update_rc2 & !yoast_yoast__seo_update_rc1 & yoast_yoast__seo_update_rc3 & !yoast_yoast__seo_update_any) | (!yoast_yoast__seo_update_rc2 & !yoast_yoast__seo_update_rc1 & !yoast_yoast__seo_update_rc3 & yoast_yoast__seo_update_any))
+        yoast_yoast__seo_version_2__2 => yoast_yoast__seo_update_any
+        yoast_yoast__seo_version_1__5__2__7 => yoast_yoast__seo_update_any
+        yoast_yoast__seo_version_6__0 => yoast_yoast__seo_update_any
+        yoast_yoast__seo_version_3__0__7 => yoast_yoast__seo_update_any
+        yoast_yoast__seo_version_5__7 => yoast_yoast__seo_update_any
+        yoast_yoast__seo_version_1__5__2__6 => yoast_yoast__seo_update_any
+        yoast_yoast__seo_version_10__1__2 => yoast_yoast__seo_update_any
+        yoast_yoast__seo_version_1__4__22 => yoast_yoast__seo_update_any
+        yoast_yoast__seo_version_7__5__1 => yoast_yoast__seo_update_any
+        yoast_yoast__seo_version_3__0__2 => yoast_yoast__seo_update_any
+        yoast_yoast__seo_version_7__4__1 => yoast_yoast__seo_update_any
+        yoast_yoast__seo_version_9__0__2 => yoast_yoast__seo_update_any
+        yoast_yoast__seo_version_1__5__4__2 => yoast_yoast__seo_update_any
+        yoast_yoast__seo_version_3__1__1 => yoast_yoast__seo_update_any
+        yoast_yoast__seo_version_7__7__2 => yoast_yoast__seo_update_any
+        yoast_yoast__seo_version_3__0__5 => yoast_yoast__seo_update_any
+        yoast_yoast__seo_version_2__0__1 => yoast_yoast__seo_update_any
+        yoast_yoast__seo_version_9__0__1 => yoast_yoast__seo_update_any
+        yoast_yoast__seo_version_9__1 => ((yoast_yoast__seo_update_rc2 & !yoast_yoast__seo_update_rc4 & !yoast_yoast__seo_update_rc1 & !yoast_yoast__seo_update_rc3 & !yoast_yoast__seo_update_any) | (!yoast_yoast__seo_update_rc2 & yoast_yoast__seo_update_rc4 & !yoast_yoast__seo_update_rc1 & !yoast_yoast__seo_update_rc3 & !yoast_yoast__seo_update_any) | (!yoast_yoast__seo_update_rc2 & !yoast_yoast__seo_update_rc4 & yoast_yoast__seo_update_rc1 & !yoast_yoast__seo_update_rc3 & !yoast_yoast__seo_update_any) | (!yoast_yoast__seo_update_rc2 & !yoast_yoast__seo_update_rc4 & !yoast_yoast__seo_update_rc1 & yoast_yoast__seo_update_rc3 & !yoast_yoast__seo_update_any) | (!yoast_yoast__seo_update_rc2 & !yoast_yoast__seo_update_rc4 & !yoast_yoast__seo_update_rc1 & !yoast_yoast__seo_update_rc3 & yoast_yoast__seo_update_any))
+        yoast_yoast__seo_version_11__6 => ((yoast_yoast__seo_update_rc2 & !yoast_yoast__seo_update_rc4 & !yoast_yoast__seo_update_rc1 & !yoast_yoast__seo_update_rc3) | (!yoast_yoast__seo_update_rc2 & yoast_yoast__seo_update_rc4 & !yoast_yoast__seo_update_rc1 & !yoast_yoast__seo_update_rc3) | (!yoast_yoast__seo_update_rc2 & !yoast_yoast__seo_update_rc4 & yoast_yoast__seo_update_rc1 & !yoast_yoast__seo_update_rc3) | (!yoast_yoast__seo_update_rc2 & !yoast_yoast__seo_update_rc4 & !yoast_yoast__seo_update_rc1 & yoast_yoast__seo_update_rc3))
+        yoast_yoast__seo_version_4__7 => yoast_yoast__seo_update_any
+        yoast_yoast__seo_version_5__5__1 => yoast_yoast__seo_update_any
+        yoast_yoast__seo_version_3__2__4 => yoast_yoast__seo_update_any
+        yoast_yoast__seo_version_3__5 => yoast_yoast__seo_update_any
+        yoast_yoast__seo_version_1__7 => yoast_yoast__seo_update_any
+        yoast_yoast__seo_version_3__0__6 => yoast_yoast__seo_update_any
+        yoast_yoast__seo_version_3__2__3 => yoast_yoast__seo_update_any
+        yoast_yoast__seo_version_5__6 => yoast_yoast__seo_update_any
+        yoast_yoast__seo_version_1__8 => yoast_yoast__seo_update_beta
+        yoast_yoast__seo_version_1__5__2__3 => yoast_yoast__seo_update_any
+        yoast_yoast__seo_version_5__3__2 => yoast_yoast__seo_update_any
+        yoast_yoast__seo_version_10__1 => ((yoast_yoast__seo_update_rc2 & !yoast_yoast__seo_update_rc4 & !yoast_yoast__seo_update_rc1 & !yoast_yoast__seo_update_rc3 & !yoast_yoast__seo_update_rc5 & !yoast_yoast__seo_update_any) | (!yoast_yoast__seo_update_rc2 & yoast_yoast__seo_update_rc4 & !yoast_yoast__seo_update_rc1 & !yoast_yoast__seo_update_rc3 & !yoast_yoast__seo_update_rc5 & !yoast_yoast__seo_update_any) | (!yoast_yoast__seo_update_rc2 & !yoast_yoast__seo_update_rc4 & yoast_yoast__seo_update_rc1 & !yoast_yoast__seo_update_rc3 & !yoast_yoast__seo_update_rc5 & !yoast_yoast__seo_update_any) | (!yoast_yoast__seo_update_rc2 & !yoast_yoast__seo_update_rc4 & !yoast_yoast__seo_update_rc1 & yoast_yoast__seo_update_rc3 & !yoast_yoast__seo_update_rc5 & !yoast_yoast__seo_update_any) | (!yoast_yoast__seo_update_rc2 & !yoast_yoast__seo_update_rc4 & !yoast_yoast__seo_update_rc1 & !yoast_yoast__seo_update_rc3 & yoast_yoast__seo_update_rc5 & !yoast_yoast__seo_update_any) | (!yoast_yoast__seo_update_rc2 & !yoast_yoast__seo_update_rc4 & !yoast_yoast__seo_update_rc1 & !yoast_yoast__seo_update_rc3 & !yoast_yoast__seo_update_rc5 & yoast_yoast__seo_update_any))
+        yoast_yoast__seo_version_8__2__1 => yoast_yoast__seo_update_any
+        yoast_yoast__seo_version_11__1 => ((yoast_yoast__seo_update_rc8 & !yoast_yoast__seo_update_rc1 & !yoast_yoast__seo_update_rc3 & !yoast_yoast__seo_update_any) | (!yoast_yoast__seo_update_rc8 & yoast_yoast__seo_update_rc1 & !yoast_yoast__seo_update_rc3 & !yoast_yoast__seo_update_any) | (!yoast_yoast__seo_update_rc8 & !yoast_yoast__seo_update_rc1 & yoast_yoast__seo_update_rc3 & !yoast_yoast__seo_update_any) | (!yoast_yoast__seo_update_rc8 & !yoast_yoast__seo_update_rc1 & !yoast_yoast__seo_update_rc3 & yoast_yoast__seo_update_any))
+        yoast_yoast__seo_version_5__9 => yoast_yoast__seo_update_any
+        yoast_yoast__seo_version_6__3__1 => yoast_yoast__seo_update_any
+        yoast_yoast__seo_version_4__5 => yoast_yoast__seo_update_any
+        yoast_yoast__seo_version_2__3__3 => yoast_yoast__seo_update_any
+        yoast_yoast__seo_version_3__1 => yoast_yoast__seo_update_any
+        yoast_yoast__seo_version_5__2 => yoast_yoast__seo_update_any
+        yoast_yoast__seo_version_3__3__1 => yoast_yoast__seo_update_any
+        yoast_yoast__seo_version_5__3 => yoast_yoast__seo_update_any
+        yoast_yoast__seo_version_3__4__1 => yoast_yoast__seo_update_any
+        yoast_yoast__seo_version_9__7 => ((yoast_yoast__seo_update_beta1 & !yoast_yoast__seo_update_rc2 & !yoast_yoast__seo_update_beta2 & !yoast_yoast__seo_update_rc1 & !yoast_yoast__seo_update_rc3 & !yoast_yoast__seo_update_any) | (!yoast_yoast__seo_update_beta1 & yoast_yoast__seo_update_rc2 & !yoast_yoast__seo_update_beta2 & !yoast_yoast__seo_update_rc1 & !yoast_yoast__seo_update_rc3 & !yoast_yoast__seo_update_any) | (!yoast_yoast__seo_update_beta1 & !yoast_yoast__seo_update_rc2 & yoast_yoast__seo_update_beta2 & !yoast_yoast__seo_update_rc1 & !yoast_yoast__seo_update_rc3 & !yoast_yoast__seo_update_any) | (!yoast_yoast__seo_update_beta1 & !yoast_yoast__seo_update_rc2 & !yoast_yoast__seo_update_beta2 & yoast_yoast__seo_update_rc1 & !yoast_yoast__seo_update_rc3 & !yoast_yoast__seo_update_any) | (!yoast_yoast__seo_update_beta1 & !yoast_yoast__seo_update_rc2 & !yoast_yoast__seo_update_beta2 & !yoast_yoast__seo_update_rc1 & yoast_yoast__seo_update_rc3 & !yoast_yoast__seo_update_any) | (!yoast_yoast__seo_update_beta1 & !yoast_yoast__seo_update_rc2 & !yoast_yoast__seo_update_beta2 & !yoast_yoast__seo_update_rc1 & !yoast_yoast__seo_update_rc3 & yoast_yoast__seo_update_any))
+        yoast_yoast__seo_version_7__8 => yoast_yoast__seo_update_any
+        yoast_yoast__seo_version_7__6__1 => yoast_yoast__seo_update_any
+        yoast_yoast__seo_version_10__0__1 => yoast_yoast__seo_update_any
+        yoast_yoast__seo_version_3__3__0 => yoast_yoast__seo_update_any
+        yoast_yoast__seo_version_1__5__2__4 => yoast_yoast__seo_update_any
+        yoast_yoast__seo_version_9__6 => ((yoast_yoast__seo_update_beta1 & !yoast_yoast__seo_update_beta2 & !yoast_yoast__seo_update_beta4 & !yoast_yoast__seo_update_rc1 & !yoast_yoast__seo_update_any & !yoast_yoast__seo_update_beta3) | (!yoast_yoast__seo_update_beta1 & yoast_yoast__seo_update_beta2 & !yoast_yoast__seo_update_beta4 & !yoast_yoast__seo_update_rc1 & !yoast_yoast__seo_update_any & !yoast_yoast__seo_update_beta3) | (!yoast_yoast__seo_update_beta1 & !yoast_yoast__seo_update_beta2 & yoast_yoast__seo_update_beta4 & !yoast_yoast__seo_update_rc1 & !yoast_yoast__seo_update_any & !yoast_yoast__seo_update_beta3) | (!yoast_yoast__seo_update_beta1 & !yoast_yoast__seo_update_beta2 & !yoast_yoast__seo_update_beta4 & yoast_yoast__seo_update_rc1 & !yoast_yoast__seo_update_any & !yoast_yoast__seo_update_beta3) | (!yoast_yoast__seo_update_beta1 & !yoast_yoast__seo_update_beta2 & !yoast_yoast__seo_update_beta4 & !yoast_yoast__seo_update_rc1 & yoast_yoast__seo_update_any & !yoast_yoast__seo_update_beta3) | (!yoast_yoast__seo_update_beta1 & !yoast_yoast__seo_update_beta2 & !yoast_yoast__seo_update_beta4 & !yoast_yoast__seo_update_rc1 & !yoast_yoast__seo_update_any & yoast_yoast__seo_update_beta3))
+        yoast_yoast__seo_version_7__3 => yoast_yoast__seo_update_any
+        yoast_yoast__seo_version_3__0__1 => yoast_yoast__seo_update_any
+        yoast_yoast__seo_version_9__3 => ((yoast_yoast__seo_update_beta1 & !yoast_yoast__seo_update_rc2 & !yoast_yoast__seo_update_beta2 & !yoast_yoast__seo_update_rc1 & !yoast_yoast__seo_update_rc3 & !yoast_yoast__seo_update_any) | (!yoast_yoast__seo_update_beta1 & yoast_yoast__seo_update_rc2 & !yoast_yoast__seo_update_beta2 & !yoast_yoast__seo_update_rc1 & !yoast_yoast__seo_update_rc3 & !yoast_yoast__seo_update_any) | (!yoast_yoast__seo_update_beta1 & !yoast_yoast__seo_update_rc2 & yoast_yoast__seo_update_beta2 & !yoast_yoast__seo_update_rc1 & !yoast_yoast__seo_update_rc3 & !yoast_yoast__seo_update_any) | (!yoast_yoast__seo_update_beta1 & !yoast_yoast__seo_update_rc2 & !yoast_yoast__seo_update_beta2 & yoast_yoast__seo_update_rc1 & !yoast_yoast__seo_update_rc3 & !yoast_yoast__seo_update_any) | (!yoast_yoast__seo_update_beta1 & !yoast_yoast__seo_update_rc2 & !yoast_yoast__seo_update_beta2 & !yoast_yoast__seo_update_rc1 & yoast_yoast__seo_update_rc3 & !yoast_yoast__seo_update_any) | (!yoast_yoast__seo_update_beta1 & !yoast_yoast__seo_update_rc2 & !yoast_yoast__seo_update_beta2 & !yoast_yoast__seo_update_rc1 & !yoast_yoast__seo_update_rc3 & yoast_yoast__seo_update_any))
+        yoast_yoast__seo_version_1__5__4__1 => yoast_yoast__seo_update_any
+        yoast_yoast__seo_version_10__1__3 => yoast_yoast__seo_update_any
+        yoast_yoast__seo_version_7__0__1 => yoast_yoast__seo_update_any
+        yoast_yoast__seo_version_5__3__1 => yoast_yoast__seo_update_any
+        yoast_yoast__seo_version_3__3__3 => yoast_yoast__seo_update_any
+        yoast_yoast__seo_version_9__0__3 => yoast_yoast__seo_update_any
+        yoast_yoast__seo_version_3__0__3 => yoast_yoast__seo_update_any
+        yoast_yoast__seo_version_7__0 => yoast_yoast__seo_update_any
+        yoast_yoast__seo_version_7__1 => yoast_yoast__seo_update_any
+        yoast_yoast__seo_version_8__0 => yoast_yoast__seo_update_any
+        yoast_yoast__seo_version_11__5 => ((yoast_yoast__seo_update_rc1 & !yoast_yoast__seo_update_any) | (!yoast_yoast__seo_update_rc1 & yoast_yoast__seo_update_any))
+        yoast_yoast__seo_version_3__2 => yoast_yoast__seo_update_any
+        yoast_yoast__seo_version_3__3__2 => yoast_yoast__seo_update_any
+        yoast_yoast__seo_version_11__0 => ((yoast_yoast__seo_update_rc2 & !yoast_yoast__seo_update_rc4 & !yoast_yoast__seo_update_rc1 & !yoast_yoast__seo_update_rc3 & !yoast_yoast__seo_update_any) | (!yoast_yoast__seo_update_rc2 & yoast_yoast__seo_update_rc4 & !yoast_yoast__seo_update_rc1 & !yoast_yoast__seo_update_rc3 & !yoast_yoast__seo_update_any) | (!yoast_yoast__seo_update_rc2 & !yoast_yoast__seo_update_rc4 & yoast_yoast__seo_update_rc1 & !yoast_yoast__seo_update_rc3 & !yoast_yoast__seo_update_any) | (!yoast_yoast__seo_update_rc2 & !yoast_yoast__seo_update_rc4 & !yoast_yoast__seo_update_rc1 & yoast_yoast__seo_update_rc3 & !yoast_yoast__seo_update_any) | (!yoast_yoast__seo_update_rc2 & !yoast_yoast__seo_update_rc4 & !yoast_yoast__seo_update_rc1 & !yoast_yoast__seo_update_rc3 & yoast_yoast__seo_update_any))
+        yoast_yoast__seo_version_5__9__2 => yoast_yoast__seo_update_any
+        yoast_yoast__seo_version_2__3__4 => yoast_yoast__seo_update_any
+        yoast_yoast__seo_version_1__5__3__2 => yoast_yoast__seo_update_any
+        yoast_yoast__seo_version_5__5 => yoast_yoast__seo_update_any
+        yoast_yoast__seo_version_3__6__1 => yoast_yoast__seo_update_any
+        yoast_yoast__seo_version_1__4__20 => yoast_yoast__seo_update_any
+        yoast_yoast__seo_version_3__0 => yoast_yoast__seo_update_any
+        yoast_yoast__seo_version_6__1 => yoast_yoast__seo_update_any
+        yoast_yoast__seo_version_7__4__2 => yoast_yoast__seo_update_any
+        yoast_yoast__seo_version_3__4 => yoast_yoast__seo_update_any
+        yoast_yoast__seo_version_10__0 => ((yoast_yoast__seo_update_beta2 & !yoast_yoast__seo_update_rc1 & !yoast_yoast__seo_update_any) | (!yoast_yoast__seo_update_beta2 & yoast_yoast__seo_update_rc1 & !yoast_yoast__seo_update_any) | (!yoast_yoast__seo_update_beta2 & !yoast_yoast__seo_update_rc1 & yoast_yoast__seo_update_any))
+        yoast_yoast__seo_version_3__4__2 => yoast_yoast__seo_update_any
+        yoast_yoast__seo_version_7__7__1 => yoast_yoast__seo_update_any
+        yoast_yoast__seo_version_4__1 => yoast_yoast__seo_update_any
+        yoast_yoast__seo_version_2__3__5 => yoast_yoast__seo_update_any
+        yoast_yoast__seo_version_7__2 => yoast_yoast__seo_update_any
+        yoast_yoast__seo_version_2__3 => yoast_yoast__seo_update_any
+        yoast_yoast__seo_version_4__2 => yoast_yoast__seo_update_any
+        yoast_yoast__seo_version_7__0__3 => yoast_yoast__seo_update_any
+        yoast_yoast__seo_version_4__7__1 => yoast_yoast__seo_update_any
+        yoast_yoast__seo_version_1__5__5__1 => yoast_yoast__seo_update_any
+        yoast_yoast__seo_version_1__5__4 => yoast_yoast__seo_update_any
+        yoast_yoast__seo_version_1__5__3__1 => yoast_yoast__seo_update_any
+        yoast_yoast__seo_version_8__1__1 => yoast_yoast__seo_update_any
+        yoast_yoast__seo_version_7__9 => yoast_yoast__seo_update_any
+        yoast_yoast__seo_version_1__5__2__1 => yoast_yoast__seo_update_any
+        yoast_yoast__seo_version_1__5__2__8 => yoast_yoast__seo_update_any
+        yoast_yoast__seo_version_5__6__1 => yoast_yoast__seo_update_any
+        yoast_yoast__seo_version_1__5__0 => yoast_yoast__seo_update_any
+        yoast_yoast__seo_version_10__1__1 => yoast_yoast__seo_update_any
+        yoast_yoast__seo_version_3__0__4 => yoast_yoast__seo_update_any
+        yoast_yoast__seo_version_7__7__3 => yoast_yoast__seo_update_any
+        yoast_yoast__seo_version_8__2 => yoast_yoast__seo_update_any
+        yoast_yoast__seo_version_4__6 => yoast_yoast__seo_update_any
+        yoast_yoast__seo_version_5__4__1 => yoast_yoast__seo_update_any
+        yoast_yoast__seo_version_7__5 => yoast_yoast__seo_update_any
+        yoast_yoast__seo_version_9__8 => yoast_yoast__seo_update_rc1
+        yoast_yoast__seo_version_1__4__15 => yoast_yoast__seo_update_any
+        yoast_yoast__seo_version_1__5__1 => yoast_yoast__seo_update_any
+        yoast_yoast__seo_version_4__9 => yoast_yoast__seo_update_any
+        yoast_yoast__seo_version_11__2 => ((yoast_yoast__seo_update_rc2 & !yoast_yoast__seo_update_rc1 & !yoast_yoast__seo_update_any) | (!yoast_yoast__seo_update_rc2 & yoast_yoast__seo_update_rc1 & !yoast_yoast__seo_update_any) | (!yoast_yoast__seo_update_rc2 & !yoast_yoast__seo_update_rc1 & yoast_yoast__seo_update_any))
+        yoast_yoast__seo_version_1__6__2 => yoast_yoast__seo_update_any
+        yoast_yoast__seo_version_8__3 => ((yoast_yoast__seo_update_rc2 & !yoast_yoast__seo_update_rc1 & !yoast_yoast__seo_update_any) | (!yoast_yoast__seo_update_rc2 & yoast_yoast__seo_update_rc1 & !yoast_yoast__seo_update_any) | (!yoast_yoast__seo_update_rc2 & !yoast_yoast__seo_update_rc1 & yoast_yoast__seo_update_any))
+        yoast_yoast__seo_version_6__2 => yoast_yoast__seo_update_any
+        yoast_yoast__seo_version_3__3__4 => yoast_yoast__seo_update_any
+        yoast_yoast__seo_version_1__4__25 => yoast_yoast__seo_update_any
+        yoast_yoast__seo_version_5__7__1 => yoast_yoast__seo_update_any
+        yoast_yoast__seo_version_7__5__3 => yoast_yoast__seo_update_any
+        yoast_yoast__seo_version_1__7__1 => yoast_yoast__seo_update_any
+        yoast_yoast__seo_version_5__3__3 => yoast_yoast__seo_update_any
+        yoast_yoast__seo_version_5__0 => yoast_yoast__seo_update_any
+        yoast_yoast__seo_version_2__3__2 => yoast_yoast__seo_update_any
+        yoast_yoast__seo_version_4__2__1 => yoast_yoast__seo_update_any
+        yoast_yoast__seo_version_9__0 => ((yoast_yoast__seo_update_rc2 & !yoast_yoast__seo_update_rc4 & !yoast_yoast__seo_update_rc1 & !yoast_yoast__seo_update_rc3 & !yoast_yoast__seo_update_rc5 & !yoast_yoast__seo_update_any) | (!yoast_yoast__seo_update_rc2 & yoast_yoast__seo_update_rc4 & !yoast_yoast__seo_update_rc1 & !yoast_yoast__seo_update_rc3 & !yoast_yoast__seo_update_rc5 & !yoast_yoast__seo_update_any) | (!yoast_yoast__seo_update_rc2 & !yoast_yoast__seo_update_rc4 & yoast_yoast__seo_update_rc1 & !yoast_yoast__seo_update_rc3 & !yoast_yoast__seo_update_rc5 & !yoast_yoast__seo_update_any) | (!yoast_yoast__seo_update_rc2 & !yoast_yoast__seo_update_rc4 & !yoast_yoast__seo_update_rc1 & yoast_yoast__seo_update_rc3 & !yoast_yoast__seo_update_rc5 & !yoast_yoast__seo_update_any) | (!yoast_yoast__seo_update_rc2 & !yoast_yoast__seo_update_rc4 & !yoast_yoast__seo_update_rc1 & !yoast_yoast__seo_update_rc3 & yoast_yoast__seo_update_rc5 & !yoast_yoast__seo_update_any) | (!yoast_yoast__seo_update_rc2 & !yoast_yoast__seo_update_rc4 & !yoast_yoast__seo_update_rc1 & !yoast_yoast__seo_update_rc3 & !yoast_yoast__seo_update_rc5 & yoast_yoast__seo_update_any))
+        yoast_yoast__seo_version_2__1 => yoast_yoast__seo_update_any
+        yoast_yoast__seo_version_4__0__2 => yoast_yoast__seo_update_any
+        yoast_yoast__seo_version_5__8 => yoast_yoast__seo_update_any
+        yoast_yoast__seo_version_8__1__2 => yoast_yoast__seo_update_any
+        yoast_yoast__seo_version_7__4 => yoast_yoast__seo_update_any
+        yoast_yoast__seo_version_3__2__2 => yoast_yoast__seo_update_any
+        yoast_yoast__seo_version_4__8 => yoast_yoast__seo_update_any
+        yoast_yoast__seo_version_1__5__2__5 => yoast_yoast__seo_update_any
+        yoast_yoast__seo_version_1__4__18 => yoast_yoast__seo_update_any
+        yoast_yoast__seo_version_3__2__5 => yoast_yoast__seo_update_any
+        yoast_yoast__seo_version_1__5__3 => yoast_yoast__seo_update_any
+        yoast_yoast__seo_version_1__5__6 => yoast_yoast__seo_update_any
+        yoast_yoast__seo_version_7__0__2 => yoast_yoast__seo_update_any
+        yoast_yoast__seo_version_5__4__0 => yoast_yoast__seo_update_any
+        yoast_yoast__seo_version_3__1__2 => yoast_yoast__seo_update_any
+        yoast_yoast__seo_version_3__7__1 => yoast_yoast__seo_update_any
+        yoast_yoast__seo_version_4__0 => yoast_yoast__seo_update_any
+        yoast_yoast__seo_version_1__4__23 => yoast_yoast__seo_update_any
+        yoast_yoast__seo_version_11__4 => ((yoast_yoast__seo_update_rc2 & !yoast_yoast__seo_update_any) | (!yoast_yoast__seo_update_rc2 & yoast_yoast__seo_update_any))
+        yoast_yoast__seo_version_6__1__1 => yoast_yoast__seo_update_any
+        yoast_yoast__seo_version_1__5__5__2 => yoast_yoast__seo_update_any
+        yoast_yoast__seo_version_6__3 => yoast_yoast__seo_update_any
+        yoast_yoast__seo_version_1__6 => yoast_yoast__seo_update_any
+        yoast_yoast__seo_version_9__2__1 => yoast_yoast__seo_update_any
+        yoast_yoast__seo_version_2__1__1 => yoast_yoast__seo_update_any
+        yoast_yoast__seo_version_1__5__3__3 => yoast_yoast__seo_update_any
+        yoast_yoast__seo_version_3__7__0 => yoast_yoast__seo_update_any
+        yoast_yoast__seo_version_3__2__1 => yoast_yoast__seo_update_any
+        yoast_yoast__seo_version_9__1__1 => yoast_yoast__seo_update_rc1
+        yoast_yoast__seo_version_5__9__3 => yoast_yoast__seo_update_any
+        yoast_yoast__seo_version_5__0__1 => yoast_yoast__seo_update_any
+        yoast_yoast__seo_version_1__4__21 => yoast_yoast__seo_update_any
+        yoast_yoast__seo_version_7__7 => yoast_yoast__seo_update_any
+        yoast_yoast__seo_version_1__5__5__3 => yoast_yoast__seo_update_any
+        yoast_yoast__seo_version_4__3 => yoast_yoast__seo_update_any
+        yoast_yoast__seo_version_4__4 => yoast_yoast__seo_update_any
+        yoast_yoast__seo_version_5__9__1 => yoast_yoast__seo_update_any
+        yoast_yoast__seo_version_5__0__2 => yoast_yoast__seo_update_any
+        yoast_yoast__seo_version_7__9__1 => yoast_yoast__seo_update_any
+        yoast_yoast__seo_version_3__8 => yoast_yoast__seo_update_any
+        yoast_yoast__seo_version_1__5__5 => yoast_yoast__seo_update_any

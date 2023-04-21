@@ -1,0 +1,205 @@
+features
+        CVE_2016_10889
+                mandatory
+                        types
+                                mandatory
+                                        application
+                        sources
+                                mandatory
+                                        nvd
+                        exploits
+                                optional
+                                        direct
+                                        indirect
+                        imagely
+                                mandatory
+                                        imagely_nextgen__gallery
+                                                mandatory
+                                                        imagely_nextgen__gallery_version
+                                                                alternative
+                                                                        imagely_nextgen__gallery_version_any
+                                                                        imagely_nextgen__gallery_version_2__0__74
+                                                                        imagely_nextgen__gallery_version_2__0__63
+                                                                        imagely_nextgen__gallery_version_1__9__12
+                                                                        imagely_nextgen__gallery_version_2__1__33
+                                                                        imagely_nextgen__gallery_version_2__0__71
+                                                                        imagely_nextgen__gallery_version_1__5__3
+                                                                        imagely_nextgen__gallery_version_1__7__1
+                                                                        imagely_nextgen__gallery_version_2__0__7
+                                                                        imagely_nextgen__gallery_version_2__0__66__16
+                                                                        imagely_nextgen__gallery_version_2__1__26
+                                                                        imagely_nextgen__gallery_version_1__9__7
+                                                                        imagely_nextgen__gallery_version_1__8__0
+                                                                        imagely_nextgen__gallery_version_2__0__57
+                                                                        imagely_nextgen__gallery_version_1__8__4
+                                                                        imagely_nextgen__gallery_version_2__1__54
+                                                                        imagely_nextgen__gallery_version_2__0__11
+                                                                        imagely_nextgen__gallery_version_1__5__1
+                                                                        imagely_nextgen__gallery_version_2__0__77
+                                                                        imagely_nextgen__gallery_version_1__7__0
+                                                                        imagely_nextgen__gallery_version_2__1__43
+                                                                        imagely_nextgen__gallery_version_1__9__0
+                                                                        imagely_nextgen__gallery_version_2__1__50
+                                                                        imagely_nextgen__gallery_version_2__1__18
+                                                                        imagely_nextgen__gallery_version_1__5__2
+                                                                        imagely_nextgen__gallery_version_1__6__2
+                                                                        imagely_nextgen__gallery_version_2__0__58
+                                                                        imagely_nextgen__gallery_version_1__8__1
+                                                                        imagely_nextgen__gallery_version_1__9__11
+                                                                        imagely_nextgen__gallery_version_2__1__2
+                                                                        imagely_nextgen__gallery_version_1__8__2
+                                                                        imagely_nextgen__gallery_version_1__9__6
+                                                                        imagely_nextgen__gallery_version_2__0__30
+                                                                        imagely_nextgen__gallery_version_1__6__0
+                                                                        imagely_nextgen__gallery_version_2__0__66
+                                                                        imagely_nextgen__gallery_version_2__1__0
+                                                                        imagely_nextgen__gallery_version_2__0__27
+                                                                        imagely_nextgen__gallery_version_1__9__10
+                                                                        imagely_nextgen__gallery_version_2__0__66__17
+                                                                        imagely_nextgen__gallery_version_2__0__17
+                                                                        imagely_nextgen__gallery_version_2__0__61
+                                                                        imagely_nextgen__gallery_version_1__7__3
+                                                                        imagely_nextgen__gallery_version_2__0__66__33
+                                                                        imagely_nextgen__gallery_version_2__0__66__29
+                                                                        imagely_nextgen__gallery_version_2__1__19
+                                                                        imagely_nextgen__gallery_version_2__0__14
+                                                                        imagely_nextgen__gallery_version_1__9__5
+                                                                        imagely_nextgen__gallery_version_2__0__78__1
+                                                                        imagely_nextgen__gallery_version_1__7__2
+                                                                        imagely_nextgen__gallery_version_1__9__2
+                                                                        imagely_nextgen__gallery_version_1__8__3
+                                                                        imagely_nextgen__gallery_version_2__0__59
+                                                                        imagely_nextgen__gallery_version_1__9__3
+                                                                        imagely_nextgen__gallery_version_1__7__4
+                                                                        imagely_nextgen__gallery_version_2__0__66__27
+                                                                        imagely_nextgen__gallery_version_2__1__9
+                                                                        imagely_nextgen__gallery_version_2__1__46
+                                                                        imagely_nextgen__gallery_version_2__0__25
+                                                                        imagely_nextgen__gallery_version_1__9__13
+                                                                        imagely_nextgen__gallery_version_2__0__40
+                                                                        imagely_nextgen__gallery_version_2__0__23
+                                                                        imagely_nextgen__gallery_version_2__1__10
+                                                                        imagely_nextgen__gallery_version_2__0
+                                                                        imagely_nextgen__gallery_version_1__6__1
+                                                                        imagely_nextgen__gallery_version_2__0__66__26
+                                                                        imagely_nextgen__gallery_version_1__5__5
+                                                                        imagely_nextgen__gallery_version_2__0__66__31
+                                                                        imagely_nextgen__gallery_version_2__1__49
+                                                                        imagely_nextgen__gallery_version_2__1__31
+                                                                        imagely_nextgen__gallery_version_2__0__65
+                                                                        imagely_nextgen__gallery_version_2__0__78
+                                                                        imagely_nextgen__gallery_version_2__0__76
+                                                                        imagely_nextgen__gallery_version_2__1__56
+                                                                        imagely_nextgen__gallery_version_1__9__1
+                                                                        imagely_nextgen__gallery_version_2__1__15
+                                                                        imagely_nextgen__gallery_version_2__1__45
+                                                                        imagely_nextgen__gallery_version_2__1__7
+                                                                        imagely_nextgen__gallery_version_1__9__8
+                                                                        imagely_nextgen__gallery_version_1__5__0
+                                                                        imagely_nextgen__gallery_version_2__1__44
+                                                                        imagely_nextgen__gallery_version_1__5__4
+                                                                        imagely_nextgen__gallery_version_2__0__21
+                                                                        imagely_nextgen__gallery_version_2__0__79
+                                                                        imagely_nextgen__gallery_version_2__0__31
+                                                                        imagely_nextgen__gallery_version_2__1__13
+                                                                        imagely_nextgen__gallery_version_2__1__27
+                                                                        imagely_nextgen__gallery_version_2__0__33
+                                                                        imagely_nextgen__gallery_version_2__1__23
+                                                        imagely_nextgen__gallery_sw__edition
+                                                                alternative
+                                                                        imagely_nextgen__gallery_sw__edition_pro
+                                                                        imagely_nextgen__gallery_sw__edition_any
+                                                        imagely_nextgen__gallery_target__sw
+                                                                mandatory
+                                                                        imagely_nextgen__gallery_target__sw_wordpress
+
+constraints
+        imagely_nextgen__gallery => application
+        imagely_nextgen__gallery_version_any => imagely_nextgen__gallery_sw__edition_pro
+        imagely_nextgen__gallery_version_2__0__74 => imagely_nextgen__gallery_sw__edition_any
+        imagely_nextgen__gallery_version_2__0__63 => imagely_nextgen__gallery_sw__edition_any
+        imagely_nextgen__gallery_version_1__9__12 => imagely_nextgen__gallery_sw__edition_any
+        imagely_nextgen__gallery_version_2__1__33 => imagely_nextgen__gallery_sw__edition_any
+        imagely_nextgen__gallery_version_2__0__71 => imagely_nextgen__gallery_sw__edition_any
+        imagely_nextgen__gallery_version_1__5__3 => imagely_nextgen__gallery_sw__edition_any
+        imagely_nextgen__gallery_version_1__7__1 => imagely_nextgen__gallery_sw__edition_any
+        imagely_nextgen__gallery_version_2__0__7 => imagely_nextgen__gallery_sw__edition_any
+        imagely_nextgen__gallery_version_2__0__66__16 => imagely_nextgen__gallery_sw__edition_any
+        imagely_nextgen__gallery_version_2__1__26 => imagely_nextgen__gallery_sw__edition_any
+        imagely_nextgen__gallery_version_1__9__7 => imagely_nextgen__gallery_sw__edition_any
+        imagely_nextgen__gallery_version_1__8__0 => imagely_nextgen__gallery_sw__edition_any
+        imagely_nextgen__gallery_version_2__0__57 => imagely_nextgen__gallery_sw__edition_any
+        imagely_nextgen__gallery_version_1__8__4 => imagely_nextgen__gallery_sw__edition_any
+        imagely_nextgen__gallery_version_2__1__54 => imagely_nextgen__gallery_sw__edition_any
+        imagely_nextgen__gallery_version_2__0__11 => imagely_nextgen__gallery_sw__edition_any
+        imagely_nextgen__gallery_version_1__5__1 => imagely_nextgen__gallery_sw__edition_any
+        imagely_nextgen__gallery_version_2__0__77 => imagely_nextgen__gallery_sw__edition_any
+        imagely_nextgen__gallery_version_1__7__0 => imagely_nextgen__gallery_sw__edition_any
+        imagely_nextgen__gallery_version_2__1__43 => imagely_nextgen__gallery_sw__edition_any
+        imagely_nextgen__gallery_version_1__9__0 => imagely_nextgen__gallery_sw__edition_any
+        imagely_nextgen__gallery_version_2__1__50 => imagely_nextgen__gallery_sw__edition_any
+        imagely_nextgen__gallery_version_2__1__18 => imagely_nextgen__gallery_sw__edition_any
+        imagely_nextgen__gallery_version_1__5__2 => imagely_nextgen__gallery_sw__edition_any
+        imagely_nextgen__gallery_version_1__6__2 => imagely_nextgen__gallery_sw__edition_any
+        imagely_nextgen__gallery_version_2__0__58 => imagely_nextgen__gallery_sw__edition_any
+        imagely_nextgen__gallery_version_1__8__1 => imagely_nextgen__gallery_sw__edition_any
+        imagely_nextgen__gallery_version_1__9__11 => imagely_nextgen__gallery_sw__edition_any
+        imagely_nextgen__gallery_version_2__1__2 => imagely_nextgen__gallery_sw__edition_any
+        imagely_nextgen__gallery_version_1__8__2 => imagely_nextgen__gallery_sw__edition_any
+        imagely_nextgen__gallery_version_1__9__6 => imagely_nextgen__gallery_sw__edition_any
+        imagely_nextgen__gallery_version_2__0__30 => imagely_nextgen__gallery_sw__edition_any
+        imagely_nextgen__gallery_version_1__6__0 => imagely_nextgen__gallery_sw__edition_any
+        imagely_nextgen__gallery_version_2__0__66 => imagely_nextgen__gallery_sw__edition_any
+        imagely_nextgen__gallery_version_2__1__0 => imagely_nextgen__gallery_sw__edition_any
+        imagely_nextgen__gallery_version_2__0__27 => imagely_nextgen__gallery_sw__edition_any
+        imagely_nextgen__gallery_version_1__9__10 => imagely_nextgen__gallery_sw__edition_any
+        imagely_nextgen__gallery_version_2__0__66__17 => imagely_nextgen__gallery_sw__edition_any
+        imagely_nextgen__gallery_version_2__0__17 => imagely_nextgen__gallery_sw__edition_any
+        imagely_nextgen__gallery_version_2__0__61 => imagely_nextgen__gallery_sw__edition_any
+        imagely_nextgen__gallery_version_1__7__3 => imagely_nextgen__gallery_sw__edition_any
+        imagely_nextgen__gallery_version_2__0__66__33 => imagely_nextgen__gallery_sw__edition_any
+        imagely_nextgen__gallery_version_2__0__66__29 => imagely_nextgen__gallery_sw__edition_any
+        imagely_nextgen__gallery_version_2__1__19 => imagely_nextgen__gallery_sw__edition_any
+        imagely_nextgen__gallery_version_2__0__14 => imagely_nextgen__gallery_sw__edition_any
+        imagely_nextgen__gallery_version_1__9__5 => imagely_nextgen__gallery_sw__edition_any
+        imagely_nextgen__gallery_version_2__0__78__1 => imagely_nextgen__gallery_sw__edition_any
+        imagely_nextgen__gallery_version_1__7__2 => imagely_nextgen__gallery_sw__edition_any
+        imagely_nextgen__gallery_version_1__9__2 => imagely_nextgen__gallery_sw__edition_any
+        imagely_nextgen__gallery_version_1__8__3 => imagely_nextgen__gallery_sw__edition_any
+        imagely_nextgen__gallery_version_2__0__59 => imagely_nextgen__gallery_sw__edition_any
+        imagely_nextgen__gallery_version_1__9__3 => imagely_nextgen__gallery_sw__edition_any
+        imagely_nextgen__gallery_version_1__7__4 => imagely_nextgen__gallery_sw__edition_any
+        imagely_nextgen__gallery_version_2__0__66__27 => imagely_nextgen__gallery_sw__edition_any
+        imagely_nextgen__gallery_version_2__1__9 => imagely_nextgen__gallery_sw__edition_any
+        imagely_nextgen__gallery_version_2__1__46 => imagely_nextgen__gallery_sw__edition_any
+        imagely_nextgen__gallery_version_2__0__25 => imagely_nextgen__gallery_sw__edition_any
+        imagely_nextgen__gallery_version_1__9__13 => imagely_nextgen__gallery_sw__edition_any
+        imagely_nextgen__gallery_version_2__0__40 => imagely_nextgen__gallery_sw__edition_any
+        imagely_nextgen__gallery_version_2__0__23 => imagely_nextgen__gallery_sw__edition_any
+        imagely_nextgen__gallery_version_2__1__10 => imagely_nextgen__gallery_sw__edition_any
+        imagely_nextgen__gallery_version_2__0 => imagely_nextgen__gallery_sw__edition_any
+        imagely_nextgen__gallery_version_1__6__1 => imagely_nextgen__gallery_sw__edition_any
+        imagely_nextgen__gallery_version_2__0__66__26 => imagely_nextgen__gallery_sw__edition_any
+        imagely_nextgen__gallery_version_1__5__5 => imagely_nextgen__gallery_sw__edition_any
+        imagely_nextgen__gallery_version_2__0__66__31 => imagely_nextgen__gallery_sw__edition_any
+        imagely_nextgen__gallery_version_2__1__49 => imagely_nextgen__gallery_sw__edition_any
+        imagely_nextgen__gallery_version_2__1__31 => imagely_nextgen__gallery_sw__edition_any
+        imagely_nextgen__gallery_version_2__0__65 => imagely_nextgen__gallery_sw__edition_any
+        imagely_nextgen__gallery_version_2__0__78 => imagely_nextgen__gallery_sw__edition_any
+        imagely_nextgen__gallery_version_2__0__76 => imagely_nextgen__gallery_sw__edition_any
+        imagely_nextgen__gallery_version_2__1__56 => imagely_nextgen__gallery_sw__edition_any
+        imagely_nextgen__gallery_version_1__9__1 => imagely_nextgen__gallery_sw__edition_any
+        imagely_nextgen__gallery_version_2__1__15 => imagely_nextgen__gallery_sw__edition_any
+        imagely_nextgen__gallery_version_2__1__45 => imagely_nextgen__gallery_sw__edition_any
+        imagely_nextgen__gallery_version_2__1__7 => imagely_nextgen__gallery_sw__edition_any
+        imagely_nextgen__gallery_version_1__9__8 => imagely_nextgen__gallery_sw__edition_any
+        imagely_nextgen__gallery_version_1__5__0 => imagely_nextgen__gallery_sw__edition_any
+        imagely_nextgen__gallery_version_2__1__44 => imagely_nextgen__gallery_sw__edition_any
+        imagely_nextgen__gallery_version_1__5__4 => imagely_nextgen__gallery_sw__edition_any
+        imagely_nextgen__gallery_version_2__0__21 => imagely_nextgen__gallery_sw__edition_any
+        imagely_nextgen__gallery_version_2__0__79 => imagely_nextgen__gallery_sw__edition_any
+        imagely_nextgen__gallery_version_2__0__31 => imagely_nextgen__gallery_sw__edition_any
+        imagely_nextgen__gallery_version_2__1__13 => imagely_nextgen__gallery_sw__edition_any
+        imagely_nextgen__gallery_version_2__1__27 => imagely_nextgen__gallery_sw__edition_any
+        imagely_nextgen__gallery_version_2__0__33 => imagely_nextgen__gallery_sw__edition_any
+        imagely_nextgen__gallery_version_2__1__23 => imagely_nextgen__gallery_sw__edition_any

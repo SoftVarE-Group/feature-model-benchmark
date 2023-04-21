@@ -1,0 +1,193 @@
+features
+        CVE_2008_5506
+                mandatory
+                        types
+                                mandatory
+                                        operating_system
+                                        application
+                        sources
+                                mandatory
+                                        nvd
+                        exploits
+                                optional
+                                        direct
+                                        indirect
+                alternative
+                        mozilla
+                                alternative
+                                        mozilla_firefox
+                                                mandatory
+                                                        mozilla_firefox_version
+                                                                alternative
+                                                                        mozilla_firefox_version_2__0__0__14
+                                                                        mozilla_firefox_version_2__0__0__5
+                                                                        mozilla_firefox_version_2__0
+                                                                        mozilla_firefox_version_2__0__0__6
+                                                                        mozilla_firefox_version_2__0__0__4
+                                                                        mozilla_firefox_version_2__0__0__18
+                                                                        mozilla_firefox_version_2__0__0__2
+                                                                        mozilla_firefox_version_2__0__0__17
+                                                                        mozilla_firefox_version_3__0__4
+                                                                        mozilla_firefox_version_2__0__0__7
+                                                                        mozilla_firefox_version_2__0__0__8
+                                                                        mozilla_firefox_version_2__0__0__10
+                                                                        mozilla_firefox_version_2__0__0__16
+                                                                        mozilla_firefox_version_2__0__0__13
+                                                                        mozilla_firefox_version_2__0__0__3
+                                                                        mozilla_firefox_version_3__0__2
+                                                                        mozilla_firefox_version_2__0__0__12
+                                                                        mozilla_firefox_version_3__0__3
+                                                                        mozilla_firefox_version_3__0__1
+                                                                        mozilla_firefox_version_2__0__0__1
+                                                                        mozilla_firefox_version_2__0__0__9
+                                                                        mozilla_firefox_version_3__0
+                                                                        mozilla_firefox_version_2__0__0__11
+                                                                        mozilla_firefox_version_2__0__0__15
+                                                        mozilla_firefox_update
+                                                                alternative
+                                                                        mozilla_firefox_update_any
+                                                                        mozilla_firefox_update_beta2
+                                        mozilla_thunderbird
+                                                mandatory
+                                                        mozilla_thunderbird_version
+                                                                alternative
+                                                                        mozilla_thunderbird_version_2__0
+                                                                        mozilla_thunderbird_version_2__0__0__6
+                                                                        mozilla_thunderbird_version_2__0__0__4
+                                                                        mozilla_thunderbird_version_2__0__0__18
+                                                                        mozilla_thunderbird_version_2__0__0__14
+                                                                        mozilla_thunderbird_version_2__0__0__9
+                                                                        mozilla_thunderbird_version_2__0__0__16
+                                                                        mozilla_thunderbird_version_2__0__0__12
+                                                                        mozilla_thunderbird_version_2__0__0__17
+                                                                        mozilla_thunderbird_version_2__0__0__5
+                                                                        mozilla_thunderbird_version_2__0__0__0
+                                                        mozilla_thunderbird_update
+                                                                alternative
+                                                                        mozilla_thunderbird_update_rc1
+                                                                        mozilla_thunderbird_update_any
+                                                                        mozilla_thunderbird_update_beta2
+                                                                        mozilla_thunderbird_update_beta1
+                                                                        mozilla_thunderbird_update_alpha1
+                                        mozilla_seamonkey
+                                                mandatory
+                                                        mozilla_seamonkey_version
+                                                                alternative
+                                                                        mozilla_seamonkey_version_1__1__12
+                                                                        mozilla_seamonkey_version_1__1__11
+                                                                        mozilla_seamonkey_version_1__1__10
+                                                                        mozilla_seamonkey_version_1__1__8
+                                                                        mozilla_seamonkey_version_1__0__2
+                                                                        mozilla_seamonkey_version_1__1__1
+                                                                        mozilla_seamonkey_version_1__0__9
+                                                                        mozilla_seamonkey_version_1__1__5
+                                                                        mozilla_seamonkey_version_1__0
+                                                                        mozilla_seamonkey_version_1__1__7
+                                                                        mozilla_seamonkey_version_1__1__4
+                                                                        mozilla_seamonkey_version_1__0__7
+                                                                        mozilla_seamonkey_version_1__1__6
+                                                                        mozilla_seamonkey_version_1__1__13
+                                                                        mozilla_seamonkey_version_1__0__6
+                                                                        mozilla_seamonkey_version_1__0__5
+                                                                        mozilla_seamonkey_version_1__1__2
+                                                                        mozilla_seamonkey_version_1__1__3
+                                                                        mozilla_seamonkey_version_1__1
+                                                                        mozilla_seamonkey_version_1__1__9
+                                                                        mozilla_seamonkey_version_1__0__4
+                                                                        mozilla_seamonkey_version_1__0__8
+                                                                        mozilla_seamonkey_version_1__0__3
+                                                                        mozilla_seamonkey_version_1__0__1
+                                                        mozilla_seamonkey_update
+                                                                alternative
+                                                                        mozilla_seamonkey_update_any
+                                                                        mozilla_seamonkey_update_alpha
+                                                                        mozilla_seamonkey_update_beta
+                        canonical
+                                mandatory
+                                        canonical_ubuntu__linux
+                                                mandatory
+                                                        canonical_ubuntu__linux_version
+                                                                alternative
+                                                                        canonical_ubuntu__linux_version_7__10
+                                                                        canonical_ubuntu__linux_version_6__06
+                                                                        canonical_ubuntu__linux_version_8__10
+                                                                        canonical_ubuntu__linux_version_8__04
+                                                        canonical_ubuntu__linux_sw__edition
+                                                                alternative
+                                                                        canonical_ubuntu__linux_sw__edition_any
+                                                                        canonical_ubuntu__linux_sw__edition_lts
+                        debian
+                                mandatory
+                                        debian_debian__linux
+                                                mandatory
+                                                        debian_debian__linux_version
+                                                                alternative
+                                                                        debian_debian__linux_version_4__0
+                                                                        debian_debian__linux_version_5__0
+
+constraints
+        mozilla_firefox => application
+        mozilla_thunderbird => application
+        mozilla_seamonkey => application
+        canonical_ubuntu__linux => operating_system
+        debian_debian__linux => operating_system
+        mozilla_firefox_version_2__0__0__14 => mozilla_firefox_update_any
+        mozilla_firefox_version_2__0__0__5 => mozilla_firefox_update_any
+        mozilla_firefox_version_2__0 => mozilla_firefox_update_any
+        mozilla_firefox_version_2__0__0__6 => mozilla_firefox_update_any
+        mozilla_firefox_version_2__0__0__4 => mozilla_firefox_update_any
+        mozilla_firefox_version_2__0__0__18 => mozilla_firefox_update_any
+        mozilla_firefox_version_2__0__0__2 => mozilla_firefox_update_any
+        mozilla_firefox_version_2__0__0__17 => mozilla_firefox_update_any
+        mozilla_firefox_version_3__0__4 => mozilla_firefox_update_any
+        mozilla_firefox_version_2__0__0__7 => mozilla_firefox_update_any
+        mozilla_firefox_version_2__0__0__8 => mozilla_firefox_update_any
+        mozilla_firefox_version_2__0__0__10 => mozilla_firefox_update_any
+        mozilla_firefox_version_2__0__0__16 => mozilla_firefox_update_any
+        mozilla_firefox_version_2__0__0__13 => mozilla_firefox_update_any
+        mozilla_firefox_version_2__0__0__3 => mozilla_firefox_update_any
+        mozilla_firefox_version_3__0__2 => mozilla_firefox_update_any
+        mozilla_firefox_version_2__0__0__12 => mozilla_firefox_update_any
+        mozilla_firefox_version_3__0__3 => mozilla_firefox_update_any
+        mozilla_firefox_version_3__0__1 => mozilla_firefox_update_any
+        mozilla_firefox_version_2__0__0__1 => mozilla_firefox_update_any
+        mozilla_firefox_version_2__0__0__9 => mozilla_firefox_update_any
+        mozilla_firefox_version_2__0__0__11 => mozilla_firefox_update_any
+        mozilla_firefox_version_2__0__0__15 => mozilla_firefox_update_any
+        mozilla_thunderbird_version_2__0 => ((mozilla_thunderbird_update_any & !mozilla_thunderbird_update_beta2 & !mozilla_thunderbird_update_beta1 & !mozilla_thunderbird_update_alpha1) | (!mozilla_thunderbird_update_any & mozilla_thunderbird_update_beta2 & !mozilla_thunderbird_update_beta1 & !mozilla_thunderbird_update_alpha1) | (!mozilla_thunderbird_update_any & !mozilla_thunderbird_update_beta2 & mozilla_thunderbird_update_beta1 & !mozilla_thunderbird_update_alpha1) | (!mozilla_thunderbird_update_any & !mozilla_thunderbird_update_beta2 & !mozilla_thunderbird_update_beta1 & mozilla_thunderbird_update_alpha1))
+        mozilla_thunderbird_version_2__0__0__6 => mozilla_thunderbird_update_any
+        mozilla_thunderbird_version_2__0__0__4 => mozilla_thunderbird_update_any
+        mozilla_thunderbird_version_2__0__0__18 => mozilla_thunderbird_update_any
+        mozilla_thunderbird_version_2__0__0__14 => mozilla_thunderbird_update_any
+        mozilla_thunderbird_version_2__0__0__9 => mozilla_thunderbird_update_any
+        mozilla_thunderbird_version_2__0__0__16 => mozilla_thunderbird_update_any
+        mozilla_thunderbird_version_2__0__0__12 => mozilla_thunderbird_update_any
+        mozilla_thunderbird_version_2__0__0__17 => mozilla_thunderbird_update_any
+        mozilla_thunderbird_version_2__0__0__5 => mozilla_thunderbird_update_any
+        mozilla_thunderbird_version_2__0__0__0 => ((mozilla_thunderbird_update_rc1 & !mozilla_thunderbird_update_any) | (!mozilla_thunderbird_update_rc1 & mozilla_thunderbird_update_any))
+        mozilla_seamonkey_version_1__1__12 => mozilla_seamonkey_update_any
+        mozilla_seamonkey_version_1__1__11 => mozilla_seamonkey_update_any
+        mozilla_seamonkey_version_1__1__10 => mozilla_seamonkey_update_any
+        mozilla_seamonkey_version_1__1__8 => mozilla_seamonkey_update_any
+        mozilla_seamonkey_version_1__0__2 => mozilla_seamonkey_update_any
+        mozilla_seamonkey_version_1__1__1 => mozilla_seamonkey_update_any
+        mozilla_seamonkey_version_1__0__9 => mozilla_seamonkey_update_any
+        mozilla_seamonkey_version_1__1__5 => mozilla_seamonkey_update_any
+        mozilla_seamonkey_version_1__1__7 => mozilla_seamonkey_update_any
+        mozilla_seamonkey_version_1__1__4 => mozilla_seamonkey_update_any
+        mozilla_seamonkey_version_1__0__7 => mozilla_seamonkey_update_any
+        mozilla_seamonkey_version_1__1__6 => mozilla_seamonkey_update_any
+        mozilla_seamonkey_version_1__1__13 => mozilla_seamonkey_update_any
+        mozilla_seamonkey_version_1__0__6 => mozilla_seamonkey_update_any
+        mozilla_seamonkey_version_1__0__5 => mozilla_seamonkey_update_any
+        mozilla_seamonkey_version_1__1__2 => mozilla_seamonkey_update_any
+        mozilla_seamonkey_version_1__1__3 => mozilla_seamonkey_update_any
+        mozilla_seamonkey_version_1__1__9 => mozilla_seamonkey_update_any
+        mozilla_seamonkey_version_1__0__4 => mozilla_seamonkey_update_any
+        mozilla_seamonkey_version_1__0__8 => mozilla_seamonkey_update_any
+        mozilla_seamonkey_version_1__0__3 => mozilla_seamonkey_update_any
+        mozilla_seamonkey_version_1__0__1 => mozilla_seamonkey_update_any
+        canonical_ubuntu__linux_version_7__10 => canonical_ubuntu__linux_sw__edition_any
+        canonical_ubuntu__linux_version_6__06 => canonical_ubuntu__linux_sw__edition_lts
+        canonical_ubuntu__linux_version_8__10 => canonical_ubuntu__linux_sw__edition_any
+        canonical_ubuntu__linux_version_8__04 => canonical_ubuntu__linux_sw__edition_lts
