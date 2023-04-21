@@ -1,0 +1,250 @@
+namespace DecISIonAL
+
+features
+	DecISIonAL
+		mandatory
+			BusinessDrivers
+				or
+					Customerssegmentationanddebugging
+					Planningandbudgetingformarketing
+					Managedataandlists
+					Marketinganalysis
+					Campaignmanagement
+					Easemarketingandadvertisingtasks
+					Managepotentialcustomersandresponses
+					Reducesalescycles
+					Increasesalesclosurerates
+					Improvecustomersretention
+					Implementanewsalesprocess
+					Managecustomerinformation
+					Managecustomercases
+					Recordcustomerserviceshistory
+					Increasecustomersbase
+					Implementacustomerserviceprocess
+					Improveclientsknowledge
+					Measurecustomerssatisfaction
+					Humanresourcescontrol
+					Newprocessesofhumanresources
+					Recruitment
+					Biodata_cv
+					Positionsanalysis_organizationalstructure
+					Payrollandsalariesmanagement
+					Performanceevaluation
+					Educationandtraning
+					Personalwellness_Benefits
+					Workplacehealth
+					Processesandorganizationchartmodeling
+					Newfinancialprocesses
+					Implementcontrolsoverfinancialprocesses
+					Accountmanagement
+					Accountspayablemanagement_Providers
+					Costingsystems
+					Fixedassetsfinancialmanagement
+					Bankreconciliationmanagement
+					Investmentcontrol
+					Financialobligationmanagement
+					Treasury
+					Analyticalaccounting
+					Budgetcontrolandmanagement
+					Capitalassetsmanagement
+					Stockmanagement
+					Storagemanagement
+					Purchasemanagement
+					Fixedassetsmanagement
+					Foreigntrade
+					Insurance
+					Productionordersmanagement
+					Purchaseordersmanagement
+					Capacityneedsplanning
+					Supplyplanning
+					Decreasedeliverytime
+					Integrationwithproviders
+					Providersmanagement
+					Rawmaterialsmanagement
+					Winerymanagement
+					Performcostscontrol
+					Orderanddeliverymanagement
+					Contactsmanagement
+					Modifyworkflowprocesses
+					Improveresponsiveness
+					Budgetmanagement
+					Createandconsolidatereports
+					Searchtrendsandrelations
+					Shareknowledge
+					Organizeserviceresources
+					Billingandreturn
+					Portfolio
+					Pricesanddiscountsmanagement
+					Promotionsmanagement
+					Feesandincentivesmanagement
+					Commercialvisitmanagement
+					Importsandexports
+					Servicecontractmanagement
+					Budgetcostsandtime
+					Automatebilling
+					Predictavailabilities
+					Costsandconsumptionstracking
+					Plancapacities
+					Planandmanagewineryandstoragecapacity
+					Merchandisetransportmanagement
+					Internationaltransportlogistics
+					Providerrelationsmanagement
+					Demandmanagement
+			EnterpiseInformationSystemandCapabilities
+				or
+					CustomerRelationshipManagement_CRM
+						or
+							CRM_Marketingmodule
+							CRM_Salesmodule
+							CRM_Customersmodule
+					EnterpriseResourcePlanning_ERP
+						or
+							ERP_Humanresourcesmodule
+							ERP_Financialmodule
+							ERP_Administrativemodule
+							ERP_Productionmodule
+							ERP_Clientsmodule
+							ERP_Supplymanagementmodule
+							ERP_BusinessIntelligencemodule
+							ERP_Marketingandsalesmodule
+							ERP_Providersmanagementmodule
+					SupplyChainManagement_SCM
+			ImplementationType
+				alternative
+					Adquireanewsystem
+					Adaptanexistingsystem
+			Outsourcing
+				alternative
+					Outsourcecustomization
+					Outsourcemostofthedevelopmentandintegration
+					Outsourcethemanagementofacompletebusinessprocess
+					Outsourcetheimplementationprojectmanagement
+			SolutionType
+				alternative
+					Commercial
+					OpenSource
+			DeploymentModel
+				alternative
+					Onpremise
+					SofwareasaService_SaaS
+					InfrastructureasaService_IaaS
+			ImplementationModel
+				alternative
+					BigBang
+					Implementationbyphases
+					Implementationbyprocesses
+			MaintenanceModel
+				alternative
+					Providercontract
+					Specializedprovidercontract
+					Internalmaintenance
+					Nomaintenance
+			EvaluationApproach
+				alternative
+					RFP_Requestforproposal
+					Externalconsultancy
+					Internalevaluation
+			TargetPlatform
+				alternative
+					Systemsupportedonanexistingplatform
+					Systemsupportedonanewplatform
+			IntegrationApproach
+				alternative
+					Middleware
+					Owndevelopment
+					Byprovider
+			FinancingModel
+				alternative
+					Ownresources
+					Credit
+					Leasing
+
+constraints
+	!Commercialvisitmanagement | ERP_Marketingandsalesmodule
+	!Importsandexports | ERP_Marketingandsalesmodule
+	!Servicecontractmanagement | ERP_Marketingandsalesmodule
+	!Budgetcostsandtime | ERP_Providersmanagementmodule
+	!Fixedassetsfinancialmanagement | ERP_Financialmodule
+	!Investmentcontrol | ERP_Financialmodule
+	!Bankreconciliationmanagement | ERP_Financialmodule
+	!Treasury | ERP_Financialmodule
+	!Financialobligationmanagement | ERP_Financialmodule
+	!Budgetcontrolandmanagement | ERP_Financialmodule
+	!Analyticalaccounting | ERP_Financialmodule
+	!Improvecustomersretention | CRM_Salesmodule
+	!Implementanewsalesprocess | CRM_Salesmodule
+	!Managecustomerinformation | CRM_Customersmodule
+	!Capitalassetsmanagement | ERP_Financialmodule
+	!Stockmanagement | ERP_Administrativemodule
+	!Storagemanagement | ERP_Administrativemodule
+	!Automatebilling | ERP_Providersmanagementmodule
+	!Managedataandlists | CRM_Marketingmodule
+	!Costsandconsumptionstracking | ERP_Providersmanagementmodule
+	!Marketinganalysis | CRM_Marketingmodule
+	!Predictavailabilities | ERP_Providersmanagementmodule
+	!Campaignmanagement | CRM_Marketingmodule
+	!Easemarketingandadvertisingtasks | CRM_Marketingmodule
+	!Plancapacities | ERP_Providersmanagementmodule
+	!Managepotentialcustomersandresponses | CRM_Marketingmodule
+	!Reducesalescycles | CRM_Salesmodule
+	!Increasesalesclosurerates | CRM_Salesmodule
+	!Managecustomerinformation | ERP_Marketingandsalesmodule
+	!Recordcustomerserviceshistory | ERP_Marketingandsalesmodule
+	!Demandmanagement | SupplyChainManagement_SCM
+	!Campaignmanagement | ERP_Marketingandsalesmodule
+	!Accountmanagement | ERP_Financialmodule
+	!Recruitment | ERP_Humanresourcesmodule
+	!Organizeserviceresources | ERP_Marketingandsalesmodule
+	!Educationandtraning | ERP_Humanresourcesmodule
+	!Payrollandsalariesmanagement | ERP_Humanresourcesmodule
+	!Positionsanalysis_organizationalstructure | ERP_Humanresourcesmodule
+	!Biodata_cv | ERP_Humanresourcesmodule
+	!Implementcontrolsoverfinancialprocesses | ERP_Financialmodule
+	!Newfinancialprocesses | ERP_Financialmodule
+	!Processesandorganizationchartmodeling | ERP_Humanresourcesmodule
+	!Workplacehealth | ERP_Humanresourcesmodule
+	!Newprocessesofhumanresources | ERP_Humanresourcesmodule
+	!Accountspayablemanagement_Providers | ERP_Financialmodule
+	!Costingsystems | ERP_Financialmodule
+	!Portfolio | ERP_Marketingandsalesmodule
+	!Increasecustomersbase | CRM_Customersmodule
+	!Billingandreturn | ERP_Marketingandsalesmodule
+	!Managecustomercases | CRM_Customersmodule
+	!Recordcustomerserviceshistory | CRM_Customersmodule
+	!Measurecustomerssatisfaction | CRM_Customersmodule
+	!Feesandincentivesmanagement | ERP_Marketingandsalesmodule
+	!Humanresourcescontrol | ERP_Humanresourcesmodule
+	!Promotionsmanagement | ERP_Marketingandsalesmodule
+	!Implementacustomerserviceprocess | CRM_Customersmodule
+	!Pricesanddiscountsmanagement | ERP_Marketingandsalesmodule
+	!Improveclientsknowledge | CRM_Customersmodule
+	!Contactsmanagement | ERP_Clientsmodule
+	!Modifyworkflowprocesses | SupplyChainManagement_SCM
+	!Orderanddeliverymanagement | ERP_Productionmodule
+	!Rawmaterialsmanagement | ERP_Productionmodule
+	!Providersmanagement | ERP_Productionmodule
+	!Performcostscontrol | ERP_Productionmodule
+	!Winerymanagement | ERP_Productionmodule
+	!Planandmanagewineryandstoragecapacity | SupplyChainManagement_SCM
+	!Merchandisetransportmanagement | SupplyChainManagement_SCM
+	!Internationaltransportlogistics | SupplyChainManagement_SCM
+	!Providerrelationsmanagement | SupplyChainManagement_SCM
+	!Improveresponsiveness | SupplyChainManagement_SCM
+	!Customerssegmentationanddebugging | CRM_Marketingmodule
+	!Planningandbudgetingformarketing | CRM_Marketingmodule
+	!Searchtrendsandrelations | ERP_BusinessIntelligencemodule
+	!Shareknowledge | ERP_BusinessIntelligencemodule
+	!Budgetmanagement | ERP_BusinessIntelligencemodule
+	!Createandconsolidatereports | ERP_BusinessIntelligencemodule
+	!Modifyworkflowprocesses | ERP_Supplymanagementmodule
+	!Improveresponsiveness | ERP_Supplymanagementmodule
+	!Capacityneedsplanning | ERP_Productionmodule
+	!Purchaseordersmanagement | ERP_Productionmodule
+	!Productionordersmanagement | ERP_Productionmodule
+	!Insurance | ERP_Administrativemodule
+	!Foreigntrade | ERP_Administrativemodule
+	!Fixedassetsmanagement | ERP_Administrativemodule
+	!Purchasemanagement | ERP_Administrativemodule
+	!Decreasedeliverytime | ERP_Productionmodule
+	!Integrationwithproviders | ERP_Productionmodule
+	!Supplyplanning | ERP_Productionmodule

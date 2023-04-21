@@ -1,0 +1,586 @@
+namespace EstructuraDecisiones
+
+features
+	EstructuraDecisiones
+		mandatory
+			MotivadoresdeNegocio
+				or
+					Segmentarydepurarclientes
+					Planificacionypresupuestosdemercadeo
+					Gestiondedatosylistas
+					Analisisdemarketing
+					GestiondeCampanias
+					Facilitartareasdemercadeoypublicidad
+					Gestionderespuestasyclientespotenciales
+					Reducirciclosdeventas
+					Aumentartasasdecierredeventas
+					Mejorarretenciondeclientes
+					Implementarnuevoprocesodeventas
+					Gestionarinformaciondeclientes
+					Gestiondecasosdeclientes
+					Historialdeserviciosdeclientes
+					Aumentarbasedeclientes
+					Implementarnuevoprocesodeatencionalcliente
+					Mejorarconocimientodelcliente
+					Medirsatisfacciondelconsumidor
+					Controlsobrerecursoshumanos
+					Nuevosprocesosderecursoshumanos
+					Reclutamiento
+					Biodata_hojasdevida
+					Analisisdecargos_estructuraorganizacional
+					Nominayadministraciondesalarios
+					Educacionycapacitacion
+					Saludocupacional
+					Modelamientodeprocesosyorganigramas
+					Nuevosprocesosfinancieros
+					Implementarcontrolessobreprocesosfinancieros
+					Gestioncontable
+					Manejodecuentasporpagar_Proveedores
+					Sistemasdecosteo
+					Administraciondeactivosfijos
+					Manejodeconciliacionesbancarias
+					Controldeinversiones
+					Manejodeobligacionesfinancieras
+					Tesoreria
+					Contabilidadanalitica
+					Controlyadministraciondelpresupuesto
+					Manejodeactivosdecapital
+					Manejodeinventarios
+					Manejodealmacen
+					Gestiondecompras
+					Gestiondeactivosfijos
+					Comercioexterior
+					Seguros
+					Manejodeordenesdeproduccion
+					Manejodeordenesdecompra
+					Planificaciondenecesidadesdecapacidad
+					Planificaciondesuministros
+					Disminuirtiemposdeentrega
+					Integracionconproveedores
+					Gestiondeproveedores
+					Administraciondemateriasprimas
+					Gestiondebodega
+					Realizarcontroldecostos
+					Administraciondepedidosydespachos
+					Gestiondecontactos
+					Ajustarprocesosdeflujodetrabajo
+					Mejorarcapacidadderespuesta
+					Gestionarpresupuestos
+					Crearyconsolidarinformes
+					Buscartendenciasyrelaciones
+					Compartirconocimiento
+					Organizarrecursosdeservicio
+					Facturacionydevolucion
+					Cartera
+					Administraciondepreciosydescuentos
+					Administraciondepromociones
+					Administraciondecuotaseincentivos
+					Administraciondevisitacomercial
+					Importacionesyexportaciones
+					Gestionarcontratosdeservicio
+					Presupuestarcostosytiempos
+					Automatizarlafacturacion
+					Predecirdisponibilidades
+					Seguimientodecostosyconsumos
+					Planificarcapacidades
+					Planearygestionarcapacidaddebodegajeyalmacenamiento
+					Gestiondetransportedemercancia
+					Logisticadetransporteinternacional
+					Gestionderelacionconproveedores
+					Gestiondelademanda
+			SistemasEmpresariales
+				mandatory
+					CRM_CustomerRelationshipManagement
+						or
+							CRM_Modulomarketing
+							CRM_ModuloVentas
+							CRM_Modulodeclientes
+					ERP_Enterpriseresourceplanning
+						or
+							ERP_Modulorecursoshumanos
+							ERP_Modulofinanciero
+							ERP_Moduloadministrativo
+							ERP_Modulodeproduccion
+							ERP_Modulodeclientes
+							ERP_Modulodegestiondeabastecimiento
+							ERP_Modulodeinteligenciadenegocio
+							ERP_Marketingyventas
+							ERP_Modulodegestiondeproyectos
+					SCM_Sistemadegestiondeabastecimiento
+			NuevovsExistente
+				alternative
+					Adquirirsistemanuevo
+					Adaptarsistemaexistente
+			Tercerizacion
+				alternative
+					Subcontratarpersonalizacion
+					Subcontratarpartedeldesarrolloeintegracion
+					Subcontratarlaadministraciondeunprocesodenegociocompleto
+					Subcontratargerenciadelproyectodeimplementacion
+			TipodeSolucion
+				alternative
+					Comercial
+					OpenSource
+			ModelodeDespliegue
+				alternative
+					OnPremise
+					SoftwarecomoservicioSaaS
+					InfraestructuracomoservicioIaaS
+			ModelodeImplementacion
+				alternative
+					BigBang
+					Implementacionporfases
+					Implementacionporprocesos
+			Mantenimiento
+				alternative
+					Contratoconelproveedor
+					Contratoconunproveedorespecializado
+					Mantenimientoporcuentapropia
+					Sincontratodemantenimiento
+			ModelodeSeleccion
+				alternative
+					RFP_Requestforproposal
+					Consultoriaexterna
+					Evaluacioninterna
+			Plataforma
+				alternative
+					Sistemaempresarialbasadoenlamismaplataformatecnologica
+					Sistemaempresarialbasadoenunaplataformadiferente
+			Integracion
+				alternative
+					Middleware
+					Desarrollopropio
+					Proveedor
+			Financiacion
+				alternative
+					RecursosPropios
+					Credito
+					Leasing
+			Implicaciones
+				mandatory
+					Variabledeimpacto
+						or
+							Campaniasdemercadeo
+							Costototaldepromociones
+							Costototaldemanejoporcanal
+							Tiempoderespuestaalcliente
+							Eficienciaporcanal
+							Tiempodeentregadespuesdelaventa
+							Tiempodenegociacionantesdelaventa
+							Tasaderetenciondeclientes
+							Ventasnetas
+							Ventasporempleado
+							Ganaciasporempleado
+							Clientesnuevospordia
+							Prospectosnuevospordia
+							Visitasaclientespordia
+							Nuevossegmentoscreados
+							Imagendemarca
+							Niveldeservicio
+							Tasaderetenciondeempleados
+							Productividadporempleado
+							Costosporempleado
+							Horasdeentrenamientoporempleado
+							Costosdeentrenamientoporempleado
+							Aumentoeningresosoperativos
+							Retornodeinversion
+							Rentabilidaddeactivos
+							Rentabilidaddelpatrimonio
+							Utilidadesporaccion
+							Rotaciondeinventarios
+							Rotaciondecartera
+							Tiempodecompras
+							Tiempoderespuestaordenes
+							Precisiondeinventarios
+							Efectividadprocesodefacturacion
+							Tiempoderespuestaenprocesamientodeordenes
+							Tiempopromediodeesperaenentregadepedidos
+							Retenciondeclientes
+							Satisfacciondelcliente
+							Imagencorporativa
+							Tiempototalcadenadeabastecimiento
+							Tiempodeentrega
+							Calidaddeentrega
+							Niveldeentregaslibresdedefectos
+							Tiempoenrutamientodeordenes
+							Efectividadplanmaestrodeproduccion
+							Frecuenciadeentrega
+							Costototaldeinventario
+							Disponibilidaddeinformacionpordemanda
+							Tasadecrecimientodeventas
+							Capacitacion
+							Implementacion
+							Integracion_1
+							Consultor
+							Tecnico
+							Migracion
+							Configuracion
+							Adquisicion
+							Licenciamiento
+							Soporte
+							Personalizacion
+							FlujodeCaja
+							Escalamiento
+							Documentacion
+							Proveedores
+							Flexibilidad
+							Mantenimientoyactualizaciones
+							Costoinicial
+							Infraestructura
+							Seguridad
+							Arrendamiento
+							Disponibilidad
+							Mantenimiento_1
+					Dimension
+						or
+							Indicadores
+							Costos
+							Tiempo
+							RecursosHumanos
+							Consideracion
+							Ventaja
+							Desventaja
+					UnidaddeMedida
+						or
+							Numero
+							Dolares
+							Dias
+							Porcentaje
+							Horas
+							Meses
+							Personas
+							Personal
+							Semanas
+					Magnitud
+						or
+							a1persona
+							a2personas
+							a25000_200000
+							a1enadelante
+							a25000_300000
+							a500enadelante
+							a25000_500000
+							a25porcientodelcostoinicial
+							a500_5000
+							a5000_50000
+							a5000_75000
+							a10000_80000
+							Entre6y36
+							a3000_20000
+							a0_500
+							a5000_10000
+							a30000_100000
+							a25000_75000
+							a100_200000
+							a10000_500000
+							a200_2000
+							a400enadelante
+							Entre1y2
+							a18porciento_25porcientosobreellicenciamiento
+							a15porciento_30porcientosobreellicenciamiento
+							a5000enadelante
+							a300enadelante
+							a20000_100000
+							a0_100000
+							Entre15000y100000
+							a15porcientodelicenciamiento
+				optional
+					Periodicidad
+						or
+							Unavez
+							Mensual
+							Anual
+					Observaciones
+						or
+							Requierepersonalqueformepartedelequipointerdisciplinarioquetrabajaraconelproveedorenellevantamientoderequerimientosfuncionales
+							Liberaalaempresadelastareasfuncionalesytecnicasypermiteliberarrecursosparadestinarlosalasactividadescoredelnegocio
+							Requierepersonalcalificadoparaseleccionarelproveedoryestablecerlosterminosycondicionesdeloscontratos
+							Requiereunproveedorconaltoniveldeconocimientodelsectorydelnegocio
+							Perdidadecontrolsobrelosprocesosdenegocio
+							Posibilidaddetomarventajadelaincorporaciondemejorespracticasdelaindustriayknowhowquederivenenunaventajacompetitiva
+							Losresultadosdelaempresaquedansujetosalcumplimientodelosacuerdosdenivelesdeservicioconelproveedor
+							Requiereunproveedorconexperienciaampliaydemostrableenimplementacionesexitosasdesistemasempresarialesenlamismaindustria
+							Implicaquelaresponsabilidadporelcumplimientodelosobjetivosyfechasquedaenmanosdeunterceroysuincumplimientorepercuteenlosobjetivosdenegocio
+							Liberalosrecursosgerencialesdelacompaniaparaqueseanusadosenactividadespropiasdelcoredelnegocio
+							ExisteundesembolsoinicialimportantequeafectaelFCLydesembolsosanualesenlicenciamiento
+							Elfabricanteporlogeneralentregaramanualesdocumentacionytendraplanespersonalizadosdecapacitacionyeventualmentepodraofrecerunplandeimplementaciongradual
+							Loscostosdeescalamientoestansujetosalmodelodelicenciamientoacordadoconelproveedor
+							Elproveedorofrecerasuficientegarantiaysoporteporelproductoentregado
+							Elproveedorofrecerasuficientedocumentacionymanualessobreelusodelproducto
+							Laofertadecompaniascapacesdebrindarsoporteasolucionescomercialesesamplia
+							Laofertadeproveedoresdesolucionescomercialesesmayoraladeproveedoresopensource
+							Alescogerunasolucionlaempresaquedasujetaaloscambiosquelaempresacreadoraquierahacerenelproductoactualizacionescontinuidadyterminosdeservicio
+							Eltiempodeimplementacionesmayoraldeunasolucionopensource
+							Lasolucionimplementadatieneunlimitedepersonalizacionyflexibilizacionquevaatadaalascaracteristicasdecadaproductoenocasioneslaempresadebecambiarsusesquemasdetrabajoparaadaptarsealaherramientaseleccionada
+							NoexistedesembolsoinicialrepresentativoporloquenoseafectaelcapitaldetrabajoyalinvertirestedineroalTCsetieneunaumentoenelVPNincrementalfrentealasolucioncomercial
+							Elfabricanteoproveedordeladistribuciondelsoftwareopensourcenonecesariamentecontaraconprogramasdecapacitacionoentregaradocumentaciondetallada
+							Loscostosdeescalamientovendrandelcostomarginaldeimplementarunnuevoservidorodehabiitarnuevosclientes
+							Laempresanoquedasujetaaunsoloproveedor
+							Mayorfacilidadparainnovaryexperimentar
+							Mayoragilidaddurantelaimplementacion
+							Facilidadparatrabajarconunacomunidaddeexpertoscalificadosyreutlizarelcodigofuente
+							Accesoalcodigofuente
+							Posibilidaddemodificarelcodigofuenteylafuncionalidad
+							Mayorvalor_precio
+							Noexisteuncontratodesoportenigarantiadelfabricante
+							Lasactualizacionesestansujetasaldesarrollodelacomunidadopensource
+							Laposibilidaddedisponerdedocumentacioncentralizadafacildeusarypersonalizadaesminima
+							Porlogeneralsepresentancostosocultosdeintegracionconotrossistemas
+							Dependiendodelsistemayproveedorseleccionadossedebeincurrirenuncostodeadquisicion
+							Dependiendodelproveedorydeltipodesolucionanualmentesegenerarancostosdelicenciamiento
+							Loscostosporsoportemensualestaranacargodelaempresa
+							Laempresanecesariamentetendraqueincurrirencostosdeadquisicionomantenimientodeinfraestructura
+							Posiblidaddetenermejorcontrolsobrelainfraestructuraynivelesdeservicio
+							Posibilidaddetenermejorcontrolsobrelasactualizacionesalsofwareylasimplicacionesdenegocioparalaempresa
+							Laempresapuedecontrolar100porcientoelaccesoalainformacionyseguridaddelamisma
+							Noexistencostosdelicenciamientosoporteconfiguracionmantenimientoniactualizacion
+							Laresponsabilidadporlaoperacionydisponibilidaddelsistemaesdelproveedor
+							Permitealaempresadestinarrecursosalaoperaciondelcoredelnegocio
+							Sujetoadisponibilidaddeconexionainternet
+							Noexistecontrolsobrelaseguridaddelainformacion
+							Sujetaalosacuerdosdenivelesdeservicioqueseestablezcanconelproveedor
+							Estemodelorepresentalaalternativademenorcosto
+							Laplaneaciondebeserrigurosaycumplirsedeformaestricta
+							Debeexistirunmecanismocontingentebienplaneadoydocumentado
+							Todoslossistemasimplementadosdebenempezaraoperarenlamismafechaestablecida
+							Todaslastareasdeconfiguracionpersonalizacionintegracionycapacitaciondebenestarterminadasparalafechadellanzamiento
+							Estemodelorepresentalaalternativademayorcomplejidad
+							Eltiempodeimplementacionaumenta
+							Existelaoportunidaddecorregirerroresyhacerajustes
+							Presentaelmejorbalanceentrecostotiempoybeneficio
+							Sedebetenerunmuybienniveldeentendimientodelosprocesosdenegocioaimplementarylasdependenciasentrelosmismos
+							Serequierealtoconocimientodelnegocioypodrianecesitarseunaconsultoriaadicionalparavalidaroreplantearalgunosprocesosdenegocio
+							Uncontratodemantenimientoconelproveedormejoraladisponibilidaddelsistemaimplementadoyasilacontinuidaddelnegocioydelosprocesosafectados
+							Loscostosdelcontratopuedenllegarasertanaltosqueunporcetanjeimportantedelosingresosdelaempresatienenquedirigirseacubriresterubro
+							Uncontratoconelproveedoraseguraelconocimientodelaimplementacionyreducelostiemposnecesariosparadarrespuestaainconvenientesactualizacionesorequirimientosdemantenimiento
+							Uncontratodemantenimientoconunproveedorespecializadopuedeofrecermejorescondicionesdecoberturagarantiaymantenimientoespecializadoadicionalesalasbrindadasporelfabricante
+							Eltiempoderespuestaanteunrequerimientopuedesersuperiorpordesconocimientodelaimplementacion
+							Ladecisionimplicalabusquedadeunequipocalificadoydimensionadodeacuerdoconeltamanioycomplejidaddelaimplementacion
+							Ladecisionsuprimeuncostoenelcortoplazoperoimplicaunriesgoquepuedeimpactarlaoperaciondelprocesodenegocioimplementadoyasilosingresosdelaempresa
+							Representalaopciondemenorcosto
+							RequierepersonalcalificadoparaentenderelcontextodelanecesidadlosrequerimientosexactosdelnegocioyplasmarloseneldocumentoRFP
+							Esunaformaefectivaparaquevariosproveedoresseaproximenalasolucionrequeridadesdediferentesangulos
+							Posibilidadderecibirofertasvariadasylograrpoderdenegociacionfrenteaproveedores
+							Requierepersonalcalificadopararealizarlaselecciondelafirmadeconsultoriaencargadaderealizarelprocesodeselecciondelasolucion
+							Requiereconocimientodelaindustriaporpartedelafirmadeconsultoria
+							Requiereexperienciapreviaenimplementacionessimilaresycasosdeexitoquesoportenlaexperiencia
+							Requierereclutarpersonalconconocimientoespecializadosobreimplementaciondesistemasempresariales
+							Laempresanorequiereuncentrodecomputo
+							Seevitancostostiempoyrecursoshumanosadicionalesparaintegrarlanuevaplataformaalossistemasyprocesosdenegocioexistentes
+							Serequieretiempoadicionalparaintegrarelnuevosistemaalossistemasexistentes
+							SerequierecapacitacionalpersonaldeTIyalosusuariosenlanuevaplataforma
+							Ladecisionpuedeimplicarmantenimientoadicionalespecializado
+							Ladecisionpuedeimplicarsoporteadicionalespecializado
+							Elmiddlewarereducelostiemposdeintegracionyhaceusodemejorespracticasyestandaresdelaindustria
+							Aumentaloscostosanualesdetodalaimplementacionyaumentaelcostototaldepropiedad
+							Requierepersonaltecnicamentecapacitadoyconconocimientosuficientedelossistemasaintegrar
+							Permiteelmayorgradodeflexibilidadycontrol
+							Requierelaadecuadaselecciondeunproveedorconaltoconocimientodelasherramientasyprocesosdenegocioinvolucrados
+							Alfinanciarlaimplementacionconrecursospropiosseafectaelflujodecajadelaempresayasielcapitaldetrabajo
+							Seevitanloscostosasociadosadiferentestiposdefinanciacion
+							Loscostosasociadosalproyectoaumentanporcuentadelosinteresesdefinanciacion
+							Losgastosfinancierospuedensercontabilizadoscomogastosoperativosgenerandounefecto_valor_porcuentadelareducciondepagodeimpuestosenelPyG
+							Losrecursospropiosliberadosporcuentadelafinanciacionpuedendestinarseainversionesaunatasamayorquelatasadefinanciacion
+							Losactivosnorepresentangastosporimpuestosparalacompania
+							Sujetoalascondicionesdelcontratodeleasingoperativoestablecidoporlaentidadfinanciera
+							Noexistencostosdelicenciamientosoporteconfiguracionmantenimientoniactualizacionencuantoainfraestructuranisistemasoperativos
+							Laempresanorequiereuncentrodecomputo_1
+							Interoperabilidadentrediferentessistemas
+							Maximoniveldeescalabilidadelcostoytiempomarginaldeincrementarlacapacidaddeprocesamientoeselminimoposible
+							Noexistecontrolsobreelaccesoalosservidoresnisobrelaseguridaddelosmismos
+							RequiereundepartamentodeTIcapazdeevaluarlacapacidadtecnologicaylosretosquesuponelaimplentaciondelsistema
+							RequiereunagenerenciadeTIresponsabledeevaluarlasalternativaseintegrarlasdentrodelavisionestrategicadelaempresa
+
+constraints
+	!Adquirirsistemanuevo | Migracion | Costos
+	!Adaptarsistemaexistente | Configuracion | Costos | Dolares
+	!Adaptarsistemaexistente | Configuracion | Tiempo | Meses
+	!Adaptarsistemaexistente | Consultor | RecursosHumanos | Personas | a1persona
+	!Comercial | Soporte | Costos | Dolares | a500_5000 | Mensual
+	!Comercial | Licenciamiento | Costos | Dolares | a25porcientodelcostoinicial | Anual
+	!Comercial | Adquisicion | Costos | Dolares | a25000_500000 | Unavez
+	!Subcontratargerenciadelproyectodeimplementacion | Implementacion | Consideracion | Liberalosrecursosgerencialesdelacompaniaparaqueseanusadosenactividadespropiasdelcoredelnegocio
+	!Subcontratargerenciadelproyectodeimplementacion | Implementacion | Consideracion | Implicaquelaresponsabilidadporelcumplimientodelosobjetivosyfechasquedaenmanosdeunterceroysuincumplimientorepercuteenlosobjetivosdenegocio
+	!Subcontratargerenciadelproyectodeimplementacion | Implementacion | Consideracion | Requiereunproveedorconexperienciaampliaydemostrableenimplementacionesexitosasdesistemasempresarialesenlamismaindustria
+	!Subcontratargerenciadelproyectodeimplementacion | Implementacion | Costos | Dolares | a5000enadelante | Mensual
+	!Subcontratarlaadministraciondeunprocesodenegociocompleto | Implementacion | Consideracion | Losresultadosdelaempresaquedansujetosalcumplimientodelosacuerdosdenivelesdeservicioconelproveedor
+	!Subcontratarlaadministraciondeunprocesodenegociocompleto | Implementacion | Consideracion | Posibilidaddetomarventajadelaincorporaciondemejorespracticasdelaindustriayknowhowquederivenenunaventajacompetitiva
+	!Subcontratarlaadministraciondeunprocesodenegociocompleto | Implementacion | Consideracion | Perdidadecontrolsobrelosprocesosdenegocio
+	!Adaptarsistemaexistente | Tecnico | RecursosHumanos | Personas | a1persona
+	!Subcontratarpersonalizacion | Implementacion | Costos | Dolares | a25000_200000 | Unavez
+	!Subcontratarpersonalizacion | Implementacion | Consideracion | Liberaalaempresadelastareasfuncionalesytecnicasypermiteliberarrecursosparadestinarlosalasactividadescoredelnegocio
+	!Subcontratarpersonalizacion | Implementacion | RecursosHumanos | Personal | a1enadelante | Requierepersonalqueformepartedelequipointerdisciplinarioquetrabajaraconelproveedorenellevantamientoderequerimientosfuncionales
+	!Subcontratarpartedeldesarrolloeintegracion | Implementacion | Consideracion | Liberaalaempresadelastareasfuncionalesytecnicasypermiteliberarrecursosparadestinarlosalasactividadescoredelnegocio
+	!Subcontratarpartedeldesarrolloeintegracion | Implementacion | Costos | Dolares | a25000_300000 | Unavez
+	!ERP_Marketingyventas | Ventasporempleado | Indicadores | Dolares
+	!Adquirirsistemanuevo | Capacitacion | Costos | Dolares
+	!ERP_Marketingyventas | Tasaderetenciondeclientes | Indicadores | Porcentaje
+	!ERP_Marketingyventas | Ventasnetas | Indicadores | Dolares
+	!Adquirirsistemanuevo | Implementacion | Costos | Dolares
+	!Comercial | Soporte | Consideracion | Elproveedorofrecerasuficientegarantiaysoporteporelproductoentregado
+	!Comercial | Escalamiento | Consideracion | Loscostosdeescalamientoestansujetosalmodelodelicenciamientoacordadoconelproveedor
+	!Comercial | Soporte | Consideracion | Laofertadecompaniascapacesdebrindarsoporteasolucionescomercialesesamplia
+	!Comercial | Documentacion | Consideracion | Elproveedorofrecerasuficientedocumentacionymanualessobreelusodelproducto
+	!Comercial | Implementacion | Tiempo | Meses | Entre6y36
+	!Comercial | Integracion | Costos | Dolares | a10000_80000 | Unavez
+	!Comercial | Capacitacion | Consideracion | Dolares | a3000_20000 | Elfabricanteporlogeneralentregaramanualesdocumentacionytendraplanespersonalizadosdecapacitacionyeventualmentepodraofrecerunplandeimplementaciongradual
+	!Comercial | FlujodeCaja | Costos | ExisteundesembolsoinicialimportantequeafectaelFCLydesembolsosanualesenlicenciamiento
+	!Comercial | Configuracion | Costos | Dolares | a5000_50000 | Mensual
+	!Comercial | Personalizacion | Costos | Dolares | a5000_75000 | Unavez
+	!Adquirirsistemanuevo | Capacitacion | Tiempo | Meses
+	!Adquirirsistemanuevo | Integracion | Costos | Dolares
+	!Adquirirsistemanuevo | Tecnico | RecursosHumanos | Personas | a2personas
+	!Adquirirsistemanuevo | Consultor | RecursosHumanos | Personas | a1persona
+	!Adquirirsistemanuevo | Integracion | Tiempo | Meses
+	!Adquirirsistemanuevo | Implementacion | Tiempo | Meses
+	!OpenSource | Soporte | Costos | Dolares | a5000_10000 | Mensual
+	!OpenSource | Licenciamiento | Costos | Dolares | a0_500 | Anual
+	!OpenSource | Adquisicion | Costos | Dolares | a0_500 | Unavez
+	!Comercial | Flexibilidad | Consideracion | Lasolucionimplementadatieneunlimitedepersonalizacionyflexibilizacionquevaatadaalascaracteristicasdecadaproductoenocasioneslaempresadebecambiarsusesquemasdetrabajoparaadaptarsealaherramientaseleccionada
+	!OpenSource | Personalizacion | Costos | Dolares | a25000_75000 | Unavez
+	!OpenSource | Configuracion | Costos | Dolares | a30000_100000 | Unavez
+	!OpenSource | Mantenimientoyactualizaciones | Costos | Dolares | a500_5000 | Anual
+	!Comercial | Proveedores | Consideracion | Alescogerunasolucionlaempresaquedasujetaaloscambiosquelaempresacreadoraquierahacerenelproductoactualizacionescontinuidadyterminosdeservicio
+	!Comercial | Implementacion | Consideracion | Eltiempodeimplementacionesmayoraldeunasolucionopensource
+	!Comercial | Proveedores | Consideracion | Laofertadeproveedoresdesolucionescomercialesesmayoraladeproveedoresopensource
+	!Subcontratarlaadministraciondeunprocesodenegociocompleto | Implementacion | Consideracion | Requiereunproveedorconaltoniveldeconocimientodelsectorydelnegocio
+	!Subcontratarpartedeldesarrolloeintegracion | Implementacion | Consideracion | Requierepersonalcalificadoparaseleccionarelproveedoryestablecerlosterminosycondicionesdeloscontratos
+	!Subcontratarlaadministraciondeunprocesodenegociocompleto | Implementacion | Costos | Dolares | a5000enadelante | Mensual
+	!OpenSource | Proveedores | Ventaja | Laempresanoquedasujetaaunsoloproveedor
+	!OpenSource | Escalamiento | Costos | Loscostosdeescalamientoestansujetosalmodelodelicenciamientoacordadoconelproveedor
+	!OpenSource | Soporte | Desventaja | Noexisteuncontratodesoportenigarantiadelfabricante
+	!OpenSource | Implementacion | Ventaja | Mayorfacilidadparainnovaryexperimentar | Mayoragilidaddurantelaimplementacion | Facilidadparatrabajarconunacomunidaddeexpertoscalificadosyreutlizarelcodigofuente | Accesoalcodigofuente | Posibilidaddemodificarelcodigofuenteylafuncionalidad | Mayorvalor_precio
+	!OpenSource | Documentacion | Desventaja | Laposibilidaddedisponerdedocumentacioncentralizadafacildeusarypersonalizadaesminima
+	!OpenSource | Mantenimientoyactualizaciones | Desventaja | Lasactualizacionesestansujetasaldesarrollodelacomunidadopensource
+	!OpenSource | Integracion | Costos | Dolares | a25000_75000 | Unavez
+	!OpenSource | Implementacion | Tiempo | Meses | Entre6y36
+	!OpenSource | FlujodeCaja | Costos | NoexistedesembolsoinicialrepresentativoporloquenoseafectaelcapitaldetrabajoyalinvertirestedineroalTCsetieneunaumentoenelVPNincrementalfrentealasolucioncomercial
+	!OpenSource | Capacitacion | Costos | Dolares | a3000_20000 | Elfabricanteoproveedordeladistribuciondelsoftwareopensourcenonecesariamentecontaraconprogramasdecapacitacionoentregaradocumentaciondetallada
+	!ERP_Modulorecursoshumanos | Costosporempleado | Indicadores | Dolares
+	!ERP_Modulorecursoshumanos | Productividadporempleado | Indicadores | Dolares
+	!ERP_Modulorecursoshumanos | Costosdeentrenamientoporempleado | Indicadores | Dolares
+	!ERP_Modulorecursoshumanos | Horasdeentrenamientoporempleado | Indicadores | Horas
+	!ERP_Modulofinanciero | Retornodeinversion | Indicadores | Porcentaje
+	!ERP_Modulofinanciero | Aumentoeningresosoperativos | Indicadores | Porcentaje
+	!ERP_Modulofinanciero | Rentabilidaddelpatrimonio | Indicadores | Porcentaje
+	!ERP_Modulofinanciero | Rentabilidaddeactivos | Indicadores | Porcentaje
+	!ERP_Modulofinanciero | Utilidadesporaccion | Indicadores | Dolares
+	!ERP_Moduloadministrativo | Rotaciondeinventarios | Indicadores | Dias
+	!ERP_Moduloadministrativo | Rotaciondecartera | Indicadores | Dias
+	!CRM_Modulodeclientes | Imagendemarca | Indicadores | Porcentaje
+	!CRM_ModuloVentas | Ganaciasporempleado | Indicadores | Dolares
+	!CRM_ModuloVentas | Ventasporempleado | Indicadores | Dolares
+	!CRM_ModuloVentas | Ventasnetas | Indicadores | Dolares
+	!CRM_ModuloVentas | Tasaderetenciondeclientes | Indicadores | Porcentaje
+	!CRM_Modulodeclientes | Visitasaclientespordia | Indicadores | Numero
+	!CRM_Modulodeclientes | Nuevossegmentoscreados | Indicadores | Numero
+	!CRM_Modulodeclientes | Prospectosnuevospordia | Indicadores | Numero
+	!CRM_Modulodeclientes | Clientesnuevospordia | Indicadores | Numero
+	!CRM_Modulodeclientes | Niveldeservicio | Indicadores | Porcentaje
+	!ERP_Modulorecursoshumanos | Tasaderetenciondeempleados | Indicadores | Porcentaje
+	!SCM_Sistemadegestiondeabastecimiento | Frecuenciadeentrega | Indicadores | Numero
+	!SCM_Sistemadegestiondeabastecimiento | Efectividadplanmaestrodeproduccion | Indicadores | Porcentaje
+	!SCM_Sistemadegestiondeabastecimiento | Calidaddeentrega | Indicadores | Porcentaje
+	!SCM_Sistemadegestiondeabastecimiento | Tiempodeentrega | Indicadores | Dias
+	!SCM_Sistemadegestiondeabastecimiento | Tiempoenrutamientodeordenes | Indicadores | Dias
+	!SCM_Sistemadegestiondeabastecimiento | Niveldeentregaslibresdedefectos | Indicadores | Porcentaje
+	!ERP_Modulodeinteligenciadenegocio | Disponibilidaddeinformacionpordemanda | Indicadores | Porcentaje
+	!ERP_Marketingyventas | Tasadecrecimientodeventas | Indicadores | Porcentaje
+	!ERP_Marketingyventas | Tiempodeentregadespuesdelaventa | Indicadores | Dias
+	!ERP_Marketingyventas | Tiempodenegociacionantesdelaventa | Indicadores | Dias
+	!SCM_Sistemadegestiondeabastecimiento | Costototaldeinventario | Indicadores | Dolares
+	!ERP_Modulodeclientes | Clientesnuevospordia | Indicadores | Numero
+	!ERP_Modulodeproduccion | Tiempopromediodeesperaenentregadepedidos | Indicadores | Dias
+	!ERP_Modulodeproduccion | Tiempoderespuestaenprocesamientodeordenes | Indicadores | Dias
+	!ERP_Modulodeproduccion | Efectividadprocesodefacturacion | Indicadores | Porcentaje
+	!ERP_Moduloadministrativo | Precisiondeinventarios | Indicadores | Porcentaje
+	!ERP_Moduloadministrativo | Tiempoderespuestaordenes | Indicadores | Dias
+	!ERP_Moduloadministrativo | Tiempodecompras | Indicadores | Dias
+	!ERP_Modulodeclientes | Imagencorporativa | Indicadores | Porcentaje
+	!ERP_Modulodegestiondeabastecimiento | Tiempototalcadenadeabastecimiento | Indicadores | Dias
+	!ERP_Modulodeclientes | Retenciondeclientes | Indicadores | Porcentaje
+	!ERP_Modulodeclientes | Satisfacciondelcliente | Indicadores | Porcentaje
+	!Sistemaempresarialbasadoenunaplataformadiferente | Tiempo | Serequieretiempoadicionalparaintegrarelnuevosistemaalossistemasexistentes
+	!Sistemaempresarialbasadoenunaplataformadiferente | Capacitacion | Costos | SerequierecapacitacionalpersonaldeTIyalosusuariosenlanuevaplataforma
+	!Sistemaempresarialbasadoenunaplataformadiferente | Capacitacion | Tiempo | SerequierecapacitacionalpersonaldeTIyalosusuariosenlanuevaplataforma
+	!Sistemaempresarialbasadoenunaplataformadiferente | Mantenimiento_1 | Costos | Ladecisionpuedeimplicarmantenimientoadicionalespecializado
+	!Evaluacioninterna | Consideracion | Requierereclutarpersonalconconocimientoespecializadosobreimplementaciondesistemasempresariales | RequiereundepartamentodeTIcapazdeevaluarlacapacidadtecnologicaylosretosquesuponelaimplentaciondelsistema | RequiereunagenerenciadeTIresponsabledeevaluarlasalternativaseintegrarlasdentrodelavisionestrategicadelaempresa
+	!Sistemaempresarialbasadoenlamismaplataformatecnologica | Implementacion | Consideracion | Seevitancostostiempoyrecursoshumanosadicionalesparaintegrarlanuevaplataformaalossistemasyprocesosdenegocioexistentes
+	!Sistemaempresarialbasadoenunaplataformadiferente | Adquisicion | Costos | Dolares | a0_100000 | Unavez
+	!Sistemaempresarialbasadoenunaplataformadiferente | Integracion_1 | Costos | Dolares | a5000enadelante
+	!Evaluacioninterna | Costoinicial | Costos | Dolares | a5000enadelante | Mensual
+	!Gestiondecontactos | ERP_Modulodeclientes
+	!Ajustarprocesosdeflujodetrabajo | !Mejorarcapacidadderespuesta | ERP_Modulodegestiondeabastecimiento
+	!Gestionarpresupuestos | !Crearyconsolidarinformes | !Buscartendenciasyrelaciones | !Compartirconocimiento | ERP_Modulodeinteligenciadenegocio
+	!Segmentarydepurarclientes | !Planificacionypresupuestosdemercadeo | !Gestiondedatosylistas | !Analisisdemarketing | !GestiondeCampanias | !Facilitartareasdemercadeoypublicidad | !Gestionderespuestasyclientespotenciales | CRM_Modulomarketing
+	!Reducirciclosdeventas | !Aumentartasasdecierredeventas | !Mejorarretenciondeclientes | !Implementarnuevoprocesodeventas | CRM_ModuloVentas
+	!Gestionarinformaciondeclientes | !Gestiondecasosdeclientes | !Historialdeserviciosdeclientes | !Aumentarbasedeclientes | !Implementarnuevoprocesodeatencionalcliente | !Mejorarconocimientodelcliente | !Medirsatisfacciondelconsumidor | CRM_Modulodeclientes
+	!Controlsobrerecursoshumanos | !Nuevosprocesosderecursoshumanos | !Reclutamiento | !Biodata_hojasdevida | !Analisisdecargos_estructuraorganizacional | !Nominayadministraciondesalarios | !Educacionycapacitacion | !Saludocupacional | !Modelamientodeprocesosyorganigramas | ERP_Modulorecursoshumanos
+	!Nuevosprocesosfinancieros | !Implementarcontrolessobreprocesosfinancieros | !Gestioncontable | !Manejodecuentasporpagar_Proveedores | !Sistemasdecosteo | !Administraciondeactivosfijos | !Manejodeconciliacionesbancarias | !Controldeinversiones | !Manejodeobligacionesfinancieras | !Tesoreria | !Contabilidadanalitica | !Controlyadministraciondelpresupuesto | !Manejodeactivosdecapital | ERP_Modulofinanciero
+	!Sistemaempresarialbasadoenunaplataformadiferente | Soporte | Costos | Ladecisionpuedeimplicarsoporteadicionalespecializado
+	Manejodeinventarios | !Manejodealmacen | !Gestiondecompras | !Gestiondeactivosfijos | !Comercioexterior | !Seguros | ERP_Moduloadministrativo
+	!Manejodeordenesdeproduccion | !Manejodeordenesdecompra | !Planificaciondenecesidadesdecapacidad | !Planificaciondesuministros | !Disminuirtiemposdeentrega | !Integracionconproveedores | !Gestiondeproveedores | !Administraciondemateriasprimas | !Gestiondebodega | !Realizarcontroldecostos | !Administraciondepedidosydespachos | ERP_Modulodeproduccion
+	!Desarrollopropio | Implementacion | Consideracion | Requierepersonaltecnicamentecapacitadoyconconocimientosuficientedelossistemasaintegrar | Permiteelmayorgradodeflexibilidadycontrol
+	!Proveedor | Implementacion | Costos | a5000enadelante
+	!Desarrollopropio | Implementacion | Costos | Dolares | a5000enadelante | Mensual
+	!Desarrollopropio | Implementacion | RecursosHumanos | Personal | a1enadelante
+	!CRM_ModuloVentas | Tiempodenegociacionantesdelaventa | Indicadores | Dias
+	!Middleware | Implementacion | Consideracion | Elmiddlewarereducelostiemposdeintegracionyhaceusodemejorespracticasyestandaresdelaindustria
+	!Middleware | FlujodeCaja | Consideracion | Aumentaloscostosanualesdetodalaimplementacionyaumentaelcostototaldepropiedad
+	!Middleware | Mantenimientoyactualizaciones | Costos | Dolares | a15porcientodelicenciamiento | Anual
+	!Middleware | Configuracion | Costos | Dolares | a5000enadelante
+	!Middleware | Adquisicion | Costos | Dolares | Entre15000y100000 | Unavez
+	!Middleware | Licenciamiento | Costos | Dolares | a25porcientodelcostoinicial | Anual
+	!CRM_Modulomarketing | Costototaldemanejoporcanal | Indicadores | Dolares
+	!CRM_Modulomarketing | Tiempoderespuestaalcliente | Indicadores | Dias
+	!Ajustarprocesosdeflujodetrabajo | !Mejorarcapacidadderespuesta | !Planearygestionarcapacidaddebodegajeyalmacenamiento | !Gestiondetransportedemercancia | !Logisticadetransporteinternacional | !Gestionderelacionconproveedores | !Gestiondelademanda | SCM_Sistemadegestiondeabastecimiento
+	!Leasing | FlujodeCaja | Consideracion | Losactivosnorepresentangastosporimpuestosparalacompania | Sujetoalascondicionesdelcontratodeleasingoperativoestablecidoporlaentidadfinanciera
+	!Credito | FlujodeCaja | Consideracion | Loscostosasociadosalproyectoaumentanporcuentadelosinteresesdefinanciacion | Losgastosfinancierospuedensercontabilizadoscomogastosoperativosgenerandounefecto_valor_porcuentadelareducciondepagodeimpuestosenelPyG | Losrecursospropiosliberadosporcuentadelafinanciacionpuedendestinarseainversionesaunatasamayorquelatasadefinanciacion
+	!GestiondeCampanias | !Gestionarinformaciondeclientes | !Historialdeserviciosdeclientes | !Organizarrecursosdeservicio | !Facturacionydevolucion | !Cartera | !Administraciondepreciosydescuentos | !Administraciondepromociones | !Administraciondecuotaseincentivos | !Administraciondevisitacomercial | !Importacionesyexportaciones | !Gestionarcontratosdeservicio | ERP_Marketingyventas
+	!RecursosPropios | FlujodeCaja | Consideracion | Alfinanciarlaimplementacionconrecursospropiosseafectaelflujodecajadelaempresayasielcapitaldetrabajo | Seevitanloscostosasociadosadiferentestiposdefinanciacion
+	!Presupuestarcostosytiempos | !Automatizarlafacturacion | !Predecirdisponibilidades | !Seguimientodecostosyconsumos | !Planificarcapacidades | ERP_Modulodegestiondeproyectos
+	!Proveedor | Implementacion | Consideracion | Liberaalaempresadelastareasfuncionalesytecnicasypermiteliberarrecursosparadestinarlosalasactividadescoredelnegocio | Requierelaadecuadaselecciondeunproveedorconaltoconocimientodelasherramientasyprocesosdenegocioinvolucrados
+	!CRM_Modulomarketing | Costototaldepromociones | Indicadores | Dolares
+	!CRM_ModuloVentas | Tiempodeentregadespuesdelaventa | Indicadores | Dias
+	!CRM_Modulomarketing | Campaniasdemercadeo | Indicadores | Numero
+	!CRM_Modulomarketing | Eficienciaporcanal | Indicadores | Porcentaje
+	!OnPremise | Licenciamiento | Costos | a100_200000 | Dependiendodelproveedorydeltipodesolucionanualmentesegenerarancostosdelicenciamiento
+	!OnPremise | Costoinicial | Costos | a100_200000 | Dependiendodelsistemayproveedorseleccionadossedebeincurrirenuncostodeadquisicion
+	!OnPremise | Mantenimientoyactualizaciones | Costos | Dolares | a5000_50000 | Anual
+	!OnPremise | Soporte | Costos | Dolares | a500_5000 | Mensual | Loscostosporsoportemensualestaranacargodelaempresa
+	!OpenSource | Integracion | Desventaja | Porlogeneralsepresentancostosocultosdeintegracionconotrossistemas
+	!InfraestructuracomoservicioIaaS | Implementacion | Consideracion | Noexistencostosdelicenciamientosoporteconfiguracionmantenimientoniactualizacionencuantoainfraestructuranisistemasoperativos | Laempresanorequiereuncentrodecomputo_1 | Interoperabilidadentrediferentessistemas | Maximoniveldeescalabilidadelcostoytiempomarginaldeincrementarlacapacidaddeprocesamientoeselminimoposible
+	!OnPremise | Configuracion | Costos | Dolares | a5000_50000 | Unavez
+	!OnPremise | Personalizacion | Costos | Dolares | a5000_75000 | Unavez
+	!OnPremise | Integracion | Costos | Dolares | a10000_80000 | Unavez
+	!OnPremise | Infraestructura | Consideracion | Dolares | a10000_500000 | Unavez | Laempresanecesariamentetendraqueincurrirencostosdeadquisicionomantenimientodeinfraestructura
+	!SoftwarecomoservicioSaaS | Implementacion | Ventaja | Laresponsabilidadporlaoperacionydisponibilidaddelsistemaesdelproveedor | Permitealaempresadestinarrecursosalaoperaciondelcoredelnegocio | Sujetoadisponibilidaddeconexionainternet
+	!SoftwarecomoservicioSaaS | Implementacion | Consideracion | Noexistencostosdelicenciamientosoporteconfiguracionmantenimientoniactualizacion
+	!SoftwarecomoservicioSaaS | Arrendamiento | Costos | Dolares | a200_2000 | Mensual
+	!OnPremise | Seguridad | Consideracion | Laempresapuedecontrolar100porcientoelaccesoalainformacionyseguridaddelamisma
+	!OnPremise | Soporte | Consideracion | Posibilidaddetenermejorcontrolsobrelasactualizacionesalsofwareylasimplicacionesdenegocioparalaempresa
+	!OnPremise | Mantenimientoyactualizaciones | Consideracion | Posiblidaddetenermejorcontrolsobrelainfraestructuraynivelesdeservicio
+	!InfraestructuracomoservicioIaaS | Arrendamiento | Costos | Dolares | a400enadelante | Mensual
+	!InfraestructuracomoservicioIaaS | Implementacion | Tiempo | Semanas | Entre1y2
+	!SoftwarecomoservicioSaaS | Seguridad | Ventaja | Noexistecontrolsobrelaseguridaddelainformacion
+	!SoftwarecomoservicioSaaS | Disponibilidad | Ventaja | Sujetaalosacuerdosdenivelesdeservicioqueseestablezcanconelproveedor
+	!InfraestructuracomoservicioIaaS | Seguridad | Consideracion | Noexistecontrolsobreelaccesoalosservidoresnisobrelaseguridaddelosmismos
+	!BigBang | Implementacion | Costos | Estemodelorepresentalaalternativademenorcosto
+	!InfraestructuracomoservicioIaaS | Proveedores | Consideracion | RequiereundepartamentodeTIcapazdeevaluarlacapacidadtecnologicaylosretosquesuponelaimplentaciondelsistema
+	!Implementacionporfases | Implementacion | Consideracion | Estemodelorepresentalaalternativademayorcomplejidad | Eltiempodeimplementacionaumenta
+	!BigBang | Implementacion | Consideracion | Laplaneaciondebeserrigurosaycumplirsedeformaestricta | Debeexistirunmecanismocontingentebienplaneadoydocumentado | Todoslossistemasimplementadosdebenempezaraoperarenlamismafechaestablecida | Todaslastareasdeconfiguracionpersonalizacionintegracionycapacitaciondebenestarterminadasparalafechadellanzamiento
+	!Implementacionporprocesos | Implementacion | Costos | Presentaelmejorbalanceentrecostotiempoybeneficio
+	!Implementacionporfases | Implementacion | Existelaoportunidaddecorregirerroresyhacerajustes
+	!Implementacionporprocesos | Implementacion | Consideracion | Sedebetenerunmuybienniveldeentendimientodelosprocesosdenegocioaimplementarylasdependenciasentrelosmismos | Serequierealtoconocimientodelnegocioypodrianecesitarseunaconsultoriaadicionalparavalidaroreplantearalgunosprocesosdenegocio
+	!Contratoconelproveedor | Mantenimiento_1 | Costos | Porcentaje | a18porciento_25porcientosobreellicenciamiento | Anual
+	!Contratoconelproveedor | Mantenimiento_1 | Consideracion | Uncontratodemantenimientoconelproveedormejoraladisponibilidaddelsistemaimplementadoyasilacontinuidaddelnegocioydelosprocesosafectados | Loscostosdelcontratopuedenllegarasertanaltosqueunporcetanjeimportantedelosingresosdelaempresatienenquedirigirseacubriresterubro | Uncontratoconelproveedoraseguraelconocimientodelaimplementacionyreducelostiemposnecesariosparadarrespuestaainconvenientesactualizacionesorequirimientosdemantenimiento
+	!Mantenimientoporcuentapropia | Mantenimiento_1 | RecursosHumanos | Personal | a1enadelante
+	!Mantenimientoporcuentapropia | Mantenimiento_1 | Costos | Dolares | a5000enadelante | Anual
+	!Contratoconunproveedorespecializado | Mantenimiento_1 | Consideracion | Uncontratodemantenimientoconunproveedorespecializadopuedeofrecermejorescondicionesdecoberturagarantiaymantenimientoespecializadoadicionalesalasbrindadasporelfabricante | Eltiempoderespuestaanteunrequerimientopuedesersuperiorpordesconocimientodelaimplementacion
+	!Contratoconunproveedorespecializado | Mantenimiento_1 | Costos | Porcentaje | a15porciento_30porcientosobreellicenciamiento | Anual
+	!RFP_Requestforproposal | Implementacion | RecursosHumanos | RequierepersonalcalificadoparaentenderelcontextodelanecesidadlosrequerimientosexactosdelnegocioyplasmarloseneldocumentoRFP | Esunaformaefectivaparaquevariosproveedoresseaproximenalasolucionrequeridadesdediferentesangulos | Posibilidadderecibirofertasvariadasylograrpoderdenegociacionfrenteaproveedores
+	!RFP_Requestforproposal | Implementacion | Costos | Dolares | a300enadelante | Unavez | Representalaopciondemenorcosto
+	!Sincontratodemantenimiento | Mantenimiento_1 | Consideracion | Ladecisionsuprimeuncostoenelcortoplazoperoimplicaunriesgoquepuedeimpactarlaoperaciondelprocesodenegocioimplementadoyasilosingresosdelaempresa
+	!Mantenimientoporcuentapropia | Mantenimiento_1 | Consideracion | Ladecisionimplicalabusquedadeunequipocalificadoydimensionadodeacuerdoconeltamanioycomplejidaddelaimplementacion
+	!Consultoriaexterna | Costoinicial | Costos | Dolares | a20000_100000 | Unavez
+	!Consultoriaexterna | Implementacion | Consideracion | Requierepersonalcalificadopararealizarlaselecciondelafirmadeconsultoriaencargadaderealizarelprocesodeselecciondelasolucion | Requiereconocimientodelaindustriaporpartedelafirmadeconsultoria | Requiereexperienciapreviaenimplementacionessimilaresycasosdeexitoquesoportenlaexperiencia
