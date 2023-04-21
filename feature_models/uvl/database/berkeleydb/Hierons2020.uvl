@@ -1,0 +1,425 @@
+namespace SPL
+
+features
+	SPL
+		mandatory
+			ConcurrTrans
+				optional
+					Latches
+					Transactions
+					CheckLeaks
+					FSync
+			Persistance
+				mandatory
+					IIO
+						alternative
+							OldIO
+								mandatory
+									IO
+								optional
+									SynchronizedIO
+							NewIO
+								mandatory
+									NIOAccess
+										alternative
+											ChunkedNIO
+											NIO
+								optional
+									DirectNIO
+					Checkpointer
+						optional
+							CPBytes
+							CPTime
+							CheckpointerDaemon
+					IICleaner
+						mandatory
+							Cleaner
+						optional
+							CleanerDaemon
+							LookAHEADCache
+				optional
+					Checksum
+					EnvironmentLocking
+					DiskFullErro
+					FileHandleCache
+			BTree
+				optional
+					INCompressor
+					IEvictor
+						mandatory
+							Evictor
+						optional
+							CriticalEviction
+							EvictorDaemon
+					Verifier
+			Ops
+				optional
+					DeleteOp
+					RenameOp
+					TruncateOp
+			Derivatives
+				or
+					Derivative_LoggingEvictor_Statistics_Evictor_LoggingBase
+					Derivative_LoggingEvictor_Evictor_MemoryBudget_LoggingBase
+					Derivative_LoggingInfo_Statistics_Verifier
+					Derivative_Latches_Statistics_Verifier
+					Derivative_Latches_Verifier_INCompressor
+					Derivative_Statistics_Verifier_INCompressor
+					Derivative_Statistics_Verifier_DeleteOp
+					Derivative_LookAHEADCache_Evictor_CriticalEviction
+					Derivative_INCompressor_Evictor_CriticalEviction
+					Derivative_Evictor_MemoryBudget_CriticalEviction
+					Derivative_LoggingEvictor_Evictor_LoggingBase
+					Derivative_FSync_Latches
+					Derivative_NIO_ChunkedNIO
+					Derivative_IO_SynchronizedIO
+					Derivative_LoggingConfig_Statistics
+					Derivative_FSync_Statistics
+					Derivative_LookAHEADCache_Statistics
+					Derivative_Latches_Statistics
+					Derivative_Latches_CheckLeaks
+					Derivative_Statistics_CheckLeaks
+					Derivative_Statistics_Verifier
+					Derivative_LoggingFinest_CPBytes
+					Derivative_CheckpointerDaemon_CPBytes
+					Derivative_LoggingFinest_CPTime
+					Derivative_CPBytes_CPTime
+					Derivative_LoggingFine_INCompressor
+					Derivative_Latches_INCompressor
+					Derivative_Statistics_INCompressor
+					Derivative_Verifier_INCompressor
+					Derivative_LoggingCleaner_DeleteOp
+					Derivative_Latches_DeleteOp
+					Derivative_Statistics_DeleteOp
+					Derivative_INCompressor_DeleteOp
+					Derivative_LoggingFinest_TruncateOp
+					Derivative_Latches_TruncateOp
+					Derivative_DeleteOp_TruncateOp
+					Derivative_Latches_RenameOp
+					Derivative_LoggingEvictor_Evictor
+					Derivative_Latches_Evictor
+					Derivative_Statistics_Evictor
+					Derivative_INCompressor_Evictor
+					Derivative_DeleteOp_Evictor
+					Derivative_LoggingInfo_MemoryBudget
+					Derivative_LookAHEADCache_MemoryBudget
+					Derivative_Latches_MemoryBudget
+					Derivative_Statistics_MemoryBudget
+					Derivative_DeleteOp_MemoryBudget
+					Derivative_Evictor_MemoryBudget
+					Derivative_Evictor_CriticalEviction
+					Derivative_Evictor_EvictorDaemon
+					Derivative_Latches_FileHandleCache
+					Derivative_LoggingSevere_EnvironmentLocking
+					Derivative_LoggingFinest_LoggingBase
+					Derivative_LoggingFiner_LoggingBase
+					Derivative_LoggingFine_LoggingBase
+					Derivative_LoggingSevere_LoggingBase
+					Derivative_LoggingRecovery_LoggingBase
+					Derivative_LoggingCleaner_LoggingBase
+					Derivative_LoggingFileHandler_LoggingBase
+					Derivative_LoggingDbLogHandler_LoggingBase
+					Derivative_LoggingConsoleHandler_LoggingBase
+		optional
+			Logging
+				mandatory
+					LoggingBase
+				optional
+					LoggingFiner
+					LoggingConfig
+					LoggingSevere
+					LoggingEvictor
+					LoggingCleaner
+					LoggingRecovery
+					LoggingDbLogHandler
+					LoggingConsoleHandler
+					LoggingInfo
+					LoggingFileHandler
+					LoggingFine
+					LoggingFinest
+			Statistics
+			MemoryBudget
+
+constraints
+	!Evictor | MemoryBudget
+	!EvictorDaemon | MemoryBudget
+	!LookAHEADCache | MemoryBudget
+	!CriticalEviction | INCompressor
+	!CPBytes | CPTime
+	!DeleteOp | Evictor
+	!DeleteOp | INCompressor
+	!DeleteOp | MemoryBudget
+	!MemoryBudget | Evictor
+	!MemoryBudget | Latches
+	!TruncateOp | DeleteOp
+	!Verifier | INCompressor
+	!Derivative_LoggingEvictor_Statistics_Evictor_LoggingBase | LoggingBase
+	!Derivative_LoggingEvictor_Statistics_Evictor_LoggingBase | Evictor
+	!Derivative_LoggingEvictor_Statistics_Evictor_LoggingBase | Statistics
+	!Derivative_LoggingEvictor_Statistics_Evictor_LoggingBase | LoggingEvictor
+	!LoggingBase | Derivative_LoggingEvictor_Statistics_Evictor_LoggingBase
+	!Evictor | Derivative_LoggingEvictor_Statistics_Evictor_LoggingBase
+	!Statistics | Derivative_LoggingEvictor_Statistics_Evictor_LoggingBase
+	!LoggingEvictor | Derivative_LoggingEvictor_Statistics_Evictor_LoggingBase
+	!Derivative_LoggingEvictor_Evictor_MemoryBudget_LoggingBase | LoggingBase
+	!Derivative_LoggingEvictor_Evictor_MemoryBudget_LoggingBase | Evictor
+	!Derivative_LoggingEvictor_Evictor_MemoryBudget_LoggingBase | LoggingEvictor
+	!Derivative_LoggingEvictor_Evictor_MemoryBudget_LoggingBase | MemoryBudget
+	!LoggingBase | Derivative_LoggingEvictor_Evictor_MemoryBudget_LoggingBase
+	!Evictor | Derivative_LoggingEvictor_Evictor_MemoryBudget_LoggingBase
+	!LoggingEvictor | Derivative_LoggingEvictor_Evictor_MemoryBudget_LoggingBase
+	!MemoryBudget | Derivative_LoggingEvictor_Evictor_MemoryBudget_LoggingBase
+	!Derivative_LoggingInfo_Statistics_Verifier | Verifier
+	!Derivative_LoggingInfo_Statistics_Verifier | LoggingInfo
+	!Derivative_LoggingInfo_Statistics_Verifier | Statistics
+	!Verifier | Derivative_LoggingInfo_Statistics_Verifier
+	!LoggingInfo | Derivative_LoggingInfo_Statistics_Verifier
+	!Statistics | Derivative_LoggingInfo_Statistics_Verifier
+	!Derivative_Latches_Statistics_Verifier | Latches
+	!Derivative_Latches_Statistics_Verifier | Verifier
+	!Derivative_Latches_Statistics_Verifier | Statistics
+	!Latches | Derivative_Latches_Statistics_Verifier
+	!Verifier | Derivative_Latches_Statistics_Verifier
+	!Statistics | Derivative_Latches_Statistics_Verifier
+	!Derivative_Latches_Verifier_INCompressor | Latches
+	!Derivative_Latches_Verifier_INCompressor | INCompressor
+	!Derivative_Latches_Verifier_INCompressor | Verifier
+	!Latches | Derivative_Latches_Verifier_INCompressor
+	!INCompressor | Derivative_Latches_Verifier_INCompressor
+	!Verifier | Derivative_Latches_Verifier_INCompressor
+	!Derivative_Statistics_Verifier_INCompressor | INCompressor
+	!Derivative_Statistics_Verifier_INCompressor | Verifier
+	!Derivative_Statistics_Verifier_INCompressor | Statistics
+	!INCompressor | Derivative_Statistics_Verifier_INCompressor
+	!Verifier | Derivative_Statistics_Verifier_INCompressor
+	!Statistics | Derivative_Statistics_Verifier_INCompressor
+	!Derivative_Statistics_Verifier_DeleteOp | Verifier
+	!Derivative_Statistics_Verifier_DeleteOp | Statistics
+	!Derivative_Statistics_Verifier_DeleteOp | DeleteOp
+	!Verifier | Derivative_Statistics_Verifier_DeleteOp
+	!Statistics | Derivative_Statistics_Verifier_DeleteOp
+	!DeleteOp | Derivative_Statistics_Verifier_DeleteOp
+	!Derivative_LookAHEADCache_Evictor_CriticalEviction | Evictor
+	!Derivative_LookAHEADCache_Evictor_CriticalEviction | LookAHEADCache
+	!Derivative_LookAHEADCache_Evictor_CriticalEviction | CriticalEviction
+	!Evictor | Derivative_LookAHEADCache_Evictor_CriticalEviction
+	!LookAHEADCache | Derivative_LookAHEADCache_Evictor_CriticalEviction
+	!CriticalEviction | Derivative_LookAHEADCache_Evictor_CriticalEviction
+	!Derivative_INCompressor_Evictor_CriticalEviction | INCompressor
+	!Derivative_INCompressor_Evictor_CriticalEviction | Evictor
+	!Derivative_INCompressor_Evictor_CriticalEviction | CriticalEviction
+	!INCompressor | Derivative_INCompressor_Evictor_CriticalEviction
+	!Evictor | Derivative_INCompressor_Evictor_CriticalEviction
+	!CriticalEviction | Derivative_INCompressor_Evictor_CriticalEviction
+	!Derivative_Evictor_MemoryBudget_CriticalEviction | Evictor
+	!Derivative_Evictor_MemoryBudget_CriticalEviction | CriticalEviction
+	!Derivative_Evictor_MemoryBudget_CriticalEviction | MemoryBudget
+	!Evictor | Derivative_Evictor_MemoryBudget_CriticalEviction
+	!CriticalEviction | Derivative_Evictor_MemoryBudget_CriticalEviction
+	!MemoryBudget | Derivative_Evictor_MemoryBudget_CriticalEviction
+	!Derivative_LoggingEvictor_Evictor_LoggingBase | LoggingBase
+	!Derivative_LoggingEvictor_Evictor_LoggingBase | Evictor
+	!Derivative_LoggingEvictor_Evictor_LoggingBase | LoggingEvictor
+	!LoggingBase | Derivative_LoggingEvictor_Evictor_LoggingBase
+	!Evictor | Derivative_LoggingEvictor_Evictor_LoggingBase
+	!LoggingEvictor | Derivative_LoggingEvictor_Evictor_LoggingBase
+	!Derivative_FSync_Latches | Latches
+	!Derivative_FSync_Latches | FSync
+	!Latches | Derivative_FSync_Latches
+	!FSync | Derivative_FSync_Latches
+	!Derivative_NIO_ChunkedNIO | ChunkedNIO
+	!Derivative_NIO_ChunkedNIO | NIO
+	!ChunkedNIO | Derivative_NIO_ChunkedNIO
+	!NIO | Derivative_NIO_ChunkedNIO
+	!Derivative_IO_SynchronizedIO | IO
+	!Derivative_IO_SynchronizedIO | SynchronizedIO
+	!IO | Derivative_IO_SynchronizedIO
+	!SynchronizedIO | Derivative_IO_SynchronizedIO
+	!Derivative_LoggingConfig_Statistics | LoggingConfig
+	!Derivative_LoggingConfig_Statistics | Statistics
+	!LoggingConfig | Derivative_LoggingConfig_Statistics
+	!Statistics | Derivative_LoggingConfig_Statistics
+	!Derivative_FSync_Statistics | FSync
+	!Derivative_FSync_Statistics | Statistics
+	!FSync | Derivative_FSync_Statistics
+	!Statistics | Derivative_FSync_Statistics
+	!Derivative_LookAHEADCache_Statistics | LookAHEADCache
+	!Derivative_LookAHEADCache_Statistics | Statistics
+	!LookAHEADCache | Derivative_LookAHEADCache_Statistics
+	!Statistics | Derivative_LookAHEADCache_Statistics
+	!Derivative_Latches_Statistics | Latches
+	!Derivative_Latches_Statistics | Statistics
+	!Latches | Derivative_Latches_Statistics
+	!Statistics | Derivative_Latches_Statistics
+	!Derivative_Latches_CheckLeaks | Latches
+	!Derivative_Latches_CheckLeaks | CheckLeaks
+	!Latches | Derivative_Latches_CheckLeaks
+	!CheckLeaks | Derivative_Latches_CheckLeaks
+	!Derivative_Statistics_CheckLeaks | CheckLeaks
+	!Derivative_Statistics_CheckLeaks | Statistics
+	!CheckLeaks | Derivative_Statistics_CheckLeaks
+	!Statistics | Derivative_Statistics_CheckLeaks
+	!Derivative_Statistics_Verifier | Verifier
+	!Derivative_Statistics_Verifier | Statistics
+	!Verifier | Derivative_Statistics_Verifier
+	!Statistics | Derivative_Statistics_Verifier
+	!Derivative_LoggingFinest_CPBytes | CPBytes
+	!Derivative_LoggingFinest_CPBytes | LoggingFinest
+	!CPBytes | Derivative_LoggingFinest_CPBytes
+	!LoggingFinest | Derivative_LoggingFinest_CPBytes
+	!Derivative_CheckpointerDaemon_CPBytes | CPBytes
+	!Derivative_CheckpointerDaemon_CPBytes | CheckpointerDaemon
+	!CPBytes | Derivative_CheckpointerDaemon_CPBytes
+	!CheckpointerDaemon | Derivative_CheckpointerDaemon_CPBytes
+	!Derivative_LoggingFinest_CPTime | LoggingFinest
+	!Derivative_LoggingFinest_CPTime | CPTime
+	!LoggingFinest | Derivative_LoggingFinest_CPTime
+	!CPTime | Derivative_LoggingFinest_CPTime
+	!Derivative_CPBytes_CPTime | CPBytes
+	!Derivative_CPBytes_CPTime | CPTime
+	!CPBytes | Derivative_CPBytes_CPTime
+	!CPTime | Derivative_CPBytes_CPTime
+	!Derivative_LoggingFine_INCompressor | INCompressor
+	!Derivative_LoggingFine_INCompressor | LoggingFine
+	!INCompressor | Derivative_LoggingFine_INCompressor
+	!LoggingFine | Derivative_LoggingFine_INCompressor
+	!Derivative_Latches_INCompressor | Latches
+	!Derivative_Latches_INCompressor | INCompressor
+	!Latches | Derivative_Latches_INCompressor
+	!INCompressor | Derivative_Latches_INCompressor
+	!Derivative_Statistics_INCompressor | INCompressor
+	!Derivative_Statistics_INCompressor | Statistics
+	!INCompressor | Derivative_Statistics_INCompressor
+	!Statistics | Derivative_Statistics_INCompressor
+	!Derivative_Verifier_INCompressor | INCompressor
+	!Derivative_Verifier_INCompressor | Verifier
+	!INCompressor | Derivative_Verifier_INCompressor
+	!Verifier | Derivative_Verifier_INCompressor
+	!Derivative_LoggingCleaner_DeleteOp | LoggingCleaner
+	!Derivative_LoggingCleaner_DeleteOp | DeleteOp
+	!LoggingCleaner | Derivative_LoggingCleaner_DeleteOp
+	!DeleteOp | Derivative_LoggingCleaner_DeleteOp
+	!Derivative_Latches_DeleteOp | Latches
+	!Derivative_Latches_DeleteOp | DeleteOp
+	!Latches | Derivative_Latches_DeleteOp
+	!DeleteOp | Derivative_Latches_DeleteOp
+	!Derivative_Statistics_DeleteOp | Statistics
+	!Derivative_Statistics_DeleteOp | DeleteOp
+	!Statistics | Derivative_Statistics_DeleteOp
+	!DeleteOp | Derivative_Statistics_DeleteOp
+	!Derivative_INCompressor_DeleteOp | INCompressor
+	!Derivative_INCompressor_DeleteOp | DeleteOp
+	!INCompressor | Derivative_INCompressor_DeleteOp
+	!DeleteOp | Derivative_INCompressor_DeleteOp
+	!Derivative_LoggingFinest_TruncateOp | LoggingFinest
+	!Derivative_LoggingFinest_TruncateOp | TruncateOp
+	!LoggingFinest | Derivative_LoggingFinest_TruncateOp
+	!TruncateOp | Derivative_LoggingFinest_TruncateOp
+	!Derivative_Latches_TruncateOp | Latches
+	!Derivative_Latches_TruncateOp | TruncateOp
+	!Latches | Derivative_Latches_TruncateOp
+	!TruncateOp | Derivative_Latches_TruncateOp
+	!Derivative_DeleteOp_TruncateOp | TruncateOp
+	!Derivative_DeleteOp_TruncateOp | DeleteOp
+	!TruncateOp | Derivative_DeleteOp_TruncateOp
+	!DeleteOp | Derivative_DeleteOp_TruncateOp
+	!Derivative_Latches_RenameOp | Latches
+	!Derivative_Latches_RenameOp | RenameOp
+	!Latches | Derivative_Latches_RenameOp
+	!RenameOp | Derivative_Latches_RenameOp
+	!Derivative_LoggingEvictor_Evictor | Evictor
+	!Derivative_LoggingEvictor_Evictor | LoggingEvictor
+	!Evictor | Derivative_LoggingEvictor_Evictor
+	!LoggingEvictor | Derivative_LoggingEvictor_Evictor
+	!Derivative_Latches_Evictor | Latches
+	!Derivative_Latches_Evictor | Evictor
+	!Latches | Derivative_Latches_Evictor
+	!Evictor | Derivative_Latches_Evictor
+	!Derivative_Statistics_Evictor | Evictor
+	!Derivative_Statistics_Evictor | Statistics
+	!Evictor | Derivative_Statistics_Evictor
+	!Statistics | Derivative_Statistics_Evictor
+	!Derivative_INCompressor_Evictor | INCompressor
+	!Derivative_INCompressor_Evictor | Evictor
+	!INCompressor | Derivative_INCompressor_Evictor
+	!Evictor | Derivative_INCompressor_Evictor
+	!Derivative_DeleteOp_Evictor | Evictor
+	!Derivative_DeleteOp_Evictor | DeleteOp
+	!Evictor | Derivative_DeleteOp_Evictor
+	!DeleteOp | Derivative_DeleteOp_Evictor
+	!Derivative_LoggingInfo_MemoryBudget | LoggingInfo
+	!Derivative_LoggingInfo_MemoryBudget | MemoryBudget
+	!LoggingInfo | Derivative_LoggingInfo_MemoryBudget
+	!MemoryBudget | Derivative_LoggingInfo_MemoryBudget
+	!Derivative_LookAHEADCache_MemoryBudget | LookAHEADCache
+	!Derivative_LookAHEADCache_MemoryBudget | MemoryBudget
+	!LookAHEADCache | Derivative_LookAHEADCache_MemoryBudget
+	!MemoryBudget | Derivative_LookAHEADCache_MemoryBudget
+	!Derivative_Latches_MemoryBudget | Latches
+	!Derivative_Latches_MemoryBudget | MemoryBudget
+	!Latches | Derivative_Latches_MemoryBudget
+	!MemoryBudget | Derivative_Latches_MemoryBudget
+	!Derivative_Statistics_MemoryBudget | Statistics
+	!Derivative_Statistics_MemoryBudget | MemoryBudget
+	!Statistics | Derivative_Statistics_MemoryBudget
+	!MemoryBudget | Derivative_Statistics_MemoryBudget
+	!Derivative_DeleteOp_MemoryBudget | DeleteOp
+	!Derivative_DeleteOp_MemoryBudget | MemoryBudget
+	!DeleteOp | Derivative_DeleteOp_MemoryBudget
+	!MemoryBudget | Derivative_DeleteOp_MemoryBudget
+	!Derivative_Evictor_MemoryBudget | Evictor
+	!Derivative_Evictor_MemoryBudget | MemoryBudget
+	!Evictor | Derivative_Evictor_MemoryBudget
+	!MemoryBudget | Derivative_Evictor_MemoryBudget
+	!Derivative_Evictor_CriticalEviction | Evictor
+	!Derivative_Evictor_CriticalEviction | CriticalEviction
+	!Evictor | Derivative_Evictor_CriticalEviction
+	!CriticalEviction | Derivative_Evictor_CriticalEviction
+	!Derivative_Evictor_EvictorDaemon | Evictor
+	!Derivative_Evictor_EvictorDaemon | EvictorDaemon
+	!Evictor | Derivative_Evictor_EvictorDaemon
+	!EvictorDaemon | Derivative_Evictor_EvictorDaemon
+	!Derivative_Latches_FileHandleCache | Latches
+	!Derivative_Latches_FileHandleCache | FileHandleCache
+	!Latches | Derivative_Latches_FileHandleCache
+	!FileHandleCache | Derivative_Latches_FileHandleCache
+	!Derivative_LoggingSevere_EnvironmentLocking | LoggingSevere
+	!Derivative_LoggingSevere_EnvironmentLocking | EnvironmentLocking
+	!LoggingSevere | Derivative_LoggingSevere_EnvironmentLocking
+	!EnvironmentLocking | Derivative_LoggingSevere_EnvironmentLocking
+	!Derivative_LoggingFinest_LoggingBase | LoggingBase
+	!Derivative_LoggingFinest_LoggingBase | LoggingFinest
+	!LoggingBase | Derivative_LoggingFinest_LoggingBase
+	!LoggingFinest | Derivative_LoggingFinest_LoggingBase
+	!Derivative_LoggingFiner_LoggingBase | LoggingBase
+	!Derivative_LoggingFiner_LoggingBase | LoggingFiner
+	!LoggingBase | Derivative_LoggingFiner_LoggingBase
+	!LoggingFiner | Derivative_LoggingFiner_LoggingBase
+	!Derivative_LoggingFine_LoggingBase | LoggingBase
+	!Derivative_LoggingFine_LoggingBase | LoggingFine
+	!LoggingBase | Derivative_LoggingFine_LoggingBase
+	!LoggingFine | Derivative_LoggingFine_LoggingBase
+	!Derivative_LoggingSevere_LoggingBase | LoggingBase
+	!Derivative_LoggingSevere_LoggingBase | LoggingSevere
+	!LoggingBase | Derivative_LoggingSevere_LoggingBase
+	!LoggingSevere | Derivative_LoggingSevere_LoggingBase
+	!Derivative_LoggingRecovery_LoggingBase | LoggingBase
+	!Derivative_LoggingRecovery_LoggingBase | LoggingRecovery
+	!LoggingBase | Derivative_LoggingRecovery_LoggingBase
+	!LoggingRecovery | Derivative_LoggingRecovery_LoggingBase
+	!Derivative_LoggingCleaner_LoggingBase | LoggingCleaner
+	!Derivative_LoggingCleaner_LoggingBase | LoggingBase
+	!LoggingCleaner | Derivative_LoggingCleaner_LoggingBase
+	!LoggingBase | Derivative_LoggingCleaner_LoggingBase
+	!Derivative_LoggingFileHandler_LoggingBase | LoggingBase
+	!Derivative_LoggingFileHandler_LoggingBase | LoggingFileHandler
+	!LoggingBase | Derivative_LoggingFileHandler_LoggingBase
+	!LoggingFileHandler | Derivative_LoggingFileHandler_LoggingBase
+	!Derivative_LoggingDbLogHandler_LoggingBase | LoggingBase
+	!Derivative_LoggingDbLogHandler_LoggingBase | LoggingDbLogHandler
+	!LoggingBase | Derivative_LoggingDbLogHandler_LoggingBase
+	!LoggingDbLogHandler | Derivative_LoggingDbLogHandler_LoggingBase
+	!Derivative_LoggingConsoleHandler_LoggingBase | LoggingBase
+	!Derivative_LoggingConsoleHandler_LoggingBase | LoggingConsoleHandler
+	!LoggingBase | Derivative_LoggingConsoleHandler_LoggingBase
+	!LoggingConsoleHandler | Derivative_LoggingConsoleHandler_LoggingBase

@@ -1,0 +1,215 @@
+namespace SubseaCS
+
+features
+	SubseaCS
+		mandatory
+			ProductionSystem
+				mandatory
+					ProductionSystem_1 {abstract true}
+						mandatory
+							SubseaField
+								mandatory
+									SubseaField_1 {abstract true}
+										mandatory
+											XmasTree
+									unit
+										alternative
+											Mile
+											KM
+					productionSystemType
+						alternative
+							RateMaxShutinPress
+							WithPressRestriction
+							WithPressProtection
+					subseaField
+						optional
+							XmasTree_1
+								mandatory
+									TreeType
+										alternative
+											VXT
+											HXT
+											Mudline
+									BoreSize
+										alternative
+											Three
+											Four
+											Five
+											Seven
+											Nine
+									PressureRating
+										alternative
+											FiveKsi
+											TenKsi
+											FifteenKsi
+											TwentyKsi
+									InstallType
+										alternative
+											Jackup
+											Semisubmersible
+											Drillship
+									WellType
+										alternative
+											ProductionWell
+											WaterInjectionWell
+											GasInjectionWell
+									ServiceType
+										alternative
+											Sour
+											Neutral
+											Sweet
+									TreeCompletionType
+										alternative
+											Simple
+											DiverAssist
+											Diverless
+											Guidelineless
+									corrosiveityDegree
+										alternative
+											Noncorrosive
+											Slightylycorrosive
+											ModeratelytoHighly
+											Verycorrosive
+									materialType
+										alternative
+											AA
+											BB
+											CC
+											DD
+											EE
+											FF
+											HH
+			systemType
+				alternative
+					AllHydraulic
+						mandatory
+							detailedType
+								alternative
+									DirectHydraulic
+									PilotedHydraulic
+									SequentialHydrualic
+					ElectroHydraulic
+						mandatory
+							detailedType_2
+								alternative
+									DirectElectroHydraulic
+									MultipleElectroHydraulic
+									Autonomous
+					AllElectric
+						mandatory
+							detailedType_3
+								alternative
+									DirectElectric
+									MultipleElectric
+									AutonomousElectric
+			signalType
+				alternative
+					HydraulicSignal
+					ElectricSignal
+			MCS
+				mandatory
+					integrationType
+						alternative
+							FullyIntegrated
+							PrimaryInterface
+							SecondaryInterface
+			ControlModule
+				mandatory
+					SEM
+						mandatory
+							shockLevel
+								alternative
+									Q1
+									Q2
+							IdentificationType
+								alternative
+									Tag
+									NamePlate
+									ImprintedId
+							SEM_3 {abstract true}
+								mandatory
+									Device
+										mandatory
+											type
+												alternative
+													Valve
+														mandatory
+															installType
+																alternative
+																	Buildin
+																	Buildon
+															valveType
+																alternative
+																	AnnulusMasterValve
+																	ManifoldValve
+																	InjectionChokeValve
+																	MethanolInjectionValve
+																	ProductMasterValve
+																		mandatory
+																			chokeType
+																				alternative
+																					Positive
+																					Adjustable
+																			trimType
+																				alternative
+																					RotatingDisc
+																					NeedleSeat
+																					PlugCage
+																					SlidingSleeveCage
+																					Multistage
+													Sensor
+														mandatory
+															sensorType
+																alternative
+																	DownholeMonitor
+																	TemperatureTransducer
+																	SubseaFlowMeter
+																	PositionSensor
+																	SandDetector
+																	ErosionProbs
+					SEMApp
+						optional
+							DeviceController
+								mandatory
+									operationMode
+										alternative
+											Normal
+											Maintenance
+									type_2
+										alternative
+											SensorController
+												mandatory
+													scType
+														alternative
+															DownholeMonitorController
+															TemperatureTransducerController
+															SubseaFlowMeterController
+															PositionSensorController
+															SandDetectorController
+															ErosionProbsController
+											ValveController
+												mandatory
+													vcType
+														alternative
+															annulusMasterValveController
+															ManifoldValveController
+															InjectionChokeValveController
+															MethanolInjectionValveController
+															ProductMasterValveController
+		optional
+			HIPPS
+
+constraints
+	!InjectionChokeValve | InjectionChokeValveController
+	!ManifoldValve | ManifoldValveController
+	!AnnulusMasterValve | annulusMasterValveController
+	!SubseaFlowMeter | SubseaFlowMeterController
+	!PositionSensor | PositionSensorController
+	!AllElectric | ElectricSignal
+	!DownholeMonitor | DownholeMonitorController
+	!TemperatureTransducer | TemperatureTransducerController
+	!AllHydraulic | HydraulicSignal
+	!ProductMasterValve | ProductMasterValveController
+	!SandDetector | SandDetectorController
+	!ErosionProbs | ErosionProbsController
+	!MethanolInjectionValve | MethanolInjectionValveController

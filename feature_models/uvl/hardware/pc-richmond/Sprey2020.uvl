@@ -1,0 +1,471 @@
+namespace "PC RICHMOND F"
+
+features
+	"PC RICHMOND F" {abstract true}
+		mandatory
+			Processor
+				alternative
+					"Intel Pentium"
+						alternative
+							"G4560 Kaby Lake"
+							"G4600 Kaby Lake"
+					"Intel Core i3"
+						alternative
+							"i3-7100 Kaby Lake"
+							"i3-7300 Kaby Lake"
+							"i3-7320 Kaby Lake"
+							"i3-7350K Kaby Lake"
+					"Intel Core i5"
+						alternative
+							"i5-7400 Kaby Lake"
+							"i5-7500 Kaby Lake"
+							"i5-7600 Kaby Lake"
+							"i5-7600K Kaby Lake"
+					"Intel Core i7 Prozessoren"
+						alternative
+							"i7-7700 Kaby Lake"
+							"i7-7700K Kaby Lake"
+					"i7 Overclocked"
+						alternative
+							"Stufe 1"
+							"Stufe 2"
+							"Stufe 3"
+			"Graphic card"
+				alternative
+					"Geforce GTX"
+						alternative
+							"1030 Series"
+								alternative
+									"ASUS GT1030"
+									"GT1030 MSI Aero"
+							"1050 Series"
+								alternative
+									"GTX1050 MSI Aero"
+									"GTX1050 ASUS Strix"
+									"GTX1050-Ti MSI Gaming"
+									"GTX1050-Ti ASUS Expedition"
+									"GTX1050-Ti ASUS Strix"
+							"1060 Series"
+								alternative
+									"MSI ARMOR"
+									"MSI GAMING"
+									"ASUS Dual"
+									"ASUS Strix"
+							"1070 Series"
+								alternative
+									"Gainward Phoenix"
+									"MSI Gaming X"
+									"ASUS Strix 08G"
+							"1070-Ti Series"
+								mandatory
+									"MSI Gaming 8G"
+							"1080 Series"
+								alternative
+									"MSI Armor 8G"
+									"MSI Gaming X 8G"
+									"ASUS Strix A8G"
+									"MSI GAMING X 8G"
+									"ASUS Strix A8G Gaming"
+							"1080-Ti Series"
+								alternative
+									"MSI GAMING X 11G"
+									"ASUS ROG Strix 011G"
+									"MSI Gaming X 11G"
+					Quadro
+						alternative
+							"K420 PNY"
+							"K620 PNY"
+							"P2000 Pny"
+							"P4000 Pny"
+							"P5000 Pny"
+							"P6000 Pny"
+					"AMD Radeon"
+						alternative
+							RX550
+							RX580
+					"Low Profile"
+						alternative
+							GT710
+							GTX1050
+							"GTX1050-Ti"
+			RAM
+				alternative
+					"2133 MHz Crucial"
+						alternative
+							"1x 8GB DDR4-2133"
+							"2x 8GB DDR4-2133"
+							"1x 16GB DDR4-2133"
+							"4x 8GB DDR4-2133"
+							"2x 16GB DDR4-2133"
+							"4x 16GB DDR4-2133"
+					"2400 MHz Crucial"
+						alternative
+							"1x 8GB DDR4-2400"
+							"2x 8GB DDR4-2400"
+							"1x 16GB DDR4-2400"
+							"4x 8GB DDR4-2400"
+							"2x 16GB DDR4-2400"
+							"4x 16GB DDR4-2400"
+					"Corsair Vengeance RGB Black"
+						alternative
+							"2x 8GB DDR4-3000"
+							"4x 8GB DDR4-3200"
+			Mainboard
+				alternative
+					MSI
+						alternative
+							"MSI B250M PRO-VDH"
+							"MSI B250M GAMING PRO"
+							"MSI Z270 PC MATE"
+							"MSI Z270 Gaming Pro Carbon"
+					Asus
+						alternative
+							"B250M-A"
+							"B250M-PLUS"
+							"H270-PLUS"
+							"Z270-K"
+							"Z270M-PLUS"
+							"Z270F GAMING"
+							"IX HERO Gaming"
+			Case
+				alternative
+					"Office Midtower"
+						alternative
+							"IT-5905"
+							"EM-01"
+							"RAIJINTEK Arcadia"
+							"RAIJINTEK Arcadia soundproof"
+							"Bitfenix Neos Black"
+							"Bitfenix Neos White"
+					"M-ATX Microtower"
+						alternative
+							"Aerocool Qs-183"
+							"MA-01 MICRO"
+							"GM-6013"
+							"Thermaltake Versa H15"
+					"Gaming Miditower"
+						alternative
+							"K1- black"
+							"N21 Crusader"
+							"N21-02 Arthurus"
+							"Eterno K-five Demon Hunter"
+							"Corsair Carbide SPEC-01"
+							"Corsair Carbide 270R"
+							"BitFenix Aegis"
+							"BitFenix Shinobi"
+							"Kolink Punisher RGB"
+							"M-908"
+							"M-909"
+					"PRO Gaming Miditower"
+						alternative
+							"Aerocool Aero-800"
+							"Aerocool Battlehawk V2"
+							"Aerocool Mechatron"
+							"Corsair Carbide Clear 400c"
+							"Corsair Obsidian 450D"
+							"Phanteks Enthoo Pro"
+							"Cougar Challenger"
+							"Silent Base 800"
+							"NZXT Phantom 410 black"
+							"NZXT Phantom 410 white"
+							"NZXT Phantom 410 red"
+							"NZXT H440 white"
+							"NZXT H440 black"
+							"Thermaltake Versa N27"
+							"Thermaltake Core V51"
+							"Thermaltake Suppressor F51"
+							"Thermaltake View 31"
+							"Thermaltake Core X31"
+							"anidees AI-Crystal"
+					"PRO Gaming Cube"
+						alternative
+							"anidees AI-7MBW"
+							"Thermaltake Core V21"
+							"Corsair Carbide Air 540 Cube"
+					"Big Tower"
+						alternative
+							"Dark Base Pro 900"
+							"Corsair Obsidian 750D"
+							"NZXT Phantom Big-Tower white"
+							"NZXT Phantom Big-Tower black"
+							"NZXT H630"
+							"Cougar Panzer Max"
+							"Cooler Master Storm Trooper"
+					"Design Tower"
+						mandatory
+							"Corsair Crystal Series 570X"
+			"Power Adapter"
+				alternative
+					"Corsair VS-Series"
+						alternative
+							VS450
+							VS550
+							VS650
+					"Corsair TX-M-Series"
+						alternative
+							TX550M
+							TX650M
+							TX750M
+							TX850M
+					"Corsair HX-Series"
+						alternative
+							HX750
+							HX850
+							HX1000
+							HX1200
+					"Bequiet Pure Power"
+						alternative
+							"300 W"
+							"400 W"
+							"400 W CM"
+							"500 W"
+							"500 W CM"
+							"600 W"
+							"600 W CM"
+							"700 W"
+							"700 W CM"
+					"Bequiet Dark Power"
+						alternative
+							"550 W"
+							"750 W"
+							"850 W"
+					Argus
+						alternative
+							"700 W Argus"
+							"650 W Argus"
+							"750 W Argus"
+			"CPU Cooler"
+				alternative
+					"Tower Cooler"
+						alternative
+							"RaiJintek Aidos"
+							"MSI Core Frozr"
+					"Top-Blow-Cooler"
+						alternative
+							"Scythe Shuriken"
+							"Scythe Kozuti"
+					"Big Tower Cooler"
+						alternative
+							"Be Quiet Shadow Rock Slim"
+							"Be Quiet Dark Roch Pro 3"
+							"Scythe Asura"
+							"MSI Core Frozr XL"
+							"Scythe Mugen"
+					"Argus Water Cooling"
+						alternative
+							"Argus Storm 1"
+							"Argus Storm 2"
+					"Corsair Water Cooling"
+						alternative
+							"Corsair H60"
+							"Corsair H80i"
+							"Corsair H100i"
+							"Corsair H115i"
+					"Bequiet Water Cooling"
+						alternative
+							"Silent Loop 120mm"
+							"Silent Loop 240mm"
+							"Silent Loop 280mm"
+							"Silent Loop 360mm"
+					"NZXT Water Cooling"
+						alternative
+							"Kraken X31"
+							"Kraken X41"
+			"Sound Card"
+				alternative
+					"onBoard Soundchip"
+					"ASUS Soundcard"
+						alternative
+							"Xonar DSX"
+							"Strix Soar"
+							"Strix Raid Pro"
+		optional
+			M."2 SSD"
+			"2,5 SSD"
+				alternative
+					Samsung
+						alternative
+							"250 GB 860 EVO"
+							"500 GB 860 EVO"
+							"1,0 TB 850 EVO"
+							"2,0 TB 850 EVO"
+							"4,0 TB 850 EVO"
+					Kingston
+						alternative
+							"120 GB SSDnow"
+							"240 GB SSDNow"
+							"480 GB SSDnow UV400"
+							"960 GB SSDNow"
+					Crucial
+						mandatory
+							"1,0 TB Crucial MX300"
+			"3,5 Harddrive"
+				alternative
+					"Western Digital"
+						alternative
+							"1 TB Blue"
+							"2 TB Blue"
+							"3 TB Blue"
+							"4 TB Blue"
+							"6 TB Red"
+							"8 TB Red"
+					"Seagate BarraCuda"
+						alternative
+							"1 TB"
+							"2 TB"
+							"3 TB"
+							"4 TB"
+							"6 TB Pro"
+							"8 TB Pro"
+							"10 TB Pro"
+							"12 TB Pro"
+					SSHD
+						alternative
+							"1 TB Seagate FireCuda"
+							"2 TB Seagate FirecCuda"
+			Drive
+				alternative
+					"DVD-Drive"
+						alternative
+							"LG GH24NSD1"
+							"ASUS DRW-24D5MT"
+					"BluRay-Drive"
+						mandatory
+							"BluRay-RW/DVD-RW Writer"
+					"Extern USB-Drive"
+						mandatory
+							"Externer USB DVD-RW Brenner"
+					"Hard Drive Caddies"
+						alternative
+							"For 2,5 HDD"
+							"For 3,5 HDD"
+							"For 2"."5 and 3"."5 HDD"
+			Multicardreader
+			Network
+				alternative
+					"Asus Network"
+						alternative
+							"PCE-N15"
+							"PCE-AC55BT"
+							"PCE-AC88"
+							"XG-C100C"
+					"Netis WF2113"
+					LAN
+						alternative
+							"2x 1 Gbit INtel"
+							"4x 1 Gbit Intel"
+			Extensions
+				alternative
+					"4x USB3"."0"
+					"2x USB3"."1"
+					"Firewire PCI-Card"
+			OS
+				alternative
+					"Windows 10 64 Bit"
+						alternative
+							Home
+							Pro
+					"Premium Pre-Installation"
+			"Security Software"
+				mandatory
+					"KASPERSKY Internet Security"
+			"Office Software"
+				alternative
+					"Microsoft Office 2016 Home and Student"
+					"Microsoft Office 2016 Home and Business"
+			Monitor
+				alternative
+					"MSI Monitors"
+						alternative
+							"MSI Optix G27C2"
+							"MSI Optix AG32C"
+					"ASUS Monitors"
+						alternative
+							"ASUS VP247HA"
+							"ASUS VS248HR"
+							"ASUS VG248QE"
+							"ASUS VS278H"
+							"ASUS ROG SWIFT PG278QR"
+							"ASUS ROG SWIFT PG348Q"
+					"LG 34UC88-B"
+			Headset
+				alternative
+					"MSI Headsets"
+						alternative
+							"MSI DS501"
+							"MSI DS502"
+							"MSI Immerse GH70"
+					"ASUS Headsets"
+						alternative
+							Cerberus
+							"ROG Strix Wireless Gaming"
+							"ROG Strix Fusion 500"
+							"ROG Centurion 7"."1"
+					"Other Headsets"
+						alternative
+							"Zalman ZM-HPS200"
+							"Logitech H340"
+							"Logitech H390"
+			Keyboard
+				alternative
+					"MSI Keyboards"
+						alternative
+							"Interceptor DS4100"
+							"Vigo GK40"
+							"Vigor GK70"
+							NewFeature4
+					"ASUS ROG Claymore Core"
+					"Tt eSports Keyboards"
+						alternative
+							"Commander USB-Set"
+							"Challenger USB-Set"
+					"Other Keyboards"
+						alternative
+							"Logitech K120"
+							"Eterno KM-3123"
+							"Eterno KM-232W"
+							"Eterno PG-5545"
+							"Logitech MI120"
+							"Logitech MK330"
+			Mouse
+				alternative
+					"MSI Mouses"
+						alternative
+							"Interceptor DSB1"
+							"Clutch GM10"
+							"Interceptor DS300"
+							"Clutch GM60"
+							"Clutch GM70"
+					"ASUS Mouses"
+						alternative
+							"Cerberus Gaming Maus"
+							"ROG Strix Evolve"
+							"ROG Gladius II"
+							"ROG Spatha"
+					"Logitech B100"
+			Mousepad
+				alternative
+					"MSI Mousepads"
+						alternative
+							"Gaming Mousepad XL"
+							"Thunderstorm Aluminium"
+							"Sistorm Gaming"
+					"ASUS Mousepads"
+						alternative
+							"Cerberus Mauspad"
+							"Strix Edge"
+							"ROG Sheath"
+
+constraints
+	"1070 Series" | "1070-Ti Series" | "1080 Series" | "1080-Ti Series" | "P5000 Pny" | "P6000 Pny" | RX580 => VS550 | VS650 | "Corsair TX-M-Series" | "Corsair HX-Series" | "500 W" | "500 W CM" | "600 W" | "600 W CM" | "700 W" | "700 W CM" | "Bequiet Dark Power" | Argus
+	"Stufe 1" | "Stufe 2" | "Stufe 3" => "Be Quiet Dark Roch Pro 3" | "Scythe Asura" | "MSI Core Frozr XL" | "Argus Storm 2" | "Corsair H100i" | "Corsair H115i" | "Bequiet Water Cooling" | "NZXT Water Cooling"
+	"Corsair Vengeance RGB Black" | "4x 8GB DDR4-2133" | "4x 16GB DDR4-2133" | "4x 8GB DDR4-2400" | "4x 16GB DDR4-2400" => "MSI Z270 PC MATE" | "MSI Z270 Gaming Pro Carbon" | "Z270F GAMING" | "IX HERO Gaming"
+	"Corsair H115i" | "Silent Loop 280mm" | "Silent Loop 360mm" => "Corsair Obsidian 450D" | "Phanteks Enthoo Pro" | "Silent Base 800" | "Thermaltake Suppressor F51" | "Thermaltake Core X31" | "Corsair Carbide Air 540 Cube" | "Dark Base Pro 900" | "Corsair Obsidian 750D" | "NZXT H630" | "Cougar Panzer Max" | "Cooler Master Storm Trooper" | "Corsair Obsidian 750D"
+	"MSI Z270 PC MATE" | "MSI Z270 Gaming Pro Carbon" | "H270-PLUS" | "Z270-K" | "Z270F GAMING" | "IX HERO Gaming" => "Aerocool Aero-800" | "Aerocool Battlehawk V2" | "Corsair Obsidian 450D" | "Phanteks Enthoo Pro" | "Silent Base 800" | "Thermaltake Core V51" | "Thermaltake Suppressor F51" | "Thermaltake Core X31" | "Corsair Carbide Air 540 Cube" | "Dark Base Pro 900" | "Corsair Obsidian 750D" | "NZXT H630" | "Cougar Panzer Max" | "Cooler Master Storm Trooper"
+	"MSI Core Frozr" | "Big Tower Cooler" | "Argus Water Cooling" | "Corsair Water Cooling" | "Bequiet Water Cooling" | "NZXT Water Cooling" => "Aerocool Aero-800" | "Aerocool Battlehawk V2" | "Corsair Obsidian 450D" | "Phanteks Enthoo Pro" | "Silent Base 800" | "Thermaltake Core V51" | "Thermaltake Suppressor F51" | "Thermaltake Core X31" | "Corsair Carbide Air 540 Cube" | "Dark Base Pro 900" | "Corsair Obsidian 750D" | "NZXT H630" | "Cougar Panzer Max" | "Cooler Master Storm Trooper"
+	"XG-C100C" | LAN | "ASUS Soundcard" | "2x USB3"."1" => !"MSI B250M PRO-VDH" & !"MSI B250M GAMING PRO" & !"B250M-A"
+	"i7 Overclocked" => "MSI B250M PRO-VDH" | "MSI B250M GAMING PRO" | "B250M-A" | "B250M-PLUS" | "H270-PLUS" | "IX HERO Gaming"
+	"Corsair Carbide 270R" | "BitFenix Aegis" | "M-908" | "M-909" | "Corsair Carbide Clear 400c" | "NZXT H440 white" | "NZXT H440 black" | "Thermaltake Versa N27" | "Thermaltake View 31" | "anidees AI-Crystal" | "Thermaltake Core V21" | "Design Tower" => !"DVD-Drive" & !"BluRay-Drive" & !"Hard Drive Caddies"
+	"4x USB3"."0" => !"B250M-A" & !"Netis WF2113"
+	"2x USB3"."1" => !"B250M-A" & !"MSI B250M GAMING PRO" & !"MSI B250M PRO-VDH" & !LAN
+	"Stufe 2" | "Stufe 3" => !"Scythe Asura" & !"Silent Loop 120mm" & !"NZXT Water Cooling"

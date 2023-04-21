@@ -1,0 +1,162 @@
+namespace TankWar
+
+features
+	TankWar {abstract true}
+		mandatory
+			Tank_Player1 {abstract true}
+				alternative
+					Black_P1
+					Red_P1
+					Red_Tier1_P1
+					Yellow_Tier1_P1
+					Blue_Tier2_P1
+					Green_Tier2_P1
+			Tank_Player2 {abstract true}
+				alternative
+					Black_P2
+					Red_P2
+					Red_Tier1_P2
+					Yellow_Tier1_P2
+					Blue_Tier2_P2
+					Green_Tier2_P2
+			mov {abstract true}
+				alternative
+					mov_0
+					mov_1
+					mov_2
+					mov_3
+					mov_4
+			Power_Ups {abstract true}
+				or
+					Flower
+					Blue_Flower
+					Copy
+					Fire
+					Light_Bulb_Round
+					Green
+					Heart
+					Circle
+					Cow
+					Light_Bulb
+					Octagonal
+					Mushroom
+					Pumpkin_Pie
+					Ring
+					Ring_2
+					Ring_Oval
+					Ring_Oval_Small
+					Sponge
+					Spiral
+					Star_Oval
+					Star_Oval_Small
+					Star_Ring
+			Background {abstract true}
+				alternative
+					Default
+					Blue_White
+					Blue_White_Green
+					Purple_White
+					Glass
+					Lava
+					Limba
+					Old
+					Ov_Paper
+					Paper
+					Univ
+					Water
+					Water_2
+			rocketStyle {abstract true}
+				alternative
+					Rectangle
+					Oval
+					aa31
+					Portal
+					Nino
+			Sounds
+				optional
+					Player1_Sound_Rotation {abstract true}
+						alternative
+							P1_Rot_Beep1
+							P1_Rot_Beep2
+							P1_Rot_Beep3
+							P1_Rot_Bleep1
+							P1_Rot_Buzzer
+							P1_Rot_Cash_register
+							P1_Rot_Cork
+							P1_Rot_Game_Win
+							P1_Rot_Drip
+							P1_Rot_Gorod
+							P1_Rot_Horn
+							P1_Rot_Laser_Trill
+							P1_Rot_Police_Siren
+							P1_Rot_Siren_1
+							P1_Rot_Siren_2
+							P1_Rot_yes
+					PLayer1_Sound_Movement {abstract true}
+						alternative
+							P1_Mov_Beep1
+							P1_Mov_Beep2
+							P1_Mov_Beep3
+							P1_Mov_Bleep1
+							P1_Mov_Buzzer
+							P1_Mov_Cash_Register
+							P1_Mov_Cork
+							P1_Mov_Game_Win
+							P1_Mov_Drip
+							P1_Mov_Gorod
+							P1_Mov_Horn
+							P1_Mov_LaserTrill
+							P1_Mov_Police_Siren
+							P1_Mov_Siren_1
+							P1_Mov_Siren2
+							P1_Mov_yes
+					Player2_Sound_Rotation {abstract true}
+						alternative
+							P2_Rot_Beep1
+							P2_Rot_Beep2
+							P2_Rot_Beep3
+							P2_Rot_Bleep1
+							P2_Rot_Buzzer
+							P2_Rot_Cash_Register
+							P2_Rot_Cork
+							P2_Rot_Game_Win
+							P2_Rot_Drip
+							P2_Rot_Gorod
+							P2_Rot_Horn
+							P2_Rot_Laser_Trill
+							P2_Rot_Police_Siren
+							P2_Rot_Siren_1
+							P2_Rot_Siren_2
+							P2_Rot_Yes
+					Player2_Sound_Movement {abstract true}
+						alternative
+							P2_Mov_Beep1
+							P2_Mov_Beep2
+							P2_Mov_Beep3
+							P2_Mov_Bleep1
+							P2_Mov_Buzzer
+							P2_Mov_Cah_Register
+							P2_Mov_cork
+							P2_Mov_Game_Win
+							P2_Mov_Drip
+							P2_Mov_Gorord
+							P2_Mov_Horn
+							P2_Mov_LaserTrill
+							P2_Mov_Police_Siren
+							P2_Mov_Siren_1
+							P2_Mov_Siren_2
+							P2_Mov_Yes
+		optional
+			tar
+			Hinderniss_Set
+			Activate_Power_Up {abstract true}
+				optional
+					Nr1
+					Nr2
+					Nr3
+					Nr4
+					Nr5
+					Nr6
+					Nr7
+					Nr8
+
