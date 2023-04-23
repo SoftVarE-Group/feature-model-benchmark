@@ -1,13 +1,29 @@
 import pandas as pd
 from utils import *
+import argparse
+import sys
 
 USER_COLUMNS = ["Publication", "Keywords",
                 "Source", "ConvertedFrom", "Conversion_Tool"]
 SUPPORTED_SUFFIXES = ["uvl", "xml", "dimacs", "afm", "zip", "cfr", "fm"]
 JSON_SUFFIX_ARRAY = ["json"]
 
+# Args handling
 
 
+def init_args():
+    parser = argparse.ArgumentParser(
+        description='Derive feature-model subset according to filtering')
+    parser.add_argument('--createfull', type=str,
+                        help="Create csv containing information on origin of every feature model in feature_models/original and save it in value")
+    parser.add_argument('--createaggregate', type=str,
+                        help="Create csv containing information on origin for every system (i.e., with variants of the same feature models being aggregated) in feature_models/original")
+    parser.add_argument('--originfile', type=str, required= '--mergeanalysis' in sys.argv, help="Path to statistics csv containing information on the origin")
+    parser.add_argument('--analysisfile', type=str, required= '--mergeanalysis' in sys.argv, help="Path to statistics csv containing results of analysis")
+    parser.add_argument('--mergeanalysis', type=str, help="Create merged statistics csv from an origin and analysis csv")
+    parser.add_argument('--printmeta', action='store_true', help="Prints some meta information about the current collection")
+
+    return parser.parse_args()
 
 
 def load_feature_models(directory_path, output_path="statistics/models_new.csv"):
@@ -37,9 +53,10 @@ def data_frame_from_models_list(model_paths):
     sources = [get_source(model) for model in model_jsons]
     publications = [get_publication(model) for model in model_jsons]
     partOfHistory = [get_no_versions(model) > 1 for model in model_jsons]
+    model_keywords = [get_keywords(model) for model in model_jsons]
 
-    data_frame = pd.DataFrame({'Name': model_names, 'Origin': model_origins, 'PartOfHistory' : partOfHistory, 'Version': model_versions, 'Domain': domains,
-                              'Format': formats, 'Extension' : model_extensions, 'Year': years, 'Hierarchy': hasHierarchyFlags, 'Source': sources, 'Publication': publications, 'Path' : model_paths})
+    data_frame = pd.DataFrame({'Name': model_names, 'Origin': model_origins, 'PartOfHistory': partOfHistory, 'Version': model_versions, 'Domain': domains,
+                              'Format': formats, 'Extension': model_extensions, 'Year': years, "Keywords": model_keywords, 'Hierarchy': hasHierarchyFlags, 'Source': sources, 'Publication': publications, 'Path': model_paths})
     data_frame = data_frame.sort_values(
         ["Domain", "Name", "Origin", "Version"])
     return data_frame
@@ -52,7 +69,6 @@ def data_frame_from_json_list(model_paths):
     model_jsons = [get_model_json(model) for model in model_paths]
     model_extensions = [get_extension(model) for model in model_paths]
 
-
     # Json data
     formats = [get_file_format(model) for model in model_jsons]
     years = [get_year(model) for model in model_jsons]
@@ -62,57 +78,35 @@ def data_frame_from_json_list(model_paths):
     no_versions = [get_no_versions(model) for model in model_jsons]
     version_ranges = [get_version_range(model) for model in model_jsons]
     no_variants = [get_no_variants(model) for model in model_jsons]
+    model_keywords = [get_keywords(model) for model in model_jsons]
 
-    data_frame = pd.DataFrame({'Name': model_names, 'Origin': model_origins, 'Domain': domains, 'Format': formats, 'Extension' : model_extensions, 'Year': years, 'Hierarchy': hasHierarchyFlags,
-                              'Versions': no_versions, 'VersionRange': version_ranges, 'Variants': no_variants, 'Source': sources, 'Publication': publications, 'Path' : model_paths})
+    data_frame = pd.DataFrame({'Name': model_names, 'Origin': model_origins, 'Domain': domains, 'Format': formats, 'Extension': model_extensions, 'Year': years, "Keywords": model_keywords, 'Hierarchy': hasHierarchyFlags,
+                              'Versions': no_versions, 'VersionRange': version_ranges, 'Variants': no_variants, 'Source': sources, 'Publication': publications, 'Path': model_paths})
     data_frame = data_frame.sort_values(["Domain", "Name"])
     return data_frame
 
 
 def append_analysis_results(models_data_frame, analysis_data_frame, output_path="statistics/complete.csv"):
-    models_data_frame = models_data_frame.sort_values(
-        ["Name"]).reset_index(drop=True)
-    print(models_data_frame)
-    analysis_data_frame = analysis_data_frame.sort_values(
-        ["Name"]).reset_index(drop=True)
-    print(analysis_data_frame)
-    analysis_data_frame = analysis_data_frame.drop(columns='Name')
-    combined_data_frame = pd.concat(
-        [models_data_frame, analysis_data_frame], axis=1)
-    combined_data_frame = combined_data_frame.sort_values(["Domain", "Name"])
+    models_data_frame['DescribingPath'] = models_data_frame.apply(
+        lambda row: get_describing_path(row.Path), axis=1)
+    analysis_data_frame['DescribingPath'] = analysis_data_frame.apply(
+        lambda row: get_describing_path(row.model), axis=1)
 
-    combined_data_frame.to_csv(output_path, ";", index=False)
+    complete_data_frame = pd.merge(
+        models_data_frame, analysis_data_frame, on="DescribingPath", how="left")
+    comeplete_data_frame = complete_data_frame.drop(columns='model')
+    comeplete_data_frame = comeplete_data_frame.sort_values(["Domain", "Name"])
 
-
-# -------------------------- Update Table --------------------------
+    comeplete_data_frame.to_csv(output_path, ";", index=False)
 
 
-def add_new_feature_models(directory_path, old_csv_path):
-    existing_data_frame = read_csv_to_dataframe(old_csv_path)
-
-    model_paths = get_files_from_directory(directory_path, SUPPORTED_SUFFIXES)
-    new_model_paths = [
-        model_path for model_path in model_paths if not get_system_name(model_path) in existing_data_frame['Name'].values]
-    new_data_frame = data_frame_from_json_list(new_model_paths)
-    combined_data_frame = pd.concat([existing_data_frame, new_data_frame])
-    combined_data_frame = combined_data_frame.sort_values(["Domain", "Name"])
-    combined_data_frame.to_csv(old_csv_path, ";", index=False)
 
 
-# -------------------------- Filter Table --------------------------
+args = init_args()
+if args.createfull:
+    load_feature_models_complete("feature_models/original", args.createfull)
+elif args.createaggregate:
+    load_feature_models("feature_models/original", args.createaggregate)
+elif args.mergeanalysis:
+    append_analysis_results(args.originfile, args.analysisfile, args.mergeanalysis)
 
-def get_data_frame_subset(data_frame, filter_column=None, row_values_to_keep=[], columns_to_keep=None):
-    filtered_df = data_frame
-    if not columns_to_keep is None:
-        filtered_df = data_frame[columns_to_keep]
-    if not filter_column is None:
-        filtered_df = filtered_df[filtered_df[filter_column].isin(
-            row_values_to_keep)]
-
-    return filtered_df
-
-
-# load_feature_models("feature_models/original", "statistics/models_temp.csv")
-load_feature_models_complete("feature_models/original")
-# add_new_feature_models("feature_models", "statistics/complete.csv")
-# get_data_frame_subset(read_csv_to_dataframe("statistics/complete.csv"), filter_column="Name", row_values_to_keep=["Automotive1", "ERP-System"],columns_to_keep=["Name", "Domain"])
