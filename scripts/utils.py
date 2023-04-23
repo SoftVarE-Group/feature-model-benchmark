@@ -58,6 +58,10 @@ def get_conversion_tool(model_json):
 def get_year(model_json):
     return model_json['Year']
 
+def get_keywords(model_json):
+    if model_json.get('Keywords') is None:
+        return []
+    return model_json['Keywords']
 
 def get_origin(path):
     file_name = Path(path).stem
@@ -67,6 +71,8 @@ def get_origin(path):
 def get_version(path):
     if "-" in Path(path).stem:
         fileName = Path(path).stem
+        while "." in fileName:
+            fileName = Path(fileName).stem
         return fileName.split('-', 1)[1]
     return ""
 
@@ -118,3 +124,19 @@ def get_json_for_model(model_path):
     else:
         adapted_file_name = file_name.split(".", 1)[0] + ".json"
     return get_model_json(model_path.replace(file_name, adapted_file_name))
+
+# returns path consisting of domain/system/model
+def get_describing_path(original_path):
+    split = original_path.split("/")
+    return os.path.join(split[-3], split[-2], Path(split[-1]).stem)
+
+
+def get_data_frame_subset(data_frame, filter_column=None, row_values_to_keep=[], columns_to_keep=None):
+    filtered_df = data_frame
+    if not columns_to_keep is None:
+        filtered_df = data_frame[columns_to_keep]
+    if not filter_column is None:
+        filtered_df = filtered_df[filtered_df[filter_column].isin(
+            row_values_to_keep)]
+
+    return filtered_df
