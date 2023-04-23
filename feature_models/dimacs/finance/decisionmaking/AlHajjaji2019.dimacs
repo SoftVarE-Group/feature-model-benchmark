@@ -1,0 +1,994 @@
+c 1 EstructuraDecisiones
+c 2 MotivadoresdeNegocio
+c 3 Segmentarydepurarclientes
+c 4 Planificacionypresupuestosdemercadeo
+c 5 Gestiondedatosylistas
+c 6 Analisisdemarketing
+c 7 GestiondeCampanias
+c 8 Facilitartareasdemercadeoypublicidad
+c 9 Gestionderespuestasyclientespotenciales
+c 10 Reducirciclosdeventas
+c 11 Aumentartasasdecierredeventas
+c 12 Mejorarretenciondeclientes
+c 13 Implementarnuevoprocesodeventas
+c 14 Gestionarinformaciondeclientes
+c 15 Gestiondecasosdeclientes
+c 16 Historialdeserviciosdeclientes
+c 17 Aumentarbasedeclientes
+c 18 Implementarnuevoprocesodeatencionalcliente
+c 19 Mejorarconocimientodelcliente
+c 20 Medirsatisfacciondelconsumidor
+c 21 Controlsobrerecursoshumanos
+c 22 Nuevosprocesosderecursoshumanos
+c 23 Reclutamiento
+c 24 Biodata_hojasdevida
+c 25 Analisisdecargos_estructuraorganizacional
+c 26 Nominayadministraciondesalarios
+c 27 Educacionycapacitacion
+c 28 Saludocupacional
+c 29 Modelamientodeprocesosyorganigramas
+c 30 Nuevosprocesosfinancieros
+c 31 Implementarcontrolessobreprocesosfinancieros
+c 32 Gestioncontable
+c 33 Manejodecuentasporpagar_Proveedores
+c 34 Sistemasdecosteo
+c 35 Administraciondeactivosfijos
+c 36 Manejodeconciliacionesbancarias
+c 37 Controldeinversiones
+c 38 Manejodeobligacionesfinancieras
+c 39 Tesoreria
+c 40 Contabilidadanalitica
+c 41 Controlyadministraciondelpresupuesto
+c 42 Manejodeactivosdecapital
+c 43 Manejodeinventarios
+c 44 Manejodealmacen
+c 45 Gestiondecompras
+c 46 Gestiondeactivosfijos
+c 47 Comercioexterior
+c 48 Seguros
+c 49 Manejodeordenesdeproduccion
+c 50 Manejodeordenesdecompra
+c 51 Planificaciondenecesidadesdecapacidad
+c 52 Planificaciondesuministros
+c 53 Disminuirtiemposdeentrega
+c 54 Integracionconproveedores
+c 55 Gestiondeproveedores
+c 56 Administraciondemateriasprimas
+c 57 Gestiondebodega
+c 58 Realizarcontroldecostos
+c 59 Administraciondepedidosydespachos
+c 60 Gestiondecontactos
+c 61 Ajustarprocesosdeflujodetrabajo
+c 62 Mejorarcapacidadderespuesta
+c 63 Gestionarpresupuestos
+c 64 Crearyconsolidarinformes
+c 65 Buscartendenciasyrelaciones
+c 66 Compartirconocimiento
+c 67 Organizarrecursosdeservicio
+c 68 Facturacionydevolucion
+c 69 Cartera
+c 70 Administraciondepreciosydescuentos
+c 71 Administraciondepromociones
+c 72 Administraciondecuotaseincentivos
+c 73 Administraciondevisitacomercial
+c 74 Importacionesyexportaciones
+c 75 Gestionarcontratosdeservicio
+c 76 Presupuestarcostosytiempos
+c 77 Automatizarlafacturacion
+c 78 Predecirdisponibilidades
+c 79 Seguimientodecostosyconsumos
+c 80 Planificarcapacidades
+c 81 Planearygestionarcapacidaddebodegajeyalmacenamiento
+c 82 Gestiondetransportedemercancia
+c 83 Logisticadetransporteinternacional
+c 84 Gestionderelacionconproveedores
+c 85 Gestiondelademanda
+c 86 SistemasEmpresariales
+c 87 CRM_CustomerRelationshipManagement
+c 88 CRM_Modulomarketing
+c 89 CRM_ModuloVentas
+c 90 CRM_Modulodeclientes
+c 91 ERP_Enterpriseresourceplanning
+c 92 ERP_Modulorecursoshumanos
+c 93 ERP_Modulofinanciero
+c 94 ERP_Moduloadministrativo
+c 95 ERP_Modulodeproduccion
+c 96 ERP_Modulodeclientes
+c 97 ERP_Modulodegestiondeabastecimiento
+c 98 ERP_Modulodeinteligenciadenegocio
+c 99 ERP_Marketingyventas
+c 100 ERP_Modulodegestiondeproyectos
+c 101 SCM_Sistemadegestiondeabastecimiento
+c 102 NuevovsExistente
+c 103 Adquirirsistemanuevo
+c 104 Adaptarsistemaexistente
+c 105 Tercerizacion
+c 106 Subcontratarpersonalizacion
+c 107 Subcontratarpartedeldesarrolloeintegracion
+c 108 Subcontratarlaadministraciondeunprocesodenegociocompleto
+c 109 Subcontratargerenciadelproyectodeimplementacion
+c 110 TipodeSolucion
+c 111 Comercial
+c 112 OpenSource
+c 113 ModelodeDespliegue
+c 114 OnPremise
+c 115 SoftwarecomoservicioSaaS
+c 116 InfraestructuracomoservicioIaaS
+c 117 ModelodeImplementacion
+c 118 BigBang
+c 119 Implementacionporfases
+c 120 Implementacionporprocesos
+c 121 Mantenimiento
+c 122 Contratoconelproveedor
+c 123 Contratoconunproveedorespecializado
+c 124 Mantenimientoporcuentapropia
+c 125 Sincontratodemantenimiento
+c 126 ModelodeSeleccion
+c 127 RFP_Requestforproposal
+c 128 Consultoriaexterna
+c 129 Evaluacioninterna
+c 130 Plataforma
+c 131 Sistemaempresarialbasadoenlamismaplataformatecnologica
+c 132 Sistemaempresarialbasadoenunaplataformadiferente
+c 133 Integracion
+c 134 Middleware
+c 135 Desarrollopropio
+c 136 Proveedor
+c 137 Financiacion
+c 138 RecursosPropios
+c 139 Credito
+c 140 Leasing
+c 141 Implicaciones
+c 142 Variabledeimpacto
+c 143 Campaniasdemercadeo
+c 144 Costototaldepromociones
+c 145 Costototaldemanejoporcanal
+c 146 Tiempoderespuestaalcliente
+c 147 Eficienciaporcanal
+c 148 Tiempodeentregadespuesdelaventa
+c 149 Tiempodenegociacionantesdelaventa
+c 150 Tasaderetenciondeclientes
+c 151 Ventasnetas
+c 152 Ventasporempleado
+c 153 Ganaciasporempleado
+c 154 Clientesnuevospordia
+c 155 Prospectosnuevospordia
+c 156 Visitasaclientespordia
+c 157 Nuevossegmentoscreados
+c 158 Imagendemarca
+c 159 Niveldeservicio
+c 160 Tasaderetenciondeempleados
+c 161 Productividadporempleado
+c 162 Costosporempleado
+c 163 Horasdeentrenamientoporempleado
+c 164 Costosdeentrenamientoporempleado
+c 165 Aumentoeningresosoperativos
+c 166 Retornodeinversion
+c 167 Rentabilidaddeactivos
+c 168 Rentabilidaddelpatrimonio
+c 169 Utilidadesporaccion
+c 170 Rotaciondeinventarios
+c 171 Rotaciondecartera
+c 172 Tiempodecompras
+c 173 Tiempoderespuestaordenes
+c 174 Precisiondeinventarios
+c 175 Efectividadprocesodefacturacion
+c 176 Tiempoderespuestaenprocesamientodeordenes
+c 177 Tiempopromediodeesperaenentregadepedidos
+c 178 Retenciondeclientes
+c 179 Satisfacciondelcliente
+c 180 Imagencorporativa
+c 181 Tiempototalcadenadeabastecimiento
+c 182 Tiempodeentrega
+c 183 Calidaddeentrega
+c 184 Niveldeentregaslibresdedefectos
+c 185 Tiempoenrutamientodeordenes
+c 186 Efectividadplanmaestrodeproduccion
+c 187 Frecuenciadeentrega
+c 188 Costototaldeinventario
+c 189 Disponibilidaddeinformacionpordemanda
+c 190 Tasadecrecimientodeventas
+c 191 Capacitacion
+c 192 Implementacion
+c 193 Integracion_1
+c 194 Consultor
+c 195 Tecnico
+c 196 Migracion
+c 197 Configuracion
+c 198 Adquisicion
+c 199 Licenciamiento
+c 200 Soporte
+c 201 Personalizacion
+c 202 FlujodeCaja
+c 203 Escalamiento
+c 204 Documentacion
+c 205 Proveedores
+c 206 Flexibilidad
+c 207 Mantenimientoyactualizaciones
+c 208 Costoinicial
+c 209 Infraestructura
+c 210 Seguridad
+c 211 Arrendamiento
+c 212 Disponibilidad
+c 213 Mantenimiento_1
+c 214 Dimension
+c 215 Indicadores
+c 216 Costos
+c 217 Tiempo
+c 218 RecursosHumanos
+c 219 Consideracion
+c 220 Ventaja
+c 221 Desventaja
+c 222 UnidaddeMedida
+c 223 Numero
+c 224 Dolares
+c 225 Dias
+c 226 Porcentaje
+c 227 Horas
+c 228 Meses
+c 229 Personas
+c 230 Personal
+c 231 Semanas
+c 232 Magnitud
+c 233 a1persona
+c 234 a2personas
+c 235 a25000_200000
+c 236 a1enadelante
+c 237 a25000_300000
+c 238 a500enadelante
+c 239 a25000_500000
+c 240 a25porcientodelcostoinicial
+c 241 a500_5000
+c 242 a5000_50000
+c 243 a5000_75000
+c 244 a10000_80000
+c 245 Entre6y36
+c 246 a3000_20000
+c 247 a0_500
+c 248 a5000_10000
+c 249 a30000_100000
+c 250 a25000_75000
+c 251 a100_200000
+c 252 a10000_500000
+c 253 a200_2000
+c 254 a400enadelante
+c 255 Entre1y2
+c 256 a18porciento_25porcientosobreellicenciamiento
+c 257 a15porciento_30porcientosobreellicenciamiento
+c 258 a5000enadelante
+c 259 a300enadelante
+c 260 a20000_100000
+c 261 a0_100000
+c 262 Entre15000y100000
+c 263 a15porcientodelicenciamiento
+c 264 Periodicidad
+c 265 Unavez
+c 266 Mensual
+c 267 Anual
+c 268 Observaciones
+c 269 Requierepersonalqueformepartedelequipointerdisciplinarioquetrabajaraconelproveedorenellevantamientoderequerimientosfuncionales
+c 270 Liberaalaempresadelastareasfuncionalesytecnicasypermiteliberarrecursosparadestinarlosalasactividadescoredelnegocio
+c 271 Requierepersonalcalificadoparaseleccionarelproveedoryestablecerlosterminosycondicionesdeloscontratos
+c 272 Requiereunproveedorconaltoniveldeconocimientodelsectorydelnegocio
+c 273 Perdidadecontrolsobrelosprocesosdenegocio
+c 274 Posibilidaddetomarventajadelaincorporaciondemejorespracticasdelaindustriayknowhowquederivenenunaventajacompetitiva
+c 275 Losresultadosdelaempresaquedansujetosalcumplimientodelosacuerdosdenivelesdeservicioconelproveedor
+c 276 Requiereunproveedorconexperienciaampliaydemostrableenimplementacionesexitosasdesistemasempresarialesenlamismaindustria
+c 277 Implicaquelaresponsabilidadporelcumplimientodelosobjetivosyfechasquedaenmanosdeunterceroysuincumplimientorepercuteenlosobjetivosdenegocio
+c 278 Liberalosrecursosgerencialesdelacompaniaparaqueseanusadosenactividadespropiasdelcoredelnegocio
+c 279 ExisteundesembolsoinicialimportantequeafectaelFCLydesembolsosanualesenlicenciamiento
+c 280 Elfabricanteporlogeneralentregaramanualesdocumentacionytendraplanespersonalizadosdecapacitacionyeventualmentepodraofrecerunplandeimplementaciongradual
+c 281 Loscostosdeescalamientoestansujetosalmodelodelicenciamientoacordadoconelproveedor
+c 282 Elproveedorofrecerasuficientegarantiaysoporteporelproductoentregado
+c 283 Elproveedorofrecerasuficientedocumentacionymanualessobreelusodelproducto
+c 284 Laofertadecompaniascapacesdebrindarsoporteasolucionescomercialesesamplia
+c 285 Laofertadeproveedoresdesolucionescomercialesesmayoraladeproveedoresopensource
+c 286 Alescogerunasolucionlaempresaquedasujetaaloscambiosquelaempresacreadoraquierahacerenelproductoactualizacionescontinuidadyterminosdeservicio
+c 287 Eltiempodeimplementacionesmayoraldeunasolucionopensource
+c 288 Lasolucionimplementadatieneunlimitedepersonalizacionyflexibilizacionquevaatadaalascaracteristicasdecadaproductoenocasioneslaempresadebecambiarsusesquemasdetrabajoparaadaptarsealaherramientaseleccionada
+c 289 NoexistedesembolsoinicialrepresentativoporloquenoseafectaelcapitaldetrabajoyalinvertirestedineroalTCsetieneunaumentoenelVPNincrementalfrentealasolucioncomercial
+c 290 Elfabricanteoproveedordeladistribuciondelsoftwareopensourcenonecesariamentecontaraconprogramasdecapacitacionoentregaradocumentaciondetallada
+c 291 Loscostosdeescalamientovendrandelcostomarginaldeimplementarunnuevoservidorodehabiitarnuevosclientes
+c 292 Laempresanoquedasujetaaunsoloproveedor
+c 293 Mayorfacilidadparainnovaryexperimentar
+c 294 Mayoragilidaddurantelaimplementacion
+c 295 Facilidadparatrabajarconunacomunidaddeexpertoscalificadosyreutlizarelcodigofuente
+c 296 Accesoalcodigofuente
+c 297 Posibilidaddemodificarelcodigofuenteylafuncionalidad
+c 298 Mayorvalor_precio
+c 299 Noexisteuncontratodesoportenigarantiadelfabricante
+c 300 Lasactualizacionesestansujetasaldesarrollodelacomunidadopensource
+c 301 Laposibilidaddedisponerdedocumentacioncentralizadafacildeusarypersonalizadaesminima
+c 302 Porlogeneralsepresentancostosocultosdeintegracionconotrossistemas
+c 303 Dependiendodelsistemayproveedorseleccionadossedebeincurrirenuncostodeadquisicion
+c 304 Dependiendodelproveedorydeltipodesolucionanualmentesegenerarancostosdelicenciamiento
+c 305 Loscostosporsoportemensualestaranacargodelaempresa
+c 306 Laempresanecesariamentetendraqueincurrirencostosdeadquisicionomantenimientodeinfraestructura
+c 307 Posiblidaddetenermejorcontrolsobrelainfraestructuraynivelesdeservicio
+c 308 Posibilidaddetenermejorcontrolsobrelasactualizacionesalsofwareylasimplicacionesdenegocioparalaempresa
+c 309 Laempresapuedecontrolar100porcientoelaccesoalainformacionyseguridaddelamisma
+c 310 Noexistencostosdelicenciamientosoporteconfiguracionmantenimientoniactualizacion
+c 311 Laresponsabilidadporlaoperacionydisponibilidaddelsistemaesdelproveedor
+c 312 Permitealaempresadestinarrecursosalaoperaciondelcoredelnegocio
+c 313 Sujetoadisponibilidaddeconexionainternet
+c 314 Noexistecontrolsobrelaseguridaddelainformacion
+c 315 Sujetaalosacuerdosdenivelesdeservicioqueseestablezcanconelproveedor
+c 316 Estemodelorepresentalaalternativademenorcosto
+c 317 Laplaneaciondebeserrigurosaycumplirsedeformaestricta
+c 318 Debeexistirunmecanismocontingentebienplaneadoydocumentado
+c 319 Todoslossistemasimplementadosdebenempezaraoperarenlamismafechaestablecida
+c 320 Todaslastareasdeconfiguracionpersonalizacionintegracionycapacitaciondebenestarterminadasparalafechadellanzamiento
+c 321 Estemodelorepresentalaalternativademayorcomplejidad
+c 322 Eltiempodeimplementacionaumenta
+c 323 Existelaoportunidaddecorregirerroresyhacerajustes
+c 324 Presentaelmejorbalanceentrecostotiempoybeneficio
+c 325 Sedebetenerunmuybienniveldeentendimientodelosprocesosdenegocioaimplementarylasdependenciasentrelosmismos
+c 326 Serequierealtoconocimientodelnegocioypodrianecesitarseunaconsultoriaadicionalparavalidaroreplantearalgunosprocesosdenegocio
+c 327 Uncontratodemantenimientoconelproveedormejoraladisponibilidaddelsistemaimplementadoyasilacontinuidaddelnegocioydelosprocesosafectados
+c 328 Loscostosdelcontratopuedenllegarasertanaltosqueunporcetanjeimportantedelosingresosdelaempresatienenquedirigirseacubriresterubro
+c 329 Uncontratoconelproveedoraseguraelconocimientodelaimplementacionyreducelostiemposnecesariosparadarrespuestaainconvenientesactualizacionesorequirimientosdemantenimiento
+c 330 Uncontratodemantenimientoconunproveedorespecializadopuedeofrecermejorescondicionesdecoberturagarantiaymantenimientoespecializadoadicionalesalasbrindadasporelfabricante
+c 331 Eltiempoderespuestaanteunrequerimientopuedesersuperiorpordesconocimientodelaimplementacion
+c 332 Ladecisionimplicalabusquedadeunequipocalificadoydimensionadodeacuerdoconeltamanioycomplejidaddelaimplementacion
+c 333 Ladecisionsuprimeuncostoenelcortoplazoperoimplicaunriesgoquepuedeimpactarlaoperaciondelprocesodenegocioimplementadoyasilosingresosdelaempresa
+c 334 Representalaopciondemenorcosto
+c 335 RequierepersonalcalificadoparaentenderelcontextodelanecesidadlosrequerimientosexactosdelnegocioyplasmarloseneldocumentoRFP
+c 336 Esunaformaefectivaparaquevariosproveedoresseaproximenalasolucionrequeridadesdediferentesangulos
+c 337 Posibilidadderecibirofertasvariadasylograrpoderdenegociacionfrenteaproveedores
+c 338 Requierepersonalcalificadopararealizarlaselecciondelafirmadeconsultoriaencargadaderealizarelprocesodeselecciondelasolucion
+c 339 Requiereconocimientodelaindustriaporpartedelafirmadeconsultoria
+c 340 Requiereexperienciapreviaenimplementacionessimilaresycasosdeexitoquesoportenlaexperiencia
+c 341 Requierereclutarpersonalconconocimientoespecializadosobreimplementaciondesistemasempresariales
+c 342 Laempresanorequiereuncentrodecomputo
+c 343 Seevitancostostiempoyrecursoshumanosadicionalesparaintegrarlanuevaplataformaalossistemasyprocesosdenegocioexistentes
+c 344 Serequieretiempoadicionalparaintegrarelnuevosistemaalossistemasexistentes
+c 345 SerequierecapacitacionalpersonaldeTIyalosusuariosenlanuevaplataforma
+c 346 Ladecisionpuedeimplicarmantenimientoadicionalespecializado
+c 347 Ladecisionpuedeimplicarsoporteadicionalespecializado
+c 348 Elmiddlewarereducelostiemposdeintegracionyhaceusodemejorespracticasyestandaresdelaindustria
+c 349 Aumentaloscostosanualesdetodalaimplementacionyaumentaelcostototaldepropiedad
+c 350 Requierepersonaltecnicamentecapacitadoyconconocimientosuficientedelossistemasaintegrar
+c 351 Permiteelmayorgradodeflexibilidadycontrol
+c 352 Requierelaadecuadaselecciondeunproveedorconaltoconocimientodelasherramientasyprocesosdenegocioinvolucrados
+c 353 Alfinanciarlaimplementacionconrecursospropiosseafectaelflujodecajadelaempresayasielcapitaldetrabajo
+c 354 Seevitanloscostosasociadosadiferentestiposdefinanciacion
+c 355 Loscostosasociadosalproyectoaumentanporcuentadelosinteresesdefinanciacion
+c 356 Losgastosfinancierospuedensercontabilizadoscomogastosoperativosgenerandounefecto_valor_porcuentadelareducciondepagodeimpuestosenelPyG
+c 357 Losrecursospropiosliberadosporcuentadelafinanciacionpuedendestinarseainversionesaunatasamayorquelatasadefinanciacion
+c 358 Losactivosnorepresentangastosporimpuestosparalacompania
+c 359 Sujetoalascondicionesdelcontratodeleasingoperativoestablecidoporlaentidadfinanciera
+c 360 Noexistencostosdelicenciamientosoporteconfiguracionmantenimientoniactualizacionencuantoainfraestructuranisistemasoperativos
+c 361 Laempresanorequiereuncentrodecomputo_1
+c 362 Interoperabilidadentrediferentessistemas
+c 363 Maximoniveldeescalabilidadelcostoytiempomarginaldeincrementarlacapacidaddeprocesamientoeselminimoposible
+c 364 Noexistecontrolsobreelaccesoalosservidoresnisobrelaseguridaddelosmismos
+c 365 RequiereundepartamentodeTIcapazdeevaluarlacapacidadtecnologicaylosretosquesuponelaimplentaciondelsistema
+c 366 RequiereunagenerenciadeTIresponsabledeevaluarlasalternativaseintegrarlasdentrodelavisionestrategicadelaempresa
+p cnf 366 627
+1 0
+1 -2 0
+1 -86 0
+1 -102 0
+1 -105 0
+1 -110 0
+1 -113 0
+1 -117 0
+1 -121 0
+1 -126 0
+1 -130 0
+1 -133 0
+1 -137 0
+1 -141 0
+-1 2 0
+-1 86 0
+-1 102 0
+-1 105 0
+-1 110 0
+-1 113 0
+-1 117 0
+-1 121 0
+-1 126 0
+-1 130 0
+-1 133 0
+-1 137 0
+-1 141 0
+2 -3 0
+2 -4 0
+-5 2 0
+-6 2 0
+-7 2 0
+-8 2 0
+-9 2 0
+2 -10 0
+-11 2 0
+-12 2 0
+-13 2 0
+-14 2 0
+-15 2 0
+-16 2 0
+-17 2 0
+-18 2 0
+-19 2 0
+-20 2 0
+-21 2 0
+2 -22 0
+2 -23 0
+-24 2 0
+-25 2 0
+2 -26 0
+-27 2 0
+2 -28 0
+-29 2 0
+2 -30 0
+-31 2 0
+-32 2 0
+-33 2 0
+2 -34 0
+-35 2 0
+-36 2 0
+-37 2 0
+-38 2 0
+2 -39 0
+-40 2 0
+-41 2 0
+-42 2 0
+-43 2 0
+-44 2 0
+-45 2 0
+-46 2 0
+-47 2 0
+2 -48 0
+-49 2 0
+-50 2 0
+2 -51 0
+2 -52 0
+-53 2 0
+-54 2 0
+-55 2 0
+-56 2 0
+-57 2 0
+2 -58 0
+-59 2 0
+-60 2 0
+-61 2 0
+-62 2 0
+-63 2 0
+-64 2 0
+-65 2 0
+-66 2 0
+2 -67 0
+-68 2 0
+-69 2 0
+-70 2 0
+-71 2 0
+-72 2 0
+-73 2 0
+-74 2 0
+-75 2 0
+2 -76 0
+-77 2 0
+2 -78 0
+2 -79 0
+2 -80 0
+2 -81 0
+-82 2 0
+-83 2 0
+-84 2 0
+-85 2 0
+35 72 56 59 70 71 73 61 25 6 17 11 77 24 65 69 47 66 40 37 21 41 64 53 27 8 68 75 14 63 32 7 46 57 15 45 60 5 85 55 84 9 82 16 31 18 13 74 54 83 42 44 36 33 43 38 50 49 20 62 19 12 29 -2 26 22 30 67 81 51 52 4 80 78 76 58 23 10 28 3 79 48 34 39 0
+-87 86 0
+-91 86 0
+-101 86 0
+87 -86 0
+91 -86 0
+101 -86 0
+87 -88 0
+87 -89 0
+87 -90 0
+-87 89 90 88 0
+91 -92 0
+91 -93 0
+91 -94 0
+91 -95 0
+91 -96 0
+91 -97 0
+91 -98 0
+91 -99 0
+91 -100 0
+-91 99 94 96 97 100 98 95 93 92 0
+-103 102 0
+-104 102 0
+104 103 -102 0
+-104 -103 0
+-106 105 0
+-107 105 0
+-108 105 0
+-109 105 0
+109 108 107 106 -105 0
+-107 -106 0
+-108 -106 0
+-109 -106 0
+-108 -107 0
+-109 -107 0
+-109 -108 0
+-111 110 0
+-112 110 0
+111 112 -110 0
+-111 -112 0
+113 -114 0
+113 -115 0
+-116 113 0
+116 -113 114 115 0
+-114 -115 0
+-116 -114 0
+-116 -115 0
+-118 117 0
+-119 117 0
+-120 117 0
+118 119 120 -117 0
+-118 -119 0
+-118 -120 0
+-119 -120 0
+-122 121 0
+-123 121 0
+121 -124 0
+121 -125 0
+122 123 -121 124 125 0
+-122 -123 0
+-122 -124 0
+-122 -125 0
+-123 -124 0
+-123 -125 0
+-124 -125 0
+126 -127 0
+-128 126 0
+-129 126 0
+128 129 -126 127 0
+-128 -127 0
+-129 -127 0
+-128 -129 0
+130 -131 0
+130 -132 0
+-130 131 132 0
+-131 -132 0
+133 -134 0
+-135 133 0
+133 -136 0
+135 -133 134 136 0
+-135 -134 0
+-134 -136 0
+-135 -136 0
+137 -138 0
+-139 137 0
+137 -140 0
+139 -137 140 138 0
+-139 -138 0
+-140 -138 0
+-139 -140 0
+141 -142 0
+-214 141 0
+141 -222 0
+141 -232 0
+141 -264 0
+141 -268 0
+-141 142 0
+214 -141 0
+-141 222 0
+-141 232 0
+-143 142 0
+-144 142 0
+-145 142 0
+-146 142 0
+-147 142 0
+-148 142 0
+-149 142 0
+-150 142 0
+142 -151 0
+142 -152 0
+-153 142 0
+-154 142 0
+-155 142 0
+142 -156 0
+-157 142 0
+-158 142 0
+-159 142 0
+-160 142 0
+-161 142 0
+-162 142 0
+-163 142 0
+-164 142 0
+-165 142 0
+-166 142 0
+-167 142 0
+-168 142 0
+-169 142 0
+-170 142 0
+-171 142 0
+-172 142 0
+-173 142 0
+-174 142 0
+-175 142 0
+-176 142 0
+-177 142 0
+-178 142 0
+-179 142 0
+-180 142 0
+-181 142 0
+-182 142 0
+-183 142 0
+-184 142 0
+-185 142 0
+-186 142 0
+-187 142 0
+-188 142 0
+-189 142 0
+-190 142 0
+-191 142 0
+-192 142 0
+-193 142 0
+-194 142 0
+-195 142 0
+-196 142 0
+-197 142 0
+-198 142 0
+-199 142 0
+-200 142 0
+-201 142 0
+-202 142 0
+-203 142 0
+-204 142 0
+-205 142 0
+-206 142 0
+-207 142 0
+-208 142 0
+-209 142 0
+-210 142 0
+-211 142 0
+-212 142 0
+-213 142 0
+198 211 165 183 143 191 154 197 194 208 164 162 188 145 144 212 189 204 186 175 147 203 206 202 187 153 163 180 158 192 209 193 199 213 207 196 184 159 157 201 174 161 155 205 167 168 178 166 171 170 179 210 200 190 150 160 195 172 182 148 149 146 176 173 185 177 181 169 -142 151 152 156 0
+214 -215 0
+-216 214 0
+214 -217 0
+214 -218 0
+-219 214 0
+214 -220 0
+-221 214 0
+219 216 221 -214 215 218 217 220 0
+-223 222 0
+-224 222 0
+-225 222 0
+-226 222 0
+-227 222 0
+-228 222 0
+-229 222 0
+-230 222 0
+-231 222 0
+225 224 227 228 223 230 229 226 231 -222 0
+232 -233 0
+232 -234 0
+232 -235 0
+232 -236 0
+232 -237 0
+232 -238 0
+232 -239 0
+232 -240 0
+232 -241 0
+232 -242 0
+232 -243 0
+232 -244 0
+-245 232 0
+232 -246 0
+232 -247 0
+232 -248 0
+232 -249 0
+232 -250 0
+232 -251 0
+232 -252 0
+232 -253 0
+232 -254 0
+-255 232 0
+232 -256 0
+232 -257 0
+232 -258 0
+232 -259 0
+232 -260 0
+232 -261 0
+-262 232 0
+232 -263 0
+262 255 245 -232 261 247 252 244 251 257 263 256 236 233 260 253 235 237 239 250 240 234 249 246 259 254 248 242 243 258 241 238 0
+264 -265 0
+-266 264 0
+-267 264 0
+267 266 -264 265 0
+268 -269 0
+-270 268 0
+268 -271 0
+268 -272 0
+268 -273 0
+268 -274 0
+-275 268 0
+268 -276 0
+-277 268 0
+-278 268 0
+-279 268 0
+-280 268 0
+-281 268 0
+-282 268 0
+-283 268 0
+-284 268 0
+-285 268 0
+-286 268 0
+-287 268 0
+-288 268 0
+-289 268 0
+-290 268 0
+-291 268 0
+-292 268 0
+-293 268 0
+-294 268 0
+-295 268 0
+-296 268 0
+268 -297 0
+-298 268 0
+-299 268 0
+-300 268 0
+-301 268 0
+268 -302 0
+-303 268 0
+-304 268 0
+-305 268 0
+-306 268 0
+268 -307 0
+268 -308 0
+-309 268 0
+-310 268 0
+-311 268 0
+268 -312 0
+268 -313 0
+-314 268 0
+268 -315 0
+-316 268 0
+-317 268 0
+-318 268 0
+268 -319 0
+268 -320 0
+-321 268 0
+-322 268 0
+-323 268 0
+268 -324 0
+268 -325 0
+268 -326 0
+268 -327 0
+-328 268 0
+268 -329 0
+268 -330 0
+-331 268 0
+-332 268 0
+-333 268 0
+268 -334 0
+268 -335 0
+-336 268 0
+268 -337 0
+268 -338 0
+268 -339 0
+268 -340 0
+268 -341 0
+-342 268 0
+268 -343 0
+268 -344 0
+268 -345 0
+-346 268 0
+-347 268 0
+-348 268 0
+-349 268 0
+268 -350 0
+268 -351 0
+268 -352 0
+-353 268 0
+268 -354 0
+-355 268 0
+-356 268 0
+-357 268 0
+-358 268 0
+268 -359 0
+-360 268 0
+-361 268 0
+-362 268 0
+-363 268 0
+-364 268 0
+268 -365 0
+268 -366 0
+296 286 353 349 318 304 303 290 280 348 283 282 322 287 331 321 316 336 323 279 295 277 362 332 346 347 333 306 292 342 361 309 284 285 317 301 311 300 288 270 278 358 355 281 291 328 305 356 357 275 363 294 293 298 364 314 289 310 360 299 -268 273 312 351 302 297 337 308 274 307 324 334 339 340 352 335 338 271 269 350 341 366 365 272 276 325 343 354 326 345 344 315 313 359 320 319 329 327 330 0
+-103 216 196 0
+-104 197 216 224 0
+-104 197 228 217 0
+-104 194 229 218 233 0
+-111 216 224 266 200 241 0
+267 -111 216 224 199 240 0
+198 -111 216 224 265 239 0
+219 192 278 -109 0
+219 192 277 -109 0
+219 192 276 -109 0
+216 224 192 266 -109 258 0
+219 192 275 -108 0
+219 192 274 -108 0
+219 192 273 -108 0
+-104 229 218 195 233 0
+216 224 192 -106 265 235 0
+219 192 270 -106 0
+192 230 218 269 -106 236 0
+219 192 270 -107 0
+216 224 192 -107 265 237 0
+224 -99 215 152 0
+-103 191 216 224 0
+-99 215 226 150 0
+224 -99 215 151 0
+-103 216 224 192 0
+-111 219 282 200 0
+-111 219 203 281 0
+-111 219 284 200 0
+-111 219 204 283 0
+-111 245 192 228 217 0
+-111 216 224 133 265 244 0
+191 -111 219 224 280 246 0
+-111 216 279 202 0
+-111 197 216 224 266 242 0
+-111 216 224 201 265 243 0
+-103 191 228 217 0
+-103 216 224 133 0
+-103 229 218 195 234 0
+-103 194 229 218 233 0
+-103 133 228 217 0
+-103 192 228 217 0
+216 224 266 -112 200 248 0
+267 216 224 199 -112 247 0
+198 216 224 -112 265 247 0
+-111 219 206 288 0
+216 224 -112 201 265 250 0
+197 216 224 -112 265 249 0
+267 216 224 207 -112 241 0
+286 -111 219 205 0
+-111 219 287 192 0
+-111 219 285 205 0
+219 192 272 -108 0
+219 192 271 -107 0
+216 224 192 266 -108 258 0
+292 -112 205 220 0
+216 203 281 -112 0
+221 299 -112 200 0
+296 295 192 294 293 298 -112 297 220 0
+221 204 301 -112 0
+221 300 207 -112 0
+216 224 133 -112 265 250 0
+245 192 228 -112 217 0
+216 202 289 -112 0
+191 216 224 290 -112 246 0
+162 224 -92 215 0
+224 -92 215 161 0
+164 224 -92 215 0
+-92 227 163 215 0
+-93 215 226 166 0
+165 -93 215 226 0
+-93 215 226 168 0
+-93 215 226 167 0
+224 -93 215 169 0
+225 -94 215 170 0
+225 -94 215 171 0
+-90 158 215 226 0
+-89 224 153 215 0
+-89 224 215 152 0
+-89 224 215 151 0
+-89 215 226 150 0
+-90 215 223 156 0
+-90 215 157 223 0
+-90 215 223 155 0
+-90 154 215 223 0
+-90 215 159 226 0
+-92 215 226 160 0
+187 215 223 -101 0
+186 215 226 -101 0
+183 215 226 -101 0
+225 215 -101 182 0
+225 215 -101 185 0
+215 184 226 -101 0
+189 -98 215 226 0
+-99 215 226 190 0
+225 -99 215 148 0
+225 -99 215 149 0
+188 224 215 -101 0
+154 -96 215 223 0
+225 -95 215 177 0
+225 -95 215 176 0
+-95 175 215 226 0
+-94 215 226 174 0
+225 -94 215 173 0
+225 -94 215 172 0
+-96 180 215 226 0
+225 -97 215 181 0
+-96 215 226 178 0
+-96 215 226 179 0
+344 -132 217 0
+191 216 345 -132 0
+191 345 -132 217 0
+216 346 213 -132 0
+219 -129 341 366 365 0
+219 192 343 -131 0
+198 216 224 -132 265 261 0
+216 224 193 -132 258 0
+208 216 224 -129 266 258 0
+96 -60 0
+-61 97 -62 0
+-65 -66 -64 98 -63 0
+-6 88 -8 -7 -5 -9 -4 -3 0
+-11 89 -13 -12 -10 0
+-17 90 -14 -15 -16 -18 -20 -19 0
+-25 -24 -21 92 -27 -29 -26 -22 -23 -28 0
+-35 -40 -37 -41 93 -32 -31 -42 -36 -33 -38 -30 -34 -39 0
+216 347 -132 200 0
+-47 94 -46 -45 -44 43 -48 0
+-56 -59 -53 95 -57 -55 -54 -50 -49 -51 -52 -58 0
+219 -135 192 351 350 0
+216 192 -136 258 0
+216 -135 224 192 266 258 0
+-135 192 230 218 236 0
+-89 225 215 149 0
+219 348 192 -134 0
+349 219 202 -134 0
+267 216 224 207 -134 263 0
+197 216 224 -134 258 0
+198 216 224 262 -134 265 0
+267 216 224 199 -134 240 0
+-88 145 224 215 0
+-88 225 215 146 0
+-61 -85 -84 -82 -83 -62 -81 101 0
+219 202 -140 358 359 0
+219 -139 202 355 356 357 0
+-72 -70 -71 -73 -69 99 -68 -75 -14 -7 -16 -74 -67 0
+353 219 202 -138 354 0
+-77 100 -80 -78 -76 -79 0
+219 192 270 -136 352 0
+-88 144 224 215 0
+-89 225 215 148 0
+-88 143 215 223 0
+-88 147 215 226 0
+216 304 199 -114 251 0
+208 216 303 -114 251 0
+267 216 224 207 -114 242 0
+216 224 305 266 -114 200 241 0
+221 133 -112 302 0
+219 192 -116 362 361 363 360 0
+197 216 224 -114 265 242 0
+216 224 -114 201 265 243 0
+216 224 133 -114 265 244 0
+219 224 209 306 -114 265 252 0
+192 311 312 -115 313 220 0
+219 192 310 -115 0
+211 216 224 266 -115 253 0
+219 309 -114 210 0
+219 -114 308 200 0
+219 207 -114 307 0
+211 216 224 -116 266 254 0
+255 192 -116 231 217 0
+314 210 -115 220 0
+212 -115 315 220 0
+219 -116 364 210 0
+-118 216 316 192 0
+219 -116 205 365 0
+219 322 321 192 -119 0
+-118 219 318 192 317 320 319 0
+216 192 -120 324 0
+323 192 -119 0
+219 192 -120 325 326 0
+267 -122 216 213 226 256 0
+219 -122 328 213 329 327 0
+213 -124 230 218 236 0
+267 216 224 213 -124 258 0
+219 -123 331 213 330 0
+267 -123 216 213 226 257 0
+336 192 337 -127 218 335 0
+216 224 192 -127 334 265 259 0
+219 333 213 -125 0
+219 332 213 -124 0
+-128 208 216 224 265 260 0
+219 -128 192 339 340 338 0
