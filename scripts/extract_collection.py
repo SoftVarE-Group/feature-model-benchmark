@@ -45,13 +45,13 @@ from utils import get_latest_version, get_first_version, get_model_json, get_lat
 df_all = pd.read_csv("statistics/FullCombined.csv", sep=';')
 
 # init default values
-domain_values = list(df_all['Domain'].unique())
-format_values = list(df_all['Format'].unique())
-source_values = list(df_all['Source'].unique())
-feature_range = (int(min(df_all['#Features'])), int(max(df_all['#Features'])))
-ctc_range = (int(min(df_all['#Constraints'])),
+available_domains = list(df_all['Domain'].unique())
+available_formats = list(df_all['Format'].unique())
+available_sources = list(df_all['Source'].unique())
+available_feature_range = (int(min(df_all['#Features'])), int(max(df_all['#Features'])))
+available_ctc_range = (int(min(df_all['#Constraints'])),
              int(max(df_all['#Constraints'])))
-name_regex = '.*'
+default_name_regex = '.*'
 VARIANT_SELECTORS = ["all", "none", "first", "last"]
 
 
@@ -60,11 +60,11 @@ def init_args():
         description='Derive feature-model subset according to filtering')
     parser.add_argument('--show_filter_options',
                         help="Show possible values for all filters")
-    parser.add_argument('--domains', type=str, nargs="+", default=domain_values,
+    parser.add_argument('--domains', type=str, nargs="+", default=available_domains,
                         help="Only include feature models belonging to list of domains")
-    parser.add_argument('--features', type=str, default=str(feature_range[0]) + ".." + str(
-        feature_range[1]), help="Only include feature models with between X..Y features")
-    parser.add_argument('--original_formats', type=str, nargs="+", default=format_values,
+    parser.add_argument('--features', type=str, default=str(available_feature_range[0]) + ".." + str(
+        available_feature_range[1]), help="Only include feature models with between X..Y features")
+    parser.add_argument('--original_formats', type=str, nargs="+", default=available_formats,
                         help="Only include feature models of a specific format")
     parser.add_argument('--output_format', type=str, default="uvl",
                         help="Select format of output feature models: uvl|dimacs|orignal")
@@ -72,8 +72,8 @@ def init_args():
                         help="Only include feature models whose name matches the regex")
     parser.add_argument('--evolution', action='store_true', default=False,
                         help="Only provide feature models with a history")
-    parser.add_argument('--constraints', type=str, default=str(ctc_range[0]) + ".." + str(
-        ctc_range[1]), help="Only include feature models with between X--Y constraints")
+    parser.add_argument('--constraints', type=str, default=str(available_ctc_range[0]) + ".." + str(
+        available_ctc_range[1]), help="Only include feature models with between X--Y constraints")
     parser.add_argument('--save_path', type=str, default="benchmark" + str(datetime.datetime.now()),
                         help="Provide directory path for storing benchmark and meta data")
     parser.add_argument('--versions', type=str, default="all",
@@ -106,11 +106,11 @@ def evaluate_range_string(range_string):
 
 
 def printFilterOptions():
-    print("Name: " + name_regex)
-    print("Domain: " + str(domain_values))
-    print("Format: " + str(format_values))
-    print("#Features: " + str(feature_range[0]) + ".." + str(feature_range[1]))
-    print("#Constraints: " + str(ctc_range[0]) + ".." + str(ctc_range[1]))
+    print("Name: " + default_name_regex)
+    print("Domain: " + str(available_domains))
+    print("Format: " + str(available_formats))
+    print("#Features: " + str(available_feature_range[0]) + ".." + str(available_feature_range[1]))
+    print("#Constraints: " + str(available_ctc_range[0]) + ".." + str(available_ctc_range[1]))
 
 
 def applyFilter(df, filter_dict: dict):
@@ -209,23 +209,37 @@ def filter_variant_first_strategy(df: pd.DataFrame):
 def filter_data_frame_by_list_of_models(data_frame, models):
     return data_frame[data_frame['Path'].isin(models)]
 
+def udpate_path_according_to_output_format(path : str, output_format):
+    if output_format == 'original':
+        return path
+    path = path.replace('original', output_format)
+    return os.path.splitext(path)[0] + "." + output_format
+    
 
-def create_benchmark_directory(data_frame, target_directory):
+
+def create_benchmark_directory(data_frame, target_directory, output_format='original'):
     os.makedirs(os.path.join(target_directory, "feature_models"))
     data_frame.to_csv(os.path.join(target_directory,
                       "statistics.csv"), ";", index=False)
+    
+    data_frame['Path'] = data_frame.apply(
+        lambda row: udpate_path_according_to_output_format(row.Path, output_format), axis=1)
 
     for model_path in list(data_frame['Path']):
         dir_path = os.path.join(target_directory, os.path.dirname(model_path))
+        dir_path = os.path.join(target_directory, os.path.dirname(model_path))
         full_path = os.path.join(target_directory, model_path)
         Path(dir_path).mkdir(parents=True, exist_ok=True)
-        shutil.copy(model_path, full_path)
-        if ".zip" in model_path:
-            temp_extract_dir = os.path.join(dir_path, "temp/")
-            shutil.unpack_archive(full_path, temp_extract_dir)
-            shutil.copyfile(os.path.join(temp_extract_dir, os.listdir(temp_extract_dir)[0]), full_path.replace(get_extension(full_path), get_extension(os.listdir(temp_extract_dir)[0])))
-            shutil.rmtree(temp_extract_dir)
-            os.remove(full_path)
+        if Path(dir_path).exists():
+            shutil.copy(model_path, full_path)
+            if ".zip" in model_path:
+                temp_extract_dir = os.path.join(dir_path, "temp/")
+                shutil.unpack_archive(full_path, temp_extract_dir)
+                shutil.copyfile(os.path.join(temp_extract_dir, os.listdir(temp_extract_dir)[0]), full_path.replace(get_extension(full_path), get_extension(os.listdir(temp_extract_dir)[0])))
+                shutil.rmtree(temp_extract_dir)
+                os.remove(full_path)
+        else:
+            print("Warning: " + output_format + " file for " + model_path + " is missing.")
 
     create_benchmark_json(data_frame, os.path.join(
         target_directory, "config.json"))
@@ -243,8 +257,8 @@ def create_benchmark_directory_from_config(config_path, data_frame, target_direc
 def create_properties_dict():
     return {"Title": "", "Analyses": [], "Reasoning Engines": [], "Date": str(datetime.date.today()), "DOI": "",
             "Filter": {
-                "Domains": domain_values,
-                "Formats": format_values,
+                "Domains": available_domains,
+                "Formats": available_formats,
                 # "#Features": str(feature_range[0]) + ".." + str(feature_range[1]),
                 # "#Constraints": str(ctc_range[0]) + ".." + str(ctc_range[1])
     }}
@@ -263,12 +277,6 @@ def create_benchmark_json(data_frame : pd.DataFrame, json_path='benchmark.json')
     with open(json_path, 'w') as outfile:
         json.dump(value_dict, outfile, indent=4, ensure_ascii=False)
 
-def get_cdl_models(df : pd.DataFrame, json_path="CDL_paths.json"):
-    df = df[df['Origin'] == "Knüppel2017"]
-    df = df[df['Keywords'].str.contains('CDL')]
-    print(df['Path'].to_json(orient='split', force_ascii=False))
-    
-
 args = init_args()
 if args.load_config is not None:
     create_benchmark_directory_from_config(
@@ -278,5 +286,5 @@ elif args.show_filter_options:
 else:
     filter_dict = parse_filter_args(args)
     df_filtered = applyFilter(df_all, filter_dict)
-    create_benchmark_directory(df_filtered, "testbenchmark")
+    create_benchmark_directory(df_filtered, "testbenchmark", filter_dict["OutputFormat"])
 
