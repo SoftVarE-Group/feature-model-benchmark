@@ -1,8 +1,8 @@
 # Feature-Model Benchmark
 
 Our comprehensive feature collection provides large, real-world feature models for empirical evaluations.
-All currently available feature models, including characteristics and their sources, can be found in ./feature_models/original/.
-Further, we provide a .csv file showcasing information for every feature model in statistics/FullCombined.csv.
+All currently available feature models, including characteristics and their sources, can be found in *feature_models/original/*.
+Further, we provide a .csv file showcasing information for every feature model in *statistics/FullCombined.csv*.
 We offer additional functionality to make use of the collection more convenient. 
 Users can search for a subset of feature models, create configuration files indicating their subset, and create subsets from existing configuration files.
 
@@ -22,6 +22,7 @@ The script is based on Python3. To install the required dependencies please use:
 *scripts/extract_collection.py* can be used to create a filtered subset of the feature model collection.
 
 Show help for the different parameters that can be used for filtering:
+
 `python3 scripts/extract_collection.py -h`
 
 
