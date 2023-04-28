@@ -1,0 +1,14 @@
+{
+    "Title": "Selection of hard/complex feature models from the repository",
+    "Date": "2023-04-28",
+    "Feature Models": [
+        "feature_models/original/automotive/automotive2/Knüppel2017-2_4.xml",
+        "feature_models/original/automotive/automotive01/Kowal2016.xml",
+        "feature_models/original/systems_software/Fiasco/Oh2020-17_10.dimacs",
+        "feature_models/original/systems_software/Fiasco/Berger2013.dimacs",
+        "feature_models/original/systems_software/Buildroot/Berger2013.json",
+        "feature_models/original/systems_software/Freetz/Berger2013.dimacs",
+        "feature_models/original/systems_software/Embtoolkit/Berger2013.dimacs",
+        "feature_models/original/systems_software/Linux/Berger2013-2.6.33.3-2var.dimacs"
+    ]
+}
