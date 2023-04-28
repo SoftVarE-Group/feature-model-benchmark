@@ -3,9 +3,12 @@ import shutil
 import os
 import zipfile
 import pandas as pd
+import re
 from utils import get_files_from_directory, get_system_name
 
 # -------------------------- JSON Generation --------------------------
+
+
 def get_evolution_steps(dir_path, supported_suffixes):
     files = get_files_from_directory(dir_path, supported_suffixes)
     versions = [get_system_name(file).split('-', 1)[1] for file in files]
@@ -13,6 +16,7 @@ def get_evolution_steps(dir_path, supported_suffixes):
     print(json.dumps(versions))
 
 # -------------------------- Get Meta Data --------------------------
+
 
 def get_number_of_systems(data_frame):
     return data_frame.Name.nunique()
@@ -50,9 +54,10 @@ def print_meta_data(data_frame):
     print("Number of domains: " + str(get_number_of_domains(data_frame)))
     print("Number of unique Publications: " +
           str(get_no_unique_publications(data_frame)))
-    print("Number of feature models: \n" + get_no_feature_models_per_domain(data_frame))
-    print("Number of different systems: \n" + get_no_systems_per_domain(data_frame))
-
+    print("Number of feature models: \n" +
+          get_no_feature_models_per_domain(data_frame))
+    print("Number of different systems: \n" +
+          get_no_systems_per_domain(data_frame))
 
 
 # -------------------------- CDL structure --------------------------
@@ -142,9 +147,45 @@ def extract_pett_linux_history(new_dir="pett_linux"):
         shutil.rmtree("temp")
 
 
+# ---------- DIMACS Analysis ----------
+
+def get_no_features_and_clauses_for_dimacs(dimacs_path):
+    print(dimacs_path)
+    with open(dimacs_path, 'r') as dimacs_file:
+        info_line = re.search('p cnf [0-9]+ [0-9]+', dimacs_file.read()).group()
+        return info_line.split(' ')[2], info_line.split(' ')[3]
 
 
+def build_dimacs_rows(dimacs_paths):
+    header_string = "model;NumberOfFeatures;NumberOfLeafFeatures;NumberOfTopFeatures;#Constraints;AverageConstraintSize;CtcDensity;FeaturesInConstraintsDensity;TreeDepth;AverageNumberOfChildren;NumberOfClauses;NumberOfLiterals;ClauseDensity;RatioOptionalFeatures;ConnectivityDensity;Void;#CORE;#Dead;NumberOfValidConfigurations;SimpleCyclomaticComplexity;IndependentCyclomaticComplexity"
+    headers = header_string.split(';')
+    model_index = headers.index("model")
+    no_features_index = headers.index("NumberOfFeatures")
+    no_leaves_index = headers.index("NumberOfLeafFeatures")
+    no_tops_index = headers.index("NumberOfTopFeatures")
+    no_constraints_index = headers.index("#Constraints")
+    treedepth_index = headers.index("TreeDepth")
+    no_clauses_index = headers.index("NumberOfClauses")
 
+    result_csv = header_string + "\n"
+
+    for path in dimacs_paths:
+        row = ["" for x in range(len(headers))]
+        features, clauses = get_no_features_and_clauses_for_dimacs(path)
+        row[model_index] = path
+        row[no_features_index] = str(features)
+        row[no_leaves_index] = str(features)
+        row[no_tops_index] = str(features)
+        row[no_constraints_index] = str(clauses)
+        row[treedepth_index] = "1"
+        row[no_clauses_index] = str(clauses)
+
+        result_csv += ';'.join(row) + "\n"
+    
+    print(result_csv)
+
+build_dimacs_rows(get_files_from_directory("feature_models/original/systems_software/Linux", ["dimacs"]) + get_files_from_directory("/home/chico/git/data/feature-model-benchmark/feature_models/dimacs/systems_software/Linux", ["dimacs"]) + get_files_from_directory("feature_models/original/systems_software/Fiasco", ["dimacs"]))
+        
 # create_benchmark_json({'Publication Title' : 'Fun Fun', 'Filter' : [ {'Domain': 'Automotive'}, {'#Features' : '100-1000'} ], 'DOI' : 'doi.org/hehe'}, read_csv_to_dataframe("statistics/complete.csv"))
 
 # append_analysis_results(read_csv_to_dataframe("statistics/models.csv"), read_csv_to_dataframe("/home/chico/git/software/Feature-Model-Structure-Analysis/result.csv"))
