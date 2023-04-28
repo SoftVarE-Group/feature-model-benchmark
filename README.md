@@ -56,7 +56,7 @@ Create collection with feature models from the automotive domain:
 
 `python3 scripts/extract_collection.py --domains automotive`
 
-Create collection with uvl feature models from the systems-software domain with at least 500 features
+Create collection with feature models in UVL format from the systems-software domain with at least 500 features
 
 `python3 scripts/extract_collection.py --features 500.. --domains systems_software --output_format uvl`
 
