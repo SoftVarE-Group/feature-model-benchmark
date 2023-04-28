@@ -4,12 +4,44 @@
         "Uniform Random Sampling"
     ],
     "Reasoning Engines" : [
-        "Smarch"
+        "Smarch",
+        "sharpSAT"
     ],
     "Date" : "2020-06-13",
     "Filter": [],
     "Publication": "https://apps.cs.utexas.edu/apps/tech-reports/192690",
+    "Replication Package": "https://github.com/jeho-oh/Smarch",
+    "Keywords": [
+        "SmallMissing"
+    ],
     "Feature Models": [
-       
+       "feature_models/original/systems_software/Fiasco/Oh2020-17_10.dimacs",
+       "feature_models/original/systems_software/Fiasco/Berger2013.dimacs",
+       "feature_models/original/systems_software/ToyBox/Berger2013.dimacs",
+       "feature_models/original/systems_software/ToyBox/Oh2020-0_7_5.dimacs",
+       "feature_models/original/systems_software/ToyBox/Berger2013.dimacs",
+       "feature_models/original/systems_software/uClibc/Oh2020-ng_1_0_29.dimacs",
+       "feature_models/original/systems_software/ToyBox/Oh2020-0_7_5.dimacs",
+       "feature_models/original/systems_software/uCLinux/Berger2013.dimacs",
+       "feature_models/original/systems_software/ref4955/Berger2013.dimacs",
+       "feature_models/original/systems_software/adderII/Berger2013.dimacs",
+       "feature_models/original/systems_software/eCos/Berger2013-icse11.dimacs",
+       "feature_models/original/systems_software/m5272c3/Berger2013.dimacs",
+       "feature_models/original/systems_software/pati/Berger2013.dimacs",
+       "feature_models/original/systems_software/olpce2294/Berger2013.dimacs",
+       "feature_models/original/systems_software/integrator_arm9/Berger2013.dimacs",
+       "feature_models/original/systems_software/at91sam7sek/Berger2013.dimacs",
+       "feature_models/original/systems_software/se77x9/Berger2013.dimacs",
+       "feature_models/original/systems_software/phycore229x/Berger2013.dimacs",
+       "feature_models/original/systems_software/BusyBox/Berger2013-1.18.0.dimacs",
+       "feature_models/original/systems_software/BusyBox/Oh2020-1_28_0.dimacs",
+       "feature_models/original/systems_software/Embtoolkit/Berger2013.dimacs",
+       "feature_models/original/systems_software/FreeBSD/Berger2013-icse11.dimacs",
+       "feature_models/original/systems_software/uCLinux_Config/Berger2013.dimacs",
+       "feature_models/original/systems_software/Buildroot/Berger2013.json",
+       "feature_models/original/systems_software/Freetz/Berger2013.dimacs",
+       "feature_models/original/systems_software/Linux/Berger2013-2.6.28.6-icse11.dimacs",
+       "feature_models/original/systems_software/Linux/Berger2013-2.6.32-2var.dimacs",
+       "feature_models/original/systems_software/Linux/Berger2013-2.6.33.3-2var.dimacs"
     ]
 }
