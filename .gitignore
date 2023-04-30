@@ -1,1 +1,3 @@
-scripts/__pycache__/utils.cpython-310.pyc
+scripts/__pycache__/*
+statistics/local*
+temp

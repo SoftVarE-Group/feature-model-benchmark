@@ -18,13 +18,13 @@ As of now, 5,662 feature models our included in our collection covering various 
 |Deep Learning    | 1       | 2              | 0         | 3,296--6,867  | 9--76       |
 |E-Commerce       | 2       | 2              | 0         | 17--2,238     | 0           |
 |Finance          | 4       | 13             | 1         | 142--774      | 4--1,148    |
-|Games            | 1       | 1              | 0         | 2,513--18,253 | 200--3,000  |
-|Hardware         | 3       | 3              | 0         | 2,513--18,253 | 200--3,000  | 
-|Navigation       | 2       | 2              | 0         | 2,513--18,253 | 200--3,000  | 
+|Games            | 1       | 1              | 0         | 144 | 0  |
+|Hardware         | 2       | 2              | 0         | 172--364 | 0--12  | 
+|Navigation       | 2       | 2              | 0         | 103--145 | 2--13  | 
 |Security         | 2       | 1,464          | 0         | 101--4,351    | 1--8,138    |
-|Systems Software | 135     | 4,166          | 2         | 179--62,483   | 26--343,944 | 
+|Systems Software | 135     | 4,166          | 3         | 179--80,258   | 26--767,040 | 
 |Text             | 1       | 1              | 0         | 2,513--18,253 | 200--3000   |
-|**Overall**      | **156** | **5,662**      | **4**     | **117--62,483**| **0--343,944**|                            
+|**Overall**      | **155** | **5,661**      | **5**     | **117--80,258**| **0--767,040**|                            
 
 ## Adding New Feature Models
 We plan on continually extending our collection to keep a reasonable coverage of the literature. We also highly appreciate if new feature models are added by the community via PR to this repository.
