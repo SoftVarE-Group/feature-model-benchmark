@@ -4,7 +4,7 @@ import os
 import zipfile
 import pandas as pd
 import re
-from utils import get_files_from_directory, get_system_name
+from utils import get_files_from_directory, get_system_name, read_csv_to_dataframe
 
 # -------------------------- JSON Generation --------------------------
 
@@ -110,7 +110,7 @@ def create_cdl_dir(new_path="cdl"):
             json.dump(value_dict, outfile)
 
     xml_files = get_files_from_directory(
-        "/home/chico/git/data/is-there-a-mismatch/Data/LargeFeatureModels/CDL", [".xml"])
+        "../is-there-a-mismatch/Data/LargeFeatureModels/CDL", [".xml"])
     for file_path in xml_files:
         dir = os.path.join(new_path, get_system_name(file_path))
         shutil.copyfile(file_path, os.path.join(dir, "Knüppel2017.xml"))
@@ -134,7 +134,7 @@ def create_cdl_dir(new_path="cdl"):
 
 def extract_pett_linux_history(new_dir="pett_linux"):
     os.makedirs(new_dir)
-    input_path = "/home/chico/git/data/Feature-Model-History-of-Linux/monthly"
+    input_path = "../data/Feature-Model-History-of-Linux/monthly"
     dimacs_zips = get_files_from_directory(input_path, ["dimacs.zip"])
     for dimacs_zip in dimacs_zips:
         shutil.unpack_archive(dimacs_zip, "temp")
@@ -150,7 +150,6 @@ def extract_pett_linux_history(new_dir="pett_linux"):
 # ---------- DIMACS Analysis ----------
 
 def get_no_features_and_clauses_for_dimacs(dimacs_path):
-    print(dimacs_path)
     with open(dimacs_path, 'r') as dimacs_file:
         info_line = re.search('p cnf [0-9]+ [0-9]+', dimacs_file.read()).group()
         return info_line.split(' ')[2], info_line.split(' ')[3]
@@ -170,9 +169,13 @@ def build_dimacs_rows(dimacs_paths):
     result_csv = header_string + "\n"
 
     for path in dimacs_paths:
+        original_path = path
+        if path.endswith('zip'):
+            shutil.unpack_archive(path, "temp")
+            path = get_files_from_directory("temp", ["dimacs"])[0]
         row = ["" for x in range(len(headers))]
         features, clauses = get_no_features_and_clauses_for_dimacs(path)
-        row[model_index] = path
+        row[model_index] = original_path
         row[no_features_index] = str(features)
         row[no_leaves_index] = str(features)
         row[no_tops_index] = str(features)
@@ -184,11 +187,10 @@ def build_dimacs_rows(dimacs_paths):
     
     print(result_csv)
 
-build_dimacs_rows(get_files_from_directory("feature_models/original/systems_software/Linux", ["dimacs"]) + get_files_from_directory("/home/chico/git/data/feature-model-benchmark/feature_models/dimacs/systems_software/Linux", ["dimacs"]) + get_files_from_directory("feature_models/original/systems_software/Fiasco", ["dimacs"]))
+# build_dimacs_rows(get_files_from_directory("feature_models/original/systems_software/Linux", ["dimacs", "dimacs.zip"]) + get_files_from_directory("feature_models/dimacs/systems_software/Linux", ["dimacs","dimacs.zip"]) + get_files_from_directory("feature_models/original/systems_software/Fiasco", ["dimacs","dimacs.zip"]))
         
+print_meta_data(read_csv_to_dataframe("statistics/FullCombined.csv"))
 # create_benchmark_json({'Publication Title' : 'Fun Fun', 'Filter' : [ {'Domain': 'Automotive'}, {'#Features' : '100-1000'} ], 'DOI' : 'doi.org/hehe'}, read_csv_to_dataframe("statistics/complete.csv"))
-
-# append_analysis_results(read_csv_to_dataframe("statistics/models.csv"), read_csv_to_dataframe("/home/chico/git/software/Feature-Model-Structure-Analysis/result.csv"))
 
 # get_evolution_steps("pett_linux")
 # create_cdl_dir()

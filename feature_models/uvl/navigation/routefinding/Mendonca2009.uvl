@@ -17,8 +17,8 @@ features
 														mandatory
 															s1nLetters
 																alternative
-																	true
-																	false
+																	true_0
+																	false_0
 															s1nNumbers
 																alternative
 																	true_1
@@ -155,4 +155,4 @@ features
 
 constraints
 	Route2 | StopId2 | Station2 | s2Name | s2Time | st2Numbers | st2Letters | st2Special | st2InputLength | s2nLetters | s2nNumbers | false_5 | false_6 | false_7 | false_8 | false_9 | a0_5
-	Route1 | StopId1 | Station1 | s1Name | s1Time | s1nLetters | s1nNumbers | st1Numbers | st1Letters | st1Special | st1InputLength | false | false_1 | false_2 | false_3 | false_4 | a0
+	Route1 | StopId1 | Station1 | s1Name | s1Time | s1nLetters | s1nNumbers | st1Numbers | st1Letters | st1Special | st1InputLength | false_0 | false_1 | false_2 | false_3 | false_4 | a0

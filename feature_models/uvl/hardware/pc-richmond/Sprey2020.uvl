@@ -280,7 +280,7 @@ features
 							"Strix Soar"
 							"Strix Raid Pro"
 		optional
-			M."2 SSD"
+			"M,2 SSD"
 			"2,5 SSD"
 				alternative
 					Samsung
@@ -339,7 +339,7 @@ features
 						alternative
 							"For 2,5 HDD"
 							"For 3,5 HDD"
-							"For 2"."5 and 3"."5 HDD"
+							"For 2,5 and 3,5 HDD"
 			Multicardreader
 			Network
 				alternative
@@ -356,8 +356,8 @@ features
 							"4x 1 Gbit Intel"
 			Extensions
 				alternative
-					"4x USB3"."0"
-					"2x USB3"."1"
+					"4x USB3,0"
+					"2x USB3,1"
 					"Firewire PCI-Card"
 			OS
 				alternative
@@ -400,7 +400,7 @@ features
 							Cerberus
 							"ROG Strix Wireless Gaming"
 							"ROG Strix Fusion 500"
-							"ROG Centurion 7"."1"
+							"ROG Centurion 7,1"
 					"Other Headsets"
 						alternative
 							"Zalman ZM-HPS200"
@@ -463,9 +463,9 @@ constraints
 	"Corsair H115i" | "Silent Loop 280mm" | "Silent Loop 360mm" => "Corsair Obsidian 450D" | "Phanteks Enthoo Pro" | "Silent Base 800" | "Thermaltake Suppressor F51" | "Thermaltake Core X31" | "Corsair Carbide Air 540 Cube" | "Dark Base Pro 900" | "Corsair Obsidian 750D" | "NZXT H630" | "Cougar Panzer Max" | "Cooler Master Storm Trooper" | "Corsair Obsidian 750D"
 	"MSI Z270 PC MATE" | "MSI Z270 Gaming Pro Carbon" | "H270-PLUS" | "Z270-K" | "Z270F GAMING" | "IX HERO Gaming" => "Aerocool Aero-800" | "Aerocool Battlehawk V2" | "Corsair Obsidian 450D" | "Phanteks Enthoo Pro" | "Silent Base 800" | "Thermaltake Core V51" | "Thermaltake Suppressor F51" | "Thermaltake Core X31" | "Corsair Carbide Air 540 Cube" | "Dark Base Pro 900" | "Corsair Obsidian 750D" | "NZXT H630" | "Cougar Panzer Max" | "Cooler Master Storm Trooper"
 	"MSI Core Frozr" | "Big Tower Cooler" | "Argus Water Cooling" | "Corsair Water Cooling" | "Bequiet Water Cooling" | "NZXT Water Cooling" => "Aerocool Aero-800" | "Aerocool Battlehawk V2" | "Corsair Obsidian 450D" | "Phanteks Enthoo Pro" | "Silent Base 800" | "Thermaltake Core V51" | "Thermaltake Suppressor F51" | "Thermaltake Core X31" | "Corsair Carbide Air 540 Cube" | "Dark Base Pro 900" | "Corsair Obsidian 750D" | "NZXT H630" | "Cougar Panzer Max" | "Cooler Master Storm Trooper"
-	"XG-C100C" | LAN | "ASUS Soundcard" | "2x USB3"."1" => !"MSI B250M PRO-VDH" & !"MSI B250M GAMING PRO" & !"B250M-A"
+	"XG-C100C" | LAN | "ASUS Soundcard" | "2x USB3,1" => !"MSI B250M PRO-VDH" & !"MSI B250M GAMING PRO" & !"B250M-A"
 	"i7 Overclocked" => "MSI B250M PRO-VDH" | "MSI B250M GAMING PRO" | "B250M-A" | "B250M-PLUS" | "H270-PLUS" | "IX HERO Gaming"
 	"Corsair Carbide 270R" | "BitFenix Aegis" | "M-908" | "M-909" | "Corsair Carbide Clear 400c" | "NZXT H440 white" | "NZXT H440 black" | "Thermaltake Versa N27" | "Thermaltake View 31" | "anidees AI-Crystal" | "Thermaltake Core V21" | "Design Tower" => !"DVD-Drive" & !"BluRay-Drive" & !"Hard Drive Caddies"
-	"4x USB3"."0" => !"B250M-A" & !"Netis WF2113"
-	"2x USB3"."1" => !"B250M-A" & !"MSI B250M GAMING PRO" & !"MSI B250M PRO-VDH" & !LAN
+	"4x USB3,0" => !"B250M-A" & !"Netis WF2113"
+	"2x USB3,1" => !"B250M-A" & !"MSI B250M GAMING PRO" & !"MSI B250M PRO-VDH" & !LAN
 	"Stufe 2" | "Stufe 3" => !"Scythe Asura" & !"Silent Loop 120mm" & !"NZXT Water Cooling"
