@@ -2,12 +2,12 @@
 
 Our comprehensive feature collection provides large, real-world feature models for empirical evaluations.
 All currently available feature models, including characteristics and their sources, can be found in *feature_models/original/*.
-Further, we provide a .csv file showcasing information for every feature model in *statistics/FullCombined.csv*.
+Further, we provide a .csv file showcasing information for every feature model in *statistics/CombinedStatistics.csv*.
 We offer additional functionality to make use of the collection more convenient. 
 Users can search for a subset of feature models, create configuration files indicating their subset, and create subsets from existing configuration files.
 
 ## Included Feature Models
-As of now, 5,662 feature models our included in our collection covering various domains. Below you can find an overview about the include feature models. For more details on the feature models, we refer to `statistics/statistics/CombinedStatistics.csv`.
+As of now, 5,661 feature models our included in our collection covering various domains. Below you can find an overview about the include feature models. For more details on the feature models, we refer to `statistics/statistics/CombinedStatistics.csv`.
 
 |Domain           | #Systems| #Feature Models| #Histories| Feature Range | Constraint Range|
 |-----------------|---------|----------------|-----------|---------------|-------------|
