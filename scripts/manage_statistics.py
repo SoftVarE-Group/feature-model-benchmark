@@ -86,7 +86,9 @@ def data_frame_from_json_list(model_paths):
     return data_frame
 
 
-def append_analysis_results(models_data_frame, analysis_data_frame, output_path="statistics/complete.csv"):
+def append_analysis_results(origin_file, analysis_file, output_path="statistics/complete.csv"):
+    models_data_frame = read_csv_to_dataframe(origin_file)
+    analysis_data_frame = read_csv_to_dataframe(analysis_file)
     models_data_frame['DescribingPath'] = models_data_frame.apply(
         lambda row: get_describing_path(row.Path), axis=1)
     analysis_data_frame['DescribingPath'] = analysis_data_frame.apply(
@@ -98,7 +100,6 @@ def append_analysis_results(models_data_frame, analysis_data_frame, output_path=
     comeplete_data_frame = comeplete_data_frame.sort_values(["Domain", "Name"])
 
     comeplete_data_frame.to_csv(output_path, ";", index=False)
-
 
 
 
