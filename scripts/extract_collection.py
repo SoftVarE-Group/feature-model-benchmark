@@ -19,7 +19,7 @@ from utils import get_latest_version, get_first_version, get_model_json, get_lat
 #    ConvertedFrom
 #    Conversion_Tool
 # Range
-#    #Features
+#    NumberOfFeatures
 #    #Temp_Variables
 #    #Constraints
 #    #Clauses
@@ -41,14 +41,14 @@ from utils import get_latest_version, get_first_version, get_model_json, get_lat
 #    StringAttributes
 
 # load statistics file
-df_all = pd.read_csv("statistics/FullCombined.csv", sep=';')
+df_all = pd.read_csv("statistics/CombinedStatistics.csv", sep=';')
 
 # init default values
 available_domains = list(df_all['Domain'].unique())
 available_formats = list(df_all['Format'].unique())
 available_sources = list(df_all['Source'].unique())
 available_feature_range = (
-    int(min(df_all['#Features'])), int(max(df_all['#Features'])))
+    int(min(df_all['NumberOfFeatures'])), int(max(df_all['NumberOfFeatures'])))
 available_ctc_range = (int(min(df_all['#Constraints'])),
                        int(max(df_all['#Constraints'])))
 default_name_regex = '.*'
@@ -112,7 +112,7 @@ def printFilterOptions():
     print("Name: " + default_name_regex)
     print("Domain: " + str(available_domains))
     print("Format: " + str(available_formats))
-    print("#Features: " +
+    print("NumberOfFeatures: " +
           str(available_feature_range[0]) + ".." + str(available_feature_range[1]))
     print("#Constraints: " +
           str(available_ctc_range[0]) + ".." + str(available_ctc_range[1]))
@@ -121,8 +121,8 @@ def printFilterOptions():
 def applyFilter(df, filter_dict: dict):
     df = df[df['Domain'].isin(filter_dict['Domain'])]
     df = df[df['Format'].isin(filter_dict['OriginalFormat'])]
-    df = df[df['#Features'] >= filter_dict['Features'][0]]
-    df = df[df['#Features'] <= filter_dict['Features'][1]]
+    df = df[df['NumberOfFeatures'] >= filter_dict['Features'][0]]
+    df = df[df['NumberOfFeatures'] <= filter_dict['Features'][1]]
     df = df[df['#Constraints'] >= filter_dict['Constraints'][0]]
     df = df[df['#Constraints'] <= filter_dict['Constraints'][1]]
     df = df[df['Name'].str.match(filter_dict['Name'])]
@@ -218,6 +218,8 @@ def filter_data_frame_by_list_of_models(data_frame, models):
 def udpate_path_according_to_output_format(path: str, output_format):
     if output_format == 'original':
         return path
+    if path.split('.')[-1] == output_format:
+        return path
     path = path.replace('original', output_format)
     return os.path.splitext(path)[0] + "." + output_format
 
@@ -227,7 +229,7 @@ def create_properties_dict():
             "Filter": {
                 "Domains": available_domains,
                 "Formats": available_formats,
-                # "#Features": str(feature_range[0]) + ".." + str(feature_range[1]),
+                # "NumberOfFeatures": str(feature_range[0]) + ".." + str(feature_range[1]),
                 # "#Constraints": str(ctc_range[0]) + ".." + str(ctc_range[1])
     }}
 
@@ -245,7 +247,6 @@ def create_benchmark_directory(data_frame, target_directory, output_format='orig
         lambda row: udpate_path_according_to_output_format(row.Path, output_format), axis=1)
 
     for model_path in list(data_frame['Path']):
-        dir_path = os.path.join(target_directory, os.path.dirname(model_path))
         dir_path = os.path.join(target_directory, os.path.dirname(model_path))
         full_path = os.path.join(target_directory, model_path)
         Path(dir_path).mkdir(parents=True, exist_ok=True)
