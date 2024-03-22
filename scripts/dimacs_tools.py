@@ -250,7 +250,12 @@ def simplify_dimacs(files, noui, out):
 
 	stats = []
 
-	for file in files:
+	if noui:
+		files_iter = iter(files)
+	else:
+		files_iter = tqdm(files, desc = "Simplifying", bar_format="{l_bar}{bar}| {n_fmt}/{total_fmt} ")
+
+	for file in files_iter:
 		cnf = CNF(from_file = file)
 		cnf2 = simplify_implicit_unit_clauses(cnf)
 
