@@ -69,7 +69,7 @@ def discover_dimacs(paths):
 			print(f"Directory {p} does not exist, skipping")
 			continue
 
-			files.extend(glob.glob(f"{p}/**/*.dimacs", recursive = True))
+		files.extend(glob.glob(f"{p}/**/*.dimacs", recursive = True))
 
 	print(f"Discovery found {len(files)} dimacs files.")
 	print()
