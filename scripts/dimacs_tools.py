@@ -3,6 +3,7 @@
 from tqdm import tqdm
 import argparse
 import glob
+import os
 from os import path
 import hashlib
 import tempfile
@@ -241,6 +242,7 @@ def simplify_implicit_unit_clauses(cnf):
 
     cnf2 = CNF(from_clauses = clauses)
     cnf2.nv = cnf.nv
+    cnf2.comments = cnf.comments
 
     return cnf2
 
@@ -284,8 +286,15 @@ def main(files = None, discover = None, unique = False, verify = False, simplify
 	
 	if out is None:
 		out = tempfile.mkdtemp()
-		print("Saving files to", out)
-		print()
+	
+	out = path.abspath(out)
+
+	if not path.exists(out):
+		os.makedirs(out, exist_ok = True)
+
+
+	print("Saving files to", out)
+	print()
 
 
 	if not files:
