@@ -1,3 +1,9 @@
 dicttoxml==1.7.16
+numpy==1.26.4
 pandas==1.5.3
+python-dateutil==2.9.0.post0
+python-sat==1.8.dev5
+pytz==2024.1
 PyYAML==6.0
+six==1.16.0
+tqdm==4.66.2
