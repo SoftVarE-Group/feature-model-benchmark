@@ -77,14 +77,14 @@ def discover_dimacs(paths):
 	return files
 
 
-def remove_duplicates(files, noui):
+def remove_duplicates(files, no_bars, out):
 	files_good = []
 	cache = dict()
 
-	if noui:
+	if no_bars:
 		files_iter = iter(files)
 	else:
-		files_iter = tqdm(files, desc = "Uniqueness", bar_format="{l_bar}{bar}| {n_fmt}/{total_fmt} ")
+		files_iter = tqdm(files, desc = "Uniqueness".ljust(20), bar_format="{l_bar}{bar}| {n_fmt}/{total_fmt} ")
 
 	for file in files_iter:
 
@@ -98,8 +98,6 @@ def remove_duplicates(files, noui):
 		cache[h] = [file]
 
 
-	print(f"Removed {len(files) - len(files_good)} duplicates.")
-	print()
 	files = files_good
 
 	duplicates = []
@@ -108,19 +106,25 @@ def remove_duplicates(files, noui):
 			for file in ls:
 				duplicates.append((k, file))
 
-	return files_good, duplicates
+	if duplicates:
+		fname = save_to_csv(duplicates, path.join(out, "duplicates.csv"), columns = ["Hash", "File"])
+	
+		print(f"Removed {len(files) - len(files_good)} duplicates --> {fname}")
+
+	print()
+	return files_good
 
 
-def verify_and_filter(files, vmin, vmax, cmin, cmax, noui, out):
+def verify_and_filter(files, vmin, vmax, cmin, cmax, no_bars, out):
 	files_good = []
 	invalids = []
 	voids = []
 	filtered = []
 
-	if noui:
+	if no_bars:
 		files_iter = iter(files)
 	else:
-		files_iter = tqdm(files, desc = "Verifying", bar_format="{l_bar}{bar}| {n_fmt}/{total_fmt} ")
+		files_iter = tqdm(files, desc = "Verifying".ljust(20), bar_format="{l_bar}{bar}| {n_fmt}/{total_fmt} ")
 
 	for file in files_iter:
 		try:
@@ -128,14 +132,11 @@ def verify_and_filter(files, vmin, vmax, cmin, cmax, noui, out):
 
 			if vmin and cnf.nv < vmin:
 				filtered.append((file, f'Has less than {vmin} variables ({cnf.nv})'))
-
-			if vmax and cnf.nv > vmax:
+			elif vmax and cnf.nv > vmax:
 				filtered.append((file, f'Has more than {vmax} variables ({cnf.nv})'))
-
-			if cmin and len(cnf.clauses) < cmin:
+			elif cmin and len(cnf.clauses) < cmin:
 				filtered.append((file, f'Has less than {cmin} clauses ({len(cnf.clauses)})'))
-
-			if cmax and len(cnf.clauses) > cmax:
+			elif cmax and len(cnf.clauses) > cmax:
 				filtered.append((file, f'Has more than {cmax} clauses ({len(cnf.clauses)})'))
 
 
@@ -153,20 +154,19 @@ def verify_and_filter(files, vmin, vmax, cmin, cmax, noui, out):
 
 		fname = save_to_csv(invalids, path.join(out, "invalids.csv"), columns = ["file", "reason"])
 
-		print(f"Invalid files ({fname}):")
+		print(f"Found {len(invalids)} invalid files --> {fname}")
 		for file, reason in invalids:
 			bad.add(file)
-			print(f'{file}: {reason}')
+			# print(f'{file}: {reason}')
 		print()
 
 	if voids:
 
 		fname = save_to_csv(voids, path.join(out, "voids.csv"), columns = ["file"])
 
-		print(f"Void files ({fname}):")
+		print(f"Found {len(voids)} void files -->{fname}")
 		for file in voids:
 			bad.add(file)
-			print(file)
 		print()
 
 	if filtered:
@@ -176,10 +176,10 @@ def verify_and_filter(files, vmin, vmax, cmin, cmax, noui, out):
 
 		fname = save_to_csv(filtered, path.join(out, f'filtered-{"_".join(filter_ls)}.csv'), columns = ["file", "filter"])
 
-		print(f"Filtered files ({fname}):")
+		print(f"Filtered {len(filtered)} files --> {fname}")
 		for file, reason in filtered:
 			bad.add(file)
-			print(f'{file}: {reason}')
+			# print(f'{file}: {reason}')
 		print()
 
 	for file in files:
@@ -238,7 +238,6 @@ def simplify_implicit_unit_clauses(cnf):
                 cache.add(s)
             else:
                 hits += 1
-                print("CACHE HIT", hits)
 
     cnf2 = CNF(from_clauses = clauses)
     cnf2.nv = cnf.nv
@@ -246,20 +245,20 @@ def simplify_implicit_unit_clauses(cnf):
     return cnf2
 
 
-def simplify_dimacs(files, noui, out):
+def simplify_dimacs(files, no_bars, out):
 
 	stats = []
 
-	if noui:
+	if no_bars:
 		files_iter = iter(files)
 	else:
-		files_iter = tqdm(files, desc = "Simplifying", bar_format="{l_bar}{bar}| {n_fmt}/{total_fmt} ")
+		files_iter = tqdm(files, desc = "Simplifying".ljust(20), bar_format="{l_bar}{bar}| {n_fmt}/{total_fmt} ")
 
 	for file in files_iter:
 		cnf = CNF(from_file = file)
 		cnf2 = simplify_implicit_unit_clauses(cnf)
 
-		file2= path.join(out, path.basename(file))
+		file2 = path.join(out, path.basename(file))
 		
 		with open(file2, "w+") as fw:
 			fw.write(cnf2.to_dimacs())
@@ -281,11 +280,13 @@ def save_to_csv(ls, filepath, columns = None):
 	return filepath
 
 
-def main(files = None, discover = None, unique = False, verify = False, simplify = None, vmin = None, vmax = None, cmin = None, cmax = None, noui = False, out = None):
+def main(files = None, discover = None, unique = False, verify = False, simplify = None, vmin = None, vmax = None, cmin = None, cmax = None, no_bars = False, out = None):
 	
 	if out is None:
 		out = tempfile.mkdtemp()
 		print("Saving files to", out)
+		print()
+
 
 	if not files:
 		files = []
@@ -294,14 +295,13 @@ def main(files = None, discover = None, unique = False, verify = False, simplify
 		files.extend(discover_dimacs(discover))
 
 	if unique:
-		files, duplicates = remove_duplicates(files, noui)
-		save_to_csv(duplicates, path.join(out, "duplicates.csv"), columns = ["Hash", "File"])
+		files = remove_duplicates(files, no_bars, out)
 
 	if verify or vmin or vmax or cmin or cmax:
-		files = verify_and_filter(files, vmin, vmax, cmin, cmax, noui, out)
+		files = verify_and_filter(files, vmin, vmax, cmin, cmax, no_bars, out)
 
 	if simplify:
-		simplify_dimacs(files, noui, out)
+		simplify_dimacs(files, no_bars, out)
 
 
 if __name__ == '__main__':
@@ -313,7 +313,7 @@ if __name__ == '__main__':
 
 	argparser.add_argument("files", nargs = "*", help = "DIMACS files")
 	argparser.add_argument("--discover", nargs = "*", help = "Discovers dimacs files in specified paths (default=..)")
-	argparser.add_argument("--noui", action = "store_true", help = "Disables progress bars")
+	argparser.add_argument("--no_bars", action = "store_true", help = "Disables progress bars")
 	argparser.add_argument("--unique", action = "store_true", help = "Enforces uniqueness of input files")
 	argparser.add_argument("--verify", action = "store_true", help = "Verify the validity of input files")
 	argparser.add_argument("--vmin", type = int, help = "Filters files with more or equal variables than")
