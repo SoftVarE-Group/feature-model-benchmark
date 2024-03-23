@@ -208,15 +208,20 @@ def simplify_implicit_unit_clauses(cnf):
     for x in falses:
         clauses.append([-x])
 
+    cache = set()
+    
+    clauses_good = []
+    for clause in clauses:
+        if (s := str(clause)) not in cache:
+            clauses_good.append(clause)
+            cache.add(s)
+
+    clauses = clauses_good
+    
     for clause in cnf.clauses:
 
         satisfied = False
-
-        cache = set()
-
         nclause = []
-
-        hits = 0
 
         for x in clause:
             if x > 0 and x in truths:
@@ -237,8 +242,6 @@ def simplify_implicit_unit_clauses(cnf):
             if (s := str(nclause)) not in cache:
                 clauses.append(nclause)
                 cache.add(s)
-            else:
-                hits += 1
 
     cnf2 = CNF(from_clauses = clauses)
     cnf2.nv = cnf.nv
