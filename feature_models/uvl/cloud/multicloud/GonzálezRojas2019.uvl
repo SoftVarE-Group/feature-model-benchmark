@@ -1,0 +1,162 @@
+namespace MultiCloudFSG
+
+features
+	MultiCloudFSG
+		mandatory
+			MultiCloudFM
+				mandatory
+					MultiCloudFM_1
+						or
+							MCAuthentication
+								or
+									SAML
+									OAUTH
+									PKI
+									OTP
+										or
+											MCSMS
+											MCEmail
+									PUSH
+									TOKEN
+										or
+											MCHard
+											MCSoft
+									QRCode
+							MCCompute
+								or
+									MCOSInstances
+										or
+											MCWindows
+											MCLinux
+												or
+													MCUbuntu
+													MCDebian
+													MCRedHat
+													MCFedora
+													MCSuse
+									MCAppPlatform
+									MCContainers
+									MCAutoscaling
+							MCStorage
+								or
+									MCBlock
+										or
+											MCHDD
+											MCSSD
+									MCObject
+									MCCache
+										or
+											MCMemcache
+											MCMemcached
+											MCRedis
+									MCDatabase
+										or
+											MCSQL
+												or
+													MCPostgreSQL
+													MCMySQL
+													MCSQLServer
+													MCOracle
+											MCNoSQL
+							MCSignature
+							MCMessaging
+								or
+									MCQueues
+									MCNotifications
+									MCMailing
+							MCNetworking
+								or
+									MCCDN
+									MCDNS
+									MCLoadBalancing
+									MCMonitoring
+									MCAudit
+				optional
+					AWSFM
+						optional
+							AWSCompute
+								optional
+									AWSEC2
+										alternative
+											AWSWindows
+											AWSLinux
+									AWSLambda
+									AWSContainerService
+							AWSStorage
+								or
+									AWSS3
+									AWSEBS
+										alternative
+											AWSSSD
+											AWSMagnetic
+									AWSGlacier
+							AWSDatabase
+								or
+									AWSAurora
+									AWSRDS
+										alternative
+											AWSPostgreSQL
+											AWSMySQL
+											AWSSQLServer
+											AWSOracle
+							AWSMessaging
+								or
+									AWSSES
+									AWSSNS
+							AWSNetworking
+								optional
+									AWSCloudFront
+										optional
+											AWSRoute53
+											AWSELB
+							AWSAuthentication
+					GCPFM
+						optional
+							GCPCompute
+								or
+									GCPComputeEngine
+									GCPAppEngine
+									GCPContainerEngine
+							GCPStorage
+								or
+									GCPObjectStorage
+									GCPDatabase
+										alternative
+											GCPNoSQL
+												alternative
+													GCPDatastore
+													GCPBigTable
+											GCPCloudSQL
+									GCPCloudStorage
+										optional
+											GCPStandard
+											GCPNearline
+											GCPColdline
+									GCPBigTable_1
+							GCPNetworking
+								or
+									GCPCDN
+									GCPDNS
+									GCPLoadBalancing
+							GCPAuthentication
+								optional
+									GCPIAM
+							GCPBigData
+								optional
+									GCPPubSub
+
+constraints
+	!MCCompute | MCSignature
+	MCCompute | !AWSCompute
+	MCCompute | !GCPComputeEngine
+	!MCCompute | MCAudit
+	!MCStorage | AWSStorage | GCPStorage
+	MCAuthentication | !GCPIAM
+	MCAuthentication | !AWSAuthentication
+	MCSignature | !MCAudit
+	MCAuthentication | !GCPAuthentication
+	!MCMessaging | AWSMessaging | GCPPubSub
+	!MCAuthentication | MCCompute
+	!MCNetworking | AWSNetworking | GCPNetworking
+	!MCStorage | MCSignature
+	!MCAuthentication | MCSignature
