@@ -5,10 +5,8 @@
     "Hierarchy" : false,
     "History":  [],
     "Variants" : [
-        "2.6.28.6",
         "3-4.extract"
     ],
-
     "Publication" : "https://apps.cs.utexas.edu/apps/tech-reports/192690",
     "Source" : "https://github.com/jeho-oh/Smarch",
     "Keywords" : [
