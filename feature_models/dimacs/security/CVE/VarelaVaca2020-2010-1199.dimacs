@@ -142,7 +142,7 @@ c 141 mozilla_thunderbird_update_alpha3
 c 142 mozilla_thunderbird_update_beta2
 c 143 mozilla_thunderbird_update_rc1
 c 144 mozilla_thunderbird_update_rc
-p cnf 144 2643
+p cnf 144 2644
 1 0
 1 -2 0
 1 -4 0
@@ -160,6 +160,7 @@ p cnf 144 2643
 6 -10 0
 7 -8 0
 7 -9 0
+-7 9 8 0
 11 -12 0
 11 -26 0
 11 -78 0

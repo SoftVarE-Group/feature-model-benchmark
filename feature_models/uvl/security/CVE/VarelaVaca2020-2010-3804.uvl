@@ -104,7 +104,7 @@ features
                         exploits
                                 optional
                                         direct
-                                                [1..2]
+                                                or
                                                         exploit_35006
                                                         exploit_35005
                                         indirect

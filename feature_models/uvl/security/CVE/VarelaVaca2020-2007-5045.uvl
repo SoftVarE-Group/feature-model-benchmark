@@ -138,47 +138,23 @@ constraints
         apple_quicktime_version_3 => apple_quicktime_target__sw_any
         apple_quicktime_version_7__0__8 => apple_quicktime_language_any
         apple_quicktime_version_7__0__8 => apple_quicktime_target__sw_any
-        (apple_quicktime_target__sw_any)
-        (apple_quicktime_target__sw_any)
-        (apple_quicktime_target__sw_any)
-        (apple_quicktime_target__sw_any)
-        (apple_quicktime_target__sw_any)
         apple_quicktime_version_4__1__2 => ((apple_quicktime_language_ja & apple_quicktime_target__sw_windows & !apple_quicktime_language_any & apple_quicktime_target__sw_any) | (!apple_quicktime_language_ja & apple_quicktime_target__sw_windows & apple_quicktime_language_any & apple_quicktime_target__sw_any))
         apple_quicktime_version_5__0__1 => apple_quicktime_language_any
         apple_quicktime_version_5__0__1 => apple_quicktime_target__sw_any
         apple_quicktime_version_7__0 => apple_quicktime_language_any
         apple_quicktime_version_7__0 => apple_quicktime_target__sw_any
-        (apple_quicktime_target__sw_any)
         apple_quicktime_version_7__1 => apple_quicktime_language_any
         apple_quicktime_version_7__1 => apple_quicktime_target__sw_any
-        (apple_quicktime_target__sw_any)
-        (apple_quicktime_target__sw_any)
-        (apple_quicktime_target__sw_any)
-        (apple_quicktime_target__sw_any)
         apple_quicktime_version_3__0 => apple_quicktime_language_any
         apple_quicktime_version_3__0 => apple_quicktime_target__sw_any
         apple_quicktime_version_any => apple_quicktime_language_any
         apple_quicktime_version_any => apple_quicktime_target__sw_any
-        (apple_quicktime_target__sw_any)
-        (apple_quicktime_target__sw_any)
         apple_quicktime_version_6__5 => apple_quicktime_language_any
         apple_quicktime_version_6__5 => apple_quicktime_target__sw_any
-        (apple_quicktime_target__sw_any)
-        (apple_quicktime_target__sw_any)
-        (apple_quicktime_target__sw_any)
-        (apple_quicktime_target__sw_any)
-        (apple_quicktime_target__sw_any)
-        (apple_quicktime_target__sw_any)
         apple_quicktime_version_6__1 => apple_quicktime_language_any
         apple_quicktime_version_6__1 => apple_quicktime_target__sw_any
-        (apple_quicktime_target__sw_any)
-        (apple_quicktime_target__sw_any)
-        (apple_quicktime_target__sw_any)
-        (apple_quicktime_target__sw_any)
-        (apple_quicktime_target__sw_any)
         apple_quicktime_version_5__0 => apple_quicktime_language_any
         apple_quicktime_version_5__0 => apple_quicktime_target__sw_any
-        (apple_quicktime_target__sw_any)
         mozilla_firefox_version_1__5__0__4 => mozilla_firefox_update_any
         mozilla_firefox_version_1__0__7 => mozilla_firefox_update_any
         mozilla_firefox_version_2__0__0__6 => mozilla_firefox_update_any

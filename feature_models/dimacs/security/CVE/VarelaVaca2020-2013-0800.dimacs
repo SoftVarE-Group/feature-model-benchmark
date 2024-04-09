@@ -520,7 +520,7 @@ c 519 suse_linux__enterprise__software__development__kit_version_11
 c 520 suse_linux__enterprise__software__development__kit_update
 c 521 suse_linux__enterprise__software__development__kit_update_sp4
 c 522 suse_linux__enterprise__software__development__kit_update_sp2
-p cnf 522 31543
+p cnf 522 31541
 1 0
 1 -2 0
 1 -5 0
@@ -32060,7 +32060,5 @@ p cnf 522 31543
 -507 504 0
 511 -507 0
 514 -507 0
-511 0
-512 0
 521 -518 0
 522 -519 0

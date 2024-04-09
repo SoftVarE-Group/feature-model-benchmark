@@ -489,7 +489,6 @@ constraints
         mozilla_firefox_version_1__5__0__3 => mozilla_firefox_update_any
         mozilla_firefox_version_1__5__0__3 => mozilla_firefox_target__sw_any
         mozilla_firefox_version_1__5__0__3 => mozilla_firefox_target__hw_any
-        (mozilla_firefox_target__sw_any)
         mozilla_firefox_version_3__6__13 => mozilla_firefox_update_any
         mozilla_firefox_version_3__6__13 => mozilla_firefox_target__sw_any
         mozilla_firefox_version_3__6__13 => mozilla_firefox_target__hw_any
@@ -502,7 +501,6 @@ constraints
         mozilla_firefox_version_43__0__3 => mozilla_firefox_update_any
         mozilla_firefox_version_43__0__3 => mozilla_firefox_target__sw_any
         mozilla_firefox_version_43__0__3 => mozilla_firefox_target__hw_any
-        ((mozilla_firefox_target__sw_iphone__os & mozilla_firefox_target__hw_any & !mozilla_firefox_target__sw_any & mozilla_firefox_target__hw_any) | (!mozilla_firefox_target__sw_iphone__os & mozilla_firefox_target__hw_any & mozilla_firefox_target__sw_any & mozilla_firefox_target__hw_any))
         mozilla_firefox_version_31__7__0 => mozilla_firefox_update_any
         mozilla_firefox_version_31__7__0 => mozilla_firefox_target__sw_any
         mozilla_firefox_version_31__7__0 => mozilla_firefox_target__hw_any
@@ -563,8 +561,6 @@ constraints
         mozilla_firefox_version_3__6__3 => mozilla_firefox_update_any
         mozilla_firefox_version_3__6__3 => mozilla_firefox_target__sw_any
         mozilla_firefox_version_3__6__3 => mozilla_firefox_target__hw_any
-        ((mozilla_firefox_target__sw_iphone__os & mozilla_firefox_target__hw_any & !mozilla_firefox_target__sw_any & mozilla_firefox_target__hw_any) | (!mozilla_firefox_target__sw_iphone__os & mozilla_firefox_target__hw_any & mozilla_firefox_target__sw_any & mozilla_firefox_target__hw_any))
-        ((mozilla_firefox_target__sw_iphone__os & mozilla_firefox_target__hw_any & !mozilla_firefox_target__sw_any & mozilla_firefox_target__hw_any) | (!mozilla_firefox_target__sw_iphone__os & mozilla_firefox_target__hw_any & mozilla_firefox_target__sw_any & mozilla_firefox_target__hw_any))
         mozilla_firefox_version_40__0__3 => mozilla_firefox_update_any
         mozilla_firefox_version_40__0__3 => mozilla_firefox_target__sw_any
         mozilla_firefox_version_40__0__3 => mozilla_firefox_target__hw_any
@@ -649,7 +645,6 @@ constraints
         mozilla_firefox_version_3__6__23 => mozilla_firefox_update_any
         mozilla_firefox_version_3__6__23 => mozilla_firefox_target__sw_any
         mozilla_firefox_version_3__6__23 => mozilla_firefox_target__hw_any
-        ((mozilla_firefox_target__sw_iphone__os & mozilla_firefox_target__hw_any & !mozilla_firefox_target__sw_any & mozilla_firefox_target__hw_any) | (!mozilla_firefox_target__sw_iphone__os & mozilla_firefox_target__hw_any & mozilla_firefox_target__sw_any & mozilla_firefox_target__hw_any))
         mozilla_firefox_version_6__0 => mozilla_firefox_update_any
         mozilla_firefox_version_6__0 => mozilla_firefox_target__sw_any
         mozilla_firefox_version_6__0 => mozilla_firefox_target__hw_any
@@ -707,7 +702,6 @@ constraints
         mozilla_firefox_version_0__9__3 => mozilla_firefox_update_any
         mozilla_firefox_version_0__9__3 => mozilla_firefox_target__sw_any
         mozilla_firefox_version_0__9__3 => mozilla_firefox_target__hw_any
-        ((mozilla_firefox_target__sw_iphone__os & mozilla_firefox_target__hw_any & !mozilla_firefox_target__sw_any & mozilla_firefox_target__hw_any) | (!mozilla_firefox_target__sw_iphone__os & mozilla_firefox_target__hw_any & mozilla_firefox_target__sw_any & mozilla_firefox_target__hw_any))
         mozilla_firefox_version_46__0__1 => mozilla_firefox_update_any
         mozilla_firefox_version_46__0__1 => mozilla_firefox_target__sw_any
         mozilla_firefox_version_46__0__1 => mozilla_firefox_target__hw_any
@@ -757,7 +751,6 @@ constraints
         mozilla_firefox_version_1__0__2 => mozilla_firefox_update_any
         mozilla_firefox_version_1__0__2 => mozilla_firefox_target__sw_any
         mozilla_firefox_version_1__0__2 => mozilla_firefox_target__hw_any
-        ((mozilla_firefox_target__sw_iphone__os & mozilla_firefox_target__hw_any & !mozilla_firefox_target__sw_any & mozilla_firefox_target__hw_any) | (!mozilla_firefox_target__sw_iphone__os & mozilla_firefox_target__hw_any & mozilla_firefox_target__sw_any & mozilla_firefox_target__hw_any))
         mozilla_firefox_version_29__0__1 => mozilla_firefox_update_any
         mozilla_firefox_version_29__0__1 => mozilla_firefox_target__sw_any
         mozilla_firefox_version_29__0__1 => mozilla_firefox_target__hw_any
@@ -770,7 +763,6 @@ constraints
         mozilla_firefox_version_0__8 => mozilla_firefox_update_any
         mozilla_firefox_version_0__8 => mozilla_firefox_target__sw_any
         mozilla_firefox_version_0__8 => mozilla_firefox_target__hw_any
-        ((mozilla_firefox_target__sw_iphone__os & mozilla_firefox_target__hw_any & !mozilla_firefox_target__sw_any & mozilla_firefox_target__hw_any) | (!mozilla_firefox_target__sw_iphone__os & mozilla_firefox_target__hw_any & mozilla_firefox_target__sw_any & mozilla_firefox_target__hw_any))
         mozilla_firefox_version_9__0 => mozilla_firefox_update_any
         mozilla_firefox_version_9__0 => mozilla_firefox_target__sw_any
         mozilla_firefox_version_9__0 => mozilla_firefox_target__hw_any
@@ -792,7 +784,6 @@ constraints
         mozilla_firefox_version_3__6__28 => mozilla_firefox_update_any
         mozilla_firefox_version_3__6__28 => mozilla_firefox_target__sw_any
         mozilla_firefox_version_3__6__28 => mozilla_firefox_target__hw_any
-        ((mozilla_firefox_target__sw_iphone__os & mozilla_firefox_target__hw_any & !mozilla_firefox_target__sw_any & mozilla_firefox_target__hw_any) | (!mozilla_firefox_target__sw_iphone__os & mozilla_firefox_target__hw_any & mozilla_firefox_target__sw_any & mozilla_firefox_target__hw_any))
         mozilla_firefox_version_3__6 => ((mozilla_firefox_update_a1 & mozilla_firefox_target__sw_any & !mozilla_firefox_update_a1 & mozilla_firefox_target__hw_any & !mozilla_firefox_update_any & mozilla_firefox_target__sw_any & !mozilla_firefox_update_any & mozilla_firefox_target__hw_any) | (!mozilla_firefox_update_a1 & mozilla_firefox_target__sw_any & mozilla_firefox_update_a1 & mozilla_firefox_target__hw_any & !mozilla_firefox_update_any & mozilla_firefox_target__sw_any & !mozilla_firefox_update_any & mozilla_firefox_target__hw_any) | (!mozilla_firefox_update_a1 & mozilla_firefox_target__sw_any & !mozilla_firefox_update_a1 & mozilla_firefox_target__hw_any & mozilla_firefox_update_any & mozilla_firefox_target__sw_any & !mozilla_firefox_update_any & mozilla_firefox_target__hw_any) | (!mozilla_firefox_update_a1 & mozilla_firefox_target__sw_any & !mozilla_firefox_update_a1 & mozilla_firefox_target__hw_any & !mozilla_firefox_update_any & mozilla_firefox_target__sw_any & mozilla_firefox_update_any & mozilla_firefox_target__hw_any))
         mozilla_firefox_version_5__0 => mozilla_firefox_update_any
         mozilla_firefox_version_5__0 => mozilla_firefox_target__sw_any
@@ -827,9 +818,6 @@ constraints
         mozilla_firefox_version_38__3__0 => mozilla_firefox_update_any
         mozilla_firefox_version_38__3__0 => mozilla_firefox_target__sw_any
         mozilla_firefox_version_38__3__0 => mozilla_firefox_target__hw_any
-        ((mozilla_firefox_target__sw_iphone__os & mozilla_firefox_target__hw_any & !mozilla_firefox_target__sw_any & mozilla_firefox_target__hw_any) | (!mozilla_firefox_target__sw_iphone__os & mozilla_firefox_target__hw_any & mozilla_firefox_target__sw_any & mozilla_firefox_target__hw_any))
-        ((mozilla_firefox_target__sw_iphone__os & mozilla_firefox_target__hw_any & !mozilla_firefox_target__sw_any & mozilla_firefox_target__hw_any) | (!mozilla_firefox_target__sw_iphone__os & mozilla_firefox_target__hw_any & mozilla_firefox_target__sw_any & mozilla_firefox_target__hw_any))
-        ((mozilla_firefox_target__sw_iphone__os & mozilla_firefox_target__hw_any & !mozilla_firefox_target__sw_any & mozilla_firefox_target__hw_any) | (!mozilla_firefox_target__sw_iphone__os & mozilla_firefox_target__hw_any & mozilla_firefox_target__sw_any & mozilla_firefox_target__hw_any))
         mozilla_firefox_version_3__0__14 => mozilla_firefox_update_any
         mozilla_firefox_version_3__0__14 => mozilla_firefox_target__sw_any
         mozilla_firefox_version_3__0__14 => mozilla_firefox_target__hw_any
@@ -908,7 +896,6 @@ constraints
         mozilla_firefox_version_3__6__17 => mozilla_firefox_update_any
         mozilla_firefox_version_3__6__17 => mozilla_firefox_target__sw_any
         mozilla_firefox_version_3__6__17 => mozilla_firefox_target__hw_any
-        ((mozilla_firefox_target__sw_iphone__os & mozilla_firefox_target__hw_any & !mozilla_firefox_target__sw_any & mozilla_firefox_target__hw_any) | (!mozilla_firefox_target__sw_iphone__os & mozilla_firefox_target__hw_any & mozilla_firefox_target__sw_any & mozilla_firefox_target__hw_any))
         mozilla_firefox_version_1__5__7 => mozilla_firefox_update_any
         mozilla_firefox_version_1__5__7 => mozilla_firefox_target__sw_any
         mozilla_firefox_version_1__5__7 => mozilla_firefox_target__hw_any
@@ -981,12 +968,9 @@ constraints
         mozilla_firefox_version_3__5__14 => mozilla_firefox_update_any
         mozilla_firefox_version_3__5__14 => mozilla_firefox_target__sw_any
         mozilla_firefox_version_3__5__14 => mozilla_firefox_target__hw_any
-        ((mozilla_firefox_target__sw_iphone__os & mozilla_firefox_target__hw_any & !mozilla_firefox_target__sw_any & mozilla_firefox_target__hw_any) | (!mozilla_firefox_target__sw_iphone__os & mozilla_firefox_target__hw_any & mozilla_firefox_target__sw_any & mozilla_firefox_target__hw_any))
         mozilla_firefox_version_1__0__4 => mozilla_firefox_update_any
         mozilla_firefox_version_1__0__4 => mozilla_firefox_target__sw_any
         mozilla_firefox_version_1__0__4 => mozilla_firefox_target__hw_any
-        ((mozilla_firefox_target__sw_iphone__os & mozilla_firefox_target__hw_any & !mozilla_firefox_target__sw_any & mozilla_firefox_target__hw_any) | (!mozilla_firefox_target__sw_iphone__os & mozilla_firefox_target__hw_any & mozilla_firefox_target__sw_any & mozilla_firefox_target__hw_any))
-        ((mozilla_firefox_target__sw_iphone__os & mozilla_firefox_target__hw_any & !mozilla_firefox_target__sw_any & mozilla_firefox_target__hw_any) | (!mozilla_firefox_target__sw_iphone__os & mozilla_firefox_target__hw_any & mozilla_firefox_target__sw_any & mozilla_firefox_target__hw_any))
         mozilla_firefox_version_18__2 => mozilla_firefox_update_any
         mozilla_firefox_version_18__2 => mozilla_firefox_target__sw_iphone__os
         mozilla_firefox_version_18__2 => mozilla_firefox_target__hw_any
@@ -1012,7 +996,6 @@ constraints
         mozilla_firefox_version_2__0__0__18 => mozilla_firefox_update_any
         mozilla_firefox_version_2__0__0__18 => mozilla_firefox_target__sw_any
         mozilla_firefox_version_2__0__0__18 => mozilla_firefox_target__hw_any
-        ((mozilla_firefox_target__sw_iphone__os & mozilla_firefox_target__hw_any & !mozilla_firefox_target__sw_any & mozilla_firefox_target__hw_any) | (!mozilla_firefox_target__sw_iphone__os & mozilla_firefox_target__hw_any & mozilla_firefox_target__sw_any & mozilla_firefox_target__hw_any))
         mozilla_firefox_version_7__0 => mozilla_firefox_update_any
         mozilla_firefox_version_7__0 => mozilla_firefox_target__sw_any
         mozilla_firefox_version_7__0 => mozilla_firefox_target__hw_any
@@ -1164,7 +1147,6 @@ constraints
         mozilla_firefox_version_3__6__2 => mozilla_firefox_update_any
         mozilla_firefox_version_3__6__2 => mozilla_firefox_target__sw_any
         mozilla_firefox_version_3__6__2 => mozilla_firefox_target__hw_any
-        ((mozilla_firefox_target__sw_iphone__os & mozilla_firefox_target__hw_any & !mozilla_firefox_target__sw_any & mozilla_firefox_target__hw_any) | (!mozilla_firefox_target__sw_iphone__os & mozilla_firefox_target__hw_any & mozilla_firefox_target__sw_any & mozilla_firefox_target__hw_any))
         mozilla_firefox_version_2__0__0__1 => mozilla_firefox_update_any
         mozilla_firefox_version_2__0__0__1 => mozilla_firefox_target__sw_any
         mozilla_firefox_version_2__0__0__1 => mozilla_firefox_target__hw_any
@@ -1189,7 +1171,6 @@ constraints
         mozilla_firefox_version_38__0__1 => mozilla_firefox_update_any
         mozilla_firefox_version_38__0__1 => mozilla_firefox_target__sw_any
         mozilla_firefox_version_38__0__1 => mozilla_firefox_target__hw_any
-        ((mozilla_firefox_target__sw_iphone__os & mozilla_firefox_target__hw_any & !mozilla_firefox_target__sw_any & mozilla_firefox_target__hw_any) | (!mozilla_firefox_target__sw_iphone__os & mozilla_firefox_target__hw_any & mozilla_firefox_target__sw_any & mozilla_firefox_target__hw_any))
         mozilla_firefox_version_17__0__8 => mozilla_firefox_update_any
         mozilla_firefox_version_17__0__8 => mozilla_firefox_target__sw_any
         mozilla_firefox_version_17__0__8 => mozilla_firefox_target__hw_any

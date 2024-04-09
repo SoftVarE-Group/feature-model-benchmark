@@ -496,7 +496,7 @@ c 495 wordpress_wordpress_update_rc4
 c 496 wordpress_wordpress_update_any
 c 497 wordpress_wordpress_update_beta5
 c 498 wordpress_wordpress_update_rc2
-p cnf 498 112892
+p cnf 498 112893
 1 0
 1 -2 0
 1 -4 0
@@ -514,6 +514,7 @@ p cnf 498 112892
 6 -10 0
 7 -8 0
 7 -9 0
+-7 9 8 0
 11 -12 0
 -11 12 0
 12 -13 0

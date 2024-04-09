@@ -106,7 +106,7 @@ c 105 wpeasycart_wp__easycart_version_2__0__8
 c 106 wpeasycart_wp__easycart_version_2__1__3
 c 107 wpeasycart_wp__easycart_target__sw
 c 108 wpeasycart_wp__easycart_target__sw_wordpress
-p cnf 108 4398
+p cnf 108 4399
 1 0
 1 -2 0
 1 -4 0
@@ -124,6 +124,7 @@ p cnf 108 4398
 6 -10 0
 7 -8 0
 7 -9 0
+-7 9 8 0
 11 -12 0
 -11 12 0
 12 -13 0

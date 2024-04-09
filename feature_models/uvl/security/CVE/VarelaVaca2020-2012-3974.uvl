@@ -842,7 +842,6 @@ constraints
         mozilla_firefox_version_3__6__16 => mozilla_firefox_update_any
         mozilla_firefox_version_3__6__16 => mozilla_firefox_target__sw_any
         mozilla_firefox_version_3__6__16 => (rc0)
-        ((mozilla_firefox_target__sw_any & (rc0) & !mozilla_firefox_target__sw_iphone__os & (rc0)) | (!mozilla_firefox_target__sw_any & (rc0) & mozilla_firefox_target__sw_iphone__os & (rc0)))
         mozilla_firefox_version_1__5__0__7 => mozilla_firefox_update_any
         mozilla_firefox_version_1__5__0__7 => mozilla_firefox_target__sw_any
         mozilla_firefox_version_1__5__0__7 => (rc0)

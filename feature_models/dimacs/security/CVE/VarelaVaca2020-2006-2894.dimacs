@@ -136,7 +136,7 @@ c 135 mozilla_seamonkey_update_beta
 c 136 mozilla_mozilla__suite
 c 137 mozilla_mozilla__suite_version
 c 138 mozilla_mozilla__suite_version_1__7__13
-p cnf 138 2563
+p cnf 138 2564
 1 0
 1 -2 0
 1 -4 0
@@ -162,6 +162,7 @@ p cnf 138 2563
 6 -10 0
 7 -8 0
 7 -9 0
+-7 9 8 0
 11 -12 0
 -11 12 0
 12 -13 0

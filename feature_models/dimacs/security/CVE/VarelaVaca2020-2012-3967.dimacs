@@ -483,7 +483,7 @@ c 482 canonical_ubuntu__linux_version_10__04
 c 483 canonical_ubuntu__linux_sw__edition
 c 484 canonical_ubuntu__linux_sw__edition_esm
 c 485 canonical_ubuntu__linux_sw__edition_any
-p cnf 485 23896
+p cnf 485 23893
 1 0
 1 -2 0
 1 -6 0
@@ -23470,9 +23470,6 @@ p cnf 485 23896
 199 -130 0
 204 -130 0
 -130 3 0
--204 -205 0
-204 205 0
-3 0
 199 -132 0
 204 -132 0
 -132 3 0

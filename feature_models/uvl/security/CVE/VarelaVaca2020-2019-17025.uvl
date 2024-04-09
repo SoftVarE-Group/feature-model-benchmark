@@ -527,7 +527,6 @@ constraints
         mozilla_firefox_version_50__0 => mozilla_firefox_update_any
         mozilla_firefox_version_50__0 => mozilla_firefox_target__hw_any
         mozilla_firefox_version_50__0 => mozilla_firefox_target__sw_any
-        (mozilla_firefox_target__hw_any)
         mozilla_firefox_version_45__5__0 => mozilla_firefox_update_any
         mozilla_firefox_version_45__5__0 => mozilla_firefox_target__hw_any
         mozilla_firefox_version_45__5__0 => mozilla_firefox_target__sw_any
@@ -630,7 +629,6 @@ constraints
         mozilla_firefox_version_1__5__0__2 => mozilla_firefox_update_any
         mozilla_firefox_version_1__5__0__2 => mozilla_firefox_target__hw_any
         mozilla_firefox_version_1__5__0__2 => mozilla_firefox_target__sw_any
-        (mozilla_firefox_target__hw_any)
         mozilla_firefox_version_19__1 => mozilla_firefox_update_any
         mozilla_firefox_version_19__1 => mozilla_firefox_target__hw_any
         mozilla_firefox_version_19__1 => mozilla_firefox_target__sw_iphone__os
@@ -649,7 +647,6 @@ constraints
         mozilla_firefox_version_15__1 => mozilla_firefox_update_any
         mozilla_firefox_version_15__1 => mozilla_firefox_target__hw_any
         mozilla_firefox_version_15__1 => mozilla_firefox_target__sw_iphone__os
-        (mozilla_firefox_target__hw_any)
         mozilla_firefox_version_3__5__15 => mozilla_firefox_update_any
         mozilla_firefox_version_3__5__15 => mozilla_firefox_target__hw_any
         mozilla_firefox_version_3__5__15 => mozilla_firefox_target__sw_any
@@ -788,7 +785,6 @@ constraints
         mozilla_firefox_version_3__6__6 => mozilla_firefox_update_any
         mozilla_firefox_version_3__6__6 => mozilla_firefox_target__hw_any
         mozilla_firefox_version_3__6__6 => mozilla_firefox_target__sw_any
-        (mozilla_firefox_target__hw_any)
         mozilla_firefox_version_0__5 => mozilla_firefox_update_any
         mozilla_firefox_version_0__5 => mozilla_firefox_target__hw_any
         mozilla_firefox_version_0__5 => mozilla_firefox_target__sw_any
@@ -828,11 +824,9 @@ constraints
         mozilla_firefox_version_52__1__0 => mozilla_firefox_update_any
         mozilla_firefox_version_52__1__0 => mozilla_firefox_target__hw_any
         mozilla_firefox_version_52__1__0 => mozilla_firefox_target__sw_any
-        ((mozilla_firefox_target__hw_x86 & mozilla_firefox_target__sw_any & !mozilla_firefox_target__hw_any & mozilla_firefox_target__sw_any) | (!mozilla_firefox_target__hw_x86 & mozilla_firefox_target__sw_any & mozilla_firefox_target__hw_any & mozilla_firefox_target__sw_any))
         mozilla_firefox_version_52__5__3 => mozilla_firefox_update_any
         mozilla_firefox_version_52__5__3 => mozilla_firefox_target__hw_any
         mozilla_firefox_version_52__5__3 => mozilla_firefox_target__sw_any
-        ((mozilla_firefox_target__hw_any & mozilla_firefox_target__sw_any & !mozilla_firefox_target__hw_x64 & mozilla_firefox_target__sw_any) | (!mozilla_firefox_target__hw_any & mozilla_firefox_target__sw_any & mozilla_firefox_target__hw_x64 & mozilla_firefox_target__sw_any))
         mozilla_firefox_version_59__0 => mozilla_firefox_update_any
         mozilla_firefox_version_59__0 => mozilla_firefox_target__hw_any
         mozilla_firefox_version_59__0 => mozilla_firefox_target__sw_any
@@ -920,7 +914,6 @@ constraints
         mozilla_firefox_version_52__9__0 => mozilla_firefox_update_any
         mozilla_firefox_version_52__9__0 => mozilla_firefox_target__hw_any
         mozilla_firefox_version_52__9__0 => mozilla_firefox_target__sw_any
-        (mozilla_firefox_target__hw_any)
         mozilla_firefox_version_68__3__0 => mozilla_firefox_update_any
         mozilla_firefox_version_68__3__0 => mozilla_firefox_target__hw_any
         mozilla_firefox_version_68__3__0 => mozilla_firefox_target__sw_any
@@ -1072,7 +1065,6 @@ constraints
         mozilla_firefox_version_3__5 => mozilla_firefox_update_any
         mozilla_firefox_version_3__5 => mozilla_firefox_target__hw_any
         mozilla_firefox_version_3__5 => mozilla_firefox_target__sw_any
-        (mozilla_firefox_target__hw_any)
         mozilla_firefox_version_2__0__0__10 => mozilla_firefox_update_any
         mozilla_firefox_version_2__0__0__10 => mozilla_firefox_target__hw_any
         mozilla_firefox_version_2__0__0__10 => mozilla_firefox_target__sw_any
@@ -1139,7 +1131,6 @@ constraints
         mozilla_firefox_version_1__5__1 => mozilla_firefox_update_any
         mozilla_firefox_version_1__5__1 => mozilla_firefox_target__hw_any
         mozilla_firefox_version_1__5__1 => mozilla_firefox_target__sw_any
-        (mozilla_firefox_target__hw_any)
         mozilla_firefox_version_52__0 => mozilla_firefox_update_any
         mozilla_firefox_version_52__0 => mozilla_firefox_target__hw_any
         mozilla_firefox_version_52__0 => mozilla_firefox_target__sw_any
@@ -1179,7 +1170,6 @@ constraints
         mozilla_firefox_version_38__7__0 => mozilla_firefox_update_any
         mozilla_firefox_version_38__7__0 => mozilla_firefox_target__hw_any
         mozilla_firefox_version_38__7__0 => mozilla_firefox_target__sw_any
-        (mozilla_firefox_target__hw_any)
         mozilla_firefox_version_25__0__1 => mozilla_firefox_update_any
         mozilla_firefox_version_25__0__1 => mozilla_firefox_target__hw_any
         mozilla_firefox_version_25__0__1 => mozilla_firefox_target__sw_any
@@ -1377,7 +1367,6 @@ constraints
         mozilla_firefox_version_3__0__8 => mozilla_firefox_update_any
         mozilla_firefox_version_3__0__8 => mozilla_firefox_target__hw_any
         mozilla_firefox_version_3__0__8 => mozilla_firefox_target__sw_any
-        (mozilla_firefox_target__hw_any)
         mozilla_firefox_version_3__0__18 => mozilla_firefox_update_any
         mozilla_firefox_version_3__0__18 => mozilla_firefox_target__hw_any
         mozilla_firefox_version_3__0__18 => mozilla_firefox_target__sw_any
@@ -1391,7 +1380,6 @@ constraints
         mozilla_firefox_version_7__0__1 => mozilla_firefox_update_any
         mozilla_firefox_version_7__0__1 => mozilla_firefox_target__hw_any
         mozilla_firefox_version_7__0__1 => mozilla_firefox_target__sw_any
-        (mozilla_firefox_target__hw_any)
         mozilla_firefox_version_1__5__0__6 => mozilla_firefox_update_any
         mozilla_firefox_version_1__5__0__6 => mozilla_firefox_target__hw_any
         mozilla_firefox_version_1__5__0__6 => mozilla_firefox_target__sw_any
@@ -1469,7 +1457,6 @@ constraints
         mozilla_firefox_version_38__2__0 => mozilla_firefox_update_any
         mozilla_firefox_version_38__2__0 => mozilla_firefox_target__hw_any
         mozilla_firefox_version_38__2__0 => mozilla_firefox_target__sw_any
-        (mozilla_firefox_target__hw_any)
         mozilla_firefox_version_3__6__25 => mozilla_firefox_update_any
         mozilla_firefox_version_3__6__25 => mozilla_firefox_target__hw_any
         mozilla_firefox_version_3__6__25 => mozilla_firefox_target__sw_any
@@ -1509,7 +1496,6 @@ constraints
         mozilla_firefox_version_1__5__0__1 => mozilla_firefox_update_any
         mozilla_firefox_version_1__5__0__1 => mozilla_firefox_target__hw_any
         mozilla_firefox_version_1__5__0__1 => mozilla_firefox_target__sw_any
-        (mozilla_firefox_target__hw_any)
         mozilla_firefox_version_10__0__10 => mozilla_firefox_update_any
         mozilla_firefox_version_10__0__10 => mozilla_firefox_target__hw_any
         mozilla_firefox_version_10__0__10 => mozilla_firefox_target__sw_any
@@ -1558,9 +1544,6 @@ constraints
         mozilla_firefox_version_61__0 => mozilla_firefox_update_any
         mozilla_firefox_version_61__0 => mozilla_firefox_target__hw_any
         mozilla_firefox_version_61__0 => mozilla_firefox_target__sw_any
-        (mozilla_firefox_target__hw_any) & !mozilla_firefox_update_alpha1 & mozilla_firefox_target__hw_any & !mozilla_firefox_update_alpha1 & mozilla_firefox_target__sw_any
-        (mozilla_firefox_target__hw_any) & mozilla_firefox_update_alpha1 & mozilla_firefox_target__hw_any & !mozilla_firefox_update_alpha1 & mozilla_firefox_target__sw_any
-        (mozilla_firefox_target__hw_any) & !mozilla_firefox_update_alpha1 & mozilla_firefox_target__hw_any & mozilla_firefox_update_alpha1 & mozilla_firefox_target__sw_any
         mozilla_firefox_version_10__0__9 => mozilla_firefox_update_any
         mozilla_firefox_version_10__0__9 => mozilla_firefox_target__hw_any
         mozilla_firefox_version_10__0__9 => mozilla_firefox_target__sw_any
@@ -1573,7 +1556,6 @@ constraints
         mozilla_firefox_version_70__0__1 => mozilla_firefox_update_any
         mozilla_firefox_version_70__0__1 => mozilla_firefox_target__hw_any
         mozilla_firefox_version_70__0__1 => mozilla_firefox_target__sw_any
-        (mozilla_firefox_target__hw_any)
         mozilla_firefox_version_1__5__0__10 => mozilla_firefox_update_any
         mozilla_firefox_version_1__5__0__10 => mozilla_firefox_target__hw_any
         mozilla_firefox_version_1__5__0__10 => mozilla_firefox_target__sw_any
@@ -1595,7 +1577,6 @@ constraints
         mozilla_firefox_version_17__0__9 => mozilla_firefox_update_any
         mozilla_firefox_version_17__0__9 => mozilla_firefox_target__hw_any
         mozilla_firefox_version_17__0__9 => mozilla_firefox_target__sw_any
-        (mozilla_firefox_target__hw_any)
         mozilla_firefox_version_0__2 => mozilla_firefox_update_any
         mozilla_firefox_version_0__2 => mozilla_firefox_target__hw_any
         mozilla_firefox_version_0__2 => mozilla_firefox_target__sw_any
@@ -1681,7 +1662,6 @@ constraints
         mozilla_firefox_version_38__7__1 => mozilla_firefox_update_any
         mozilla_firefox_version_38__7__1 => mozilla_firefox_target__hw_any
         mozilla_firefox_version_38__7__1 => mozilla_firefox_target__sw_any
-        (mozilla_firefox_target__hw_any)
         mozilla_firefox_version_44__0 => mozilla_firefox_update_any
         mozilla_firefox_version_44__0 => mozilla_firefox_target__hw_any
         mozilla_firefox_version_44__0 => mozilla_firefox_target__sw_any

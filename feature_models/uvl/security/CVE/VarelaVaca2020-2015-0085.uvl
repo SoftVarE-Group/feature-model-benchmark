@@ -166,14 +166,11 @@ constraints
         microsoft_word_update_sp2 => microsoft_word_sw__edition_any
         microsoft_word_update_sp3 => microsoft_word_version_2007
         microsoft_word_update_sp3 => microsoft_word_sw__edition_any
-        ((microsoft_word_sw__edition_gold & !microsoft_word_sw__edition_rt__gold) | (!microsoft_word_sw__edition_gold & microsoft_word_sw__edition_rt__gold))
         microsoft_word_update_sp1 => microsoft_word_version_2013
         microsoft_word_update_sp1 => microsoft_word_sw__edition_any
-        ((microsoft_excel_target__sw_x86 & microsoft_excel_target__hw_any & !microsoft_excel_target__sw_any & microsoft_excel_target__hw_x86) | (!microsoft_excel_target__sw_x86 & microsoft_excel_target__hw_any & microsoft_excel_target__sw_any & microsoft_excel_target__hw_x86))
         microsoft_excel_version_2007 => microsoft_excel_update_sp3
         microsoft_excel_version_2007 => microsoft_excel_target__sw_any
         microsoft_excel_version_2007 => microsoft_excel_target__hw_any
-        ((microsoft_office_target__hw_x86 & microsoft_office_version_2010 & !microsoft_office_target__hw_x64 & microsoft_office_version_2010) | (!microsoft_office_target__hw_x86 & microsoft_office_version_2010 & microsoft_office_target__hw_x64 & microsoft_office_version_2010))
         microsoft_office_update_any => ((microsoft_office_sw__edition_gold & microsoft_office_target__hw_any & !microsoft_office_sw__edition_gold & microsoft_office_version_2013 & !microsoft_office_sw__edition_rt__gold & microsoft_office_target__hw_any & !microsoft_office_sw__edition_rt__gold & microsoft_office_version_2013) | (!microsoft_office_sw__edition_gold & microsoft_office_target__hw_any & microsoft_office_sw__edition_gold & microsoft_office_version_2013 & !microsoft_office_sw__edition_rt__gold & microsoft_office_target__hw_any & !microsoft_office_sw__edition_rt__gold & microsoft_office_version_2013) | (!microsoft_office_sw__edition_gold & microsoft_office_target__hw_any & !microsoft_office_sw__edition_gold & microsoft_office_version_2013 & microsoft_office_sw__edition_rt__gold & microsoft_office_target__hw_any & !microsoft_office_sw__edition_rt__gold & microsoft_office_version_2013) | (!microsoft_office_sw__edition_gold & microsoft_office_target__hw_any & !microsoft_office_sw__edition_gold & microsoft_office_version_2013 & !microsoft_office_sw__edition_rt__gold & microsoft_office_target__hw_any & microsoft_office_sw__edition_rt__gold & microsoft_office_version_2013))
         microsoft_office_update_sp1 => microsoft_office_sw__edition_any
         microsoft_office_update_sp1 => microsoft_office_target__hw_any

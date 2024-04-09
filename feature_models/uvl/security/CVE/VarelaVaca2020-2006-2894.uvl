@@ -10,7 +10,7 @@ features
                         exploits
                                 optional
                                         direct
-                                                [1..2]
+                                                or
                                                         exploit_27987
                                                         exploit_27986
                                         indirect

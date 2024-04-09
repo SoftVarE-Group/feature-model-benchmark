@@ -536,7 +536,7 @@ c 535 canonical_ubuntu__linux_version_12__10
 c 536 canonical_ubuntu__linux_sw__edition
 c 537 canonical_ubuntu__linux_sw__edition_any
 c 538 canonical_ubuntu__linux_sw__edition_esm
-p cnf 538 29130
+p cnf 538 29131
 1 0
 1 -2 0
 1 -5 0
@@ -585,6 +585,7 @@ p cnf 538 29130
 7 -11 0
 8 -9 0
 8 -10 0
+-8 10 9 0
 12 -13 0
 12 -227 0
 12 -243 0

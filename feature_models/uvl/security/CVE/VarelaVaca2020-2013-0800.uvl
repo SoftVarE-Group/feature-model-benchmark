@@ -1160,7 +1160,5 @@ constraints
         suse_linux__enterprise__server_update_sp4 => suse_linux__enterprise__server_version_10
         suse_linux__enterprise__server_update_sp4 => suse_linux__enterprise__server_sw__edition_any
         suse_linux__enterprise__server_update_sp4 => suse_linux__enterprise__server_target__sw_any
-        (suse_linux__enterprise__server_sw__edition_any)
-        (suse_linux__enterprise__server_sw__edition_ltss)
         suse_linux__enterprise__software__development__kit_version_10 => suse_linux__enterprise__software__development__kit_update_sp4
         suse_linux__enterprise__software__development__kit_version_11 => suse_linux__enterprise__software__development__kit_update_sp2

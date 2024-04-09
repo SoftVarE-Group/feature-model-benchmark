@@ -210,8 +210,6 @@ constraints
         microsoft_access_version_2010 => microsoft_access_update_sp2
         microsoft_access_version_2007 => microsoft_access_update_sp3
         microsoft_access_version_2016 => microsoft_access_update_any
-        (microsoft_excel_target__hw_any)
-        ((microsoft_excel_target__hw_x86 & microsoft_excel_sw__edition_any & !microsoft_excel_target__hw_x64 & microsoft_excel_sw__edition_any) | (!microsoft_excel_target__hw_x86 & microsoft_excel_sw__edition_any & microsoft_excel_target__hw_x64 & microsoft_excel_sw__edition_any))
         microsoft_excel_version_2007 => microsoft_excel_update_sp3
         microsoft_excel_version_2007 => microsoft_excel_target__hw_any
         microsoft_excel_version_2007 => microsoft_excel_sw__edition_any

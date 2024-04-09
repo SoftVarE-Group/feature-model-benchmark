@@ -488,7 +488,7 @@ c 487 debian
 c 488 debian_debian__linux
 c 489 debian_debian__linux_version
 c 490 debian_debian__linux_version_9__0
-p cnf 490 106834
+p cnf 490 106835
 1 0
 1 -2 0
 1 -5 0
@@ -516,6 +516,7 @@ p cnf 490 106834
 7 -11 0
 8 -9 0
 8 -10 0
+-8 10 9 0
 12 -13 0
 -12 13 0
 13 -14 0

@@ -418,7 +418,7 @@ c 417 canonical_ubuntu__linux_version_9__10
 c 418 canonical_ubuntu__linux_sw__edition
 c 419 canonical_ubuntu__linux_sw__edition_lts
 c 420 canonical_ubuntu__linux_sw__edition_any
-p cnf 420 19828
+p cnf 420 19829
 1 0
 1 -2 0
 1 -5 0
@@ -486,6 +486,7 @@ p cnf 420 19828
 7 -11 0
 8 -9 0
 8 -10 0
+-8 10 9 0
 12 -13 0
 -12 13 0
 13 -14 0

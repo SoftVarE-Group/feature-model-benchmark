@@ -135,7 +135,7 @@ c 134 wordpress_wordpress_update_rc2
 c 135 wordpress_wordpress_update_beta1
 c 136 wordpress_wordpress_update_beta4
 c 137 wordpress_wordpress_update_beta
-p cnf 137 6870
+p cnf 137 6871
 1 0
 1 -2 0
 1 -4 0
@@ -153,6 +153,7 @@ p cnf 137 6870
 6 -10 0
 7 -8 0
 7 -9 0
+-7 9 8 0
 11 -12 0
 -11 12 0
 12 -13 0

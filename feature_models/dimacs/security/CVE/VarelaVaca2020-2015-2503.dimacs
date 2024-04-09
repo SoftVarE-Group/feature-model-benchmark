@@ -139,7 +139,7 @@ c 138 microsoft_office__2007__ime_version
 c 139 microsoft_office__2007__ime_version_sp3
 c 140 microsoft_office__2007__ime_language
 c 141 microsoft_office__2007__ime_language_ja
-p cnf 141 466
+p cnf 141 462
 1 0
 1 -2 0
 1 -4 0
@@ -560,10 +560,6 @@ p cnf 141 466
 17 -13 0
 20 -14 0
 18 -15 0
-37 0
-38 36 0
--38 -36 0
-33 0
 29 -25 0
 37 -25 0
 33 -25 0

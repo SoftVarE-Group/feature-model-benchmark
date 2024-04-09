@@ -204,7 +204,7 @@ c 203 mozilla_seamonkey_update_alpha
 c 204 mozilla_seamonkey_update_alpha__3
 c 205 mozilla_seamonkey_update_beta
 c 206 mozilla_seamonkey_update_rc1
-p cnf 206 9245
+p cnf 206 9246
 1 0
 1 -2 0
 1 -4 0
@@ -224,6 +224,7 @@ p cnf 206 9245
 7 -9 0
 7 -10 0
 7 -11 0
+-7 11 10 9 8 0
 13 -14 0
 13 -146 0
 -13 14 146 0

@@ -267,7 +267,7 @@ c 266 mozilla_thunderbird_update_beta4
 c 267 mozilla_thunderbird_update_beta2
 c 268 mozilla_thunderbird_update_alpha1
 c 269 mozilla_thunderbird_update_beta3
-p cnf 269 10035
+p cnf 269 10036
 1 0
 1 -2 0
 1 -4 0
@@ -285,6 +285,7 @@ p cnf 269 10035
 6 -10 0
 7 -8 0
 7 -9 0
+-7 9 8 0
 11 -12 0
 11 -129 0
 11 -184 0

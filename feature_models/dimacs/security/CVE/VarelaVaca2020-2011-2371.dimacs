@@ -319,7 +319,7 @@ c 318 mozilla_thunderbird_update_beta3
 c 319 mozilla_thunderbird_update_alpha3
 c 320 mozilla_thunderbird_update_beta1
 c 321 mozilla_thunderbird_update_rc2
-p cnf 321 14025
+p cnf 321 14026
 1 0
 1 -2 0
 1 -4 0
@@ -338,6 +338,7 @@ p cnf 321 14025
 7 -8 0
 7 -9 0
 7 -10 0
+-7 10 9 8 0
 12 -13 0
 12 -74 0
 12 -221 0
