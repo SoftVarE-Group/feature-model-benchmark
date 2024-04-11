@@ -1,0 +1,16 @@
+{
+    "Name": "Fiasco",
+    "Year": 2023,
+    "OriginalFormat": "FeatureIDE",
+    "Hierarchy": false,
+    "History": [
+
+    ],
+    "Publication": "https://doi.org/10.1145/3579027.3608980",
+    "Source": "https://github.com/TUBS-ISF/fiasco-case-study",
+    "Keywords": [
+        "KConfig",
+        "Automatic"
+    ],
+    "ConversionTool": ""
+}

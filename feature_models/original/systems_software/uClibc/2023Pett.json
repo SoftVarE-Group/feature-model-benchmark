@@ -1,0 +1,16 @@
+{
+    "Name": "uClibc",
+    "Year": 2023,
+    "OriginalFormat": "FeatureIDE",
+    "Hierarchy": false,
+    "History": [
+
+    ],
+    "Publication": "https://doi.org/10.1145/3579027.3608980",
+    "Source": "https://github.com/TUBS-ISF/soletta-case-study",
+    "Keywords": [
+        "KConfig",
+        "Automatic"
+    ],
+    "ConversionTool": ""
+}

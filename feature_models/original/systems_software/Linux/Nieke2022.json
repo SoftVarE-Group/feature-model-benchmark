@@ -1,7 +1,7 @@
 {
     "Name": "Linux",
     "Year": 2022,
-    "OriginalFormat": "DIMACS",
+    "OriginalFormat": "xml",
     "Hierarchy": true,
     "History": [],
     "Variants": [
