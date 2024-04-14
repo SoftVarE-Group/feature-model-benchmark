@@ -21,7 +21,7 @@ def init_args():
     parser.add_argument('--originfile', type=str, required= '--mergeanalysis' in sys.argv, help="Path to statistics csv containing information on the origin")
     parser.add_argument('--analysisfile', type=str, required= '--mergeanalysis' in sys.argv, help="Path to statistics csv containing results of analysis")
     parser.add_argument('--mergeanalysis', type=str, help="Create merged statistics csv from an origin and analysis csv")
-    parser.add_argument('--printmeta', action='store_true', help="Prints some meta information about the current collection")
+    parser.add_argument('--printmeta', type=str, help="Prints some meta information about the current collection based on specified csv")
 
     return parser.parse_args()
 
@@ -101,6 +101,18 @@ def append_analysis_results(origin_file, analysis_file, output_path="statistics/
 
     comeplete_data_frame.to_csv(output_path, ";", index=False)
 
+def get_number_of_evolutions(df):
+    df['id'] = df['Name'] + df['Origin']
+    evo_df = df[df['PartOfHistory'] == True].reset_index(drop=True)
+    return evo_df['id'].nunique()
+
+def print_meta(complete_file):
+    df = read_csv_to_dataframe(complete_file)
+    print(f'Number of feature models: {len(df.index)}')
+    print(f'Number of systems: {df["Name"].nunique()}')
+    print(f'Number of histories: {get_number_of_evolutions(df)}')
+    print(f'Models per domain:\n{df["Domain"].value_counts()}')
+
 
 
 args = init_args()
@@ -110,4 +122,6 @@ elif args.createaggregate:
     load_feature_models("feature_models/original", args.createaggregate)
 elif args.mergeanalysis:
     append_analysis_results(args.originfile, args.analysisfile, args.mergeanalysis)
+elif args.printmeta:
+    print_meta(args.printmeta)
 

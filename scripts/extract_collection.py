@@ -41,7 +41,10 @@ from utils import get_latest_version, get_first_version, get_model_json, get_lat
 #    StringAttributes
 
 # load statistics file
-df_all = pd.read_csv("statistics/CombinedStatistics.csv", sep=';')
+df_all = pd.read_csv("statistics/CombinedTemp.csv", sep=';')
+
+# Filter cfr models
+df_all = df_all[df_all['Format'] != 'Clafer']
 
 # init default values
 available_domains = list(df_all['Domain'].unique())
@@ -215,14 +218,27 @@ def filter_data_frame_by_list_of_models(data_frame, models):
     return data_frame[data_frame['Path'].isin(models)]
 
 
-def udpate_path_according_to_output_format(path: str, output_format):
+def update_source_path_according_to_output_format(path: str, output_format):
     if output_format == 'original':
         return path
     if path.split('.')[-1] == output_format:
         return path
+    if path.split('.')[-1] == 'zip':
+        without_zip = os.path.splitext(path)[0]
+        print(without_zip)
+        if without_zip.split('.')[-1] == output_format:
+            return path
+        else:
+           without_zip = without_zip.replace('original', output_format)
+           return os.path.splitext(without_zip)[0] + "." + output_format
     path = path.replace('original', output_format)
     return os.path.splitext(path)[0] + "." + output_format
 
+def update_target_path_according_to_output_format(path: str, output_format):
+    if output_format == 'original':
+        return path
+    return path.replace('/original/', f'/{output_format}/')
+    
 
 def create_properties_dict():
     return {"Title": "", "Analyses": [], "Reasoning Engines": [], "Date": str(datetime.date.today()), "DOI": "",
@@ -242,13 +258,13 @@ def create_benchmark_directory(data_frame, target_directory, output_format='orig
     os.makedirs(os.path.join(target_directory, "feature_models"))
     data_frame.to_csv(os.path.join(target_directory,
                       "statistics.csv"), ";", index=False)
-
+    
     data_frame['Path'] = data_frame.apply(
-        lambda row: udpate_path_according_to_output_format(row.Path, output_format), axis=1)
+        lambda row: update_source_path_according_to_output_format(row.Path, output_format), axis=1)
 
     for model_path in list(data_frame['Path']):
-        dir_path = os.path.join(target_directory, os.path.dirname(model_path))
-        full_path = os.path.join(target_directory, model_path)
+        dir_path = update_target_path_according_to_output_format(os.path.join(target_directory, os.path.dirname(model_path)), output_format)
+        full_path = update_target_path_according_to_output_format(os.path.join(target_directory, model_path), output_format)
         Path(dir_path).mkdir(parents=True, exist_ok=True)
         if Path(dir_path).exists():
             shutil.copy(model_path, full_path)
@@ -258,7 +274,8 @@ def create_benchmark_directory(data_frame, target_directory, output_format='orig
                 shutil.copyfile(os.path.join(temp_extract_dir, os.listdir(temp_extract_dir)[0]), full_path.replace(
                     get_extension(full_path), get_extension(os.listdir(temp_extract_dir)[0])))
                 shutil.rmtree(temp_extract_dir)
-                os.remove(full_path)
+                os.remove(full_path)               
+
         else:
             print("Warning: " + output_format +
                   " file for " + model_path + " is missing.")
@@ -298,6 +315,7 @@ elif args.show_filter_options:
     printFilterOptions()
 else:
     filter_dict = parse_filter_args(args)
-    df_filtered = applyFilter(df_all, filter_dict)
+    # df_filtered = applyFilter(df_all, filter_dict)
+    df_filtered =  df_all
     create_benchmark_directory(
         df_filtered, "testbenchmark", filter_dict["OutputFormat"])
