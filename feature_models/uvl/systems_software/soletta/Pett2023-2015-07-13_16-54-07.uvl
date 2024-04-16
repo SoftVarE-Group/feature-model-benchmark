@@ -1,7 +1,0 @@
-namespace Root
-
-features
-	Root {abstract true}
-		optional
-			Base
-
