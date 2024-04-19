@@ -1,5 +1,3 @@
-namespace root
-
 features
 	root
 		mandatory
@@ -9,6 +7,11 @@ features
 					HZ_250
 					HZ_300
 					HZ_1000
+		optional
+			DEBUG_PAGEALLOC
+			ASYNC_PQ
+			HAVE_DMA_API_DEBUG
+		mandatory
 			MGEODEGX1_alt {abstract true}
 				alternative
 					M386
@@ -37,104 +40,7 @@ features
 					MCORE2
 					MATOM
 					GENERIC_CPU
-			SERIAL_SAMSUNG_UARTS
-			LOCALVERSION
-			SPLIT_PTLOCK_CPUS
-			ARCH
-			VMSPLIT_3G_OPT_alt {abstract true}
-				alternative
-					VMSPLIT_3G
-					VMSPLIT_3G_OPT
-					VMSPLIT_2G
-					VMSPLIT_2G_OPT
-					VMSPLIT_1G
-			EXTRA_FIRMWARE_DIR
-			NR_QUICK
-			PREEMPT_NONE_alt {abstract true}
-				alternative
-					PREEMPT_NONE
-					PREEMPT_VOLUNTARY
-					PREEMPT
-			DEFAULT_SECURITY_SMACK_alt {abstract true}
-				alternative
-					DEFAULT_SECURITY_SELINUX
-					DEFAULT_SECURITY_SMACK
-					DEFAULT_SECURITY_TOMOYO
-					DEFAULT_SECURITY_DAC
-			KERNELVERSION
-			KERNEL_GZIP_alt {abstract true}
-				alternative
-					KERNEL_GZIP
-					KERNEL_BZIP2
-					KERNEL_LZMA
-					KERNEL_LZO
-			TREE_PREEMPT_RCU_alt {abstract true}
-				alternative
-					TREE_RCU
-					TREE_PREEMPT_RCU
-					TINY_RCU
-			IO_DELAY_0X80_alt {abstract true}
-				alternative
-					IO_DELAY_0X80
-					IO_DELAY_0XED
-					IO_DELAY_UDELAY
-					IO_DELAY_NONE
-			SLOB_alt {abstract true}
-				alternative
-					SLAB
-					SLUB
-					SLOB
-			X86_INTERNODE_CACHE_SHIFT
-			FB_OMAP_031M3R_alt {abstract true}
-				alternative
-					FB_OMAP_031M3R
-					FB_OMAP_048M3R
-					FB_OMAP_079M3R
-					FB_OMAP_092M9R
-			LOG_BUF_SHIFT
-			IO_DELAY_TYPE_UDELAY
-			SERIAL_TXX9_NR_UARTS
-			X86_L1_CACHE_SHIFT
-			NOMMU_INITIAL_TRIM_EXCESS
-			SERIAL_8250_NR_UARTS
-			DISCONTIGMEM_MANUAL_alt {abstract true}
-				alternative
-					FLATMEM_MANUAL
-					DISCONTIGMEM_MANUAL
-					SPARSEMEM_MANUAL
-			DEFAULT_IO_DELAY_TYPE
-			IO_DELAY_TYPE_0X80
-			INIT_ENV_ARG_LIMIT
-			DEFCONFIG_LIST
-			IO_DELAY_TYPE_0XED
-			FB_OMAP_CONSISTENT_DMA_SIZE
-			FRAME_WARN
-			HIGHMEM4G_alt {abstract true}
-				alternative
-					NOHIGHMEM
-					HIGHMEM4G
-					HIGHMEM64G
-			DUMMY_CONSOLE_COLUMNS
-			NR_CPUS
-			BASE_SMALL
-			NODES_SHIFT
-			DEFAULT_SECURITY
-			SERIAL_8250_RUNTIME_UARTS
-			DEFAULT_MMAP_MIN_ADDR
-			IO_DELAY_TYPE_NONE
-			HZ
-			UEVENT_HELPER_PATH
-			OUTPUT_FORMAT
-			ZONE_DMA_FLAG
-			DUMMY_CONSOLE_ROWS
-			LSM_MMAP_MIN_ADDR
-			X86_MINIMUM_CPU_FAMILY
-			ARCH_DEFCONFIG
-			RCU_FANOUT
 		optional
-			DEBUG_PAGEALLOC
-			ASYNC_PQ
-			HAVE_DMA_API_DEBUG
 			BACKTRACE_SELF_TEST
 			SERIAL_S3C2412
 			X86_PLATFORM_DEVICES
@@ -215,11 +121,14 @@ features
 					TWL4030_CODEC
 			PCI_DEBUG
 			FW_LOADER
-				mandatory
-					EXTRA_FIRMWARE
 				optional
 					FIRMWARE_IN_KERNEL
+				mandatory
+					EXTRA_FIRMWARE
 			PHYS_ADDR_T_64BIT
+		mandatory
+			SERIAL_SAMSUNG_UARTS
+		optional
 			PRINTER
 				optional
 					LP_CONSOLE
@@ -252,8 +161,6 @@ features
 				optional
 					DLM_DEBUG
 			NLS
-				mandatory
-					NLS_DEFAULT
 				optional
 					NLS_ISO8859_8
 					NLS_CODEPAGE_864
@@ -281,6 +188,9 @@ features
 					NLS_CODEPAGE_1250
 					NLS_ISO8859_7
 					NLS_CODEPAGE_863
+				mandatory
+					NLS_DEFAULT
+				optional
 					NLS_CODEPAGE_737
 					NLS_CODEPAGE_936
 					NLS_ASCII
@@ -327,6 +237,9 @@ features
 					MLX4_INFINIBAND
 			INIT_ALL_POSSIBLE
 			SYSFS_DEPRECATED_V2
+		mandatory
+			LOCALVERSION
+		optional
 			SERIAL_ICOM
 			EZX_PCAP
 			MAXSMP
@@ -391,7 +304,12 @@ features
 			INLINE_SPIN_TRYLOCK
 			REED_SOLOMON_ENC16
 			RCU_TRACE
+		mandatory
+			SPLIT_PTLOCK_CPUS
+		optional
 			PCI
+				optional
+					PCI_DOMAINS
 				mandatory
 					PCI_GOANY_alt {abstract true}
 						alternative
@@ -401,7 +319,6 @@ features
 							PCI_GOOLPC
 							PCI_GOANY
 				optional
-					PCI_DOMAINS
 					PCI_MMCONFIG
 					PCI_OLPC
 					PCI_BIOS
@@ -432,8 +349,6 @@ features
 			ASYNC_TX_DISABLE_PQ_VAL_DMA
 			INLINE_WRITE_TRYLOCK
 			MEDIA_SUPPORT
-				mandatory
-					DVB_MAX_ADAPTERS
 				optional
 					DVB_CAPTURE_DRIVERS
 						optional
@@ -578,6 +493,9 @@ features
 									DVB_FIREDTV_FIREWIRE
 							DVB_BT8XX
 							DVB_PT1
+				mandatory
+					DVB_MAX_ADAPTERS
+				optional
 					VIDEO_MEDIA
 					VIDEOBUF_DMA_CONTIG
 					MEDIA_TUNER
@@ -850,10 +768,10 @@ features
 								optional
 									RADIO_ZOLTRIX_PORT
 							RADIO_TYPHOON
-								mandatory
-									RADIO_TYPHOON_MUTEFREQ
 								optional
 									RADIO_TYPHOON_PORT
+								mandatory
+									RADIO_TYPHOON_MUTEFREQ
 							RADIO_MAXIRADIO
 							RADIO_TERRATEC
 								optional
@@ -887,6 +805,9 @@ features
 				optional
 					SCSI_SRP_TGT_ATTRS
 			SYNCLINK_CS
+		mandatory
+			ARCH
+		optional
 			R3964
 			INLINE_READ_TRYLOCK
 			COMPAT_VDSO
@@ -995,6 +916,15 @@ features
 			HAVE_DEFAULT_NO_SPIN_MUTEXES
 			WANT_PAGE_DEBUG_FLAGS
 			CHECK_SIGNATURE
+		mandatory
+			VMSPLIT_3G_OPT_alt {abstract true}
+				alternative
+					VMSPLIT_3G
+					VMSPLIT_3G_OPT
+					VMSPLIT_2G
+					VMSPLIT_2G_OPT
+					VMSPLIT_1G
+		optional
 			USER_RETURN_NOTIFIER
 			PARAVIRT_DEBUG
 			PM_SLEEP_SMP
@@ -1185,6 +1115,10 @@ features
 			DEBUG_BOOT_PARAMS
 			KEXEC_JUMP
 			CPU_FREQ
+				optional
+					X86_GX_SUSPMOD
+					CPU_FREQ_GOV_USERSPACE
+					CPU_FREQ_GOV_POWERSAVE
 				mandatory
 					CPU_FREQ_DEFAULT_GOV_CONSERVATIVE_alt {abstract true}
 						alternative
@@ -1194,9 +1128,6 @@ features
 							CPU_FREQ_DEFAULT_GOV_ONDEMAND
 							CPU_FREQ_DEFAULT_GOV_CONSERVATIVE
 				optional
-					X86_GX_SUSPMOD
-					CPU_FREQ_GOV_USERSPACE
-					CPU_FREQ_GOV_POWERSAVE
 					X86_SPEEDSTEP_RELAXED_CAP_CHECK
 					SC520_CPUFREQ
 					CPU_FREQ_GOV_ONDEMAND
@@ -1225,6 +1156,9 @@ features
 						optional
 							X86_POWERNOW_K7_ACPI
 					X86_P4_CLOCKMOD
+		mandatory
+			EXTRA_FIRMWARE_DIR
+		optional
 			SSB_DRIVER_PCICORE
 				optional
 					SSB_PCICORE_HOSTMODE
@@ -1232,7 +1166,17 @@ features
 				optional
 					X86_UP_IOAPIC
 			GENERIC_HARDIRQS
+		mandatory
+			NR_QUICK
+		optional
 			SERIAL_S5PC100
+		mandatory
+			PREEMPT_NONE_alt {abstract true}
+				alternative
+					PREEMPT_NONE
+					PREEMPT_VOLUNTARY
+					PREEMPT
+		optional
 			AC97_BUS
 			VIRTIO_CONSOLE
 			ARCH_INLINE_READ_LOCK_BH
@@ -1304,10 +1248,6 @@ features
 					EARLY_PRINTK_DBGP
 			X86_WP_WORKS_OK
 			SCSI_LOWLEVEL
-				mandatory
-					SCSI_NCR53C8XX_MAX_TAGS
-					SCSI_NCR53C8XX_DEFAULT_TAGS
-					SCSI_NCR53C8XX_SYNC
 				optional
 					SCSI_AIC94XX
 						optional
@@ -1328,10 +1268,11 @@ features
 							IBMMCA_SCSI_DEV_RESET
 					SCSI_NCR53C8XX_NO_DISCONNECT
 					SCSI_U14_34F
+						optional
+							SCSI_U14_34F_TAGGED_QUEUE
 						mandatory
 							SCSI_U14_34F_MAX_TAGS
 						optional
-							SCSI_U14_34F_TAGGED_QUEUE
 							SCSI_U14_34F_LINKED_COMMANDS
 					SCSI_INITIO
 					BLK_DEV_3W_XXXX_RAID
@@ -1371,26 +1312,30 @@ features
 					SCSI_CUMANA_2
 					SCSI_GENERIC_NCR5380_MMIO
 					SCSI_NSP32
+				mandatory
+					SCSI_NCR53C8XX_MAX_TAGS
+				optional
 					GVP11_SCSI
 					SCSI_DPT_I2O
 					SCSI_EATA
+						optional
+							SCSI_EATA_TAGGED_QUEUE
 						mandatory
 							SCSI_EATA_MAX_TAGS
 						optional
-							SCSI_EATA_TAGGED_QUEUE
 							SCSI_EATA_LINKED_COMMANDS
 					FCOE
 					SCSI_3W_SAS
 					SCSI_NCR_D700
 					SCSI_AIC79XX
-						mandatory
-							AIC79XX_CMDS_PER_DEVICE
-							AIC79XX_DEBUG_MASK
-							AIC79XX_RESET_DELAY_MS
 						optional
 							AIC79XX_REG_PRETTY_PRINT
 							AIC79XX_BUILD_FIRMWARE
 							AIC79XX_DEBUG_ENABLE
+						mandatory
+							AIC79XX_CMDS_PER_DEVICE
+							AIC79XX_DEBUG_MASK
+							AIC79XX_RESET_DELAY_MS
 					SCSI_OAK1
 					SCSI_GENERIC_NCR5380
 					SCSI_FD_MCS
@@ -1406,11 +1351,14 @@ features
 					SCSI_PMCRAID
 					LIBFCOE
 					SCSI_MPT2SAS
-						mandatory
-							SCSI_MPT2SAS_MAX_SGE
 						optional
 							SCSI_MPT2SAS_LOGGING
+						mandatory
+							SCSI_MPT2SAS_MAX_SGE
 					LIBFC
+				mandatory
+					SCSI_NCR53C8XX_DEFAULT_TAGS
+				optional
 					SCSI_SYM53C416
 					MVME147_SCSI
 					SUN3X_ESP
@@ -1444,9 +1392,10 @@ features
 						mandatory
 							SCSI_SYM53C8XX_DMA_ADDRESSING_MODE
 							SCSI_SYM53C8XX_MAX_TAGS
-							SCSI_SYM53C8XX_DEFAULT_TAGS
 						optional
 							SCSI_SYM53C8XX_MMIO
+						mandatory
+							SCSI_SYM53C8XX_DEFAULT_TAGS
 					SCSI_SNI_53C710
 					SCSI_PM8001
 					SCSI_SUNESP
@@ -1454,6 +1403,9 @@ features
 					SCSI_MVSAS
 						optional
 							SCSI_MVSAS_DEBUG
+				mandatory
+					SCSI_NCR53C8XX_SYNC
+				optional
 					SCSI_IZIP_EPP16
 					JAZZ_ESP
 					BE2ISCSI
@@ -1466,9 +1418,11 @@ features
 						mandatory
 							AIC7XXX_DEBUG_MASK
 							AIC7XXX_CMDS_PER_DEVICE
-							AIC7XXX_RESET_DELAY_MS
 						optional
 							AIC7XXX_BUILD_FIRMWARE
+						mandatory
+							AIC7XXX_RESET_DELAY_MS
+						optional
 							AIC7XXX_REG_PRETTY_PRINT
 							AIC7XXX_DEBUG_ENABLE
 					SCSI_ARXESCSI
@@ -1491,6 +1445,14 @@ features
 					SCSI_MAC53C94
 			ARCH_HAS_CACHE_LINE_SIZE
 			HAVE_ARCH_TRACEHOOK
+		mandatory
+			DEFAULT_SECURITY_SMACK_alt {abstract true}
+				alternative
+					DEFAULT_SECURITY_SELINUX
+					DEFAULT_SECURITY_SMACK
+					DEFAULT_SECURITY_TOMOYO
+					DEFAULT_SECURITY_DAC
+		optional
 			CONTEXT_SWITCH_TRACER
 			IPWIRELESS
 			FS_MBCACHE
@@ -1498,6 +1460,9 @@ features
 			GCOV_KERNEL
 				optional
 					GCOV_PROFILE_ALL
+		mandatory
+			KERNELVERSION
+		optional
 			SERIAL_SAMSUNG
 			SERIAL_8250_RM9K
 			KRETPROBES
@@ -1599,10 +1564,11 @@ features
 							MTD_AFS_PARTS
 							MTD_CMDLINE_PARTS
 							MTD_REDBOOT_PARTS
+								optional
+									MTD_REDBOOT_PARTS_READONLY
 								mandatory
 									MTD_REDBOOT_DIRECTORY_BLOCK
 								optional
-									MTD_REDBOOT_PARTS_READONLY
 									MTD_REDBOOT_PARTS_UNALLOCATED
 							MTD_OF_PARTS
 					MTD_BFIN_ASYNC
@@ -1618,12 +1584,6 @@ features
 					MTD_UCLINUX
 					MTD_SUN_UFLASH
 					MTD_CFI_ADV_OPTIONS
-						mandatory
-							MTD_CFI_NOSWAP_alt {abstract true}
-								alternative
-									MTD_CFI_NOSWAP
-									MTD_CFI_BE_BYTE_SWAP
-									MTD_CFI_LE_BYTE_SWAP
 						optional
 							MTD_CFI_GEOMETRY
 								optional
@@ -1637,23 +1597,32 @@ features
 									MTD_MAP_BANK_WIDTH_32
 									MTD_MAP_BANK_WIDTH_16
 									MTD_MAP_BANK_WIDTH_4
+						mandatory
+							MTD_CFI_NOSWAP_alt {abstract true}
+								alternative
+									MTD_CFI_NOSWAP
+									MTD_CFI_BE_BYTE_SWAP
+									MTD_CFI_LE_BYTE_SWAP
+						optional
 							MTD_OTP
 					MTD_PHYSMAP
 						optional
 							MTD_PHYSMAP_COMPAT
+								optional
+									MTD_PHYSMAP_START
 								mandatory
 									MTD_PHYSMAP_BANKWIDTH
 								optional
-									MTD_PHYSMAP_START
 									MTD_PHYSMAP_LEN
 					MTD_SLRAM
 					MSP_FLASH_MAP_LIMIT
 					MTD_MTDRAM
 						mandatory
 							MTDRAM_ERASE_SIZE
-							MTDRAM_TOTAL_SIZE
 						optional
 							MTDRAM_ABS_POS
+						mandatory
+							MTDRAM_TOTAL_SIZE
 					MTD_TESTS
 					MTD_OMAP_NOR
 					MTD_WRSBC8260
@@ -1682,7 +1651,6 @@ features
 					MTD_UBI
 						mandatory
 							MTD_UBI_WL_THRESHOLD
-							MTD_UBI_BEB_RESERVE
 						optional
 							MTD_UBI_DEBUG
 								optional
@@ -1697,6 +1665,8 @@ features
 									MTD_UBI_DEBUG_MSG_BLD
 									MTD_UBI_DEBUG_MSG
 							MTD_UBI_GLUEBI
+						mandatory
+							MTD_UBI_BEB_RESERVE
 					MTD_NAND
 						optional
 							MTD_NAND_AMS_DELTA
@@ -1785,6 +1755,14 @@ features
 			INLINE_SPIN_UNLOCK_BH
 			INLINE_WRITE_LOCK_IRQ
 			SCSI_SAS_ATTRS
+		mandatory
+			KERNEL_GZIP_alt {abstract true}
+				alternative
+					KERNEL_GZIP
+					KERNEL_BZIP2
+					KERNEL_LZMA
+					KERNEL_LZO
+		optional
 			SECCOMP
 			X86_IO_APIC
 			ARCH_HAS_CPU_RELAX
@@ -1804,10 +1782,25 @@ features
 					SUSPEND_FREEZER
 					PM_TEST_SUSPEND
 			SERIAL_8250_PCI
+		mandatory
+			TREE_PREEMPT_RCU_alt {abstract true}
+				alternative
+					TREE_RCU
+					TREE_PREEMPT_RCU
+					TINY_RCU
+		optional
 			SMP
 			X86_BSWAP
 			DEBUG_LOCKING_API_SELFTESTS
 			FB_OMAP_LCD_VGA
+		mandatory
+			IO_DELAY_0X80_alt {abstract true}
+				alternative
+					IO_DELAY_0X80
+					IO_DELAY_0XED
+					IO_DELAY_UDELAY
+					IO_DELAY_NONE
+		optional
 			DECOMPRESS_LZO
 			FLAT_NODE_MEM_MAP
 			SSB_PCMCIAHOST
@@ -1831,7 +1824,17 @@ features
 			CALGARY_IOMMU
 				optional
 					CALGARY_IOMMU_ENABLED_BY_DEFAULT
+		mandatory
+			SLOB_alt {abstract true}
+				alternative
+					SLAB
+					SLUB
+					SLOB
+		optional
 			SFI
+		mandatory
+			X86_INTERNODE_CACHE_SHIFT
+		optional
 			FB
 				optional
 					FB_CT65550
@@ -2088,6 +2091,14 @@ features
 							HOTPLUG_PCI_CPCI_ZT5550
 							HOTPLUG_PCI_CPCI_GENERIC
 			ARCH_INLINE_WRITE_UNLOCK_BH
+		mandatory
+			FB_OMAP_031M3R_alt {abstract true}
+				alternative
+					FB_OMAP_031M3R
+					FB_OMAP_048M3R
+					FB_OMAP_079M3R
+					FB_OMAP_092M9R
+		optional
 			INLINE_READ_LOCK
 			CHR_DEV_SCH
 			NWFLASH
@@ -2136,6 +2147,9 @@ features
 			HAVE_KERNEL_LZO
 			IOMMU_LEAK
 			SSB_SERIAL
+		mandatory
+			LOG_BUF_SHIFT
+		optional
 			VMCP
 			MISC_FILESYSTEMS
 				optional
@@ -2177,6 +2191,8 @@ features
 							JFFS2_FS_DEBUG
 						optional
 							JFFS2_COMPRESSION_OPTIONS
+								optional
+									JFFS2_LZO
 								mandatory
 									JFFS2_CMODE_PRIORITY_alt {abstract true}
 										alternative
@@ -2185,7 +2201,6 @@ features
 											JFFS2_CMODE_SIZE
 											JFFS2_CMODE_FAVOURLZO
 								optional
-									JFFS2_LZO
 									JFFS2_ZLIB
 									JFFS2_RTIME
 									JFFS2_RUBIN
@@ -2455,10 +2470,11 @@ features
 					SERIO_MACEPS2
 					SERIO_Q40KBD
 			SCSI_OSD_INITIATOR
+				optional
+					SCSI_OSD_ULD
 				mandatory
 					SCSI_OSD_DPRINT_SENSE
 				optional
-					SCSI_OSD_ULD
 					SCSI_OSD_DEBUG
 			EDAC
 				optional
@@ -2569,14 +2585,23 @@ features
 			SERIAL_AMBA_PL011
 				optional
 					SERIAL_AMBA_PL011_CONSOLE
+		mandatory
+			IO_DELAY_TYPE_UDELAY
+		optional
 			FLATMEM
 			ARCH_SUPPORTS_MEMORY_FAILURE
 			X86_BIGSMP
+		mandatory
+			SERIAL_TXX9_NR_UARTS
+		optional
 			MFD_WM8351_CONFIG_MODE_2
 			JBD_DEBUG
 			GENERIC_FIND_LAST_BIT
 			QUOTACTL
 			SLUB_DEBUG_ON
+		mandatory
+			X86_L1_CACHE_SHIFT
+		optional
 			UWB
 				optional
 					UWB_WHCI
@@ -2705,6 +2730,8 @@ features
 					USB_BERRY_CHARGE
 					USB_ISIGHTFW
 					USB_GADGET
+						optional
+							USB_GADGET_DEBUG
 						mandatory
 							USB_GADGET_S3C_HSOTG_alt {abstract true}
 								alternative
@@ -2794,7 +2821,6 @@ features
 											USB_G_MULTI_RNDIS
 							USB_GADGET_VBUS_DRAW
 						optional
-							USB_GADGET_DEBUG
 							USB_GADGET_SELECTED
 							USB_GADGET_DUALSPEED
 							USB_GADGET_DEBUG_FILES
@@ -3005,6 +3031,9 @@ features
 			DEBUG_STACKOVERFLOW
 			INLINE_WRITE_UNLOCK_IRQRESTORE
 			X86_MSR
+		mandatory
+			NOMMU_INITIAL_TRIM_EXCESS
+		optional
 			SYSCTL
 			TRACER_MAX_TRACE
 			X86_MRST
@@ -3120,6 +3149,9 @@ features
 					PROC_VMCORE
 					PROC_SYSCTL
 					PROC_PAGE_MONITOR
+		mandatory
+			SERIAL_8250_NR_UARTS
+		optional
 			MFD_WM8352_CONFIG_MODE_1
 			DMA_API_DEBUG
 			HIBERNATION
@@ -3142,19 +3174,13 @@ features
 					TN3270_TTY
 					TN3270_FS
 			IMA
-				mandatory
-					IMA_MEASURE_PCR_IDX
 				optional
 					IMA_LSM_RULES
 					IMA_AUDIT
+				mandatory
+					IMA_MEASURE_PCR_IDX
 			HAS_IOPORT
 			FTRACE
-				mandatory
-					BRANCH_PROFILE_NONE_alt {abstract true}
-						alternative
-							BRANCH_PROFILE_NONE
-							PROFILE_ANNOTATED_BRANCHES
-							PROFILE_ALL_BRANCHES
 				optional
 					KPROBE_EVENT
 					WORKQUEUE_TRACER
@@ -3170,6 +3196,13 @@ features
 					ENABLE_DEFAULT_TRACERS
 					RING_BUFFER_BENCHMARK
 					FUNCTION_PROFILER
+				mandatory
+					BRANCH_PROFILE_NONE_alt {abstract true}
+						alternative
+							BRANCH_PROFILE_NONE
+							PROFILE_ANNOTATED_BRANCHES
+							PROFILE_ALL_BRANCHES
+				optional
 					KMEMTRACE
 					PREEMPT_TRACER
 					BLK_DEV_IO_TRACE
@@ -3224,6 +3257,13 @@ features
 									UART2_RTS_PIN
 									UART2_CTS_PIN
 			MWAVE
+		mandatory
+			DISCONTIGMEM_MANUAL_alt {abstract true}
+				alternative
+					FLATMEM_MANUAL
+					DISCONTIGMEM_MANUAL
+					SPARSEMEM_MANUAL
+		optional
 			LOCKDEP
 			OMAP2_VRAM
 			ARCH_MEMORY_PROBE
@@ -3308,31 +3348,37 @@ features
 			SOUND
 				optional
 					SOUND_PRIME
-						mandatory
-							MSND_FIFOSIZE
 						optional
 							SOUND_SH_DAC_AUDIO
 								mandatory
 									SOUND_SH_DAC_AUDIO_CHANNEL
+						mandatory
+							MSND_FIFOSIZE
+						optional
 							SOUND_MSNDPIN
 								mandatory
 									MSNDPIN_INIT_FILE
 									MSNDPIN_IRQ
-									MSNDPIN_PERM_FILE
 								optional
 									MSNDPIN_MEM
 									MSNDPIN_DIGITAL
 									MSNDPIN_IO
+								mandatory
+									MSNDPIN_PERM_FILE
+								optional
 									MSNDPIN_HAVE_BOOT
 									MSNDPIN_NONPNP
-										mandatory
-											MSNDPIN_IDE_IRQ
-											MSNDPIN_MPU_IRQ
 										optional
 											MSNDPIN_JOYSTICK_IO
 											MSNDPIN_CFG
+										mandatory
+											MSNDPIN_IDE_IRQ
+										optional
 											MSNDPIN_IDE_IO1
 											MSNDPIN_IDE_IO0
+										mandatory
+											MSNDPIN_MPU_IRQ
+										optional
 											MSNDPIN_MPU_IO
 							SOUND_OSS
 								optional
@@ -3361,11 +3407,11 @@ features
 									SOUND_AEDSP16
 										optional
 											SC6600
-												mandatory
-													SC6600_CDROM
 												optional
 													SC6600_CDROMBASE
 													SC6600_JOY
+												mandatory
+													SC6600_CDROM
 									SOUND_DMAP
 									SOUND_VIDC
 									SOUND_UART6850
@@ -3376,9 +3422,11 @@ features
 								mandatory
 									MSNDCLAS_INIT_FILE
 									MSNDCLAS_PERM_FILE
-									MSNDCLAS_IRQ
 								optional
 									MSNDCLAS_HAVE_BOOT
+								mandatory
+									MSNDCLAS_IRQ
+								optional
 									MSNDCLAS_MEM
 									MSNDCLAS_IO
 					DMASOUND_ATARI
@@ -3436,8 +3484,6 @@ features
 							SND_RAWMIDI
 							SND_VERBOSE_PROCFS
 							SND_SOC
-								mandatory
-									SND_BF5XX_SPORT_NUM
 								optional
 									SND_SOC_WM8960
 									SND_OMAP_SOC_OVERO
@@ -3523,6 +3569,9 @@ features
 									SND_SOC_WM8510
 									SND_SOC_AU1XPSC
 									SND_S3C24XX_SOC_SMDK2443_WM9710
+								mandatory
+									SND_BF5XX_SPORT_NUM
+								optional
 									SND_SOC_WM9713
 									SND_BF5XX_SOC_AC97
 									SND_PXA2XX_SOC_EM_X270
@@ -3823,6 +3872,9 @@ features
 									SND_SEQ_DUMMY
 							SND_VERBOSE_PRINTK
 							SND_MPU401_UART
+		mandatory
+			DEFAULT_IO_DELAY_TYPE
+		optional
 			CPA_DEBUG
 			X86
 			HVC_IRQ
@@ -3836,6 +3888,9 @@ features
 			KPROBES
 			BOUNCE
 			MFD_ASIC3
+		mandatory
+			IO_DELAY_TYPE_0X80
+		optional
 			HAVE_EFFICIENT_UNALIGNED_ACCESS
 			SECURITY_PATH
 			HAVE_ARCH_BOOTMEM
@@ -3932,12 +3987,6 @@ features
 							IP_DCCP_TFRC_DEBUG
 					FIB_RULES
 					WIRELESS
-						mandatory
-							MAC80211_RC_DEFAULT
-							MAC80211_RC_DEFAULT_PID_alt {abstract true}
-								alternative
-									MAC80211_RC_DEFAULT_PID
-									MAC80211_RC_DEFAULT_MINSTREL
 						optional
 							MAC80211_LEDS
 							LIB80211_CRYPT_WEP
@@ -3968,9 +4017,18 @@ features
 									MAC80211_IBSS_DEBUG
 									MAC80211_VERBOSE_PS_DEBUG
 									MAC80211_VERBOSE_MPL_DEBUG
+						mandatory
+							MAC80211_RC_DEFAULT
+						optional
 							MAC80211_MESH
 							WEXT_SPY
 							MAC80211_RC_PID
+						mandatory
+							MAC80211_RC_DEFAULT_PID_alt {abstract true}
+								alternative
+									MAC80211_RC_DEFAULT_PID
+									MAC80211_RC_DEFAULT_MINSTREL
+						optional
 							LIB80211_CRYPT_TKIP
 							MAC80211_DEBUGFS
 							WEXT_CORE
@@ -4049,11 +4107,12 @@ features
 							NET_CLS_FLOW
 							NET_CLS_FW
 							NET_EMATCH
-								mandatory
-									NET_EMATCH_STACK
 								optional
 									NET_EMATCH_U32
 									NET_EMATCH_NBYTE
+								mandatory
+									NET_EMATCH_STACK
+								optional
 									NET_EMATCH_CMP
 									NET_EMATCH_TEXT
 									NET_EMATCH_META
@@ -4162,10 +4221,11 @@ features
 							NET_KEY_MIGRATE
 					XFRM_SUB_POLICY
 					INET
+						optional
+							INET_ESP
 						mandatory
 							DEFAULT_TCP_CONG
 						optional
-							INET_ESP
 							IP_ROUTE_MULTIPATH
 							IP_ROUTE_VERBOSE
 							TCP_CONG_ADVANCED
@@ -4279,10 +4339,11 @@ features
 									IP6_NF_TARGET_LOG
 									IP6_NF_RAW
 							IP_VS
+								optional
+									IP_VS_PROTO_UDP
 								mandatory
 									IP_VS_TAB_BITS
 								optional
-									IP_VS_PROTO_UDP
 									IP_VS_WRR
 									IP_VS_IPV6
 									IP_VS_LBLC
@@ -4509,15 +4570,16 @@ features
 							IRLAN
 							IRDA_CACHE_LAST_LSAP
 							BFIN_SIR
+								optional
+									BFIN_SIR1
+									BFIN_SIR3
+									BFIN_SIR0
 								mandatory
 									SIR_BFIN_PIO_alt {abstract true}
 										alternative
 											SIR_BFIN_DMA
 											SIR_BFIN_PIO
 								optional
-									BFIN_SIR1
-									BFIN_SIR3
-									BFIN_SIR0
 									BFIN_SIR2
 							IRDA_FAST_RR
 							KINGSUN_DONGLE
@@ -4596,10 +4658,12 @@ features
 							KMEMCHECK_DISABLED_BY_DEFAULT
 							KMEMCHECK_ENABLED_BY_DEFAULT
 							KMEMCHECK_ONESHOT_BY_DEFAULT
+				optional
+					KMEMCHECK_BITOPS_OK
+				mandatory
 					KMEMCHECK_QUEUE_SIZE
 					KMEMCHECK_SHADOW_COPY_SHIFT
 				optional
-					KMEMCHECK_BITOPS_OK
 					KMEMCHECK_PARTIAL_OK
 			INOTIFY_USER
 			ATA
@@ -4694,8 +4758,6 @@ features
 							PATA_ATIIXP
 					ATA_ACPI
 			SECURITY_SELINUX
-				mandatory
-					SECURITY_SELINUX_CHECKREQPROT_VALUE
 				optional
 					SECURITY_SELINUX_AVC_STATS
 					SECURITY_SELINUX_DISABLE
@@ -4705,6 +4767,9 @@ features
 					SECURITY_SELINUX_BOOTPARAM
 						mandatory
 							SECURITY_SELINUX_BOOTPARAM_VALUE
+				mandatory
+					SECURITY_SELINUX_CHECKREQPROT_VALUE
+				optional
 					SECURITY_SELINUX_DEVELOP
 			ARCH_INLINE_WRITE_UNLOCK_IRQRESTORE
 			X86_APM_BOOT
@@ -4714,6 +4779,10 @@ features
 					X86_MCE_INTEL
 					X86_MCE_AMD
 			PMIC_DA903X
+		mandatory
+			INIT_ENV_ARG_LIMIT
+			DEFCONFIG_LIST
+		optional
 			X86_X2APIC
 			X86_RDC321X
 			HIGHPTE
@@ -4816,6 +4885,9 @@ features
 			VIDEO_OUTPUT_CONTROL
 			SLOW_WORK
 			BLK_DEV_SD
+		mandatory
+			IO_DELAY_TYPE_0XED
+		optional
 			DEBUG_NX_TEST
 			INLINE_READ_LOCK_IRQ
 			X86_TSC
@@ -4824,6 +4896,9 @@ features
 			INLINE_SPIN_LOCK_IRQ
 			JBD
 			INLINE_SPIN_TRYLOCK_BH
+		mandatory
+			FB_OMAP_CONSISTENT_DMA_SIZE
+		optional
 			BLK_DEV_INITRD
 				mandatory
 					INITRAMFS_COMPRESSION_NONE_alt {abstract true}
@@ -4833,15 +4908,16 @@ features
 							INITRAMFS_COMPRESSION_BZIP2
 							INITRAMFS_COMPRESSION_LZMA
 							INITRAMFS_COMPRESSION_LZO
-					INITRAMFS_SOURCE
-						mandatory
-							INITRAMFS_ROOT_UID
-							INITRAMFS_ROOT_GID
 				optional
 					RD_LZO
 					RD_GZIP
 					RD_BZIP2
 					RD_LZMA
+				mandatory
+					INITRAMFS_SOURCE
+						mandatory
+							INITRAMFS_ROOT_UID
+							INITRAMFS_ROOT_GID
 			STOP_MACHINE
 			X86_POPAD_OK
 			TEXTSEARCH_FSM
@@ -4875,6 +4951,9 @@ features
 			NUMA
 			ILLEGAL_POINTER_VALUE
 			MFD_WM8351_CONFIG_MODE_3
+		mandatory
+			FRAME_WARN
+		optional
 			ISDN
 				optional
 					ISDN_HDLC
@@ -4898,8 +4977,6 @@ features
 					ISDN_DIVERSION
 					ISDN_I4L
 					ISDN_DRV_HISAX
-						mandatory
-							HISAX_MAX_CARDS
 						optional
 							HISAX_HSTSAPHIR
 							HISAX_1TR6
@@ -4932,6 +5009,9 @@ features
 							HISAX_HFCUSB
 							HISAX_W6692
 							HISAX_ASUSCOM
+						mandatory
+							HISAX_MAX_CARDS
+						optional
 							HISAX_ST5481
 							HISAX_ELSA_CS
 							HISAX_FRITZ_PCIPNP
@@ -5060,11 +5140,6 @@ features
 					SERIAL_BCM63XX_CONSOLE
 			SPARSEMEM_VMEMMAP_ENABLE
 			MMC
-				mandatory
-					MMC_AT91_alt {abstract true}
-						or
-							MMC_AT91
-							MMC_ATMELMCI
 				optional
 					MMC_TEST
 					MMC_SDHCI
@@ -5095,6 +5170,12 @@ features
 					MMC_ATMELMCI_DMA
 					MMC_UNSAFE_RESUME
 					MMC_VIA_SDMMC
+				mandatory
+					MMC_AT91_alt {abstract true}
+						or
+							MMC_AT91
+							MMC_ATMELMCI
+				optional
 					MMC_BLOCK
 						optional
 							MMC_BLOCK_BOUNCE
@@ -5120,6 +5201,13 @@ features
 							MMC_RICOH_MMC
 			RT_MUTEXES
 			ARCH_INLINE_WRITE_LOCK
+		mandatory
+			HIGHMEM4G_alt {abstract true}
+				alternative
+					NOHIGHMEM
+					HIGHMEM4G
+					HIGHMEM64G
+		optional
 			CORE_DUMP_DEFAULT_ELF_HEADERS
 			GPIO_TB0219
 			SSB_SDIOHOST_POSSIBLE
@@ -5198,6 +5286,9 @@ features
 						optional
 							PHONE_IXJ_PCMCIA
 			SGI_NEWPORT_CONSOLE
+		mandatory
+			DUMMY_CONSOLE_COLUMNS
+		optional
 			LOCALVERSION_AUTO
 			ENABLE_MUST_CHECK
 			FB_OMAP_BOOTLOADER_INIT
@@ -5209,9 +5300,6 @@ features
 					SERIAL_SA1100_CONSOLE
 			SPARSEMEM_STATIC
 			ACPI
-				mandatory
-					ACPI_BLACKLIST_YEAR
-					ACPI_CUSTOM_DSDT_FILE
 				optional
 					ACPI_SLEEP
 					ACPI_PROCFS
@@ -5224,12 +5312,18 @@ features
 					ACPI_FAN
 					ACPI_VIDEO
 					ACPI_PCI_SLOT
+				mandatory
+					ACPI_BLACKLIST_YEAR
+				optional
 					ACPI_PROCFS_POWER
 					ACPI_POWER_METER
 					ACPI_HOTPLUG_MEMORY
 					ACPI_AC
 					ACPI_CUSTOM_DSDT
 					X86_PM_TIMER
+				mandatory
+					ACPI_CUSTOM_DSDT_FILE
+				optional
 					ACPI_DOCK
 					ACPI_NUMA
 					ACPI_SBS
@@ -5246,21 +5340,22 @@ features
 				optional
 					SCHED_DEBUG
 					DETECT_SOFTLOCKUP
-						mandatory
-							BOOTPARAM_SOFTLOCKUP_PANIC_VALUE
 						optional
 							BOOTPARAM_SOFTLOCKUP_PANIC
-					DETECT_HUNG_TASK
 						mandatory
-							BOOTPARAM_HUNG_TASK_PANIC_VALUE
+							BOOTPARAM_SOFTLOCKUP_PANIC_VALUE
+					DETECT_HUNG_TASK
 						optional
 							BOOTPARAM_HUNG_TASK_PANIC
-					DEBUG_OBJECTS
 						mandatory
-							DEBUG_OBJECTS_ENABLE_DEFAULT
+							BOOTPARAM_HUNG_TASK_PANIC_VALUE
+					DEBUG_OBJECTS
 						optional
 							DEBUG_OBJECTS_WORK
 							DEBUG_OBJECTS_TIMERS
+						mandatory
+							DEBUG_OBJECTS_ENABLE_DEFAULT
+						optional
 							DEBUG_OBJECTS_FREE
 							DEBUG_OBJECTS_SELFTEST
 					TIMER_STATS
@@ -5278,6 +5373,9 @@ features
 			XENFS
 				optional
 					XEN_COMPAT_XENFS
+		mandatory
+			NR_CPUS
+		optional
 			HAVE_SETUP_PER_CPU_AREA
 			NEED_MULTIPLE_NODES
 			MFD_TC6393XB
@@ -5323,6 +5421,9 @@ features
 			PCF50633_GPIO
 			SERIAL_CORE
 			BINFMT_MISC
+		mandatory
+			BASE_SMALL
+		optional
 			MFD_WM8350_I2C
 			HAVE_KERNEL_LZMA
 			SERIAL_TIMBERDALE
@@ -5477,10 +5578,10 @@ features
 			NILFS2_FS
 			DEBUG_MUTEXES
 			SERIAL_MCF
-				mandatory
-					SERIAL_MCF_BAUDRATE
 				optional
 					SERIAL_MCF_CONSOLE
+				mandatory
+					SERIAL_MCF_BAUDRATE
 			VGA_ARB
 			MFD_PCF50633
 			INLINE_WRITE_UNLOCK_BH
@@ -5619,8 +5720,6 @@ features
 			LOCKDEP_SUPPORT
 			SERIAL_SGI_L1_CONSOLE
 			NETDEVICES
-				mandatory
-					WIMAX_I2400M_DEBUG_LEVEL
 				optional
 					NETDEV_10000
 						optional
@@ -5725,11 +5824,11 @@ features
 								optional
 									ATM_IA_DEBUG
 							ATM_FORE200E
+								optional
+									ATM_FORE200E_USE_TASKLET
 								mandatory
 									ATM_FORE200E_TX_RETRY
 									ATM_FORE200E_DEBUG
-								optional
-									ATM_FORE200E_USE_TASKLET
 							ATM_HE
 								optional
 									ATM_HE_USE_SUNI
@@ -6159,14 +6258,14 @@ features
 								optional
 									FEC_MPC52xx_MDIO
 							IBM_NEW_EMAC
+								optional
+									IBM_NEW_EMAC_DEBUG
 								mandatory
 									IBM_NEW_EMAC_TXB
 									IBM_NEW_EMAC_RXB
 									IBM_NEW_EMAC_RX_SKB_HEADROOM
 									IBM_NEW_EMAC_POLL_WEIGHT
 									IBM_NEW_EMAC_RX_COPY_THRESHOLD
-								optional
-									IBM_NEW_EMAC_DEBUG
 							"8139CP"
 							NET_TULIP
 								optional
@@ -6218,10 +6317,10 @@ features
 							ES3210
 							"68360_ENET"
 							DM9000
-								mandatory
-									DM9000_DEBUGLEVEL
 								optional
 									DM9000_FORCE_SIMPLE_PHY_POLL
+								mandatory
+									DM9000_DEBUGLEVEL
 							NET_VENDOR_RACAL
 								optional
 									NI65
@@ -6330,6 +6429,9 @@ features
 					NET_SB1000
 					LCS
 					VMXNET3
+				mandatory
+					WIMAX_I2400M_DEBUG_LEVEL
+				optional
 					NET_POLL_CONTROLLER
 					USB_RTL8150
 					IEEE802154_DRIVERS
@@ -6375,6 +6477,9 @@ features
 			SERIAL_MAX3100
 			ARCH_FLATMEM_ENABLE
 			SERIAL_8250_MCA
+		mandatory
+			NODES_SHIFT
+		optional
 			X86_USE_3DNOW
 			VGA_CONSOLE
 				optional
@@ -6385,7 +6490,6 @@ features
 			OMAP2_DSS
 				mandatory
 					OMAP2_DSS_MIN_FCK_PER_PCK
-					OMAP2_VRAM_SIZE
 				optional
 					PANEL_GENERIC
 					OMAP2_DSS_DEBUG_SUPPORT
@@ -6398,14 +6502,20 @@ features
 					OMAP2_DSS_DSI
 						optional
 							OMAP2_DSS_USE_DSI_PLL
+				mandatory
+					OMAP2_VRAM_SIZE
+				optional
 					FB_OMAP2
-						mandatory
-							FB_OMAP2_NUM_FBS
 						optional
 							FB_OMAP2_DEBUG_SUPPORT
 							FB_OMAP2_FORCE_AUTO_UPDATE
+						mandatory
+							FB_OMAP2_NUM_FBS
 					PANEL_SHARP_LS037V7DW01
 					OMAP2_DSS_FAKE_VSYNC
+		mandatory
+			DEFAULT_SECURITY
+		optional
 			"64BIT"
 			CGROUPS
 				optional
@@ -6435,6 +6545,9 @@ features
 			HAVE_CPUMASK_OF_CPU_MAP
 			HAVE_LATENCYTOP_SUPPORT
 			X86_SUMMIT_NUMA
+		mandatory
+			SERIAL_8250_RUNTIME_UARTS
+		optional
 			ISO9660_FS
 				optional
 					JOLIET
@@ -6465,10 +6578,16 @@ features
 					GAMEPORT_L4
 					GAMEPORT_EMU10K1
 					GAMEPORT_FM801
+		mandatory
+			DEFAULT_MMAP_MIN_ADDR
+		optional
 			ARCH_INLINE_WRITE_TRYLOCK
 			HPET_TIMER
 				optional
 					HPET_EMULATE_RTC
+		mandatory
+			IO_DELAY_TYPE_NONE
+		optional
 			PM_SLEEP
 			ARCH_SUPPORTS_MSI
 			X86_DECODER_SELFTEST
@@ -6557,6 +6676,9 @@ features
 			ACCESSIBILITY
 				optional
 					A11Y_BRAILLE_CONSOLE
+		mandatory
+			HZ
+		optional
 			SSB_POSSIBLE
 			DEBUG_RODATA
 				optional
@@ -6637,9 +6759,16 @@ features
 			ARCH_INLINE_SPIN_LOCK_IRQ
 			PPDEV
 			SERIAL_TXX9_CONSOLE
+		mandatory
+			UEVENT_HELPER_PATH
+		optional
 			INLINE_READ_LOCK_IRQSAVE
 			INLINE_SPIN_UNLOCK
 			GENERIC_CLOCKEVENTS
+		mandatory
+			OUTPUT_FORMAT
+			ZONE_DMA_FLAG
+		optional
 			MFD_SH_MOBILE_SDHI
 			DEBUG_WRITECOUNT
 			SSB_PCIHOST_POSSIBLE
@@ -6654,10 +6783,10 @@ features
 					FONT_8x8
 					FONT_6x11
 			DEBUG_KMEMLEAK
-				mandatory
-					DEBUG_KMEMLEAK_EARLY_LOG_SIZE
 				optional
 					DEBUG_KMEMLEAK_TEST
+				mandatory
+					DEBUG_KMEMLEAK_EARLY_LOG_SIZE
 			X86_INVLPG
 			FAT_FS
 			MFD_TC6387XB
@@ -6743,10 +6872,10 @@ features
 					PARIDE_PD
 					PARIDE_PCD
 					CDROM_PKTCDVD
-						mandatory
-							CDROM_PKTCDVD_BUFFERS
 						optional
 							CDROM_PKTCDVD_WCACHE
+						mandatory
+							CDROM_PKTCDVD_BUFFERS
 					MG_DISK
 						mandatory
 							MG_DISK_RES
@@ -6776,13 +6905,13 @@ features
 			AUXDISPLAY
 				optional
 					KS0108
-						mandatory
-							KS0108_DELAY
 						optional
 							CFAG12864B
 								mandatory
 									CFAG12864B_RATE
 							KS0108_PORT
+						mandatory
+							KS0108_DELAY
 			DEBUG_NOMMU_REGIONS
 			BSD_PROCESS_ACCT
 				optional
@@ -7047,6 +7176,9 @@ features
 			X86_USE_PPRO_CHECKSUM
 			CONSOLE_POLL
 			HAVE_LMB
+		mandatory
+			DUMMY_CONSOLE_ROWS
+		optional
 			X86_CYCLONE_TIMER
 			CRASH_DUMP
 			INTEL_TXT
@@ -7088,11 +7220,11 @@ features
 						optional
 							PARAVIRT_SPINLOCKS
 					XEN
-						mandatory
-							XEN_MAX_DOMAIN_MEMORY
 						optional
 							XEN_SAVE_RESTORE
 							XEN_DEBUG_FS
+						mandatory
+							XEN_MAX_DOMAIN_MEMORY
 					KVM_GUEST
 					VMI
 					PARAVIRT_CLOCK
@@ -7152,6 +7284,9 @@ features
 			SERIAL_SAMSUNG_CONSOLE
 			XEN_DEV_EVTCHN
 			HAVE_KVM_IRQCHIP
+		mandatory
+			LSM_MMAP_MIN_ADDR
+		optional
 			INLINE_SPIN_UNLOCK_IRQ
 			AGP
 				optional
@@ -7262,11 +7397,12 @@ features
 					JFS_POSIX_ACL
 			SCSI_DMA
 			FUSION
-				mandatory
-					FUSION_MAX_SGE
 				optional
 					FUSION_FC
 					FUSION_CTL
+				mandatory
+					FUSION_MAX_SGE
+				optional
 					FUSION_SAS
 					FUSION_SPI
 					FUSION_LAN
@@ -7299,6 +7435,10 @@ features
 			INLINE_WRITE_UNLOCK_IRQ
 			HVC_ISERIES
 			I8K
+		mandatory
+			X86_MINIMUM_CPU_FAMILY
+			ARCH_DEFCONFIG
+		optional
 			EVENT_TRACING
 			LEGACY_PTYS
 				mandatory
@@ -7370,14 +7510,10 @@ features
 					I2O_BUS
 			SERIAL_68360_SCC
 			PMIC_ADP5520
+		mandatory
+			RCU_FANOUT
+		optional
 			BLOCK
-				mandatory
-					DEFAULT_NOOP_alt {abstract true}
-						alternative
-							DEFAULT_DEADLINE
-							DEFAULT_CFQ
-							DEFAULT_NOOP
-					DEFAULT_IOSCHED
 				optional
 					BLK_DEV_INTEGRITY
 					BLK_DEV_BSG
@@ -7389,6 +7525,14 @@ features
 								optional
 									DEBUG_CFQ_IOSCHED
 					LBDAF
+				mandatory
+					DEFAULT_NOOP_alt {abstract true}
+						alternative
+							DEFAULT_DEADLINE
+							DEFAULT_CFQ
+							DEFAULT_NOOP
+					DEFAULT_IOSCHED
+				optional
 					DEBUG_BLK_CGROUP
 					IOSCHED_DEADLINE
 					BLOCK_COMPAT

@@ -1,52 +1,5 @@
-namespace root
-
 features
 	root
-		mandatory
-			UDHCP_DEBUG
-			BUSYBOX_EXEC_PATH
-			DEFAULT_MODULES_DIR
-			FEATURE_SH_IS_HUSH_alt {abstract true}
-				alternative
-					FEATURE_SH_IS_ASH
-					FEATURE_SH_IS_HUSH
-					FEATURE_SH_IS_NONE
-			DEFAULT_DEPMOD_FILE
-			EXTRA_CFLAGS
-			PASSWORD_MINLEN
-			IFUPDOWN_UDHCPC_CMD_OPTIONS
-			INSTALL_SH_APPLET_SCRIPT_WRAPPER_alt {abstract true}
-				alternative
-					INSTALL_SH_APPLET_SYMLINK
-					INSTALL_SH_APPLET_HARDLINK
-					INSTALL_SH_APPLET_SCRIPT_WRAPPER
-			UDHCPC_SLACK_FOR_BUGGY_SERVERS
-			FEATURE_BUFFERS_GO_IN_BSS_alt {abstract true}
-				alternative
-					FEATURE_BUFFERS_USE_MALLOC
-					FEATURE_BUFFERS_GO_ON_STACK
-					FEATURE_BUFFERS_GO_IN_BSS
-			FEATURE_BASH_IS_HUSH_alt {abstract true}
-				alternative
-					FEATURE_BASH_IS_ASH
-					FEATURE_BASH_IS_HUSH
-					FEATURE_BASH_IS_NONE
-			DMALLOC_alt {abstract true}
-				alternative
-					NO_DEBUG_LIB
-					DMALLOC
-					EFENCE
-			CROSS_COMPILER_PREFIX
-			INSTALL_APPLET_DONT_alt {abstract true}
-				alternative
-					INSTALL_APPLET_SYMLINKS
-					INSTALL_APPLET_HARDLINKS
-					INSTALL_APPLET_SCRIPT_WRAPPERS
-					INSTALL_APPLET_DONT
-			FEATURE_COPYBUF_KB
-			UDHCPC_DEFAULT_SCRIPT
-			MD5_SIZE_VS_SPEED
-			PREFIX
 		optional
 			FEATURE_MOUNT_LOOP
 				optional
@@ -62,7 +15,6 @@ features
 			UNICODE_SUPPORT
 				mandatory
 					SUBST_WCHAR
-					LAST_SUPPORTED_WCHAR
 				optional
 					UNICODE_WIDE_WCHARS
 					UNICODE_COMBINING_WCHARS
@@ -71,6 +23,9 @@ features
 						optional
 							UNICODE_NEUTRAL_TABLE
 					UNICODE_PRESERVE_BROKEN
+				mandatory
+					LAST_SUPPORTED_WCHAR
+				optional
 					FEATURE_CHECK_UNICODE_IN_ENV
 			TFTP
 			FEATURE_UNIX_LOCAL
@@ -80,6 +35,9 @@ features
 			DMESG
 				optional
 					FEATURE_DMESG_PRETTY
+		mandatory
+			UDHCP_DEBUG
+		optional
 			ID
 			VCONFIG
 			FTPPUT
@@ -104,6 +62,9 @@ features
 					FEATURE_CPIO_O
 						optional
 							FEATURE_CPIO_P
+		mandatory
+			BUSYBOX_EXEC_PATH
+		optional
 			PATCH
 			SV
 				mandatory
@@ -140,11 +101,21 @@ features
 				optional
 					FEATURE_UNEXPAND_LONG_OPTIONS
 			WHOAMI
+		mandatory
+			DEFAULT_MODULES_DIR
+		optional
 			FEATURE_FAST_TOP
 			LPR
 			GZIP
 				optional
 					FEATURE_GZIP_LONG_OPTIONS
+		mandatory
+			FEATURE_SH_IS_HUSH_alt {abstract true}
+				alternative
+					FEATURE_SH_IS_ASH
+					FEATURE_SH_IS_HUSH
+					FEATURE_SH_IS_NONE
+		optional
 			VLOCK
 			MKFS_EXT2
 			SHOW_USAGE
@@ -152,8 +123,6 @@ features
 					FEATURE_COMPRESS_USAGE
 					FEATURE_VERBOSE_USAGE
 			SYSLOGD
-				mandatory
-					FEATURE_SYSLOGD_READ_BUFFER_SIZE
 				optional
 					FEATURE_ROTATE_LOGFILE
 					FEATURE_SYSLOGD_DUP
@@ -165,6 +134,8 @@ features
 							LOGREAD
 								optional
 									FEATURE_LOGREAD_REDUCED_LOCKING
+				mandatory
+					FEATURE_SYSLOGD_READ_BUFFER_SIZE
 			IPCALC
 				optional
 					FEATURE_IPCALC_LONG_OPTIONS
@@ -196,14 +167,21 @@ features
 			SORT
 				optional
 					FEATURE_SORT_BIG
+		mandatory
+			DEFAULT_DEPMOD_FILE
+		optional
 			RDATE
+		mandatory
+			EXTRA_CFLAGS
+		optional
 			ADDUSER
 				mandatory
 					LAST_SYSTEM_ID
-					FIRST_SYSTEM_ID
 				optional
 					FEATURE_ADDUSER_LONG_OPTIONS
 					FEATURE_CHECK_NAMES
+				mandatory
+					FIRST_SYSTEM_ID
 			FAKEIDENTD
 			FEATURE_VOLUMEID_ISO9660
 			TRUE
@@ -247,11 +225,11 @@ features
 				optional
 					FEATURE_FANCY_TAIL
 			CROND
-				mandatory
-					FEATURE_CROND_DIR
 				optional
 					FEATURE_CROND_CALL_SENDMAIL
 					FEATURE_CROND_D
+				mandatory
+					FEATURE_CROND_DIR
 			IPCS
 			NOMMU
 			FEATURE_PRESERVE_HARDLINKS
@@ -267,6 +245,9 @@ features
 				optional
 					FEATURE_READLINK_FOLLOW
 			SVLOGD
+		mandatory
+			PASSWORD_MINLEN
+		optional
 			CHPST
 			FREE
 			SETFILES
@@ -334,15 +315,16 @@ features
 			HOSTNAME
 			CHRT
 			FEATURE_EDITING
-				mandatory
-					FEATURE_EDITING_HISTORY
-					FEATURE_EDITING_MAX_LEN
 				optional
 					FEATURE_EDITING_ASK_TERMINAL
 					FEATURE_EDITING_FANCY_PROMPT
 					FEATURE_TAB_COMPLETION
 						optional
 							FEATURE_USERNAME_COMPLETION
+				mandatory
+					FEATURE_EDITING_HISTORY
+					FEATURE_EDITING_MAX_LEN
+				optional
 					FEATURE_EDITING_VI
 					FEATURE_EDITING_SAVEHISTORY
 			TAR
@@ -377,12 +359,13 @@ features
 						alternative
 							FEATURE_MAKEDEVS_LEAF
 							FEATURE_MAKEDEVS_TABLE
+		mandatory
+			IFUPDOWN_UDHCPC_CMD_OPTIONS
+		optional
 			TEST
 				optional
 					FEATURE_TEST_64
 			INIT
-				mandatory
-					INIT_TERMINAL_TYPE
 				optional
 					FEATURE_INIT_COREDUMPS
 					FEATURE_USE_INITTAB
@@ -393,6 +376,9 @@ features
 					FEATURE_INIT_SCTTY
 					FEATURE_INIT_SYSLOG
 					FEATURE_INITRD
+				mandatory
+					INIT_TERMINAL_TYPE
+				optional
 					FEATURE_EXTRA_QUIET
 			FEATURE_AUTOWIDTH
 			DEBUG
@@ -429,6 +415,13 @@ features
 			CP
 				optional
 					FEATURE_CP_LONG_OPTIONS
+		mandatory
+			INSTALL_SH_APPLET_SCRIPT_WRAPPER_alt {abstract true}
+				alternative
+					INSTALL_SH_APPLET_SYMLINK
+					INSTALL_SH_APPLET_HARDLINK
+					INSTALL_SH_APPLET_SCRIPT_WRAPPER
+		optional
 			HAVE_DOT_CONFIG
 			PIVOT_ROOT
 			UNXZ
@@ -480,6 +473,9 @@ features
 				optional
 					FEATURE_FANCY_HEAD
 			BB_SYSCTL
+		mandatory
+			UDHCPC_SLACK_FOR_BUGGY_SERVERS
+		optional
 			ADD_SHELL
 			SLATTACH
 			FEATURE_DEVFS
@@ -535,6 +531,13 @@ features
 			UDHCPC
 				optional
 					FEATURE_UDHCPC_ARPING
+		mandatory
+			FEATURE_BUFFERS_GO_IN_BSS_alt {abstract true}
+				alternative
+					FEATURE_BUFFERS_USE_MALLOC
+					FEATURE_BUFFERS_GO_ON_STACK
+					FEATURE_BUFFERS_GO_IN_BSS
+		optional
 			TAC
 			FEATURE_LOADFONT_PSF2
 			DD
@@ -567,6 +570,13 @@ features
 			LFS
 			FSYNC
 			REV
+		mandatory
+			FEATURE_BASH_IS_HUSH_alt {abstract true}
+				alternative
+					FEATURE_BASH_IS_ASH
+					FEATURE_BASH_IS_HUSH
+					FEATURE_BASH_IS_NONE
+		optional
 			CHPASSWD
 			RESTORECON
 			DU
@@ -595,14 +605,15 @@ features
 			FLASH_UNLOCK
 			FEATURE_LOADFONT_RAW
 			IFUPDOWN
-				mandatory
-					IFUPDOWN_IFSTATE_PATH
 				optional
 					FEATURE_IFUPDOWN_IPV4
 					FEATURE_IFUPDOWN_IP
 						optional
 							FEATURE_IFUPDOWN_IFCONFIG_BUILTIN
 							FEATURE_IFUPDOWN_IP_BUILTIN
+				mandatory
+					IFUPDOWN_IFSTATE_PATH
+				optional
 					FEATURE_IFUPDOWN_MAPPING
 					FEATURE_IFUPDOWN_IPV6
 					FEATURE_IFUPDOWN_EXTERNAL_DHCP
@@ -630,6 +641,13 @@ features
 			RUNCON
 				optional
 					FEATURE_RUNCON_LONG_OPTIONS
+		mandatory
+			DMALLOC_alt {abstract true}
+				alternative
+					NO_DEBUG_LIB
+					DMALLOC
+					EFENCE
+		optional
 			IP
 				optional
 					FEATURE_IP_RULE
@@ -746,6 +764,9 @@ features
 			KLOGD
 				optional
 					FEATURE_KLOGD_KLOGCTL
+		mandatory
+			CROSS_COMPILER_PREFIX
+		optional
 			RUNSVDIR
 				optional
 					FEATURE_RUNSVDIR_LOG
@@ -786,6 +807,14 @@ features
 							FEATURE_FLOAT_SLEEP
 			MESG
 			IPTUNNEL
+		mandatory
+			INSTALL_APPLET_DONT_alt {abstract true}
+				alternative
+					INSTALL_APPLET_SYMLINKS
+					INSTALL_APPLET_HARDLINKS
+					INSTALL_APPLET_SCRIPT_WRAPPERS
+					INSTALL_APPLET_DONT
+		optional
 			PWD
 			AWK
 				optional
@@ -870,6 +899,9 @@ features
 					FEATURE_FBSET_FANCY
 					FEATURE_FBSET_READMODE
 			CAT
+		mandatory
+			FEATURE_COPYBUF_KB
+		optional
 			FEATURE_SEAMLESS_XZ
 			SELINUXENABLED
 			ECHO
@@ -912,8 +944,6 @@ features
 			FEATURE_VOLUMEID_UDF
 			IPADDR
 			VI
-				mandatory
-					FEATURE_VI_MAX_LEN
 				optional
 					FEATURE_VI_DOT_CMD
 					FEATURE_VI_ASK_TERMINAL
@@ -921,6 +951,9 @@ features
 					FEATURE_VI_8BIT
 					FEATURE_VI_SET
 					FEATURE_ALLOW_EXEC
+				mandatory
+					FEATURE_VI_MAX_LEN
+				optional
 					FEATURE_VI_READONLY
 					FEATURE_VI_USE_SIGNALS
 					FEATURE_VI_OPTIMIZE_CURSOR
@@ -929,10 +962,11 @@ features
 					FEATURE_VI_YANKMARK
 					FEATURE_VI_COLON
 			LESS
+				optional
+					FEATURE_LESS_FLAGS
 				mandatory
 					FEATURE_LESS_MAXLINES
 				optional
-					FEATURE_LESS_FLAGS
 					FEATURE_LESS_REGEXP
 					FEATURE_LESS_WINCH
 					FEATURE_LESS_BRACKETS
@@ -962,12 +996,18 @@ features
 			SOFTLIMIT
 			DPKG
 			YES
+		mandatory
+			UDHCPC_DEFAULT_SCRIPT
+		optional
 			FEATURE_PIDFILE
 			NBDCLIENT
 			LSATTR
 			CHROOT
 			FEATURE_CHECK_TAINTED_MODULE
 			TIME
+		mandatory
+			MD5_SIZE_VS_SPEED
+		optional
 			FEATURE_UDHCP_RFC3397
 			CHVT
 			PGREP
@@ -990,6 +1030,9 @@ features
 			NAMEIF
 				optional
 					FEATURE_NAMEIF_EXTENDED
+		mandatory
+			PREFIX
+		optional
 			ARPING
 			MONOTONIC_SYSCALL
 			IFCONFIG
