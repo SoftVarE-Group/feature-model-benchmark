@@ -2,6 +2,7 @@ import pandas as pd
 from utils import *
 import argparse
 import sys
+import numpy as np
 
 USER_COLUMNS = ["Publication", "Keywords",
                 "Source", "ConvertedFrom", "Conversion_Tool"]
@@ -88,15 +89,15 @@ def data_frame_from_json_list(model_paths):
 
 def append_analysis_results(origin_file, analysis_file, output_path="statistics/complete.csv"):
     models_data_frame = read_csv_to_dataframe(origin_file)
-    analysis_data_frame = read_csv_to_dataframe(analysis_file)
+    analysis_data_frame = read_csv_to_dataframe(analysis_file, delimiter=',')
     models_data_frame['DescribingPath'] = models_data_frame.apply(
         lambda row: get_describing_path(row.Path), axis=1)
     analysis_data_frame['DescribingPath'] = analysis_data_frame.apply(
-        lambda row: get_describing_path(row.model), axis=1)
+        lambda row: get_describing_path(row.File), axis=1)
 
     complete_data_frame = pd.merge(
         models_data_frame, analysis_data_frame, on="DescribingPath", how="left")
-    comeplete_data_frame = complete_data_frame.drop(columns='model')
+    comeplete_data_frame = complete_data_frame.drop(columns='File')
     comeplete_data_frame = comeplete_data_frame.sort_values(["Domain", "Name"])
 
     comeplete_data_frame.to_csv(output_path, ";", index=False)
@@ -106,12 +107,20 @@ def get_number_of_evolutions(df):
     evo_df = df[df['PartOfHistory'] == True].reset_index(drop=True)
     return evo_df['id'].nunique()
 
+def get_ranges(df, column, ranges):
+    return df[column].groupby(pd.cut(df[column], ranges)).count()
+
 def print_meta(complete_file):
     df = read_csv_to_dataframe(complete_file)
+    df = df.replace('?', np.nan)
+    df['NumberOfValidConfigurationsLog'] = df['NumberOfValidConfigurationsLog'].astype('float')
     print(f'Number of feature models: {len(df.index)}')
     print(f'Number of systems: {df["Name"].nunique()}')
     print(f'Number of histories: {get_number_of_evolutions(df)}')
     print(f'Models per domain:\n{df["Domain"].value_counts()}')
+    print(f'Number of features: {df["NumberOfFeatures"].min()}--{df["NumberOfFeatures"].max()}')
+    print(f'Number of Configurations 10^: {df["NumberOfValidConfigurationsLog"].min()}--{df["NumberOfValidConfigurationsLog"].max()}')
+    print(f'Models in Feature Ranges:\n {str(get_ranges(df, "NumberOfFeatures", [0,500,1000,1500,2000,5000,10000,1000000]))}')
 
 
 

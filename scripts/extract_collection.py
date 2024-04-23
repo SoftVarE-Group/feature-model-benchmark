@@ -6,6 +6,7 @@ import shutil
 import json
 from pathlib import Path
 from utils import get_latest_version, get_first_version, get_model_json, get_latest_variant, get_first_variant, get_extension, get_describing_path
+import numpy as np
 
 # name filter default
 
@@ -21,7 +22,7 @@ from utils import get_latest_version, get_first_version, get_model_json, get_lat
 # Range
 #    NumberOfFeatures
 #    #Temp_Variables
-#    #Constraints
+#    Number_Constraints
 #    #Clauses
 #    #Configs
 #    #Core
@@ -41,10 +42,15 @@ from utils import get_latest_version, get_first_version, get_model_json, get_lat
 #    StringAttributes
 
 # load statistics file
-df_all = pd.read_csv("statistics/CombinedTemp.csv", sep=';')
+df_all = pd.read_csv("statistics/Complete.csv", sep=';')
 
 # Filter cfr models
 df_all = df_all[df_all['Format'] != 'Clafer']
+
+# replace ? with nan in relevant numeric columns
+NUMERIC_COLUMNS = ['NumberOfFeatures', 'Number_Constraints']
+df_all[NUMERIC_COLUMNS] = df_all[NUMERIC_COLUMNS].apply(pd.to_numeric, errors = 'coerce')
+
 
 # init default values
 available_domains = list(df_all['Domain'].unique())
@@ -52,8 +58,8 @@ available_formats = list(df_all['Format'].unique())
 available_sources = list(df_all['Source'].unique())
 available_feature_range = (
     int(min(df_all['NumberOfFeatures'])), int(max(df_all['NumberOfFeatures'])))
-available_ctc_range = (int(min(df_all['#Constraints'])),
-                       int(max(df_all['#Constraints'])))
+available_ctc_range = (int(min(df_all['Number_Constraints'])),
+                       int(max(df_all['Number_Constraints'])))
 default_name_regex = '.*'
 VARIANT_SELECTORS = ["all", "none", "first", "last"]
 
@@ -117,7 +123,7 @@ def printFilterOptions():
     print("Format: " + str(available_formats))
     print("NumberOfFeatures: " +
           str(available_feature_range[0]) + ".." + str(available_feature_range[1]))
-    print("#Constraints: " +
+    print("Number_Constraints: " +
           str(available_ctc_range[0]) + ".." + str(available_ctc_range[1]))
 
 
@@ -126,8 +132,8 @@ def applyFilter(df, filter_dict: dict):
     df = df[df['Format'].isin(filter_dict['OriginalFormat'])]
     df = df[df['NumberOfFeatures'] >= filter_dict['Features'][0]]
     df = df[df['NumberOfFeatures'] <= filter_dict['Features'][1]]
-    df = df[df['#Constraints'] >= filter_dict['Constraints'][0]]
-    df = df[df['#Constraints'] <= filter_dict['Constraints'][1]]
+    df = df[df['Number_Constraints'] >= filter_dict['Constraints'][0]]
+    df = df[df['Number_Constraints'] <= filter_dict['Constraints'][1]]
     df = df[df['Name'].str.match(filter_dict['Name'])]
     if filter_dict['Evolution']:
         df = df[df['PartOfHistory'] == True]
@@ -225,7 +231,6 @@ def update_source_path_according_to_output_format(path: str, output_format):
         return path
     if path.split('.')[-1] == 'zip':
         without_zip = os.path.splitext(path)[0]
-        print(without_zip)
         if without_zip.split('.')[-1] == output_format:
             return path
         else:
@@ -246,15 +251,21 @@ def create_properties_dict():
                 "Domains": available_domains,
                 "Formats": available_formats,
                 # "NumberOfFeatures": str(feature_range[0]) + ".." + str(feature_range[1]),
-                # "#Constraints": str(ctc_range[0]) + ".." + str(ctc_range[1])
+                # "Number_Constraints": str(ctc_range[0]) + ".." + str(ctc_range[1])
     }}
+
+def create_properties_dict_from_filter(filter_dict):
+    if 'SavePath' in filter_dict: del filter_dict['SavePath']
+    return {"Title": "", "Analyses": [], "Reasoning Engines": [], "Date": str(datetime.date.today()), "DOI": "",
+            "Filter": filter_dict
+    }
 
 
 def create_properties_dict_config(config_json):
     return {"Title": "", "Dataset From": config_json['Title'], "Analyses": [], "Reasoning Engines": [], "Date": str(datetime.date.today()), "DOI": ""}
 
 
-def create_benchmark_directory(data_frame, target_directory, output_format='original', value_dict=create_properties_dict()):
+def create_benchmark_directory(data_frame, target_directory, output_format='original', value_dict=None):
     os.makedirs(os.path.join(target_directory, "feature_models"))
     data_frame.to_csv(os.path.join(target_directory,
                       "statistics.csv"), ";", index=False)
@@ -280,7 +291,7 @@ def create_benchmark_directory(data_frame, target_directory, output_format='orig
             print("Warning: " + output_format +
                   " file for " + model_path + " is missing.")
 
-    create_benchmark_json(data_frame, value_dict, os.path.join(
+    create_benchmark_json(data_frame, create_properties_dict_from_filter(value_dict), os.path.join(
         target_directory, "config.json"))
 
 
@@ -315,7 +326,6 @@ elif args.show_filter_options:
     printFilterOptions()
 else:
     filter_dict = parse_filter_args(args)
-    # df_filtered = applyFilter(df_all, filter_dict)
-    df_filtered =  df_all
+    df_filtered = applyFilter(df_all, filter_dict)
     create_benchmark_directory(
-        df_filtered, "testbenchmark", filter_dict["OutputFormat"])
+        df_filtered, "testbenchmark", filter_dict["OutputFormat"], filter_dict)

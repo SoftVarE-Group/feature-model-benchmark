@@ -8,8 +8,8 @@ def get_files_from_directory(directory_path, supported_suffixes):
     return [os.path.join(path, file) for path, directory, files in os.walk(directory_path) for file in files if file.endswith(tuple(supported_suffixes))]
 
 
-def read_csv_to_dataframe(path):
-    return pd.read_csv(path, delimiter=";")
+def read_csv_to_dataframe(path, delimiter=';'):
+    return pd.read_csv(path, delimiter=delimiter)
 
 
 # -------------------------- Create Table --------------------------

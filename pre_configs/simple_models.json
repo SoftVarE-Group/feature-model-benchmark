@@ -1,9 +1,0 @@
-{
-    "Title": "Selection of very few simple feature models from the repository for testing",
-    "Date": "2023-04-28",
-    "Feature Models": [
-        "feature_models/original/database/berkeleydb/Hierons2020.xml",
-        "feature_models/original/finance/decisional/Mendonca2009.xml",
-        "feature_models/original/e_commerce/e_shop/Lau2006.xml"
-    ]
-}

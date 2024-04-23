@@ -272,6 +272,83 @@ def simplify_dimacs(files, no_bars, out):
 
 	save_to_csv(stats, path.join(out, "simplify.csv"), columns = ["In", "#Clauses", "Out", "#Clauses"])
 
+def get_non_implemented_vector(files):
+	return ['?'] * len(files)
+
+'''
+Gets vector mirroring analyses from feature model batch analysis
+Only used for feature models where analysis over feature models does not scale to get as many results as possible
+'''
+def get_analysis_vectors(files, vector= ['File','NumberOfFeatures','NumberOfLeafFeatures','NumberOfTopFeatures','Number_Constraints','AverageConstraintSize','CtcDensity','FeaturesInConstraintsDensity','TreeDepth','AverageNumberOfChildren','NumberOfAlternatives','NumberOfOrs','NumberOfClauses','NumberOfLiterals','NumberOfUnitClauses','NumberOfTwoClauses','ClauseDensity','NumberOfTautologies','NumberOfRedundantConstraints','ConnectivityDensity','Void','Number_CORE','Number_Dead','RatioOptionalFeatures','NumberOfFalseOptionalFeatures','NumberOfOptionalFeatures','NumberOfValidConfigurationsLog','SimpleCyclomaticComplexity','IndependentCyclomaticComplexity']):
+	number_of_features = []
+	number_of_constraints = []
+	average_constraint_sizes = []
+	number_of_unit_clauses = []
+	number_of_two_clauses = []
+	number_of_cores = []
+	number_of_deads = []
+	number_of_optionals = []
+	ecrs = []
+	number_of_literals = []
+	average_children = []
+	optional_rations = []
+	for file in files:
+		print(f'Analyzing {file}')
+		cnf = CNF(from_file=file)
+		number_of_features.append(cnf.nv)
+		number_of_literals.append(sum([len(clause) for clause in cnf.clauses]))
+		number_of_constraints.append(len(cnf.clauses))
+		average_constraint_sizes.append((sum([len(clause) for clause in cnf.clauses])) / len(cnf.clauses))
+		number_of_unit_clauses.append(len([clause for clause in cnf.clauses if len(clause) == 1]))
+		number_of_two_clauses.append(len([clause for clause in cnf.clauses if len(clause) == 2]))
+		# cores, deads = compute_core_deads(cnf)
+		# number_of_cores.append(len(cores))
+		# number_of_deads.append(len(deads))
+		# number_of_optionals.append(cnf.nv - len(cores) - len(deads))
+		# optional_rations.append((cnf.nv - len(cores) - len(deads))/ cnf.nv)
+		variables_in_clauses = set()
+		for clause in cnf.clauses:
+			for literal in clause:
+				variables_in_clauses.add(abs(literal))
+		ecrs.append(len(variables_in_clauses) / cnf.nv)
+		average_children.append(cnf.nv - 1)
+		
+
+	df = pd.DataFrame()
+	df['File'] = files
+	df['NumberOfFeatures'] = number_of_features
+	df['NumberOfLeafFeatures'] = number_of_features
+	df['NumberOfTopFeatures'] = number_of_features
+	df['Number_Constraints'] = number_of_constraints
+	df['AverageConstraintSize'] = average_constraint_sizes
+	df['CtcDensity'] = get_non_implemented_vector(files)
+	df['FeaturesInConstraintsDensity'] = ecrs
+	df['TreeDepth'] = [2] * len(files)
+	df['AverageNumberOfChildren'] = cnf.nv - 1
+	df['NumberOfAlternatives'] = [0] * len(files)
+	df['NumberOfOrs'] = [0] * len(files)
+	df['NumberOfClauses'] = number_of_constraints
+	df['NumberOfLiterals'] = number_of_literals
+	df['NumberOfUnitClauses'] = get_non_implemented_vector(files)
+	df['NumberOfTwoClauses'] = get_non_implemented_vector(files)
+	df['ClauseDensity'] = get_non_implemented_vector(files)
+	df['NumberOfTautologies'] = get_non_implemented_vector(files)
+	df['NumberOfRedundantConstraints'] = get_non_implemented_vector(files)
+	df['ConnectivityDensity'] = get_non_implemented_vector(files)
+	df['Void'] = get_non_implemented_vector(files)
+	df['Number_CORE'] = get_non_implemented_vector(files)
+	df['Number_Dead'] = get_non_implemented_vector(files)
+	df['RatioOptionalFeatures'] = get_non_implemented_vector(files)
+	df['NumberOfFalseOptionalFeatures'] = get_non_implemented_vector(files)
+	df['NumberOfOptionalFeatures'] = get_non_implemented_vector(files)
+	df['NumberOfValidConfigurationsLog'] = get_non_implemented_vector(files)
+	df['SimpleCyclomaticComplexity'] = get_non_implemented_vector(files)
+	df['IndependentCyclomaticComplexity'] = get_non_implemented_vector(files)
+
+	df.to_csv('dimacs_analysis.csv', index = False)
+
+
+
 
 def save_to_csv(ls, filepath, columns = None):
 
@@ -285,7 +362,7 @@ def save_to_csv(ls, filepath, columns = None):
 	return filepath
 
 
-def main(files = None, discover = None, unique = False, verify = False, simplify = None, vmin = None, vmax = None, cmin = None, cmax = None, no_bars = False, out = None):
+def main(files = None, discover = None, unique = False, verify = False, simplify = None, analysis = False, vmin = None, vmax = None, cmin = None, cmax = None, no_bars = False, out = None):
 	
 	if out is None:
 		out = tempfile.mkdtemp()
@@ -315,6 +392,9 @@ def main(files = None, discover = None, unique = False, verify = False, simplify
 	if simplify:
 		simplify_dimacs(files, no_bars, out)
 
+	if analysis:
+		get_analysis_vectors(files)
+
 
 if __name__ == '__main__':
 
@@ -328,6 +408,7 @@ if __name__ == '__main__':
 	argparser.add_argument("--no_bars", action = "store_true", help = "Disables progress bars")
 	argparser.add_argument("--unique", action = "store_true", help = "Enforces uniqueness of input files")
 	argparser.add_argument("--verify", action = "store_true", help = "Verify the validity of input files")
+	argparser.add_argument("--analysis", action = "store_true", help = "Compute analysis vector for each found dimacs")
 	argparser.add_argument("--vmin", type = int, help = "Filters files with more or equal variables than")
 	argparser.add_argument("--vmax", type = int, help = "Filters files with less or equal variables than")
 	argparser.add_argument("--cmin", type = int, help = "Filters files with more or equal clauses than")
