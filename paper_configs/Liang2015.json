@@ -10,8 +10,8 @@
     ],
     "Date": "2023-01-13",
     "Filter": [],
-    "Publication": "https://doi.org/10.1007/s10664-022-10265-9",
-    "ReplicationPackage": "https://github.com/SoftVarE-Group/emse-evaluation-sharpsat",
+    "Publication": "https://doi.org/10.1145/2791060.2791070",
+    "ReplicationPackage": "https://github.com/JLiangWaterloo/fmeasy",
     "Keywords": [
         "Complete"
     ],
