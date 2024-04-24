@@ -48,9 +48,9 @@ Show help for the different parameters that can be used for filtering:
 
 ### Example Extraction Procedures
 
-Create collection with feature models between 500 and 2,000 features:
+Create collection with feature models between 500 and 2,000 features in UVL format:
 
-`python3 scripts/extract_collection.py --features 500..2000`
+`python3 scripts/extract_collection.py --features 500..2000 --output_format uvl`
 
 Create collection with feature models from the automotive domain:
 
@@ -71,4 +71,7 @@ Create collection with feature models for which a history is available:
 Create collection with same feature models as specified in configuration json:
 
 `python3 scripts/extract_collection.py --load_config paper_configs/Krieter2020.json`
+
+Create collection with all feature models in UVL with a flat hierarchy in the target directory:
+`python3 scripts/extract_collection.py --output_format uvl --flat`
 

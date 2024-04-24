@@ -91,6 +91,7 @@ def init_args():
                         help="Which variants of a system to include: " + str(VARIANT_SELECTORS))
     parser.add_argument('--load_config', type=str, default=None,
                         help="Path configuration file to load")
+    parser.add_argument('--flat', action='store_true')
 
     return parser.parse_args()
 
@@ -243,17 +244,11 @@ def update_target_path_according_to_output_format(path: str, output_format):
     if output_format == 'original':
         return path
     return path.replace('/original/', f'/{output_format}/')
+
+def get_flat_target_path(directory, original_path : str):
+    path_split = original_path.split('/')
+    return os.path.join(directory, f'{path_split[2]}-{path_split[3]}-{path_split[4]}')
     
-
-def create_properties_dict():
-    return {"Title": "", "Analyses": [], "Reasoning Engines": [], "Date": str(datetime.date.today()), "DOI": "",
-            "Filter": {
-                "Domains": available_domains,
-                "Formats": available_formats,
-                # "NumberOfFeatures": str(feature_range[0]) + ".." + str(feature_range[1]),
-                # "Number_Constraints": str(ctc_range[0]) + ".." + str(ctc_range[1])
-    }}
-
 def create_properties_dict_from_filter(filter_dict):
     if 'SavePath' in filter_dict: del filter_dict['SavePath']
     return {"Title": "", "Analyses": [], "Reasoning Engines": [], "Date": str(datetime.date.today()), "DOI": "",
@@ -264,8 +259,7 @@ def create_properties_dict_from_filter(filter_dict):
 def create_properties_dict_config(config_json):
     return {"Title": "", "Dataset From": config_json['Title'], "Analyses": [], "Reasoning Engines": [], "Date": str(datetime.date.today()), "DOI": ""}
 
-
-def create_benchmark_directory(data_frame, target_directory, output_format='original', value_dict=None):
+def create_benchmark_directory(data_frame, target_directory, output_format='original', value_dict=None, flat=False):
     os.makedirs(os.path.join(target_directory, "feature_models"))
     data_frame.to_csv(os.path.join(target_directory,
                       "statistics.csv"), ";", index=False)
@@ -274,8 +268,12 @@ def create_benchmark_directory(data_frame, target_directory, output_format='orig
         lambda row: update_source_path_according_to_output_format(row.Path, output_format), axis=1)
 
     for model_path in list(data_frame['Path']):
-        dir_path = update_target_path_according_to_output_format(os.path.join(target_directory, os.path.dirname(model_path)), output_format)
-        full_path = update_target_path_according_to_output_format(os.path.join(target_directory, model_path), output_format)
+        if flat:
+            dir_path = os.path.join(target_directory, 'feature_models', output_format)
+            full_path = get_flat_target_path(dir_path, model_path)
+        else:
+            dir_path = update_target_path_according_to_output_format(os.path.join(target_directory, os.path.dirname(model_path)), output_format)
+            full_path = update_target_path_according_to_output_format(os.path.join(target_directory, model_path), output_format)
         Path(dir_path).mkdir(parents=True, exist_ok=True)
         if Path(dir_path).exists():
             shutil.copy(model_path, full_path)
@@ -295,14 +293,14 @@ def create_benchmark_directory(data_frame, target_directory, output_format='orig
         target_directory, "config.json"))
 
 
-def create_benchmark_directory_from_config(config_path, data_frame, target_directory, output_format='original'):
+def create_benchmark_directory_from_config(config_path, data_frame, target_directory, output_format='original', flat=False):
     with open(config_path) as config_file:
         data = json.load(config_file)
         feature_models = data['Feature Models']
         filtered_frame = filter_data_frame_by_list_of_models(
             data_frame, feature_models)
         create_benchmark_directory(
-            filtered_frame, target_directory, output_format=output_format, value_dict=create_properties_dict_config(data))
+            filtered_frame, target_directory, output_format=output_format, value_dict=create_properties_dict_config(data), flat=flat)
 
 
 def data_frame_to_dict(data_frame):
@@ -321,11 +319,12 @@ def create_benchmark_json(data_frame: pd.DataFrame, value_dict, json_path='bench
 args = init_args()
 if args.load_config is not None:
     create_benchmark_directory_from_config(
-        args.load_config, df_all, "configbenchmark", args.output_format)
+        args.load_config, df_all, "configbenchmark", args.output_format, flat=args.flat)
 elif args.show_filter_options:
     printFilterOptions()
 else:
     filter_dict = parse_filter_args(args)
     df_filtered = applyFilter(df_all, filter_dict)
+    print(args.flat)
     create_benchmark_directory(
-        df_filtered, "testbenchmark", filter_dict["OutputFormat"], filter_dict)
+        df_filtered, "testbenchmark", filter_dict["OutputFormat"], filter_dict, flat=args.flat)
