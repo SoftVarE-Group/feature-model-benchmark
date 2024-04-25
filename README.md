@@ -1,35 +1,40 @@
 # Feature-Model Benchmark
 
 Our comprehensive feature collection provides large, real-world feature models for empirical evaluations.
-All currently available feature models, including characteristics and their sources, can be found in *feature_models/original/*.
-Further, we provide a .csv file showcasing information for every feature model in *statistics/CombinedStatistics.csv*.
+All currently available feature models, including jsons indicating characteristics and sources of the respective feature models, can be found in *feature_models/original/*.
+Further, we provide a .csv file showcasing information for every feature model in *statistics/Complete.csv*.
 We offer additional functionality to make use of the collection more convenient. 
 Users can search for a subset of feature models, create configuration files indicating their subset, and create subsets from existing configuration files.
 
 ## Included Feature Models
-As of now, 5,661 feature models our included in our collection covering various domains. Below you can find an overview about the include feature models. For more details on the feature models, we refer to `statistics/Complete.csv`.
+As of now, 2,518 feature models our included in our collection covering various domains. Below you can find an overview about the include feature models. For more details on the feature models, we refer to `statistics/Complete.csv`.
 
-|Domain           | #Systems| #Feature Models| #Histories| Feature Range | Constraint Range|
-|-----------------|---------|----------------|-----------|---------------|-------------|
-|Automotive       | 2       | 5              | 1         | 2,513--18,253 | 666--2,833  |
-|Business         | 1       | 1              | 0         | 1,920         | 59,044      |
-|Cloud            | 1       | 1              | 0         | 145           | 16          | 
-|Database         | 1       | 1              | 0         | 117           | 282         | 
-|Deep Learning    | 1       | 2              | 0         | 3,296--6,867  | 9--76       |
-|E-Commerce       | 2       | 2              | 0         | 173--2,238    | 0           |
-|Finance          | 4       | 13             | 1         | 142--774      | 4--1,148    |
-|Games            | 1       | 1              | 0         | 144           | 0  				 |
-|Hardware         | 2       | 2              | 0         | 172--364 | 0--12  | 
-|Navigation       | 2       | 2              | 0         | 103--145 | 2--13  | 
-|Security         | 2       | 1,464          | 0         | 101--4,351    | 1--8,138    |
-|Systems Software | 135     | 4,166          | 3         | 179--80,258   | 26--767,040 | 
-|Text             | 1       | 1              | 0         | 137 | 102   |
-|**Overall**      | **155** | **5,661**      | **5**     | **101--80,258**| **0--767,040**|                            
+| Domain           | #Systems | #Feature Models | #Histories | Feature Range   | Clause Range   |
+| ---------------- | -------- | --------------- | ---------- | --------------- | -------------- |
+| Automotive       | 2        | 5               | 1          | 2,513--18,253   | 666--2,833     |
+| Business         | 1        | 1               | 0          | 1,920           | 59,044         |
+| Cloud            | 1        | 1               | 0          | 145             | 16             |
+| Database         | 1        | 1               | 0          | 117             | 282            |
+| Deep Learning    | 1        | 2               | 0          | 3,296--6,867    | 9--76          |
+| E-Commerce       | 2        | 2               | 0          | 173--2,238      | 0              |
+| Finance          | 4        | 13              | 1          | 142--774        | 4--1,148       |
+| Games            | 1        | 1               | 0          | 144             | 0              |
+| Hardware         | 2        | 2               | 0          | 172--364        | 0--12          |
+| Navigation       | 2        | 2               | 0          | 103--145        | 2--13          |
+| Security         | 2        | 1,464           | 0          | 101--4,351      | 1--8,138       |
+| Systems Software | 21       | 1,025           | 5          | 179--80,258     | 26--767,040    |
+| Text             | 1        | 1               | 0          | 137             | 102            |
+| **Overall**      | **41**   | **2,518**       | **5**      | **101--80,258** | **0--767,040** |
 
-## Adding New Feature Models
-We plan on continually extending our collection to keep a reasonable coverage of the literature. We also highly appreciate if new feature models are added by the community via PR to this repository.
+## Repository Structure
 
-## Dataset Extraction Procedure
+The directory `feature_models/` contains the feature models in `original`, `dimacs`, and `uvl` format. Note that feature models originally in dimacs or UVL format are stored in `original` with no redundant copy in dimacs or UVL, respectively.
+To get *all* feature models in the specific format, use the extraction script which will take care of such models for you. See below for usage examples.
+
+`scripts` includes some scripts to interact with the collection. If you want to *use* the dataset, `scripts/extract_collection.py` should the most relevant for you to extract your collection. `scripts/dimacs_tools.py` provides several capabilities to preprocess dimacs files.
+`scripts/manage_statistics.py` is used to update the statistics files in `statistics/` after adding or updating feature models.
+
+## Extracting Feature-Model Collections
 
 ### Setup
 
@@ -75,3 +80,26 @@ Create collection with same feature models as specified in configuration json:
 Create collection with all feature models in UVL with a flat hierarchy in the target directory:
 `python3 scripts/extract_collection.py --output_format uvl --flat`
 
+## Contributing
+
+We highly appreciate if new feature models are added by the community via PR to this repository.
+For every (group of) feature models, we require a json that indicates some meta information on the origin of the feature model. See an example below for the format.
+Please provide at least: *Name*, *Year*, *OriginalFormat*, *Publication*, and *Source*. 
+
+```
+{
+    "Name" : "Automotive01",
+    "Year" : 2016,
+    "OriginalFormat" : "FeatureIDE",
+    "Hierarchy" : true,
+    "History":  [],
+    "Publication" : "https://doi.org/10.1145/3093335.2993248",
+    "Source" : "https://github.com/FeatureIDE/FeatureIDE",
+    "Keywords" : [
+        "Obfuscated",
+        "Proprietary",
+        "Automatic"
+    ],
+    "ConversionTool" : ""
+}
+```

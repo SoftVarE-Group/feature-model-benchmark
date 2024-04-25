@@ -110,12 +110,23 @@ def get_number_of_evolutions(df):
 def get_ranges(df, column, ranges):
     return df[column].groupby(pd.cut(df[column], ranges)).count()
 
+def get_clean_systems(df):
+    clean_df = df[df['Keywords'].str.contains('CDL')==False]
+    return clean_df['Name'].nunique()
+
+def get_clean_systems_per_domain(df):
+    clean_df = df[df['Keywords'].str.contains('CDL')==False]
+    return clean_df.groupby(['Domain'])['Name'].nunique()
+
 def print_meta(complete_file):
     df = read_csv_to_dataframe(complete_file)
     df = df.replace('?', np.nan)
+    get_clean_systems(df)
     df['NumberOfValidConfigurationsLog'] = df['NumberOfValidConfigurationsLog'].astype('float')
     print(f'Number of feature models: {len(df.index)}')
     print(f'Number of systems: {df["Name"].nunique()}')
+    print(f'Number of systems (cleaned): {get_clean_systems(df)}')
+    print(f'Number of systems by domain (cleaned):\n{get_clean_systems_per_domain(df)}')
     print(f'Number of histories: {get_number_of_evolutions(df)}')
     print(f'Models per domain:\n{df["Domain"].value_counts()}')
     print(f'Number of features: {df["NumberOfFeatures"].min()}--{df["NumberOfFeatures"].max()}')
