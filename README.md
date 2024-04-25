@@ -7,7 +7,7 @@ We offer additional functionality to make use of the collection more convenient.
 Users can search for a subset of feature models, create configuration files indicating their subset, and create subsets from existing configuration files.
 
 ## Included Feature Models
-As of now, 5,661 feature models our included in our collection covering various domains. Below you can find an overview about the include feature models. For more details on the feature models, we refer to `statistics/CombinedStatistics.csv`.
+As of now, 5,661 feature models our included in our collection covering various domains. Below you can find an overview about the include feature models. For more details on the feature models, we refer to `statistics/Complete.csv`.
 
 |Domain           | #Systems| #Feature Models| #Histories| Feature Range | Constraint Range|
 |-----------------|---------|----------------|-----------|---------------|-------------|
