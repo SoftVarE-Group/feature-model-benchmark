@@ -1,3 +1,5 @@
+[![DOI](https://zenodo.org/badge/527877748.svg)](https://zenodo.org/doi/10.5281/zenodo.11652924)
+
 # Feature-Model Benchmark
 
 Our comprehensive feature collection provides large, real-world feature models for empirical evaluations.
