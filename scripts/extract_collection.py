@@ -91,7 +91,7 @@ def init_args():
                         help="Which variants of a system to include: " + str(VARIANT_SELECTORS))
     parser.add_argument('--load_config', type=str, default=None,
                         help="Path configuration file to load")
-    parser.add_argument('--flat', action='store_true')
+    parser.add_argument('--flat', action='store_true', help="Provides the feature models as a flat hierarchy instead of nested directories")
 
     return parser.parse_args()
 
@@ -291,6 +291,7 @@ def create_benchmark_directory(data_frame, target_directory, output_format='orig
 
     create_benchmark_json(data_frame, create_properties_dict_from_filter(value_dict), os.path.join(
         target_directory, "config.json"))
+    print(f'Partial benchmark stored in {target_directory}')
 
 
 def create_benchmark_directory_from_config(config_path, data_frame, target_directory, output_format='original', flat=False):
@@ -325,6 +326,5 @@ elif args.show_filter_options:
 else:
     filter_dict = parse_filter_args(args)
     df_filtered = applyFilter(df_all, filter_dict)
-    print(args.flat)
     create_benchmark_directory(
         df_filtered, "testbenchmark", filter_dict["OutputFormat"], filter_dict, flat=args.flat)

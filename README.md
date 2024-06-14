@@ -103,3 +103,8 @@ Please provide at least: *Name*, *Year*, *OriginalFormat*, *Publication*, and *S
     "ConversionTool" : ""
 }
 ```
+
+## Relevant Repositories
+
+* [Feature-Model Analysis](https://github.com/SundermannC/feature-model-batch-analysis): FeatureIDE-based Java tool for creating analysis results for the csv files in statistics
+* [Feature-Model Conversion (TraVarT extension)](https://github.com/SundermannC/TraVarT/): TraVarT-based conversion for various formats to DIMACS and UVL
