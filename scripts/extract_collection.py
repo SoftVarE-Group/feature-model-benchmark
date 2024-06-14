@@ -261,8 +261,8 @@ def create_properties_dict_config(config_json):
 
 def create_benchmark_directory(data_frame, target_directory, output_format='original', value_dict=None, flat=False):
     os.makedirs(os.path.join(target_directory, "feature_models"))
-    data_frame.to_csv(os.path.join(target_directory,
-                      "statistics.csv"), ";", index=False)
+    data_frame.to_csv(path_or_buf=os.path.join(target_directory,
+                      "statistics.csv"), sep=";", index=False)
     
     data_frame['Path'] = data_frame.apply(
         lambda row: update_source_path_according_to_output_format(row.Path, output_format), axis=1)
@@ -320,11 +320,11 @@ def create_benchmark_json(data_frame: pd.DataFrame, value_dict, json_path='bench
 args = init_args()
 if args.load_config is not None:
     create_benchmark_directory_from_config(
-        args.load_config, df_all, "configbenchmark", args.output_format, flat=args.flat)
+        args.load_config, df_all, args.save_path, args.output_format, flat=args.flat)
 elif args.show_filter_options:
     printFilterOptions()
 else:
     filter_dict = parse_filter_args(args)
     df_filtered = applyFilter(df_all, filter_dict)
     create_benchmark_directory(
-        df_filtered, "testbenchmark", filter_dict["OutputFormat"], filter_dict, flat=args.flat)
+        df_filtered, args.save_path, filter_dict["OutputFormat"], filter_dict, flat=args.flat)
