@@ -110,3 +110,17 @@ Please provide at least: *Name*, *Year*, *OriginalFormat*, *Publication*, and *S
 
 * [Feature-Model Analysis](https://github.com/SundermannC/feature-model-batch-analysis): FeatureIDE-based Java tool for creating analysis results for the csv files in statistics
 * [Feature-Model Conversion (TraVarT extension)](https://github.com/SundermannC/TraVarT/): TraVarT-based conversion for various formats to DIMACS and UVL
+
+
+## Cite our work
+If you use this collection for your research, please cite this work below.
+```
+@inproceedings{SBK+:SPLC24,
+	author = {Sundermann, Chico and Brancaccio, Vincenzo Francesco and Kuiter, Elias and Krieter, Sebastian and He{\ss}, Tobias and Th{\"{u}}m, Thomas},
+	title = {{Collecting Feature Models from the Literature: A Comprehensive Dataset for Benchmarking}},
+	booktitle = "Proc.\ Int'l Systems and Software Product Line Conf.\ (SPLC)",
+	year = 2024,
+	month = SEP,
+	publisher = ACM
+}
+```
