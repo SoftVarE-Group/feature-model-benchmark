@@ -121,6 +121,7 @@ If you use this collection for your research, please cite this work below.
 	booktitle = "Proc.\ Int'l Systems and Software Product Line Conf.\ (SPLC)",
 	year = 2024,
 	month = SEP,
-	publisher = ACM
+	publisher = "ACM",
+    address = "New York, NY, USA"
 }
 ```
