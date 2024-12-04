@@ -76,6 +76,8 @@ def get_version(path):
         return fileName.split('-', 1)[1]
     return ""
 
+def get_version_frame(df : pd.DataFrame):
+    return df[df['PartOfHistory']==True]
 
 def get_no_versions(model_json):
     if 'History' in model_json.keys():
@@ -124,6 +126,10 @@ def get_json_for_model(model_path):
     else:
         adapted_file_name = file_name.split(".", 1)[0] + ".json"
     return get_model_json(model_path.replace(file_name, adapted_file_name))
+
+def filter_by_tag(model_json, tag : str):
+    return model_json[model_json['Keywords'].str.contains(tag)]
+
 
 # returns path consisting of domain/system/model
 def get_describing_path(original_path):

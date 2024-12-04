@@ -5,7 +5,7 @@ import os
 import shutil
 import json
 from pathlib import Path
-from utils import get_latest_version, get_first_version, get_model_json, get_latest_variant, get_first_variant, get_extension, get_describing_path
+from utils import get_latest_version, get_first_version, get_model_json, get_latest_variant, get_first_variant, get_extension, get_describing_path, get_version_frame, filter_by_tag
 import numpy as np
 
 # name filter default
@@ -61,7 +61,7 @@ available_feature_range = (
 available_ctc_range = (int(min(df_all['Number_Constraints'])),
                        int(max(df_all['Number_Constraints'])))
 default_name_regex = '.*'
-VARIANT_SELECTORS = ["all", "none", "first", "last"]
+VARIANT_SELECTORS = ["all", "none", "first", "last", "minmedmax"]
 
 
 def init_args():
@@ -91,6 +91,7 @@ def init_args():
                         help="Which variants of a system to include: " + str(VARIANT_SELECTORS))
     parser.add_argument('--load_config', type=str, default=None,
                         help="Path configuration file to load")
+    parser.add_argument('--tag_filter', type=str, default=None, help='Filter systems with this tag to only the systems with min, max, and median of constraints')
     parser.add_argument('--flat', action='store_true', help="Provides the feature models as a flat hierarchy instead of nested directories")
 
     return parser.parse_args()
@@ -107,7 +108,8 @@ def parse_filter_args(args):
         'Evolution': args.evolution,
         'SavePath': args.save_path,
         'Versions': args.versions,
-        'Variants': args.variants
+        'Variants': args.variants,
+        'TagFilter' : args.tag_filter
     }
 
 
@@ -140,6 +142,7 @@ def applyFilter(df, filter_dict: dict):
         df = df[df['PartOfHistory'] == True]
     df = filter_by_version_strategy(df, filter_dict['Versions'])
     df = filter_by_variant_strategy(df, filter_dict['Variants'])
+    df = filter_by_tag_strategy(df, filter_dict['TagFilter'])
     return df
 
 
@@ -152,6 +155,8 @@ def filter_by_version_strategy(df: pd.DataFrame, strategy: str):
         return filter_version_first_strategy(df)
     elif strategy == 'last':
         return filter_version_latest_strategy(df)
+    elif strategy == 'minmedmax':
+        return filter_version_minmedmax_strategy(df)
 
 
 def filter_version_latest_strategy(df: pd.DataFrame):
@@ -166,7 +171,6 @@ def filter_version_latest_strategy(df: pd.DataFrame):
         df['Version'] == df['LatestVersion'])]
     df = df.drop('LatestVersion', axis=1)
     return df
-
 
 def filter_version_first_strategy(df: pd.DataFrame):
     paths = list(df['Domain'] + "/" + df['Name'] +
@@ -191,7 +195,8 @@ def filter_by_variant_strategy(df: pd.DataFrame, strategy: str):
         return filter_variant_first_strategy(df)
     elif strategy == 'last':
         return filter_variant_latest_strategy(df)
-
+    elif strategy == 'minmedmax':
+        return filter_variant_minmedmax_strategy(df)
 
 def filter_variant_latest_strategy(df: pd.DataFrame):
     paths = list(df['Domain'] + "/" + df['Name'] +
@@ -212,12 +217,71 @@ def filter_variant_first_strategy(df: pd.DataFrame):
                  "/" + df['Origin'] + ".json")
     full_paths = [os.path.join(
         "feature_models", "original", model_path) for model_path in paths]
-    first_version = [get_first_version(
+    first_version = [get_first_variant(
         get_model_json(full_path)) for full_path in full_paths]
     df['VersionOfInterest'] = first_version
     df = df[((df['VersionOfInterest'] == "")) | (
         df['Version'] == df['VersionOfInterest'])]
     df = df.drop('VersionOfInterest', axis=1)
+    return df
+
+def filter_version_minmedmax_strategy(df : pd.DataFrame):
+    df['FullHistoryId'] = df['Name'] + df['Origin'] + df['Version']
+    history_df = get_version_frame(df)
+    history_df['HistoryId'] = history_df['Name'] + ';' + history_df['Origin']
+    histories = history_df['HistoryId'].unique()
+    versions_to_keep = []
+    for history in histories:
+        history_split = history.split(';')
+        single_history = history_df[(history_df['Name'] == history_split[0]) & (history_df['Origin'] == history_split[1])]
+        min = single_history[(single_history.Number_Constraints == single_history['Number_Constraints'].min())]['FullHistoryId'].values[0]
+        max = single_history[(single_history.Number_Constraints == single_history['Number_Constraints'].max())]['FullHistoryId'].values[0]
+        med = single_history[(single_history['Number_Constraints'] == single_history['Number_Constraints'].quantile(interpolation='nearest'))]['FullHistoryId'].values[0]
+        versions_to_keep.append(min)
+        versions_to_keep.append(max)
+        versions_to_keep.append(med)
+    df = df[(df['PartOfHistory']==False) | (df['FullHistoryId'].isin(versions_to_keep))]
+    df = df.drop('FullHistoryId', axis = 1)
+    return df
+
+
+def filter_variant_minmedmax_strategy(df : pd.DataFrame):
+    df['VariantId'] = df['Name'] + df['Origin']
+    df_wo_versions = df[df['PartOfHistory']==False]
+    occurence_map = df_wo_versions['VariantId'].value_counts()
+    variant_list = [key for key in occurence_map.keys() if occurence_map[key] > 3]
+    print(variant_list)
+    variants_to_keep = []
+    for variant in variant_list:
+        single_variant_df = df_wo_versions[df['VariantId']==variant]
+        min = single_variant_df[(single_variant_df.Number_Constraints == single_variant_df['Number_Constraints'].min())]['Version'].values[0]
+        max = single_variant_df[(single_variant_df.Number_Constraints == single_variant_df['Number_Constraints'].max())]['Version'].values[0]
+        med = single_variant_df[(single_variant_df['Number_Constraints'] == single_variant_df['Number_Constraints'].quantile(interpolation='nearest'))]['Version'].values[0]
+        variants_to_keep.append(min)
+        variants_to_keep.append(max)
+        variants_to_keep.append(med)
+    df = df[(~df['VariantId'].isin(variant_list)) | (df['Version'].isin(variants_to_keep))]
+    df = df.drop('VariantId', axis = 1)
+    return df
+
+def filter_by_tag_strategy(df : pd.DataFrame, tag : str):
+    if tag is None:
+        return df
+    return filter_tag_minmedmax_strategy(df, tag)
+
+def filter_tag_minmedmax_strategy(df : pd.DataFrame, tag : str):
+    df['VariantId'] = df['Name'] + df['Origin']
+    tag_df = filter_by_tag(df, tag)
+    tag_systems_to_keep = []
+    min = tag_df[(tag_df.Number_Constraints == tag_df['Number_Constraints'].min())]['VariantId'].values[0]
+    max = tag_df[(tag_df.Number_Constraints == tag_df['Number_Constraints'].max())]['VariantId'].values[0]
+    med = tag_df[(tag_df['Number_Constraints'] == tag_df['Number_Constraints'].quantile(interpolation='nearest'))]['VariantId'].values[0]
+    tag_systems_to_keep.append(min)
+    tag_systems_to_keep.append(max)
+    tag_systems_to_keep.append(med)
+    print(tag_systems_to_keep)
+    df = df[(~df['Keywords'].str.contains(tag)) | (df['VariantId'].isin(tag_systems_to_keep))]
+    df = df.drop('VariantId', axis = 1)
     return df
 
 
@@ -263,7 +327,6 @@ def create_benchmark_directory(data_frame, target_directory, output_format='orig
     os.makedirs(os.path.join(target_directory, "feature_models"))
     data_frame.to_csv(path_or_buf=os.path.join(target_directory,
                       "statistics.csv"), sep=";", index=False)
-    
     data_frame['Path'] = data_frame.apply(
         lambda row: update_source_path_according_to_output_format(row.Path, output_format), axis=1)
 
@@ -310,7 +373,7 @@ def data_frame_to_dict(data_frame):
 
 def create_benchmark_json(data_frame: pd.DataFrame, value_dict, json_path='benchmark.json'):
     name_data_frame = data_frame[["Path"]]
-    name_data_frame = name_data_frame.rename(columns={'Path': 'FeatureModels'})
+    name_data_frame = name_data_frame.rename(columns={'Path': 'Feature Models'})
     model_dict = data_frame_to_dict(name_data_frame)
     value_dict.update(model_dict)
     with open(json_path, 'w') as outfile:
