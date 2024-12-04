@@ -36,6 +36,8 @@ To get *all* feature models in the specific format, use the extraction script wh
 `scripts` includes some scripts to interact with the collection. If you want to *use* the dataset, `scripts/extract_collection.py` should the most relevant for you to extract your collection. `scripts/dimacs_tools.py` provides several capabilities to preprocess dimacs files.
 `scripts/manage_statistics.py` is used to update the statistics files in `statistics/` after adding or updating feature models.
 
+The jsons in `paper_configs` each include a list of feature models used in other work on feature-model analysis. After using a subset of our benchmark, we welcome the addition of your .json. In `pre_configs` we provide subsets of the benchmark with certain properties that may be more suitable for specific use-case than the entire set. 
+
 ## Extracting Feature-Model Collections
 
 ### Setup
