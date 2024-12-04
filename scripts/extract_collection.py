@@ -327,10 +327,10 @@ def create_benchmark_directory(data_frame, target_directory, output_format='orig
     os.makedirs(os.path.join(target_directory, "feature_models"))
     data_frame.to_csv(path_or_buf=os.path.join(target_directory,
                       "statistics.csv"), sep=";", index=False)
-    data_frame['Path'] = data_frame.apply(
+    data_frame['FormatPath'] = data_frame.apply(
         lambda row: update_source_path_according_to_output_format(row.Path, output_format), axis=1)
 
-    for model_path in list(data_frame['Path']):
+    for model_path in list(data_frame['FormatPath']):
         if flat:
             dir_path = os.path.join(target_directory, 'feature_models', output_format)
             full_path = get_flat_target_path(dir_path, model_path)
