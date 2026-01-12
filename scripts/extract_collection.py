@@ -67,7 +67,7 @@ VARIANT_SELECTORS = ["all", "none", "first", "last", "minmedmax"]
 def init_args():
     parser = argparse.ArgumentParser(
         description='Derive feature-model subset according to filtering')
-    parser.add_argument('--show_filter_options',
+    parser.add_argument('--show_filter_options', action='store_true', default=False,
                         help="Show possible values for all filters")
     parser.add_argument('--domains', type=str, nargs="+", default=available_domains,
                         help="Only include feature models belonging to list of domains")
@@ -83,6 +83,8 @@ def init_args():
                         help="Only provide feature models with a history")
     parser.add_argument('--constraints', type=str, default=str(available_ctc_range[0]) + ".." + str(
         available_ctc_range[1]), help="Only include feature models with between X--Y constraints")
+    parser.add_argument('--hierarchy', action='store_true', default=False, 
+                        help="Only include feature models with a feature diagram")
     parser.add_argument('--save_path', type=str, default="benchmark" + str(datetime.datetime.now()),
                         help="Provide directory path for storing benchmark and meta data")
     parser.add_argument('--versions', type=str, default="all",
@@ -109,7 +111,8 @@ def parse_filter_args(args):
         'SavePath': args.save_path,
         'Versions': args.versions,
         'Variants': args.variants,
-        'TagFilter' : args.tag_filter
+        'TagFilter' : args.tag_filter,
+        'Hierarchy' : args.hierarchy,
     }
 
 
@@ -140,6 +143,8 @@ def applyFilter(df, filter_dict: dict):
     df = df[df['Name'].str.match(filter_dict['Name'])]
     if filter_dict['Evolution']:
         df = df[df['PartOfHistory'] == True]
+    if filter_dict['Hierarchy']:
+        df = df[df['Hierarchy'] == True]
     df = filter_by_version_strategy(df, filter_dict['Versions'])
     df = filter_by_variant_strategy(df, filter_dict['Variants'])
     df = filter_by_tag_strategy(df, filter_dict['TagFilter'])
@@ -389,5 +394,8 @@ elif args.show_filter_options:
 else:
     filter_dict = parse_filter_args(args)
     df_filtered = applyFilter(df_all, filter_dict)
+    if len(df_filtered) == 0:
+        print("No models match the selected filters.")
+        exit()
     create_benchmark_directory(
         df_filtered, args.save_path, filter_dict["OutputFormat"], filter_dict, flat=args.flat)
